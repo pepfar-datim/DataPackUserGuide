@@ -1,0 +1,368 @@
+
+\blandscape
+
+PMTCT
+=====
+
+Host Country Context
+--------------------
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
+
+schema_table("PMTCT-Host Country Context-J-M-2-3", "latex")
+
+schema_table("PMTCT-Host Country Context-N-Q-3-3", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-Host Country Context-F-I-1-1", "html")
+```
+
+### DATIM Import
+
+The following data will be imported into DATIM from this section of the
+Data Pack:
+
+-   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY21)**
+    [PMTCT_STAT_SUBNAT.D.T_1]
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY21)**
+    [PMTCT_STAT_SUBNAT.N.Known.Pos.T_1]
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY21)**
+    [PMTCT_STAT_SUBNAT.N.New.Pos.T_1]
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY21)**
+    [PMTCT_STAT_SUBNAT.N.New.Neg.T_1]
+
+-   **Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant women
+    (FY21)** [PMTCT_ART_SUBNAT.D.T_1]
+
+-   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY21)**
+    [PMTCT_ART_SUBNAT.N.Already.T_1]
+
+-   **Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY21)**
+    [PMTCT_ART_SUBNAT.N.New.T_1]
+
+### Instructions
+
+1.  Review data for the following columns, all of which come from
+    corollaries on the Cascade tab. Follow hyperlinks to navigate to the
+    source of this data:
+
+    a.  Host Country Estimated Female Population (FY21)
+
+    b.  Host Country Estimated PLHIV (FY21)
+
+    c.  Host Country Estimated HIV Prevalence (FY21)
+
+    d.  Host Country Estimated TX_CURR_SUBNAT (FY21)
+
+    e.  Host Country Estimated ART Coverage (FY21)
+
+2.  If using Spectrum as the source for Host Country Context data, the
+    following columns will initially be populated based on data from the
+    Spectrum export dataset added to the Spectrum tab of the Data Pack.
+    Review these and return to Spectrum to adjust assumptions there as
+    needed. With approval by your PPM and assigned DUIT Liaison, you may
+    also identify and use another source for this data.
+
+    a.  Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY21)
+
+    b.  Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY21)
+
+    c.  Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY21)
+
+    d.  Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY21)
+
+    e.  Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant
+        women (FY21)
+
+    f.  Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY21)
+
+    g.  Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY21)
+
+PMTCT: PMTCT_STAT (D)
+---------------------
+
+**PMTCT_STAT (D):** Number of new ANC clients in reporting period.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_STAT (D)-R-T-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_STAT (D)-R-T-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **PMTCT_STAT (D)** [PMTCT_STAT.D.T]
+
+### Instructions
+
+1.  For historical context, review FY21 targets for PMTCT_STAT (D),
+    reflected in the Data Pack per data reported in DATIM.
+
+2.  Review and adjust the Expected change in new ANC clients, which
+    should help indicate whether there is an anticipated change in the
+    number of women presenting to ANC compared to FY21. This is
+    defaulted at 0%, though this reflects no suggestion of strategy from
+    S/GAC. Adjust these growth rates to reflect intentional,
+    data-driven, strategic programming. Values can be negative or
+    positive percentages in this column, which will decrease or increase
+    the FY22 target for PMTCT_STAT (D) respectively. (If the expected
+    number of women presenting in ANC for FY21 is the same as FY20, the
+    value in column F would be "0%". If it increased by 50%, the value
+    would be "50%". If the number should decrease by 20%, enter "-20%".)
+
+3.  Review FY22 targets for PMTCT_STAT (D), which is calculated by
+    multiplying the Expected change in new ANC clients (set in step 2)
+    by the lesser of either the "Host Country PMTCT_STAT_SUBNAT (D) - \#
+    New ANC clients (FY21)" set in the Host Country Context section, or
+    the PMTCT_STAT (D) FY21 targets from DATIM. In the case services are
+    planned in FY22 where these were not provided in FY21, you may
+    manually enter FY22 targets in this column.
+
+PMTCT: PMTCT_STAT (N)
+---------------------
+
+**PMTCT_STAT (N):** Number of pregnant women with known HIV status at
+first antenatal care visit (ANC1) (includes those who already knew their
+HIV status prior to ANC1).
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_STAT (N)-U-W-1-3", "latex")
+
+schema_table("PMTCT-PMTCT_STAT (N)-X-Z-2-3", "latex")
+
+schema_table("PMTCT-PMTCT_STAT (N)-AA-AC-3-3", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_STAT (N)-U-AC-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Total PMTCT_STAT (N)** [PMTCT_STAT.N]
+
+-   **PMTCT_STAT (N) Known HIV Status, Positive**
+    [PMTCT_STAT.N.KnownPos.T]
+
+-   **PMTCT_STAT (N) Newly Tested, Positive** [PMTCT_STAT.N.New.Pos.T]
+
+-   **PMTCT_STAT (N) Newly Tested, Negative** [PMTCT_STAT.N.New.Neg.T]
+
+### Instructions
+
+1.  Review "Targeted testing coverage of ANC clients (FY22)", which is
+    pre-populated with a default value of 100%, indicating the goal that
+    100% of women presenting at ANC1 know their HIV status, whether by
+    previous or new testing. Adjust this column and modify the
+    proportion to match COP21 PMTCT strategy and goals.
+
+2.  Review FY20 Results for (a) Estimated % ANC1 clients with already
+    Known HIV Positive status, and (b) Estimated Positivity Rate among
+    Newly Tested ANC1 clients.
+
+3.  Review FY22 projections for (a) Estimated % ANC1 clients with
+    already Known HIV Positive status, and (b) Estimated Positivity Rate
+    among Newly Tested ANC1 clients. These data default to remain static
+    from related FY21 rates added to the Host Country Context section of
+    this tab. Where these are unavailable, these instead use FY20
+    results trends. In either case, these can be adjusted as necessary
+    with approval by your PPM and DUIT Liaison. Red highlights indicate
+    percentages over 100%; yellow highlights indicate percentages
+    different from FY20 results. See below for additional information.
+
+4.  Review "Total PMTCT_STAT (N)", which will display the numerator
+    value for PMTCT_STAT based on the multiplication of "PMTCT_STAT (D)"
+    and the "Targeted testing coverage of ANC1 clients (FY22)". To make
+    changes to the PMTCT numerator, adjust either the PMTCT denominator
+    or the desired testing coverage.
+
+5.  Review PMTCT_STAT Known HIV Status, Positive, which will be
+    calculated based on multiplying Total PMTCT_STAT (N) by the
+    Estimated percent of ANC1 clients already Known HIV Positive.
+
+6.  Review PMTCT_STAT Newly Tested, Positive, which will be calculated
+    based on first removing the PMTCT_STAT Known HIV Status, Positive
+    cohort from Total PMTCT_STAT (N), then by multiplying this value by
+    the Estimated Positivity Rate among Newly Tested ANC1 clients.
+
+7.  Review PMTCT_STAT Newly Tested, Negative, which will be calculated
+    as the remainder of Total PMTCT_STAT (N) less both PMTCT_STAT Known
+    HIV Status, Positive and PMTCT_STAT Newly Tested, Positive.
+
+### FY22 Projected Known Positivity and New Positivity Rates
+
+In projecting rates of Known and New positivity for PMTCT_STAT ANC1
+clients, the COP21 Data Pack relies first upon Host Country Context
+estimates, provided by Spectrum or another approved source, and where
+this data is unavailable, upon PEPFAR FY20 results obtained from DATIM
+on the date of the Data Pack's generation, as documented on the Home
+tab. These rates are calculated from Host Country Context data as
+follows:
+
+\begin{center} ${Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}$ \end{center}
+
+\begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
+
+**\
+**
+
+PMTCT: PMTCT_ART (N)
+--------------------
+
+**PMTCT_ART (N):** Number of HIV-positive pregnant women who received
+ART to reduce the risk of mother-to-child transmission during pregnancy.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_ART (N)-AD-AF-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_ART (N)-AD-AF-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Already on ART** [PMTCT_ART.Already.T]
+
+-   **New on ART** [PMTCT_ART.New]
+
+### Instructions
+
+1.  Review Targeted ART Linkage Rate for linkage between PMTCT_STAT (N)
+    Newly Tested, Positive and PMTCT_ART New on ART. This rate is locked
+    in step with ART Linkage Rates set on the Cascade Tab, which default
+    to 95%; return to that tab to adjust this rate, though note that
+    this will alter linkage rates across all modalities.
+
+2.  Review modeled targets for PMTCT_ART (N) Already on ART. For the
+    purposes of COP21 target setting in the Data Pack, FY22 targets for
+    PMTCT_ART Already on ART are set assuming that 100% of those ANC1
+    clients with already known HIV positive status are already on ART.
+
+3.  Review modeled targets for PMTCT_ART New on ART, which is calculated
+    by multiplying PMTCT_STAT (N) Newly Tested, Positive by the Targeted
+    ART Linkage Rate.
+
+**\
+**
+
+PMTCT: HTS_TST: PMTCT Post ANC1
+-------------------------------
+
+**HTS_TST:** PMTCT Post ANC1: Includes pregnant or breastfeeding women
+who receive a test POST ANC1, this includes women who are tested later
+in pregnancy (\>ANC2), during labor & delivery (L&D), and while
+breastfeeding.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AG-AI-1-2", "latex")
+
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AJ-AL-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AG-AL-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **HTS_TST PMTCT Post ANC1, Positive** [HTS_TST.PostANC1.Pos.T]
+
+-   **HTS_TST PMTCT Post ANC1, Negative** [HTS_TST.PostANC1.Neg.T]
+
+### Instructions
+
+1.  Review and adjust the Total eligible for Post ANC1 retesting, which
+    is initially set equal to the number tested and found negative in
+    initial ANC1 testing.
+
+2.  Review and adjust the Yield for PMTCT Post ANC1 HIV testing, which
+    will initially be pre-populated based on FY20 results from DATIM,
+    but can be adjusted as needed. Red highlights indicate percentages
+    over 100% or under 0%.
+
+3.  Review Targeted ART Linkage Rates for linkage between HTS_TST: PMTCT
+    Post ANC1, Positive and TX_NEW. This rate is locked in step with ART
+    Linkage Rates set on the Cascade Tab, which default to 95%; return
+    to that tab to adjust this rate, though note that this will alter
+    linkage rates across all modalities.
+
+4.  Review targets for HTS_TST: PMTCT Post ANC1, Positive, which are set
+    by multiplying Total eligible for Post ANC1 retesting, set in step
+    1, by the Yield rate set in step 2.
+
+5.  Review targets for HTS_TST: PMTCT Post ANC1, Negative, which are set
+    by subtracting HTS_TST: PMTCT Post ANC1, Positive from the Total
+    eligible for Post ANC1 retesting set in step 1.
+
+6.  Review modeled data for those tested and found positive for HIV post
+    ANC1 who are linked to ART, set by multiplying those found positive
+    by the Targeted ART Linkage Rate set in step 3, rounded to the
+    nearest integer.**\
+    **
+
+PMTCT: Testing Rationalization
+------------------------------
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-Testing Rationalization-AM-AP-1-2", "latex")
+
+schema_table("PMTCT-Testing Rationalization-AQ-AS-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-Testing Rationalization-AM-AS-1-1", "html")
+```
+
+
+### DATIM Import
+
+No data from this section will be imported into DATIM.
+
+### Instructions
+
+1.  Review Total PMTCT: Positives (From ANC1 & Post ANC1), which
+    represents the *sum* of the PMTCT_STAT Known Positive, PMTCT_STAT
+    Newly Tested Positive, and HTS_TST Post ANC1 Positive targets. This
+    column serves as the starting point of the EID modeling process on
+    the EID tab. For more information about the role of this data
+    relative to EID targets, see that section of this User Guide.
+
+2.  Use the remainder of this section of the PMTCT tab to analyze how
+    PMTCT_STAT Newly Tested, Positives fit within the context of an
+    overall testing strategy. In particular, consider how this modality
+    contributes to total HTS_TST_POS in relation to HTS_INDEX, TB_STAT,
+    and all other HTS modalities.
+
+3.  Review any cases where this section is highlighted red, indicating
+    over- or under-allocation of HTS_TST_POS targets across contributing
+    modalities. While these allocation issues may be more the result of
+    a different modality(ies), analysis of these to confirm no
+    adjustments to PMTCT_STAT are warranted may prevent issues and
+    additional work in other sections of the Data Pack.
+
+4.  Return to other tabs of the Data Pack where issues flagged in this
+    section require adjustment of either total HTS_TST_POS targets, or
+    targets via other modalities. Similar Testing Rationalization
+    sections can be also found in each of these other tabs of the Data
+    Pack. You may also use hyperlinks in column headers in this section
+    to quickly navigate to the most relevant section of the Data Pack.
+    
+\elandscape
+
+\newpage

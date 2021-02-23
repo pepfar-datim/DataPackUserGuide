@@ -1,0 +1,220 @@
+
+\blandscape
+
+TB
+==
+
+TB: TB_STAT (D)
+---------------
+
+**TB_STAT (D):** Total number of new and relapsed TB cases, during the
+reporting period.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("TB-TB_STAT (D)-F-H-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("TB-TB_STAT (D)-F-H-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **TB_STAT (D)** [TB_STAT.D.T]
+
+### Instructions
+
+1.  For historical context, review FY21 targets for TB_STAT (D),
+    including in the Data Pack reflective of data reported in DATIM.
+
+2.  Review and adjust the Estimated Change in Incidence to reflect most
+    reliable projections of TB trends into FY22. This value defaults to
+    0%, though this should not be interpreted as a suggested
+    epidemiological estimate. If the incidence of TB is expected to
+    remain unchanged from FY21, this value should remain at 0%; if the
+    incidence is expected to double, the cell should read "100%".
+
+3.  Review FY22 Targets for TB_STAT (D) and return to step 2 to adjust
+    driving assumptions as necessary. In the case services are planned
+    in FY22 where these were not provided in FY21, you may manually
+    enter FY22 targets in this column.
+
+TB: TB_STAT (N)
+---------------
+
+**TB_STAT (N):** Number of new and relapsed TB cases with documented HIV
+status, during the reporting period.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("TB-TB_STAT (N)-I-K-1-3", "latex")
+
+schema_table("TB-TB_STAT (N)-L-N-2-3", "latex")
+
+schema_table("TB-TB_STAT (N)-O-R-3-3", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("TB-TB_STAT (N)-I-R-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Known HIV Status, Positive** [TB_STAT.N.KnownPos.T]
+
+-   **Newly Tested, Positive** [TB_STAT.N.New.Pos.T]
+
+-   **Newly Tested, Negative** [TB_STAT.N.New.Neg.T]
+
+### Instructions
+
+1.  Review historic data for TB_STAT (N): New Positives from FY21
+    Targets for context.
+
+2.  Review and adjust Targeted TB_STAT Coverage. This defaults to 100%,
+    reflecting that 100% of new and relapsed TB cases know their HIV
+    status, but this rate can be adjusted as needed. Red highlights
+    indicate percentages over 100%; yellow highlights indicate
+    percentages under 100%.
+
+3.  Review FY20 Results for (a) Estimated % TB clients with already
+    Known HIV Positive status, and (b) Estimated Positivity Rate among
+    Newly Tested TB clients.
+
+4.  Review FY22 projections for (a) Estimated % TB clients with already
+    Known HIV Positive status, and (b) Estimated Positivity Rate among
+    Newly Tested TB clients. These data default to remain static from
+    FY20 results trends, but can be adjusted as necessary. Red
+    highlights indicate percentages over 100%; yellow highlights
+    indicate percentages different from FY20 results.
+
+5.  Review modeled targets for Total TB_STAT (N), Known HIV Status,
+    Positive, Newly Tested, Positive, and Newly Tested, Negative, and
+    return to steps 1-4 to adjust driving assumptions as needed. See
+    below for additional information.
+
+### Total TB_STAT (N)
+
+Total TB_STAT (N) targets are modeled as follows, rounding to the
+nearest integer:
+
+\begin{center} ${TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}$ \end{center}
+
+### Known HIV Status, Positive
+
+Known HIV Status, Positive targets are modeled as follows, rounding to
+the nearest integer:
+
+\begin{center} ${TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \ {Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}$ \end{center}
+
+### Newly Tested
+
+Targets for TB_STAT (N): Newly Tested, Positive are modeled as follows,
+rounding to the nearest integer:
+
+\begin{center} ${TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \ \text{Estimated Positivity Rate among Newly Tested}_{t}$ \end{center}
+
+Based on these and targets for Known HIV Status, Positive, targets for
+Newly Tested, Negative are modeled as a remainder, as follows:
+
+\begin{center} ${TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \ {TB\_ STAT.N.New.Pos}_{t}$ \end{center}
+
+**\
+**
+
+TB_STAT_ART: TB_ART
+-------------------
+
+**TB_ART:** Proportion of HIV-positive new and relapsed TB cases on ART
+during TB treatment.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("TB-TB_ART-S-U-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("TB-TB_ART-S-U-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Already on ART** [TB_ART.Already.T]
+
+-   **New on ART** [TB_ART.New.T]
+
+### Instructions
+
+1.  Review Targeted ART Linkage Rate for linkage between TB_STAT (N)
+    Newly Tested, Positive and TB_ART New on ART. This rate is locked in
+    step with ART Linkage Rates set on the Cascade Tab, which default to
+    95%; return to that tab to adjust this rate, though note that this
+    will alter linkage rates across all modalities.
+
+2.  Review modeled targets for Already on ART and New on ART, returning
+    to the previous sections for TB_STAT (D) and TB_STAT (N) to adjust
+    driving assumptions.
+
+### Already on ART
+
+For the purposes of COP21 target setting in the Data Pack, FY22 targets
+for TB_ART Already on ART are set assuming that 100% of those TB clients
+with already known HIV positive status are already on ART. In other
+words, the following holds true in the Data Pack:
+
+\begin{center} ${TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}$ \end{center}
+
+### New on ART
+
+FY22 Targets for TB_ART New on ART are based largely on TB_STAT Newly
+Identified HIV positive TB clients as follows, rounding to the nearest
+integer:
+
+\begin{center} ${TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}$ \end{center}
+
+TB: Testing Rationalization
+---------------------------
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("TB-Testing Rationalization-V-Y-1-2", "latex")
+
+schema_table("TB-Testing Rationalization-Z-AB-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("TB-Testing Rationalization-V-AB-1-1", "html")
+```
+
+### DATIM Import
+
+No data from this section will be imported into DATIM.
+
+### Instructions
+
+1.  Use this section of the TB tab to analyze how TB_STAT Newly Tested,
+    Positives fit within the context of an overall testing strategy. In
+    particular, consider how this modality contributes to total
+    HTS_TST_POS in relation to HTS_INDEX, PMTCT_STAT, Post ANC1 testing,
+    VMMC_CIRC, and all other HTS modalities.
+
+2.  Review any cases where this section is highlighted red, indicating
+    over- or under-allocation of HTS_TST_POS targets across contributing
+    modalities. While these allocation issues may be more the result of
+    a different modality(ies), analysis of these to confirm no
+    adjustments to TB_STAT are warranted may prevent issues and
+    additional work in other sections of the Data Pack.
+
+3.  Return to other tabs of the Data Pack where issues flagged in this
+    section require adjustment of either total HTS_TST_POS targets, or
+    targets via other modalities. Similar Testing Rationalization
+    sections can be also found in each of these other tabs of the Data
+    Pack. You may also use hyperlinks in column headers in this section
+    to quickly navigate to the most relevant section of the Data Pack.
+    
+\elandscape
+
+\newpage

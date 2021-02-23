@@ -1,0 +1,10 @@
+book_filename: "Data-Pack-User-Guide"
+repo: https://github.com/pepfar-datim/DataPackUserGuide
+output_dir: www
+delete_merged_file: false
+language:
+  label:
+    fig: "FIGURE "
+    tab: "TABLE "
+  ui:
+    chapter_name: ""

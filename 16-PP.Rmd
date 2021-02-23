@@ -1,0 +1,54 @@
+
+\blandscape
+
+PP
+==
+
+PP: PP_PREV
+-----------
+
+**PP_PREV:** Number of priority populations (PP) reached with the
+standardized, evidence-based interventions (s) required that are
+designed to promote the adoption of HIV prevention behaviors and service
+uptake.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PP-PP_PREV-F-H-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PP-PP_PREV-F-H-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **PP_PREV (FY22)** [PP_PREV.T]
+
+### Instructions
+
+1.  "FY21 Targets\" column will come prepopulated with FY21 PP_PREV
+    targets as currently reported in DATIM. Countries will review this
+    data, but should not make changes to it. Though this column does not
+    prevent users from making edits, teams must receive approval from
+    their PPM and assigned DUIT Liaison before doing so. Changes made in
+    this column will NOT be reflected in DATIM.
+
+2.  Review and adjust the "Expected Change in PP_PREV services (%)".
+    This defaults to 0%, though this reflects no suggestion of strategy
+    from S/GAC. Adjust these growth rates to reflect intentional,
+    data-driven, strategic programming. Values can be negative or
+    positive percentages in this column, which will decrease or increase
+    the FY22 target for PP_PREV respectively.
+
+3.  "PP_PREV (FY22)" targets will be set as a growth rate function of
+    the FY21 Targets and the Expected change % set in the previous two
+    columns. To make changes to the COP21 target in this column,
+    increase or decrease the Expected Change in PP_PREV services. In the
+    case services are planned in FY22 where these were not provided in
+    FY21, you may manually enter FY22 targets in these columns.
+    
+\elandscape
+
+\newpage

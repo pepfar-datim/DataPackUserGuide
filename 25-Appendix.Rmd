@@ -1,0 +1,29 @@
+
+\blandscape
+
+Appendix
+========
+
+Reference Materials
+-------------------
+
+-   COP/ROP 2021 Guidance:
+    <https://www.state.gov/wp-content/uploads/2020/12/PEPFAR-COP21-Guidance-Final.pdf>
+
+-   MER Data Validation Rules User Guide:
+    <https://datim.zendesk.com/hc/en-us/articles/360055112711-MER-Validation-Guide>
+
+    -   This Document has been designed to communicate all validation
+        rules that the Data Pack, as well as other COP21 documents, will
+        go through in the validation and upload process. A description
+        of the validation rules, their definitions and user actions to
+        correct any flagged errors can be found in this document.
+
+-   Monitoring, Evaluation, and Reporting Indicator Reference Guide
+    (MER) v2.5:
+    <https://datim.zendesk.com/hc/en-us/articles/360000084446-MER-Indicator-Reference-Guides>
+
+-   MER 2.5 Training Videos:
+    <https://datim.zendesk.com/hc/en-us/articles/360051593031-MER-2-5-Training-Videos>
+
+\elandscape

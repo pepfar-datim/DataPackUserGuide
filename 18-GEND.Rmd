@@ -1,0 +1,51 @@
+
+\blandscape
+
+GEND
+====
+
+GEND: GEND_GBV
+--------------
+
+**GEND_GBV:** Number of people receiving post-gender-based violence
+(GBV) clinical care based on the minimum package.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("GEND-GEND_GBV-C-E-1-2", "latex")
+
+schema_table("GEND-GEND_GBV-F-H-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("GEND-GEND_GBV-C-H-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Physical/Emotional Violence (FY22)** [GEND_GBV.PE.T]
+
+-   **Sexual Violence** (FY22) [GEND_GBV.S.T]
+
+### Instructions
+
+1.  For historical context, review FY21 targets for both the
+    Physical/Emotional Violence and Sexual Violence service types, which
+    are pre-populated from DATIM.
+
+2.  Review and adjust the "Expected change in GEND_GBV -
+    Physical/Emotional Violence services (%)" and "Expected change in
+    GEND_GBV - Sexual Violence services (%)" columns. These will default
+    to 0%, though this reflects no suggested strategic direction.
+
+3.  Review FY22 targets for both the "Physical/Emotional Violence" and
+    "Sexual Violence" service types. Each of these is calculated as a
+    function of the expected change rate multiplied by the FY21 target
+    for the related service type. In the case services are planned in
+    FY22 where these were not provided in FY21, you may manually enter
+    FY22 targets in these columns.
+    
+\elandscape
+
+\newpage

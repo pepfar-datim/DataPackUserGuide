@@ -1,0 +1,59 @@
+
+\blandscape
+
+PRIORITIZATION
+==============
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Prioritization-Prioritization-B-D-1-1", "latex")
+
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Prioritization-Prioritization-B-D-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **SNU Prioritization (FY22)** [IMPATT.PRIORITY_SNU.T]
+
+### Instructions
+
+1.  Review the column "SNU Prioritization (FY21)" which will indicate
+    prioritization levels set in COP20 for each PSNU.
+
+2.  Review "SNU Prioritization (FY22)" and adjust as appropriate for
+    COP21 programming. This is currently set to populate with the same
+    level of prioritization that was referenced in step 1. Overwrite
+    this column to set new levels of prioritization based on the list
+    below. This column should only be populated using integers 1-8 and
+    "M", "NA", or "Not a PSNU", as follows:
+
+    a.  1 = \"Scale-up: Saturation\"
+
+    b.  2 = \"Scale-up: Aggressive\"
+
+    c.  4 = \"Sustained\"
+
+    d.  5 = \"Centrally Supported\"
+
+    e.  6 = "Sustained: Commodities"
+
+    f.  7 = \"Attained\"
+
+    g.  8 = \"Not PEPFAR Supported\"
+
+    h.  "M" = \"Military\"
+
+    i.  \"NA\",\"Not a PSNU\" = \"INVALID\"
+
+3.  Review the column "FY22 SNU Prioritization Translation" to ensure
+    the prioritization level for each PSNU is correct. To make any
+    changes, only edit the column "SNU Prioritization (FY22)" from
+    Step 2.
+
+\elandscape
+
+\newpage

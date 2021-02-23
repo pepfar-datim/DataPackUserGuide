@@ -1,0 +1,610 @@
+
+```{r setup, echo=FALSE}
+suppressPackageStartupMessages({
+  library(magrittr)
+  library(dplyr)
+  library(stringr)
+  library(tidyxl)
+  library(data.table)
+  library(tidyr)
+  library(datapackr)
+  library(knitr)
+  library(kableExtra)
+})
+
+knitr::opts_chunk$set(echo = FALSE, fig.align="center")
+
+```
+
+```{r echo=FALSE}
+filepath <- "static/COP21_Data_Pack_Template.xlsx"
+skip <- NULL
+type <- "Data Pack Template"
+cop_year <- datapackr::getCurrentCOPYear()
+
+# Check the filepath is valid. If NA, request via window. ####
+filepath <- datapackr::handshakeFile(path = filepath,
+                                     tool = type)
+
+schema <- tidyxl::xlsx_cells(path = filepath, include_blank_cells = F) %>%
+  dplyr::select(sheet_name = sheet, col, row, character, formula, numeric)
+
+# Add sheet number based on order of occurrence in workbook, rather than A-Z ####
+data.table::setDT(schema)[,sheet_num:=.GRP, by = c("sheet_name")]
+
+# Skip detail on listed sheets. ####
+if (is.null(skip)) {skip = skip_tabs(tool = type, cop_year = cop_year)}
+sheets <- tidyxl::xlsx_sheet_names(filepath)
+verbose_sheets <- sheets[!sheets %in% skip]
+
+schema %<>%
+  dplyr::filter(sheet_name %in% verbose_sheets,
+                row %in% c(3:(headerRow(type, cop_year)+4)))
+
+# Gather and Spread to get formula, value, and indicator_code in separate cols ####
+schema %<>%
+  tidyr::gather(key,value,-sheet_num,-sheet_name,-col,-row) %>%
+  tidyr::unite(new.col, c(key,row)) %>%
+  tidyr::spread(new.col,value) %>%
+  #TODO: How to avoid hardcoding these numbers??
+  dplyr::select(sheet_num, sheet_name, col,
+                col_name = character_3,
+                dataset = character_5,
+                col_type = character_6,
+                value_type = character_7,
+                dataelement_dsd = character_8,
+                dataelement_ta = character_9,
+                categoryoption_specified = character_10,
+                valid_ages = character_11,
+                valid_sexes = character_12,
+                valid_kps = character_13,
+                indicator_code = character_14,
+                formula = formula_15,
+                value = numeric_15)
+
+spectrum_schema <- data.frame(
+  col = c(4:17),
+  col_name = c("psnu", "psnu_uid", "area_id",	"indicator_code",
+               "dataelement_uid", "age", "age_uid", "sex",
+               "sex_uid", "calendar_quarter", "value", "age_sex_rse",
+               "district_rse", "ID"),
+  col_type = c(NA, NA, NA, NA,
+               NA, NA, NA, NA,
+               NA, NA, NA, NA,
+               NA, NA),
+  value_type = c("string", "string", "string", "string",
+                 "string", "string", "string", "string",
+                 "string", "string", "string", "string",
+                 "integer", "string"),
+  prepopulated = c("N", "N", "N", "N", "N", "N", "N", "N",
+                   "N", "N", "N", "N", "N", "N"),
+  enter_or_modify = c("Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y",
+             "Y", "Y", "Y", "Y", "Y", "N"),
+  calculated = c("N", "N", "N", "N", "N", "N", "N", "N",
+                 "N", "N", "N", "N", "N", "Y"),
+  linked = c("N", "N", "N", "N", "N", "N", "N", "N",
+             "N", "N", "N", "N", "Y", "N")
+  # prepopulated = c("X", "X", "X", "X", "X", "X", "X", "X",
+  #                  "X", "X", "X", "X", "X", "X"),
+  # enter_or_modify = c("✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓",
+  #            "✓", "✓", "✓", "✓", "✓", "X"),
+  # calculated = c("X", "X", "X", "X", "X", "X", "X", "X",
+  #                "X", "X", "X", "X", "X", "✓"),
+  # linked = c("X", "X", "X", "X", "X", "X", "X", "X",
+  #            "X", "X", "X", "X", "✓", "X")
+)
+
+```
+
+```{r echo=FALSE}
+schema_table <- function(table_reference, knit_type){
+  
+  inputs <- stringr::str_split(table_reference, "-")
+
+  tab <- inputs[[1]][1]
+  section <- inputs[[1]][2]
+  col_start <- inputs[[1]][3] %>% openxlsx::convertFromExcelRef(.)
+  col_end <- inputs[[1]][4] %>% openxlsx::convertFromExcelRef(.)
+  part <- inputs[[1]][5]
+  total <- inputs[[1]][6]
+
+  if (tab == "Spectrum") {
+    t <- spectrum_schema %>%
+      dplyr::filter(col %in% c(col_start:col_end)) %>%
+      dplyr::mutate(col = openxlsx::int2col(col)) %>%
+      dplyr::select(col,
+                    "Column Name" = col_name,
+                    "Column Type?" = col_type,
+                    "What type of data?" = value_type,
+                    "Prepopulated data?" = prepopulated,
+                    "Enter or modify data?" = enter_or_modify,
+                    "Calculated column?" = calculated,
+                    "Linked column?" = linked) %>%
+      as.data.frame() %>%
+      `row.names<-`(.[, 1]) %>%
+      dplyr::select(-1) %>%
+      t()
+  } else {
+    t <- schema %>%
+      dplyr::filter(sheet_name == tab,
+                    col %in% c(col_start:col_end)) %>%
+      dplyr::mutate(col = openxlsx::int2col(col),
+                    prepopulated = dplyr::if_else(col_type == "past", "Y", "N"), #"✓", "X"),
+                    enter_or_modify =
+                      dplyr::case_when(
+                        col_type == "past" ~ "?",
+                        col %in% c(8:9) ~ "Y", #"✓",
+                        TRUE ~ "N" #"X"
+                      ),
+                    calculated = dplyr::if_else(col_type == "past", "N", "Y"), #"X", "✓"),
+                    linked = dplyr::if_else(col == 8, "Y", "N")) %>% #"✓", "X")) %>%
+      dplyr::select(col,
+                    "Column Name" = col_name,
+                    "UID" = indicator_code,
+                    "Column Type?" = col_type,
+                    "What type of data?" = value_type,
+                    "Prepopulated data?" = prepopulated,
+                    "Enter or modify data?" = enter_or_modify,
+                    "Calculated column?" = calculated,
+                    "Linked column?" = linked) %>%
+      as.data.frame() %>%
+      `row.names<-`(.[, 1]) %>%
+      dplyr::select(-1) %>%
+      t()
+  }
+  
+  if (knit_type == "latex") {
+    if (tab == "Spectrum") {
+      t %<>%
+        knitr::kable(
+          format = "latex",
+          escape = TRUE,
+          booktabs = TRUE
+        )  %>%
+        kableExtra::kable_styling(font_size = 12,
+                                  latex_options="scale_down") %>%
+        kableExtra::column_spec(2:(col_end-col_start+2),
+                                width=paste0(toString(7.5/(col_end-col_start+1)),
+                                             "in")) %>%
+        kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
+    } else {
+         t %<>%
+      knitr::kable(
+        format = "latex",
+        escape = TRUE,
+        booktabs = TRUE
+      ) %>%
+      kableExtra::kable_styling(font_size = 12,
+                                latex_options="scale_down") %>%
+      kableExtra::column_spec(2:(col_end-col_start+2),
+                              width=paste0(toString(7.5/(col_end-col_start+1)),
+                                           "in")) %>%
+      kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
+    }
+  } else {
+    if (tab == "Spectrum") {
+      t %<>%
+        knitr::kable(
+          format = "html",
+          escape = FALSE,
+          booktabs = TRUE
+        ) %>%
+        kableExtra::kable_styling(font_size = 12) %>%
+        kableExtra::column_spec(2:(col_end-col_start+2),
+                                width=paste0(toString(7.5/(col_end-col_start+1)),
+                                             "in")) %>%
+        kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
+        kableExtra::row_spec(1:7, extra_css = "border:1px solid lightgrey;") %>%
+        kableExtra::scroll_box(width = "100%")
+    } else {
+      t %<>%
+        knitr::kable(
+          format = "html",
+          escape = FALSE,
+          booktabs = TRUE
+        ) %>%
+        kableExtra::kable_styling(font_size = 12) %>%
+        kableExtra::column_spec(2:(col_end-col_start+2),
+                                width=paste0(toString(7.5/(col_end-col_start+1)),
+                                             "in")) %>%
+        kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
+        kableExtra::row_spec(1:8, extra_css = "border:1px solid lightgrey;") %>%
+        kableExtra::scroll_box(width = "100%")
+    }
+  }
+
+  return(t)
+}
+
+```
+
+
+COP21 Data Pack Overview
+========================
+
+Welcome to the COP21 Data Pack User Manual. The following pages aim to
+provide users of the Data Pack with the information necessary to
+successfully complete each tab of the Data Pack tool and determine
+accurate, data-driven targets. For the past several years, the Data Pack
+has a been a key element of PEPFAR COP planning, and for COP21 serves a
+critical function in assisting PEPFAR Country Teams in setting targets
+in line with the UNAIDS 95-95-95 goals for Testing, Care & Treatment,
+PMTCT, VMMC, OVC, and other program areas. Please note that the COP21
+Data Pack is mandatory and must be used to set targets for COP21. For
+COP21, all indicators included in the Data Pack are **MER 2.5**
+indicators. For further information on the MER 2.5 indicators, please go
+to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
+
+About the Data Pack
+-------------------
+
+The COP21 Data Pack supports analysis for all targets by Priority
+Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
+This tool supports calculation of targets based on expected treatment
+coverage rates by type of PSNU and population prioritization:
+
+-   Attained
+
+-   Scale-up: Aggressive
+
+-   Scale-up: Saturation
+
+-   Sustained
+
+Prioritizations for PSNUs are established by the OU based on HIV
+prevalence and treatment coverage, in addition to other considerations.
+These determine for a given PSNU programmatically what HIV treatment and
+prevention services should be planned and informs both the overall
+strategy and the targets. Teams must review and revise their PSNU
+prioritization levels for COP21. The COP21 Data Pack assumes a 'test and
+start' treatment platform and will develop targets for achieving 95%
+coverage in Scale up: Aggressive and Scale-up: Saturation PSNUs; all
+other targets in the Data Pack are based on the treatment targets,
+insofar as the treatment targets are the main focus of reaching epidemic
+control, and therefore relate to both testing and prevention targets.
+
+The Data Pack will allow PEPFAR teams to use country specific
+programmatic assumptions to develop the optimum targets by PSNU along
+the program cascades to ensure the necessary number of PLHIV are
+diagnosed, linked, and start treatment. The Data Pack does not
+necessarily calculate targets for every indicator, but it has space for
+teams to enter targets for all indicators and thus can be used to record
+agreed-upon COP targets, even for non-calculated indicators.
+
+**Teams must not modify the structure of the COP21 Data Pack in any
+way**. OGAC has developed a process by which targets can be directly
+imported into DATIM via the Data Pack Site Tool in order to generate
+targets. However, this is *only* possible for teams that do not in any
+way alter the structure or format of the Data Pack. Additional details
+are provided in COP Guidance and will be available through COP webinars.
+
+What's New? 
+-----------
+
+The COP21 Data Pack is largely the same as the COP20 Data Pack. However,
+please note the following updates that have been implemented as a result
+of multiple feedback sessions with various country teams that had been
+identified by the PRIME team. These changes revolve around workflow,
+ease of target setting, and linkage to the COP guidance based on
+different aspects of the Data Pack that worked well and others that did
+not during COP20 target stetting:
+
+-   The EPI Cascade and EPI PMTCT tabs have been merged into the Cascade
+    and PMTCT tabs respectively.
+
+-   Targets will be set at the PSNU level prior to looking into age/sex
+    disaggregates.
+
+-   As in previous years, PSNU-level targets will be distributed across
+    IMs in the PSNUxIM tab. When users first download the Data Pack,
+    this tab will be blank. When the country team is ready to begin this
+    process, they must upload their preliminary Data Pack to the
+    self-service validation app, which will then return a copy of the
+    Data Pack with the PSNUxIM tab populated.
+
+
+Data Flow and Review Process to COP21 Submission
+------------------------------------------------
+
+The results from APR20 have been taken from DATIM and used to populate
+the Data Pack. In turn, the Data Pack targets will produce FY21 targets
+that will be subsequently submitted through DATIM after COP21 has been
+finalized and the PSNU level data entered into the Strategic Direction
+Summary (SDS) tables, where appropriate (Target related data).
+
+**_Data Pack Review_**
+
+|                                           | Single OU Track: Group 1 | Single OU Track: Group 2 | Single OU Track: Group 3 | Regional/Country Pair Track |
+| ----------------------------------------- |:------------------------:|:------------------------:|:------------------------:|:---------------------------:|
+| 1st Draft Tool Submission                 | Feb 16                   | Feb 23                   | Mar 2                    | Feb 9                       |
+| COP Meeting                               | Feb 22-26                | Mar 1-5                  | Mar 8-12                 | Feb 16 - Mar 12             |
+| Mid-point Tool check                      | Feb 24                   | Mar 3                    | Mar 10                   | Mar 2                       |
+| Tools Due for Final Review                | Feb 26                   | Mar 5                    | Mar 12                   | Mar 12                      |
+| Additional Touchpoints/Reviews            |                          |                          |                          | Rolling Each Monday         |
+| Tools Submitted for Upload to DATIM/FI-NG | Mar 8                    | Mar 15                   | Mar 22                   | Mar 22                      |
+| COP21 Submission Due                      | Mar 15                   | Mar 22                   | Mar 29                   | Mar 29                      |
+
+**Submission Process**
+
+For each of the below submissions, the following process will occur:
+
+-   Country Teamspre-validates their Data Pack submission in the Data 
+    Pack Self-Service App (available at datapack.datim.org).
+
+-   Country Team uses Data Pack Self-Service App to sync data with 
+    PAW Dossiers.
+
+-   Country Team saves Data Pack to SharePoint under the OU’s HQ 
+    Collaboration > COP 2021 - FY 2022 > Guidance, Tools, and Resources 
+    folder.
+
+-   Country Team submits a ticket in ZenDesk that includes:
+
+    - A link to the Data Pack file saved in SharePoint
+    - Confirmation that this file has been pre-validated in the Data 
+      Pack Self-Service App
+    - Confirmation that this file has been sent to PAW via the Data 
+      Pack Self-Service App
+    - In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency 
+      members that should be aware of ongoing review and discussions.
+
+-   Once this ticket is received, the Data Pack Support Team will 
+    confirm all the above has occurred and send additional instructions 
+    as needed
+
+-   The PPM reviews the ticket/email thread and confirms the correct 
+    individuals have all been copied.
+
+-   The assigned PPM and the assigned DUIT Liaison use both the Data 
+    Pack Self-Service App and the PAW COP Dossiers to validate and 
+    review the Data Pack, noting any feedback in the ticket/email thread.
+
+-   The assigned Chair should also review all feedback on the ticket 
+    thread and any additional comments as needed.
+
+As is possible, all the above should occur within a 24 hour turnaround 
+from the initial submission of a Data Pack from a Country Team.
+While this process will remain the same for each submission for review, 
+the content of each review will differ, as explained below.
+Once a Zendesk ticket and email thread has been started with an initial 
+Data Pack submission, all future Data Pack submissions related to the same 
+Country should use the same thread/ticket to allow for easy coordination.
+
+**Submission 1**
+
+-   Validate high-level strategic planning direction aligns with the 
+    vision set by the PLL.
+
+-   Highlight any areas for technical assistance.
+
+-   Ensure construction of Data Pack has not been tampered with.
+
+For this stage of review, it is not expected that your PSNUxIM tab be 
+completed or even populated. At this stage, the focus should be on 
+ensuring the high-level cascade is strategically aligned, and only 
+afterward proceeding to allocating targets to IMs. Note that this is 
+also partly to avoid Excel performance issues that may occur with the 
+addition of more data to the PSNUxIM tab.
+
+**Submission 2**
+
+-   Confirm resolution of any issues flagged during your first submission.
+
+-   Confirm no discrepancies between targets modeled in your submitted 
+    Data Pack and any COP Meeting presentations to date or other high-level 
+    discussions had with PPMs and Chairs.
+
+-   Review the PSNUxIM tab and address issues related to IM and DSD-TA 
+    allocation, and deduplication.
+
+**Submission 3**
+
+-   Again confirm Data Pack alignment with all high-level decisions and 
+    any final presentations given by the Country Team.
+
+-   Confirm resolution of any issues flagged during the second submission.
+
+-   Track down and resolve any last bugs and issues in seen in the Data Pack
+
+-   Confirm the Data Pack is as near final as possible
+
+**Final Submission**
+
+-   Confirm all targets modeled in the Data Pack are ready for submission 
+    to DATIM.
+
+-   Secure Interagency Government sign-off for import of your submitted Data 
+    Pack to DATIM.
+
+-   Note authority to waive any lingering validation issues flagged by the 
+    Data Pack Self-Service App.
+
+Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk 
+thread/ticket, the Data Pack Support Team will move forward with uploading 
+your submitted Data Pack to DATIM, then note completion of this here on 
+this ticket. Once this is done, it is recommended that you review your data 
+in DATIM to ensure alignment between DATIM and your Data Pack.
+
+
+Data Pack SharePoint Location
+-----------------------------
+
+The Data Pack will be posted on PEPFAR SharePoint:
+[www.pepfar.net](http://www.pepfar.net).
+
+-   The file path will be OU \> Country Name \> HQ Collaboration \> COP
+    2021 -- FY2022 \> Guidance, Tools, and Resources.
+
+-   The file name will be "Datapack_CountryName_20210108".
+
+Tab Categories
+--------------
+
+Each Data Pack will start with 22 tabs organized in the order presented
+below. Upon downloading the Data Pack, the PSNUxIM tab will appear as a
+blank sheet, but will be generated by the self-service validation app
+after you submit your preliminary Data Pack.
+
+-   Introduction
+
+    -   Home
+
+    -   Summary
+
+-   Host Country Planning Data
+
+    -   Spectrum
+
+    -   Prioritization
+
+-   DATIM MER 2.5 Indicator Data Elements
+
+    -   Cascade
+
+    -   PMTCT
+
+    -   EID
+
+    -   TB
+
+    -   VMMC
+
+    -   HTS
+
+    -   CXCA
+
+    -   HTS_RECENT
+
+    -   TX_TB_PREV
+
+    -   PP
+
+    -   OVC
+
+    -   GEND
+
+    -   AGYW
+
+    -   PrEP
+
+    -   KP
+
+    -   KP Validation
+
+    -   KP_MAT
+
+-   Mechanism Mapping
+
+    -   PSNU x IM
+
+\newpage
+
+\blandscape
+
+How Does Everything Connect?
+----------------------------
+
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image3.png")
+```
+
+\begin{center}
+
+\includegraphics[width=9in]{./images/image3.png}
+
+\end{center}
+
+\newpage
+
+Elements of a Tab
+-----------------
+
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image4.png")
+```
+
+\begin{center}
+
+\includegraphics[width=9in]{./images/image4.png}
+
+\end{center}
+
+\newpage
+
+How to Navigate a Data Pack Tab
+-------------------------------
+
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image5.png")
+```
+
+\begin{center}
+
+\includegraphics[width=9in]{./images/image5.png}
+
+\end{center}
+
+\elandscape
+
+\newpage
+
+**ENTERING DATA IN THE CORRECT SECTION**
+
+In the tabs for the DATIM Data Elements, sections may either have data
+prepopulated from DATIM or the user will enter data into that column.
+Each section of the guide will list what columns users can expect to
+have data prepopulated and / or where they can enter data themselves.
+
+**ENTERING DATA IN THE WRONG SECTION**
+
+If you enter data into a cell that you are not supposed to enter data
+into, you will receive the following message box with corrective action
+suggestions as well.
+
+**Example:**
+
+
+```{r echo=FALSE, out.width = '50%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image9.png")
+```
+
+\begin{center}
+
+\includegraphics[width=4.3in]{./images/image9.png}
+
+\end{center}
+
+Adjustments to Historic Targets and Results
+-------------------------------------------
+
+Throughout the Data Pack, historic targets and results have been
+provided for reference and often to drive target modeling algorithms.
+If, in the process of reviewing these historic data, issues with the
+data are discovered that may need to be addressed in DATIM, follow the
+below procedure:
+
+1.  Raise specific issues with historic data to your PPM and DUIT
+    Liaison. Determine together whether any issue identified requires
+    updating values in DATIM.
+
+2.  If it is the case that DATIM values should be updated, follow the
+    usual process for OPU Target changes, requesting all necessary
+    approvals to initiate and expedite this process during COP.
+
+3.  Once changes are processed in DATIM, you can either request a new
+    Data Pack with updated data from DATIM, or copy new values into the
+    related column of the Data Pack yourself. For either of these
+    routes, reach out to the Data Pack Systems Team via Zendesk for
+    support.
+
+4.  It may also be the case that together with your PPM and DUIT Liaison
+    you decide that changes to historic values are not necessary in
+    DATIM, but still necessary in the Data Pack. This is an
+    extraordinary circumstance and must have approval from DUIT Liaisons
+    to allow. If approved, you may make changes directly in the related
+    column of the Data Pack.
+
+\newpage

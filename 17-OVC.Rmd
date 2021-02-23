@@ -1,0 +1,179 @@
+
+\blandscape
+
+OVC
+===
+
+OVC: OVC_SERV
+-------------
+
+**OVC_SERV:** Number of beneficiaries served by PEPFAR OVC programs for
+children and families affected by HIV.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("OVC-OVC_SERV-F-I-1-4", "latex")
+
+schema_table("OVC-OVC_SERV-J-M-2-4", "latex")
+
+schema_table("OVC-OVC_SERV-N-P-3-4", "latex")
+
+schema_table("OVC-OVC_SERV-Q-S-4-4", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("OVC-OVC_SERV-F-S-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **DREAMS** [OVC_SERV.DREAMS.T]
+
+-   **Preventive** [OVC_SERV.Prev.T]
+
+-   **Comprehensive -- Graduated** [OVC_SERV.Grad.T]
+
+-   **Comprehensive -- Active** [OVC_SERV.Active.T]
+
+### Instructions
+
+1.  For historical context, review column "Host Country Est. PLHIV
+    (FY21)", which will pull from the Cascade tab.
+
+2.  Review the "DREAMS SNU?" column, which will indicate whether an SNU
+    is actively implementing DREAMS activities by using "Y" for Yes and
+    "N" for No. This column will come prepopulated based on the most
+    up-to-date, authoritative list of DREAMS SNUs as centrally
+    maintained by PEPFAR O/GAC. To add or remove any SNUs on this list
+    during the COP21 process, notify your assigned PPM, as well as
+    DREAMS liaisons on the PEPFAR Program Quality Team to ensure these
+    changes are reflected in your Data Pack. After communicating and
+    documenting these updates centrally, the Data Pack Self-Service App
+    will alert to an update in the DREAMS SNU list and provide an
+    updated Data Pack with updated data in this "DREAMS SNU?" column.
+    Note that in the interim, you may manually overwrite or alter flags
+    in this column, though any discrepancies between this column in the
+    Data Pack and the centrally-maintained list of DREAMS SNUs will be
+    flagged in the Data Pack Self-Service App and must be resolved prior
+    to COP Approval and DATIM import.
+
+3.  Review columns "FY20 Results" and "FY21 Targets" which will come
+    pre-populated with results and targets from DATIM and will serve as
+    a baseline for COP21 target calculations.
+
+4.  Review the column "Projected Net Change in OVC_SERV (%)", which will
+    be preset with a default rate of 0%. Alter this percent value to
+    either increase or decrease the OVC targets for COP21. Changes in
+    this column will affect the overall OVC_SERV targets reflected in
+    column "Total OVC_SERV".
+
+5.  Review and adjust the allocation of total OVC_SERV across DREAMS,
+    Preventive, and Comprehensive:
+
+    a.  For DREAMS, allocations are only allowable where a district is
+        denoted as a DREAMS SNU --- to adjust, return to step 2 --- and
+        for females ages 10 to 17.
+
+    b.  For Preventive services, allocations are only allowable for
+        adolescents ages 5 to 14.
+
+    c.  All remaining OVC_SERV is automatically allocated to the
+        Comprehensive service category. Red highlighting in the column,
+        Comprehensive % of Total OVC_SERV, indicates cases where
+        percentages are over 100% or less 0%.
+
+6.  Review and adjust the column "Targeted Graduation Rate among
+    Comprehensive (%)", which is preset at a default value of 20%, per
+    guidance from O/GAC. Adjust these values as necessary to align with
+    the COP 2021 OVC strategy. Graduation rates can be set at any value
+    between 0-100% but should not be a negative value. Red highlights
+    indicate percentages over 100% or less than 0%; yellow highlights
+    indicate graduation rates less than 20%.
+
+7.  Review modeled targets for "Total OVC_SERV", which are calculated by
+    applying the net rate of change decided in step 4 by the FY21 target
+    referenced in step 3. In the case services are planned in FY22 where
+    these were not provided in FY21, you may manually enter FY22 targets
+    in this column.
+
+8.  Review the number of OVC beneficiaries that are targeted by the
+    DREAMS program COP21 implementation. This target is calculated by
+    multiplying the total OVC_SERV target by the "DREAMS % of Total
+    OVC_SERV (%)" set in step 5. This formula is also dependent on the
+    input into column "DREAMS SNU?", which must be marked with a "Y" to
+    indicate the SNU is in fact a DREAMS SNU in order to set this target
+    (see step 2).
+
+9.  Review the number of OVC beneficiaries that are targeted by the OVC
+    Preventive program COP21 implementation. This target is calculated
+    by multiplying the total OVC_SERV target by the "Preventive % of
+    Total OVC_SERV (%)", set in step 5.
+
+10. Review the number of OVC beneficiaries that are targeted for
+    graduation from OVC Comprehensive services during COP21
+    implementation. This target is a calculated by multiplying the Total
+    OVC_SERV target by the "Comprehensive % of Total OVC_SERV (%)" and
+    "Targeted Graduation Rate among Comprehensive (%)".
+
+11. Review the targeted number of Active OVC Comprehensive beneficiaries
+    for COP21. The Active OVC Comprehensive target is derived in the
+    Data Pack as a remainder of Total OVC_SERV to be served via
+    Comprehensive services, less those captured in the "Comprehensive -
+    Graduated" target. To make changes to "Comprehensive - Active"
+    targets in the Data Pack, adjust the proportion in the
+    "Comprehensive % of Total OVC_SERV (%)" column, as set in step 5.
+
+NOTE: There is no denominator for **OVC_SERV**
+
+NOTE: Changing the values here will lead to downstream changes in
+**OVC_HIVSTAT** column L.
+
+NOTE: Column L Target % Graduation Rate **does not** include Exited or
+Transferred Out in Denominator.
+
+***\
+***
+
+OVC: OVC_HIVSTAT
+----------------
+
+**OVC_HIVSTAT:** Number of orphans and vulnerable children (\<18 years
+old) with HIV status reported, disaggregated by HIV status.
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **\# OVC with reported HIV Status** [OVC_HIVSTAT.T] -- Note that
+    this data will be aggregated across age group, resulting in one
+    value per PSNU.
+
+### Instructions
+
+1.  Review the column "% OVC (\<18) with reported HIV Status (%)" which
+    is prepopulated at 100% by default, representing a goal of having
+    100% of those served via OVC Comprehensive services under 18 years
+    old with reported HIV status. Adjust these values to either increase
+    or decrease the COP21 target value in column "\# OVC with reported
+    HIV status". Red highlights indicate percentages greater than 100%,
+    or less than 0%; yellow highlighting indicates percentages changed
+    to less than 100%.
+
+2.  Review the target value in column ""\# OVC with reported HIV
+    status", which is calculated by multiplying those allocated to the
+    OVC_SERV Comprehensive services disaggregates, whether Active or
+    Graduated, and also less than 18 years of age. To adjust these
+    targets, return to step 1.
+    
+\elandscape
+
+\newpage

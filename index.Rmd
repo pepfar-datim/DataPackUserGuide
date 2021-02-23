@@ -1,0 +1,16 @@
+---
+title: "PEPFAR COP20 Data Pack User Guide & Data Dictionary"
+author:
+- U.S. Department of State
+- U.S. Office of the Global AIDS Coordinator and Health Diplomacy (S/GAC)
+date: "`r Sys.Date()`"
+geometry: margin=1in
+monofontoptions: Scale=0.8
+site: bookdown::bookdown_site
+url: https\://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/
+github-repo: pepfar-datim/DataPackUserGuide
+cover-image: images/US-PEPFAR-Logo.png
+always_allow_html: yes
+colorlinks: yes
+classoption: openany
+---

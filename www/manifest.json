@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "3.6.3",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": "site",
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "01-COP21-Data-Pack-Overview.html": {
+      "checksum": "232bb091a754c230107271ed199f678f"
+    },
+    "02-How-To-Use-The-User-Manual.html": {
+      "checksum": "4fde70a6e94c70d78aaf9d23f343c79c"
+    },
+    "03-How-To-Fill-Out-The-Data-Pack.html": {
+      "checksum": "546095d7ac570d43b09a6ec08689da7c"
+    },
+    "04-Summary.html": {
+      "checksum": "e0d5a487f50cfa0f1b1dfb3492718284"
+    },
+    "05-Spectrum.html": {
+      "checksum": "b344bff9d1cecd4b71bc0affeac068a8"
+    },
+    "06-Prioritization.html": {
+      "checksum": "d0a471305cc3142a4217cf03b8a378ee"
+    },
+    "07-Cascade.html": {
+      "checksum": "e6801d0525d9275cc6e08e67809a40da"
+    },
+    "08-PMTCT.html": {
+      "checksum": "920f97096965967ea3551817b656ee70"
+    },
+    "09-EID.html": {
+      "checksum": "4ca3e3b0af68b253bc4f1a6f49b3dbdc"
+    },
+    "10-TB.html": {
+      "checksum": "414f75d1ccc717c5ea2dac68cfa02d73"
+    },
+    "11-VMMC.html": {
+      "checksum": "ecea296e343710561862bd8cfbe6dd4d"
+    },
+    "12-HTS.html": {
+      "checksum": "5e0af8b007aac780cdb93825db5a2366"
+    },
+    "13-CXCA.html": {
+      "checksum": "6de50edfc41d92cff9c1bc35e65ccd19"
+    },
+    "14-HTS_RECENT.html": {
+      "checksum": "bbdc3d6265b4548a1dc80345561e4170"
+    },
+    "15-TX_TB_PREV.html": {
+      "checksum": "1c204edc47c2741cd6bffc44fd9e2286"
+    },
+    "16-PP.html": {
+      "checksum": "6e568cc4ff4b6d2dbaa3756f6c85ad2c"
+    },
+    "17-OVC.html": {
+      "checksum": "81456b4b133894cc6b0e29387eb7d39e"
+    },
+    "18-GEND.html": {
+      "checksum": "2015ac50acfcc0b9fd04be43a41e179d"
+    },
+    "19-AGYW.html": {
+      "checksum": "f3a65abed7d415f0d6f0a6c6980cb85d"
+    },
+    "20-PrEP.html": {
+      "checksum": "bdae311cab01801f6a6e1f36c9b97036"
+    },
+    "21-KP.html": {
+      "checksum": "0f9f3325f58362bdc5c5f74fecc30f59"
+    },
+    "22-KP-Validation.html": {
+      "checksum": "936b5f0028f42d2a0e321b0fd89ebaea"
+    },
+    "23-KP_MAT.html": {
+      "checksum": "5fcab70c2fedb7ee1128b51ea5266a72"
+    },
+    "24-PSNUxIM.html": {
+      "checksum": "1eadacf67d530d9e1cc924a3f37cb109"
+    },
+    "25-Appendix.html": {
+      "checksum": "a1606dcacfb608ba3bd3bc1ec18e5593"
+    },
+    "book_assets/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf": {
+      "checksum": "b06871f281fee6b241d60582ae9369b9"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-bookdown.css": {
+      "checksum": "44444d0f3eb8064760ba1976976a7101"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-clipboard.css": {
+      "checksum": "e4a3bdc1e3d5590f47cbac67976f3961"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-fontsettings.css": {
+      "checksum": "76af8c23a8138a4b66aa6959ca5c3a8e"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-highlight.css": {
+      "checksum": "467fbe4b6b5a4b88fdd75c463f8626ec"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-search.css": {
+      "checksum": "0d7a6bb6a50e00c7358cf61027f099f0"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-table.css": {
+      "checksum": "8cb82f94ce1446fa4bafe7a3933e6c65"
+    },
+    "book_assets/gitbook-2.6.7/css/style.css": {
+      "checksum": "11f13a161c95d0e8257d673dc27f9251"
+    },
+    "book_assets/gitbook-2.6.7/js/app.min.js": {
+      "checksum": "395a8093ce46450cabfaa545a0705a3b"
+    },
+    "book_assets/gitbook-2.6.7/js/clipboard.min.js": {
+      "checksum": "be72101c8c16ba95fd8b69760d5ebc56"
+    },
+    "book_assets/gitbook-2.6.7/js/jquery.highlight.js": {
+      "checksum": "999424d32e03b9857098d2c7f53928c2"
+    },
+    "book_assets/gitbook-2.6.7/js/lunr.js": {
+      "checksum": "fbc747c6143aabb39b0ea7c0524b7057"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-bookdown.js": {
+      "checksum": "36b5487b9c1020c0de1352b8f26b8a8e"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-clipboard.js": {
+      "checksum": "a30f95fcd3fde10637ace1fb691b7475"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-fontsettings.js": {
+      "checksum": "4f57689705fdfa3eabfb7b7b92614f33"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-search.js": {
+      "checksum": "2d4c4d47ba34946b8ebcbe41aa522756"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-sharing.js": {
+      "checksum": "799a983ef24c1cbe315d020a65aa1644"
+    },
+    "book_assets/header-attrs-2.6/header-attrs.js": {
+      "checksum": "9c32b58ed5fd8fe2efbd5bd7023cdef0"
+    },
+    "book_assets/jquery-2.2.3/jquery.min.js": {
+      "checksum": "33cabfa15c1060aaa3d207c653afb1ee"
+    },
+    "book_assets/kePrint-0.0.1/kePrint.js": {
+      "checksum": "03b791fcaee0a40c261c3c14f3d85d27"
+    },
+    "book_assets/lightable-0.0.1/lightable.css": {
+      "checksum": "25547ce4d44910ea8f377212d34397fa"
+    },
+    "css/style.css": {
+      "checksum": "19f0b33dc27d4f748874d2cde5cea5bc"
+    },
+    "Data-Pack-User-Guide.pdf": {
+      "checksum": "ea4baff1b88aa62b064d06f4115d5749"
+    },
+    "images/image12.png": {
+      "checksum": "c4ebf79e5572f4b9246899815b7ec077"
+    },
+    "images/image13.png": {
+      "checksum": "bf7376593073247ec3faacdeb8d23efb"
+    },
+    "images/image14.png": {
+      "checksum": "4bd47d5b1b88b37719838b8b2afce16c"
+    },
+    "images/image15.png": {
+      "checksum": "d2d42e36d82e52e91e5f2c4d032248da"
+    },
+    "images/image2.png": {
+      "checksum": "2ce6bcd4e456b38323ca87c9603d4ad6"
+    },
+    "images/image3.png": {
+      "checksum": "a98d5bcbfee43df26153505d2e031436"
+    },
+    "images/image4.png": {
+      "checksum": "9b5de9fe2314ade37571cd2c2656ce34"
+    },
+    "images/image5.png": {
+      "checksum": "55caa2cb7786894d8bab04fc6cd183c8"
+    },
+    "images/image9.png": {
+      "checksum": "1c38c0d314109ddb132230ba1706748a"
+    },
+    "images/US-PEPFAR-Logo.png": {
+      "checksum": "95e9474f14a840d7f8f885b80a1dd043"
+    },
+    "index.html": {
+      "checksum": "8736ec76c6721b2ef90cbb47829f373b"
+    },
+    "reference-keys.txt": {
+      "checksum": "5d679060dbec4d977205021f4478f8b9"
+    },
+    "search_index.json": {
+      "checksum": "257efd01b52dc3939594209da922a5cb"
+    }
+  },
+  "users": null
+}

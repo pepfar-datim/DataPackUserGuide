@@ -1,6 +1,6 @@
 cop21-data-pack-overview
 about-the-data-pack
-whats-new
+highlighted-changes-from-cop20-to-cop21
 data-flow-and-review-process-to-cop21-submission
 data-pack-sharepoint-location
 tab-categories
@@ -8,6 +8,9 @@ how-does-everything-connect
 elements-of-a-tab
 how-to-navigate-a-data-pack-tab
 adjustments-to-historic-targets-and-results
+release-notes
+whats-new
+frequently-asked-questions
 how-to-use-the-user-manual
 key-column-highlights
 how-to-fill-out-the-data-pack

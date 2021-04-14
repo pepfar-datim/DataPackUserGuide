@@ -1,0 +1,13 @@
+name: data_pack_user_guide
+title: Data Pack User Guide
+username: cnemarich
+account: cnemarich
+server: rstudio-connect.testing.ap.datim.org
+hostUrl: https://rstudio-connect.testing.ap.datim.org/__api__
+appId: 26
+bundleId: 115
+url: https://rstudio-connect.testing.ap.datim.org:443/content/26/
+when: 1611190934.26001
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .log|_bookdown.yml|_output.yml|_render.R|01-How-To-Use-The-User-Manual.Rmd|02-How-To-Fill-Out-The-Data-Pack.Rmd|03-Summary.Rmd|04-Spectrum.Rmd|05-Prioritization.Rmd|06-Cascade.Rmd|07-PMTCT.Rmd|08-EID.Rmd|09-TB.Rmd|10-VMMC.Rmd|11-HTS.Rmd|12-CXCA.Rmd|13-HTS_RECENT.Rmd|14-TX_TB_PREV.Rmd|15-PP.Rmd|16-OVC.Rmd|17-GEND.Rmd|18-AGYW.Rmd|19-PrEP.Rmd|20-KP.Rmd|21-KP-Validation.Rmd|22-KP_MAT.Rmd|23-PSNUxIM.Rmd|24-Appendix.Rmd|index.Rmd|README.md|css/style.css|latex/before_body.tex|latex/header.tex|static/conversion_script.R|static/COP21 Data Pack User Guide.docx|static/COP21_Data_Pack_Template.xlsx|static/staff_list.csv|images

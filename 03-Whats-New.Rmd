@@ -2,6 +2,9 @@
 What's New?
 ===========
 
-* In the HTS Tab there is an error within the formula that helps calculate “TB_STAT: New Positive (%)” in column Z of the HTS_TST - Distribution of Positive Tests section. This formula is currently referencing “HTS_TST Post ANC1 New Positives (FY22)” from column J, but needs to be referencing “TB_STAT New Positives (FY22)” from column K. To make this simple change, please adjust the formula from “=IF(OR(SUM(\$G15)=0,SUM(\$J15)=0),"",SUM(\$J15)/SUM(\$G15))” and change the reference of column J to column K so that it reads “=IF(OR(SUM(\$G15)=0,SUM(\$K15)=0),"",SUM(\$K15)/SUM(\$G15))”. 
+* In the HTS Tab there is an error within the formula that helps calculate “TB_STAT: New Positive (%)” in column Z of the HTS_TST - Distribution of Positive Tests section. This formula is currently referencing “HTS_TST Post ANC1 New Positives (FY22)” from column J, but needs to be referencing “TB_STAT New Positives (FY22)” from column K. To make this simple change, please adjust the formula from
+“=IF(OR(SUM(\$G15)=0,SUM(\$J15)=0),"",SUM(\$J15)/SUM(\$G15))”
+nd change the reference of column J to column K so that it reads 
+“=IF(OR(SUM(\$G15)=0,SUM(\$K15)=0),"",SUM(\$K15)/SUM(\$G15))”. 
 
 * When you received your newly generated PSNUxIM tab for the first time, you will need to scroll to the “Target Values” Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.

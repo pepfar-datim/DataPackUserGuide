@@ -8,6 +8,7 @@ how-does-everything-connect
 elements-of-a-tab
 how-to-navigate-a-data-pack-tab
 adjustments-to-historic-targets-and-results
+release-notes
 whats-new
 frequently-asked-questions
 how-to-use-the-user-manual

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <title>24 KP Validation | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="24 KP Validation | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="24 KP Validation | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="24 KP Validation | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="01-COP21-Data-Pack-Overview.html"/>
+<link rel="prev" href="24-KP.html"/>
+<link rel="next" href="26-KP_MAT.html"/>
 <script src="book_assets/header-attrs-2.6/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -479,20 +479,305 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</h1>
-<p class="author"><em>U.S. Department of State</em></p>
-<p class="author"><em>U.S. Office of the Global AIDS Coordinator and Health Diplomacy (S/GAC)</em></p>
-<p class="date"><em>2021-04-14</em></p>
+<div id="kp-validation" class="section level1" number="24">
+<h1><span class="header-section-number">24</span> KP Validation</h1>
+<p>Each section of the KP_Validation tab looks at each indicator that sets
+a Key Population target to ensure the total for each of these Key
+Population disaggregated targets does not exceed the total Female and
+Male 15+ populations for each PSNU. Under each of these sections there
+is conditional formatting that will highlight any of the “KP Targets
+Validation” columns in red if those values exceed the Total Targets.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+C
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+D
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+E
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+F
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+G
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+H
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+I
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Female, 15+ (FY22)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+AGYW, 15+ (FY22)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Male, 15+ (FY22)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+FSW
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+MSM
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+People in prisons and other enclosed settings
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PWID
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.Female.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.AGYW.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.Male.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.KP.FSW.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.KP.MSM.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.KP.Enclosed.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+PrEP_CURR.KP.PWID.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
 </div>
+<div id="datim-import-53" class="section level3" number="24.0.1">
+<h3><span class="header-section-number">24.0.1</span> DATIM Import</h3>
+<p>There are no data points that will be imported into DATIM from this tab.</p>
+</div>
+<div id="instructions-53" class="section level3" number="24.0.2">
+<h3><span class="header-section-number">24.0.2</span> Instructions</h3>
+<p>For each section of this tab, follow the below steps:</p>
+<ol style="list-style-type: decimal">
+<li><p>Review the Total Population targets in the “Female, 15+ (FY22)” and
+“Male, 15+ (FY22)” columns, which sum targets across all 15+ age
+groups from where these are set in previous tabs of the Data Pack.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Note that for the PrEP_CURR and PrEP_NEW sections, the summation
+is pulling age group totals from the PrEP tab, TX sections from
+the Cascade tab, and HTS Sections from the HTS tab. Return to
+those tabs to investigate and adjust values. Changes made in
+this section of the KP Validation tab WILL NOT affect actual
+targets set in those tabs.</p></li>
+<li><p><strong>NOTE</strong>: Confirm for PrEP indicators that DREAMS age groups are
+aligned between KP and Total Populations, and ensure there is
+sufficient excess to target AGYW demographics.</p></li>
+</ol></li>
+<li><p>Review each column of the KP Targets Validation section. Data for
+these columns come originally from the KP tab of the Data Pack.
+Return to that tab to investigate and adjust values. Changes made in
+this section of the KP Validation tab WILL NOT affect actual targets
+in the KP tab.</p></li>
+<li><p>Review the “FSW” column and ensure the total in this column does not
+exceed the total target for “Female, 15+ (FY22)”. Cases where this
+does occur will be highlighted red.</p></li>
+<li><p>Review the “MSM” column and ensure the total in this column does not
+exceed the total target for “Male, 15+ (FY22)”. Cases where this
+does occur will be highlighted red.</p></li>
+<li><p>Review the final three columns “People in prisons and other enclosed
+settings”, “PWID”, and “TG” to ensure that the sum of these three
+columns does not exceed the remainder of KP’s — the remainder
+after subtracting the amounts targeted in the “FSW” and “MSM”
+columns. Cases where this does occur will be highlighted red.</p></li>
+</ol>
+<div style="page-break-after: always;"></div>
 
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="01-COP21-Data-Pack-Overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="24-KP.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="26-KP_MAT.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

@@ -297,8 +297,8 @@ targets. However, this is *only* possible for teams that do not in any
 way alter the structure or format of the Data Pack. Additional details
 are provided in COP Guidance and will be available through COP webinars.
 
-What's New? 
------------
+Highlighted Changes from COP20 to COP21
+---------------------------------------
 
 The COP21 Data Pack is largely the same as the COP20 Data Pack. However,
 please note the following updates that have been implemented as a result
@@ -631,6 +631,61 @@ below procedure:
 <!--chapter:end:01-COP21-Data-Pack-Overview.Rmd-->
 
 
+
+<!--chapter:end:02-Release-Notes.Rmd-->
+
+
+What's New?
+===========
+
+* In the HTS Tab there is an error within the formula that helps calculate “TB_STAT: New Positive (%)” in column Z of the HTS_TST - Distribution of Positive Tests section. This formula is currently referencing “HTS_TST Post ANC1 New Positives (FY22)” from column J, but needs to be referencing “TB_STAT New Positives (FY22)” from column K. To make this simple change, please adjust the formula from “=IF(OR(SUM(\$G15)=0,SUM(\$J15)=0),"",SUM(\$J15)/SUM(\$G15))” and change the reference of column J to column K so that it reads “=IF(OR(SUM(\$G15)=0,SUM(\$K15)=0),"",SUM(\$K15)/SUM(\$G15))”. 
+
+* When you received your newly generated PSNUxIM tab for the first time, you will need to scroll to the “Target Values” Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.
+
+<!--chapter:end:03-Whats-New.Rmd-->
+
+
+Frequently Asked Questions
+==========================
+
+***Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disags are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?***
+
+A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.
+
+
+***Q: Can you use FY22 Spectrum estimates to work through the Cascade tab?***
+
+A: No, unless you receive approval from OGAC Leadership you should use FY21 Spectrum Data. Your target setting process for the COP21 Data Pack should be to set FY22 targets based on where you are ending FY21.
+
+
+***Q: Is the coverage rate that is used to calculate “Targeted Host Country TX_CURR_SUBNAT (FY22)” and “Targeted Host Country TX_NET_NEW_SUBNAT (FY22)” too high or being miscalculated?***
+
+A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low.
+
+
+***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
+
+A: Once you have regenerated your PSNUxIM tab from the Data Pack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right “Target Values” section of the PSNUxIM tab to ensure all rows are populated with the proper formula.
+
+
+***Q: If my program performs testing but not treatment, how do I represent this in the Data Pack?***
+
+A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY22)” (BD). Please make the alterations to this column and not on the HTS tab.
+
+***Q: When I try to validate my Data Pack in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
+
+A: This error can be caused by a number of different issues. The most common causes and their resolutions include:
+
+* Trying to validate a newly regenerated Data Pack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.
+* The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.
+* Trying to validate a file that isn't an XLSX. If your team has saved your Data Pack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.
+* The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the "Target Value" section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.
+
+If none of the above issues apply to your Data Pack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Data Pack tool that caused the error in the app.
+
+<!--chapter:end:04-Frequently-Asked-Questions.Rmd-->
+
+
 How to Use the User Manual
 ==========================
 
@@ -683,7 +738,7 @@ Key Column Highlights
 
 \newpage
 
-<!--chapter:end:02-How-To-Use-The-User-Manual.Rmd-->
+<!--chapter:end:05-How-To-Use-The-User-Manual.Rmd-->
 
 
 \blandscape
@@ -717,7 +772,7 @@ knitr::include_graphics("./images/image13.png")
 
 \newpage
 
-<!--chapter:end:03-How-To-Fill-Out-The-Data-Pack.Rmd-->
+<!--chapter:end:06-How-To-Fill-Out-The-Data-Pack.Rmd-->
 
 
 \blandscape
@@ -768,7 +823,7 @@ Click on either choice to reach the following sections:
 
 \newpage
 
-<!--chapter:end:04-Summary.Rmd-->
+<!--chapter:end:07-Summary.Rmd-->
 
 
 \blandscape
@@ -801,7 +856,7 @@ and PMTCT.
 
 \newpage
 
-<!--chapter:end:05-Spectrum.Rmd-->
+<!--chapter:end:08-Spectrum.Rmd-->
 
 
 \blandscape
@@ -863,7 +918,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:06-Prioritization.Rmd-->
+<!--chapter:end:09-Prioritization.Rmd-->
 
 
 \blandscape
@@ -1729,7 +1784,7 @@ rates among this population.
 
 \newpage
 
-<!--chapter:end:07-Cascade.Rmd-->
+<!--chapter:end:10-Cascade.Rmd-->
 
 
 \blandscape
@@ -2100,7 +2155,7 @@ No data from this section will be imported into DATIM.
 
 \newpage
 
-<!--chapter:end:08-PMTCT.Rmd-->
+<!--chapter:end:11-PMTCT.Rmd-->
 
 
 \blandscape
@@ -2226,7 +2281,7 @@ nearest integer:
 \newpage
 
 
-<!--chapter:end:09-EID.Rmd-->
+<!--chapter:end:12-EID.Rmd-->
 
 
 \blandscape
@@ -2449,7 +2504,7 @@ No data from this section will be imported into DATIM.
 
 \newpage
 
-<!--chapter:end:10-TB.Rmd-->
+<!--chapter:end:13-TB.Rmd-->
 
 
 \blandscape
@@ -2682,7 +2737,7 @@ No data will be imported into DATIM from this section.
 
 \newpage
 
-<!--chapter:end:11-VMMC.Rmd-->
+<!--chapter:end:14-VMMC.Rmd-->
 
 
 \blandscape
@@ -3135,7 +3190,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:12-HTS.Rmd-->
+<!--chapter:end:15-HTS.Rmd-->
 
 
 \blandscape
@@ -3197,7 +3252,7 @@ Screening coverage rate (%)" to 0%.
 
 \newpage
 
-<!--chapter:end:13-CXCA.Rmd-->
+<!--chapter:end:16-CXCA.Rmd-->
 
 
 \blandscape
@@ -3292,7 +3347,7 @@ No data points will be imported into DATIM from this section.
 
 \newpage
 
-<!--chapter:end:14-HTS_RECENT.Rmd-->
+<!--chapter:end:17-HTS_RECENT.Rmd-->
 
 
 \blandscape
@@ -3486,7 +3541,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:15-TX_TB_PREV.Rmd-->
+<!--chapter:end:18-TX_TB_PREV.Rmd-->
 
 
 \blandscape
@@ -3543,7 +3598,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:16-PP.Rmd-->
+<!--chapter:end:19-PP.Rmd-->
 
 
 \blandscape
@@ -3725,7 +3780,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:17-OVC.Rmd-->
+<!--chapter:end:20-OVC.Rmd-->
 
 
 \blandscape
@@ -3779,7 +3834,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:18-GEND.Rmd-->
+<!--chapter:end:21-GEND.Rmd-->
 
 
 \blandscape
@@ -3872,7 +3927,7 @@ as follows, rounding to the nearest integer:
 
 \newpage
 
-<!--chapter:end:19-AGYW.Rmd-->
+<!--chapter:end:22-AGYW.Rmd-->
 
 
 \blandscape
@@ -3951,7 +4006,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:20-PrEP.Rmd-->
+<!--chapter:end:23-PrEP.Rmd-->
 
 
 \blandscape
@@ -4457,7 +4512,7 @@ targets set on the HTS tab.
 
 \newpage
 
-<!--chapter:end:21-KP.Rmd-->
+<!--chapter:end:24-KP.Rmd-->
 
 
 \blandscape
@@ -4529,7 +4584,7 @@ For each section of this tab, follow the below steps:
 
 \newpage
 
-<!--chapter:end:22-KP-Validation.Rmd-->
+<!--chapter:end:25-KP-Validation.Rmd-->
 
 
 \blandscape
@@ -4594,7 +4649,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:23-KP_MAT.Rmd-->
+<!--chapter:end:26-KP_MAT.Rmd-->
 
 
 \blandscape
@@ -4927,7 +4982,7 @@ Data Pack resolves the need to perform any deduplication in DATIM.
 
 \newpage
 
-<!--chapter:end:24-PSNUxIM.Rmd-->
+<!--chapter:end:27-PSNUxIM.Rmd-->
 
 
 \blandscape
@@ -4959,5 +5014,5 @@ Reference Materials
 
 \elandscape
 
-<!--chapter:end:25-Appendix.Rmd-->
+<!--chapter:end:28-Appendix.Rmd-->
 

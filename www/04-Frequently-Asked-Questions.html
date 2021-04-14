@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <title>3 Frequently Asked Questions | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="3 Frequently Asked Questions | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="3 Frequently Asked Questions | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="3 Frequently Asked Questions | PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="01-COP21-Data-Pack-Overview.html"/>
+<link rel="prev" href="03-Whats-New.html"/>
+<link rel="next" href="05-How-To-Use-The-User-Manual.html"/>
 <script src="book_assets/header-attrs-2.6/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -479,20 +479,36 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">PEPFAR COP20 Data Pack User Guide &amp; Data Dictionary</h1>
-<p class="author"><em>U.S. Department of State</em></p>
-<p class="author"><em>U.S. Office of the Global AIDS Coordinator and Health Diplomacy (S/GAC)</em></p>
-<p class="date"><em>2021-04-14</em></p>
-</div>
+<div id="frequently-asked-questions" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Frequently Asked Questions</h1>
+<p><strong><em>Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disags are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?</em></strong></p>
+<p>A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.</p>
+<p><strong><em>Q: Can you use FY22 Spectrum estimates to work through the Cascade tab?</em></strong></p>
+<p>A: No, unless you receive approval from OGAC Leadership you should use FY21 Spectrum Data. Your target setting process for the COP21 Data Pack should be to set FY22 targets based on where you are ending FY21.</p>
+<p><strong><em>Q: Is the coverage rate that is used to calculate “Targeted Host Country TX_CURR_SUBNAT (FY22)” and “Targeted Host Country TX_NET_NEW_SUBNAT (FY22)” too high or being miscalculated?</em></strong></p>
+<p>A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low.</p>
+<p><strong><em>Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?</em></strong></p>
+<p>A: Once you have regenerated your PSNUxIM tab from the Data Pack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right “Target Values” section of the PSNUxIM tab to ensure all rows are populated with the proper formula.</p>
+<p><strong><em>Q: If my program performs testing but not treatment, how do I represent this in the Data Pack?</em></strong></p>
+<p>A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY22)” (BD). Please make the alterations to this column and not on the HTS tab.</p>
+<p><strong><em>Q: When I try to validate my Data Pack in the self-service app, I get a message saying “ERROR: An error has occurred. Check your logs or contact the app author for clarification.” How do I resolve this?</em></strong></p>
+<p>A: This error can be caused by a number of different issues. The most common causes and their resolutions include:</p>
+<ul>
+<li>Trying to validate a newly regenerated Data Pack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.</li>
+<li>The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.</li>
+<li>Trying to validate a file that isn’t an XLSX. If your team has saved your Data Pack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.</li>
+<li>The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the “Target Value” section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.</li>
+</ul>
+<p>If none of the above issues apply to your Data Pack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Data Pack tool that caused the error in the app.</p>
 
+</div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="01-COP21-Data-Pack-Overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="03-Whats-New.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="05-How-To-Use-The-User-Manual.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

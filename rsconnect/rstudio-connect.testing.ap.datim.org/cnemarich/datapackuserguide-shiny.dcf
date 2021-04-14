@@ -1,0 +1,13 @@
+name: datapackuserguide-shiny
+title: DataPackUserGuide-Shiny
+username: cnemarich
+account: cnemarich
+server: rstudio-connect.testing.ap.datim.org
+hostUrl: https://rstudio-connect.testing.ap.datim.org/__api__
+appId: 32
+bundleId: 130
+url: https://rstudio-connect.testing.ap.datim.org:443/content/32/
+when: 1611701153.43985
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _bookdown.yml|_output.yml|_render.R|01-COP21-Data-Pack-Overview.Rmd|02-How-To-Use-The-User-Manual.Rmd|03-How-To-Fill-Out-The-Data-Pack.Rmd|04-Summary.Rmd|05-Spectrum.Rmd|06-Prioritization.Rmd|07-Cascade.Rmd|08-PMTCT.Rmd|09-EID.Rmd|10-TB.Rmd|11-VMMC.Rmd|12-HTS.Rmd|13-CXCA.Rmd|14-HTS_RECENT.Rmd|15-TX_TB_PREV.Rmd|16-PP.Rmd|17-OVC.Rmd|18-GEND.Rmd|19-AGYW.Rmd|20-PrEP.Rmd|21-KP.Rmd|22-KP-Validation.Rmd|23-KP_MAT.Rmd|24-PSNUxIM.Rmd|25-Appendix.Rmd|Data-Pack-User-Guide.Rmd|index.Rmd|README.md|css/style.css|latex/before_body.tex|latex/header.tex|static/conversion_script.R|static/COP21 Data Pack User Guide.docx|static/COP21_Data_Pack_Template.xlsx|static/staff_list.csv|images

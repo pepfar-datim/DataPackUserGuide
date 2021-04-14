@@ -278,8 +278,8 @@ targets. However, this is *only* possible for teams that do not in any
 way alter the structure or format of the Data Pack. Additional details
 are provided in COP Guidance and will be available through COP webinars.
 
-What's New? 
------------
+Highlighted Changes from COP20 to COP21
+---------------------------------------
 
 The COP21 Data Pack is largely the same as the COP20 Data Pack. However,
 please note the following updates that have been implemented as a result

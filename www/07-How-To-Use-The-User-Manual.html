@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <title>7 How to Use the User Manual | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="7 How to Use the User Manual | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="7 How to Use the User Manual | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="7 How to Use the User Manual | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="03-Whats-New.html"/>
-<link rel="next" href="05-Cheat_Sheet.html"/>
+<link rel="prev" href="06-How-To-Fill-Out-The-Data-Pack.html"/>
+<link rel="next" href="08-Summary.html"/>
 <script src="book_assets/header-attrs-2.6/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -493,36 +493,58 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="frequently-asked-questions" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Frequently Asked Questions</h1>
-<p><strong><em>Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disags are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?</em></strong></p>
-<p>A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.</p>
-<p><strong><em>Q: Can you use FY22 Spectrum estimates to work through the Cascade tab?</em></strong></p>
-<p>A: No, unless you receive approval from OGAC Leadership you should use FY21 Spectrum Data. Your target setting process for the COP21 Data Pack should be to set FY22 targets based on where you are ending FY21.</p>
-<p><strong><em>Q: Is the coverage rate that is used to calculate “Targeted Host Country TX_CURR_SUBNAT (FY22)” and “Targeted Host Country TX_NET_NEW_SUBNAT (FY22)” too high or being miscalculated?</em></strong></p>
-<p>A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low. Either way if you have good programmatic reason for doing so, particularly health seeking behavior of PLHIV, you can aim for a coverage rate even higher than 100% (e.g., current coverage in capital city is estimated at 105%, but due to health seeking behavior you want to aim for 120% to achieve 95% for across all metropolitan area).</p>
-<p><strong><em>Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?</em></strong></p>
-<p>A: Once you have regenerated your PSNUxIM tab from the Data Pack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right “Target Values” section of the PSNUxIM tab to ensure all rows are populated with the proper formula.</p>
-<p><strong><em>Q: If my program performs testing but not treatment, how do I represent this in the Data Pack?</em></strong></p>
-<p>A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY22)” (BD). Please make the alterations to this column and not on the HTS tab.</p>
-<p><strong><em>Q: When I try to validate my Data Pack in the self-service app, I get a message saying “ERROR: An error has occurred. Check your logs or contact the app author for clarification.” How do I resolve this?</em></strong></p>
-<p>A: This error can be caused by a number of different issues. The most common causes and their resolutions include:</p>
-<ul>
-<li>Trying to validate a newly regenerated Data Pack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.</li>
-<li>The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.</li>
-<li>Trying to validate a file that isn’t an XLSX. If your team has saved your Data Pack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.</li>
-<li>The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the “Target Value” section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.</li>
-</ul>
-<p>If none of the above issues apply to your Data Pack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Data Pack tool that caused the error in the app.</p>
+<div id="how-to-use-the-user-manual" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> How to Use the User Manual</h1>
+<p>The Data Pack consists of tabs that address indicators related to each
+PEPFAR program area.</p>
+<p>The COP21 Data Pack User Manual reviews all indicators within each tab
+and provides you with the relevant information to complete all required
+sections of the Data Pack correctly. It also instructs you where to find
+more information on each program area in the COP21 Guidance.</p>
+<div id="key-column-highlights" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Key Column Highlights</h2>
+<blockquote>
+<p><strong><em>Column type?</em></strong> Indicates whether the data in this column is a
+result from a previous fiscal year (“Result”), an assumption that the
+country team is making (“Assumption”), a target for FY2022
+(“Targets”), or a reference for the country team as they fill out the
+Data Pack (“Reference”).</p>
+<p><strong><em>What type of data?</em></strong> Indicates whether the data in the column is
+an integer, e.g. a whole number, or a percentage.</p>
+<p><strong><em>Prepopulated data?</em></strong> Indicates whether the data in this column is
+prepopulated from data in DATIM or from data elsewhere in the Data
+Pack.</p>
+<p><strong><em>Enter or modify data?</em></strong> Indicates whether the user should enter
+new information into this column or is allowed to modify the
+prepopulated information in the column. If there is a question mark
+here, country teams must consult with their PPMs and Chairs before
+modifying the data in this column. If there is an exclamation mark
+here, country teams may overwrite the formula in this column, however
+it will prevent the Data Pack from refreshing this data if changes are
+made elsewhere.</p>
+<p><strong><em>Calculated column?</em></strong> This indicates that a formula is used to
+indicate where a formula is used to calculate the values in this
+column from data elsewhere in the Data Pack.</p>
+<p><strong><em>Linked column?</em></strong> This indicates that this data is either
+prepopulated by or is used to prepopulate data in a column on another
+tab within the Data Pack. For columns that are prepopulated from
+another tab, clicking on the column name in the Data Pack will take
+you to the referenced column.</p>
+<p><em><strong>UID in Appendix</strong>.</em> The UID provided here is a Data Pack reference
+ID and can be used to find more information about the data entered
+into this column in the appendices.</p>
+</blockquote>
+<div style="page-break-after: always;"></div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="03-Whats-New.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="05-Cheat_Sheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="06-How-To-Fill-Out-The-Data-Pack.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="08-Summary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

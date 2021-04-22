@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <title>19 TX_TB_PREV | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="19 TX_TB_PREV | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="19 TX_TB_PREV | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="19 TX_TB_PREV | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="03-Whats-New.html"/>
-<link rel="next" href="05-Cheat_Sheet.html"/>
+<link rel="prev" href="18-HTS_RECENT.html"/>
+<link rel="next" href="20-PP.html"/>
 <script src="book_assets/header-attrs-2.6/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -493,36 +493,871 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="frequently-asked-questions" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Frequently Asked Questions</h1>
-<p><strong><em>Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disags are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?</em></strong></p>
-<p>A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.</p>
-<p><strong><em>Q: Can you use FY22 Spectrum estimates to work through the Cascade tab?</em></strong></p>
-<p>A: No, unless you receive approval from OGAC Leadership you should use FY21 Spectrum Data. Your target setting process for the COP21 Data Pack should be to set FY22 targets based on where you are ending FY21.</p>
-<p><strong><em>Q: Is the coverage rate that is used to calculate “Targeted Host Country TX_CURR_SUBNAT (FY22)” and “Targeted Host Country TX_NET_NEW_SUBNAT (FY22)” too high or being miscalculated?</em></strong></p>
-<p>A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low. Either way if you have good programmatic reason for doing so, particularly health seeking behavior of PLHIV, you can aim for a coverage rate even higher than 100% (e.g., current coverage in capital city is estimated at 105%, but due to health seeking behavior you want to aim for 120% to achieve 95% for across all metropolitan area).</p>
-<p><strong><em>Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?</em></strong></p>
-<p>A: Once you have regenerated your PSNUxIM tab from the Data Pack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right “Target Values” section of the PSNUxIM tab to ensure all rows are populated with the proper formula.</p>
-<p><strong><em>Q: If my program performs testing but not treatment, how do I represent this in the Data Pack?</em></strong></p>
-<p>A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY22)” (BD). Please make the alterations to this column and not on the HTS tab.</p>
-<p><strong><em>Q: When I try to validate my Data Pack in the self-service app, I get a message saying “ERROR: An error has occurred. Check your logs or contact the app author for clarification.” How do I resolve this?</em></strong></p>
-<p>A: This error can be caused by a number of different issues. The most common causes and their resolutions include:</p>
+<div id="tx_tb_prev" class="section level1" number="19">
+<h1><span class="header-section-number">19</span> TX_TB_PREV</h1>
+<div id="tx_tb_prev-tx_tb-d" class="section level2" number="19.1">
+<h2><span class="header-section-number">19.1</span> TX_TB_PREV: TX_TB (D)</h2>
+<p><strong>TX_TB (D):</strong> Number of ART patients who were screened for TB at least
+once during the semiannual reporting period.</p>
+<p>Note: Targets set across this tab are set at Coarse Age Bands,
+aggregating incoming data from any finer age bands to &lt;15 or 15+.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+F
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+G
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+H
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+I
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+J
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+K
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+L
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+M
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+N
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+O
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Targeted coverage: New on ART (%)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Targeted coverage: Already on ART (%)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Est. TB Screen Positivity Rate: New on ART (%)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Est. TB Screen Positivity Rate: Already on ART (%)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_NEW (FY22)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_CURR (FY22)
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+New on ART, TB Screen +
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+New on ART, TB Screen -
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Already on ART, TB Screen +
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Already on ART, TB Screen -
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.New.Cov.Target
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.Already.Cov.Target
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.New.Yield
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.Already.Yield
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_NEW.15s
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_CURR.15s
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.New.Pos.T
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.New.Neg.T
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.Already.Pos.T
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+TX_TB.D.Already.Neg.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+calculation
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+calculation
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.75in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-33" class="section level3" number="19.1.1">
+<h3><span class="header-section-number">19.1.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
 <ul>
-<li>Trying to validate a newly regenerated Data Pack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.</li>
-<li>The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.</li>
-<li>Trying to validate a file that isn’t an XLSX. If your team has saved your Data Pack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.</li>
-<li>The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the “Target Value” section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.</li>
+<li><p><strong>New on ART, TB Screen +</strong> [TX_TB.D.New.Pos.T]</p></li>
+<li><p><strong>New on ART, TB Screen –</strong> [TX_TB.D.New.Neg.T]</p></li>
+<li><p><strong>Already on ART, TB Screen +</strong> [TX_TB.D.Already.Pos.T]</p></li>
+<li><p><strong>Already on ART, TB Screen –</strong> [TX_TB.D.Already.Neg.T]</p></li>
 </ul>
-<p>If none of the above issues apply to your Data Pack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Data Pack tool that caused the error in the app.</p>
+</div>
+<div id="instructions-33" class="section level3" number="19.1.2">
+<h3><span class="header-section-number">19.1.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Review Targeted coverage rates of TB testing both for those New on
+ART as well as for those Already on ART. These will both come
+pre-populated at 100% coverage, though can be adjusted as needed.
+Red highlights indicate percentages over 100%, or under 0%, or may
+also indicate where values have been left blank but are necessary
+for further steps; yellow highlights indicate percentages less than
+100%.</p></li>
+<li><p>Review and adjust Estimated TB Screen Positivity Rates, both for
+those New on ART as well as for those Already on ART. These will
+both come prepopulated based on FY20 Results in DATIM. Red
+highlights indicate percentages over 100%, or under 0%, or may also
+indicate where values have been left blank but are necessary for
+further steps.</p></li>
+<li><p>For historical context, review FY22 Targets for TX_NEW and TX_CURR.
+Follow hyperlinks to see and adjust source data as needed.</p></li>
+<li><p>Review modeled targets for the following columns. See below for
+additional information.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>New on ART, TB Screen +</p></li>
+<li><p>New on ART, TB Screen –</p></li>
+<li><p>Already on ART, TB Screen +</p></li>
+<li><p>Already on ART, TB Screen –</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="tx_tb-d-disaggregates-fy22" class="section level3" number="19.1.3">
+<h3><span class="header-section-number">19.1.3</span> TX_TB (D) Disaggregates (FY22)</h3>
+<p>The Data Pack will set FY22 targets for TX_TB (D) as laid out below.</p>
+<p>Targets will be set for those New on ART and screened positive for TB as
+follows, rounded to the nearest integer:</p>
+<p>FY22 targets for those Already on ART, but found negative for TB will be
+set as follows, rounded to the nearest integer:</p>
+<p>Similarly, targets for those Already on ART and screened positive for TB
+will be set as follows, rounded to the nearest integer:</p>
+<p>And finally, targets for those Already on ART and screened negative for
+TB will be set as below, rounding to the nearest integer:</p>
+</div>
+</div>
+<div id="tx_tb_prev-tb_prev-d" class="section level2" number="19.2">
+<h2><span class="header-section-number">19.2</span> TX_TB_PREV: TB_PREV (D)</h2>
+<p><strong>TB_PREV (D):</strong> Number of ART patients who are expected to complete a
+course of TB preventive therapy during the reporting period (for
+programs using continuous IPT, this includes only the patients who are
+scheduled to complete the first 6 months of therapy).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+P
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+Q
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+R
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+S
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+% TX_TB (D) Screen Neg., New on ART initiated on TPT (%)
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+% TX_TB (D) Screen Neg., Already on ART initiated on TPT (%)
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+New on ART
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Already on ART
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_TB.D.New.Neg.Linkage
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_TB.D.Already.Neg.Linkage
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TB_PREV.D.New.T
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TB_PREV.D.Already.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-34" class="section level3" number="19.2.1">
+<h3><span class="header-section-number">19.2.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><p><strong>TB_PREV (D): New on ART</strong> [TB_PREV.D.New.T]</p></li>
+<li><p><strong>TB_PREV (D): Already on ART</strong> [TB_PREV.D.Already.T]</p></li>
+</ul>
+</div>
+<div id="instructions-34" class="section level3" number="19.2.2">
+<h3><span class="header-section-number">19.2.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Review assumptions for the percent of TX_TB (D) screened negative
+for TB to be initiated on TPT both for those New on ART, as well as
+for those Already on ART. These are initially pre-populated at 100%
+and 90% for those New on ART and those Already on ART, respectively,
+though can be adjusted as needed. Red highlights indicate
+percentages over 100%, or less than 0%; yellow highlights indicate
+percentages less than 100% or 90% for New on ART and Already on ART,
+respectively.</p></li>
+<li><p>Review modeled targets for TB_PREV (D) New on ART — set by
+multiplying TX_TB (D) New on ART, TB Screen Negative by the percent
+of TX_TB (D) New on ART, TB Screen Negative initiated on TPT,
+rounding to the nearest integer — and TB_PREV (D) Already on ART
+— set by multiplying TX_TB (D) Already on ART, TB Screen Negative
+by the percent of TX_TB (D) Already on ART, TB Screen Negative
+initiated on TPT, rounding to the nearest integer.</p></li>
+</ol>
+</div>
+</div>
+<div id="tx_tb_prev-tb_prev-n" class="section level2" number="19.3">
+<h2><span class="header-section-number">19.3</span> TX_TB_PREV: TB_PREV (N)</h2>
+<p><strong>TB_PREV (N):</strong> Number of ART patients who completed a course of TB
+preventive therapy during the reporting period (for continuous IPT
+programs, this includes the patients who have completed the first 6
+months of isoniazid preventive therapy (IPT)).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+T
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+U
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+V
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+W
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+X
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+Y
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+Z
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+New on ART (FY21 Targets)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Already on ART (FY21 Targets)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Targeted TPT completion (%)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+New on ART
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Already on ART
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Projected Change: New on ART (%)
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Projected Change: Already on ART (%)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.New.T_1
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.Already.T_1
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.Cov
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.New.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.Already.T
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.New.Growth.Target
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+TB_PREV.N.Already.Growth.Target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+reference
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+percentage
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-35" class="section level3" number="19.3.1">
+<h3><span class="header-section-number">19.3.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><p><strong>TB_PREV (N): New on ART</strong> [TB_PREV.N.New.T]</p></li>
+<li><p><strong>TB_PREV (N): Already on ART</strong> [TB_PREV.N.Already.T]</p></li>
+</ul>
+</div>
+<div id="instructions-35" class="section level3" number="19.3.2">
+<h3><span class="header-section-number">19.3.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>For historical context, review FY21 targets from DATIM for
+TB_PREV (N) for those New on ART and those Already on ART.</p></li>
+<li><p>Review Targeted TPT completion rates, which will default to 90%, but
+can be adjusted as needed, taking into account persons who (1) are
+already on TB preventative therapy (2) will likely screen
+negative (3) will be medically ineligible for TPT (4) will be on TPT
+by the end of COP19. Note that data in this column will NOT be
+imported into DATIM. Red highlights indicate percentages over 100%
+or less than 0%; yellow highlights indicate percentages less than
+90%.</p></li>
+<li><p>Review modeled targets for TB_PREV (N) New on ART and Already on
+ART, set by multiplying TB_PREV (D) New on ART and TB_PREV (D)
+Already on ART, respectively, by the targeted TPT completion rates
+set in step 2. Return to step 2 or previous sections to adjust
+driving assumptions.</p></li>
+<li><p>Review projected rates of change between FY21 targets and planned
+FY22 targets to identify cases where rates of change indicate
+significant departures from historic trends.</p></li>
+</ol>
+<div style="page-break-after: always;"></div>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="03-Whats-New.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="05-Cheat_Sheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="18-HTS_RECENT.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="20-PP.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

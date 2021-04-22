@@ -701,6 +701,144 @@ If none of the above issues apply to your Data Pack tool and you are still recei
 <!--chapter:end:04-Frequently-Asked-Questions.Rmd-->
 
 
+# Testing Targets Cheat Sheet
+
+## Purpose
+
+The purpose of this cheat sheet is to document a recurring Data Pack issue to guide other OU’s towards a solution. This document does not supersede PEPFAR guidance. For more questions, please contact the ICPI Zendesk.
+
+## Issue
+
+Our HTS_TST_POS targets from modalities are summing to over 100% of the HTS_TST_POS total.  We have too many positives but cannot figure out how to resolve the errors in the datapack?
+
+## Is this issue in my Data Pack?
+
+This issue is most likely to affect countries with high treatment coverage but has been seen in lower coverage OUs as well
+
+- If your data pack has negative values in the Other Modalities **(Cascade Tab; Column BR)** or a large HTS POS difference to adjust **(HTS Tab; Column BO)**
+
+**_AND_**
+
+- You have already walked through the instructions in the Datapack User Guide HTS Section link [HERE](https://apps.datim.org/datapack-userguide/15-HTS.html)
+
+## Why is this issue in my Data Pack?
+
+- COP guidance recommends that age/sex/SNU combinations with high treatment coverage (above 80%) have a high rate of positives (75%) coming from index testing, but countries may already have more than 25% of positives coming from other passive modalities (PMTCT, TB, etc).
+- Countries with lower treatment coverage will have different recommendations for positives from index testing; See figure 2.3.2.2 on page 66 of the COP guidance for more details.  Even in settings with only 30% of positives coming from index testing you may still see this issue.
+
+## Possible solutions
+
+* Work with your PMTCT and TB program colleagues to review your program and surveillance data and increase the percentage of known positives coming from PMTCT (and other modalities, such as TB and VMMC)
+    + Changes in PMTCT are most likely to decrease high positives (while maintaining ambitious targets for your PMTCT program) 
+    + See examples below for PMTCT and TB indicators
+* If still unable to resolve high positives, need to ask permission from SGAC Chair, PPM, and DUIT liaisons to change underlying assumptions set by COP Guidance, such as % of positives that come from Index Testing
+    + Be prepared to share what the value should be and provide justification
+    + For example, in one Operating Unit, PEPFAR has already transitioned all funding lower yield provider initiated testing (PITC) to the Ministry of Health (through Global Fund support); despite being lower yield these modality still identify approximately 50% of positives needed to be identified at PEPFAR supported sites; it is, therefore, not possible to obtain 75% positives from PEPFAR supported index testing
+  
+## How to try these solutions in the Data Pack
+
+Remember that you can only change the sea green columns in the DP. The following solutions are in order of impact (high to low).
+
+### PMTCT Tab - decrease positives from ANC and Post-ANC1
+
+**Goal: To reduce column AE “Newly Tested, Positive” which feeds into the total HTS_TST_POS values that are too high**
+
+- Shift positives from newly tested to known positives
+- **Column Z** “Est. % ANC1 clients already Known HIV Positive (%)”
+  + Increasing column Z directly increases column AD “Known HIV Status, Positive” by the same amount it decreases column AF “Newly Tested, Negative” ultimate reducing “Newly Tested Positives”
+  + This reduction in New Positives may be small
+- **Column AB** “Est. Positivity Rate among Newly Tested ANC1 clients (%)”
+  + Decreasing column AB directly decreases column AE “Newly Tested, Positive” by the same amount it decreases column AF “Newly Tested, Negative”
+  + This reduction in Newly Tested Positives will be bigger, proceed with caution
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image16.png")
+```
+
+\begin{center}
+
+\includegraphics[width=7in]{./images/image16.png}
+
+\end{center}
+
+**Goal: To reduce Column AU “Positives” from Post ANC1**
+
+- This change will most likely only have a small impact on your total positives
+- Increasing Known Positives (in step above) reduces Column AQ “Total eligible for Post ANC1 retesting” thereby reducing column AU “Positive”
+- **Column AS “Yield (%)”**
+  + Reducing Yield will reduce Positive (AU)
+  + While it is not plausible to see no positives from Post ANC1, consider a programmatic maximum that you would like to target
+- While it is possible to change Column AQ, we recommend not altering this column directly so as to not create logical gaps in PMTCT testing process
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image17.png")
+```
+
+\begin{center}
+
+\includegraphics[width=7in]{./images/image17.png}
+
+\end{center}
+
+### TB tab - decrease positives from TB
+
+**Goal: To reduce column Q “Newly Tested, Positive” which feeds into the total HTS_TST_POS values that are too high**
+
+- Shift positives from newly tested to known positives
+- **Column L** “Est. % TB clients already Known HIV Positive (%)”
+  + Increasing column L directly increases column P “Known HIV Status, Positive” by the same amount it decreases column R “Newly Tested, Negative” ultimate reducing “Newly Tested Positives”
+  + This reduction in New Positives may be small
+- **Column N** “Est. Positivity Rate among Newly Tested (%)”
+  + Decreasing column N directly decreases column Q “Newly Tested, Positive” by the same amount it decreases column R “Newly Tested, Negative”
+  + This reduction in Newly Tested Positives will be bigger, proceed with caution
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image18.png")
+```
+
+\begin{center}
+
+\includegraphics[width=7in]{./images/image18.png}
+
+\end{center}
+
+<!--chapter:end:05-Cheat_Sheet.Rmd-->
+
+
+\blandscape
+
+How to Fill Out the Data Pack
+=============================
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image12.png")
+```
+
+\begin{center}
+
+\includegraphics[width=9in]{./images/image12.png}
+
+\end{center}
+
+\newpage
+
+```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+knitr::include_graphics("./images/image13.png")
+```
+
+\begin{center}
+
+\includegraphics[width=9in]{./images/image13.png}
+
+\end{center}
+
+\elandscape
+
+\newpage
+
+<!--chapter:end:06-How-To-Fill-Out-The-Data-Pack.Rmd-->
+
+
 How to Use the User Manual
 ==========================
 
@@ -753,41 +891,7 @@ Key Column Highlights
 
 \newpage
 
-<!--chapter:end:05-How-To-Use-The-User-Manual.Rmd-->
-
-
-\blandscape
-
-How to Fill Out the Data Pack
-=============================
-
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
-knitr::include_graphics("./images/image12.png")
-```
-
-\begin{center}
-
-\includegraphics[width=9in]{./images/image12.png}
-
-\end{center}
-
-\newpage
-
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
-knitr::include_graphics("./images/image13.png")
-```
-
-\begin{center}
-
-\includegraphics[width=9in]{./images/image13.png}
-
-\end{center}
-
-\elandscape
-
-\newpage
-
-<!--chapter:end:06-How-To-Fill-Out-The-Data-Pack.Rmd-->
+<!--chapter:end:07-How-To-Use-The-User-Manual.Rmd-->
 
 
 \blandscape
@@ -838,7 +942,7 @@ Click on either choice to reach the following sections:
 
 \newpage
 
-<!--chapter:end:07-Summary.Rmd-->
+<!--chapter:end:08-Summary.Rmd-->
 
 
 \blandscape
@@ -871,7 +975,7 @@ and PMTCT.
 
 \newpage
 
-<!--chapter:end:08-Spectrum.Rmd-->
+<!--chapter:end:09-Spectrum.Rmd-->
 
 
 \blandscape
@@ -933,7 +1037,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:09-Prioritization.Rmd-->
+<!--chapter:end:10-Prioritization.Rmd-->
 
 
 \blandscape
@@ -1799,7 +1903,7 @@ rates among this population.
 
 \newpage
 
-<!--chapter:end:10-Cascade.Rmd-->
+<!--chapter:end:11-Cascade.Rmd-->
 
 
 \blandscape
@@ -2170,7 +2274,7 @@ No data from this section will be imported into DATIM.
 
 \newpage
 
-<!--chapter:end:11-PMTCT.Rmd-->
+<!--chapter:end:12-PMTCT.Rmd-->
 
 
 \blandscape
@@ -2296,7 +2400,7 @@ nearest integer:
 \newpage
 
 
-<!--chapter:end:12-EID.Rmd-->
+<!--chapter:end:13-EID.Rmd-->
 
 
 \blandscape
@@ -2519,7 +2623,7 @@ No data from this section will be imported into DATIM.
 
 \newpage
 
-<!--chapter:end:13-TB.Rmd-->
+<!--chapter:end:14-TB.Rmd-->
 
 
 \blandscape
@@ -2752,7 +2856,7 @@ No data will be imported into DATIM from this section.
 
 \newpage
 
-<!--chapter:end:14-VMMC.Rmd-->
+<!--chapter:end:15-VMMC.Rmd-->
 
 
 \blandscape
@@ -3205,7 +3309,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:15-HTS.Rmd-->
+<!--chapter:end:16-HTS.Rmd-->
 
 
 \blandscape
@@ -3267,7 +3371,7 @@ Screening coverage rate (%)" to 0%.
 
 \newpage
 
-<!--chapter:end:16-CXCA.Rmd-->
+<!--chapter:end:17-CXCA.Rmd-->
 
 
 \blandscape
@@ -3362,7 +3466,7 @@ No data points will be imported into DATIM from this section.
 
 \newpage
 
-<!--chapter:end:17-HTS_RECENT.Rmd-->
+<!--chapter:end:18-HTS_RECENT.Rmd-->
 
 
 \blandscape
@@ -3556,7 +3660,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:18-TX_TB_PREV.Rmd-->
+<!--chapter:end:19-TX_TB_PREV.Rmd-->
 
 
 \blandscape
@@ -3613,7 +3717,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:19-PP.Rmd-->
+<!--chapter:end:20-PP.Rmd-->
 
 
 \blandscape
@@ -3795,7 +3899,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:20-OVC.Rmd-->
+<!--chapter:end:21-OVC.Rmd-->
 
 
 \blandscape
@@ -3849,7 +3953,7 @@ The following data points will be imported into DATIM from this section:
 
 \newpage
 
-<!--chapter:end:21-GEND.Rmd-->
+<!--chapter:end:22-GEND.Rmd-->
 
 
 \blandscape
@@ -3942,7 +4046,7 @@ as follows, rounding to the nearest integer:
 
 \newpage
 
-<!--chapter:end:22-AGYW.Rmd-->
+<!--chapter:end:23-AGYW.Rmd-->
 
 
 \blandscape
@@ -4021,7 +4125,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:23-PrEP.Rmd-->
+<!--chapter:end:24-PrEP.Rmd-->
 
 
 \blandscape
@@ -4527,7 +4631,7 @@ targets set on the HTS tab.
 
 \newpage
 
-<!--chapter:end:24-KP.Rmd-->
+<!--chapter:end:25-KP.Rmd-->
 
 
 \blandscape
@@ -4599,7 +4703,7 @@ For each section of this tab, follow the below steps:
 
 \newpage
 
-<!--chapter:end:25-KP-Validation.Rmd-->
+<!--chapter:end:26-KP-Validation.Rmd-->
 
 
 \blandscape
@@ -4664,7 +4768,7 @@ The following data points will be imported into DATIM from this section:
 \newpage
 
 
-<!--chapter:end:26-KP_MAT.Rmd-->
+<!--chapter:end:27-KP_MAT.Rmd-->
 
 
 \blandscape
@@ -4997,7 +5101,7 @@ Data Pack resolves the need to perform any deduplication in DATIM.
 
 \newpage
 
-<!--chapter:end:27-PSNUxIM.Rmd-->
+<!--chapter:end:28-PSNUxIM.Rmd-->
 
 
 \blandscape
@@ -5029,5 +5133,5 @@ Reference Materials
 
 \elandscape
 
-<!--chapter:end:28-Appendix.Rmd-->
+<!--chapter:end:29-Appendix.Rmd-->
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <title>9 SPECTRUM | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="9 SPECTRUM | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="9 SPECTRUM | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Frequently Asked Questions | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="9 SPECTRUM | PEPFAR COP21 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="03-Whats-New.html"/>
-<link rel="next" href="05-Cheat_Sheet.html"/>
+<link rel="prev" href="08-Summary.html"/>
+<link rel="next" href="10-Prioritization.html"/>
 <script src="book_assets/header-attrs-2.6/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -493,27 +493,353 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="frequently-asked-questions" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Frequently Asked Questions</h1>
-<p><strong><em>Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disags are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?</em></strong></p>
-<p>A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.</p>
-<p><strong><em>Q: Can you use FY22 Spectrum estimates to work through the Cascade tab?</em></strong></p>
-<p>A: No, unless you receive approval from OGAC Leadership you should use FY21 Spectrum Data. Your target setting process for the COP21 Data Pack should be to set FY22 targets based on where you are ending FY21.</p>
-<p><strong><em>Q: Is the coverage rate that is used to calculate “Targeted Host Country TX_CURR_SUBNAT (FY22)” and “Targeted Host Country TX_NET_NEW_SUBNAT (FY22)” too high or being miscalculated?</em></strong></p>
-<p>A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low. Either way if you have good programmatic reason for doing so, particularly health seeking behavior of PLHIV, you can aim for a coverage rate even higher than 100% (e.g., current coverage in capital city is estimated at 105%, but due to health seeking behavior you want to aim for 120% to achieve 95% for across all metropolitan area).</p>
-<p><strong><em>Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?</em></strong></p>
-<p>A: Once you have regenerated your PSNUxIM tab from the Data Pack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right “Target Values” section of the PSNUxIM tab to ensure all rows are populated with the proper formula.</p>
-<p><strong><em>Q: If my program performs testing but not treatment, how do I represent this in the Data Pack?</em></strong></p>
-<p>A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY22)” (BD). Please make the alterations to this column and not on the HTS tab.</p>
-<p><strong><em>Q: When I try to validate my Data Pack in the self-service app, I get a message saying “ERROR: An error has occurred. Check your logs or contact the app author for clarification.” How do I resolve this?</em></strong></p>
-<p>A: This error can be caused by a number of different issues. The most common causes and their resolutions include:</p>
-<ul>
-<li>Trying to validate a newly regenerated Data Pack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.</li>
-<li>The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.</li>
-<li>Trying to validate a file that isn’t an XLSX. If your team has saved your Data Pack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.</li>
-<li>The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the “Target Value” section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.</li>
-</ul>
-<p>If none of the above issues apply to your Data Pack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Data Pack tool that caused the error in the app.</p>
+<div id="spectrum" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> SPECTRUM</h1>
+<p>The Spectrum tab will allow users to load UNAIDS data with 12 columns of
+data elements for your OU. A Spectrum file for your OU will be provided
+at the conclusion of the UNAIDS Spectrum Training for Country Teams. The
+contents of this file will be manually loaded into the Spectrum tab
+which is setup as below:</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+D
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+E
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+F
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+G
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+H
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+I
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+J
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+K
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+L
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+M
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+N
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+O
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+psnu
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+psnu_uid
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+area_id
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+indicator_code
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+dataelement_uid
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+age
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+age_uid
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+sex
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+sex_uid
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+calendar_quarter
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+value
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+age_sex_rse
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+string
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.625in; border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>With S/GAC approval, countries can also populate input their own data
+into this tab with a different MOH/ country approved set of estimates.
+Estimate changes can also be made in the two associated tabs, Cascade
+and PMTCT.</p>
+<div style="page-break-after: always;"></div>
 
 </div>
             </section>
@@ -521,8 +847,8 @@
           </div>
         </div>
       </div>
-<a href="03-Whats-New.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="05-Cheat_Sheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="08-Summary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="10-Prioritization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

@@ -68,7 +68,7 @@ find the location of the error and fix the issue.
 
 Validation rules provide additional data quality controls between certain indicators. As a simple example, the number of persons testing positive for HIV should be less than or equal to the number of individuals tested. Under most circumstances, validation rules should not be violated, but there can be certain programmatic reasons why these violations should be waived. 
 
-A number of rules have been created, and many of them are enforced  in the DataPack itself. However, not all rules have been implemeted in the DataPack, and due to formula changes and subtleties in how targets are allocated at the PSNUxIM level, additional review of the data in the PSNUxIM tab and main tabs may be required. During the validation of the datapack, all data contained in the PSNUxIM tab will be checked against all of the validation rules defined in DATIM. If there are any violations of the validation rules, the app will provide detailed feedback in regards to which PSNUxIM combination is affected. In order to resolve these, you will need to carefully review how the PNSUxIM allocations have been made to respective mechanisms in the PSNUxIM tab. 
+A number of rules have been created, and many of them are enforced  in the DataPack itself. However, not all rules have been implemented in the DataPack, and due to formula changes and subtleties in how targets are allocated at the PSNUxIM level, additional review of the data in the PSNUxIM tab and main tabs may be required. During the validation of the datapack, all data contained in the PSNUxIM tab will be checked against all of the validation rules defined in DATIM. If there are any violations of the validation rules, the app will provide detailed feedback in regards to which PSNUxIM combination is affected. In order to resolve these, you will need to carefully review how the PNSUxIM allocations have been made to respective mechanisms in the PSNUxIM tab. 
 
 While validation rule violations will not prevent the import of your data into DATIM, they may lead to data quality problems in both DATIM and downstream systems such as Panorama and PAW. If there are any validation rule issues, your PPM and DUIT can be requested to waive these at their discreation. 
 
@@ -82,9 +82,29 @@ The app will provide a list of all analytics checks which have been flagged in t
 
 ## Indicator summary
 
-This table provides a high-level SNU level summary of indicators from each of the main tabs of the DataPack. Note, that this data is NOT drawn from the PSNUxIM tab. This can be a useful 
+This table provides a high-level SNU level summary of indicators from each of the main tabs of the DataPack. Note, that this data is NOT drawn from the PSNUxIM tab. This can be a useful first check of your DataPack, prior to the allocation of the data in the PSNUxIM tab. 
+
+
+## SNUlevel summary
+
+This table listing provides all of the data from each of the main DataPack tabs summarized by the SNU level. 
+
+## Validation rules
+
+This tab provides a listing of all validation rule violations, if any. The table provides the following fields
+* PSNU: The specific PSNU where the violation occurs
+ 
+* Mechanism: The specific mechanism where the violation occurs. 
+
+* Formula: The rule is specified with a left side, a right side, and an operator. The left and right side correspond to a data element (or data elements) located in the PSNUxIM tab. Using a combination of filters (PSNU, Mechanism and Data elemement), you should be able to locate the specific rows in the PSNUxIM tab which are leading to the validation rule violation. 
+
+* Diff (%) : Provides the percentage difference between the left and right side. 
 
 
 
-\newpage
+
+
+
+Validation rule	PSNU	Mechanism	Formula	Diff (%)	Diff (Absolute)
+1	PMTCT_STAT (N, DSD, Age/Sex/KnownNewResult) TARGET <= PMTCT_STAT (D, DSD, Age/Sex) TARGET	Namuno	160448	5317 <= 5316	0.02	1\newpage
 

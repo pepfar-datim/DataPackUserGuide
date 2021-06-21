@@ -92,6 +92,7 @@ This table listing provides all of the data from each of the main DataPack tabs 
 ## Validation rules
 
 This tab provides a listing of all validation rule violations, if any. The table provides the following fields
+
 * PSNU: The specific PSNU where the violation occurs
  
 * Mechanism: The specific mechanism where the violation occurs. 
@@ -100,11 +101,14 @@ This tab provides a listing of all validation rule violations, if any. The table
 
 * Diff (%) : Provides the percentage difference between the left and right side. 
 
+* Diff (Absolute) : Provides the numeric difference between the left and right side.
+
+Validation rule| PSNU | Mechanism | Formula | Diff (%)| Diff (Absolute)|
+---------------|------|-----------|---------|---------|----------------|
+PMTCT_STAT (N, DSD, Age/Sex/KnownNewResult) TARGET <= PMTCT_STAT (D, DSD, Age/Sex) TARGET| Namuno | 160448| 5317 <= 5316 | 0.02 | 1 |
 
 
 
+\newpage
 
-
-Validation rule	PSNU	Mechanism	Formula	Diff (%)	Diff (Absolute)
-1	PMTCT_STAT (N, DSD, Age/Sex/KnownNewResult) TARGET <= PMTCT_STAT (D, DSD, Age/Sex) TARGET	Namuno	160448	5317 <= 5316	0.02	1\newpage
 

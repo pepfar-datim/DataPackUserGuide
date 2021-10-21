@@ -6,4 +6,4 @@ A [bookdown](https://bookdown.org/) book about
 the PEPFAR COP20 Data Pack, including the Excel tool and the
 R Shiny Self-Service App.
 
-View the book online at <https://datapack.datim.org/user-guide/>.
+View the book online at <https://apps.datim.org/datapack-userguide/>.

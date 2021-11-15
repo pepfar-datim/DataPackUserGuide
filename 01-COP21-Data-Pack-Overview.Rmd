@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 ```{r setup, echo=FALSE}
 suppressPackageStartupMessages({
@@ -218,27 +223,24 @@ schema_table <- function(table_reference, knit_type){
 
 ```
 
+# COP22 DataPack Overview
 
-COP21 Data Pack Overview
-========================
-
-Welcome to the COP21 Data Pack User Manual. The following pages aim to
-provide users of the Data Pack with the information necessary to
-successfully complete each tab of the Data Pack tool and determine
-accurate, data-driven targets. For the past several years, the Data Pack
-has a been a key element of PEPFAR COP planning, and for COP21 serves a
+Welcome to the COP22 DataPack User Manual. The following pages aim to
+provide users of the DataPack with the information necessary to
+successfully complete each tab of the DataPack tool and determine
+accurate, data-driven targets. For the past several years, the DataPack
+has a been a key element of PEPFAR COP planning, and for COP22 serves a
 critical function in assisting PEPFAR Country Teams in setting targets
 in line with the UNAIDS 95-95-95 goals for Testing, Care & Treatment,
-PMTCT, VMMC, OVC, and other program areas. Please note that the COP21
-Data Pack is mandatory and must be used to set targets for COP21. For
-COP21, all indicators included in the Data Pack are **MER 2.5**
-indicators. For further information on the MER 2.5 indicators, please go
+PMTCT, VMMC, OVC, and other program areas. Please note that the COP22
+DataPack is mandatory and must be used to set targets for COP22. For
+COP22, all indicators included in the Data Pack are **MER 2.6**
+indicators. For further information on the MER 2.6 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 
-About the Data Pack
--------------------
+## About the Data Pack
 
-The COP21 Data Pack supports analysis for all targets by Priority
+The COP22 DataPack supports analysis for all targets by Priority
 Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
 This tool supports calculation of targets based on expected treatment
 coverage rates by type of PSNU and population prioritization:
@@ -256,14 +258,14 @@ prevalence and treatment coverage, in addition to other considerations.
 These determine for a given PSNU programmatically what HIV treatment and
 prevention services should be planned and informs both the overall
 strategy and the targets. Teams must review and revise their PSNU
-prioritization levels for COP21. The COP21 Data Pack assumes a 'test and
+prioritization levels for COP22. The COP22 DataPack assumes a 'test and
 start' treatment platform and will develop targets for achieving 95%
 coverage in Scale up: Aggressive and Scale-up: Saturation PSNUs; all
 other targets in the Data Pack are based on the treatment targets,
 insofar as the treatment targets are the main focus of reaching epidemic
 control, and therefore relate to both testing and prevention targets.
 
-The Data Pack will allow PEPFAR teams to use country specific
+The DataPack will allow PEPFAR teams to use country specific
 programmatic assumptions to develop the optimum targets by PSNU along
 the program cascades to ensure the necessary number of PLHIV are
 diagnosed, linked, and start treatment. The Data Pack does not
@@ -271,174 +273,209 @@ necessarily calculate targets for every indicator, but it has space for
 teams to enter targets for all indicators and thus can be used to record
 agreed-upon COP targets, even for non-calculated indicators.
 
-**Teams must not modify the structure of the COP21 Data Pack in any
+**Teams must not modify the structure of the COP22 DataPack in any
 way**. OGAC has developed a process by which targets can be directly
 imported into DATIM via the Data Pack Site Tool in order to generate
 targets. However, this is *only* possible for teams that do not in any
 way alter the structure or format of the Data Pack. Additional details
 are provided in COP Guidance and will be available through COP webinars.
 
-Highlighted Changes from COP20 to COP21
----------------------------------------
+## Highlighted Changes from COP21 to COP22
 
-The COP21 Data Pack is largely the same as the COP20 Data Pack. However,
+The COP22 DataPack is largely the same as the COP21 DataPack. However,
 please note the following updates that have been implemented as a result
 of multiple feedback sessions with various country teams that had been
-identified by the PRIME team. These changes revolve around workflow,
-ease of target setting, and linkage to the COP guidance based on
-different aspects of the Data Pack that worked well and others that did
-not during COP20 target stetting:
+identified by the PRIME team, as well as new programmatic changes that
+are reflected in the Section 7 of COP guidance. These changes revolve
+around workflow, ease of target setting, and linkage to the COP guidance
+based on different aspects of the DataPack that worked well and others
+that did not during COP21 target stetting:
 
--   The EPI Cascade and EPI PMTCT tabs have been merged into the Cascade
-    and PMTCT tabs respectively.
+-   New Cascade Approach that will flow from Program Viral Load
+    Suppression to testing to allow for countries closer or at Epi
+    Control to more easily set targets.
 
--   Targets will be set at the PSNU level prior to looking into age/sex
-    disaggregates.
+-   Integration of new SNS Modalities for HTS and HTS_Recent.
 
--   As in previous years, PSNU-level targets will be distributed across
-    IMs in the PSNUxIM tab. When users first download the Data Pack,
-    this tab will be blank. When the country team is ready to begin this
-    process, they must upload their preliminary Data Pack to the
-    self-service validation app, which will then return a copy of the
-    Data Pack with the PSNUxIM tab populated.
+-   Targets will no longer be set for PrEP_CURR, but instead will be set
+    for a replacement indicator of PrEP_CT.
 
+-   50+ finer age bands across the clinical cascade. These will be
+    aggregated to 50+ upon DATIM import for all but TX_CURR.
 
-Data Flow and Review Process to COP21 Submission
-------------------------------------------------
+-   **PSNUxIM tab structure** that will again handle de-duplication and
+    IM allocation.
+
+## Data Flow and Review Process to COP22 Submission
 
 The results from APR20 have been taken from DATIM and used to populate
-the Data Pack. In turn, the Data Pack targets will produce FY21 targets
-that will be subsequently submitted through DATIM after COP21 has been
+the DataPack. In turn, the DataPack targets will produce FY22 targets
+that will be subsequently submitted through DATIM after COP22 has been
 finalized and the PSNU level data entered into the Strategic Direction
 Summary (SDS) tables, where appropriate (Target related data).
 
-**_Data Pack Review_**
+***Data Pack Review***
 
-|                                           | Single OU Track: Group 1 | Single OU Track: Group 2 | Single OU Track: Group 3 | Regional/Country Pair Track |
-| ----------------------------------------- |:------------------------:|:------------------------:|:------------------------:|:---------------------------:|
-| 1st Draft Tool Submission                 | Feb 16                   | Feb 23                   | Mar 2                    | Feb 9                       |
-| COP Meeting                               | Feb 22-26                | Mar 1-5                  | Mar 8-12                 | Feb 16 - Mar 12             |
-| Mid-point Tool check                      | Feb 24                   | Mar 3                    | Mar 10                   | Mar 2                       |
-| Tools Due for Final Review                | Feb 26                   | Mar 5                    | Mar 12                   | Mar 12                      |
-| Additional Touchpoints/Reviews            |                          |                          |                          | Rolling Each Monday         |
-| Tools Submitted for Upload to DATIM/FI-NG | Mar 8                    | Mar 15                   | Mar 22                   | Mar 22                      |
-| COP21 Submission Due                      | Mar 15                   | Mar 22                   | Mar 29                   | Mar 29                      |
++-----------+-----------+-----------+-----------+-----------+
+|           | Single OU | Single OU | Single OU | Region    |
+|           | Track:    | Track:    | Track:    | a         |
+|           | Group 1   | Group 2   | Group 3   | l/Country |
+|           |           |           |           | Pair      |
+|           |           |           |           | Track     |
++===========+:=========:+:=========:+:=========:+:=========:+
+| 1st Draft | Feb 16    | Feb 23    | Mar 2     | Feb 9     |
+| Tool      |           |           |           |           |
+| S         |           |           |           |           |
+| ubmission |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
+| COP       | Feb 22-26 | Mar 1-5   | Mar 8-12  | Feb 16 -  |
+| Meeting   |           |           |           | Mar 12    |
++-----------+-----------+-----------+-----------+-----------+
+| Mid-point | Feb 24    | Mar 3     | Mar 10    | Mar 2     |
+| Tool      |           |           |           |           |
+| check     |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
+| Tools Due | Feb 26    | Mar 5     | Mar 12    | Mar 12    |
+| for Final |           |           |           |           |
+| Review    |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
+| A         |           |           |           | Rolling   |
+| dditional |           |           |           | Each      |
+| Touchpo   |           |           |           | Monday    |
+| in        |           |           |           |           |
+| t         |           |           |           |           |
+| s/Reviews |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
+| Tools     | Mar 8     | Mar 15    | Mar 22    | Mar 22    |
+| Submitted |           |           |           |           |
+| for       |           |           |           |           |
+| Upload to |           |           |           |           |
+| D         |           |           |           |           |
+| A         |           |           |           |           |
+| TIM/FI-NG |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
+| COP21     | Mar 15    | Mar 22    | Mar 29    | Mar 29    |
+| S         |           |           |           |           |
+| ubmission |           |           |           |           |
+| Due       |           |           |           |           |
++-----------+-----------+-----------+-----------+-----------+
 
 **Submission Process**
 
 For each of the below submissions, the following process will occur:
 
--   Country Teamspre-validates their Data Pack submission in the Data 
+-   Country Teamspre-validates their Data Pack submission in the Data
     Pack Self-Service App (available at datapack.datim.org).
 
--   Country Team uses Data Pack Self-Service App to sync data with 
-    PAW Dossiers.
+-   Country Team uses DataPack Self-Service App to sync data with PAW
+    Dossiers.
 
--   Country Team saves Data Pack to SharePoint under the OU’s HQ 
-    Collaboration > COP 2021 - FY 2022 > Guidance, Tools, and Resources 
+-   Country Team saves Data Pack to SharePoint under the OU's HQ
+    Collaboration > COP 2022 - FY 2023 > Guidance, Tools, and Resources
     folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
-    - A link to the Data Pack file saved in SharePoint
-    - Confirmation that this file has been pre-validated in the Data 
-      Pack Self-Service App
-    - Confirmation that this file has been sent to PAW via the Data 
-      Pack Self-Service App
-    - In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency 
-      members that should be aware of ongoing review and discussions.
+    -   A link to the Data Pack file saved in SharePoint
+    -   Confirmation that this file has been pre-validated in the
+        DataPack Self-Service App
+    -   Confirmation that this file has been sent to PAW via the
+        DataPack Self-Service App
+    -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
+        members that should be aware of ongoing review and discussions.
 
--   Once this ticket is received, the Data Pack Support Team will 
-    confirm all the above has occurred and send additional instructions 
-    as needed
+-   Once this ticket is received, the DataPack Support Team will confirm
+    all the above has occurred and send additional instructions as
+    needed
 
--   The PPM reviews the ticket/email thread and confirms the correct 
+-   The PPM reviews the ticket/email thread and confirms the correct
     individuals have all been copied.
 
--   The assigned PPM and the assigned DUIT Liaison use both the Data 
-    Pack Self-Service App and the PAW COP Dossiers to validate and 
-    review the Data Pack, noting any feedback in the ticket/email thread.
+-   The assigned PPM and the assigned DUIT Liaison use both the DataPack
+    Self-Service App and the PAW COP Dossiers to validate and review the
+    DataPack, noting any feedback in the ticket/email thread.
 
--   The assigned Chair should also review all feedback on the ticket 
+-   The assigned Chair should also review all feedback on the ticket
     thread and any additional comments as needed.
 
-As is possible, all the above should occur within a 24 hour turnaround 
-from the initial submission of a Data Pack from a Country Team.
-While this process will remain the same for each submission for review, 
-the content of each review will differ, as explained below.
-Once a Zendesk ticket and email thread has been started with an initial 
-Data Pack submission, all future Data Pack submissions related to the same 
-Country should use the same thread/ticket to allow for easy coordination.
+As is possible, all the above should occur within a 24 hour turnaround
+from the initial submission of a DataPack from a Country Team. While
+this process will remain the same for each submission for review, the
+content of each review will differ, as explained below. Once a Zendesk
+ticket and email thread has been started with an initial Data Pack
+submission, all future Data Pack submissions related to the same Country
+should use the same thread/ticket to allow for easy coordination.
 
 **Submission 1**
 
--   Validate high-level strategic planning direction aligns with the 
+-   Validate high-level strategic planning direction aligns with the
     vision set by the PLL.
 
 -   Highlight any areas for technical assistance.
 
--   Ensure construction of Data Pack has not been tampered with.
+-   Ensure construction of DataPack has not been tampered with.
 
-For this stage of review, it is not expected that your PSNUxIM tab be 
-completed or even populated. At this stage, the focus should be on 
-ensuring the high-level cascade is strategically aligned, and only 
-afterward proceeding to allocating targets to IMs. Note that this is 
-also partly to avoid Excel performance issues that may occur with the 
+For this stage of review, it is not expected that your PSNUxIM tab be
+completed or even populated. At this stage, the focus should be on
+ensuring the high-level cascade is strategically aligned, and only
+afterward proceeding to allocating targets to IMs. Note that this is
+also partly to avoid Excel performance issues that may occur with the
 addition of more data to the PSNUxIM tab.
 
 **Submission 2**
 
--   Confirm resolution of any issues flagged during your first submission.
+-   Confirm resolution of any issues flagged during your first
+    submission.
 
--   Confirm no discrepancies between targets modeled in your submitted 
-    Data Pack and any COP Meeting presentations to date or other high-level 
-    discussions had with PPMs and Chairs.
+-   Confirm no discrepancies between targets modeled in your submitted
+    DataPack and any COP Meeting presentations to date or other
+    high-level discussions had with PPMs and Chairs.
 
--   Review the PSNUxIM tab and address issues related to IM and DSD-TA 
+-   Review the PSNUxIM tab and address issues related to IM and DSD-TA
     allocation, and deduplication.
 
 **Submission 3**
 
--   Again confirm Data Pack alignment with all high-level decisions and 
+-   Again confirm DataPack alignment with all high-level decisions and
     any final presentations given by the Country Team.
 
--   Confirm resolution of any issues flagged during the second submission.
+-   Confirm resolution of any issues flagged during the second
+    submission.
 
--   Track down and resolve any last bugs and issues in seen in the Data Pack
+-   Track down and resolve any last bugs and issues in seen in the
+    DataPack
 
--   Confirm the Data Pack is as near final as possible
+-   Confirm the DataPack is as near final as possible
 
 **Final Submission**
 
--   Confirm all targets modeled in the Data Pack are ready for submission 
+-   Confirm all targets modeled in the DataPack are ready for submission
     to DATIM.
 
--   Secure Interagency Government sign-off for import of your submitted Data 
-    Pack to DATIM.
+-   Secure Interagency Government sign-off for import of your submitted
+    DataPack to DATIM.
 
--   Note authority to waive any lingering validation issues flagged by the 
-    Data Pack Self-Service App.
+-   Note authority to waive any lingering validation issues flagged by
+    the DataPack Self-Service App.
 
-Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk 
-thread/ticket, the Data Pack Support Team will move forward with uploading 
-your submitted Data Pack to DATIM, then note completion of this here on 
-this ticket. Once this is done, it is recommended that you review your data 
-in DATIM to ensure alignment between DATIM and your Data Pack.
+Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk
+thread/ticket, the DataPack Support Team will move forward with
+uploading your submitted DataPack to DATIM, then note completion of this
+here on this ticket. Once this is done, it is recommended that you
+review your data in DATIM to ensure alignment between DATIM and your
+DataPack.
 
-
-Data Pack SharePoint Location
------------------------------
+## DataPack SharePoint Location
 
 The Data Pack will be posted on PEPFAR SharePoint:
 [www.pepfar.net](http://www.pepfar.net).
 
--   The file path will be OU \> Country Name \> HQ Collaboration \> COP
-    2021 -- FY2022 \> Guidance, Tools, and Resources.
+-   The file path will be OU > Country Name > HQ Collaboration > COP
+    2022 -- FY2023 > Guidance, Tools, and Resources.
 
--   The file name will be "Datapack_CountryName_20210108".
+-   The file name will be "Datapack_CountryName_20220108".
 
-Tab Categories
---------------
+## Tab Categories
 
 Each Data Pack will start with 22 tabs organized in the order presented
 below. Upon downloading the Data Pack, the PSNUxIM tab will appear as a
@@ -469,6 +506,8 @@ after you submit your preliminary Data Pack.
 
     -   VMMC
 
+    -   KP
+
     -   HTS
 
     -   CXCA
@@ -487,11 +526,9 @@ after you submit your preliminary Data Pack.
 
     -   PrEP
 
-    -   KP
+    -   KP_MAT
 
     -   KP Validation
-
-    -   KP_MAT
 
 -   Mechanism Mapping
 
@@ -501,52 +538,49 @@ after you submit your preliminary Data Pack.
 
 \blandscape
 
-How Does Everything Connect?
-----------------------------
-
+## How Does Everything Connect?
 
 ```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image3.png")
 ```
 
+```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image3.png}
 
 \end{center}
-
+```
 \newpage
 
-Elements of a Tab
------------------
-
+## Elements of a Tab
 
 ```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image4.png")
 ```
 
+```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image4.png}
 
 \end{center}
-
+```
 \newpage
 
-How to Navigate a Data Pack Tab
--------------------------------
-
+## How to Navigate a Data Pack Tab
 
 ```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image5.png")
 ```
 
+```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image5.png}
 
 \end{center}
-
+```
 \elandscape
 
 \newpage
@@ -566,25 +600,24 @@ suggestions as well.
 
 **Example:**
 
-
 ```{r echo=FALSE, out.width = '50%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image9.png")
 ```
 
+```{=tex}
 \begin{center}
 
 \includegraphics[width=4.3in]{./images/image9.png}
 
 \end{center}
+```
+## Adjustments to Historic Targets and Results
 
-Adjustments to Historic Targets and Results
--------------------------------------------
-
-Throughout the Data Pack, historic targets and results have been
-provided for reference and often to drive target modeling algorithms.
-If, in the process of reviewing these historic data, issues with the
-data are discovered that may need to be addressed in DATIM, follow the
-below procedure:
+Throughout the DataPack, historic targets and results have been provided
+for reference and often to drive target modeling algorithms. If, in the
+process of reviewing these historic data, issues with the data are
+discovered that may need to be addressed in DATIM, follow the below
+procedure:
 
 1.  Raise specific issues with historic data to your PPM and DUIT
     Liaison. Determine together whether any issue identified requires
@@ -595,10 +628,9 @@ below procedure:
     approvals to initiate and expedite this process during COP.
 
 3.  Once changes are processed in DATIM, you can either request a new
-    Data Pack with updated data from DATIM, or copy new values into the
-    related column of the Data Pack yourself. For either of these
-    routes, reach out to the Data Pack Systems Team via Zendesk for
-    support.
+    DataPack with updated data from DATIM, or copy new values into the
+    related column of the DataPack yourself. For either of these routes,
+    reach out to the DataPack Systems Team via Zendesk for support.
 
 4.  It may also be the case that together with your PPM and DUIT Liaison
     you decide that changes to historic values are not necessary in

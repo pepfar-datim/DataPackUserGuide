@@ -381,11 +381,11 @@ next section.
 within the past 12 months.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_PVLS (N)-AP-AT-1-1", "latex")
+schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_PVLS (N)-AP-AT-1-1", "html")
+schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
 ```
 
 ### DATIM Import
@@ -903,6 +903,100 @@ rounded to the nearest integer:
 ```
 Note that this modeling approach does not take into account mortality
 rates among this population.
+
+## Cascade: HTS_Index
+
+**HTS_INDEX:** Number of individuals who were identified and tested
+using Index testing services and received their results
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-HTS_INDEX-CF-CM-1-1", "latex")
+
+schema_table("Cascade-HTS_INDEX-CF-CM-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-HTS_INDEX-CF-CM-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **COMMUNITY - Contacts Tested, New Positive**
+    \[HTS_INDEX_COM.New.Pos.T\]
+
+-   **COMMUNITY - Contacts Tested, New Negative**
+    \[HTS_INDEX_COM.New.Neg.T\]
+
+-   **FACILITY - Contacts Tested, New Positive**
+    \[HTS_INDEX_FAC.New.Pos.T\]
+
+-   **FACILITY - Contacts Tested, New Negative**
+    \[HTS_INDEX_FAC.New.Neg.T\]
+
+### Instructions
+
+1.  Review the estimated percent of total HTS_INDEX positives to be
+    identified in Community Sites. This will initially be pre-populated
+    based on FY20 results as recorded in DATIM, but may be adjusted as
+    needed. Red highlights indicate percentages over 100%, or under 0%.
+
+2.  Review estimated yields among HTS_INDEX contacts newly tested, both
+    for those tested at Community sites, as well as for those tested in
+    Facility sites. These are initially pre-populated based on FY20
+    results from DATIM, but can be adjusted as needed. Red highlights
+    indicate percentages over 100%, or under 0%; yellow highlights
+    indicate cases where yield rates are less than 20% for 15+ year
+    olds.
+
+3.  Review modeled targets for the following columns. See below for
+    additional information:
+
+    a.  COMMUNITY -- Contacts Tested, New Positive
+
+    b.  COMMUNITY -- Contacts Tested, New Negative
+
+    c.  FACILITY-- Contacts Tested, New Positive
+
+    d.  FACILITY-- Contacts Tested, New Negative
+
+4.  Review the Actual percent of HTS_TST_POS to come from Index testing,
+    calculated by dividing the sum of Community and Facility
+    HTS_INDEX_POS by the total HTS_TST_POS.
+
+### HTS_INDEX Disaggregates
+
+In general, HTS_INDEX disaggregates across both Community and Facility
+sites, and across both Negative and Positive HIV test results, are set
+by combining HTS_INDEX_POS with the percentages set in steps 1 and 2
+above.
+
+FY22 targets for HTS_INDEX New Positives in Community Sites are set as
+follows, rounding to the nearest integer:
+
+```{=tex}
+\begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
+```
+Building from this, FY22 targets for HTS_INDEX New Negatives in
+Community Sites are set as follows, rounding to the nearest integer:
+
+```{=tex}
+\begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+```
+Alternatively, FY22 targets for HTS_INDEX New Positives in Facility
+Sites are set as follows, rounding to the nearest integer:
+
+```{=tex}
+\begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+```
+And finally, FY22 targets for HTS_INDEX New Negatives in Community Sites
+are set as follows:
+
+```{=tex}
+\begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
+```
+## 
 
 \elandscape
 

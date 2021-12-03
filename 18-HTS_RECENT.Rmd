@@ -1,15 +1,18 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-HTS_RECENT
-==========
+# HTS_RECENT
 
 **HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
 years with a test for recent infection result during the reporting
 period.
 
-HTS_TST Modalities
-------------------
+## HTS_TST Modalities
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("HTS_RECENT-Index (Community)-F-G-1-1", "latex")
@@ -27,19 +30,19 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  The HTS_RECENT Tab contains 13 different Modalities for both
+1.  The HTS_RECENT Tab contains 15 different Modalities for both
     Facility and Community level targets. Each modality consist of two
     columns. The first column in each modality is the "% of Positives"
     for the specific modality indicator. Each of these columns is
     prepopulated with a default of 100% for each modality reflecting COP
-    21 guidance that 100% of patients who test positive for HIV should
+    22 guidance that 100% of patients who test positive for HIV should
     also receive a recency test. These assumptions may be altered as
     needed by country teams, but they are conditionally formatted to
     highlight in Red should the percentage be over 100% and Yellow
     should they be less than 100%.
 
 2.  Review the target column for each of these modalities will be set in
-    the column "\# Tested for Recent Infection" and will be a product of
+    the column "# Tested for Recent Infection" and will be a product of
     the "% of Positives" and the "Newly Tested, Positive" targets that
     were set in previous tabs that relate to each modality column.
 
@@ -50,8 +53,7 @@ The following data points will be imported into DATIM from this section:
     tab in which the main "Newly Tested, Positive" target was set. These
     reference tabs are: PMTCT, TB, VMMC, and HTS.
 
-HTS_RECENT (Total)
-------------------
+## HTS_RECENT (Total)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("HTS_RECENT-HTS_RECENT (Total)-AF-AH-1-1", "latex")
@@ -68,10 +70,10 @@ No data points will be imported into DATIM from this section.
 ### Instructions
 
 1.  Review "Total Recency Tests" column which is calculated by
-    aggregating "\# Tested for Recent Infection" across all modalities
-    on the HTS_RECENT tab. To adjust individual targets by modality,
-    return to the previous section. In some circumstances, it may also
-    be necessary to return to the PMTCT, TB, VMMC, or HTS tabs to adjust
+    aggregating "# Tested for Recent Infection" across all modalities on
+    the HTS_RECENT tab. To adjust individual targets by modality, return
+    to the previous section. In some circumstances, it may also be
+    necessary to return to the PMTCT, TB, VMMC, or HTS tabs to adjust
     the number of HTS_TST_POS coming from each modality.
 
 2.  Review "Total HTS_TST_POS" column which references "Final
@@ -86,7 +88,7 @@ No data points will be imported into DATIM from this section.
     HTS_TST_POS, or recency testing coverage is lower than 100%, then
     the column will be highlighted yellow. If this coverage is greater
     than 100% the cell will be highlighted Red.
-    
+
 \elandscape
 
 \newpage

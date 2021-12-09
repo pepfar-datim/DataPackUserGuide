@@ -273,15 +273,15 @@ ultimately you may adjust this baseline in the green column titled
 more accurately reflect the likely reality of PEPFAR's contribution to
 TX_NET_NEW_SUBNAT.
 
-### Targeted Host Country ART Coverage
+### Targeted Host Country PopVLS Coverage
 
 One of the most pivotal data points in the Data Pack is the baseline
-estimate of Host Country ART Coverage. To calculate the estimated Host
-Country ART Coverage for FY21 (i.e., projected as of September 2021),
-the Data Pack uses the following formula:
+estimate of Host Country PopVLS Coverage. To calculate the estimated
+Host Country PopVLS Coverage for FY22 (i.e., projected as of September
+2022), the Data Pack uses the following formula:
 
 ```{=tex}
-\begin{center} $\frac{Host\ Country\ Observed\ TX\_ CURR\_ SUBNAT\ (FY20)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
+\begin{center} $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ \end{center}
 ```
 In the case that PEPFAR's reported TX_CURR results for FY20 exceed the
 reported Host Country Observed TX_CURR_SUBNAT for FY20, the following
@@ -290,28 +290,30 @@ function will be used to calculate ART Coverage instead of the above:
 ```{=tex}
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
 ```
-Reviewing and understanding the ART Coverage estimate arrived at in this
-column is critical for much of the rest of the Data Pack. In particular,
-this column is later instrumental in determining the following key data
-points:
+Reviewing and understanding the PopVLS Coverage estimate arrived at in
+this column is critical for much of the rest of the Data Pack. In
+particular, this column is later instrumental in determining the
+following key data points:
 
--   Host Country TX_CURR_SUBNAT
+-   Host Country VL_SUPPRESSION_SUB NAT
 
--   Host Country TX_NET_NEW_SUBNAT
+-   Host Country VLS_NET_NEW_SUBNAT
 
--   PEPFAR TX_CURR
+-   PEPFAR TX_PVLS
 
 -   PEPFAR TX_NEW
 
--   PEPFAR TX_PVLS
+-   PEPFAR TX_CURR
+
+-   PEPFAR TX_CURR_SUBNAT
 
 -   PEPFAR HTS_TST totals
 
 -   PEPFAR HTS_INDEX
 
 After reviewing data in this column, examine the next column, **Targeted
-Host Country ART Coverage (FY22) (%)**. In line with the UNAIDS 95-95-95
-goals, this column defaults to 90%, reflecting that since the
+Host Country PopVLS Coverage (FY22) (%)**. In line with the UNAIDS
+95-95-95 goals, this column defaults to 95%, reflecting that since the
 denominator in the Data Pack calculation is Host Country Estimated PLHIV
 instead of only those PLHIV who know their HIV Status, this column
 should be the equivalent of:
@@ -319,14 +321,14 @@ should be the equivalent of:
 ```{=tex}
 \begin{center} $(95\%\ of\ PLHIV\ know\ their\ HIV\ status)\ \  \times \ (95\%\ of\ PLHIV\ who\ know\ their\ status\ are\ on\ ART)$ \end{center}
 ```
-However, in cases where baseline ART Coverage may be greater than 90%,
-baseline ART Coverage will be used instead of 90%.
+However, in cases where baseline PopVLS Coverage may be greater than
+95%, baseline PopVLS Coverage will be used instead of 95%.
 
-No matter the starting default for Targeted Host Country ART Coverage,
-you may adjust this target to fit the realities of your country context,
-and the strategy of your treatment program. It may also be helpful to
-return to this column to iteratively adjust it as you proceed through
-the next few sections of the Data Pack.
+No matter the starting default for Targeted Host Country PopVLS
+Coverage, you may adjust this target to fit the realities of your
+country context, and the strategy of your treatment program. It may also
+be helpful to return to this column to iteratively adjust it as you
+proceed through the next few sections of the Data Pack.
 
 NOTE: The Data Pack will not prevent situations resulting in ART
 coverage exceeding 100% in a given PSNU, but will flag these cases in

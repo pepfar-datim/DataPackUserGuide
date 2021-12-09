@@ -471,27 +471,21 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review and adjust assumptions for the proportion of TX_NEW projected
-    to be eligible for viral load testing during the coming Fiscal Year.
-    The default assumption is 70%, reflecting the MER 2.5 guidance that
-    individuals must have been on ART for at least 3 months in order to
-    be eligible for viral load testing. Red highlighting in this column
-    indicates values over 100%, and yellow highlighting values below
-    70%.
+1.  Review and adjust assumptions for the proportion of TX_PVLS (D)
+    projected to be eligible for viral load testing during the coming
+    Fiscal Year. The default assumption is 95%, reflecting the MER 2.6
+    guidance that individuals must have been on ART for at least 3
+    months in order to be eligible for viral load testing. Red
+    highlighting in this column indicates values over 100%, and yellow
+    highlighting values below 70%.
 
-2.  Review and adjust assumptions describing access to viral load
-    testing among those eligible. The default assumption is 100%,
-    reflecting the goal that viral load testing should be available to
-    all those receiving ART. Red highlighting in this column indicates
-    values over 100%, and yellow highlighting values below 70%.
-
-3.  Review targeted TX_PVLS (D) for routine viral load testing. See
+2.  Review targeted TX_PVLS (D) for routine viral load testing. See
     below for additional information.
 
 ### TX_PVLS (D): Routine (FY23)
 
-While MER 2.5 allows for both Routine and Targeted Viral Load testing,
-only Routine Viral Load testing will be targeted as part of COP 21
+While MER 2.6 allows for both Routine and Targeted Viral Load testing,
+only Routine Viral Load testing will be targeted as part of COP 22
 planning.
 
 Within the Data Pack, TX_PVLS Denominator targets for Routine Viral Load
@@ -528,19 +522,21 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review the column, Proportion of TX_NET_NEW from New ART Initiation
-    (FY22) (%). This is defaulted to 100%, but can be adjusted as
-    necessary. See below for additional instructions.
-
-2.  Review targeted Retention Rates for those New on ART and those
-    Already on ART for FY22. These are both defaulted at 98%, but can be
-    adjusted as necessary. Red highlighting will identify cases where
+1.  Review the column, % TX_NEW Eligible for VL Test (FY23) (%). This is
+    defaulted to 70%, but can be adjusted as necessary. See below for
+    additional instructions. Red highlighting will identify cases where
     these may be set above 100%, and yellow highlighting those cases
-    were set below 98%.
+    were set below 70%.
 
-3.  Review historic data for TX_NEW Results and Targets for reference.
+2.  Review targeted % of eligible w/ access to VL testing (FY23) (%).
+    This is defaulted to 100%, but can be adjusted as necessary. Red
+    highlighting will identify cases where these may be set above 100%,
+    and yellow highlighting those cases were set below 100%.
 
-4.  Review FY22 TX_NEW targets and return to previous sections to adjust
+3.  Review historic data for TX_NEW Results and Targets for reference
+    from the PEPFAR Programmatic Cascade section.
+
+4.  Review FY23 TX_NEW targets and return to previous sections to adjust
     assumptions and modeling decisions as necessary. See below for
     additional information.
 
@@ -609,7 +605,7 @@ See below to see how this affects TX_NEW targeting.
 
 ### TX_NEW (FY22)
 
-For those one year old and older, PEPFAR TX_NEW targets for FY22 will be
+For those one year old and older, PEPFAR TX_NEW targets for FY23 will be
 set using the formula laid out above for Proportion of TX_NET_NEW from
 New ART, solving for TX_NEW, with each component and the total rounded
 to the nearest integer:

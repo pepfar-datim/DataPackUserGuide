@@ -1,21 +1,24 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
-How to Use the User Manual
-==========================
+# How to Use the User Manual
 
 The Data Pack consists of tabs that address indicators related to each
 PEPFAR program area.
 
-The COP21 Data Pack User Manual reviews all indicators within each tab
+The COP22 Data Pack User Manual reviews all indicators within each tab
 and provides you with the relevant information to complete all required
 sections of the Data Pack correctly. It also instructs you where to find
 more information on each program area in the COP21 Guidance.
 
-Key Column Highlights
----------------------
+## Key Column Highlights
 
 > ***Column type?*** Indicates whether the data in this column is a
 > result from a previous fiscal year ("Result"), an assumption that the
-> country team is making ("Assumption"), a target for FY2022
+> country team is making ("Assumption"), a target for FY2023
 > ("Targets"), or a reference for the country team as they fill out the
 > Data Pack ("Reference").
 >
@@ -42,8 +45,8 @@ Key Column Highlights
 > ***Linked column?*** This indicates that this data is either
 > prepopulated by or is used to prepopulate data in a column on another
 > tab within the Data Pack. For columns that are prepopulated from
-> another tab, clicking on the column name in the Data Pack will take
-> you to the referenced column.
+> another tab, clicking on the hyperlinked column name in the Data Pack
+> will take you to the referenced column.
 >
 > ***UID in Appendix**.* The UID provided here is a Data Pack reference
 > ID and can be used to find more information about the data entered

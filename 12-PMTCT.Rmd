@@ -91,18 +91,18 @@ Data Pack:
 **PMTCT_STAT (D):** Number of new ANC clients in reporting period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-R-T-1-1", "latex")
+schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-R-T-1-1", "html")
+schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT (D)** \[PMTCT_STAT.D.T\]
+-   **PMTCT_STAT (D) (FY23)** \[PMTCT_STAT.D.T\]
 
 ### Instructions
 
@@ -129,6 +129,37 @@ The following data points will be imported into DATIM from this section:
     planned in FY23 where these were not provided in FY22, you may
     manually enter FY23 targets in this column.
 
+## PMTCT: PMTCT_STAT_SUBNAT (D)
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X -1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **PMTCT_STAT_SUBNAT (D) (FY23)** \[PMTCT_STAT_SUBNAT.D.T\]
+
+### Instructions
+
+1.  Review the Est. PEPFAR proportion of Host Country
+    PMTCT_STAT_SUBNAT (D) (FY22) (%) that is calculated using the Host
+    Country Context Section.
+
+2.  Review Targeted PEPFAR proportion of Host Country
+    PMTCT_STAT_SUBNAT (D) (FY23) (%) which will be set by default to
+    equal the FY22 percentage from the previous column.
+
+3.  Review the projected target total for PMTCT_STAT_SUBNAT (D) (FY23).
+    If there is a need to adjust the target, revisit the percentage from
+    column W for the Proportion, or go back and make adjustments to
+    PMTCT_STAT (D) from the previous section of this tab.
+
 ## PMTCT: PMTCT_STAT (N)
 
 **PMTCT_STAT (N):** Number of pregnant women with known HIV status at
@@ -136,15 +167,15 @@ first antenatal care visit (ANC1) (includes those who already knew their
 HIV status prior to ANC1).
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-U-W-1-3", "latex")
+schema_table("PMTCT-PMTCT_STAT (N)-Y-AB-1-3", "latex")
 
-schema_table("PMTCT-PMTCT_STAT (N)-X-Z-2-3", "latex")
+schema_table("PMTCT-PMTCT_STAT (N)-AB-AD-2-3", "latex")
 
-schema_table("PMTCT-PMTCT_STAT (N)-AA-AC-3-3", "latex")
+schema_table("PMTCT-PMTCT_STAT (N)-AD-AG-3-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-U-AC-1-1", "html")
+schema_table("PMTCT-PMTCT_STAT (N)-Y-AG-1-1", "html")
 ```
 
 ### DATIM Import
@@ -217,8 +248,53 @@ follows:
 ```{=tex}
 \begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
 ```
-**\
-**
+## PMTCT: PMTCT_STAT_SUBNAT (N)
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK -1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)**
+    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)**
+    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)**
+    \[PMTCT_STAT_SUBNAT.N.New.Neg.T\]
+
+### Instructions
+
+1.  Review the Total PMTCT_STAT_SUBNAT (N) that is calculated using the
+    tarqget set in the previous section for PMTCT_STAT_SUBNAT (D) (FY23)
+    and Targeted testing coverage of ANC1 clients (FY23) (%) from the
+    PMTCT_STAT (N) section. This will be used to calculate the FY23
+    targets for the remainder of this section
+
+2.  Review Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)
+    which will be calucated as the product of the Total
+    PMTCT_STAT_SUBNAT (N) and Projected % ANC1 clients Known HIV
+    Positive (FY23) (%). Adjust this percentage from the previous
+    section to make changes to this target.
+
+3.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23) in
+    the same manner as it uses the SUBNAT Numerator and Est. Positivity
+    Rate among Newly Tested ANC1 clients (FY23) (%). Adjust this
+    percentage from the previous section to make changes to this target.
+
+4.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)
+    which will be calcuated as the remainder of Host Country
+    PMTCT_STAT_SUBNAT (N) - Known Positive (FY23), less Host Country
+    PMTCT_STAT_SUBNAT (N) - Known Positive (FY23) and Host Country
+    PMTCT_STAT_SUBNAT (N) - New Positive (FY23).
 
 ## PMTCT: PMTCT_ART (N)
 
@@ -226,11 +302,11 @@ follows:
 ART to reduce the risk of mother-to-child transmission during pregnancy.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AD-AF-1-1", "latex")
+schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AD-AF-1-1", "html")
+schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "html")
 ```
 
 ### DATIM Import
@@ -258,8 +334,37 @@ The following data points will be imported into DATIM from this section:
     by multiplying PMTCT_STAT (N) Newly Tested, Positive by the Targeted
     ART Linkage Rate.
 
-**\
-**
+## PMTCT: PMTCT_ART_SUBNAT
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Est. Host Country \# HIV-positive pregnant women (FY23)**
+    \[PMTCT_ART_SUBNAT.D.T\]
+
+-   **Est. Host Country \# HIV+ Pregnant Women Already on ART (FY23)**
+    \[PMTCT_ART_SUBNAT.N.Already.T\]
+
+-   **Est. Host Country \# HIV+ Pregnant Women New on ART (FY23)**
+    \[PMTCT_ART_SUBNAT.N.New.T\]
+
+### Instructions
+
+1.  Review Est. Host Country \# HIV-positive pregnant women (FY23). This
+    is the summation of FY23 Targets set in the PMTCT_STAT_SUBNAT (N)
+    Section for Host Country PMTCT_STAT_SUBNAT (N) - Known Positive
+    (FY23) and Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23).
+
+2.  
 
 ## PMTCT: HTS_TST: PMTCT Post ANC1
 
@@ -269,13 +374,13 @@ in pregnancy (>ANC2), during labor & delivery (L&D), and while
 breastfeeding.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AG-AI-1-2", "latex")
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AU-1-2", "latex")
 
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AJ-AL-2-2", "latex")
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AU-AX-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AG-AL-1-1", "html")
+schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AX-1-1", "html")
 ```
 
 ### DATIM Import
@@ -320,13 +425,13 @@ The following data points will be imported into DATIM from this section:
 ## PMTCT: Testing Rationalization
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Testing Rationalization-AM-AP-1-2", "latex")
+schema_table("PMTCT-Testing Rationalization-AY-BB-1-2", "latex")
 
-schema_table("PMTCT-Testing Rationalization-AQ-AS-2-2", "latex")
+schema_table("PMTCT-Testing Rationalization-BB-BE-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Testing Rationalization-AM-AS-1-1", "html")
+schema_table("PMTCT-Testing Rationalization-AY-BE-1-1", "html")
 ```
 
 ### DATIM Import

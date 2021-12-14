@@ -1,29 +1,17 @@
+# What's New?
 
-What's New?
-===========
+The introduction of 65+ age bands for TX_CURR targets this year will be visible across the Cascade, PMTCT, TB, and VMMC tabs. For structural purposes of these tabs to seamlessly work with the new inclusion of the 50+ finer age bands, targets will be set across many indicators at the finer age bands across the clinical cascade. The most important thing for user's to note is that these will be aggregated to 50+ upon DATIM import for all but TX_CURR. The breakdown that has been used to dissaggreate the 50+ age band into the finer age bands up to 65+ is the following:
 
-**HTS Tab Formula Error**
+-   50-54: 42%
 
-In the HTS Tab there is an error within the formula that helps calculate “TB_STAT: New Positive (%)” in column Z of the HTS_TST - Distribution of Positive Tests section. This formula is currently referencing “HTS_TST Post ANC1 New Positives (FY22)” from column J, but needs to be referencing “TB_STAT New Positives (FY22)” from column K. To make this simple change, please adjust the formula from
+-   55-59: 35% 
 
-$$=IF(OR(SUM(\$G15)=0,SUM(\$J15)=0),"",SUM(\$J15)/SUM(\$G15))$$
+-   60-64 14%
 
-and change the reference of column J to column K so that it reads 
+-   65+: 9%
 
-$$=IF(OR(SUM(\$G15)=0,SUM(\$K15)=0),"",SUM(\$K15)/SUM(\$G15))$$ 
-
-
-**TX_TB_PREV Tab Formula Error**
-
-In the TX_TB_PREV Tab there is an error within the formula that helps calculate “TX_CURR (FY22)” in column K of the TX_TB (D) section. This formula is currently double counting TX_NEW contributions to TX_TB. To make this simple change, please adjust the formula from
-
-$$=IF(\$C15="<15",SUM(SUMIFS(Cascade!\$AE:\$AE,Cascade!\$B:\$B,\$B15,Cascade!\$C:\$C,{"=<01","01-04","05-09","10-14"},Cascade!\$D:\$D,\$D15)),SUM(SUMIFS(Cascade!\$AE:\$AE,Cascade!\$B:\$B,\$B15,Cascade!\$C:\$C,{"15-19","20-24","25-29","30-34","35-39","40-44","45-49","50+"},Cascade!\$D:\$D,\$D15)))$$
-
-and change it so that it reads 
-
-$$=IF(\$C15=“<15”,SUM(SUMIFS(Cascade!\$U:\$U,Cascade!\$B:\$B,\$B15,Cascade!\$C:\$C,{“=<01",“01-04”,“05-09",“10-14”},Cascade!\$D:\$D,\$D15)),SUM(SUMIFS(Cascade!\$U:\$U,Cascade!\$B:\$B,\$B15,Cascade!\$C:\$C,{“15-19",“20-24”,“25-29",“30-34”,“35-39",“40-44”,“45-49",“50+“},Cascade!\$D:\$D,\$D15)))$$
-
+These percentages were determined through various research studies. If teams feel as though they need to adjust the breakdowns based on local data and research they are able to do so, but should first consult their Chair, PPM and DUIT Liaison.
 
 **PSNUxIM Tab Formulas**
 
-When you received your newly generated PSNUxIM tab for the first time, you will need to scroll to the “Target Values” Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.
+When you received your newly generated PSNUxIM tab for the first time, you will need to scroll to the "Target Values" Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.

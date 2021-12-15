@@ -1,32 +1,41 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-VMMC
-====
+# VMMC
 
-VMMC_CIRC_SUBNAT
-----------------
+## VMMC_CIRC_SUBNAT
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("VMMC-VMMC_CIRC_SUBNAT-F-I-1-3", "latex")
 
 schema_table("VMMC-VMMC_CIRC_SUBNAT-J-M-2-3", "latex")
 
-schema_table("VMMC-VMMC_CIRC_SUBNAT-N-P-3-3", "latex")
+schema_table("VMMC-VMMC_CIRC_SUBNAT-N-Q-3-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC_SUBNAT-F-P-1-1", "html")
+schema_table("VMMC-VMMC_CIRC_SUBNAT-F-Q-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country VMMC_CIRC_SUBNAT (FY21)** [VMMC_CIRC_SUBNAT.T_1]
+-   **Host Country VMMC_CIRC_SUBNAT (FY22)** \[VMMC_CIRC_SUBNAT.T_1\]
 
--   **Host Country VMMC_TOTALCIRC_SUBNAT (FY21)**
-    [VMMC_TOTALCIRC_SUBNAT.T_1]
+-   **Host Country VMMC_TOTALCIRC_SUBNAT (FY22)**
+    \[VMMC_TOTALCIRC_SUBNAT.T_1\]
+
+-   **Targeted Host Country VMMC_TOTALCIRC_SUBNAT (FY23)**
+    \[VMMC_TOTALCIRC_SUBNAT.T\]
+
+-   **Targeted Host Country VMMC_CIRC_SUBNAT (FY23)**
+    \[VMMC_CIRC_SUBNAT.T\]
 
 ### Instructions
 
@@ -34,15 +43,17 @@ The following data points will be imported into DATIM from this section:
     corollaries on the Cascade tab. Follow hyperlinks to navigate to the
     source of this data:
 
-    a.  Host Country Estimated Male Population (FY21)
+    a.  Host Country Estimated Male Population (FY22)
 
-    b.  Host Country Estimated PLHIV (FY21)
+    b.  Host Country Estimated PLHIV (FY22)
 
-    c.  Host Country Estimated HIV Prevalence (FY21)
+    c.  Host Country Estimated HIV Prevalence (FY22)
 
-    d.  Host Country Estimated TX_CURR_SUBNAT (FY21)
+    d.  Host Country Estimated TX_CURR_SUBNAT (FY22)
 
-    e.  Host Country Estimated ART Coverage (FY21)
+    e.  Host Country Estimated ART Coverage (FY22)
+
+    f.  Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
@@ -51,83 +62,81 @@ The following data points will be imported into DATIM from this section:
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
 
-    a.  Host Country VMMC_CIRC_SUBNAT (FY21)
+    a.  Host Country VMMC_CIRC_SUBNAT (FY22)
 
-    b.  Host Country VMMC_TOTALCIRC_SUBNAT (FY21)
+    b.  Host Country VMMC_TOTALCIRC_SUBNAT (FY22)
 
-3.  Review Host Country Estimated VMMC Coverage (FY21), which is
-    calculated by dividing the FY21 Host Country Estimated
-    VMMC_TOTALCIRC_SUBNAT by the FY21 Host Country Estimated Male
+3.  Review Host Country Estimated VMMC Coverage (FY22), which is
+    calculated by dividing the FY22 Host Country Estimated
+    VMMC_TOTALCIRC_SUBNAT by the FY22 Host Country Estimated Male
     Population.
 
-4.  Review Targeted Host Country VMMC Coverage (FY22), which is
+4.  Review Targeted Host Country VMMC Coverage (FY23), which is
     initially set to 80% per PEPFAR VMMC coverage goals, but you may
     adjust this based on PEPFAR Country-specific VMMC strategies and
     goals. Note that this statistic represents the targeted VMMC
     coverage to be achieved by October 2022.
 
-5.  Review modeled FY22 targets for Host Country VMMC_TOTALCIRC_SUBNAT
+5.  Review modeled FY23 targets for Host Country VMMC_TOTALCIRC_SUBNAT
     and VMMC_CIRC_SUBNAT. Return to steps 1-4 to adjust underlying
     assumptions as needed.
 
-
-VMMC: VMMC_CIRC
----------------
+## VMMC: VMMC_CIRC
 
 **VMMC_CIRC:** Number of males circumcised as part of the voluntary
 medical male circumcision (VMMC) for HIV prevention program within the
 reporting period.
 
-**Note: For FY22 targets, males less than 15 years old will not be
+**Note: For FY23 targets, males less than 15 years old will not be
 eligible for PEPFAR-supported VMMC services.**
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-VMMC_CIRC-Q-T-1-4", "latex")
+schema_table("VMMC-VMMC_CIRC-R-T-1-4", "latex")
 
 schema_table("VMMC-VMMC_CIRC-U-X-2-4", "latex")
 
 schema_table("VMMC-VMMC_CIRC-Y-AB-3-4", "latex")
 
-schema_table("VMMC-VMMC_CIRC-AC-AE-4-4", "latex")
+schema_table("VMMC-VMMC_CIRC-AC-AD-4-4", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC-Q-AE-1-1", "html")
+schema_table("VMMC-VMMC_CIRC-R-AD-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   VMMC_CIRC Indeterminate/Not Tested [VMMC_CIRC.Unk.T]
+-   VMMC_CIRC Indeterminate/Not Tested \[VMMC_CIRC.Unk.T\]
 
--   VMMC_CIRC HIV Positive [VMMC_CIRC.Pos.T]
+-   VMMC_CIRC HIV Positive \[VMMC_CIRC.Pos.T\]
 
--   VMMC_CIRC HIV Negative [VMMC_CIRC.Neg.T]
+-   VMMC_CIRC HIV Negative \[VMMC_CIRC.Neg.T\]
 
 ### Instructions
 
-1.  For historical context, review FY20 results and FY21 targets for
+1.  For historical context, review FY21 results and FY22 targets for
     PEPFAR VMMC_CIRC, supplied in the Data Pack as an export from data
     currently reported in DATIM.
 
-2.  Review the FY21 estimated PEPFAR Coverage of Host Country
-    VMMC_CIRC_SUBNAT, calculated by dividing FY21 PEPFAR VMMC_CIRC
-    targets by the projected FY21 Host Country VMMC_CIRC_SUBNAT.
+2.  Review the FY22 estimated PEPFAR Coverage of Host Country
+    VMMC_CIRC_SUBNAT, calculated by dividing FY22 PEPFAR VMMC_CIRC
+    targets by the projected FY22 Host Country VMMC_CIRC_SUBNAT.
 
-3.  Review the FY22 PEPFAR coverage of Host Country VMMC_CIRC_SUBNAT,
-    which is initially set equal to the FY21 estimated coverage rate set
+3.  Review the FY23 PEPFAR coverage of Host Country VMMC_CIRC_SUBNAT,
+    which is initially set equal to the FY22 estimated coverage rate set
     in step 2, but can be adjusted as needed.
 
-4.  For Military SNUs only, adjust the FY21 to FY22 Change in VMMC_CIRC.
+4.  For Military SNUs only, adjust the FY22 to FY23 Change in VMMC_CIRC.
     For Military SNUs, this defaults to zero, but can be adjusted to
     match strategic programming as necessary.
 
-5.  Review FY20 results for Observed Indeterminate/Not Tested Rate and
+5.  Review FY21 results for Observed Indeterminate/Not Tested Rate and
     Observed Positivity Rate among those VMMC clients newly tested for
     HIV, both of which are obtained from DATIM.
 
-6.  Review and adjust FY22 projections for Estimated Indeterminate/Not
+6.  Review and adjust FY23 projections for Estimated Indeterminate/Not
     Tested Rate and Estimated Positivity Rate among VMMC clients newly
     tested for HIV. Both of these estimates are initially set equal to
     their counterpart set in step 5, but can be adjusted as needed. Red
@@ -154,21 +163,23 @@ The following data points will be imported into DATIM from this section:
     those identified HIV positive by the ART linkage rate reviewed in
     step 7.
 
-### Total VMMC_CIRC (FY22)
+### Total VMMC_CIRC (FY23)
 
-For Military organization units, FY22 targets for Total VMMC_CIRC is set
+For Military organization units, FY23 targets for Total VMMC_CIRC is set
 as follows, rounding to the nearest integer:
 
+```{=tex}
 \begin{center} ${VMMC\_ CIRC}_{t}\  = \ {VMMC\_ CIRC}_{t - 1}\  \times \ (1\  + \ {VMMC\_ CIRC.Change.Military}_{t})$ \end{center}
-
-For all other organization units, FY22 targets for Total VMMC_CIRC are
+```
+For all other organization units, FY23 targets for Total VMMC_CIRC are
 set as follows, rounding to the nearest integer:
 
+```{=tex}
 \begin{center} ${VMMC\_ CIRC}_{t}\  = \ {Targeted\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}\  \times \ {PEPFAR\ Coverage\ of\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}$ \end{center}
+```
+### VMMC_CIRC Disaggregates (FY23)
 
-### VMMC_CIRC Disaggregates (FY22)
-
-In disaggregating total VMMC_CIRC for FY22 Targets, the Data Pack will
+In disaggregating total VMMC_CIRC for FY23 Targets, the Data Pack will
 first set targets for those projected to have indeterminate HIV testing
 results or to deny testing, then targets for those identified positive,
 and finally those negative.
@@ -176,27 +187,51 @@ and finally those negative.
 To set targets for Indeterminate/Not Tested, the Data Pack will use the
 following formula, rounding to the nearest integer:
 
+```{=tex}
 \begin{center} ${VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}$ \end{center}
-
+```
 For VMMC_CIRC HIV Positive, the Data Pack will set targets as follows,
 rounding to the nearest integer:
 
+```{=tex}
 \begin{center} ${VMMC\_ CIRC.Pos}_{t}\  = \ ({VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t})\  \times \ \text{Est.\ Positivity\ Rate}_{t}$ \end{center}
-
+```
 And finally, VMMC_CIRC HIV Negative targets will be set as a remainder
 function, as follows:
 
+```{=tex}
 \begin{center} ${VMMC\_ CIRC.Neg}_{t}\  = \ {VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t}\  - \ {VMMC\_ CIRC.Pos}_{t}$ \end{center}
-
-VMMC: Testing Rationalization
------------------------------
+```
+## VMMC: ART Linkage
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-Testing Rationalization-AF-AJ-1-1", "latex")
+schema_table("VMMC-ART Linkage-AE-AF-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-Testing Rationalization-AF-AJ-1-1", "html")
+schema_table("VMMC-ART Linkage-AE-AF-1-1", "html")
+```
+
+### DATIM Import
+
+No data will be imported into DATIM from this section.
+
+### Instructions
+
+1.  Review VMMC_CIRC_POS linked to ART which is determined as the
+    product of using Targeted ART Linkage Rate (FY23) (%) that is pulled
+    from the Cascade tab and HIV Positive from the previous VMMC_CIRC
+    section. This is not reported in DATIM, but used as internal check
+    against TX_NEW in TX tab.
+
+## VMMC: Testing Rationalization
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "html")
 ```
 
 ### DATIM Import
@@ -224,7 +259,7 @@ No data will be imported into DATIM from this section.
     sections can be also found in each of these other tabs of the Data
     Pack. You may also use hyperlinks in column headers in this section
     to quickly navigate to the most relevant section of the Data Pack.
-    
+
 \elandscape
 
 \newpage

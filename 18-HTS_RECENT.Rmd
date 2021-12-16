@@ -56,11 +56,11 @@ The following data points will be imported into DATIM from this section:
 ## HTS_RECENT (Total)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AF-AH-1-1", "latex")
+schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AF-AH-1-1", "html")
+schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "html")
 ```
 
 ### DATIM Import

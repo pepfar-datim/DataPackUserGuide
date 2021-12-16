@@ -1,11 +1,14 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-GEND
-====
+# GEND
 
-GEND: GEND_GBV
---------------
+## GEND: GEND_GBV
 
 **GEND_GBV:** Number of people receiving post-gender-based violence
 (GBV) clinical care based on the minimum package.
@@ -24,13 +27,13 @@ schema_table("GEND-GEND_GBV-C-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Physical/Emotional Violence (FY22)** [GEND_GBV.PE.T]
+-   **Physical/Emotional Violence (FY23)** \[GEND_GBV.PE.T\]
 
--   **Sexual Violence** (FY22) [GEND_GBV.S.T]
+-   **Sexual Violence** (FY23) \[GEND_GBV.S.T\]
 
 ### Instructions
 
-1.  For historical context, review FY21 targets for both the
+1.  For historical context, review FY22 targets for both the
     Physical/Emotional Violence and Sexual Violence service types, which
     are pre-populated from DATIM.
 
@@ -39,13 +42,13 @@ The following data points will be imported into DATIM from this section:
     GEND_GBV - Sexual Violence services (%)" columns. These will default
     to 0%, though this reflects no suggested strategic direction.
 
-3.  Review FY22 targets for both the "Physical/Emotional Violence" and
+3.  Review FY23 targets for both the "Physical/Emotional Violence" and
     "Sexual Violence" service types. Each of these is calculated as a
-    function of the expected change rate multiplied by the FY21 target
+    function of the expected change rate multiplied by the FY22 target
     for the related service type. In the case services are planned in
-    FY22 where these were not provided in FY21, you may manually enter
-    FY22 targets in these columns.
-    
+    FY23 where these were not provided in FY22, you may manually enter
+    FY23 targets in these columns.
+
 \elandscape
 
 \newpage

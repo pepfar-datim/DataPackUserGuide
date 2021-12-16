@@ -1,11 +1,14 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-OVC
-===
+# OVC
 
-OVC: OVC_SERV
--------------
+## OVC: OVC_SERV
 
 **OVC_SERV:** Number of beneficiaries served by PEPFAR OVC programs for
 children and families affected by HIV.
@@ -28,18 +31,18 @@ schema_table("OVC-OVC_SERV-F-S-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **DREAMS** [OVC_SERV.DREAMS.T]
+-   **DREAMS** \[OVC_SERV.DREAMS.T\]
 
--   **Preventive** [OVC_SERV.Prev.T]
+-   **Preventive** \[OVC_SERV.Prev.T\]
 
--   **Comprehensive -- Graduated** [OVC_SERV.Grad.T]
+-   **Comprehensive -- Graduated** \[OVC_SERV.Grad.T\]
 
--   **Comprehensive -- Active** [OVC_SERV.Active.T]
+-   **Comprehensive -- Active** \[OVC_SERV.Active.T\]
 
 ### Instructions
 
 1.  For historical context, review column "Host Country Est. PLHIV
-    (FY21)", which will pull from the Cascade tab.
+    (FY22)", which will pull from the Cascade tab.
 
 2.  Review the "DREAMS SNU?" column, which will indicate whether an SNU
     is actively implementing DREAMS activities by using "Y" for Yes and
@@ -58,7 +61,7 @@ The following data points will be imported into DATIM from this section:
     flagged in the Data Pack Self-Service App and must be resolved prior
     to COP Approval and DATIM import.
 
-3.  Review columns "FY20 Results" and "FY21 Targets" which will come
+3.  Review columns "FY21 Results" and "FY22 Targets" which will come
     pre-populated with results and targets from DATIM and will serve as
     a baseline for COP21 target calculations.
 
@@ -92,9 +95,9 @@ The following data points will be imported into DATIM from this section:
     indicate graduation rates less than 20%.
 
 7.  Review modeled targets for "Total OVC_SERV", which are calculated by
-    applying the net rate of change decided in step 4 by the FY21 target
-    referenced in step 3. In the case services are planned in FY22 where
-    these were not provided in FY21, you may manually enter FY22 targets
+    applying the net rate of change decided in step 4 by the FY22 target
+    referenced in step 3. In the case services are planned in FY23 where
+    these were not provided in FY22, you may manually enter FY23 targets
     in this column.
 
 8.  Review the number of OVC beneficiaries that are targeted by the
@@ -135,8 +138,7 @@ Transferred Out in Denominator.
 ***\
 ***
 
-OVC: OVC_HIVSTAT
-----------------
+## OVC: OVC_HIVSTAT
 
 **OVC_HIVSTAT:** Number of orphans and vulnerable children (\<18 years
 old) with HIV status reported, disaggregated by HIV status.
@@ -153,7 +155,7 @@ schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **\# OVC with reported HIV Status** [OVC_HIVSTAT.T] -- Note that
+-   **\# OVC with reported HIV Status** \[OVC_HIVSTAT.T\] -- Note that
     this data will be aggregated across age group, resulting in one
     value per PSNU.
 
@@ -163,17 +165,17 @@ The following data points will be imported into DATIM from this section:
     is prepopulated at 100% by default, representing a goal of having
     100% of those served via OVC Comprehensive services under 18 years
     old with reported HIV status. Adjust these values to either increase
-    or decrease the COP21 target value in column "\# OVC with reported
+    or decrease the COP21 target value in column "# OVC with reported
     HIV status". Red highlights indicate percentages greater than 100%,
     or less than 0%; yellow highlighting indicates percentages changed
     to less than 100%.
 
-2.  Review the target value in column ""\# OVC with reported HIV
-    status", which is calculated by multiplying those allocated to the
-    OVC_SERV Comprehensive services disaggregates, whether Active or
-    Graduated, and also less than 18 years of age. To adjust these
-    targets, return to step 1.
-    
+2.  Review the target value in column ""# OVC with reported HIV status",
+    which is calculated by multiplying those allocated to the OVC_SERV
+    Comprehensive services disaggregates, whether Active or Graduated,
+    and also less than 18 years of age. To adjust these targets, return
+    to step 1.
+
 \elandscape
 
 \newpage

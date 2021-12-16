@@ -7,13 +7,13 @@
 ## HTS: Testing Summary from Other Tabs
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Testing Summary-F-I-1-2", "latex")
+schema_table("HTS-Testing Summary-F-J-1-2", "latex")
 
-schema_table("HTS-Testing Summary-J-M-2-2", "latex")
+schema_table("HTS-Testing Summary-K-O-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Testing Summary-F-M-1-1", "html")
+schema_table("HTS-Testing Summary-F-O-1-1", "html")
 ```
 
 ### DATIM Import
@@ -47,17 +47,17 @@ No data will be imported from this section of the Data Pack.
 ## HTS: HTS_TST -- Distribution of Positive Tests
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-V-Y-1-4", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-P-T-1-4", "latex")
 
-schema_table("HTS-HTS_TST Distribution of Positive Tests-Z-AC-2-4", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-U-Y-2-4", "latex")
 
-schema_table("HTS-HTS_TST Distribution of Positive Tests-AD-AG-3-4", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-Z-AC-3-4", "latex")
 
-schema_table("HTS-HTS_TST Distribution of Positive Tests-AH-AK-4-4", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-AD-AG-4-4", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-V-AK-1-1", "html")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-P-AG-1-1", "html")
 ```
 
 ### DATIM Import
@@ -111,11 +111,11 @@ No data will be imported from this section of the Data Pack.
 ## HTS: HTS_TST -- Modality Yields
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Inpatient (Facility)-AL-AN-1-1", "latex")
+schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Inpatient (Facility)-AL-AN-1-1", "html")
+schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "html")
 ```
 
 ### DATIM Import
@@ -165,15 +165,15 @@ The following data points will be imported into DATIM from this section:
 These calculated columns provide a roll up sum of the total targets set by age, sex and modality in the rest of the HTS tab. This section should serve as a check and will not be uploaded into DATIM.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST (Total)-BM-BP--1-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BO-BS--1-3", "latex")
 
-schema_table("HTS-HTS_TST (Total)-BQ-BS-2-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BT-BW-2-3", "latex")
 
-schema_table("HTS-HTS_TST (Total)-BT-BV-3-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BX-BZ-3-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST (Total)-BM-BV-1-1", "html")
+schema_table("HTS-HTS_TST (Total)-BO-BZ-1-1", "html")
 ```
 
 ### DATIM Import
@@ -237,11 +237,11 @@ At the culmination of this iterative approach, there should be no values or high
 **HTS_SELF (N):** Number of individual HIV self-test kits distributed.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_SELF (N)-BW-BY-1-1", "latex")
+schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_SELF (N)-BW-BY-1-1", "html")
+schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "html")
 ```
 
 ### DATIM Import

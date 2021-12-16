@@ -1,8 +1,12 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-KP Validation
-=============
+# KP Validation
 
 Each section of the KP_Validation tab looks at each indicator that sets
 a Key Population target to ensure the total for each of these Key
@@ -12,13 +16,13 @@ is conditional formatting that will highlight any of the "KP Targets
 Validation" columns in red if those values exceed the Total Targets.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP Validation-PrEP_CURR-C-F-1-2", "latex")
+schema_table("KP Validation-PrEP_CT-C-F-1-2", "latex")
 
-schema_table("KP Validation-PrEP_CURR-G-I-2-2", "latex")
+schema_table("KP Validation-PrEP_CT-G-J-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP Validation-PrEP_CURR-C-I-1-1", "html")
+schema_table("KP Validation-PrEP_CT-C-J-1-1", "html")
 ```
 
 ### DATIM Import
@@ -29,11 +33,12 @@ There are no data points that will be imported into DATIM from this tab.
 
 For each section of this tab, follow the below steps:
 
-1.  Review the Total Population targets in the "Female, 15+ (FY22)" and
-    "Male, 15+ (FY22)" columns, which sum targets across all 15+ age
-    groups from where these are set in previous tabs of the Data Pack.
+1.  Review the Total Population targets in the "Female, 15+ (FY23)",
+    "AGYW, 15+ (FY23)", and "Male, 15+ (FY23)" columns, which sum
+    targets across all 15+ age groups from where these are set in
+    previous tabs of the Data Pack.
 
-    a.  Note that for the PrEP_CURR and PrEP_NEW sections, the summation
+    a.  Note that for the PrEP_CT and PrEP_NEW sections, the summation
         is pulling age group totals from the PrEP tab, TX sections from
         the Cascade tab, and HTS Sections from the HTS tab. Return to
         those tabs to investigate and adjust values. Changes made in
@@ -51,11 +56,11 @@ For each section of this tab, follow the below steps:
     in the KP tab.
 
 3.  Review the "FSW" column and ensure the total in this column does not
-    exceed the total target for "Female, 15+ (FY22)". Cases where this
+    exceed the total target for "Female, 15+ (FY23)". Cases where this
     does occur will be highlighted red.
 
 4.  Review the "MSM" column and ensure the total in this column does not
-    exceed the total target for "Male, 15+ (FY22)". Cases where this
+    exceed the total target for "Male, 15+ (FY23)". Cases where this
     does occur will be highlighted red.
 
 5.  Review the final three columns "People in prisons and other enclosed

@@ -1,11 +1,14 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-CXCA
-====
+# CXCA
 
-CXCA_SCRN
----------
+## CXCA_SCRN
 
 **CXCA_SCRN (N):** Number of HIV-positive women on ART screened for
 cervical cancer.
@@ -24,7 +27,7 @@ schema_table("CXCA-CXCA_SCRN-F-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **CXCA_SCRN** [CXCA_SCRN.T]
+-   **CXCA_SCRN (FY23)** \[CXCA_SCRN.T\]
 
 ### Instructions
 
@@ -37,23 +40,23 @@ cancer-related services as per the relevant MER indicators. To remove
 all cervical cancer targets, change the value in column "Targeted CXCA
 Screening coverage rate (%)" to 0%.
 
-1.  For historical context, review FY20 results, FY21 targets, and FY20
+1.  For historical context, review FY21 results, FY22 targets, and FY21
     Observed CXCA Screen Coverage rates as reported in DATIM, as well as
-    FY22 Targets for TX_CURR from the Cascade tab of the Data Pack.
+    FY23 Targets for TX_CURR from the Cascade tab of the Data Pack.
 
 2.  Review and adjust Targeted CXCA Screening Coverage Rate (%). Column
     "Targeted CXCA Screening coverage rate (%)" will determine the
     proportion of HIV positive women currently on treatment that will
-    receive cervical cancer screening in COP2120/FY21 implementation
+    receive cervical cancer screening in COP2120/FY22 implementation
     year. Each team will have a default value of 50% set in this column
     and should consult their S/GAC Chair or PPM when making adjustments.
-    To remove all FY22 cervical cancer targets, set this column to 0%.
+    To remove all FY23 cervical cancer targets, set this column to 0%.
 
-3.  Review FY22 targets for CXCA_SCRN and return to steps 1 and 2 to
+3.  Review FY23 targets for CXCA_SCRN and return to steps 1 and 2 to
     adjust. This target is set based on the number of eligible women in
     the COP 21 TX_CURR cohort multiplied by the Targeted CXCA Screening
     Coverage Rate.
-    
+
 \elandscape
 
 \newpage

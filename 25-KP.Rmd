@@ -1,8 +1,12 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-KP
-===
+# KP
 
 **NOTE: The HTS_TST, TX_NEW, PrEP_CURR, and PrEP_NEW indicators in the
 KP tab are related to Key Populations only and are not linked to other
@@ -27,12 +31,12 @@ listed.
     knowledge of status can inform PP_PREV and subsequent clinical
     cascade targets.
 
-2.  Where possible and relevant, use FY21 targets and, as available,
-    results to inform FY22 targets (the 'Assumption' column for each
+2.  Where possible and relevant, use FY22 targets and, as available,
+    results to inform FY23 targets (the 'Assumption' column for each
     indicator in the tab). But remember to consider expectations for
-    scale-up based on current program needs and gaps. That is, FY20
+    scale-up based on current program needs and gaps. That is, FY21
     results may not be the most relevant and appropriate base from which
-    to develop FY22 targets.
+    to develop FY23 targets.
 
 3.  As per COP21 Guidance, OUs should strive to ensure all KPs reached
     with KP programming (KP_PREV), who do not already know their HIV
@@ -57,8 +61,7 @@ listed.
     linkage in their own data systems, there is no relevant MER
     indicator for that data.
 
-KP: KP_ESTIMATES 
-----------------
+## KP: KP_ESTIMATES
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("KP-KP_ESTIMATES-E-G-1-1", "latex")
@@ -72,18 +75,18 @@ schema_table("KP-KP_ESTIMATES-E-G-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country Est. Total Size (FY21)** [KP_ESTIMATES.Total.T]
+-   **Host Country Est. Total Size (FY22)** \[KP_ESTIMATES.Total.T\]
 
--   **Host Country Est. KPLHIV (FY21)** [KP_ESTIMATES.Pos.T]
+-   **Host Country Est. KPLHIV (FY22)** \[KP_ESTIMATES.Pos.T\]
 
--   **Host Country Est. HIV Prevalence (FY21) (%)**
-    [KP_ESTIMATES.Prev.T]
+-   **Host Country Est. HIV Prevalence (FY22) (%)**
+    \[KP_ESTIMATES.Prev.T\]
 
 ### Instructions
 
 1.  Enter data directly into columns "Host Country Est. Total Size
-    (FY21)", "Host Country Est. KPLHIV (FY21)", and "Host Country Est.
-    HIV Prevalence (FY21) (%)". As mentioned above, these data should
+    (FY22)", "Host Country Est. KPLHIV (FY22)", and "Host Country Est.
+    HIV Prevalence (FY22) (%)". As mentioned above, these data should
     come from reliable, approved sources and then be pasted directly
     into the respective columns in this tab and used as reference when
     setting targets throughout the rest of the KP tab. All data from
@@ -96,50 +99,47 @@ The following data points will be imported into DATIM from this section:
 **\
 **
 
-KP: PrEP_CURR
--------------
+## KP: PrEP_CT
 
 **PrEP_CURR:** Number of individuals, inclusive of those newly enrolled,
 that received oral antiretroviral pre-exposure prophylaxis (PrEP) to
 prevent HIV during the reporting period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-PrEP_CURR-H-I-1-1", "latex")
+schema_table("KP-PrEP_CT-H-I-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-PrEP_CURR-H-I-1-1", "html")
+schema_table("KP-PrEP_CT-H-I-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CURR - KeyPop** (FY22) [PrEP_CURR.KP.T]
+-   **PrEP_CT - KeyPop** (FY23) \[PrEP_CURR.KP.T\]
 
 ### Instructions
 
-1.  For historical context, review column "PrEP_CURR - KeyPop (FY21
-    Targets)", which will come pre-populated with FY21 targets for
+1.  For historical context, review column "PrEP_CT - KeyPop (FY22
+    Targets)", which will come pre-populated with FY22 targets for
     PREP_CURR as currently reported in DATIM.
 
-2.  Manually enter FY22 PrEP_CURR targets in the column titled,
-    "PrEP_CURR - KeyPop (FY22)".
+2.  Manually enter FY23 PrEP_CT targets in the column titled, "PrEP_CT -
+    KeyPop (FY23)".
 
-**NOTE:** The PrEP_CURR targets here on the KP tab are not linked to
-those on the PrEP tab, but should nonetheless represent a subset of the
-total PrEP_CURR targets. Be sure to review KP targets against total
-population targets in the KP Validation tab to ensure total population
-targets do not exceed total population targets set on the PrEP tab.
+**NOTE:** The PrEP_CT targets here on the KP tab are not linked to those
+on the PrEP tab, but should nonetheless represent a subset of the total
+PrEP_CT targets. Be sure to review KP targets against total population
+targets in the KP Validation tab to ensure total population targets do
+not exceed total population targets set on the PrEP tab.
 
-**NOTE:** The PREP_CURR indicator should capture all individuals
-enrolled on PREP during the reporting period, inclusive of those counted
-as newly on PrEP. During review, be sure that at a minimum, PrEP_CURR
-targets for KP equal or exceed the PrEP_NEW targets for KP within the
-Data Pack.
+**NOTE:** The PREP_CT indicator should capture all individuals enrolled
+on PREP during the reporting period, inclusive of those counted as newly
+on PrEP. During review, be sure that at a minimum, PrEP_CT targets for
+KP equal or exceed the PrEP_NEW targets for KP within the Data Pack.
 
-KP: PrEP_NEW
-------------
+## KP: PrEP_NEW
 
 **PrEP_NEW:** Number of individuals who have been newly enrolled on
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
@@ -157,16 +157,16 @@ schema_table("KP-PrEP_NEW-J-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_NEW - KeyPop (FY22)** [PrEP_NEW.KP.T]
+-   **PrEP_NEW - KeyPop (FY23)** \[PrEP_NEW.KP.T\]
 
 ### Instructions
 
-1.  For historical context, review column "PrEP_NEW - KeyPop (FY21
-    Targets)", which will come pre-populated with FY21 targets for
+1.  For historical context, review column "PrEP_NEW - KeyPop (FY22
+    Targets)", which will come pre-populated with FY22 targets for
     PREP_NEW as currently reported in DATIM.
 
-2.  Manually enter FY22 PrEP_NEW targets in the column titled,
-    "PrEP_NEW - KeyPop (FY22)".
+2.  Manually enter FY23 PrEP_NEW targets in the column titled,
+    "PrEP_NEW - KeyPop (FY23)".
 
 **NOTE:** PrEP_NEW targets here on the KP tab are not linked to those on
 the PrEP tab, but should nonetheless represent a subset of the total
@@ -174,8 +174,7 @@ PrEP_NEW targets. Be sure to review KP targets against total population
 targets in the KP Validation tab to ensure total population targets do
 not exceed total population targets set on the PrEP tab.
 
-KP: KP_PREV
------------
+## KP: KP_PREV
 
 **KP_PREV:** Number of key populations reached with individual and/or
 small group-level HIV prevention interventions designed for the target
@@ -193,20 +192,18 @@ schema_table("KP-KP_PREV-L-M-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_PREV (FY22)** [KP_PREV.T]
+-   **KP_PREV (FY23)** \[KP_PREV.T\]
 
 ### Instructions
 
-1.  For historical context, review column "KP_PREV (FY21 Targets)",
-    which will come pre-populated with FY21 targets for KP_PREV as
+1.  For historical context, review column "KP_PREV (FY22 Targets)",
+    which will come pre-populated with FY22 targets for KP_PREV as
     currently reported in DATIM.
 
-2.  Manually enter FY22 KP_PREV targets in the column titled, "KP_PREV
-    (FY22)".
+2.  Manually enter FY23 KP_PREV targets in the column titled, "KP_PREV
+    (FY23)".
 
-
-KP: TX_CURR
------------
+## KP: TX_CURR
 
 **TX_CURR:** Number of adults and children currently receiving
 antiretroviral therapy (ART).
@@ -223,23 +220,23 @@ schema_table("KP-TX_CURR-N-Q-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR - KeyPop (FY22)** [TX_CURR.KP.T]
+-   **TX_CURR - KeyPop (FY23)** \[TX_CURR.KP.T\]
 
 ### Instructions
 
-1.  Review columns "TX_CURR - KeyPop (FY20 Results)" and "TX_CURR -
-    > KeyPop (FY21 Targets)", which will be imported from DATIM for
-    > reference.
+1.  Review columns "TX_CURR - KeyPop (FY21 Results)" and "TX_CURR - \>
+    KeyPop (FY22 Targets)", which will be imported from DATIM for >
+    reference.
 
-2.  Manually enter TX_CURR targets in the column titled, "TX_CURR -
-    > KeyPop (FY22)". Be prepared to explain target setting processes
-    > and justify variations from previous years if asked during or
-    > prior to COP meetings.
+2.  Manually enter TX_CURR targets in the column titled, "TX_CURR - \>
+    KeyPop (FY23)". Be prepared to explain target setting processes >
+    and justify variations from previous years if asked during or >
+    prior to COP meetings.
 
-3.  Review "TX_NET_NEW - KeyPop (FY22)", which will be set by taking the
-    > difference between "TX_CURR - KeyPop (FY22)" and "TX_CURR - KeyPop
-    > (FY21 Targets)" and be used as further reference in setting KP
-    > TX_NEW.
+3.  Review "TX_NET_NEW - KeyPop (FY23)", which will be set by taking
+    the > difference between "TX_CURR - KeyPop (FY23)" and "TX_CURR -
+    KeyPop > (FY22 Targets)" and be used as further reference in setting
+    KP > TX_NEW.
 
 NOTE: TX_CURR targets here on the KP tab are not linked to those on the
 Cascade tab, but should nonetheless represent a subset of the total
@@ -247,8 +244,7 @@ TX_CURR targets. Be sure to review KP targets against total population
 targets in the KP Validation tab to ensure total population targets do
 not exceed total population targets set on the Cascade tab.
 
-KP: TX_NEW (N)
---------------
+## KP: TX_NEW (N)
 
 **TX_NEW:** Number of adults and children newly enrolled on
 antiretroviral therapy (ART).
@@ -265,25 +261,25 @@ schema_table("KP-TX_NEW-R-V-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW - KeyPop (FY22)** [TX_NEW.KP.T]
+-   **TX_NEW - KeyPop (FY23)** \[TX_NEW.KP.T\]
 
 ### Instructions
 
-1.  Review column "TX_NEW - KeyPop (FY21 Targets)", which will come
-    pre-populated with FY21 targets for reference.
+1.  Review column "TX_NEW - KeyPop (FY22 Targets)", which will come
+    pre-populated with FY22 targets for reference.
 
 2.  Review and adjust the columns "Proportion of TX_NET_NEW from New ART
-    Initiation (FY22) (%)", "Targeted Retention Rate - Already on ART
-    (FY22) (%)", and "Targeted Retention Rate - New on ART (FY22) (%)",
+    Initiation (FY23) (%)", "Targeted Retention Rate - Already on ART
+    (FY23) (%)", and "Targeted Retention Rate - New on ART (FY23) (%)",
     which will be prepopulated with 100%, 98%, and 98% respectively.
     These columns serve similar roles along the KP Cascade as seen on
     the Cascade tab.
 
-3.  Review modeled FY22 targets for TX_NEW -- KeyPop, which are
-    initially set by multiplying the FY22 target for TX_CURR -- KeyPop
+3.  Review modeled FY23 targets for TX_NEW -- KeyPop, which are
+    initially set by multiplying the FY23 target for TX_CURR -- KeyPop
     by first the "Proportion of TX_NET_NEW from New ART Initiation
-    (FY22) (%)", and then the "Targeted Retention Rate - New on ART
-    (FY22) (%)". However, due to wide variation in KP programming, this
+    (FY23) (%)", and then the "Targeted Retention Rate - New on ART
+    (FY23) (%)". However, due to wide variation in KP programming, this
     value can be overwritten and manually adjusted as needed without
     further approval from PPMs or DUIT Liaisons.
 
@@ -294,8 +290,7 @@ targets in the KP Validation tab to ensure total population targets do
 not exceed total population targets set on the Cascade tab.**\
 **
 
-KP: TX_PVLS (D) & TX_PVLS (N)
------------------------------
+## KP: TX_PVLS (D) & TX_PVLS (N)
 
 **TX_PVLS (D):** Number of ART patients with a VL result documented in
 the medical or laboratory records/LIS within the past 12 months
@@ -320,81 +315,83 @@ schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) - KeyPop (FY22)** [TX_PVLS.D.KP.T]
+-   **TX_PVLS (D) - KeyPop (FY23)** \[TX_PVLS.D.KP.T\]
 
--   **TX_PVLS (N) - KeyPop (FY22)** [TX_PVLS.N.KP.T]
+-   **TX_PVLS (N) - KeyPop (FY23)** \[TX_PVLS.N.KP.T\]
 
 ### Instructions
 
 1.  Review and adjust the columns "% of TX_NEW Eligible for VL Test
-    (FY22) (%)" and "Proportion of eligible w/ access to VL testing
-    (FY22) (%)", which will be prepopulated with 70% and 100%,
+    (FY23) (%)" and "Proportion of eligible w/ access to VL testing
+    (FY23) (%)", which will be prepopulated with 70% and 100%,
     respectively. These columns serve similar roles along the KP Cascade
     as seen on the Cascade tab.
 
-2.  Review modeled targets for "TX_PVLS (D) - KeyPop (FY22)", which will
-    initially be set by multiplying the FY22 target TX_NEW -- KeyPop
-    first by "% of TX_NEW Eligible for VL Test (FY22) (%)" and then by
-    "Proportion of eligible w/ access to VL testing (FY22) (%)".
+2.  Review modeled targets for "TX_PVLS (D) - KeyPop (FY23)", which will
+    initially be set by multiplying the FY23 target TX_NEW -- KeyPop
+    first by "% of TX_NEW Eligible for VL Test (FY23) (%)" and then by
+    "Proportion of eligible w/ access to VL testing (FY23) (%)".
     However, due to wide variation in KP programming, this value can be
     overwritten and manually adjusted as needed without further approval
     from PPMs or DUIT Liaisons.
 
-3.  Review and adjust the "Targeted VL Suppression Rate (FY22) (%)",
+3.  Review and adjust the "Targeted VL Suppression Rate (FY23) (%)",
     which is set at a default 95% for all OUs, but can be changed with
     permission from your PPM and DUIT Liaisons. Decreasing the targeted
     suppression rate to any value below 95% will highlight the cell in
     Yellow, and in Red should it exceed 100% or drop below 0%.
 
-4.  Review modeled targets for "TX_PVLS (N) -- KeyPop (FY22) (%)", which
+4.  Review modeled targets for "TX_PVLS (N) -- KeyPop (FY23) (%)", which
     will initially be set by multiplying the Denominator Target for
-    TX_PVLS -- KeyPop by the "Targeted VL Suppression Rate (FY22) (%)".
+    TX_PVLS -- KeyPop by the "Targeted VL Suppression Rate (FY23) (%)".
 
 > NOTE: The KP tab TX_PVLS (D) and TX_PVLS (N) are not linked to the
 > Cascade tab, therefore be sure to review KP targets against total
 > population targets in the KP Validation tab to ensure Key Population
 > targets do not exceed total population targets set on the Cascade tab.
 
-KP: HTS_TST
------------
+## KP: HTS_TST
 
 **HTS_TST:** Number of individuals who received HIV Testing Services
 (HTS) and received their test results.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_TST-AB-AE-1-2", "latex")
+schema_table("KP-HTS_TST-AB-AF-1-2", "latex")
 
-schema_table("KP-HTS_TST-AF-AH-2-2", "latex")
+schema_table("KP-HTS_TST-AG-AJ-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_TST-AB-AH-1-1", "html")
+schema_table("KP-HTS_TST-AB-AJ-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST KeyPop, Positive (FY22)** [HTS_TST.KP.Pos.T]
+-   **HTS_TST KeyPop, Positive (FY23)** \[HTS_TST.KP.Pos.T\]
 
--   **HTS_TST KeyPop, Negative (FY22)** [HTS_TST.KP.Neg.T]
+-   **HTS_TST KeyPop, Negative (FY23)** \[HTS_TST.KP.Neg.T\]
 
 ### Instructions
 
-1.  Review "TX_NEW from Previously Diagnosed (FY22) (%)", which will
+1.  Review "TX_NEW from Previously Diagnosed (FY23) (%)", which will
     come prepopulated at 0%, but can be adjusted as needed. Note that
     this column serves a similar role along the KP Cascade as seen in
     the Cascade tab.
 
-2.  Review the number of "TX_NEW from Previously Diagnosed (FY22)",
+2.  Review the number of "TX_NEW from Previously Diagnosed (FY23)",
     which is calculated by multiplying the rate from Step 1 by "TX_NEW -
-    KeyPop (FY22)". Return to Step 1 to adjust this value.
+    KeyPop (FY23)". Return to Step 1 to adjust this value.
 
-3.  Review "TX_NEW from all other sources (FY22)", which will be set
-    taking the difference of "TX_NEW - KeyPop (FY22)" and "TX_NEW from
-    Previously Diagnosed (FY22)".
+3.  Review "TX_NEW from all other sources (FY23)", which will be set
+    taking the difference of "TX_NEW - KeyPop (FY23)" and "TX_NEW from
+    Previously Diagnosed (FY23)".
 
-4.  Review and adjust the "Targeted ART Linkage Rate (FY22) (%)", which
+4.  The FY22 Targets for HTS_TST KeyPop Positive and Negative will be
+    pulled from DATIM into this tab for added reference.
+
+5.  Review and adjust the "Targeted ART Linkage Rate (FY23) (%)", which
     is set at a default of 95% for all OUs. Change this value as needed,
     however, you [must seek permission]{.ul} from your assigned PPM and
     DUIT Liaisons before decreasing the targeted suppression rate to any
@@ -402,21 +399,21 @@ The following data points will be imported into DATIM from this section:
     above 100% or below 0%; yellow highlights indicate percentages that
     have been altered to drop below 95%.
 
-5.  Set HTS_TST "Yield (FY22) (%)" which will resemble the Yield % that
+6.  Set HTS_TST "Yield (FY23) (%)" which will resemble the Yield % that
     was set in the various modalities of the HTS tab and should be
     approached similarly.
 
-6.  Review modeled FY22 targets for HTS_TST KeyPop, Positive, which are
-    the product of "TX_NEW from all other sources (FY22)" and the rate
-    set in "Targeted ART Linkage Rate (FY22) (%)". However, due to wide
+7.  Review modeled FY23 targets for HTS_TST KeyPop, Positive, which are
+    the product of "TX_NEW from all other sources (FY23)" and the rate
+    set in "Targeted ART Linkage Rate (FY23) (%)". However, due to wide
     variation in KP programming, this value can be overwritten and
     manually adjusted as needed without further approval from PPMs or
     DUIT Liaisons.
 
-7.  Lastly, review the modeled FY22 Targets for HTS_TST KeyPop,
-    Negative, which will be calculated by first dividing the FY22 target
+8.  Lastly, review the modeled FY23 Targets for HTS_TST KeyPop,
+    Negative, which will be calculated by first dividing the FY23 target
     for HTS_TST KeyPop, Positive by the Yield set in Step 5, and then
-    subtracting the FY22 target for HTS_TST KeyPop, Positive. Due to
+    subtracting the FY23 target for HTS_TST KeyPop, Positive. Due to
     wide variation in KP programming, this value can be overwritten and
     manually adjusted as needed without further approval from PPMs or
     DUIT Liaisons.
@@ -426,39 +423,37 @@ The following data points will be imported into DATIM from this section:
 > targets in the KP Validation tab to ensure Key Population targets do
 > not exceed total population targets set on the Cascade tab.
 
-
-KP: HTS_RECENT
---------------
+## KP: HTS_RECENT
 
 **HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
 years with a test for recent infection result during the reporting
 period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_RECENT-AI-AJ-1-1", "latex")
+schema_table("KP-HTS_RECENT-AK-AL-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_RECENT-AI-AJ-1-1", "html")
+schema_table("KP-HTS_RECENT-AK-AL-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_RECENT - KeyPop (FY22)** [HTS_RECENT.KP.T]
+-   **HTS_RECENT - KeyPop (FY23)** \[HTS_RECENT.KP.T\]
 
 ### Instructions
 
-1.  Review and adjust the "% of HTS_TST KeyPop Positives (FY22) (%)",
+1.  Review and adjust the "% of HTS_TST KeyPop Positives (FY23) (%)",
     which will be prepopulated at a default of 100%. This assumption
     resembles that of the % of Positives used to help set targets in the
     HTS_RECENT tab. Red highlights in this column indicate percentages
     over 100% or under 0%; yellow highlights indicate percentages that
     have been changed to be less than 100%.
 
-2.  Review and adjust the modeled FY22 targets for HTS_RECENT - KeyPop,
-    which are the product of the rate set in step 1, and the FY22
+2.  Review and adjust the modeled FY23 targets for HTS_RECENT - KeyPop,
+    which are the product of the rate set in step 1, and the FY23
     Targets for HTS_TST KeyPop, Positives.
 
 > NOTE: HTS_RECENT KeyPop is not linked to the HTS_RECENT tab. Be sure
@@ -466,32 +461,30 @@ The following data points will be imported into DATIM from this section:
 > Validation tab to ensure Key Population targets do not exceed total
 > population targets set on the HTS_RECENT tab.
 
-
-KP: HTS_SELF
-------------
+## KP: HTS_SELF
 
 **HTS_SELF:** Number of individual HIV self-test kits distributed.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_SELF-AK-AL-1-1", "latex")
+schema_table("KP-HTS_SELF-AM-AN-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_SELF-AK-AL-1-1", "html")
+schema_table("KP-HTS_SELF-AM-AN-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF - KeyPop (FY22)** [HTS_SELF.KP.T]
+-   **HTS_SELF - KeyPop (FY23)** \[HTS_SELF.KP.T\]
 
 ### Instructions
 
-1.  For historical context, review FY21 Targets for HTS_SELF -- KeyPop,
+1.  For historical context, review FY22 Targets for HTS_SELF -- KeyPop,
     which will be pulled from DATIM.
 
-2.  Manually populate FY22 Targets for HTS_SELF - KeyPop.
+2.  Manually populate FY23 Targets for HTS_SELF - KeyPop.
 
 NOTE: HTS_SELF on this tab is not linked to the HTS tab. Be sure to
 review KP targets against total population targets in the KP Validation

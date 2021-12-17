@@ -13,13 +13,13 @@ editor_options:
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
 
-schema_table("PMTCT-Host Country Context-J-M-2-3", "latex")
+schema_table("PMTCT-Host Country Context-J-N-2-3", "latex")
 
-schema_table("PMTCT-Host Country Context-N-Q-3-3", "latex")
+schema_table("PMTCT-Host Country Context-O-R-3-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Host Country Context-F-I-1-1", "html")
+schema_table("PMTCT-Host Country Context-F-R-1-1", "html")
 ```
 
 ### DATIM Import

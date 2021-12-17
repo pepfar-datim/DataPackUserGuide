@@ -9,12 +9,12 @@ editor_options:
 # PRIORITIZATION
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Prioritization-Prioritization-B-D-1-1", "latex")
+schema_table("Prioritization-Prioritization-B-E-1-1", "latex")
 
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Prioritization-Prioritization-B-D-1-1", "html")
+schema_table("Prioritization-Prioritization-B-E-1-1", "html")
 ```
 
 ### DATIM Import

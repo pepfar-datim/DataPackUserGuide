@@ -1,5 +1,19 @@
 # What's New?
 
+#### Section 7 Changes
+
+**Reorienting of the Cascade Tab around PVLS**, rather than ART Coverage, although both are taken into account. This years new shift to begin setting the Cascade from Program Viral Load Suppression. This starting point will allow for country team users to build up a full cascade that will provide insight into VLS, VL Testing and how this will translate into determining the new on treatment and those returning to treatment. It will provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 85% coverage across all three Cascades. This will allow countries that are at or close to Epi Control to better approach the understanding of how they will continue to sustain their 95-95-95 goals. This approach will put a greater emphasis on the Coverage Cascade as the driver of the target setting process, a direct shift from the past 5 years that have focused on the first two Cascades, and paint a picture of both VL to gap in Treatment and Testing.
+
+#### MER2.6 Changes
+
+**Changes in line with MER 2.6**:
+
+-   Use of PrEP_CT in lieu of PrEP_CURR.
+
+-   Integration of the new SNS modality.
+
+-   50+ finer age bands across the clinical cascade. These will be aggregated to 50+ upon DATIM import for all but TX_CURR.
+
 The introduction of 65+ age bands for TX_CURR targets this year will be visible across the Cascade, PMTCT, TB, and VMMC tabs. For structural purposes of these tabs to seamlessly work with the new inclusion of the 50+ finer age bands, targets will be set across many indicators at the finer age bands across the clinical cascade. The most important thing for user's to note is that these will be aggregated to 50+ upon DATIM import for all but TX_CURR. The breakdown that has been used to dissaggreate the 50+ age band into the finer age bands up to 65+ is the following:
 
 -   50-54: 42%
@@ -12,6 +26,6 @@ The introduction of 65+ age bands for TX_CURR targets this year will be visible 
 
 These percentages were determined through various research studies. If teams feel as though they need to adjust the breakdowns based on local data and research they are able to do so, but should first consult their Chair, PPM and DUIT Liaison.
 
-**PSNUxIM Tab Formulas**
+#### **PSNUxIM Tool Formulas**
 
-When you received your newly generated PSNUxIM tab for the first time, you will need to scroll to the "Target Values" Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.
+The PSNUxIM tab will now be split into its own separate tool. When you received your newly generated PSNUxIM tool for the first time, you will need to scroll to the "Target Values" Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your Data Pack. This will be required in order for your Rollup column to properly populate as well as the Deduplication sections.

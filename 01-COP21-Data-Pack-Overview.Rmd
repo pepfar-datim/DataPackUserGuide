@@ -17,87 +17,84 @@ suppressPackageStartupMessages({
   library(kableExtra)
 })
 
+letter2number <- function(x) {
+  x <- stringr::str_to_upper(x)
+  n <- utf8ToInt(x) - utf8ToInt("A") + 1L
+  return(n)
+}
+
+number2letter <- function(n) {
+  x <- intToUtf8(n + utf8ToInt("A") - 1L)
+  return(x)
+}
+
+int2col <- function(n) {
+  n_letters <- floor(log(n, base = 26)) + 1
+  col <-
+    1:n_letters %>%
+    lapply(function(x) {
+      place <- n_letters - x + 1
+      letter <- number2letter(n %% (26**place))
+      return(letter)
+    }) %>%
+    paste0()
+  return(col)
+}
+
 knitr::opts_chunk$set(echo = FALSE, fig.align="center")
 
 ```
 
 ```{r echo=FALSE}
-filepath <- "static/COP21_Data_Pack_Template.xlsx"
+filepath <- "static/COP22_Data_Pack_Template.xlsx"
 skip <- NULL
 type <- "Data Pack Template"
 cop_year <- datapackr::getCurrentCOPYear()
 
-# Check the filepath is valid. If NA, request via window. ####
-filepath <- datapackr::handshakeFile(path = filepath,
-                                     tool = type)
-
-schema <- tidyxl::xlsx_cells(path = filepath, include_blank_cells = F) %>%
-  dplyr::select(sheet_name = sheet, col, row, character, formula, numeric)
-
-# Add sheet number based on order of occurrence in workbook, rather than A-Z ####
-data.table::setDT(schema)[,sheet_num:=.GRP, by = c("sheet_name")]
-
-# Skip detail on listed sheets. ####
-if (is.null(skip)) {skip = skip_tabs(tool = type, cop_year = cop_year)}
-sheets <- tidyxl::xlsx_sheet_names(filepath)
-verbose_sheets <- sheets[!sheets %in% skip]
-
-schema %<>%
-  dplyr::filter(sheet_name %in% verbose_sheets,
-                row %in% c(3:(headerRow(type, cop_year)+4)))
-
-# Gather and Spread to get formula, value, and indicator_code in separate cols ####
-schema %<>%
-  tidyr::gather(key,value,-sheet_num,-sheet_name,-col,-row) %>%
-  tidyr::unite(new.col, c(key,row)) %>%
-  tidyr::spread(new.col,value) %>%
-  #TODO: How to avoid hardcoding these numbers??
-  dplyr::select(sheet_num, sheet_name, col,
-                col_name = character_3,
-                dataset = character_5,
-                col_type = character_6,
-                value_type = character_7,
-                dataelement_dsd = character_8,
-                dataelement_ta = character_9,
-                categoryoption_specified = character_10,
-                valid_ages = character_11,
-                valid_sexes = character_12,
-                valid_kps = character_13,
-                indicator_code = character_14,
-                formula = formula_15,
-                value = numeric_15)
-
-spectrum_schema <- data.frame(
-  col = c(4:17),
-  col_name = c("psnu", "psnu_uid", "area_id",	"indicator_code",
-               "dataelement_uid", "age", "age_uid", "sex",
-               "sex_uid", "calendar_quarter", "value", "age_sex_rse",
-               "district_rse", "ID"),
-  col_type = c(NA, NA, NA, NA,
-               NA, NA, NA, NA,
-               NA, NA, NA, NA,
-               NA, NA),
-  value_type = c("string", "string", "string", "string",
-                 "string", "string", "string", "string",
-                 "string", "string", "string", "string",
-                 "integer", "string"),
-  prepopulated = c("N", "N", "N", "N", "N", "N", "N", "N",
-                   "N", "N", "N", "N", "N", "N"),
-  enter_or_modify = c("Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y",
-             "Y", "Y", "Y", "Y", "Y", "N"),
-  calculated = c("N", "N", "N", "N", "N", "N", "N", "N",
-                 "N", "N", "N", "N", "N", "Y"),
-  linked = c("N", "N", "N", "N", "N", "N", "N", "N",
-             "N", "N", "N", "N", "Y", "N")
-  # prepopulated = c("X", "X", "X", "X", "X", "X", "X", "X",
-  #                  "X", "X", "X", "X", "X", "X"),
-  # enter_or_modify = c("✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓",
-  #            "✓", "✓", "✓", "✓", "✓", "X"),
-  # calculated = c("X", "X", "X", "X", "X", "X", "X", "X",
-  #                "X", "X", "X", "X", "X", "✓"),
-  # linked = c("X", "X", "X", "X", "X", "X", "X", "X",
-  #            "X", "X", "X", "X", "✓", "X")
+spectrum_schema <- tibble::tribble(
+  ~sheet_name, ~col_ref, ~col, ~col_name, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
+  "Spectrum", "D", 4, "psnu", "string", "N", "Y", "N", "N",
+  "Spectrum", "E", 5, "psnu_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", "F", 6, "area_id", "string", "N", "Y", "N", "N",
+  "Spectrum", "G", 7, "indicator_code", "string", "N", "Y", "N", "N",
+  "Spectrum", "H", 8, "dataelement_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", "I", 9, "age", "string", "N", "Y", "N", "N",
+  "Spectrum", "J", 10, "age_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", "K", 11, "sex", "string", "N", "Y", "N", "N",
+  "Spectrum", "L", 12, "sex_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", "M", 13, "calendar_quarter", "string", "N", "Y", "N", "N",
+  "Spectrum", "N", 14, "value", "integer", "N", "Y", "N", "N",
+  "Spectrum", "O", 15, "age_sex_rse", "percentage", "N", "Y", "N", "N",
+  "Spectrum", "P", 16, "district_rse", "percentage", "N", "Y", "N", "N",
+  "Spectrum", "Q", 17, "ID", "string", "N", "N", "Y", "N",
 )
+
+schema <- datapackr::cop22_data_pack_schema %>%
+  dplyr::filter(!sheet_name %in% c("Home", "Summary",
+                                   "Spectrum", "Prioritization"),
+                col_type != "row_header") %>%
+  dplyr::mutate(
+    col_ref = openxlsx::int2col(col),
+    col_num = col,
+    prepopulated = dplyr::if_else(col_type == "past", "Y", "N"),
+    enter_or_modify = dplyr::case_when(col_type == "past" ~ "?",
+                                       col %in% c(8:9) ~ "Y",
+                                       TRUE ~ "N"),
+    calculated = dplyr::if_else(col_type == "past", "N", "Y"),
+    linked = dplyr::if_else(col == 8, "Y", "N")) %>%
+  dplyr::bind_rows(spectrum_schema) %>%
+  dplyr::select(
+    "Sheet Name" = sheet_name,
+    "Column" = col_ref,
+    "Column Number" = col_num,
+    "Column Name" = col_name,
+    "UID" = indicator_code,
+    "Column Type?" = col_type,
+    "What type of data?" = value_type,
+    "Prepopulated data?" = prepopulated,
+    "Enter or modify data?" = enter_or_modify,
+    "Calculated column?" = calculated,
+    "Linked column?" = linked)
 
 ```
 
@@ -105,61 +102,29 @@ spectrum_schema <- data.frame(
 schema_table <- function(table_reference, knit_type){
   
   inputs <- stringr::str_split(table_reference, "-")
-
-  tab <- inputs[[1]][1]
+  
+  sheet_name <- inputs[[1]][1]
   section <- inputs[[1]][2]
-  col_start <- inputs[[1]][3] %>% openxlsx::convertFromExcelRef(.)
-  col_end <- inputs[[1]][4] %>% openxlsx::convertFromExcelRef(.)
+  col_start <- inputs[[1]][3] %>% letter2number()
+  col_end <- inputs[[1]][4] %>% letter2number()
   part <- inputs[[1]][5]
   total <- inputs[[1]][6]
-
-  if (tab == "Spectrum") {
-    t <- spectrum_schema %>%
-      dplyr::filter(col %in% c(col_start:col_end)) %>%
-      dplyr::mutate(col = openxlsx::int2col(col)) %>%
-      dplyr::select(col,
-                    "Column Name" = col_name,
-                    "Column Type?" = col_type,
-                    "What type of data?" = value_type,
-                    "Prepopulated data?" = prepopulated,
-                    "Enter or modify data?" = enter_or_modify,
-                    "Calculated column?" = calculated,
-                    "Linked column?" = linked) %>%
-      as.data.frame() %>%
-      `row.names<-`(.[, 1]) %>%
-      dplyr::select(-1) %>%
-      t()
-  } else {
-    t <- schema %>%
-      dplyr::filter(sheet_name == tab,
-                    col %in% c(col_start:col_end)) %>%
-      dplyr::mutate(col = openxlsx::int2col(col),
-                    prepopulated = dplyr::if_else(col_type == "past", "Y", "N"), #"✓", "X"),
-                    enter_or_modify =
-                      dplyr::case_when(
-                        col_type == "past" ~ "?",
-                        col %in% c(8:9) ~ "Y", #"✓",
-                        TRUE ~ "N" #"X"
-                      ),
-                    calculated = dplyr::if_else(col_type == "past", "N", "Y"), #"X", "✓"),
-                    linked = dplyr::if_else(col == 8, "Y", "N")) %>% #"✓", "X")) %>%
-      dplyr::select(col,
-                    "Column Name" = col_name,
-                    "UID" = indicator_code,
-                    "Column Type?" = col_type,
-                    "What type of data?" = value_type,
-                    "Prepopulated data?" = prepopulated,
-                    "Enter or modify data?" = enter_or_modify,
-                    "Calculated column?" = calculated,
-                    "Linked column?" = linked) %>%
-      as.data.frame() %>%
-      `row.names<-`(.[, 1]) %>%
-      dplyr::select(-1) %>%
-      t()
+  
+  if (sheet_name == "Spectrum") {
+    my_schema <- dplyr::select(schema, -UID)
   }
   
+  t <- schema %>%
+    dplyr::filter(`Sheet Name` == sheet_name,
+                  `Column Number` %in% c(col_start:col_end)) %>%
+    dplyr::select(-`Sheet Name`, -`Column Number`) %>%
+    as.data.frame() %>%
+    `row.names<-`(.[, 1]) %>%
+    dplyr::select(-1) %>%
+    t()
+  
   if (knit_type == "latex") {
-    if (tab == "Spectrum") {
+    if (sheet_name == "Spectrum") {
       t %<>%
         knitr::kable(
           format = "latex",
@@ -173,21 +138,21 @@ schema_table <- function(table_reference, knit_type){
                                              "in")) %>%
         kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
     } else {
-         t %<>%
-      knitr::kable(
-        format = "latex",
-        escape = TRUE,
-        booktabs = TRUE
-      ) %>%
-      kableExtra::kable_styling(font_size = 12,
-                                latex_options="scale_down") %>%
-      kableExtra::column_spec(2:(col_end-col_start+2),
-                              width=paste0(toString(7.5/(col_end-col_start+1)),
-                                           "in")) %>%
-      kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
+      t %<>%
+        knitr::kable(
+          format = "latex",
+          escape = TRUE,
+          booktabs = TRUE
+        ) %>%
+        kableExtra::kable_styling(font_size = 12,
+                                  latex_options="scale_down") %>%
+        kableExtra::column_spec(2:(col_end-col_start+2),
+                                width=paste0(toString(7.5/(col_end-col_start+1)),
+                                             "in")) %>%
+        kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
     }
   } else {
-    if (tab == "Spectrum") {
+    if (sheet_name == "Spectrum") {
       t %<>%
         knitr::kable(
           format = "html",
@@ -217,7 +182,7 @@ schema_table <- function(table_reference, knit_type){
         kableExtra::scroll_box(width = "100%")
     }
   }
-
+  
   return(t)
 }
 
@@ -245,13 +210,13 @@ Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
 This tool supports calculation of targets based on expected treatment
 coverage rates by type of PSNU and population prioritization:
 
--   Attained
-
--   Scale-up: Aggressive
-
--   Scale-up: Saturation
-
--   Sustained
+    -   Attained
+    
+    -   Scale-up: Aggressive
+    
+    -   Scale-up: Saturation
+    
+    -   Sustained
 
 Prioritizations for PSNUs are established by the OU based on HIV
 prevalence and treatment coverage, in addition to other considerations.
@@ -387,13 +352,13 @@ For each of the below submissions, the following process will occur:
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
-    -   A link to the Data Pack file saved in SharePoint
-    -   Confirmation that this file has been pre-validated in the
-        DataPack Self-Service App
-    -   Confirmation that this file has been sent to PAW via the
-        DataPack Self-Service App
-    -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
-        members that should be aware of ongoing review and discussions.
+-   A link to the Data Pack file saved in SharePoint
+-   Confirmation that this file has been pre-validated in the
+    DataPack Self-Service App
+-   Confirmation that this file has been sent to PAW via the
+    DataPack Self-Service App
+-   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
+    members that should be aware of ongoing review and discussions.
 
 -   Once this ticket is received, the DataPack Support Team will confirm
     all the above has occurred and send additional instructions as
@@ -493,56 +458,56 @@ below. Upon downloading the Data Pack, the PSNUxIM tab will appear as a
 blank sheet, but will be generated by the self-service validation app
 after you submit your preliminary Data Pack.
 
--   Introduction
-
+    -   Introduction
+    
     -   Home
-
+    
     -   Summary
-
--   Host Country Planning Data
-
+    
+    -   Host Country Planning Data
+    
     -   Spectrum
-
+    
     -   Prioritization
-
--   DATIM MER 2.5 Indicator Data Elements
-
+    
+    -   DATIM MER 2.5 Indicator Data Elements
+    
     -   Cascade
-
+    
     -   PMTCT
-
+    
     -   EID
-
+    
     -   TB
-
+    
     -   VMMC
-
+    
     -   KP
-
+    
     -   HTS
-
+    
     -   CXCA
-
+    
     -   HTS_RECENT
-
+    
     -   TX_TB_PREV
-
+    
     -   PP
-
+    
     -   OVC
-
+    
     -   GEND
-
+    
     -   AGYW
-
+    
     -   PrEP
-
+    
     -   KP_MAT
-
+    
     -   KP Validation
-
--   Mechanism Mapping
-
+    
+    -   Mechanism Mapping
+    
     -   PSNU x IM
 
 \newpage
@@ -551,7 +516,7 @@ after you submit your preliminary Data Pack.
 
 ## How Does Everything Connect?
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image3.png")
 ```
 

@@ -148,6 +148,10 @@ The following data points will be imported into DATIM from this section:
 
     -   Mobile (Community)Other (Community)
 
+    -   SNS (Facility)
+
+    -   SNS (Community)
+
 ### Instructions
 
 1.  For each of the modalities listed above, review and adjust Yield rates, which are initially populated from DATIM based on FY20 results but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate cases either where:

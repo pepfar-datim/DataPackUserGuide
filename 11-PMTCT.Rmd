@@ -25,7 +25,7 @@ schema_table("PMTCT-Host Country Context-F-R-1-1", "html")
 ### DATIM Import
 
 The following data will be imported into DATIM from this section of the
-Data Pack:
+DataPack:
 
 -   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY22)**
     \[PMTCT_STAT_SUBNAT.D.T_1\]
@@ -66,7 +66,7 @@ Data Pack:
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
-    Spectrum export dataset added to the Spectrum tab of the Data Pack.
+    Spectrum export dataset added to the Spectrum tab of the DataPack.
     Review these and return to Spectrum to adjust assumptions there as
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
@@ -107,7 +107,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review FY22 targets for PMTCT_STAT (D),
-    reflected in the Data Pack per data reported in DATIM.
+    reflected in the DataPack per data reported in DATIM.
 
 2.  Review and adjust the Expected change in new ANC clients, which
     should help indicate whether there is an anticipated change in the
@@ -235,12 +235,11 @@ The following data points will be imported into DATIM from this section:
 ### FY23 Projected Known Positivity and New Positivity Rates
 
 In projecting rates of Known and New positivity for PMTCT_STAT ANC1
-clients, the COP21 Data Pack relies first upon Host Country Context
+clients, the COP21 DataPack relies first upon Host Country Context
 estimates, provided by Spectrum or another approved source, and where
 this data is unavailable, upon PEPFAR FY21 results obtained from DATIM
-on the date of the Data Pack's generation, as documented on the Home
-tab. These rates are calculated from Host Country Context data as
-follows:
+on the date of the DataPack's generation, as documented on the Home tab.
+These rates are calculated from Host Country Context data as follows:
 
 ```{=tex}
 \begin{center} ${Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}$ \end{center}
@@ -274,13 +273,13 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  Review the Total PMTCT_STAT_SUBNAT (N) that is calculated using the
-    tarqget set in the previous section for PMTCT_STAT_SUBNAT (D) (FY23)
+    target set in the previous section for PMTCT_STAT_SUBNAT (D) (FY23)
     and Targeted testing coverage of ANC1 clients (FY23) (%) from the
     PMTCT_STAT (N) section. This will be used to calculate the FY23
     targets for the remainder of this section
 
 2.  Review Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)
-    which will be calucated as the product of the Total
+    which will be calculated as the product of the Total
     PMTCT_STAT_SUBNAT (N) and Projected % ANC1 clients Known HIV
     Positive (FY23) (%). Adjust this percentage from the previous
     section to make changes to this target.
@@ -326,7 +325,7 @@ The following data points will be imported into DATIM from this section:
     this will alter linkage rates across all modalities.
 
 2.  Review modeled targets for PMTCT_ART (N) Already on ART. For the
-    purposes of COP21 target setting in the Data Pack, FY23 targets for
+    purposes of COP21 target setting in the DataPack, FY23 targets for
     PMTCT_ART Already on ART are set assuming that 100% of those ANC1
     clients with already known HIV positive status are already on ART.
 
@@ -458,14 +457,15 @@ No data from this section will be imported into DATIM.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to PMTCT_STAT are warranted may prevent issues and
-    additional work in other sections of the Data Pack.
+    additional work in other sections of the DataPack.
 
-4.  Return to other tabs of the Data Pack where issues flagged in this
+4.  Return to other tabs of the DataPack where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
-    sections can be also found in each of these other tabs of the Data
-    Pack. You may also use hyperlinks in column headers in this section
-    to quickly navigate to the most relevant section of the Data Pack.
+    sections can be also found in each of these other tabs of the
+    DataPack. You may also use hyperlinks in column headers in this
+    section to quickly navigate to the most relevant section of the
+    DataPack.
 
 \elandscape
 

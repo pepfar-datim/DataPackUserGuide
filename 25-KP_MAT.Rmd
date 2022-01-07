@@ -56,7 +56,7 @@ The following data points will be imported into DATIM from this section:
     columns.
 
 7.  Review "Host Country KP_MAT_SUBNAT (FY23)" and adjust previous
-    assumptions as needed. The Data Pack will model these targets based
+    assumptions as needed. The DataPack will model these targets based
     upon FY23 PEPFAR KP_MAT targets and the Targeted PEPFAR Coverage of
     KP_MAT_SUBNAT (FY23) (%).
 

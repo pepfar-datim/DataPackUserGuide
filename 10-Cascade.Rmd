@@ -267,8 +267,6 @@ The following data points will be imported into DATIM from this section:
 
 -   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)
     \[**VL_SUPPRESSED.T\]
--   **Targeted Host Country VLS_NET_NEW_SUBNAT (FY23)**
-    \[VLS_NET_NEW_SUBNAT.T\]
 
 ### Instructions
 
@@ -435,8 +433,6 @@ schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS_NET_NEW (FY23)** \[TX_PVLS_NET_NEW.N.T\]
-
 -   **TX_PVLS (N): Routine (FY23)** \[TX_PVLS.N.Routine.T\]
 
 ### Instructions
@@ -535,19 +531,41 @@ TX_CURR~t-1~ , reflecting the goal that all individuals on ART should be
 tested for viral load suppression, no matter whether they may in the
 future --- even within the same Fiscal Year --- be lost to follow-up.
 
+## Cascade: VLT Coverage
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-VLT Coverage-AV-AY-1-4", "latex")
+
+schema_table("Cascade-VLT Coverage-AZ-BC-2-4", "latex")
+
+schema_table("Cascade-VLT Coverage-BD-BG-3-4", "latex")
+
+schema_table("Cascade-VLT Coverage-BH-BL-4-4", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-VLT Coverage-AV-BL-1-1", "html")
+```
+
+### DATIM Import
+
+No Targets will be imported to DATIM from this section.
+
+### Instructions
+
+1.  Review
+
 ## Cascade: TX_NEW
 
 **TX_NEW:** Number of adults and children newly enrolled on
 antiretroviral therapy (ART). \[Part 1 of 2\]
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_NEW-AF-AI-1-2", "latex")
-
-schema_table("Cascade-TX_NEW-AJ-AL-2-2", "latex")
+schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_NEW-AF-AL-1-1", "html")
+schema_table("Cascade-TX_NEW-BM-BN-1-1", "html")
 ```
 
 ### DATIM Import
@@ -666,12 +684,12 @@ infant populations.
 antiretroviral therapy (ART).
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_CURR-AC-AE-1-1", "latex")
+schema_table("Cascade-TX_CURR-BO-BS-1-1", "latex")
 
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_CURR-AC-AE-1-1", "html")
+schema_table("Cascade-TX_CURR-BO-BS-1-1", "html")
 
 ```
 
@@ -757,24 +775,40 @@ entirely shift into the 1-4 year old age group, both TX_NET_NEW and
 TX_CURR for infants will reflect 100% of the value in the
 **PMTCT_HEI_POS Linked to ART (FY22)** column.
 
-## Cascade: Testing
+## Cascade: TX_CURR_SUBNAT
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Testing-AU-AX-1-6", "latex")
+schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "latex")
 
-schema_table("Cascade-TX_NEW-AY-BB-2-6", "latex")
-
-schema_table("Cascade-TX_NEW-BC-BF-3-6", "latex")
-
-schema_table("Cascade-TX_NEW-BG-BJ-4-6", "latex")
-
-schema_table("Cascade-TX_NEW-BK-BN-5-6", "latex")
-
-schema_table("Cascade-TX_NEW-BO-BP-6-6", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Testing-AU-BP-1-1", "html")
+schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "html")
+
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **TX_CURR_SUBNAT (FY23)** \[TX_CURR_SUBNAT.T\]
+
+### Instructions
+
+1.  For ages one and older:
+
+## Cascade: PEPFAR Testing
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-Testing-BW-CA-1-3", "latex")
+
+schema_table("Cascade-Testing-CB-CE-2-3", "latex")
+
+schema_table("Cascade-Testing-CF-CI-3-3", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-Testing-BW-CI-1-1", "html")
 ```
 
 ### DATIM Import
@@ -900,45 +934,25 @@ modality, an alert will be flagged in the Data Pack Self-Service App.
 Conditional formatting within the Data Pack will also indicate when this
 has occurred.
 
-## Cascade: DIAGNOSED_SUBNAT
+## Cascade: Testing Reference Distribution
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-BQ-BR-1-1", "latex")
+schema_table("Cascade-Testing Reference Distribution-CJ-CL-1-2", "latex")
+
+schema_table("Cascade-Testing Reference Distribution-CM-CP-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-BQ-BR-1-1", "html")
+schema_table("Cascade-Testing Reference Distribution-CJ-CP-1-1", "html")
 ```
 
 ### DATIM Import
 
-The following data points will be imported into DATIM from this section:
-
--   **Host Country DIAGNOSED_SUBNAT (FY22)** \[DIAGNOSED_SUBNAT.T\]
+There are no Targets from this section that will be imported into DATIM.
 
 ### Instructions
 
-1.  Review and adjust the expected PEPFAR Coverage of Host Country Total
-    Positives Identified for FY22. This is defaulted to match the PEPFAR
-    Coverage of Host Country TX_NET_NEW_SUBNAT (FY22) set in the
-    TX_NET_NEW_SUBNAT section of the Cascade tab, but can be altered as
-    appropriate.
-
-2.  Review FY22 targets for Host Country DIAGNOSED_SUBNAT. See below for
-    additional information.
-
-### DIAGNOSED_SUBNAT (FY22)
-
-In conjunction with allowing import and update of FY21 targets in DATIM
-for DIAGNOSED_SUBNAT, the Data Pack also allows import of FY22 targets
-for this indicator. These are modeled within the Data Pack as follows,
-rounded to the nearest integer:
-
-```{=tex}
-\begin{center} ${DIAGNOSED\_ SUBNAT}_{t}\  = \ DIAGNOSED\_ SUBNAT.T\_ 1 + \ \frac{{HTS\_TST\_POS\  +  \ PMTCT\_ HEI\_ POS}_{t}}{\text{PEPFAR Coverage of Host Country Total Positives Identified}_{t}}$ \end{center}
-```
-Note that this modeling approach does not take into account mortality
-rates among this population.
+1.  Review
 
 ## Cascade: HTS_Index
 
@@ -946,13 +960,13 @@ rates among this population.
 using Index testing services and received their results
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-HTS_INDEX-CF-CM-1-1", "latex")
+schema_table("Cascade-HTS_INDEX-CQ-CT-1-1", "latex")
 
-schema_table("Cascade-HTS_INDEX-CF-CM-2-2", "latex")
+schema_table("Cascade-HTS_INDEX-CU-CX-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-HTS_INDEX-CF-CM-1-1", "html")
+schema_table("Cascade-HTS_INDEX-CQ-CX-1-1", "html")
 ```
 
 ### DATIM Import
@@ -1033,6 +1047,46 @@ are set as follows:
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
 ```
 ## 
+
+## Cascade: DIAGNOSED_SUBNAT
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **Host Country DIAGNOSED_SUBNAT (FY22)** \[DIAGNOSED_SUBNAT.T\]
+
+### Instructions
+
+1.  Review and adjust the expected PEPFAR Coverage of Host Country Total
+    Positives Identified for FY22. This is defaulted to match the PEPFAR
+    Coverage of Host Country TX_NET_NEW_SUBNAT (FY22) set in the
+    TX_NET_NEW_SUBNAT section of the Cascade tab, but can be altered as
+    appropriate.
+
+2.  Review FY22 targets for Host Country DIAGNOSED_SUBNAT. See below for
+    additional information.
+
+### DIAGNOSED_SUBNAT (FY22)
+
+In conjunction with allowing import and update of FY21 targets in DATIM
+for DIAGNOSED_SUBNAT, the Data Pack also allows import of FY22 targets
+for this indicator. These are modeled within the Data Pack as follows,
+rounded to the nearest integer:
+
+```{=tex}
+\begin{center} ${DIAGNOSED\_ SUBNAT}_{t}\  = \ DIAGNOSED\_ SUBNAT.T\_ 1 + \ \frac{{HTS\_TST\_POS\  +  \ PMTCT\_ HEI\_ POS}_{t}}{\text{PEPFAR Coverage of Host Country Total Positives Identified}_{t}}$ \end{center}
+```
+Note that this modeling approach does not take into account mortality
+rates among this population.
 
 \elandscape
 

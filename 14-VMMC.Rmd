@@ -57,7 +57,7 @@ The following data points will be imported into DATIM from this section:
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
-    Spectrum export dataset added to the Spectrum tab of the Data Pack.
+    Spectrum export dataset added to the Spectrum tab of the DataPack.
     Review these and return to Spectrum to adjust assumptions there as
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
@@ -117,7 +117,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review FY21 results and FY22 targets for
-    PEPFAR VMMC_CIRC, supplied in the Data Pack as an export from data
+    PEPFAR VMMC_CIRC, supplied in the DataPack as an export from data
     currently reported in DATIM.
 
 2.  Review the FY22 estimated PEPFAR Coverage of Host Country
@@ -179,18 +179,18 @@ set as follows, rounding to the nearest integer:
 ```
 ### VMMC_CIRC Disaggregates (FY23)
 
-In disaggregating total VMMC_CIRC for FY23 Targets, the Data Pack will
+In disaggregating total VMMC_CIRC for FY23 Targets, the DataPack will
 first set targets for those projected to have indeterminate HIV testing
 results or to deny testing, then targets for those identified positive,
 and finally those negative.
 
-To set targets for Indeterminate/Not Tested, the Data Pack will use the
+To set targets for Indeterminate/Not Tested, the DataPack will use the
 following formula, rounding to the nearest integer:
 
 ```{=tex}
 \begin{center} ${VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}$ \end{center}
 ```
-For VMMC_CIRC HIV Positive, the Data Pack will set targets as follows,
+For VMMC_CIRC HIV Positive, the DataPack will set targets as follows,
 rounding to the nearest integer:
 
 ```{=tex}
@@ -251,14 +251,15 @@ No data will be imported into DATIM from this section.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to VMMC_CIRC are warranted may prevent issues and
-    additional work in other sections of the Data Pack.
+    additional work in other sections of the DataPack.
 
-3.  Return to other tabs of the Data Pack where issues flagged in this
+3.  Return to other tabs of the DataPack where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
-    sections can be also found in each of these other tabs of the Data
-    Pack. You may also use hyperlinks in column headers in this section
-    to quickly navigate to the most relevant section of the Data Pack.
+    sections can be also found in each of these other tabs of the
+    DataPack. You may also use hyperlinks in column headers in this
+    section to quickly navigate to the most relevant section of the
+    DataPack.
 
 \elandscape
 

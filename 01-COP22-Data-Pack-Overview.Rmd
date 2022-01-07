@@ -218,8 +218,7 @@ coverage rates by type of PSNU and population prioritization:
 
     -   Sustained
 
-Prioritizations for PSNUs are established by the OU based on HIV
-prevalence and treatment coverage, in addition to other considerations.
+Prioritizations for PSNUs are arebased on COP Guidance section 7.3.2.ba.
 These determine for a given PSNU programmatically what HIV treatment and
 prevention services should be planned and informs both the overall
 strategy and the targets. Teams must review and revise their PSNU
@@ -259,7 +258,8 @@ that did not during COP21 target stetting:
 
 -   New Cascade Approach that will flow from Program Viral Load
     Suppression to testing to allow for countries closer or at Epi
-    Control to more easily set targets.
+    Control to more easily set targets, based on Section 7 of COP22
+    Guidance.
 
 -   Integration of new SNS Modalities for HTS and HTS_Recent.
 
@@ -282,55 +282,64 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 ***DataPack Review***
 
-+-----------+---------+--------+--------+-----------+----------+
-|           | Single  | Single | Single | OUs at    | Regional |
-|           | OU      | OU     | OU     | Epi       | /        |
-|           | Track:  | Track: | Track: | Control   | Country  |
-|           | Group 1 | Group  | Group  |           | Pair     |
-|           |         | 2      | 3      |           | Track    |
-+===========+:=======:+:======:+:======:+===========+:========:+
-| 1st Draft | Feb 28  | Mar 7  | Mar 14 | Mar 7 or  | Feb 28   |
-| Tool      |         |        |        |           |          |
-| S         |         |        |        | Mar 14    |          |
-| ubmission |         |        |        |           |          |
-+-----------+---------+--------+--------+-----------+----------+
-| COP       | Mar     | Mar    | Mar    | Mar 14-18 | Mar      |
-| Meeting   | 7-11    | 14-18  | 22-25  | or Mar    | 22-25    |
-|           |         |        |        | 22-25     |          |
-+-----------+---------+--------+--------+-----------+----------+
-| Mid-point |         |        |        |           |          |
-| Tool      |         |        |        |           |          |
-| check     |         |        |        |           |          |
-+-----------+---------+--------+--------+-----------+----------+
-| Tools Due | Apr 4   | Apr 11 | Apr 18 | Apr 11 or | Apr 18   |
-| for Final |         |        |        |           |          |
-| Review    |         |        |        | Apr 18    |          |
-+-----------+---------+--------+--------+-----------+----------+
-| A         |         |        |        |           | Rolling  |
-| dditional |         |        |        |           | Each     |
-| To        |         |        |        |           | Monday   |
-| uchpoints |         |        |        |           |          |
-| / Reviews |         |        |        |           |          |
-+-----------+---------+--------+--------+-----------+----------+
-| Tools     | Apr 11  | Apr 18 | Apr 25 | Apr 18    | Apr 25   |
-| Submitted |         |        |        | or        |          |
-| for       |         |        |        |           |          |
-| Upload to |         |        |        | Apr 23    |          |
-| DATI      |         |        |        |           |          |
-| M/FI-NG   |         |        |        |           |          |
-+-----------+---------+--------+--------+-----------+----------+
-| COP21     | Apr 19  | Apr 22 | Apr 29 | Apr 22 or | Apr 29   |
-| S         |         |        |        |           |          |
-| ubmission |         |        |        | Apr 29    |          |
-| Due       |         |        |        |           |          |
-+-----------+---------+--------+--------+-----------+----------+
++---------+---------+---------+---------+---------+---------+
+|         | Single  | Single  | Single  | OUs at  | R       |
+|         | OU      | OU      | OU      | Epi     | egional |
+|         | Track:  | Track:  | Track:  | Control | /       |
+|         | Group 1 | Group 2 | Group 3 |         | Country |
+|         |         |         |         |         | Pair    |
+|         |         |         |         |         | Track   |
++=========+:=======:+:=======:+:=======:+=========+:=======:+
+| 1st     | Feb 28  | Mar 7   | Mar 14  | Mar 7   | Feb 28  |
+| Draft   |         |         |         | or      |         |
+| Tool S  |         |         |         |         |         |
+| ub      |         |         |         | Mar 14  |         |
+| mission |         |         |         |         |         |
++---------+---------+---------+---------+---------+---------+
+| COP     | Mar     | Mar     | Mar     | Mar     | Mar     |
+| Meeting | 7-11    | 14-18   | 22-25   | 14-18   | 22-25   |
+|         |         |         |         | or Mar  |         |
+|         |         |         |         | 22-25   |         |
++---------+---------+---------+---------+---------+---------+
+| Mi      |         |         |         |         |         |
+| d-point |         |         |         |         |         |
+| Tool    |         |         |         |         |         |
+| check   |         |         |         |         |         |
++---------+---------+---------+---------+---------+---------+
+| Tools   | Apr 4   | Apr 11  | Apr 18  | Apr 11  | Apr 18  |
+| Due for |         |         |         | or      |         |
+| Final   |         |         |         |         |         |
+| Review  |         |         |         | Apr 18  |         |
++---------+---------+---------+---------+---------+---------+
+| A       |         |         |         |         | Rolling |
+| dd      |         |         |         |         | Each    |
+| itional |         |         |         |         | Monday  |
+| To      |         |         |         |         |         |
+| uc      |         |         |         |         |         |
+| hpoints |         |         |         |         |         |
+| /       |         |         |         |         |         |
+| Reviews |         |         |         |         |         |
++---------+---------+---------+---------+---------+---------+
+| Tools   | Apr 11  | Apr 18  | Apr 25  | Apr 18  | Apr 25  |
+| Su      |         |         |         | or      |         |
+| bmitted |         |         |         |         |         |
+| for     |         |         |         | Apr 23  |         |
+| Upload  |         |         |         |         |         |
+| to DATI |         |         |         |         |         |
+| M/FI-NG |         |         |         |         |         |
++---------+---------+---------+---------+---------+---------+
+| COP21 S | Apr 19  | Apr 22  | Apr 29  | Apr 22  | Apr 29  |
+| ub      |         |         |         | or      |         |
+| mission |         |         |         |         |         |
+| Due     |         |         |         | Apr 29  |         |
++---------+---------+---------+---------+---------+---------+
 
 **Submission Process**
 
 For each of the below submissions, the following process will occur:
 
 -   Country Teamspre-validates their DataPack submission in the DataPack
-    Self-Service App (available at datapack.datim.org).
+    Self-Service App (available at <https://apps.datim.org/datapack/>).
 
 -   Country Team uses DataPack Self-Service App to sync data with PAW
     Dossiers.
@@ -431,7 +440,12 @@ thread/ticket, the DataPack Support Team will move forward with
 uploading your submitted DataPack to DATIM, then note completion of this
 here on this ticket. Once this is done, it is recommended that you
 review your data in DATIM to ensure alignment between DATIM and your
-DataPack.
+DataPack. Please note in addition to these regular formal
+submissions, we encourage regular sharing and dialogue with Chair, PPM,
+and
+DUIT Liaison around target setting process generally, and DataPack
+specifically.
+Feel free to share draft versions as often as is helpful.
 
 ## DataPack SharePoint Location
 
@@ -589,20 +603,22 @@ procedure:
     Liaison. Determine together whether any issue identified requires
     updating values in DATIM.
 
-2.  If it is the case that DATIM values should be updated, follow the
+2.  It maybe that together with your PPM and DUIT Liaison you decide
+    that changes to historic values are not necessary in DATIM, but
+    still necessary in the DataPack. This is an extraordinary
+    circumstance and must have approval from PRIME/DUIT leadership via
+    your Liaison to allow. If approved, you may make changes directly in
+    the related column of the DataPack.
+
+3.  If it is the case that DATIM values should be updated, follow the
     usual process for OPU Target changes, requesting all necessary
     approvals to initiate and expedite this process during COP.
 
-3.  Once changes are processed in DATIM, you can either request a new
-    DataPack with updated data from DATIM, or copy new values into the
-    related column of the DataPack yourself. For either of these routes,
-    reach out to the DataPack Systems Team via Zendesk for support.
-
-4.  It may also be the case that together with your PPM and DUIT Liaison
-    you decide that changes to historic values are not necessary in
-    DATIM, but still necessary in the DataPack. This is an extraordinary
-    circumstance and must have approval from DUIT Liaisons to allow. If
-    approved, you may make changes directly in the related column of the
-    DataPack.
+4.  Once changes are aprroved, either through an OPU for targets, or
+    through data change request for results, you can enter the new
+    values into the related column of the DataPack yourself. If you wish
+    to request a new DataPack, you may do so, but will have to start the
+    DataPack process afresh. For either of these routes, reach out to
+    the DataPack Systems Team via Zendesk for support.
 
 \newpage

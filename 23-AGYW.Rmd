@@ -48,8 +48,8 @@ The following data points will be imported into DATIM from this section:
     AGYW projected as of September 2021, as available. These are for
     reference and not used to model targets in proceeding steps.
 
-3.  For context, review FY23 targets for PrEP_NEW, PrEP_CURR, PP_PREV,
-    HTS_TST_POS, and HTS_TST, set in other tabs of the Data Pack.
+3.  For context, review FY23 targets for PrEP_NEW, PrEP_CT, PP_PREV,
+    HTS_TST_POS, and HTS_TST, set in other tabs of the DatatPack.
 
 4.  For additional context, review FY21 results for AGYW_PREV and
     Observed Percent Completion as reported in DATIM.
@@ -70,10 +70,6 @@ The following data points will be imported into DATIM from this section:
     additional information.
 
 ### AGYW_PREV Denominator (FY23)
-
-As COP 22 represents the first year in which targets will be set for
-AGYW_PREV, the process for arriving at these within the COP22 Data Pack
-has been kept purposefully simple.
 
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:

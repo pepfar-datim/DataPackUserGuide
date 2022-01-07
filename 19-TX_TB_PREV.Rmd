@@ -73,7 +73,7 @@ The following data points will be imported into DATIM from this section:
 
 ### TX_TB (D) Disaggregates (FY23)
 
-The Data Pack will set FY23 targets for TX_TB (D) as laid out below.
+The DataPack will set FY23 targets for TX_TB (D) as laid out below.
 
 Targets will be set for those New on ART and screened positive for TB as
 follows, rounded to the nearest integer:
@@ -107,11 +107,15 @@ programs using continuous IPT, this includes only the patients who are
 scheduled to complete the first 6 months of therapy).
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-S-1-1", "latex")
+schema_table("TX_TB_PREV-TX_PREV (D)-P-S-1-3", "latex")
+
+schema_table("TX_TB_PREV-TX_PREV (D)-T-V-2-3", "latex")
+
+schema_table("TX_TB_PREV-TX_PREV (D)-W-X-2-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-S-1-1", "html")
+schema_table("TX_TB_PREV-TX_PREV (D)-P-X-1-1", "html")
 ```
 
 ### DATIM Import
@@ -124,22 +128,31 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review assumptions for the percent of TX_TB (D) screened negative
-    for TB to be initiated on TPT both for those New on ART, as well as
-    for those Already on ART. These are initially pre-populated at 100%
-    and 90% for those New on ART and those Already on ART, respectively,
-    though can be adjusted as needed. Red highlights indicate
-    percentages over 100%, or less than 0%; yellow highlights indicate
-    percentages less than 100% or 90% for New on ART and Already on ART,
-    respectively.
+1.  Review "Cumulative Previous Completion of TPT (Results FY17-21)" as
+    well as "B_PREV (N) - New on ART (FY22 Targets)" and "TB_PREV (N) -
+    Already on ART (FY22 Targets)". These three columns will help
+    calcualte "Already on ART who have likely completed TPT in last 5
+    years (FY23) (%)".
 
-2.  Review modeled targets for TB_PREV (D) New on ART --- set by
-    multiplying TX_TB (D) New on ART, TB Screen Negative by the percent
-    of TX_TB (D) New on ART, TB Screen Negative initiated on TPT,
-    rounding to the nearest integer --- and TB_PREV (D) Already on ART
-    --- set by multiplying TX_TB (D) Already on ART, TB Screen Negative
-    by the percent of TX_TB (D) Already on ART, TB Screen Negative
-    initiated on TPT, rounding to the nearest integer.
+2.  Review "Already on ART who have likely completed TPT in last 5 years
+    (FY23) (%)" which is the summation of the previous three columns
+    from the beggining of this section, divided by the "TX_CURR (FY22)"
+    value from column G of the TX_TB (D) section.
+
+3.  Review "Est. \# Already on ART Eligible for TPT (FY23)" which is the
+    product of the previous step and "Already on ART, TB Screen -"
+
+4.  Review both "% TPT Initiation Rate - New on ART (FY23) (%)" and "%
+    TPT Initiation Rate - Already on ART (FY23) (%)" which are defaulted
+    to 100%. "% TPT Initiation Rate - New on ART (FY23) (%)" will flag
+    yellow if it is less than 100% while "% TPT Initiation Rate -
+    Already on ART (FY23) (%)" will flag if it is set less than 90%.
+
+5.  Review modeled targets for TB_PREV (D) New on ART --- set by
+    multiplying "New on ART, TB Screen -" and "% TPT Initiation Rate -
+    New on ART (FY23) (%)" --- and TB_PREV (D) Already on ART --- set by
+    multiplying "Est. \# Already on ART Eligible for TPT (FY23)" by "%
+    TPT Initiation Rate - Already on ART (FY23) (%)"
 
 ## TX_TB_PREV: TB_PREV (N)
 
@@ -149,13 +162,13 @@ programs, this includes the patients who have completed the first 6
 months of isoniazid preventive therapy (IPT)).
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-T-W-1-2", "latex")
+schema_table("TX_TB_PREV-TX_PREV (N)-Y-AA-1-2", "latex")
 
-schema_table("TX_TB_PREV-TX_PREV (N)-X-Z-2-2", "latex")
+schema_table("TX_TB_PREV-TX_PREV (N)-AB-AC-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-T-Z-1-1", "html")
+schema_table("TX_TB_PREV-TX_PREV (N)-Y-AC-1-1", "html")
 ```
 
 ### DATIM Import

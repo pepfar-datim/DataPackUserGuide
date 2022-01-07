@@ -199,11 +199,11 @@ critical function in assisting PEPFAR Country Teams in setting targets
 in line with the UNAIDS 95-95-95 goals for Testing, Care & Treatment,
 PMTCT, VMMC, OVC, and other program areas. Please note that the COP22
 DataPack is mandatory and must be used to set targets for COP22. For
-COP22, all indicators included in the Data Pack are **MER 2.6**
+COP22, all indicators included in the DataPack are **MER 2.6**
 indicators. For further information on the MER 2.6 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 
-## About the Data Pack
+## About the DataPack
 
 The COP22 DataPack supports analysis for all targets by Priority
 Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
@@ -211,11 +211,11 @@ This tool supports calculation of targets based on expected treatment
 coverage rates by type of PSNU and population prioritization:
 
     -   Attained
-    
+
     -   Scale-up: Aggressive
-    
+
     -   Scale-up: Saturation
-    
+
     -   Sustained
 
 Prioritizations for PSNUs are established by the OU based on HIV
@@ -226,24 +226,25 @@ strategy and the targets. Teams must review and revise their PSNU
 prioritization levels for COP22. The COP22 DataPack assumes a 'test and
 start' treatment platform and will develop targets for achieving 95%
 coverage in Scale up: Aggressive and Scale-up: Saturation PSNUs; all
-other targets in the Data Pack are based on the treatment targets,
+other targets in the DataPack are based on the treatment targets,
 insofar as the treatment targets are the main focus of reaching epidemic
 control, and therefore relate to both testing and prevention targets.
 
 The DataPack will allow PEPFAR teams to use country specific
 programmatic assumptions to develop the optimum targets by PSNU along
 the program cascades to ensure the necessary number of PLHIV are
-diagnosed, linked, and start treatment. The Data Pack does not
+diagnosed, linked, and start treatment. The DataPack does not
 necessarily calculate targets for every indicator, but it has space for
 teams to enter targets for all indicators and thus can be used to record
 agreed-upon COP targets, even for non-calculated indicators.
 
 **Teams must not modify the structure of the COP22 DataPack in any
-way**. OGAC has developed a process by which targets can be directly
-imported into DATIM via the Data Pack Site Tool in order to generate
-targets. However, this is *only* possible for teams that do not in any
-way alter the structure or format of the Data Pack. Additional details
-are provided in COP Guidance and will be available through COP webinars.
+way**. The Office of the US Global Aids Coordinator (OGAC) has developed
+a process by which targets can be directly imported into DATIM via the
+DataPack Site Tool in order to generate targets. However, this is *only*
+possible for teams that do not in any way alter the structure or format
+of the DataPack. Additional details are provided in COP Guidance and
+will be available through COP webinars.
 
 ## Highlighted Changes from COP21 to COP22
 
@@ -279,84 +280,75 @@ that will be subsequently submitted through DATIM after COP22 has been
 finalized and the PSNU level data entered into the Strategic Direction
 Summary (SDS) tables, where appropriate (Target related data).
 
-***Data Pack Review***
+***DataPack Review***
 
-+---------+---------+---------+---------+---------+
-|         | Single  | Single  | Single  | Region  |
-|         | OU      | OU      | OU      | a l     |
-|         | Track:  | Track:  | Track:  | /       |
-|         | Group 1 | Group 2 | Group 3 | Country |
-|         |         |         |         | Pair    |
-|         |         |         |         | Track   |
-+=========+:=======:+:=======:+:=======:+:=======:+
-| 1st     | Feb 16  | Feb 23  | Mar 2   | Feb 9   |
-| Draft   |         |         |         |         |
-| Tool S  |         |         |         |         |
-| u       |         |         |         |         |
-| b       |         |         |         |         |
-| mission |         |         |         |         |
-+---------+---------+---------+---------+---------+
-| COP     | Feb     | Mar 1-5 | Mar     | Feb 16  |
-| Meeting | 22-26   |         | 8-12    | - Mar   |
-|         |         |         |         | 12      |
-+---------+---------+---------+---------+---------+
-| M       | Feb 24  | Mar 3   | Mar 10  | Mar 2   |
-| i       |         |         |         |         |
-| d-point |         |         |         |         |
-| Tool    |         |         |         |         |
-| check   |         |         |         |         |
-+---------+---------+---------+---------+---------+
-| Tools   | Feb 26  | Mar 5   | Mar 12  | Mar 12  |
-| Due for |         |         |         |         |
-| Final   |         |         |         |         |
-| Review  |         |         |         |         |
-+---------+---------+---------+---------+---------+
-| A d     |         |         |         | Rolling |
-| d       |         |         |         | Each    |
-| itional |         |         |         | Monday  |
-| Touchpo |         |         |         |         |
-| in t s  |         |         |         |         |
-| /       |         |         |         |         |
-| Reviews |         |         |         |         |
-+---------+---------+---------+---------+---------+
-| Tools S | Mar 7   | Mar 14  | Mar 21  | Mar 22  |
-| u       |         |         |         |         |
-| bmitted |         |         |         |         |
-| for     |         |         |         |         |
-| Upload  |         |         |         |         |
-| to D A  |         |         |         |         |
-| T       |         |         |         |         |
-| I       |         |         |         |         |
-| M/FI-NG |         |         |         |         |
-+---------+---------+---------+---------+---------+
-| COP21 S | Mar 15  | Mar 22  | Mar 29  | Mar 29  |
-| u       |         |         |         |         |
-| b       |         |         |         |         |
-| mission |         |         |         |         |
-| Due     |         |         |         |         |
-+---------+---------+---------+---------+---------+
++-----------+---------+--------+--------+-----------+----------+
+|           | Single  | Single | Single | OUs at    | Regional |
+|           | OU      | OU     | OU     | Epi       | /        |
+|           | Track:  | Track: | Track: | Control   | Country  |
+|           | Group 1 | Group  | Group  |           | Pair     |
+|           |         | 2      | 3      |           | Track    |
++===========+:=======:+:======:+:======:+===========+:========:+
+| 1st Draft | Feb 28  | Mar 7  | Mar 14 | Mar 7 or  | Feb 28   |
+| Tool      |         |        |        |           |          |
+| S         |         |        |        | Mar 14    |          |
+| ubmission |         |        |        |           |          |
++-----------+---------+--------+--------+-----------+----------+
+| COP       | Mar     | Mar    | Mar    | Mar 14-18 | Mar      |
+| Meeting   | 7-11    | 14-18  | 22-25  | or Mar    | 22-25    |
+|           |         |        |        | 22-25     |          |
++-----------+---------+--------+--------+-----------+----------+
+| Mid-point |         |        |        |           |          |
+| Tool      |         |        |        |           |          |
+| check     |         |        |        |           |          |
++-----------+---------+--------+--------+-----------+----------+
+| Tools Due | Apr 4   | Apr 11 | Apr 18 | Apr 11 or | Apr 18   |
+| for Final |         |        |        |           |          |
+| Review    |         |        |        | Apr 18    |          |
++-----------+---------+--------+--------+-----------+----------+
+| A         |         |        |        |           | Rolling  |
+| dditional |         |        |        |           | Each     |
+| To        |         |        |        |           | Monday   |
+| uchpoints |         |        |        |           |          |
+| / Reviews |         |        |        |           |          |
++-----------+---------+--------+--------+-----------+----------+
+| Tools     | Apr 11  | Apr 18 | Apr 25 | Apr 18    | Apr 25   |
+| Submitted |         |        |        | or        |          |
+| for       |         |        |        |           |          |
+| Upload to |         |        |        | Apr 23    |          |
+| DATI      |         |        |        |           |          |
+| M/FI-NG   |         |        |        |           |          |
++-----------+---------+--------+--------+-----------+----------+
+| COP21     | Apr 19  | Apr 22 | Apr 29 | Apr 22 or | Apr 29   |
+| S         |         |        |        |           |          |
+| ubmission |         |        |        | Apr 29    |          |
+| Due       |         |        |        |           |          |
++-----------+---------+--------+--------+-----------+----------+
 
 **Submission Process**
 
 For each of the below submissions, the following process will occur:
 
--   Country Teamspre-validates their Data Pack submission in the Data
-    Pack Self-Service App (available at datapack.datim.org).
+-   Country Teamspre-validates their DataPack submission in the DataPack
+    Self-Service App (available at datapack.datim.org).
 
 -   Country Team uses DataPack Self-Service App to sync data with PAW
     Dossiers.
 
--   Country Team saves Data Pack to SharePoint under the OU's HQ
+-   Country Team saves DataPack to SharePoint under the OU's HQ
     Collaboration > COP 2022 - FY 2023 > Guidance, Tools, and Resources
     folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
--   A link to the Data Pack file saved in SharePoint
--   Confirmation that this file has been pre-validated in the
-    DataPack Self-Service App
--   Confirmation that this file has been sent to PAW via the
-    DataPack Self-Service App
+-   A link to the DataPack file saved in SharePoint
+
+-   Confirmation that this file has been pre-validated in the DataPack
+    Self-Service App
+
+-   Confirmation that this file has been sent to PAW via the DataPack
+    Self-Service App
+
 -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
     members that should be aware of ongoing review and discussions.
 
@@ -378,8 +370,8 @@ As is possible, all the above should occur within a 24 hour turnaround
 from the initial submission of a DataPack from a Country Team. While
 this process will remain the same for each submission for review, the
 content of each review will differ, as explained below. Once a Zendesk
-ticket and email thread has been started with an initial Data Pack
-submission, all future Data Pack submissions related to the same Country
+ticket and email thread has been started with an initial DataPack
+submission, all future DataPack submissions related to the same Country
 should use the same thread/ticket to allow for easy coordination.
 
 **Submission 1**
@@ -443,7 +435,7 @@ DataPack.
 
 ## DataPack SharePoint Location
 
-The Data Pack will be posted on PEPFAR SharePoint:
+The DataPack will be posted on PEPFAR SharePoint:
 [www.pepfar.net](http://www.pepfar.net).
 
 -   The file path will be OU > Country Name > HQ Collaboration > COP
@@ -453,61 +445,59 @@ The Data Pack will be posted on PEPFAR SharePoint:
 
 ## Tab Categories
 
-Each Data Pack will start with 22 tabs organized in the order presented
-below. Upon downloading the Data Pack, the PSNUxIM tab will appear as a
+Each DataPack will start with 21 tabs organized in the order presented
+below. Upon downloading the DataPack, the PSNUxIM tab will appear as a
 blank sheet, but will be generated by the self-service validation app
-after you submit your preliminary Data Pack.
+after you submit your preliminary DataPack.
 
     -   Introduction
-    
+
     -   Home
-    
-    -   Summary
-    
+
     -   Host Country Planning Data
-    
+
     -   Spectrum
-    
+
     -   Prioritization
-    
+
     -   DATIM MER 2.5 Indicator Data Elements
-    
+
     -   Cascade
-    
+
     -   PMTCT
-    
+
     -   EID
-    
+
     -   TB
-    
+
     -   VMMC
-    
+
     -   KP
-    
+
     -   HTS
-    
+
     -   CXCA
-    
+
     -   HTS_RECENT
-    
+
     -   TX_TB_PREV
-    
+
     -   PP
-    
+
     -   OVC
-    
+
     -   GEND
-    
+
     -   AGYW
-    
+
     -   PrEP
-    
+
     -   KP_MAT
-    
+
     -   KP Validation
-    
+
     -   Mechanism Mapping
-    
+
     -   PSNU x IM
 
 \newpage
@@ -544,7 +534,7 @@ knitr::include_graphics("./images/image4.png")
 ```
 \newpage
 
-## How to Navigate a Data Pack Tab
+## How to Navigate a DataPack Tab
 
 ```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image5.png")
@@ -610,9 +600,9 @@ procedure:
 
 4.  It may also be the case that together with your PPM and DUIT Liaison
     you decide that changes to historic values are not necessary in
-    DATIM, but still necessary in the Data Pack. This is an
-    extraordinary circumstance and must have approval from DUIT Liaisons
-    to allow. If approved, you may make changes directly in the related
-    column of the Data Pack.
+    DATIM, but still necessary in the DataPack. This is an extraordinary
+    circumstance and must have approval from DUIT Liaisons to allow. If
+    approved, you may make changes directly in the related column of the
+    DataPack.
 
 \newpage

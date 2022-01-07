@@ -29,7 +29,7 @@ The following data points will be imported into DATIM from this section:
 
 -   **Physical/Emotional Violence (FY23)** \[GEND_GBV.PE.T\]
 
--   **Sexual Violence** (FY23) \[GEND_GBV.S.T\]
+-   **Sexual Violence (FY23)** \[GEND_GBV.S.T\]
 
 ### Instructions
 
@@ -37,8 +37,8 @@ The following data points will be imported into DATIM from this section:
     Physical/Emotional Violence and Sexual Violence service types, which
     are pre-populated from DATIM.
 
-2.  Review and adjust the "Expected change in GEND_GBV -
-    Physical/Emotional Violence services (%)" and "Expected change in
+2.  Review and adjust the "Projected change in GEND_GBV -
+    Physical/Emotional Violence services (%)" and "Projected change in
     GEND_GBV - Sexual Violence services (%)" columns. These will default
     to 0%, though this reflects no suggested strategic direction.
 

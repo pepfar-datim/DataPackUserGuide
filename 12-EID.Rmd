@@ -43,11 +43,11 @@ schema_table("EID-PMTCT_EID (N)-L-N-2-4", "latex")
 
 schema_table("EID-PMTCT_EID (N)-O-Q-3-4", "latex")
 
-schema_table("EID-PMTCT_EID (N)-R-U-4-4", "latex")
+schema_table("EID-PMTCT_EID (N)-R-V-4-4", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("EID-PMTCT_EID (N)-H-U-1-1", "html")
+schema_table("EID-PMTCT_EID (N)-H-V-1-1", "html")
 ```
 
 ### DATIM Import

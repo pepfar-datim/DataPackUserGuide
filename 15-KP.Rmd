@@ -8,9 +8,9 @@ editor_options:
 
 # KP
 
-**NOTE: The HTS_TST, TX_NEW, PrEP_CURR, and PrEP_NEW indicators in the
-KP tab are related to Key Populations only and are not linked to other
-tabs that feature those indicators.**
+**NOTE: The HTS_TST, TX_NEW, TX_CURR, PrEP_CT, and PrEP_NEW indicators
+in the KP tab are related to Key Populations only and are not linked to
+other tabs that feature those indicators.**
 
 This tab is provided to facilitate and inform (1) data-driven program
 intent or relationships amongst indicators, where relevant, for KP
@@ -23,13 +23,15 @@ listed.
 
 [Considerations as you complete and use this tab:]{.ul}
 
-1.  As per the COP21 Guidance, baseline data to support target
+1.  As per the COP22 Guidance, baseline data to support target
     development can come from bio-behavioral surveys (BBS) and size
     estimates, especially to understand current PLHIV burden and program
     results. Use the most recent and reliable estimates available where
     possible. For example, population size estimates and survey data on
     knowledge of status can inform PP_PREV and subsequent clinical
-    cascade targets.
+    cascade targets. The COP22 Guidance Section 6.6.2 has substantial
+    guidance on expectations of an effective KP program, and should be
+    reviewed before setting KP targets.
 
 2.  Where possible and relevant, use FY22 targets and, as available,
     results to inform FY23 targets (the 'Assumption' column for each
@@ -38,14 +40,17 @@ listed.
     results may not be the most relevant and appropriate base from which
     to develop FY23 targets.
 
-3.  As per COP21 Guidance, OUs should strive to ensure all KPs reached
+3.  As per COP22 Guidance, OUs should strive to ensure all KPs reached
     with KP programming (KP_PREV), who do not already know their HIV
     status are either tested for HIV or actively referred for HIV
-    testing.
+    testing. Therefore, DataPacks will be reviewed for the relationship
+    between KP_PREV to HTS for KP, and if the relationship is
+    substantially different from one to one, it will be important to
+    discuss rationale and context with Chair and PPM.
 
 4.  For clinical cascade indicators (HTS_TST, TX_NEW, etc.), consider
     the relationship amongst these indicators to ensure rates of linkage
-    to treatment are in alignment with COP21 Guidance (i.e., high rates
+    to treatment are in alignment with COP22 Guidance (i.e., high rates
     of linkage across all populations).
 
 5.  Recognize that Key Population disaggregates are a SUBSET of the
@@ -54,9 +59,14 @@ listed.
     process to be correct (e.g., 15+ Men for MSM). This is also an
     important factor to consider on the PSNU x IM tab. You may construct
     additional formulae in the far right of the tab to check this, but
-    it will also be checked by the validation apps.
+    it will also be checked by the validation apps and the KP Validation
+    tab.
 
-6.  Also note that IMs that do not provide actual clinical services
+6.  Therefore we have moved the KP tab earlier in the DataPack, and
+    suggest that you start the KP tab early in the DataPack process, and
+    regularly compare against Cascade, HTS, and PrEP tabs.
+
+7.  Also note that IMs that do not provide actual clinical services
     cannot report TX_NEW or TX_CURR. While those IMs should track
     linkage in their own data systems, there is no relevant MER
     indicator for that data.
@@ -93,17 +103,16 @@ The following data points will be imported into DATIM from this section:
     these three columns will be imported into DATIM.
 
 2.  Where these data may not be available, the absence of this data will
-    not adversely impact target-setting within the Data Pack for Key
-    Populations.
-
-**\
-**
+    not adversely impact target-setting within the DataPack for Key
+    Populations.**\
+    **
 
 ## KP: PrEP_CT
 
-**PrEP_CURR:** Number of individuals, inclusive of those newly enrolled,
-that received oral antiretroviral pre-exposure prophylaxis (PrEP) to
-prevent HIV during the reporting period.
+**PrEP_CT:** Number of individuals, excluding those newly enrolled, that
+return for a follow up visit or re-initiation visit to receive
+pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
+period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("KP-PrEP_CT-H-I-1-1", "latex")
@@ -117,11 +126,11 @@ schema_table("KP-PrEP_CT-H-I-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CT - KeyPop** (FY23) \[PrEP_CURR.KP.T\]
+-   **PrEP_CT - KeyPop** (FY23) \[PrEP_CT.KP.T\]
 
 ### Instructions
 
-1.  For historical context, review column "PrEP_CT - KeyPop (FY22
+1.  For historical context, review column "PrEP_CURR - KeyPop (FY22
     Targets)", which will come pre-populated with FY22 targets for
     PREP_CURR as currently reported in DATIM.
 
@@ -132,12 +141,13 @@ The following data points will be imported into DATIM from this section:
 on the PrEP tab, but should nonetheless represent a subset of the total
 PrEP_CT targets. Be sure to review KP targets against total population
 targets in the KP Validation tab to ensure total population targets do
-not exceed total population targets set on the PrEP tab.
+not exceed total population targets set on the PrEP tab. It may in fact
+be easier to set KP PrEP targets, other PrEP targets (like AGYW), and
+then set the general PrEP target.
 
-**NOTE:** The PREP_CT indicator should capture all individuals enrolled
-on PREP during the reporting period, inclusive of those counted as newly
-on PrEP. During review, be sure that at a minimum, PrEP_CT targets for
-KP equal or exceed the PrEP_NEW targets for KP within the Data Pack.
+NOTE: Historical PrEP_CURR targets and results are provided for context,
+but do not necessarily directly inform the targets for the new indicator
+PrEP_CT. See PrEP_CT on PrEP tab.
 
 ## KP: PrEP_NEW
 
@@ -172,7 +182,9 @@ The following data points will be imported into DATIM from this section:
 the PrEP tab, but should nonetheless represent a subset of the total
 PrEP_NEW targets. Be sure to review KP targets against total population
 targets in the KP Validation tab to ensure total population targets do
-not exceed total population targets set on the PrEP tab.
+not exceed total population targets set on the PrEP tab. It may in fact
+be easier to set KP PrEP targets, other PrEP targets (like AGYW), and
+then set the general PrEP target.
 
 ## KP: KP_PREV
 

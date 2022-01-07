@@ -30,15 +30,19 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review the PrEP_NEW section which will be populated with assumptions
+1.  Think through population specific target of PrEP with in country
+    data, and population specific targets for AGYW, KP, zero-discordant
+    couples and other at risk group, in line with COP22 Guidance.
+
+2.  Review the PrEP_NEW section which will be populated with assumptions
     of FY23 Targets set at other points in the Data Pack for
     "HTS_TST_NEG", "Host Country Est. PLHIV", "AGYW(PREV (D)", and
-    "AGYW_PREV (N)".
+    "AGYW_PREV (N)". Also think through KP PrEP strategy and history.
 
-2.  Review data pulled from DATIM showing "PrEP_NEW (FY21 Results)", and
+3.  Review data pulled from DATIM showing "PrEP_NEW (FY21 Results)", and
     "PrEP_NEW (FY22 Targets)".
 
-3.  Manually enter targets for "Newly on PrEP (FY23)".
+4.  Manually enter targets for "Newly on PrEP (FY23)".
 
 ## PrEP: PrEP_CT
 
@@ -63,16 +67,18 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review "PrEP_CURR (FY21 Results)" and "PrEP_CURR (FY22 Targets)",
-    pulled from DATIM as a baseline in the FY23 target setting process.
-    As a result of PrEP_CT being newly introduced for COP/ROP22, past
-    PrEP_CURR results and targets will be used in the COP22 DataPack to
-    aid as reference for PrEP_CT (FY23) Target setting.
+1.  Think through population specific target of PrEP with in country
+    data, and population specific targets for AGYW, KP, zero-discordant
+    couples and other at risk groups, in line with COP22 Guidance. For
+    each of these populations think through how groups may continue to
+    use PrEP and remain at risk, go off PrEP due to change in risk, or
+    return to PrEP due to a change in risk. Note that PrEP_CT is a
+    revised and different indicator from PrEP_CURR. While PrEP_CURR
+    historical targets and results are provided for context and
+    assistance, they do not necessarily provide direct insight into
+    PrEP_CT targets.
 
-2.  Similar to the process for setting FY23 PrEP_NEW targets, there is
-    no pre-populated formula for FY23 PrEP_CT targets. Manually enter
-    these targets in this section based on calculations and strategic
-    programming decided outside the Data Pack.
+2.  Manually enter targets for "PrEP_CT (FY23)".
 
 \elandscape
 

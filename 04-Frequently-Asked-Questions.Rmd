@@ -6,7 +6,7 @@ A: Due to the structure of the Cascade tab, and other COP22 - FY23 Targets that 
 
 ***Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disaggregates are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?***
 
-A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop.
+A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop. Note however, that only clinical, facility partners may have targets and report many indicators. For these indicators, the KP targets must be assigned to a partner and site qualified to report the results.
 
 ***Q: Can you use FY23 Spectrum estimates to work through the Cascade tab?***
 

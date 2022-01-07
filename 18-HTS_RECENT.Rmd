@@ -49,9 +49,9 @@ The following data points will be imported into DATIM from this section:
 3.  For example, the first Modality in this tab **PMTCT (Facilty)** will
     take the "% of Positives" and multiply it by the target that was set
     in column "Newly Tested, Positive" from the PMTCT tab. Each of the
-    formulas that are prepolulated for each modality links back to the
+    formulas that are prepopulated for each modality links back to the
     tab in which the main "Newly Tested, Positive" target was set. These
-    reference tabs are: PMTCT, TB, VMMC, and HTS.
+    reference tabs are: Cascade, PMTCT, TB, VMMC, and HTS.
 
 ## HTS_RECENT (Total)
 
@@ -73,8 +73,8 @@ No data points will be imported into DATIM from this section.
     aggregating "# Tested for Recent Infection" across all modalities on
     the HTS_RECENT tab. To adjust individual targets by modality, return
     to the previous section. In some circumstances, it may also be
-    necessary to return to the PMTCT, TB, VMMC, or HTS tabs to adjust
-    the number of HTS_TST_POS coming from each modality.
+    necessary to return to the Cascade, PMTCT, TB, VMMC, or HTS tabs to
+    adjust the number of HTS_TST_POS coming from each modality.
 
 2.  Review "Total HTS_TST_POS" column which references "Final
     HTS_TST_POS" targets on the HTS tab. This column is here for

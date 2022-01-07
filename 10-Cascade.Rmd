@@ -38,17 +38,19 @@ the realities of past performance.
 ## Host Country Context
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Host Country Context-F-I-1-4", "latex")
+schema_table("Cascade-Host Country Context-F-I-1-5", "latex")
 
-schema_table("Cascade-Host Country Context-J-M-2-4", "latex")
+schema_table("Cascade-Host Country Context-J-M-2-5", "latex")
 
-schema_table("Cascade-Host Country Context-N-P-3-4", "latex")
+schema_table("Cascade-Host Country Context-N-P-3-5", "latex")
 
-schema_table("Cascade-Host Country Context-Q-S-4-4", "latex")
+schema_table("Cascade-Host Country Context-Q-S-4-5", "latex")
+
+schema_table("Cascade-Host Country Context-T-Y-4-5", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Host Country Context-F-S-1-1", "html")
+schema_table("Cascade-Host Country Context-F-Y-1-1", "html")
 ```
 
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack,
@@ -70,9 +72,13 @@ alternative approved source for the following data:
     \[HIV_PREV.T_1\]**: Estimated HIV Prevalence, projected as of
     September 2022.
 
--   **Host Country Estimated PLHIV who Know HIV Status (FY22)
-    \[DIAGNOSED_SUBNAT.T_1\]**: Estimated PLHIV who know their HIV
-    status, projected as of September 2022.
+-   **Host Country Projected Incidence Rate (FY22) (%)
+    \[Incidence_SUBNAT.Rt.T_1\]**:
+
+-   **Host Country Projected New Infections (FY23)
+    \[NEW_INFECTIONS_SUBNAT.T_1\]:**
+
+-   **Host Country PLHIV Diagnosed (FY22) \[DIAGNOSED_SUBNAT.T_1\]:**
 
 -   **Host Country Observed TX_CURR_SUBNAT (FY21)
     \[TX_CURR_SUBNAT.R\]:** Observed/actual total number of PLHIV
@@ -84,11 +90,11 @@ alternative approved source for the following data:
 
 -   **Host Country Est. ART Patients Tested for VLS (FY22)
     \[VL_TESTING_SUBNAT.T_1\]:** Estimated number of ART Patients who
-    have been tested, PEPFAR projected as of September 2022
+    have been tested, PEPFAR projected as of September 2022.
 
 -   **Host Country Estimated Virally Suppressed ART Patients
     (FY22)\[VL_SUPPRESSION_SUBNAT.T_1\]**: Estimated PLHIV on ART and
-    virally suppressed, projected as of September 2021.
+    virally suppressed, projected as of September 2022.
 
 ### DATIM Import
 
@@ -203,18 +209,48 @@ Treatment and Testing. These columns will be populated with FY21 Results
 and FY22 Targets from DATIM and will serve as further reference as users
 set targets throughout the Cascade tab.
 
-## Cascade: PopVLS_NET_NEW_SUBNAT
+## Cascade: PEPFAR FY21 Cascade (Observed and Planned)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-VLS_NET_NEW_SUBNAT-AO-AT-1-3", "latex")
-
-schema_table("Cascade-VLS_NET_NEW_SUBNAT-AO-AT-2-3", "latex")
-
-schema_table("Cascade-VLS_NET_NEW_SUBNAT-AO-AT-3-3", "latex")
+schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-VLS_NET_NEW_SUBNAT-AO-AT-1-1", "html")
+schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "html")
+```
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "html")
+```
+
+This Section of the Cascade tab has been added to give users an insight
+into key Cascade FY21 Results and FY22. Users can refer to these past
+indicator results and targets to aid in the target setting and review
+process. The following are included as both FY21 Results and FY22
+Targets in these two sections:
+
+-   New Positives (This includes both HTS_TST_POS & PMTCT_HEI_POS)
+
+-   TX_NEW
+
+-   TX_CURR
+
+-   TX_PVLS (D)
+
+-   TX_PVLS (N)
+
+## Cascade: VL_SUPPRESSION_SUBNAT
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "html")
 ```
 
 This section of the Cascade tab builds upon the preceding Host Country
@@ -229,7 +265,7 @@ those lost to follow-up) to be added to host country ART totals.
 
 The following data points will be imported into DATIM from this section:
 
--   **Targeted Host Country VL_SUPPRESSION_SUB NAT (FY23)
+-   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)
     \[**VL_SUPPRESSED.T\]
 -   **Targeted Host Country VLS_NET_NEW_SUBNAT (FY23)**
     \[VLS_NET_NEW_SUBNAT.T\]

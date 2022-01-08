@@ -36,7 +36,7 @@ For each section of this tab, follow the below steps:
 1.  Review the Total Population targets in the "Female, 15+ (FY23)",
     "AGYW, 15+ (FY23)", and "Male, 15+ (FY23)" columns, which sum
     targets across all 15+ age groups from where these are set in
-    previous tabs of the Data Pack.
+    previous tabs of the DataPack.
 
     a.  Note that for the PrEP_CT and PrEP_NEW sections, the summation
         is pulling age group totals from the PrEP tab, TX sections from
@@ -50,7 +50,7 @@ For each section of this tab, follow the below steps:
         sufficient excess to target AGYW demographics.
 
 2.  Review each column of the KP Targets Validation section. Data for
-    these columns come originally from the KP tab of the Data Pack.
+    these columns come originally from the KP tab of the DataPack.
     Return to that tab to investigate and adjust values. Changes made in
     this section of the KP Validation tab WILL NOT affect actual targets
     in the KP tab.

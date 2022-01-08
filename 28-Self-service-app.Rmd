@@ -1,114 +1,188 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
+# Datapack Self-service App
 
-Datapack Self-service App
-=========
-
-The DataPack self-service app provides a one-stop shop for validating and analyzing your DataPack. 
-After logging into the app, you can upload a copy of your DataPack, and receive feedback regarding
-the structure and content of the DataPack. The app will attempt
-to provide feedback regarding any errors which may prevent the import of your DataPack into DATIM.
-In general, all errors must be resolved prior to any approval or import of data into DATIM. 
-Warning messages should be carefully reviewed. While these may not prevent import of your data, 
-ignoring them may lead to data quality problems. The app also provides a number of charts and tables
-to assist with review of your DataPack. Each of these functions will be described in more detail in the 
-remained of this chapter. 
+The DataPack self-service app provides a one-stop shop for validating
+and analyzing your DataPack. After logging into the app, you can upload
+a copy of your DataPack, and receive feedback regarding the structure
+and content of the DataPack. The app will attempt to provide feedback
+regarding any errors which may prevent the import of your DataPack into
+DATIM. In general, all errors must be resolved prior to any approval or
+import of data into DATIM. Warning messages should be carefully
+reviewed. While these may not prevent import of your data, ignoring them
+may lead to data quality problems. The app also provides a number of
+charts and tables to assist with review of your DataPack. Each of these
+functions will be described in more detail in the remained of this
+chapter.
 
 ## Logging in
 
-In order to access the app, you will need to login with your DATIM credentials. If you do not 
-have a DATIM username and password or if your account has been deactivated, please contact
-DATIM support. 
-
+In order to access the app, you will need to login with your DATIM
+credentials. If you do not have a DATIM username and password or if your
+account has been deactivated, please contact DATIM support.
 
 ## Uploading a DataPack
 
-Once you have logged into the app, choose "Browse" from the left side pane. Select the 
-DataPack you wish to validate. Please be sure to use an "XLSX" file! Other formats such 
-as XLSB or ZIP archives of your DataPack are not supported, and cannot be used. 
+Once you have logged into the app, choose "Browse" from the left side
+pane. Select the DataPack you wish to validate. Please be sure to use an
+"XLSX" file! Other formats such as XLSB or ZIP archives of your DataPack
+are not supported, and cannot be used.
 
-Once you file is completely uploaded to the server, the "Validate" button should become active.
+Once you file is completely uploaded to the server, the "Validate"
+button should become active.
 
 ## Validating your DataPack
 
-After pressing the "Validate" button on the left-side pane, the app will perform a number of structural checks on your file. It is critical that the structure of the DataPack
-matches that which was provided to you. Any tabs or columns which have been removed
-will result in a parsing error, and these will need to be fixed prior to import. Other checks include: 
+After pressing the "Validate" button on the left-side pane, the app will
+perform a number of structural checks on your file. It is critical that
+the structure of the DataPack matches that which was provided to you.
+Any tabs or columns which have been removed will result in a parsing
+error, and these will need to be fixed prior to import. Other checks
+include:
 
-* Altered formulas: Generally, formulas should not be altered, but there can be valid programmatic reasons for doing so. These warnings are provided in order to allow 
-those reviewing the DataPack to make a determination as to whether they are valid
-changes or not. 
+-   Altered formulas: Generally, formulas should not be altered, but
+    there can be valid programmatic reasons for doing so. These warnings
+    are provided in order to allow those reviewing the DataPack to make
+    a determination as to whether they are valid changes or not.
 
-* Decimal values: In general, all values (with a few exceptions) should be whole integer
-numbers. Decimals cannot be imported into DATIM, and thus must be rounded prior to import. This can lead to variations in the numbers which are visible in the DataPack and those which are imported into DATIM. 
+-   Decimal values: In general, all values (with a few exceptions)
+    should be whole integer numbers. Decimals cannot be imported into
+    DATIM, and thus must be rounded prior to import. This can lead to
+    variations in the numbers which are visible in the DataPack and
+    those which are imported into DATIM.
 
-* Negative numbers: In general, all numbers in the DataPack should be whole, positive
-integers. 
+-   Negative numbers: In general, all numbers in the DataPack should be
+    whole, positive integers.
 
-* Non-numeric values: Any values which are not numeric, e.g. characters, is not allowed. 
+-   Non-numeric values: Any values which are not numeric, e.g.
+    characters, is not allowed.
 
-* Imbalanced PSNUxIM distribution: When distributing data from the main DataPack tabs, to the PSNUxIM tab, small varations due to rounding may result. As an example, if a target 
-of 100 has been set in the main tab, and is then distributed evenly between three partners, each with a target value of 33, a value of 1 remains undistributed. To avoid this situation you may need to use allocation targets of 34\%,34\%,32\% instead, which would ensure that the values allocated in the PSNUxIM tab match those in the main programmatic area tabs. 
+-   Imbalanced PSNUxIM distribution: When distributing data from the
+    main DataPack tabs, to the PSNUxIM tab, small varations due to
+    rounding may result. As an example, if a target of 100 has been set
+    in the main tab, and is then distributed evenly between three
+    partners, each with a target value of 33, a value of 1 remains
+    undistributed. To avoid this situation you may need to use
+    allocation targets of 34%,34%,32% instead, which would ensure that
+    the values allocated in the PSNUxIM tab match those in the main
+    programmatic area tabs.
 
-* Threaded comments:  This type of comment,
-        as opposed to the previous type of Notes used in Microsoft Excel, causes
-        corruption issues when the app attempts to update your PSNUxIM tab.
-        Prior to submitting for an updated PSNUxIM tab, you MUST remove all
-        threaded comments. For more information about the differences between
-        threaded comments and notes visit this [link](https://support.office.com/en-us/article/the-difference-between-threaded-comments-and-notes-75a51eec-4092-42ab-abf8-7669077b7be3
-). 
+-   Threaded comments: This type of comment, as opposed to the previous
+    type of Notes used in Microsoft Excel, causes corruption issues when
+    the app attempts to update your PSNUxIM tab. Prior to submitting for
+    an updated PSNUxIM tab, you MUST remove all threaded comments. For
+    more information about the differences between threaded comments and
+    notes visit this
+    [link](https://support.office.com/en-us/article/the-difference-between-threaded-comments-and-notes-75a51eec-4092-42ab-abf8-7669077b7be3).
 
-* Duplicated rows: There should be no duplicated rows in any of the main tabs or the PSNUxIM tab. 
+-   Duplicated rows: There should be no duplicated rows in any of the
+    main tabs or the PSNUxIM tab.
 
-* Invalid organisation units: All PSNUs referened in the DataPack must exist in DATIM. 
+-   Invalid organisation units: All PSNUs referened in the DataPack must
+    exist in DATIM.
 
-* Missing metadata: Certain columns such as  the PSNU, Indicator code, Age, Sex and KeyPop columns must always be present. If any of these values is for some reason missing, please 
-find the location of the error and fix the issue. 
+-   Missing metadata: Certain columns such as the PSNU, Indicator code,
+    Age, Sex and KeyPop columns must always be present. If any of these
+    values is for some reason missing, please find the location of the
+    error and fix the issue.
 
-## Validation rule checks 
+## Validation rule checks
 
-Validation rules provide additional data quality controls between certain indicators. As a simple example, the number of persons testing positive for HIV should be less than or equal to the number of individuals tested. Under most circumstances, validation rules should not be violated, but there can be certain programmatic reasons why these violations should be waived. 
+Validation rules provide additional data quality controls between
+certain indicators. As a simple example, the number of persons testing
+positive for HIV should be less than or equal to the number of
+individuals tested. Under most circumstances, validation rules should
+not be violated, but there can be certain programmatic reasons why these
+violations should be waived.
 
-A number of rules have been created, and many of them are enforced  in the DataPack itself. However, not all rules have been implemented in the DataPack, and due to formula changes and subtleties in how targets are allocated at the PSNUxIM level, additional review of the data in the PSNUxIM tab and main tabs may be required. During the validation of the datapack, all data contained in the PSNUxIM tab will be checked against all of the validation rules defined in DATIM. If there are any violations of the validation rules, the app will provide detailed feedback in regards to which PSNUxIM combination is affected. In order to resolve these, you will need to carefully review how the PNSUxIM allocations have been made to respective mechanisms in the PSNUxIM tab. 
+A number of rules have been created, and many of them are enforced in
+the DataPack itself. However, not all rules have been implemented in the
+DataPack, and due to formula changes and subtleties in how targets are
+allocated at the PSNUxIM level, additional review of the data in the
+PSNUxIM tab and main tabs may be required. During the validation of the
+datapack, all data contained in the PSNUxIM tab will be checked against
+all of the validation rules defined in DATIM. If there are any
+violations of the validation rules, the app will provide detailed
+feedback in regards to which PSNUxIM combination is affected. In order
+to resolve these, you will need to carefully review how the PNSUxIM
+allocations have been made to respective mechanisms in the PSNUxIM tab.
 
-While validation rule violations will not prevent the import of your data into DATIM, they may lead to data quality problems in both DATIM and downstream systems such as Panorama and PAW. If there are any validation rule issues, your PPM and DUIT can be requested to waive these at their discreation. 
+While validation rule violations will not prevent the import of your
+data into DATIM, they may lead to data quality problems in both DATIM
+and downstream systems such as Panorama and PAW. If there are any
+validation rule issues, your PPM and DUIT can be requested to waive
+these at their discreation.
 
 ## Analytics checks
 
-Analytics checks provide an additional type of data quality control. As an example, one analytics check looks for VMMC indeterminate rates greater than 5 percent. Ideally, the indeterminate rate should be a low as possible, but if for some reason targets have been set where the rate is greater than 5 \%, the app will inform you about the specific PSNUxIM where this occurs. Again, these flags will not prevent the import of your data into DATIM, but are provided to help reviewers to make a determination regarding the approval of the DataPack for import.
+Analytics checks provide an additional type of data quality control. As
+an example, one analytics check looks for VMMC indeterminate rates
+greater than 5 percent. Ideally, the indeterminate rate should be a low
+as possible, but if for some reason targets have been set where the rate
+is greater than 5 %, the app will inform you about the specific PSNUxIM
+where this occurs. Again, these flags will not prevent the import of
+your data into DATIM, but are provided to help reviewers to make a
+determination regarding the approval of the DataPack for import.
 
-The app will provide a list of all analytics checks which have been flagged in the "Analytics checks" tab on the right side of the app pane. 
-
-
+The app will provide a list of all analytics checks which have been
+flagged in the "Analytics checks" tab on the right side of the app pane.
 
 ## Indicator summary
 
-This table provides a high-level SNU level summary of indicators from each of the main tabs of the DataPack. Note, that this data is NOT drawn from the PSNUxIM tab. This can be a useful first check of your DataPack, prior to the allocation of the data in the PSNUxIM tab. 
-
+This table provides a high-level SNU level summary of indicators from
+each of the main tabs of the DataPack. Note, that this data is NOT drawn
+from the PSNUxIM tab. This can be a useful first check of your DataPack,
+prior to the allocation of the data in the PSNUxIM tab.
 
 ## SNUlevel summary
 
-This table listing provides all of the data from each of the main DataPack tabs summarized by the SNU level. 
+This table listing provides all of the data from each of the main
+DataPack tabs summarized by the SNU level.
 
 ## Validation rules
 
-This tab provides a listing of all validation rule violations, if any. The table provides the following fields
+This tab provides a listing of all validation rule violations, if any.
+The table provides the following fields
 
-* PSNU: The specific PSNU where the violation occurs
- 
-* Mechanism: The specific mechanism where the violation occurs. 
+-   PSNU: The specific PSNU where the violation occurs
 
-* Formula: The rule is specified with a left side, a right side, and an operator. The left and right side correspond to a data element (or data elements) located in the PSNUxIM tab. Using a combination of filters (PSNU, Mechanism and Data elemement), you should be able to locate the specific rows in the PSNUxIM tab which are leading to the validation rule violation. 
+-   Mechanism: The specific mechanism where the violation occurs.
 
-* Diff (%) : Provides the percentage difference between the left and right side. 
+-   Formula: The rule is specified with a left side, a right side, and
+    an operator. The left and right side correspond to a data element
+    (or data elements) located in the PSNUxIM tab. Using a combination
+    of filters (PSNU, Mechanism and Data elemement), you should be able
+    to locate the specific rows in the PSNUxIM tab which are leading to
+    the validation rule violation.
 
-* Diff (Absolute) : Provides the numeric difference between the left and right side.
+-   Diff (%) : Provides the percentage difference between the left and
+    right side.
 
-Validation rule| PSNU | Mechanism | Formula | Diff (%)| Diff (Absolute)|
----------------|------|-----------|---------|---------|----------------|
-PMTCT_STAT (N, DSD, Age/Sex/KnownNewResult) TARGET <= PMTCT_STAT (D, DSD, Age/Sex) TARGET| Namuno | 160448| 5317 <= 5316 | 0.02 | 1 |
+-   Diff (Absolute) : Provides the numeric difference between the left
+    and right side.
 
-
++----------+----------+----------+----------+----------+----------+
+| Va       | PSNU     | M        | Formula  | Diff (%) | Diff     |
+| lidation |          | echanism |          |          | (A       |
+| rule     |          |          |          |          | bsolute) |
++==========+==========+==========+==========+==========+==========+
+| PM       | Namuno   | 160448   | 5317 \<= | 0.02     | 1        |
+| TCT_STAT |          |          | 5316     |          |          |
+| (N, DSD, |          |          |          |          |          |
+| Age/Sex  |          |          |          |          |          |
+| /KnownNe |          |          |          |          |          |
+| wResult) |          |          |          |          |          |
+| TARGET   |          |          |          |          |          |
+| \<=      |          |          |          |          |          |
+| PM       |          |          |          |          |          |
+| TCT_STAT |          |          |          |          |          |
+| (D, DSD, |          |          |          |          |          |
+| Age/Sex) |          |          |          |          |          |
+| TARGET   |          |          |          |          |          |
++----------+----------+----------+----------+----------+----------+
 
 \newpage
-
-

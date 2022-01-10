@@ -282,57 +282,67 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 ***DataPack Review***
 
-+---------+---------+---------+---------+---------+---------+
-|         | Single  | Single  | Single  | OUs at  | R       |
-|         | OU      | OU      | OU      | Epi     | egional |
-|         | Track:  | Track:  | Track:  | Control | /       |
-|         | Group 1 | Group 2 | Group 3 |         | Country |
-|         |         |         |         |         | Pair    |
-|         |         |         |         |         | Track   |
-+=========+:=======:+:=======:+:=======:+=========+:=======:+
-| 1st     | Feb 28  | Mar 7   | Mar 14  | Mar 7   | Feb 28  |
-| Draft   |         |         |         | or      |         |
-| Tool S  |         |         |         |         |         |
-| ub      |         |         |         | Mar 14  |         |
-| mission |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| COP     | Mar     | Mar     | Mar     | Mar     | Mar     |
-| Meeting | 7-11    | 14-18   | 22-25   | 14-18   | 22-25   |
-|         |         |         |         | or Mar  |         |
-|         |         |         |         | 22-25   |         |
-+---------+---------+---------+---------+---------+---------+
-| Mi      |         |         |         |         |         |
-| d-point |         |         |         |         |         |
-| Tool    |         |         |         |         |         |
-| check   |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| Tools   | Apr 4   | Apr 11  | Apr 18  | Apr 11  | Apr 18  |
-| Due for |         |         |         | or      |         |
-| Final   |         |         |         |         |         |
-| Review  |         |         |         | Apr 18  |         |
-+---------+---------+---------+---------+---------+---------+
-| A       |         |         |         |         | Rolling |
-| dd      |         |         |         |         | Each    |
-| itional |         |         |         |         | Monday  |
-| To      |         |         |         |         |         |
-| uc      |         |         |         |         |         |
-| hpoints |         |         |         |         |         |
-| /       |         |         |         |         |         |
-| Reviews |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| Tools   | Apr 11  | Apr 18  | Apr 25  | Apr 18  | Apr 25  |
-| Su      |         |         |         | or      |         |
-| bmitted |         |         |         |         |         |
-| for     |         |         |         | Apr 23  |         |
-| Upload  |         |         |         |         |         |
-| to DATI |         |         |         |         |         |
-| M/FI-NG |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| COP21 S | Apr 19  | Apr 22  | Apr 29  | Apr 22  | Apr 29  |
-| ub      |         |         |         | or      |         |
-| mission |         |         |         |         |         |
-| Due     |         |         |         | Apr 29  |         |
-+---------+---------+---------+---------+---------+---------+
++--------+--------+--------+--------+--------+--------+
+|        | Single | Single | Single | OUs at | R      |
+|        | OU     | OU     | OU     | Epi    | e      |
+|        | Track: | Track: | Track: | C      | gional |
+|        | Group  | Group  | Group  | ontrol | /      |
+|        | 1      | 2      | 3      |        | C      |
+|        |        |        |        |        | ountry |
+|        |        |        |        |        | Pair   |
+|        |        |        |        |        | Track  |
++========+:======:+:======:+:======:+========+:======:+
+| 1st    | Feb 28 | Mar 7  | Mar 14 | Mar 7  | Feb 28 |
+| Draft  |        |        |        | or     |        |
+| Tool S |        |        |        |        |        |
+| ub     |        |        |        | Mar 14 |        |
+| m      |        |        |        |        |        |
+| ission |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
+| COP    | Mar    | Mar    | Mar    | Mar    | Mar    |
+| M      | 7-11   | 14-18  | 22-25  | 14-18  | 22-25  |
+| eeting |        |        |        | or Mar |        |
+|        |        |        |        | 22-25  |        |
++--------+--------+--------+--------+--------+--------+
+| Mi     |        |        |        |        |        |
+| d      |        |        |        |        |        |
+| -point |        |        |        |        |        |
+| Tool   |        |        |        |        |        |
+| check  |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
+| Tools  | Apr 4  | Apr 11 | Apr 18 | Apr 11 | Apr 18 |
+| Due    |        |        |        | or     |        |
+| for    |        |        |        |        |        |
+| Final  |        |        |        | Apr 18 |        |
+| Review |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
+| A dd   |        |        |        |        | R      |
+| i      |        |        |        |        | olling |
+| tional |        |        |        |        | Each   |
+| To uc  |        |        |        |        | Monday |
+| h      |        |        |        |        |        |
+| points |        |        |        |        |        |
+| /      |        |        |        |        |        |
+| R      |        |        |        |        |        |
+| eviews |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
+| Tools  | Apr 11 | Apr 18 | Apr 25 | Apr 18 | Apr 25 |
+| Su     |        |        |        | or     |        |
+| b      |        |        |        |        |        |
+| mitted |        |        |        | Apr 23 |        |
+| for    |        |        |        |        |        |
+| Upload |        |        |        |        |        |
+| to     |        |        |        |        |        |
+| DATI   |        |        |        |        |        |
+| M      |        |        |        |        |        |
+| /FI-NG |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
+| COP21  | Apr 19 | Apr 22 | Apr 29 | Apr 22 | Apr 29 |
+| S ub   |        |        |        | or     |        |
+| m      |        |        |        |        |        |
+| ission |        |        |        | Apr 29 |        |
+| Due    |        |        |        |        |        |
++--------+--------+--------+--------+--------+--------+
 
 **Submission Process**
 
@@ -440,12 +450,10 @@ thread/ticket, the DataPack Support Team will move forward with
 uploading your submitted DataPack to DATIM, then note completion of this
 here on this ticket. Once this is done, it is recommended that you
 review your data in DATIM to ensure alignment between DATIM and your
-DataPack. Please note in addition to these regular formal
-submissions, we encourage regular sharing and dialogue with Chair, PPM,
-and
-DUIT Liaison around target setting process generally, and DataPack
-specifically.
-Feel free to share draft versions as often as is helpful.
+DataPack. Please note in addition to these regular formal submissions,
+we encourage regular sharing and dialogue with Chair, PPM, and DUIT
+Liaison around target setting process generally, and DataPack
+specifically. Feel free to share draft versions as often as is helpful.
 
 ## DataPack SharePoint Location
 
@@ -521,7 +529,7 @@ after you submit your preliminary DataPack.
 ## How Does Everything Connect?
 
 ```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
-knitr::include_graphics("./images/image3.png")
+knitr::include_graphics("./images/UG_Sec 1-6 How Does Everything Connect")
 ```
 
 ```{=tex}

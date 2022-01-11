@@ -18,8 +18,13 @@ suppressPackageStartupMessages({
 })
 
 letter2number <- function(x) {
-  x <- stringr::str_to_upper(x)
-  n <- utf8ToInt(x) - utf8ToInt("A") + 1L
+  col_ref <- stringr::str_to_upper(x)
+  digits <- stringr::str_length(col_ref)
+  ls <- 1:digits %>%
+    lapply(function(y) {
+      (utf8ToInt(stringr::str_sub(col_ref, y, y)) - utf8ToInt("A") + 1L) * (26**(digits - y))
+    })
+  n <- Reduce(`+`, ls)
   return(n)
 }
 
@@ -52,26 +57,29 @@ type <- "Data Pack Template"
 cop_year <- datapackr::getCurrentCOPYear()
 
 spectrum_schema <- tibble::tribble(
-  ~sheet_name, ~col_ref, ~col, ~col_name, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
-  "Spectrum", "D", 4, "psnu", "string", "N", "Y", "N", "N",
-  "Spectrum", "E", 5, "psnu_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", "F", 6, "area_id", "string", "N", "Y", "N", "N",
-  "Spectrum", "G", 7, "indicator_code", "string", "N", "Y", "N", "N",
-  "Spectrum", "H", 8, "dataelement_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", "I", 9, "age", "string", "N", "Y", "N", "N",
-  "Spectrum", "J", 10, "age_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", "K", 11, "sex", "string", "N", "Y", "N", "N",
-  "Spectrum", "L", 12, "sex_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", "M", 13, "calendar_quarter", "string", "N", "Y", "N", "N",
-  "Spectrum", "N", 14, "value", "integer", "N", "Y", "N", "N",
-  "Spectrum", "O", 15, "age_sex_rse", "percentage", "N", "Y", "N", "N",
-  "Spectrum", "P", 16, "district_rse", "percentage", "N", "Y", "N", "N",
-  "Spectrum", "Q", 17, "ID", "string", "N", "N", "Y", "N",
-)
+  ~sheet_name, ~col, ~col_name, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
+  "Spectrum", 4, "psnu", "string", "N", "Y", "N", "N",
+  "Spectrum", 5, "psnu_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", 6, "area_id", "string", "N", "Y", "N", "N",
+  "Spectrum", 7, "indicator_code", "string", "N", "Y", "N", "N",
+  "Spectrum", 8, "dataelement_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", 9, "age", "string", "N", "Y", "N", "N",
+  "Spectrum", 10, "age_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", 11, "sex", "string", "N", "Y", "N", "N",
+  "Spectrum", 12, "sex_uid", "string", "N", "Y", "N", "N",
+  "Spectrum", 13, "calendar_quarter", "string", "N", "Y", "N", "N",
+  "Spectrum", 14, "value", "integer", "N", "Y", "N", "N",
+  "Spectrum", 15, "age_sex_rse", "percentage", "N", "Y", "N", "N",
+  "Spectrum", 16, "district_rse", "percentage", "N", "Y", "N", "N",
+  "Spectrum", 17, "ID", "string", "N", "N", "Y", "N",
+) %>%
+  dplyr::mutate(
+    col_ref = openxlsx::int2col(col),
+    col_num = col
+  )
 
 schema <- datapackr::cop22_data_pack_schema %>%
-  dplyr::filter(!sheet_name %in% c("Home", "Summary",
-                                   "Spectrum", "Prioritization"),
+  dplyr::filter(!sheet_name %in% c("Home", "Spectrum"),
                 col_type != "row_header") %>%
   dplyr::mutate(
     col_ref = openxlsx::int2col(col),
@@ -112,9 +120,11 @@ schema_table <- function(table_reference, knit_type){
   
   if (sheet_name == "Spectrum") {
     my_schema <- dplyr::select(schema, -UID)
+  } else {
+    my_schema <- schema
   }
   
-  t <- schema %>%
+  t <- my_schema %>%
     dplyr::filter(`Sheet Name` == sheet_name,
                   `Column Number` %in% c(col_start:col_end)) %>%
     dplyr::select(-`Sheet Name`, -`Column Number`) %>%

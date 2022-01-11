@@ -118,81 +118,51 @@ schema_table <- function(table_reference, knit_type){
   part <- inputs[[1]][5]
   total <- inputs[[1]][6]
   
-  if (sheet_name == "Spectrum") {
-    my_schema <- dplyr::select(schema, -UID)
-  } else {
-    my_schema <- schema
-  }
-  
-  t <- my_schema %>%
+  t <- schema %>%
+    {if(sheet_name == "Spectrum") dplyr::select(schema, -UID) else .} %>%
     dplyr::filter(`Sheet Name` == sheet_name,
                   `Column Number` %in% c(col_start:col_end)) %>%
     dplyr::select(-`Sheet Name`, -`Column Number`) %>%
-    as.data.frame() %>%
-    `row.names<-`(.[, 1]) %>%
-    dplyr::select(-1) %>%
-    t()
+    tidyr::pivot_longer(cols = !Column) %>%
+    tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
   
   if (knit_type == "latex") {
-    if (sheet_name == "Spectrum") {
-      t %<>%
-        knitr::kable(
-          format = "latex",
-          escape = TRUE,
-          booktabs = TRUE
-        )  %>%
-        kableExtra::kable_styling(font_size = 12,
-                                  latex_options="scale_down") %>%
-        kableExtra::column_spec(2:(col_end-col_start+2),
-                                width=paste0(toString(7.5/(col_end-col_start+1)),
-                                             "in")) %>%
-        kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
-    } else {
-      t %<>%
-        knitr::kable(
-          format = "latex",
-          escape = TRUE,
-          booktabs = TRUE
-        ) %>%
-        kableExtra::kable_styling(font_size = 12,
-                                  latex_options="scale_down") %>%
-        kableExtra::column_spec(2:(col_end-col_start+2),
-                                width=paste0(toString(7.5/(col_end-col_start+1)),
-                                             "in")) %>%
-        kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
-    }
+    t %>%
+      flextable::flextable() %>%
+      flextable::align(part = "all", align = "center") %>%
+      flextable::align(j = 1, part = "body", align = "right") %>%
+      flextable::void(j = 1, part = "header") %>%
+      flextable::bold(part = "header") %>%
+      flextable::bg(part = "header", bg = "#E6DFA7") %>%
+      flextable::bg(part = "body",
+                    bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
+      flextable::hline_top(
+        part = "header",
+        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+      flextable::hline_bottom(
+        part = "header",
+        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+      flextable::border(
+        border = officer::fp_border(color = "#E5E7E9", width = 1))
   } else {
-    if (sheet_name == "Spectrum") {
-      t %<>%
-        knitr::kable(
-          format = "html",
-          escape = FALSE,
-          booktabs = TRUE
-        ) %>%
-        kableExtra::kable_styling(font_size = 12) %>%
-        kableExtra::column_spec(2:(col_end-col_start+2),
-                                width=paste0(toString(7.5/(col_end-col_start+1)),
-                                             "in")) %>%
-        kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
-        kableExtra::row_spec(1:7, extra_css = "border:1px solid lightgrey;") %>%
-        kableExtra::scroll_box(width = "100%")
-    } else {
-      t %<>%
-        knitr::kable(
-          format = "html",
-          escape = FALSE,
-          booktabs = TRUE
-        ) %>%
-        kableExtra::kable_styling(font_size = 12) %>%
-        kableExtra::column_spec(2:(col_end-col_start+2),
-                                width=paste0(toString(7.5/(col_end-col_start+1)),
-                                             "in")) %>%
-        kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
-        kableExtra::row_spec(1:8, extra_css = "border:1px solid lightgrey;") %>%
-        kableExtra::scroll_box(width = "100%")
-    }
+    test <- t %>%
+      tibble::as_tibble() %>%
+      tibble::column_to_rownames(var = "name") %>%
+      knitr::kable(
+        format = "html",
+        escape = FALSE,
+        booktabs = TRUE
+      ) %>%
+      kableExtra::kable_styling(font_size = 12) %>%
+      kableExtra::column_spec(1:(col_end-col_start+1),
+                              width=paste0(toString(7.5/(col_end-col_start+1)),
+                                           "in")) %>%
+      kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
+      kableExtra::row_spec(1:{ifelse(sheet_name == "Spectrum", 7, 8)},
+                           extra_css = "border:1px solid lightgrey;") %>%
+      kableExtra::scroll_box(width = "100%")
   }
-  
+
   return(t)
 }
 
@@ -337,7 +307,7 @@ Summary (SDS) tables, where appropriate (Target related data).
 | eviews |        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
 | Tools  | Apr 11 | Apr 18 | Apr 25 | Apr 18 | Apr 25 |
-| Su     |        |        |        | or     |        |
+| Su     |        |        |        | or     |        |
 | b      |        |        |        |        |        |
 | mitted |        |        |        | Apr 23 |        |
 | for    |        |        |        |        |        |
@@ -539,13 +509,13 @@ after you submit your preliminary DataPack.
 ## How Does Everything Connect?
 
 ```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
-knitr::include_graphics("./images/UG_Sec 1-6 How Does Everything Connect")
+knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 ```
 
 ```{=tex}
 \begin{center}
 
-\includegraphics[width=9in]{./images/image3.png}
+\includegraphics[width=9in]{images/UG_Sec 1-6 How Does Everything Connect.png}
 
 \end{center}
 ```

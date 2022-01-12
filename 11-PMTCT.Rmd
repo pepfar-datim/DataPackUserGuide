@@ -136,7 +136,7 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X -1-1", "html")
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "html")
 ```
 
 ### DATIM Import
@@ -254,7 +254,7 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK -1-1", "html")
+schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "html")
 ```
 
 ### DATIM Import

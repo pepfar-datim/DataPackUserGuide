@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 PMTCT | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary</title>
-  <meta name="description" content="11 PMTCT | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
+  <title>15 KP | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary</title>
+  <meta name="description" content="15 KP | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 PMTCT | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
+  <meta property="og:title" content="15 KP | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide/" />
   <meta property="og:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide//images/US-PEPFAR-Logo.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="pepfar-datim/DataPackUserGuide" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 PMTCT | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
+  <meta name="twitter:title" content="15 KP | PEPFAR COP22 Data Pack User Guide &amp; Data Dictionary" />
   
   
   <meta name="twitter:image" content="https://rstudio-connect.testing.ap.datim.org/data-pack-user-guide//images/US-PEPFAR-Logo.png" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="10-Cascade.html"/>
-<link rel="next" href="12-EID.html"/>
+<link rel="prev" href="14-VMMC.html"/>
+<link rel="next" href="16-HTS.html"/>
 <script src="book_assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="book_assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -568,10 +568,65 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pmtct" class="section level1" number="11">
-<h1><span class="header-section-number">11</span> PMTCT</h1>
-<div id="host-country-context-1" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Host Country Context</h2>
+<div id="kp" class="section level1" number="15">
+<h1><span class="header-section-number">15</span> KP</h1>
+<p><strong>NOTE: The HTS_TST, TX_NEW, TX_CURR, PrEP_CT, and PrEP_NEW indicators
+in the KP tab are related to Key Populations only and are not linked to
+other tabs that feature those indicators.</strong></p>
+<p>This tab is provided to facilitate and inform (1) data-driven program
+intent or relationships amongst indicators, where relevant, for KP
+programming and (2) easy review of all KP-related targets by virtue of
+having all KP-related targets in one tab. Importantly, pre-built
+algorithms and pre-set assumptions are NOT included in this tab. As
+such, entry of data into any columns labelled ‘Assumptions’ or
+‘Projected’ MAY NOT automatically produce targets for the indicators
+listed.</p>
+<p><u>Considerations as you complete and use this tab:</u></p>
+<ol style="list-style-type: decimal">
+<li><p>As per the COP22 Guidance, baseline data to support target
+development can come from bio-behavioral surveys (BBS) and size
+estimates, especially to understand current PLHIV burden and program
+results. Use the most recent and reliable estimates available where
+possible. For example, population size estimates and survey data on
+knowledge of status can inform PP_PREV and subsequent clinical
+cascade targets. The COP22 Guidance Section 6.6.2 has substantial
+guidance on expectations of an effective KP program, and should be
+reviewed before setting KP targets.</p></li>
+<li><p>Where possible and relevant, use FY22 targets and, as available,
+results to inform FY23 targets (the ‘Assumption’ column for each
+indicator in the tab). But remember to consider expectations for
+scale-up based on current program needs and gaps. That is, FY21
+results may not be the most relevant and appropriate base from which
+to develop FY23 targets.</p></li>
+<li><p>As per COP22 Guidance, OUs should strive to ensure all KPs reached
+with KP programming (KP_PREV), who do not already know their HIV
+status are either tested for HIV or actively referred for HIV
+testing. Therefore, DataPacks will be reviewed for the relationship
+between KP_PREV to HTS for KP, and if the relationship is
+substantially different from one to one, it will be important to
+discuss rationale and context with Chair and PPM.</p></li>
+<li><p>For clinical cascade indicators (HTS_TST, TX_NEW, etc.), consider
+the relationship amongst these indicators to ensure rates of linkage
+to treatment are in alignment with COP22 Guidance (i.e., high rates
+of linkage across all populations).</p></li>
+<li><p>Recognize that Key Population disaggregates are a SUBSET of the
+regular Age/Sex disaggregates. Each PSNU must have a total of
+relevant Age/Sex disaggregates of the same indicator for targeting
+process to be correct (e.g., 15+ Men for MSM). This is also an
+important factor to consider on the PSNU x IM tab. You may construct
+additional formulae in the far right of the tab to check this, but
+it will also be checked by the validation apps and the KP Validation
+tab.</p></li>
+<li><p>Therefore we have moved the KP tab earlier in the DataPack, and
+suggest that you start the KP tab early in the DataPack process, and
+regularly compare against Cascade, HTS, and PrEP tabs.</p></li>
+<li><p>Also note that IMs that do not provide actual clinical services
+cannot report TX_NEW or TX_CURR. While those IMs should track
+linkage in their own data systems, there is no relevant MER
+indicator for that data.</p></li>
+</ol>
+<div id="kp-kp_estimates" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> KP: KP_ESTIMATES</h2>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -579,10 +634,170 @@
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+E
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 F
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 G
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Host Country Est. Total Size (FY22)
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Host Country Est. KPLHIV (FY22)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Host Country Est. HIV Prevalence (FY22) (%)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+KP_ESTIMATES.Total.T
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+KP_ESTIMATES.Pos.T
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+KP_ESTIMATES.Prev.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+target
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+percentage
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-32" class="section level3" number="15.1.1">
+<h3><span class="header-section-number">15.1.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><p><strong>Host Country Est. Total Size (FY22)</strong> <span class="math display">\[KP_ESTIMATES.Total.T\]</span></p></li>
+<li><p><strong>Host Country Est. KPLHIV (FY22)</strong> <span class="math display">\[KP_ESTIMATES.Pos.T\]</span></p></li>
+<li><p><strong>Host Country Est. HIV Prevalence (FY22) (%)</strong>
+<span class="math display">\[KP_ESTIMATES.Prev.T\]</span></p></li>
+</ul>
+</div>
+<div id="instructions-32" class="section level3" number="15.1.2">
+<h3><span class="header-section-number">15.1.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Enter data directly into columns “Host Country Est. Total Size
+(FY22)”, “Host Country Est. KPLHIV (FY22)”, and “Host Country Est.
+HIV Prevalence (FY22) (%)”. As mentioned above, these data should
+come from reliable, approved sources and then be pasted directly
+into the respective columns in this tab and used as reference when
+setting targets throughout the rest of the KP tab. All data from
+these three columns will be imported into DATIM.</p></li>
+<li><p>Where these data may not be available, the absence of this data will
+not adversely impact target-setting within the DataPack for Key
+Populations.<strong><br />
+</strong></p></li>
+</ol>
+</div>
+</div>
+<div id="kp-prep_ct" class="section level2" number="15.2">
+<h2><span class="header-section-number">15.2</span> KP: PrEP_CT</h2>
+<p><strong>PrEP_CT:</strong> Number of individuals, excluding those newly enrolled, that
+return for a follow up visit or re-initiation visit to receive
+pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
+period.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 H
@@ -590,17 +805,402 @@ H
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 I
 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+PrEP_CURR - KeyPop (FY22 Targets)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+PrEP_CT - KeyPop (FY23)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+PrEP_CURR.KP.T_1
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+PrEP_CT.KP.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-33" class="section level3" number="15.2.1">
+<h3><span class="header-section-number">15.2.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><strong>PrEP_CT - KeyPop</strong> (FY23) <span class="math display">\[PrEP_CT.KP.T\]</span></li>
+</ul>
+</div>
+<div id="instructions-33" class="section level3" number="15.2.2">
+<h3><span class="header-section-number">15.2.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>For historical context, review column “PrEP_CURR - KeyPop (FY22
+Targets)”, which will come pre-populated with FY22 targets for
+PREP_CURR as currently reported in DATIM.</p></li>
+<li><p>Manually enter FY23 PrEP_CT targets in the column titled, “PrEP_CT -
+KeyPop (FY23)”.</p></li>
+</ol>
+<p><strong>NOTE:</strong> The PrEP_CT targets here on the KP tab are not linked to those
+on the PrEP tab, but should nonetheless represent a subset of the total
+PrEP_CT targets. Be sure to review KP targets against total population
+targets in the KP Validation tab to ensure total population targets do
+not exceed total population targets set on the PrEP tab. It may in fact
+be easier to set KP PrEP targets, other PrEP targets (like AGYW), and
+then set the general PrEP target.</p>
+<p>NOTE: Historical PrEP_CURR targets and results are provided for context,
+but do not necessarily directly inform the targets for the new indicator
+PrEP_CT. See PrEP_CT on PrEP tab.</p>
+</div>
+</div>
+<div id="kp-prep_new" class="section level2" number="15.3">
+<h2><span class="header-section-number">15.3</span> KP: PrEP_NEW</h2>
+<p><strong>PrEP_NEW:</strong> Number of individuals who have been newly enrolled on
+antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
+in the reporting period.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 J
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 K
 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+PrEP_NEW - KeyPop (FY22 Targets)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+PrEP_NEW - KeyPop (FY23)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+PrEP_NEW.KP.T_1
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+PrEP_NEW.KP.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-34" class="section level3" number="15.3.1">
+<h3><span class="header-section-number">15.3.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><strong>PrEP_NEW - KeyPop (FY23)</strong> <span class="math display">\[PrEP_NEW.KP.T\]</span></li>
+</ul>
+</div>
+<div id="instructions-34" class="section level3" number="15.3.2">
+<h3><span class="header-section-number">15.3.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>For historical context, review column “PrEP_NEW - KeyPop (FY22
+Targets)”, which will come pre-populated with FY22 targets for
+PREP_NEW as currently reported in DATIM.</p></li>
+<li><p>Manually enter FY23 PrEP_NEW targets in the column titled,
+“PrEP_NEW - KeyPop (FY23)”.</p></li>
+</ol>
+<p><strong>NOTE:</strong> PrEP_NEW targets here on the KP tab are not linked to those on
+the PrEP tab, but should nonetheless represent a subset of the total
+PrEP_NEW targets. Be sure to review KP targets against total population
+targets in the KP Validation tab to ensure total population targets do
+not exceed total population targets set on the PrEP tab. It may in fact
+be easier to set KP PrEP targets, other PrEP targets (like AGYW), and
+then set the general PrEP target.</p>
+</div>
+</div>
+<div id="kp-kp_prev" class="section level2" number="15.4">
+<h2><span class="header-section-number">15.4</span> KP: KP_PREV</h2>
+<p><strong>KP_PREV:</strong> Number of key populations reached with individual and/or
+small group-level HIV prevention interventions designed for the target
+population.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 L
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 M
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+KP_PREV (FY22 Targets)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+KP_PREV (FY23)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+KP_PREV.T_1
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+KP_PREV.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-35" class="section level3" number="15.4.1">
+<h3><span class="header-section-number">15.4.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><strong>KP_PREV (FY23)</strong> <span class="math display">\[KP_PREV.T\]</span></li>
+</ul>
+</div>
+<div id="instructions-35" class="section level3" number="15.4.2">
+<h3><span class="header-section-number">15.4.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>For historical context, review column “KP_PREV (FY22 Targets)”,
+which will come pre-populated with FY22 targets for KP_PREV as
+currently reported in DATIM.</p></li>
+<li><p>Manually enter FY23 KP_PREV targets in the column titled, “KP_PREV
+(FY23)”.</p></li>
+</ol>
+</div>
+</div>
+<div id="kp-tx_curr" class="section level2" number="15.5">
+<h2><span class="header-section-number">15.5</span> KP: TX_CURR</h2>
+<p><strong>TX_CURR:</strong> Number of adults and children currently receiving
+antiretroviral therapy (ART).</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 N
@@ -614,182 +1214,71 @@ P
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 Q
 </th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-R
-</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Column Name
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. Female Population (FY22)
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR - KeyPop (FY21 Results)
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. PLHIV (FY22)
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR - KeyPop (FY22 Targets)
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. HIV Prevalence (FY22) (%)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. TX_CURR_SUBNAT (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. ART Coverage (FY22) (%)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (D) - # New ANC clients (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_ART_SUBNAT (D) - # HIV-positive pregnant women (FY22)
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY22)
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR - KeyPop (FY23)
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY22)
+TX_NET_NEW - KeyPop (FY23)
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 UID
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-POP_EST.T_1
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR.KP.R
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PLHIV.T_1
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR.KP.T_1
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-HIV_PREV.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-TX_CURR_SUBNAT.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-TX_CURR_SUBNAT.Rt.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PopVLS_SUBNAT.Rt.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.D.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.Known.Pos.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.New.Pos.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.New.Neg.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.D.T_1
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.N.Already.T_1
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+TX_CURR.KP.T
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.N.New.T_1
+TX_NET_NEW.KP.T
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Column Type?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+past
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+past
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 target
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-target
+reference
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 What type of data?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 integer
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 integer
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 integer
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -797,43 +1286,16 @@ integer
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Prepopulated data?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+Y
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -841,43 +1303,16 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Enter or modify data?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -885,43 +1320,16 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Calculated column?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+N
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Y
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -929,43 +1337,16 @@ Y
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 Linked column?
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.576923076923077in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -975,67 +1356,47 @@ N
 </tbody>
 </table>
 </div>
-<div id="datim-import-13" class="section level3" number="11.1.1">
-<h3><span class="header-section-number">11.1.1</span> DATIM Import</h3>
-<p>The following data will be imported into DATIM from this section of the
-DataPack:</p>
+<div id="datim-import-36" class="section level3" number="15.5.1">
+<h3><span class="header-section-number">15.5.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
 <ul>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (D) - # New ANC clients (FY22)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.D.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY22)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.Known.Pos.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY22)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.New.Pos.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY22)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.New.Neg.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_ART_SUBNAT (D) - # HIV-positive pregnant women
-(FY22)</strong> <span class="math display">\[PMTCT_ART_SUBNAT.D.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY22)</strong>
-<span class="math display">\[PMTCT_ART_SUBNAT.N.Already.T_1\]</span></p></li>
-<li><p><strong>Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY22)</strong>
-<span class="math display">\[PMTCT_ART_SUBNAT.N.New.T_1\]</span></p></li>
+<li><strong>TX_CURR - KeyPop (FY23)</strong> <span class="math display">\[TX_CURR.KP.T\]</span></li>
 </ul>
 </div>
-<div id="instructions-13" class="section level3" number="11.1.2">
-<h3><span class="header-section-number">11.1.2</span> Instructions</h3>
+<div id="instructions-36" class="section level3" number="15.5.2">
+<h3><span class="header-section-number">15.5.2</span> Instructions</h3>
 <ol style="list-style-type: decimal">
-<li><p>Review data for the following columns, all of which come from
-corollaries on the Cascade tab. Follow hyperlinks to navigate to the
-source of this data:</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Host Country Estimated Female Population (FY22)</p></li>
-<li><p>Host Country Estimated PLHIV (FY22)</p></li>
-<li><p>Host Country Estimated HIV Prevalence (FY22)</p></li>
-<li><p>Host Country Estimated TX_CURR_SUBNAT (FY22)</p></li>
-<li><p>Host Country Estimated ART Coverage (FY22)</p></li>
-</ol></li>
-<li><p>If using Spectrum as the source for Host Country Context data, the
-following columns will initially be populated based on data from the
-Spectrum export dataset added to the Spectrum tab of the DataPack.
-Review these and return to Spectrum to adjust assumptions there as
-needed. With approval by your PPM and assigned DUIT Liaison, you may
-also identify and use another source for this data.</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Host Country PMTCT_STAT_SUBNAT (D) - # New ANC clients (FY22)</p></li>
-<li><p>Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY22)</p></li>
-<li><p>Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY22)</p></li>
-<li><p>Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY22)</p></li>
-<li><p>Host Country PMTCT_ART_SUBNAT (D) - # HIV-positive pregnant
-women (FY22)</p></li>
-<li><p>Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY22)</p></li>
-<li><p>Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY22)</p></li>
-</ol></li>
+<li><p>Review columns “TX_CURR - KeyPop (FY21 Results)” and “TX_CURR - &gt;
+KeyPop (FY22 Targets)”, which will be imported from DATIM for &gt;
+reference.</p></li>
+<li><p>Manually enter TX_CURR targets in the column titled, “TX_CURR - &gt;
+KeyPop (FY23)”. Be prepared to explain target setting processes &gt;
+and justify variations from previous years if asked during or &gt;
+prior to COP meetings.</p></li>
+<li><p>Review “TX_NET_NEW - KeyPop (FY23)”, which will be set by taking
+the &gt; difference between “TX_CURR - KeyPop (FY23)” and “TX_CURR -
+KeyPop &gt; (FY22 Targets)” and be used as further reference in setting
+KP &gt; TX_NEW.</p></li>
 </ol>
+<p>NOTE: TX_CURR targets here on the KP tab are not linked to those on the
+Cascade tab, but should nonetheless represent a subset of the total
+TX_CURR targets. Be sure to review KP targets against total population
+targets in the KP Validation tab to ensure total population targets do
+not exceed total population targets set on the Cascade tab.</p>
 </div>
 </div>
-<div id="pmtct-pmtct_stat-d" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> PMTCT: PMTCT_STAT (D)</h2>
-<p><strong>PMTCT_STAT (D):</strong> Number of new ANC clients in reporting period.</p>
+<div id="kp-tx_new-n" class="section level2" number="15.6">
+<h2><span class="header-section-number">15.6</span> KP: TX_NEW (N)</h2>
+<p><strong>TX_NEW:</strong> Number of adults and children newly enrolled on
+antiretroviral therapy (ART).</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+R
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 S
@@ -1046,45 +1407,66 @@ T
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 U
 </th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+V
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Column Name
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT (D) (FY22 Targets)
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+TX_NEW - KeyPop (FY22 Targets)
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Expected change in new ANC clients (%)
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+Proportion of TX_NET_NEW from New ART Initiation (FY23) (%)
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+Targeted Retention Rate - Already on ART (FY23) (%)
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+Targeted Retention Rate - New on ART (FY23) (%)
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT (D) (FY23)
+TX_NEW - KeyPop (FY23)
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 UID
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT.D.T_1
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+TX_NEW.KP.T_1
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT.D.Growth.T
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+TX_NET_NEW.KP.NewRt.T
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+TX_RET.KP.Already.T
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+TX_RET.KP.New.T
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT.D.T
+TX_NEW.KP.T
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Column Type?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 past
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 assumption
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1092,13 +1474,19 @@ target
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 What type of data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 integer
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 percentage
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1106,13 +1494,19 @@ integer
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Prepopulated data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Y
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1120,13 +1514,19 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Enter or modify data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 ?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1134,13 +1534,19 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Calculated column?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Y
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1148,13 +1554,19 @@ Y
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 Linked column?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 1.5in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1164,49 +1576,52 @@ N
 </tbody>
 </table>
 </div>
-<div id="datim-import-14" class="section level3" number="11.2.1">
-<h3><span class="header-section-number">11.2.1</span> DATIM Import</h3>
+<div id="datim-import-37" class="section level3" number="15.6.1">
+<h3><span class="header-section-number">15.6.1</span> DATIM Import</h3>
 <p>The following data points will be imported into DATIM from this section:</p>
 <ul>
-<li><strong>PMTCT_STAT (D) (FY23)</strong> <span class="math display">\[PMTCT_STAT.D.T\]</span></li>
+<li><strong>TX_NEW - KeyPop (FY23)</strong> <span class="math display">\[TX_NEW.KP.T\]</span></li>
 </ul>
 </div>
-<div id="instructions-14" class="section level3" number="11.2.2">
-<h3><span class="header-section-number">11.2.2</span> Instructions</h3>
+<div id="instructions-37" class="section level3" number="15.6.2">
+<h3><span class="header-section-number">15.6.2</span> Instructions</h3>
 <ol style="list-style-type: decimal">
-<li><p>For historical context, review FY22 targets for PMTCT_STAT (D),
-reflected in the DataPack per data reported in DATIM.</p></li>
-<li><p>Review and adjust the Expected change in new ANC clients, which
-should help indicate whether there is an anticipated change in the
-number of women presenting to ANC compared to FY22. This is
-defaulted at 0%, though this reflects no suggestion of strategy from
-S/GAC. Adjust these growth rates to reflect intentional,
-data-driven, strategic programming. Values can be negative or
-positive percentages in this column, which will decrease or increase
-the FY23 target for PMTCT_STAT (D) respectively. (If the expected
-number of women presenting in ANC for FY22 is the same as FY21, the
-value in column F would be “0%”. If it increased by 50%, the value
-would be “50%”. If the number should decrease by 20%, enter “-20%”.)</p></li>
-<li><p>Review FY23 targets for PMTCT_STAT (D), which is calculated by
-multiplying the Expected change in new ANC clients (set in step 2)
-by the lesser of either the “Host Country PMTCT_STAT_SUBNAT (D) - #
-New ANC clients (FY22)” set in the Host Country Context section, or
-the PMTCT_STAT (D) FY22 targets from DATIM. In the case services are
-planned in FY23 where these were not provided in FY22, you may
-manually enter FY23 targets in this column.</p></li>
+<li><p>Review column “TX_NEW - KeyPop (FY22 Targets)”, which will come
+pre-populated with FY22 targets for reference.</p></li>
+<li><p>Review and adjust the columns “Proportion of TX_NET_NEW from New ART
+Initiation (FY23) (%)”, “Targeted Retention Rate - Already on ART
+(FY23) (%)”, and “Targeted Retention Rate - New on ART (FY23) (%)”,
+which will be prepopulated with 100%, 98%, and 98% respectively.
+These columns serve similar roles along the KP Cascade as seen on
+the Cascade tab.</p></li>
+<li><p>Review modeled FY23 targets for TX_NEW – KeyPop, which are
+initially set by multiplying the FY23 target for TX_CURR – KeyPop
+by first the “Proportion of TX_NET_NEW from New ART Initiation
+(FY23) (%)”, and then the “Targeted Retention Rate - New on ART
+(FY23) (%)”. However, due to wide variation in KP programming, this
+value can be overwritten and manually adjusted as needed without
+further approval from PPMs or DUIT Liaisons.</p></li>
 </ol>
+<p>NOTE: TX_NEW targets here on the KP tab are not linked to those on the
+Cascade tab, but should nonetheless represent a subset of the total
+TX_NEW targets. Be sure to review KP targets against total population
+targets in the KP Validation tab to ensure total population targets do
+not exceed total population targets set on the Cascade tab.<strong><br />
+</strong></p>
 </div>
 </div>
-<div id="pmtct-pmtct_stat_subnat-d" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> PMTCT: PMTCT_STAT_SUBNAT (D)</h2>
+<div id="kp-tx_pvls-d-tx_pvls-n" class="section level2" number="15.7">
+<h2><span class="header-section-number">15.7</span> KP: TX_PVLS (D) &amp; TX_PVLS (N)</h2>
+<p><strong>TX_PVLS (D):</strong> Number of ART patients with a VL result documented in
+the medical or laboratory records/LIS within the past 12 months</p>
+<p><strong>TX_PVLS (N):</strong> Number of ART patients with suppressed VL results
+(&lt;1,000 copies/mL) documented in the medical or laboratory results/LIS
+within the past 12 months.</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-V
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 W
@@ -1214,6 +1629,9 @@ W
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 X
 </th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+Y
+</th>
 </tr>
 </thead>
 <tbody>
@@ -1222,13 +1640,13 @@ X
 Column Name
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Est. PEPFAR proportion of Host Country PMTCT_STAT_SUBNAT (D) (FY22) (%)
+% of TX_NEW Eligible for VL Test (FY23) (%)
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Targeted PEPFAR proportion of Host Country PMTCT_STAT_SUBNAT (D) (FY23) (%)
+Proportion of eligible w/ access to VL testing (FY23) (%)
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT (D) (FY23)
+TX_PVLS (D) - KeyPop (FY23)
 </td>
 </tr>
 <tr>
@@ -1236,13 +1654,13 @@ PMTCT_STAT_SUBNAT (D) (FY23)
 UID
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT.D.NatlContr.T_1
+TX_PVLS.D.KP.Eligible
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT.D.NatlContr.T
+TX_PVLS.D.KP.Access
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.D.T
+TX_PVLS.D.KP.T
 </td>
 </tr>
 <tr>
@@ -1250,7 +1668,7 @@ PMTCT_STAT_SUBNAT.D.T
 Column Type?
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-reference
+assumption
 </td>
 <td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
 assumption
@@ -1332,34 +1750,6 @@ N
 </tbody>
 </table>
 </div>
-<div id="datim-import-15" class="section level3" number="11.3.1">
-<h3><span class="header-section-number">11.3.1</span> DATIM Import</h3>
-<p>The following data points will be imported into DATIM from this section:</p>
-<ul>
-<li><strong>PMTCT_STAT_SUBNAT (D) (FY23)</strong> <span class="math display">\[PMTCT_STAT_SUBNAT.D.T\]</span></li>
-</ul>
-</div>
-<div id="instructions-15" class="section level3" number="11.3.2">
-<h3><span class="header-section-number">11.3.2</span> Instructions</h3>
-<ol style="list-style-type: decimal">
-<li><p>Review the Est. PEPFAR proportion of Host Country
-PMTCT_STAT_SUBNAT (D) (FY22) (%) that is calculated using the Host
-Country Context Section.</p></li>
-<li><p>Review Targeted PEPFAR proportion of Host Country
-PMTCT_STAT_SUBNAT (D) (FY23) (%) which will be set by default to
-equal the FY22 percentage from the previous column.</p></li>
-<li><p>Review the projected target total for PMTCT_STAT_SUBNAT (D) (FY23).
-If there is a need to adjust the target, revisit the percentage from
-column W for the Proportion, or go back and make adjustments to
-PMTCT_STAT (D) from the previous section of this tab.</p></li>
-</ol>
-</div>
-</div>
-<div id="pmtct-pmtct_stat-n" class="section level2" number="11.4">
-<h2><span class="header-section-number">11.4</span> PMTCT: PMTCT_STAT (N)</h2>
-<p><strong>PMTCT_STAT (N):</strong> Number of pregnant women with known HIV status at
-first antenatal care visit (ANC1) (includes those who already knew their
-HIV status prior to ANC1).</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -1367,13 +1757,154 @@ HIV status prior to ANC1).</p>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-Y
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 Z
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AA
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Targeted VL Suppression Rate (FY23) (%)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+TX_PVLS (N) - KeyPop (FY23)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+TX_PVLS.N.KP.Rt
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+TX_PVLS.N.KP.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-38" class="section level3" number="15.7.1">
+<h3><span class="header-section-number">15.7.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><p><strong>TX_PVLS (D) - KeyPop (FY23)</strong> <span class="math display">\[TX_PVLS.D.KP.T\]</span></p></li>
+<li><p><strong>TX_PVLS (N) - KeyPop (FY23)</strong> <span class="math display">\[TX_PVLS.N.KP.T\]</span></p></li>
+</ul>
+</div>
+<div id="instructions-38" class="section level3" number="15.7.2">
+<h3><span class="header-section-number">15.7.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Review and adjust the columns “% of TX_NEW Eligible for VL Test
+(FY23) (%)” and “Proportion of eligible w/ access to VL testing
+(FY23) (%)”, which will be prepopulated with 70% and 100%,
+respectively. These columns serve similar roles along the KP Cascade
+as seen on the Cascade tab.</p></li>
+<li><p>Review modeled targets for “TX_PVLS (D) - KeyPop (FY23)”, which will
+initially be set by multiplying the FY23 target TX_NEW – KeyPop
+first by “% of TX_NEW Eligible for VL Test (FY23) (%)” and then by
+“Proportion of eligible w/ access to VL testing (FY23) (%)”.
+However, due to wide variation in KP programming, this value can be
+overwritten and manually adjusted as needed without further approval
+from PPMs or DUIT Liaisons.</p></li>
+<li><p>Review and adjust the “Targeted VL Suppression Rate (FY23) (%)”,
+which is set at a default 95% for all OUs, but can be changed with
+permission from your PPM and DUIT Liaisons. Decreasing the targeted
+suppression rate to any value below 95% will highlight the cell in
+Yellow, and in Red should it exceed 100% or drop below 0%.</p></li>
+<li><p>Review modeled targets for “TX_PVLS (N) – KeyPop (FY23) (%)”, which
+will initially be set by multiplying the Denominator Target for
+TX_PVLS – KeyPop by the “Targeted VL Suppression Rate (FY23) (%)”.</p></li>
+</ol>
+<blockquote>
+<p>NOTE: The KP tab TX_PVLS (D) and TX_PVLS (N) are not linked to the
+Cascade tab, therefore be sure to review KP targets against total
+population targets in the KP Validation tab to ensure Key Population
+targets do not exceed total population targets set on the Cascade tab.</p>
+</blockquote>
+</div>
+</div>
+<div id="kp-hts_tst" class="section level2" number="15.8">
+<h2><span class="header-section-number">15.8</span> KP: HTS_TST</h2>
+<p><strong>HTS_TST:</strong> Number of individuals who received HIV Testing Services
+(HTS) and received their test results.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AB
@@ -1393,334 +1924,6 @@ AF
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AG
 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Column Name
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Targeted testing coverage of ANC1 clients (FY23) (%)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Est. % ANC1 clients Known HIV Positive (FY21 results) (%)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Projected % ANC1 clients Known HIV Positive (FY23) (%)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Est. Yield among Newly Tested ANC1 clients (FY21 Results) (%)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Est. Yield among Newly Tested ANC1 clients (FY23) (%)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Total PMTCT_STAT (N) (FY23)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Known HIV Status, Positive (FY23)
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Newly Tested, Positive (FY23)
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Newly Tested, Negative (FY23)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-UID
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.Rt.T
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.KnownPosRt.R
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.KnownPosRt.T
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.New.Yield.R
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.New.Yield.T
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.T
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.KnownPos.T
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-PMTCT_STAT.N.New.Pos.T
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT.N.New.Neg.T
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Column Type?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-assumption
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-calculation
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-assumption
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-calculation
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-assumption
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-target
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-What type of data?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-integer
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Prepopulated data?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Enter or modify data?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Calculated column?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Y
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-Linked column?
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="datim-import-16" class="section level3" number="11.4.1">
-<h3><span class="header-section-number">11.4.1</span> DATIM Import</h3>
-<p>The following data points will be imported into DATIM from this section:</p>
-<ul>
-<li><p><strong>Total PMTCT_STAT (N)</strong> <span class="math display">\[PMTCT_STAT.N\]</span></p></li>
-<li><p><strong>PMTCT_STAT (N) Known HIV Status, Positive</strong>
-<span class="math display">\[PMTCT_STAT.N.KnownPos.T\]</span></p></li>
-<li><p><strong>PMTCT_STAT (N) Newly Tested, Positive</strong> <span class="math display">\[PMTCT_STAT.N.New.Pos.T\]</span></p></li>
-<li><p><strong>PMTCT_STAT (N) Newly Tested, Negative</strong> <span class="math display">\[PMTCT_STAT.N.New.Neg.T\]</span></p></li>
-</ul>
-</div>
-<div id="instructions-16" class="section level3" number="11.4.2">
-<h3><span class="header-section-number">11.4.2</span> Instructions</h3>
-<ol style="list-style-type: decimal">
-<li><p>Review “Targeted testing coverage of ANC clients (FY23)”, which is
-pre-populated with a default value of 100%, indicating the goal that
-100% of women presenting at ANC1 know their HIV status, whether by
-previous or new testing. Adjust this column and modify the
-proportion to match COP21 PMTCT strategy and goals.</p></li>
-<li><p>Review FY21 Results for (a) Estimated % ANC1 clients with already
-Known HIV Positive status, and (b) Estimated Positivity Rate among
-Newly Tested ANC1 clients.</p></li>
-<li><p>Review FY23 projections for (a) Estimated % ANC1 clients with
-already Known HIV Positive status, and (b) Estimated Positivity Rate
-among Newly Tested ANC1 clients. These data default to remain static
-from related FY22 rates added to the Host Country Context section of
-this tab. Where these are unavailable, these instead use FY21
-results trends. In either case, these can be adjusted as necessary
-with approval by your PPM and DUIT Liaison. Red highlights indicate
-percentages over 100%; yellow highlights indicate percentages
-different from FY21 results. See below for additional information.</p></li>
-<li><p>Review “Total PMTCT_STAT (N)”, which will display the numerator
-value for PMTCT_STAT based on the multiplication of “PMTCT_STAT (D)”
-and the “Targeted testing coverage of ANC1 clients (FY23)”. To make
-changes to the PMTCT numerator, adjust either the PMTCT denominator
-or the desired testing coverage.</p></li>
-<li><p>Review PMTCT_STAT Known HIV Status, Positive, which will be
-calculated based on multiplying Total PMTCT_STAT (N) by the
-Estimated percent of ANC1 clients already Known HIV Positive.</p></li>
-<li><p>Review PMTCT_STAT Newly Tested, Positive, which will be calculated
-based on first removing the PMTCT_STAT Known HIV Status, Positive
-cohort from Total PMTCT_STAT (N), then by multiplying this value by
-the Estimated Positivity Rate among Newly Tested ANC1 clients.</p></li>
-<li><p>Review PMTCT_STAT Newly Tested, Negative, which will be calculated
-as the remainder of Total PMTCT_STAT (N) less both PMTCT_STAT Known
-HIV Status, Positive and PMTCT_STAT Newly Tested, Positive.</p></li>
-</ol>
-</div>
-<div id="fy23-projected-known-positivity-and-new-positivity-rates" class="section level3" number="11.4.3">
-<h3><span class="header-section-number">11.4.3</span> FY23 Projected Known Positivity and New Positivity Rates</h3>
-<p>In projecting rates of Known and New positivity for PMTCT_STAT ANC1
-clients, the COP21 DataPack relies first upon Host Country Context
-estimates, provided by Spectrum or another approved source, and where
-this data is unavailable, upon PEPFAR FY21 results obtained from DATIM
-on the date of the DataPack’s generation, as documented on the Home tab.
-These rates are calculated from Host Country Context data as follows:</p>
-</div>
-</div>
-<div id="pmtct-pmtct_stat_subnat-n" class="section level2" number="11.5">
-<h2><span class="header-section-number">11.5</span> PMTCT: PMTCT_STAT_SUBNAT (N)</h2>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-</th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AH
 </th>
@@ -1730,57 +1933,99 @@ AI
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AJ
 </th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AK
-</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Column Name
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-Total PMTCT_STAT_SUBNAT (N)
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW from Previously Diagnosed (FY23) (%)
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW from Previously Diagnosed (FY23)
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW from all other sources (FY23)
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+KeyPop, Positive (FY22 Targets)
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+KeyPop, Negative (FY22 Targets)
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Targeted ART Linkage Rate (FY23) (%)
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Yield (FY23) (%)
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+KeyPop, Positive (FY23)
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)
+KeyPop, Negative (FY23)
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 UID
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.T
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW.KP.PrevDiag.Share.T
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.Known.Pos.T
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW.KP.PrevDiag.T
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.New.Pos.T
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+TX_NEW.KP.Other.T
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+HTS_TST.KP.Pos.T_1
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+HTS_TST.KP.Neg.T_1
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+HTS_TST.KP.Linkage.T
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+HTS_TST.KP.Pos.Yield.T
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+HTS_TST.KP.Pos.T
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_STAT_SUBNAT.N.New.Neg.T
+HTS_TST.KP.Neg.T
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Column Type?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 reference
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
-target
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+reference
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+reference
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+past
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 target
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1788,16 +2033,31 @@ target
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 What type of data?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 integer
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 integer
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+integer
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 integer
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1805,16 +2065,31 @@ integer
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Prepopulated data?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1822,16 +2097,31 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Enter or modify data?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+?
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1839,16 +2129,31 @@ N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Calculated column?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Y
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Y
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Y
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1856,16 +2161,31 @@ Y
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 Linked column?
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
-<td style="text-align:left;width: 1.875in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;width: 0.833333333333333in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1875,47 +2195,66 @@ N
 </tbody>
 </table>
 </div>
-<div id="datim-import-17" class="section level3" number="11.5.1">
-<h3><span class="header-section-number">11.5.1</span> DATIM Import</h3>
+<div id="datim-import-39" class="section level3" number="15.8.1">
+<h3><span class="header-section-number">15.8.1</span> DATIM Import</h3>
 <p>The following data points will be imported into DATIM from this section:</p>
 <ul>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]</span></p></li>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]</span></p></li>
-<li><p><strong>Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)</strong>
-<span class="math display">\[PMTCT_STAT_SUBNAT.N.New.Neg.T\]</span></p></li>
+<li><p><strong>HTS_TST KeyPop, Positive (FY23)</strong> <span class="math display">\[HTS_TST.KP.Pos.T\]</span></p></li>
+<li><p><strong>HTS_TST KeyPop, Negative (FY23)</strong> <span class="math display">\[HTS_TST.KP.Neg.T\]</span></p></li>
 </ul>
 </div>
-<div id="instructions-17" class="section level3" number="11.5.2">
-<h3><span class="header-section-number">11.5.2</span> Instructions</h3>
+<div id="instructions-39" class="section level3" number="15.8.2">
+<h3><span class="header-section-number">15.8.2</span> Instructions</h3>
 <ol style="list-style-type: decimal">
-<li><p>Review the Total PMTCT_STAT_SUBNAT (N) that is calculated using the
-target set in the previous section for PMTCT_STAT_SUBNAT (D) (FY23)
-and Targeted testing coverage of ANC1 clients (FY23) (%) from the
-PMTCT_STAT (N) section. This will be used to calculate the FY23
-targets for the remainder of this section</p></li>
-<li><p>Review Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)
-which will be calculated as the product of the Total
-PMTCT_STAT_SUBNAT (N) and Projected % ANC1 clients Known HIV
-Positive (FY23) (%). Adjust this percentage from the previous
-section to make changes to this target.</p></li>
-<li><p>Review Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23) in
-the same manner as it uses the SUBNAT Numerator and Est. Positivity
-Rate among Newly Tested ANC1 clients (FY23) (%). Adjust this
-percentage from the previous section to make changes to this target.</p></li>
-<li><p>Review Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)
-which will be calcuated as the remainder of Host Country
-PMTCT_STAT_SUBNAT (N) - Known Positive (FY23), less Host Country
-PMTCT_STAT_SUBNAT (N) - Known Positive (FY23) and Host Country
-PMTCT_STAT_SUBNAT (N) - New Positive (FY23).</p></li>
+<li><p>Review “TX_NEW from Previously Diagnosed (FY23) (%)”, which will
+come prepopulated at 0%, but can be adjusted as needed. Note that
+this column serves a similar role along the KP Cascade as seen in
+the Cascade tab.</p></li>
+<li><p>Review the number of “TX_NEW from Previously Diagnosed (FY23)”,
+which is calculated by multiplying the rate from Step 1 by “TX_NEW -
+KeyPop (FY23)”. Return to Step 1 to adjust this value.</p></li>
+<li><p>Review “TX_NEW from all other sources (FY23)”, which will be set
+taking the difference of “TX_NEW - KeyPop (FY23)” and “TX_NEW from
+Previously Diagnosed (FY23)”.</p></li>
+<li><p>The FY22 Targets for HTS_TST KeyPop Positive and Negative will be
+pulled from DATIM into this tab for added reference.</p></li>
+<li><p>Review and adjust the “Targeted ART Linkage Rate (FY23) (%)”, which
+is set at a default of 95% for all OUs. Change this value as needed,
+however, you <u>must seek permission</u> from your assigned PPM and
+DUIT Liaisons before decreasing the targeted suppression rate to any
+value below 95%. Red highlights in this column indicate percentages
+above 100% or below 0%; yellow highlights indicate percentages that
+have been altered to drop below 95%.</p></li>
+<li><p>Set HTS_TST “Yield (FY23) (%)” which will resemble the Yield % that
+was set in the various modalities of the HTS tab and should be
+approached similarly.</p></li>
+<li><p>Review modeled FY23 targets for HTS_TST KeyPop, Positive, which are
+the product of “TX_NEW from all other sources (FY23)” and the rate
+set in “Targeted ART Linkage Rate (FY23) (%)”. However, due to wide
+variation in KP programming, this value can be overwritten and
+manually adjusted as needed without further approval from PPMs or
+DUIT Liaisons.</p></li>
+<li><p>Lastly, review the modeled FY23 Targets for HTS_TST KeyPop,
+Negative, which will be calculated by first dividing the FY23 target
+for HTS_TST KeyPop, Positive by the Yield set in Step 5, and then
+subtracting the FY23 target for HTS_TST KeyPop, Positive. Due to
+wide variation in KP programming, this value can be overwritten and
+manually adjusted as needed without further approval from PPMs or
+DUIT Liaisons.</p></li>
 </ol>
+<blockquote>
+<p>NOTE: This HTS_TST on the KP tab is not linked to the HTS tab,
+therefore be sure to review KP targets against total population
+targets in the KP Validation tab to ensure Key Population targets do
+not exceed total population targets set on the Cascade tab.</p>
+</blockquote>
 </div>
 </div>
-<div id="pmtct-pmtct_art-n" class="section level2" number="11.6">
-<h2><span class="header-section-number">11.6</span> PMTCT: PMTCT_ART (N)</h2>
-<p><strong>PMTCT_ART (N):</strong> Number of HIV-positive pregnant women who received
-ART to reduce the risk of mother-to-child transmission during pregnancy.</p>
+<div id="kp-hts_recent" class="section level2" number="15.9">
+<h2><span class="header-section-number">15.9</span> KP: HTS_RECENT</h2>
+<p><strong>HTS_RECENT:</strong> Number of newly diagnosed HIV-positive persons aged ≥ 15
+years with a test for recent infection result during the reporting
+period.</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -1923,7 +2262,141 @@ ART to reduce the risk of mother-to-child transmission during pregnancy.</p>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
+AK
+</th>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Name
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+% of HTS_TST KeyPop Positives (FY23) (%)
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+HTS_RECENT - KeyPop (FY23)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+UID
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+HTS_RECENT.KP.Cov
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+HTS_RECENT.KP.T
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Column Type?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+assumption
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+target
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+What type of data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+percentage
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+integer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Prepopulated data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Enter or modify data?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Calculated column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+Y
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Linked column?
+</td>
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
+</td>
+<td style="text-align:left;border:1px solid lightgrey;">
+N
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datim-import-40" class="section level3" number="15.9.1">
+<h3><span class="header-section-number">15.9.1</span> DATIM Import</h3>
+<p>The following data points will be imported into DATIM from this section:</p>
+<ul>
+<li><strong>HTS_RECENT - KeyPop (FY23)</strong> <span class="math display">\[HTS_RECENT.KP.T\]</span></li>
+</ul>
+</div>
+<div id="instructions-40" class="section level3" number="15.9.2">
+<h3><span class="header-section-number">15.9.2</span> Instructions</h3>
+<ol style="list-style-type: decimal">
+<li><p>Review and adjust the “% of HTS_TST KeyPop Positives (FY23) (%)”,
+which will be prepopulated at a default of 100%. This assumption
+resembles that of the % of Positives used to help set targets in the
+HTS_RECENT tab. Red highlights in this column indicate percentages
+over 100% or under 0%; yellow highlights indicate percentages that
+have been changed to be less than 100%.</p></li>
+<li><p>Review and adjust the modeled FY23 targets for HTS_RECENT - KeyPop,
+which are the product of the rate set in step 1, and the FY23
+Targets for HTS_TST KeyPop, Positives.</p></li>
+</ol>
+<blockquote>
+<p>NOTE: HTS_RECENT KeyPop is not linked to the HTS_RECENT tab. Be sure
+to review KP targets against total population targets in the KP
+Validation tab to ensure Key Population targets do not exceed total
+population targets set on the HTS_RECENT tab.</p>
+</blockquote>
+</div>
+</div>
+<div id="kp-hts_self" class="section level2" number="15.10">
+<h2><span class="header-section-number">15.10</span> KP: HTS_SELF</h2>
+<p><strong>HTS_SELF:</strong> Number of individual HIV self-test kits distributed.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 </th>
 <th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
 AM
@@ -1935,55 +2408,43 @@ AN
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Column Name
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Targeted ART Linkage Rate (FY23) (%)
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Already on ART (FY23)
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+HTS_SELF - KeyPop (FY22 Targets)
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-New on ART (FY23)
+HTS_SELF - KeyPop (FY23)
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 UID
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_STAT.Linkage.T
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_ART.Already.T
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+HTS_SELF.KP.T_1
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_ART.New.T
+HTS_SELF.KP.T
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Column Type?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-target
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+past
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
 target
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 What type of data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 integer
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -1991,55 +2452,43 @@ integer
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Prepopulated data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+Y
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
 N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Enter or modify data?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+?
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
 N
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Calculated column?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Y
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
+N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
 Y
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 Linked column?
 </td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
+<td style="text-align:left;width: 3.75in; border:1px solid lightgrey;">
 N
 </td>
 <td style="text-align:left;border:1px solid lightgrey;">
@@ -2049,752 +2498,24 @@ N
 </tbody>
 </table>
 </div>
-<div id="datim-import-18" class="section level3" number="11.6.1">
-<h3><span class="header-section-number">11.6.1</span> DATIM Import</h3>
+<div id="datim-import-41" class="section level3" number="15.10.1">
+<h3><span class="header-section-number">15.10.1</span> DATIM Import</h3>
 <p>The following data points will be imported into DATIM from this section:</p>
 <ul>
-<li><p><strong>Already on ART</strong> <span class="math display">\[PMTCT_ART.Already.T\]</span></p></li>
-<li><p><strong>New on ART</strong> <span class="math display">\[PMTCT_ART.New\]</span></p></li>
+<li><strong>HTS_SELF - KeyPop (FY23)</strong> <span class="math display">\[HTS_SELF.KP.T\]</span></li>
 </ul>
 </div>
-<div id="instructions-18" class="section level3" number="11.6.2">
-<h3><span class="header-section-number">11.6.2</span> Instructions</h3>
+<div id="instructions-41" class="section level3" number="15.10.2">
+<h3><span class="header-section-number">15.10.2</span> Instructions</h3>
 <ol style="list-style-type: decimal">
-<li><p>Review Targeted ART Linkage Rate for linkage between PMTCT_STAT (N)
-Newly Tested, Positive and PMTCT_ART New on ART. This rate is locked
-in step with ART Linkage Rates set on the Cascade Tab, which default
-to 95%; return to that tab to adjust this rate, though note that
-this will alter linkage rates across all modalities.</p></li>
-<li><p>Review modeled targets for PMTCT_ART (N) Already on ART. For the
-purposes of COP21 target setting in the DataPack, FY23 targets for
-PMTCT_ART Already on ART are set assuming that 100% of those ANC1
-clients with already known HIV positive status are already on ART.</p></li>
-<li><p>Review modeled targets for PMTCT_ART New on ART, which is calculated
-by multiplying PMTCT_STAT (N) Newly Tested, Positive by the Targeted
-ART Linkage Rate.</p></li>
+<li><p>For historical context, review FY22 Targets for HTS_SELF – KeyPop,
+which will be pulled from DATIM.</p></li>
+<li><p>Manually populate FY23 Targets for HTS_SELF - KeyPop.</p></li>
 </ol>
-</div>
-</div>
-<div id="pmtct-pmtct_art_subnat" class="section level2" number="11.7">
-<h2><span class="header-section-number">11.7</span> PMTCT: PMTCT_ART_SUBNAT</h2>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AO
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AP
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AQ
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Column Name
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Est. Host Country # HIV-positive pregnant women (FY23)
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Est. Host Country # HIV+ Pregnant Women Already on ART (FY23)
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Est. Host Country # HIV+ Pregnant Women New on ART (FY23)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-UID
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.D.T
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.N.Already.T
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-PMTCT_ART_SUBNAT.N.New.T
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Column Type?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-target
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-What type of data?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-integer
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Prepopulated data?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Enter or modify data?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Calculated column?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Y
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-Linked column?
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 2.5in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="datim-import-19" class="section level3" number="11.7.1">
-<h3><span class="header-section-number">11.7.1</span> DATIM Import</h3>
-<p>The following data points will be imported into DATIM from this section:</p>
-<ul>
-<li><p><strong>Est. Host Country # HIV-positive pregnant women (FY23)</strong>
-<span class="math display">\[PMTCT_ART_SUBNAT.D.T\]</span></p></li>
-<li><p><strong>Est. Host Country # HIV+ Pregnant Women Already on ART (FY23)</strong>
-<span class="math display">\[PMTCT_ART_SUBNAT.N.Already.T\]</span></p></li>
-<li><p><strong>Est. Host Country # HIV+ Pregnant Women New on ART (FY23)</strong>
-<span class="math display">\[PMTCT_ART_SUBNAT.N.New.T\]</span></p></li>
-</ul>
-</div>
-<div id="instructions-19" class="section level3" number="11.7.2">
-<h3><span class="header-section-number">11.7.2</span> Instructions</h3>
-<ol style="list-style-type: decimal">
-<li><p>Review Est. Host Country # HIV-positive pregnant women (FY23). This
-is the summation of FY23 Targets set in the PMTCT_STAT_SUBNAT (N)
-Section for Host Country PMTCT_STAT_SUBNAT (N) - Known Positive
-(FY23) and Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23).</p></li>
-<li></li>
-</ol>
-</div>
-</div>
-<div id="pmtct-hts_tst-pmtct-post-anc1" class="section level2" number="11.8">
-<h2><span class="header-section-number">11.8</span> PMTCT: HTS_TST: PMTCT Post ANC1</h2>
-<p><strong>HTS_TST:</strong> PMTCT Post ANC1: Includes pregnant or breastfeeding women
-who receive a test POST ANC1, this includes women who are tested later
-in pregnancy (&gt;ANC2), during labor &amp; delivery (L&amp;D), and while
-breastfeeding.</p>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AR
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AS
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AT
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AU
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AV
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AW
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AX
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Column Name
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total eligible for Post ANC1 retesting (FY23)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Yield
-(FY21 Results)
-(%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Yield
-(FY23) (%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Targeted ART Linkage Rate (FY23) (%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Positive (FY23)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Negative (FY23)
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Linked to ART (FY23)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-UID
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Eligible.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Yield
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Yield.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Pos.Linkage.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Pos.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Neg.T
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-TX_NEW.PostANC1.T
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Column Type?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-assumption
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-calculation
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-assumption
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-target
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-reference
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-What type of data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-integer
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Prepopulated data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Enter or modify data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Calculated column?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Y
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Linked column?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="datim-import-20" class="section level3" number="11.8.1">
-<h3><span class="header-section-number">11.8.1</span> DATIM Import</h3>
-<p>The following data points will be imported into DATIM from this section:</p>
-<ul>
-<li><p><strong>HTS_TST PMTCT Post ANC1, Positive</strong> <span class="math display">\[HTS_TST.PostANC1.Pos.T\]</span></p></li>
-<li><p><strong>HTS_TST PMTCT Post ANC1, Negative</strong> <span class="math display">\[HTS_TST.PostANC1.Neg.T\]</span></p></li>
-</ul>
-</div>
-<div id="instructions-20" class="section level3" number="11.8.2">
-<h3><span class="header-section-number">11.8.2</span> Instructions</h3>
-<ol style="list-style-type: decimal">
-<li><p>Review and adjust the Total eligible for Post ANC1 retesting, which
-is initially set equal to the number tested and found negative in
-initial ANC1 testing.</p></li>
-<li><p>Review and adjust the Yield for PMTCT Post ANC1 HIV testing, which
-will initially be pre-populated based on FY21 results from DATIM,
-but can be adjusted as needed. Red highlights indicate percentages
-over 100% or under 0%.</p></li>
-<li><p>Review Targeted ART Linkage Rates for linkage between HTS_TST: PMTCT
-Post ANC1, Positive and TX_NEW. This rate is locked in step with ART
-Linkage Rates set on the Cascade Tab, which default to 95%; return
-to that tab to adjust this rate, though note that this will alter
-linkage rates across all modalities.</p></li>
-<li><p>Review targets for HTS_TST: PMTCT Post ANC1, Positive, which are set
-by multiplying Total eligible for Post ANC1 retesting, set in step
-1, by the Yield rate set in step 2.</p></li>
-<li><p>Review targets for HTS_TST: PMTCT Post ANC1, Negative, which are set
-by subtracting HTS_TST: PMTCT Post ANC1, Positive from the Total
-eligible for Post ANC1 retesting set in step 1.</p></li>
-<li><p>Review modeled data for those tested and found positive for HIV post
-ANC1 who are linked to ART, set by multiplying those found positive
-by the Targeted ART Linkage Rate set in step 3, rounded to the
-nearest integer.<strong><br />
-</strong></p></li>
-</ol>
-</div>
-</div>
-<div id="pmtct-testing-rationalization" class="section level2" number="11.9">
-<h2><span class="header-section-number">11.9</span> PMTCT: Testing Rationalization</h2>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
-<table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AY
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-AZ
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-BA
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-BB
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-BC
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-BD
-</th>
-<th style="text-align:left;background-color: #E6DFA7 !important;text-align: center;">
-BE
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Column Name
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total PMTCT: Positives (From ANC1 &amp; Post ANC1, incl. Known Pos) (FY23)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total HTS_TST_POS (FY23)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total Positives from PMTCT_STAT ANC1 (FY23) (%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total Positives from PMTCT Post ANC1 (FY23) (%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total Positives from HTS_INDEX (FY23) (%)
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Total Positives from TB_STAT (FY23) (%)
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Total Positives from All Other Modalities (FY23) (%)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-UID
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-PMTCT.Pos.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.Pos.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PMTCT_STAT.Pos.Share.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.PostANC1.Pos.Share.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.Index.Pos.Share.T
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-HTS_TST.TB.Pos.Share.T
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-HTS_TST.Total_Other.Pos.Share.T
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Column Type?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-reference
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-reference
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-What type of data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-integer
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-percentage
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-percentage
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Prepopulated data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Enter or modify data?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Calculated column?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Y
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-Y
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-Linked column?
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;width: 1.07142857142857in; border:1px solid lightgrey;">
-N
-</td>
-<td style="text-align:left;border:1px solid lightgrey;">
-N
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="datim-import-21" class="section level3" number="11.9.1">
-<h3><span class="header-section-number">11.9.1</span> DATIM Import</h3>
-<p>No data from this section will be imported into DATIM.</p>
-</div>
-<div id="instructions-21" class="section level3" number="11.9.2">
-<h3><span class="header-section-number">11.9.2</span> Instructions</h3>
-<ol style="list-style-type: decimal">
-<li><p>Review Total PMTCT: Positives (From ANC1 &amp; Post ANC1), which
-represents the <em>sum</em> of the PMTCT_STAT Known Positive, PMTCT_STAT
-Newly Tested Positive, and HTS_TST Post ANC1 Positive targets. This
-column serves as the starting point of the EID modeling process on
-the EID tab. For more information about the role of this data
-relative to EID targets, see that section of this User Guide.</p></li>
-<li><p>Use the remainder of this section of the PMTCT tab to analyze how
-PMTCT_STAT Newly Tested, Positives fit within the context of an
-overall testing strategy. In particular, consider how this modality
-contributes to total HTS_TST_POS in relation to HTS_INDEX, TB_STAT,
-and all other HTS modalities.</p></li>
-<li><p>Review any cases where this section is highlighted red, indicating
-over- or under-allocation of HTS_TST_POS targets across contributing
-modalities. While these allocation issues may be more the result of
-a different modality(ies), analysis of these to confirm no
-adjustments to PMTCT_STAT are warranted may prevent issues and
-additional work in other sections of the DataPack.</p></li>
-<li><p>Return to other tabs of the DataPack where issues flagged in this
-section require adjustment of either total HTS_TST_POS targets, or
-targets via other modalities. Similar Testing Rationalization
-sections can be also found in each of these other tabs of the
-DataPack. You may also use hyperlinks in column headers in this
-section to quickly navigate to the most relevant section of the
-DataPack.</p></li>
-</ol>
+<p>NOTE: HTS_SELF on this tab is not linked to the HTS tab. Be sure to
+review KP targets against total population targets in the KP Validation
+tab to ensure Key Population targets do not exceed total population
+targets set on the HTS tab.</p>
 <div style="page-break-after: always;"></div>
 
 </div>
@@ -2805,8 +2526,8 @@ DataPack.</p></li>
           </div>
         </div>
       </div>
-<a href="10-Cascade.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="12-EID.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="14-VMMC.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="16-HTS.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

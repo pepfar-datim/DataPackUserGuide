@@ -1,11 +1,14 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-PrEP
-====
+# PrEP
 
-PrEP: PrEP_NEW
---------------
+## PrEP: PrEP_NEW
 
 **PrEP_NEW:** Number of individuals who have been newly enrolled on
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
@@ -23,27 +26,29 @@ schema_table("PrEP-PrEP_NEW-F-L-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Newly on PrEP (FY22)** [PrEP_NEW.T]
+-   **Newly on PrEP (FY23)** \[PrEP_NEW.T\]
 
 ### Instructions
 
-1.  Review the PrEP_NEW section which will be populated with assumptions
-    of FY22 Targets set at other points in the Data Pack for
+1.  Think through population specific target of PrEP with in country
+    data, and population specific targets for AGYW, KP, zero-discordant
+    couples and other at risk group, in line with COP22 Guidance.
+
+2.  Review the PrEP_NEW section which will be populated with assumptions
+    of FY23 Targets set at other points in the Data Pack for
     "HTS_TST_NEG", "Host Country Est. PLHIV", "AGYW(PREV (D)", and
-    "AGYW_PREV (N)".
+    "AGYW_PREV (N)". Also think through KP PrEP strategy and history.
 
-2.  Review data pulled from DATIM showing "PrEP_NEW (FY20 Results)", and
-    "PrEP_NEW (FY21 Targets)".
+3.  Review data pulled from DATIM showing "PrEP_NEW (FY21 Results)", and
+    "PrEP_NEW (FY22 Targets)".
 
-3.  Manually enter targets for "Newly on PrEP (FY22)".
+4.  Manually enter targets for "Newly on PrEP (FY23)".
 
--   
+## PrEP: PrEP_CT
 
-PrEP: PrEP_CURR
----------------
-
-**PrEP_CURR (N):** Number of individuals that received oral
-antiretroviral pre-exposure prophylaxis (PrEP) during the reporting
+**PrEP_CT:** Number of individuals, excluding those newly enrolled, that
+return for a follow-up visit or re-initiation visit to receive
+pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
@@ -58,19 +63,23 @@ schema_table("PrEP-PrEP_CURR-M-O-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Current on PrEP (FY22)** [PrEP_CURR.T]
+-   **PREP_CT Continuing on PrEP (FY23)** \[PrEP_CT.T\]
 
 ### Instructions
 
-1.  Review "PrEP_CURR (FY20 Results)" and "PrEP_CURR (FY21 Targets)",
-    pulled from DATIM as a baseline in the FY22 target setting process.
+1.  Think through population specific target of PrEP with in country
+    data, and population specific targets for AGYW, KP, zero-discordant
+    couples and other at risk groups, in line with COP22 Guidance. For
+    each of these populations think through how groups may continue to
+    use PrEP and remain at risk, go off PrEP due to change in risk, or
+    return to PrEP due to a change in risk. Note that PrEP_CT is a
+    revised and different indicator from PrEP_CURR. While PrEP_CURR
+    historical targets and results are provided for context and
+    assistance, they do not necessarily provide direct insight into
+    PrEP_CT targets.
 
-2.  Similar to the process for setting FY22 PrEP_NEW targets, there is
-    no pre-populated formula for FY22 PrEP_CURR targets. Manually enter
-    these targets in this section based on calculations and strategic
-    programming decided outside the Data Pack.
-    
+2.  Manually enter targets for "PrEP_CT (FY23)".
+
 \elandscape
 
 \newpage
-

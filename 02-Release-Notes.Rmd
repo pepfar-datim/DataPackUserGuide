@@ -2,4 +2,19 @@
 Release Notes
 =============
 
-Coming soon!
+```{r, echo=FALSE, results='asis'}
+news_file <-
+  url("https://raw.githubusercontent.com/pepfar-datim/datapackr/master/NEWS.md")
+pasteReadMe <- function(fileName) {
+  indent_headers <- function(x) {
+    x <- stringr::str_replace(x, "(?<=^\\s{0,100})#", "##")
+    return(x)
+  }
+  
+  storeLines <- readLines(fileName)
+  
+  cat(paste0(lapply(storeLines, FUN = function(x) indent_headers(x)), "\n", collapse = ""))
+}
+
+pasteReadMe(news_file)
+```

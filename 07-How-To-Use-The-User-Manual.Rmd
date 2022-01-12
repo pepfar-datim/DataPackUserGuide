@@ -1,30 +1,33 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
-How to Use the User Manual
-==========================
+# How to Use the User Manual
 
-The Data Pack consists of tabs that address indicators related to each
+The DataPack consists of tabs that address indicators related to each
 PEPFAR program area.
 
-The COP21 Data Pack User Manual reviews all indicators within each tab
+The COP22 DataPack User Manual reviews all indicators within each tab
 and provides you with the relevant information to complete all required
-sections of the Data Pack correctly. It also instructs you where to find
+sections of the DataPack correctly. It also instructs you where to find
 more information on each program area in the COP21 Guidance.
 
-Key Column Highlights
----------------------
+## Key Column Highlights
 
 > ***Column type?*** Indicates whether the data in this column is a
 > result from a previous fiscal year ("Result"), an assumption that the
-> country team is making ("Assumption"), a target for FY2022
+> country team is making ("Assumption"), a target for FY2023
 > ("Targets"), or a reference for the country team as they fill out the
-> Data Pack ("Reference").
+> DataPack ("Reference").
 >
 > ***What type of data?*** Indicates whether the data in the column is
-> an integer, e.g. a whole number, or a percentage.
+> an integer, e.g., a whole number, or a percentage.
 >
 > ***Prepopulated data?*** Indicates whether the data in this column is
-> prepopulated from data in DATIM or from data elsewhere in the Data
-> Pack.
+> prepopulated from data in DATIM or from data elsewhere in the
+> DataPack.
 >
 > ***Enter or modify data?*** Indicates whether the user should enter
 > new information into this column or is allowed to modify the
@@ -32,20 +35,20 @@ Key Column Highlights
 > here, country teams must consult with their PPMs and Chairs before
 > modifying the data in this column. If there is an exclamation mark
 > here, country teams may overwrite the formula in this column, however
-> it will prevent the Data Pack from refreshing this data if changes are
+> it will prevent the DataPack from refreshing this data if changes are
 > made elsewhere.
 >
 > ***Calculated column?*** This indicates that a formula is used to
 > indicate where a formula is used to calculate the values in this
-> column from data elsewhere in the Data Pack.
+> column from data elsewhere in the DataPack.
 >
 > ***Linked column?*** This indicates that this data is either
 > prepopulated by or is used to prepopulate data in a column on another
-> tab within the Data Pack. For columns that are prepopulated from
-> another tab, clicking on the column name in the Data Pack will take
-> you to the referenced column.
+> tab within the DataPack. For columns that are prepopulated from
+> another tab, clicking on the hyperlinked column name in the DataPack
+> will take you to the referenced column.
 >
-> ***UID in Appendix**.* The UID provided here is a Data Pack reference
+> ***UID in Appendix**.* The UID provided here is a DataPack reference
 > ID and can be used to find more information about the data entered
 > into this column in the appendices.
 

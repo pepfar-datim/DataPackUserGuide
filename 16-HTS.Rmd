@@ -1,257 +1,134 @@
-
 \blandscape
 
-HTS
-===
+# HTS
 
-**HTS_TST:** Number of individuals who received HIV Testing Services
-(HTS) and received their test results.
+**HTS_TST:** Number of individuals who received HIV Testing Services (HTS) and received their test results.
 
-HTS: Testing Summary from Other Tabs
-------------------------------------
+## HTS: Testing Summary from Other Tabs
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Testing Summary-F-I-1-2", "latex")
+schema_table("HTS-Testing Summary-F-J-1-2", "latex")
 
-schema_table("HTS-Testing Summary-J-M-2-2", "latex")
+schema_table("HTS-Testing Summary-K-O-2-2", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Testing Summary-F-M-1-1", "html")
+schema_table("HTS-Testing Summary-F-O-1-1", "html")
 ```
 
 ### DATIM Import
 
-No data will be imported from this section of the Data Pack.
+No data will be imported from this section of the DataPack.
 
 ### Instructions
 
-1.  For context, review the following data, pulled from other locations
-    in the Data Pack and gathered here for reference:
+1.  For context, review the following data, pulled from other locations in the DataPack and gathered here for reference:
 
-    a.  Host Country ART Coverage (FY21)
+    a.  Host Country ART Coverage (FY22)
 
-    b.  Total HTS_TST_POS (FY22)
+    b.  Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)
 
-    c.  HTS_INDEX (FY22)
+    c.  Total HTS_TST_POS (FY23)
 
-    d.  PMTCT_STAT New Positives (FY22)
+    d.  HTS_INDEX Community Positives (FY23)
 
-    e.  HTS_TST Post ANC1 New Positives (FY22)
+    e.  HTS_INDEX Facility Positives (FY23)
 
-    f.  TB_STAT New Positives (FY22)
+    f.  PMTCT_STAT New Positives (FY23)
 
-    g.  VMMC_CIRC New Positives (FY22)
+    g.  HTS_TST Post ANC1 New Positives (FY23)
 
-    h.  HTS_TST_POS from All Other Modalities (FY22)
+    h.  TB_STAT New Positives (FY23)
 
-HTS: HTS_INDEX
---------------
+    i.  VMMC_CIRC New Positives (FY23)
 
-**HTS_INDEX:** Number of individuals who were identified and tested
-using Index testing services and received their results
+    j.  HTS_TST_POS from All Other Modalities (FY23)
+
+## HTS: HTS_TST -- Distribution of Positive Tests
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_INDEX-N-Q-1-2", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-P-T-1-4", "latex")
 
-schema_table("HTS-HTS_INDEX-R-U-2-2", "latex")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-U-Y-2-4", "latex")
+
+schema_table("HTS-HTS_TST Distribution of Positive Tests-Z-AC-3-4", "latex")
+
+schema_table("HTS-HTS_TST Distribution of Positive Tests-AD-AG-4-4", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_INDEX-N-U-1-1", "html")
+schema_table("HTS-HTS_TST Distribution of Positive Tests-P-AG-1-1", "html")
+```
+
+### DATIM Import
+
+No data will be imported from this section of the DataPack.
+
+### Instructions
+
+1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2022 Guidance document for the required parameters based on TX coverage.
+
+2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the DataPack. Note that to adjust these allocations, you must return to the section or tab of the DataPack where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
+
+    a.  HTS_INDEX_COM_POS (FY23)
+
+    b.  HTS_INDEX_FAC_POS (FY23)
+
+    c.  PMTCT_STAT: New Positives (FY23)
+
+    d.  HTS_TST PMTCT Post ANC1: Positives (FY23)
+
+    e.  TB_STAT: New Positives (FY23)
+
+    f.  VMMC_CIRC: HIV Positive (FY23)
+
+3.  Review and adjust planned percentage contributions to HTS_TST_POS from all other HTS modalities, which will initially be populated based on trends seen in FY22 targets, but can be adjusted as needed to align with COP22 - FY23 testing strategies. Note that as you adjust these allocation percentages, the number of projected individuals to be identified HIV positive will change in the corresponding modality block to the right. These modalities to be adjusted in this section include:
+
+    a.  Facility -- Inpatient (FY23)
+
+    b.  Facility -- Pediatric (FY23)
+
+    c.  Facility -- Malnutrition (FY23)
+
+    d.  Facility -- STI Clinic (FY23)
+
+    e.  Facility -- Emergency (FY23)
+
+    f.  Facility -- Other PITC (FY23)
+
+    g.  Facility -- VCT (FY23)
+
+    h.  Facility - SNS (FY23)
+
+    i.  Community -- Mobile (FY23)
+
+    j.  Community - SNS (FY23)
+
+    k.  Community - Other (FY23)
+
+4.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in over- or under-allocation. Where this check column is either greater than or less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to 100%.
+
+## HTS: HTS_TST -- Modality Yields
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **COMMUNITY - Contacts Tested, New Positive**
-    [HTS_INDEX_COM.New.Pos.T]
-
--   **COMMUNITY - Contacts Tested, New Negative**
-    [HTS_INDEX_COM.New.Neg.T]
-
--   **FACILITY - Contacts Tested, New Positive**
-    [HTS_INDEX_FAC.New.Pos.T]
-
--   **FACILITY - Contacts Tested, New Negative**
-    [HTS_INDEX_FAC.New.Neg.T]
-
-### Instructions
-
-1.  Review the estimated percent of total HTS_INDEX positives to be
-    identified in Community Sites. This will initially be pre-populated
-    based on FY20 results as recorded in DATIM, but may be adjusted as
-    needed. Red highlights indicate percentages over 100%, or under 0%.
-
-2.  Review estimated yields among HTS_INDEX contacts newly tested, both
-    for those tested at Community sites, as well as for those tested in
-    Facility sites. These are initially pre-populated based on FY20
-    results from DATIM, but can be adjusted as needed. Red highlights
-    indicate percentages over 100%, or under 0%; yellow highlights
-    indicate cases where yield rates are less than 20% for 15+ year
-    olds.
-
-3.  Review modeled targets for the following columns. See below for
-    additional information:
-
-    a.  COMMUNITY -- Contacts Tested, New Positive
-
-    b.  COMMUNITY -- Contacts Tested, New Negative
-
-    c.  FACILITY-- Contacts Tested, New Positive
-
-    d.  FACILITY-- Contacts Tested, New Negative
-
-4.  Review the Actual percent of HTS_TST_POS to come from Index testing,
-    calculated by dividing the sum of Community and Facility
-    HTS_INDEX_POS by the total HTS_TST_POS.
-
-### HTS_INDEX Disaggregates
-
-In general, HTS_INDEX disaggregates across both Community and Facility
-sites, and across both Negative and Positive HIV test results, are set
-by combining HTS_INDEX_POS with the percentages set in steps 1 and 2
-above.
-
-FY22 targets for HTS_INDEX New Positives in Community Sites are set as
-follows, rounding to the nearest integer:
-
-\begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
-
-Building from this, FY22 targets for HTS_INDEX New Negatives in
-Community Sites are set as follows, rounding to the nearest integer:
-
-\begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-
-Alternatively, FY22 targets for HTS_INDEX New Positives in Facility
-Sites are set as follows, rounding to the nearest integer:
-
-\begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-
-And finally, FY22 targets for HTS_INDEX New Negatives in Community Sites
-are set as follows:
-
-\begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
-
-HTS: HTS_TST -- Distribution of Positive Tests
-----------------------------------------------
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-V-Y-1-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-Z-AC-2-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-AD-AG-3-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-AH-AK-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-V-AK-1-1", "html")
-```
-
-### DATIM Import
-
-No data will be imported from this section of the Data Pack.
-
-### Instructions
-
-1.  Since index testing for case finding is a high priority
-    intervention, the index modality is should be completed first. The
-    positivity yield should be between 15 and 40% among adults and there
-    are further requirements for the SGAC accepted proportion of
-    positives coming from the index testing modality. Users should
-    reference the COP 2020 Guidance document for the required parameters
-    based on TX coverage.
-
-2.  Review data for what percent of HTS_TST_POS comes from modalities
-    set in other sections or tabs of the Data Pack. Note that to adjust
-    these allocations, you must return to the section or tab of the Data
-    Pack where these are initially set. Hyperlinks in column headers can
-    help you navigate to the exact column where this occurs. DO NOT
-    adjust allocation percentages for these gray columns in this section
-    of the HTS tab as this will NOT affect any final targets and will
-    break linkages between this tab and source data. These modalities to
-    be reviewed, but adjusted elsewhere include:
-
-    a.  HTS_INDEX_COM_POS (FY22)
-
-    b.  HTS_INDEX_FAC_POS (FY22)
-
-    c.  PMTCT_STAT: New Positives (FY22)
-
-    d.  HTS_TST PMTCT Post ANC1: Positives (FY22)
-
-    e.  TB_STAT: New Positives (FY22)
-
-    f.  VMMC_CIRC: HIV Positive (FY22)
-
-3.  Review and adjust planned percentage contributions to HTS_TST_POS
-    from all other HTS modalities, which will initially be populated
-    based on trends seen in FY20 results, but can be adjusted as needed
-    to align with COP21 testing strategies. Note that as you adjust
-    these allocation percentages, the number of projected individuals to
-    be identified HIV positive will change in the corresponding modality
-    block to the right. These modalities to be adjusted in this section
-    include:
-
-    a.  Facility -- Inpatient (FY22)
-
-    b.  Facility -- Pediatric (FY22)
-
-    c.  Facility -- Malnutrition (FY22)
-
-    d.  Facility -- STI Clinic (FY22)
-
-    e.  Facility -- Emergency (FY22)
-
-    f.  Facility -- Other PITC (FY22)
-
-    g.  Facility -- VCT (FY22)
-
-    h.  Community -- Mobile (FY22)
-
-    i.  Community - Other (FY22)
-
-4.  Use the Distribution Check column to confirm that distributions of
-    HTS_TST_POS across all HTS modalities do not result in over- or
-    under-allocation. Where this check column is either greater than or
-    less than 100%, red highlights will appear across all modalities,
-    indicating the need to adjust percentage allocations. You MUST
-    resolve all cases where distribution does not sum to 100%.
-
-HTS: HTS_TST -- Modality Yields
--------------------------------
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Inpatient (Facility)-AL-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Inpatient (Facility)-AL-AN-1-1", "html")
-```
-
-### DATIM Import
-
-The following data points will be imported into DATIM from this section:
-
--   For each of the below modalities in these sections, the **Positive**
-    and **Negative** target value will be imported into DATIM:
+-   For each of the below modalities in these sections, the **Positive** and **Negative** target value will be imported into DATIM:
 
     -   Inpatient (Facility)
 
     -   Pediatric (Facility)
 
     -   Malnutrition (Facility)
-
-    -   TB_STAT (Facility)
-
-    -   PMTCT_STAT (Facility)
-
-    -   PMTCT Post ANC1 (Facility)
-
-    -   VMMC (Facility)
 
     -   STI Clinic (Facility)
 
@@ -263,126 +140,65 @@ The following data points will be imported into DATIM from this section:
 
     -   Mobile (Community)Other (Community)
 
+    -   SNS (Facility)
+
+    -   SNS (Community)
+
 ### Instructions
 
-1.  For each of the modalities listed above, review and adjust Yield
-    rates, which are initially populated from DATIM based on FY20
-    results but can be adjusted as needed. Red highlights indicate
-    percentages over 100% or less than 0%; yellow highlights indicate
-    cases either where:
+1.  For each of the modalities listed above, review and adjust Yield rates, which are initially populated from DATIM based on FY21 results but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate cases either where:
 
-    a.  ART Coverage is greater than or equal to 70%, but yields are
-        less than 10%; or
+    a.  ART Coverage is greater than or equal to 70%, but yields are less than 10%; or
 
     b.  ART Coverage is less than 70%, but yields are less than 5%.
 
-2.  Review targets for the number of individuals to be tested and found
-    HIV Positive through each modality, using hyperlinks in column
-    headers to return to the Distribution of Positive Tests section of
-    this tab to adjust allocation rates as needed. Note that these are
-    rounded to the nearest integer. See the following section for
-    instructions as to how to identify and resolve rounding errors that
-    may compound across modalities as a result.
+2.  Review targets for the number of individuals to be tested and found HIV Positive through each modality, using hyperlinks in column headers to return to the Distribution of Positive Tests section of this tab to adjust allocation rates as needed. Note that these are rounded to the nearest integer. See the following section for instructions as to how to identify and resolve rounding errors that may compound across modalities as a result.
 
-3.  Review targets for the number of individuals to be tested and found
-    HIV Negative through each modality, which are based on the
-    combination of allocations set in the Distribution of Positive Tests
-    section of this tab, and yield rates set in step 1. Note that these
-    are rounded to the nearest integer. See the following section for
-    instructions as to how to identify and resolve rounding errors that
-    may compound across modalities as a result. In cases where yields
-    are 0%, but Negative test results are targeted, you may manually
-    enter these in this step, though note that this will prevent further
-    dynamic modeling of targets should Positive test result targets be
-    needed in the future. Please also mind conditional formatting
-    guiding entry of these targets against correct ages, which may
-    differ across modality, particularly for Pediatric and Malnutrition
-    modalities.
+3.  Review targets for the number of individuals to be tested and found HIV Negative through each modality, which are based on the combination of allocations set in the Distribution of Positive Tests section of this tab, and yield rates set in step 1. Note that these are rounded to the nearest integer. See the following section for instructions as to how to identify and resolve rounding errors that may compound across modalities as a result. In cases where yields are 0%, but Negative test results are targeted, you may manually enter these in this step, though note that this will prevent further dynamic modeling of targets should Positive test result targets be needed in the future. Please also mind conditional formatting guiding entry of these targets against correct ages, which may differ across modality, particularly for Pediatric and Malnutrition modalities.
 
-4.  
+## HTS: HTS_TST (Total)
 
-HTS: HTS_TST (Total)
---------------------
-
-These calculated columns provide a roll up sum of the total targets set
-by age, sex and modality in the rest of the HTS tab. This section should
-serve as a check and will not be uploaded into DATIM.
+These calculated columns provide a roll up sum of the total targets set by age, sex and modality in the rest of the HTS tab. This section should serve as a check and will not be uploaded into DATIM.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST (Total)-BM-BP--1-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BO-BS--1-3", "latex")
 
-schema_table("HTS-HTS_TST (Total)-BQ-BS-2-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BT-BW-2-3", "latex")
 
-schema_table("HTS-HTS_TST (Total)-BT-BV-3-3", "latex")
+schema_table("HTS-HTS_TST (Total)-BX-BZ-3-3", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST (Total)-BM-BV-1-1", "html")
+schema_table("HTS-HTS_TST (Total)-BO-BZ-1-1", "html")
 ```
 
 ### DATIM Import
 
-No data points will be imported to DATIM from this section of the Data
-Pack.
+No data points will be imported to DATIM from this section of the DataPack.
 
 ### Instructions
 
-1.  Investigate and resolve issues related to rounding differences
-    caused by allocations of remaining HTS_TST_POS on the HTS tab. See
-    below for additional, detailed instructions. Any cell that is
-    highlighted indicates that it is in a row that users should review
-    the distribution of positives.
+1.  Investigate and resolve issues related to rounding differences caused by allocations of remaining HTS_TST_POS on the HTS tab. See below for additional, detailed instructions. Any cell that is highlighted indicates that it is in a row that users should review the distribution of positives.
 
-2.  Review FY22 Targets for individuals to be tested and found HIV
-    negative through PMTCT_STAT, HTS_TST Post ANC1, TB_STAT, and
-    VMMC_CIRC. To adjust these values, follow hyperlinks to the source
-    of data for these columns.
+2.  Review FY23 Targets for individuals to be tested and found HIV negative through PMTCT_STAT, HTS_TST Post ANC1, TB_STAT, and VMMC_CIRC. To adjust these values, follow hyperlinks to the source of data for these columns.
 
-3.  Review modeled targets for Total HTS_TST_NEG, Total HTS_TST, and the
-    Aggregate Yield Rate, which is modeled simply by dividing the final
-    HTS_TST_POS total by the total HTS_TST target.
+3.  Review modeled targets for Total HTS_TST_NEG, Total HTS_TST, and the Aggregate Yield Rate, which is modeled simply by dividing the final HTS_TST_POS total by the total HTS_TST target.
 
 ### Resolve HTS_TST_POS Rounding Differences
 
-In the process of allocating HTS_TST_POS targets across HTS modalities,
-the multiplication of integer values representing whole people by
-percentage allocations, followed by rough rounding, often causes slight
-rounding errors to accumulate across ages, sexes, and geographies. In
-situations where there may be significantly small HTS_TST_POS targets
-being spread over multiple HTS modalities, the aggregation of many small
-rounding errors can lead to large differences in planned and final
-HTS_TST_POS. This section of the Data Pack is built to help identify and
-resolve these cases, where they occur.
+In the process of allocating HTS_TST_POS targets across HTS modalities, the multiplication of integer values representing whole people by percentage allocations, followed by rough rounding, often causes slight rounding errors to accumulate across ages, sexes, and geographies. In situations where there may be significantly small HTS_TST_POS targets being spread over multiple HTS modalities, the aggregation of many small rounding errors can lead to large differences in planned and final HTS_TST_POS. This section of the DataPack is built to help identify and resolve these cases, where they occur.
 
-Prior to using this section, it is key that all allocations be complete,
-either in those modalities called out specifically in the Cascade tab,
-or in the HTS tab's Distribution of Positive Tests section. With this
-complete, only true rounding error cases will remain to be identified in
-this section of the Data Pack.
+Prior to using this section, it is key that all allocations be complete, either in those modalities called out specifically in the Cascade tab, or in the HTS tab's Distribution of Positive Tests section. With this complete, only true rounding error cases will remain to be identified in this section of the DataPack.
 
-Cases where rounding errors may have occurred will be highlighted in red
-formatting in the column titled, "HTS_TST_POS difference to adjust";
-Excel filters may be helpful in narrowing to these rows.
+Cases where rounding errors may have occurred will be highlighted in red formatting in the column titled, "HTS_TST_POS difference to adjust"; Excel filters may be helpful in narrowing to these rows.
 
-By first reviewing and refining allocations in the Cascade tab of the
-Data Pack for overall HTS_INDEX, PMTCT_STAT, HTS_TST PMTCT Post ANC1,
-TB_STAT, and VMMC_CIRC, any rounding errors still present on the HTS tab
-are more likely the result of distributions decided on this tab across
-the following modalities:
+By first reviewing and refining allocations in the Cascade tab of the DataPack for overall HTS_INDEX, PMTCT_STAT, HTS_TST PMTCT Post ANC1, TB_STAT, and VMMC_CIRC, any rounding errors still present on the HTS tab are more likely the result of distributions decided on this tab across the following modalities:
 
 -   Inpatient (Facility)
 
 -   Pediatric (Facility)
 
 -   Malnutrition (Facility)
-
--   TB_STAT (Facility)
-
--   PMTCT_STAT (Facility)
-
--   PMTCT Post ANC1 (Facility)
-
--   VMMC (Facility)
 
 -   STI Clinic (Facility)
 
@@ -392,59 +208,44 @@ the following modalities:
 
 -   VCT (Facility)
 
+-   SNS (Facility)
+
 -   Mobile (Community)
+
+-   SNS (Community)
 
 -   Other (Community)
 
-The process for resolving rounding errors across these modalities may
-involve some trial and error. In all cases, but especially for cases
-where total HTS_TST_POS is small and rounding errors could represent
-large swings in total targets, it is necessary to determine which
-modality(ies) should be allocated remainder HTS_TST_POS identified in
-this section. Iteratively return to the HTS_TST Distribution of Positive
-Tests section on this HTS tab to adjust allocations, then return to this
-section to check for lingering rounding remainders.
+The process for resolving rounding errors across these modalities may involve some trial and error. In all cases, but especially for cases where total HTS_TST_POS is small and rounding errors could represent large swings in total targets, it is necessary to determine which modality(ies) should be allocated remainder HTS_TST_POS identified in this section. Iteratively return to the HTS_TST Distribution of Positive Tests section on this HTS tab to adjust allocations, then return to this section to check for lingering rounding remainders.
 
-At the culmination of this iterative approach, there should be no values
-or highlighting remaining in the HTS_TST_POS difference to adjust column
-of this section.
+At the culmination of this iterative approach, there should be no values or highlighting remaining in the HTS_TST_POS difference to adjust column of this section.
 
-**\
-**
-
-HTS: HTS_SELF
--------------
+## HTS: HTS_SELF
 
 **HTS_SELF (N):** Number of individual HIV self-test kits distributed.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_SELF (N)-BW-BY-1-1", "latex")
+schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_SELF (N)-BW-BY-1-1", "html")
+schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "html")
 ```
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF (FY22)** [HTS_SELF.T]
+-   **HTS_SELF (FY23)** \[HTS_SELF.T\]
 
 ### Instructions
 
-1.  Review FY21 targets for HTS_SELF included in the Data Pack,
-    reflecting data reported in DATIM.
+1.  Review FY22 targets for HTS_SELF included in the DataPack, reflecting data reported in DATIM.
 
-2.  Review and adjust the % Change in HTS_SELF to set the rate at which
-    FY22 targets for HTS_SELF should either increase or decrease from
-    FY21 Targets.
+2.  Review and adjust the % Change in HTS_SELF to set the rate at which FY23 targets for HTS_SELF should either increase or decrease from FY22 Targets.
 
-3.  Review modeled FY22 targets for HTS_SELF and return to step 2 to
-    adjust as needed. In the case services are planned in FY22 where
-    these were not provided in FY21, you may manually enter FY22 targets
-    in this column.
-    
+3.  Review modeled FY23 targets for HTS_SELF and return to step 2 to adjust as needed. In the case services are planned in FY23 where these were not provided in FY22, you may manually enter FY23 targets in this column.
+
 \elandscape
 
 \newpage

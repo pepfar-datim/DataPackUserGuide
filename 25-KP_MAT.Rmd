@@ -1,0 +1,65 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+\blandscape
+
+# KP_MAT
+
+**KP_MAT:** Number of people who inject drugs (PWID) on
+medication-assisted therapy (MAT) for at least 6 months
+
+```{r echo=FALSE, include=knitr::is_latex_output()}
+schema_table("KP_MAT-KP_MAT-E-H-1-1", "latex")
+
+schema_table("KP_MAT-KP_MAT-I-K-2-2", "latex")
+```
+
+```{r echo=FALSE, include=knitr::is_html_output()}
+schema_table("KP_MAT-KP_MAT-E-K-1-1", "html")
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **KP_MAT (FY23)** \[KP_MAT.T\]
+
+-   **Host Country KP_MAT_SUBNAT (FY23)** \[KP_MAT_SUBNAT.T\]
+
+### Instructions
+
+1.  Enter values for column "Host Country Estimated KP_MAT_SUBNAT
+    (FY22)", as available. Sources for this data should be approved by
+    the PPM and DUIT Liaison assigned to your Country.
+
+2.  Review "PEPFAR KP_MAT (FY22 Targets)", pulled from DATIM as
+    reference for historical context.
+
+3.  Review Observed PEPFAR Coverage of KP_MAT_SUBNAT (FY22 Targets),
+    calculated by dividing FY22 PEPFAR KP_MAT targets by Host Country
+    Estimated KP_MAT_SUBNAT (FY22).
+
+4.  Review "Targeted PEPFAR Coverage of KP_MAT_SUBNAT (FY23) (%)" which
+    will pull directly from the previous column for FY22 that was
+    calculated in the last step, but you may edit this as needed.
+
+5.  Review and adjust "Targeted Growth in KP_MAT (FY23) (%)". This will
+    be prepopulated at 0%, but you may adjust this as needed.
+
+6.  Review "KP_MAT (FY23)" which will be the product of "PEPFAR KP_MAT
+    (FY22 Targets)" multiplied against "Targeted Growth in KP_MAT (FY23)
+    (%)". In the case services are planned in FY23 where these were not
+    provided in FY22, you may manually enter FY23 targets in these
+    columns.
+
+7.  Review "Host Country KP_MAT_SUBNAT (FY23)" and adjust previous
+    assumptions as needed. The DataPack will model these targets based
+    upon FY23 PEPFAR KP_MAT targets and the Targeted PEPFAR Coverage of
+    KP_MAT_SUBNAT (FY23) (%).
+
+\elandscape
+
+\newpage

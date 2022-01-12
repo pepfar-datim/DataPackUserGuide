@@ -1,28 +1,33 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 \blandscape
 
-AGYW
-====
+# AGYW
 
-AGYW: AGYW_PREV
----------------
+## AGYW: AGYW_PREV
 
 **AGYW_PREV:** Number of active DREAMS beneficiaries that have started
 or completed any DREAMS service/intervention as of the end of the
 reporting period.
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("AGYW-AGYW_PREV-F-I-1-4", "latex")
+schema_table("AGYW-AGYW_PREV-F-I-1-5", "latex")
 
-schema_table("AGYW-AGYW_PREV-J-M-2-4", "latex")
+schema_table("AGYW-AGYW_PREV-J-M-2-5", "latex")
 
-schema_table("AGYW-AGYW_PREV-N-P-3-4", "latex")
+schema_table("AGYW-AGYW_PREV-N-P-3-5", "latex")
 
-schema_table("AGYW-AGYW_PREV-Q-S-4-4", "latex")
+schema_table("AGYW-AGYW_PREV-Q-S-4-5", "latex")
+
+schema_table("AGYW-AGYW_PREV-T-V-5-5", "latex")
 ```
 
 ```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("AGYW-AGYW_PREV-F-S-1-1", "html")
+schema_table("AGYW-AGYW_PREV-F-V-1-1", "html")
 ```
 
 ### DATIM Import
@@ -30,27 +35,27 @@ schema_table("AGYW-AGYW_PREV-F-S-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Denominator - Started or Completed any DREAMS Service**
-    [AGYW_PREV.D.T]
+    \[AGYW_PREV.D.T\]
 
--   **Numerator - Completed at least Primary Package** [AGYW_PREV.N.T]
+-   **Numerator - Completed at least Primary Package** \[AGYW_PREV.N.T\]
 
 ### Instructions
 
 1.  For historical context, review Host Country Estimated Female
-    Population for FY21, which is referenced from the Cascade tab.
+    Population for FY22, which is referenced from the Cascade tab.
 
 2.  Enter values for the Host Country Estimated Number of Vulnerable
     AGYW projected as of September 2021, as available. These are for
     reference and not used to model targets in proceeding steps.
 
-3.  For context, review FY22 targets for PrEP_NEW, PrEP_CURR, PP_PREV,
-    and HTS_TST, set in other tabs of the Data Pack.
+3.  For context, review FY23 targets for PrEP_NEW, PrEP_CT, PP_PREV,
+    HTS_TST_POS, and HTS_TST, set in other tabs of the DatatPack.
 
-4.  For additional context, review FY20 results for AGYW_PREV and
+4.  For additional context, review FY21 results for AGYW_PREV and
     Observed Percent Completion as reported in DATIM.
 
 5.  Review and adjust assumptions for Projected Net Change in Total
-    AGYW_PREV from FY20 Results (%). This is defaulted to 0%, but can be
+    AGYW_PREV from FY21 Results (%). This is defaulted to 0%, but can be
     adjusted as necessary. Red highlights indicate percentages over
     100%; yellow highlights indicate percentages less than 100% but not
     0%.
@@ -60,31 +65,29 @@ The following data points will be imported into DATIM from this section:
     highlights indicate percentages over 100%; yellow highlights
     indicate percentages less than 60%.
 
-7.  Review modeled FY22 targets for AGYW_PREV Denominator and Numerator,
+7.  Review modeled FY23 targets for AGYW_PREV Denominator and Numerator,
     and return to steps 1-6 to adjust values as necessary. See below for
     additional information.
 
-### AGYW_PREV Denominator (FY22)
+### AGYW_PREV Denominator (FY23)
 
-As COP 21 represents the first year in which targets will be set for
-AGYW_PREV, the process for arriving at these within the COP21 Data Pack
-has been kept purposefully simple.
-
-FY22 targets for AGYW_PREV Denominator are set as follows, rounding to
+FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
+```{=tex}
 \begin{center} ${AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\ (1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})$ \end{center}
-
+```
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
-### AGYW_PREV Numerator (FY22)
+### AGYW_PREV Numerator (FY23)
 
-FY22 Targets for AGYW_PREV Numerator are similarly modeled very simply
+FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
+```{=tex}
 \begin{center} ${AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t}$ \end{center}
-
+```
 \elandscape
 
 \newpage

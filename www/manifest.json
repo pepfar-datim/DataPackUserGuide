@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.1.1",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "01-COP22-Data-Pack-Overview.html": {
+      "checksum": "1f06d7b4801bfdd917fdf0c7647b3e83"
+    },
+    "02-Release-Notes.html": {
+      "checksum": "e04fa2d00f52a4914414a3b7945d18ca"
+    },
+    "03-Whats-New.html": {
+      "checksum": "c775aaae507013fa596f502b5a282240"
+    },
+    "04-Frequently-Asked-Questions.html": {
+      "checksum": "894030b28f03e99f22e8c7873387208a"
+    },
+    "05-Cheat_Sheet.html": {
+      "checksum": "3ac2533c80ac3458e961c70b1f62c916"
+    },
+    "06-How-To-Fill-Out-The-Data-Pack.html": {
+      "checksum": "1a5ca86b3b919a4dca1ff8594d7ea21c"
+    },
+    "07-How-To-Use-The-User-Manual.html": {
+      "checksum": "0d0c75762b7eab1af6aae06d07233b41"
+    },
+    "08-Spectrum.html": {
+      "checksum": "895d848aeb80f8d4fb3a9e6d3121255e"
+    },
+    "09-Prioritization.html": {
+      "checksum": "c24773b4422ef80746e78dfdb289b495"
+    },
+    "10-Cascade.html": {
+      "checksum": "7895b9bf4047338b5c182b2d68110c53"
+    },
+    "11-PMTCT.html": {
+      "checksum": "f8a61a88a8c406edbdf9778f5e1f99f0"
+    },
+    "12-EID.html": {
+      "checksum": "a0a06a30e1a6550c309473111aff4cf5"
+    },
+    "13-TB.html": {
+      "checksum": "5d2ef52f8d34b34bb4a1c644731f1507"
+    },
+    "14-VMMC.html": {
+      "checksum": "978ebccc4f806688829278bd92e47a95"
+    },
+    "15-KP.html": {
+      "checksum": "8ce3dce03be7087e7910afe3eacace6f"
+    },
+    "16-HTS.html": {
+      "checksum": "e43cfc48e10b615a9f073feb5922212b"
+    },
+    "17-CXCA.html": {
+      "checksum": "6a1fc259c17703453691a8e18148ef90"
+    },
+    "18-HTS_RECENT.html": {
+      "checksum": "9875d7b2c36bb70d72686bf8d11c65ec"
+    },
+    "19-TX_TB_PREV.html": {
+      "checksum": "1b73b1a3e25799f68a5bc769c94c4c2c"
+    },
+    "20-PP.html": {
+      "checksum": "d30e6856337963902b07af1283c6c8cf"
+    },
+    "21-OVC.html": {
+      "checksum": "dbce4bc70861c69376dc0cf23ab70373"
+    },
+    "22-GEND.html": {
+      "checksum": "33189eb73079e5dffa8f00a56ee4e48e"
+    },
+    "23-AGYW.html": {
+      "checksum": "2455eb63a636b1384d2aba4e36c26f57"
+    },
+    "24-PrEP.html": {
+      "checksum": "30d2c95afea552024012380a84fa14a1"
+    },
+    "25-KP_MAT.html": {
+      "checksum": "e1b5c1c30f16f4e64117904e5135abb1"
+    },
+    "26-KP-Validation.html": {
+      "checksum": "0473e0a5d234e36d7b7bd145d8dd32de"
+    },
+    "27-PSNUxIM.html": {
+      "checksum": "152fcc195794b157014857c25886283d"
+    },
+    "28-Self-service-app.html": {
+      "checksum": "f3e82162c1e53835dcd34df17f89d851"
+    },
+    "29-Appendix.html": {
+      "checksum": "d3c3811e6d0bc089cacd0a0b4277a09e"
+    },
+    "404.html": {
+      "checksum": "2f02f5ed66ead82f073e16f7f0f7d7ee"
+    },
+    "book_assets/anchor-sections-1.0.1/anchor-sections.css": {
+      "checksum": "b3d5239b4e9c555e9810348a88a2128a"
+    },
+    "book_assets/anchor-sections-1.0.1/anchor-sections.js": {
+      "checksum": "fe670a73ed88b0ae14b690cb867853d9"
+    },
+    "book_assets/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf": {
+      "checksum": "b06871f281fee6b241d60582ae9369b9"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-bookdown.css": {
+      "checksum": "7a255c6e20aebf9257c9bf146fb1679d"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-clipboard.css": {
+      "checksum": "a3fc9ad44a0f16565ba87a08e6d46d11"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-fontsettings.css": {
+      "checksum": "1d45567d3f0c7ca73314fb641d7dd33b"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-highlight.css": {
+      "checksum": "20951ad7e4c06c3c6d071e0fa96ad515"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-search.css": {
+      "checksum": "b678dbb49c997ed5bcb5487b1abbc1d2"
+    },
+    "book_assets/gitbook-2.6.7/css/plugin-table.css": {
+      "checksum": "074a3f47766f330d727af633d9caf938"
+    },
+    "book_assets/gitbook-2.6.7/css/style.css": {
+      "checksum": "584e0bd5524a67891d2fb98c2478a062"
+    },
+    "book_assets/gitbook-2.6.7/js/app.min.js": {
+      "checksum": "d4d1263742d2a996e3b8a505e25e6c60"
+    },
+    "book_assets/gitbook-2.6.7/js/clipboard.min.js": {
+      "checksum": "df910626677a47c1a941eaa023449901"
+    },
+    "book_assets/gitbook-2.6.7/js/jquery.highlight.js": {
+      "checksum": "ceda49e94b8836a623e9b164f2f057b7"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-bookdown.js": {
+      "checksum": "9d8a5259144b4c60c86fb88be12bd355"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-clipboard.js": {
+      "checksum": "4fcbe468ef0992dacdc11bf4155f0f5a"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-fontsettings.js": {
+      "checksum": "e349b3dd12295fc3cfb8ed96d9f4ddf7"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-search.js": {
+      "checksum": "4acb5527d46298f388ef012ab871c688"
+    },
+    "book_assets/gitbook-2.6.7/js/plugin-sharing.js": {
+      "checksum": "2e31556533a803f53020008691b9eef4"
+    },
+    "book_assets/header-attrs-2.11/header-attrs.js": {
+      "checksum": "44e08c1b647c0f3f4c1dc4883dec686a"
+    },
+    "book_assets/jquery-3.6.0/jquery-3.6.0.min.js": {
+      "checksum": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
+    },
+    "book_assets/kePrint-0.0.1/kePrint.js": {
+      "checksum": "c180876079fe92790e26874e90b42494"
+    },
+    "book_assets/lightable-0.0.1/lightable.css": {
+      "checksum": "7eeca54c915fb4bede56e3350630c6a7"
+    },
+    "book_assets/tabwid-1.0.0/tabwid.css": {
+      "checksum": "178aa8c162aa684dc1b833e93b1e6221"
+    },
+    "css/style.css": {
+      "checksum": "0685a61954d17298eb8a27d7f3e4e8ae"
+    },
+    "Data-Pack-User-Guide.pdf": {
+      "checksum": "f8057344e0fbe85c31a40b07209c6560"
+    },
+    "images/image12.png": {
+      "checksum": "c4ebf79e5572f4b9246899815b7ec077"
+    },
+    "images/image13.png": {
+      "checksum": "bf7376593073247ec3faacdeb8d23efb"
+    },
+    "images/image15.png": {
+      "checksum": "d2d42e36d82e52e91e5f2c4d032248da"
+    },
+    "images/image16.png": {
+      "checksum": "e59115e8a6499c3253a5733926574032"
+    },
+    "images/image17.png": {
+      "checksum": "00d90e19e7e564a44236a6fa7cd18eb3"
+    },
+    "images/image18.png": {
+      "checksum": "a8bb371137a4035b41f7cd6d01f5160d"
+    },
+    "images/image4.png": {
+      "checksum": "9b5de9fe2314ade37571cd2c2656ce34"
+    },
+    "images/image5.png": {
+      "checksum": "55caa2cb7786894d8bab04fc6cd183c8"
+    },
+    "images/image9.png": {
+      "checksum": "1c38c0d314109ddb132230ba1706748a"
+    },
+    "images/UG_Sec 1-6 How Does Everything Connect.png": {
+      "checksum": "dd17dcc68d4b2bbef823275bab320318"
+    },
+    "index.html": {
+      "checksum": "274bf6b67198e6b820f1f8d41e653c81"
+    },
+    "reference-keys.txt": {
+      "checksum": "1023f545c68c012fdc29d115e5cd4214"
+    },
+    "search_index.json": {
+      "checksum": "3af8cee23df29b16ffb7e6a756bc4603"
+    }
+  },
+  "users": null
+}

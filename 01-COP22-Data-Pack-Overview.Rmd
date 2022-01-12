@@ -5,7 +5,7 @@ editor_options:
 ---
 
 ```{r setup, echo=FALSE}
-suppressPackageStartupMessages({
+suppressWarnings(suppressPackageStartupMessages({
   library(magrittr)
   library(dplyr)
   library(stringr)
@@ -15,7 +15,7 @@ suppressPackageStartupMessages({
   library(datapackr)
   library(knitr)
   library(kableExtra)
-})
+}))
 
 letter2number <- function(x) {
   col_ref <- stringr::str_to_upper(x)
@@ -127,25 +127,38 @@ schema_table <- function(table_reference, knit_type){
     tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
   
   if (knit_type == "latex") {
-    t %>%
-      flextable::flextable() %>%
-      flextable::align(part = "all", align = "center") %>%
-      flextable::align(j = 1, part = "body", align = "right") %>%
-      flextable::void(j = 1, part = "header") %>%
-      flextable::bold(part = "header") %>%
-      flextable::bg(part = "header", bg = "#E6DFA7") %>%
-      flextable::bg(part = "body",
-                    bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
-      flextable::hline_top(
-        part = "header",
-        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-      flextable::hline_bottom(
-        part = "header",
-        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-      flextable::border(
-        border = officer::fp_border(color = "#E5E7E9", width = 1))
+    t %<>%
+      knitr::kable(
+        format = "latex",
+        escape = TRUE,
+        booktabs = TRUE
+      ) %>%
+      kableExtra::kable_styling(font_size = 12,
+                                latex_options="scale_down") %>%
+      kableExtra::column_spec(1:(col_end-col_start+1),
+                              width=paste0(toString(7.5/(col_end-col_start+1)),
+                                           "in")) %>%
+      kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
+    # flextable::flextable() %>%
+    # flextable::align(part = "all", align = "center") %>%
+    # flextable::align(j = 1, part = "body", align = "right") %>%
+    # flextable::void(j = 1, part = "header") %>%
+    # flextable::bold(part = "header") %>%
+    # flextable::bg(part = "header", bg = "#E6DFA7") %>%
+    # flextable::bg(part = "body",
+    #               bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
+    # flextable::hline_top(
+    #   part = "header",
+    #   border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+    # flextable::hline_bottom(
+    #   part = "header",
+    #   border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+    # flextable::border(
+    #   border = officer::fp_border(color = "#E5E7E9", width = 1)) %>%
+    # flextable::set_table_properties(width = 1, layout = "autofit") %>%
+    # flextable::autofit()
   } else {
-    test <- t %>%
+    t %<>%
       tibble::as_tibble() %>%
       tibble::column_to_rownames(var = "name") %>%
       knitr::kable(
@@ -162,7 +175,7 @@ schema_table <- function(table_reference, knit_type){
                            extra_css = "border:1px solid lightgrey;") %>%
       kableExtra::scroll_box(width = "100%")
   }
-
+  
   return(t)
 }
 
@@ -190,13 +203,13 @@ Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
 This tool supports calculation of targets based on expected treatment
 coverage rates by type of PSNU and population prioritization:
 
-    -   Attained
+-   Attained
 
-    -   Scale-up: Aggressive
+-   Scale-up: Aggressive
 
-    -   Scale-up: Saturation
+-   Scale-up: Saturation
 
-    -   Sustained
+-   Sustained
 
 Prioritizations for PSNUs are arebased on COP Guidance section 7.3.2.ba.
 These determine for a given PSNU programmatically what HIV treatment and
@@ -237,20 +250,20 @@ based on different aspects of the DataPack that worked well and others
 that did not during COP21 target stetting:
 
 -   New Cascade Approach that will flow from Program Viral Load
-    Suppression to testing to allow for countries closer or at Epi
-    Control to more easily set targets, based on Section 7 of COP22
-    Guidance.
+Suppression to testing to allow for countries closer or at Epi
+Control to more easily set targets, based on Section 7 of COP22
+Guidance.
 
 -   Integration of new SNS Modalities for HTS and HTS_Recent.
 
 -   Targets will no longer be set for PrEP_CURR, but instead will be set
-    for a replacement indicator of PrEP_CT.
+for a replacement indicator of PrEP_CT.
 
 -   50+ finer age bands across the clinical cascade. These will be
-    aggregated to 50+ upon DATIM import for all but TX_CURR.
+aggregated to 50+ upon DATIM import for all but TX_CURR.
 
 -   **PSNUxIM tab structure** that will again handle de-duplication and
-    IM allocation.
+IM allocation.
 
 ## Data Flow and Review Process to COP22 Submission
 
@@ -262,108 +275,76 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 ***DataPack Review***
 
-+--------+--------+--------+--------+--------+--------+
-|        | Single | Single | Single | OUs at | R      |
-|        | OU     | OU     | OU     | Epi    | e      |
-|        | Track: | Track: | Track: | C      | gional |
-|        | Group  | Group  | Group  | ontrol | /      |
-|        | 1      | 2      | 3      |        | C      |
-|        |        |        |        |        | ountry |
-|        |        |        |        |        | Pair   |
-|        |        |        |        |        | Track  |
-+========+:======:+:======:+:======:+========+:======:+
-| 1st    | Feb 28 | Mar 7  | Mar 14 | Mar 7  | Feb 28 |
-| Draft  |        |        |        | or     |        |
-| Tool S |        |        |        |        |        |
-| ub     |        |        |        | Mar 14 |        |
-| m      |        |        |        |        |        |
-| ission |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| COP    | Mar    | Mar    | Mar    | Mar    | Mar    |
-| M      | 7-11   | 14-18  | 22-25  | 14-18  | 22-25  |
-| eeting |        |        |        | or Mar |        |
-|        |        |        |        | 22-25  |        |
-+--------+--------+--------+--------+--------+--------+
-| Mi     |        |        |        |        |        |
-| d      |        |        |        |        |        |
-| -point |        |        |        |        |        |
-| Tool   |        |        |        |        |        |
-| check  |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| Tools  | Apr 4  | Apr 11 | Apr 18 | Apr 11 | Apr 18 |
-| Due    |        |        |        | or     |        |
-| for    |        |        |        |        |        |
-| Final  |        |        |        | Apr 18 |        |
-| Review |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| A dd   |        |        |        |        | R      |
-| i      |        |        |        |        | olling |
-| tional |        |        |        |        | Each   |
-| To uc  |        |        |        |        | Monday |
-| h      |        |        |        |        |        |
-| points |        |        |        |        |        |
-| /      |        |        |        |        |        |
-| R      |        |        |        |        |        |
-| eviews |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| Tools  | Apr 11 | Apr 18 | Apr 25 | Apr 18 | Apr 25 |
-| Su     |        |        |        | or     |        |
-| b      |        |        |        |        |        |
-| mitted |        |        |        | Apr 23 |        |
-| for    |        |        |        |        |        |
-| Upload |        |        |        |        |        |
-| to     |        |        |        |        |        |
-| DATI   |        |        |        |        |        |
-| M      |        |        |        |        |        |
-| /FI-NG |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| COP21  | Apr 19 | Apr 22 | Apr 29 | Apr 22 | Apr 29 |
-| S ub   |        |        |        | or     |        |
-| m      |        |        |        |        |        |
-| ission |        |        |        | Apr 29 |        |
-| Due    |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
++-----------------+--------+--------+--------+--------------+--------------------+
+|                 | Single | Single | Single | OUs at       | Regional/          |
+|                 | OU     | OU     | OU     | Epi          | Country Pair Track |
+|                 | Track: | Track: | Track: | Control      |                    |
+|                 | Group  | Group  | Group  |              |                    |
+|                 | 1      | 2      | 3      |              |                    |
++=================+:======:+:======:+:======:+:============:+:==================:+
+| 1st Draft Tool  | Feb 28 | Mar 7  | Mar 14 | Mar 7 or     | Feb 28             |
+| Submission      |        |        |        | Mar 14       |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| COP Meeting     | Mar    | Mar    | Mar    | Mar 14-18 or | Mar 22-25          |
+|                 | 7-11   | 14-18  | 22-25  | Mar 22-25    |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| Mid-point Tool  |        |        |        |              |                    |
+| Check           |        |        |        |              |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| Tools Due for   | Apr 4  | Apr 11 | Apr 18 | Apr 11       | Apr 18             |
+| Final Review    |        |        |        | or Apr 18    |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| Additional      |        |        |        |              | Rolling Each       |
+| Touchpoints/    |        |        |        |              | Monday             |
+| Reviews         |        |        |        |              |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| Tools Submitted | Apr 11 | Apr 18 | Apr 25 | Apr 18       | Apr 25             |
+| for Upload to   |        |        |        | or Apr 23    |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
+| COP21           | Apr 19 | Apr 22 | Apr 29 | Apr 22       | Apr 29             |
+| Submission Due  |        |        |        | or Apr 29    |                    |
++-----------------+--------+--------+--------+--------------+--------------------+
 
 **Submission Process**
 
 For each of the below submissions, the following process will occur:
 
 -   Country Teamspre-validates their DataPack submission in the DataPack
-    Self-Service App (available at <https://apps.datim.org/datapack/>).
+Self-Service App (available at <https://apps.datim.org/datapack/>).
 
 -   Country Team uses DataPack Self-Service App to sync data with PAW
-    Dossiers.
+Dossiers.
 
 -   Country Team saves DataPack to SharePoint under the OU's HQ
-    Collaboration > COP 2022 - FY 2023 > Guidance, Tools, and Resources
-    folder.
+Collaboration > COP 2022 - FY 2023 > Guidance, Tools, and Resources
+folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
 -   A link to the DataPack file saved in SharePoint
 
 -   Confirmation that this file has been pre-validated in the DataPack
-    Self-Service App
+Self-Service App
 
 -   Confirmation that this file has been sent to PAW via the DataPack
-    Self-Service App
+Self-Service App
 
 -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
-    members that should be aware of ongoing review and discussions.
+members that should be aware of ongoing review and discussions.
 
 -   Once this ticket is received, the DataPack Support Team will confirm
-    all the above has occurred and send additional instructions as
-    needed
+all the above has occurred and send additional instructions as
+needed
 
 -   The PPM reviews the ticket/email thread and confirms the correct
-    individuals have all been copied.
+individuals have all been copied.
 
 -   The assigned PPM and the assigned DUIT Liaison use both the DataPack
-    Self-Service App and the PAW COP Dossiers to validate and review the
-    DataPack, noting any feedback in the ticket/email thread.
+Self-Service App and the PAW COP Dossiers to validate and review the
+DataPack, noting any feedback in the ticket/email thread.
 
 -   The assigned Chair should also review all feedback on the ticket
-    thread and any additional comments as needed.
+thread and any additional comments as needed.
 
 As is possible, all the above should occur within a 24 hour turnaround
 from the initial submission of a DataPack from a Country Team. While
@@ -376,7 +357,7 @@ should use the same thread/ticket to allow for easy coordination.
 **Submission 1**
 
 -   Validate high-level strategic planning direction aligns with the
-    vision set by the PLL.
+vision set by the PLL.
 
 -   Highlight any areas for technical assistance.
 
@@ -392,38 +373,38 @@ addition of more data to the PSNUxIM tab.
 **Submission 2**
 
 -   Confirm resolution of any issues flagged during your first
-    submission.
+submission.
 
 -   Confirm no discrepancies between targets modeled in your submitted
-    DataPack and any COP Meeting presentations to date or other
-    high-level discussions had with PPMs and Chairs.
+DataPack and any COP Meeting presentations to date or other
+high-level discussions had with PPMs and Chairs.
 
 -   Review the PSNUxIM tab and address issues related to IM and DSD-TA
-    allocation, and deduplication.
+allocation, and deduplication.
 
 **Submission 3**
 
 -   Again confirm DataPack alignment with all high-level decisions and
-    any final presentations given by the Country Team.
+any final presentations given by the Country Team.
 
 -   Confirm resolution of any issues flagged during the second
-    submission.
+submission.
 
 -   Track down and resolve any last bugs and issues in seen in the
-    DataPack
+DataPack
 
 -   Confirm the DataPack is as near final as possible
 
 **Final Submission**
 
 -   Confirm all targets modeled in the DataPack are ready for submission
-    to DATIM.
+to DATIM.
 
 -   Secure Interagency Government sign-off for import of your submitted
-    DataPack to DATIM.
+DataPack to DATIM.
 
 -   Note authority to waive any lingering validation issues flagged by
-    the DataPack Self-Service App.
+the DataPack Self-Service App.
 
 Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk
 thread/ticket, the DataPack Support Team will move forward with
@@ -441,7 +422,7 @@ The DataPack will be posted on PEPFAR SharePoint:
 [www.pepfar.net](http://www.pepfar.net).
 
 -   The file path will be OU > Country Name > HQ Collaboration > COP
-    2022 -- FY2023 > Guidance, Tools, and Resources.
+2022 -- FY2023 > Guidance, Tools, and Resources.
 
 -   The file name will be "Datapack_CountryName_20220108".
 
@@ -452,55 +433,55 @@ below. Upon downloading the DataPack, the PSNUxIM tab will appear as a
 blank sheet, but will be generated by the self-service validation app
 after you submit your preliminary DataPack.
 
-    -   Introduction
+-   Introduction
 
-    -   Home
+-   Home
 
-    -   Host Country Planning Data
+-   Host Country Planning Data
 
-    -   Spectrum
+-   Spectrum
 
-    -   Prioritization
+-   Prioritization
 
-    -   DATIM MER 2.5 Indicator Data Elements
+-   DATIM MER 2.5 Indicator Data Elements
 
-    -   Cascade
+-   Cascade
 
-    -   PMTCT
+-   PMTCT
 
-    -   EID
+-   EID
 
-    -   TB
+-   TB
 
-    -   VMMC
+-   VMMC
 
-    -   KP
+-   KP
 
-    -   HTS
+-   HTS
 
-    -   CXCA
+-   CXCA
 
-    -   HTS_RECENT
+-   HTS_RECENT
 
-    -   TX_TB_PREV
+-   TX_TB_PREV
 
-    -   PP
+-   PP
 
-    -   OVC
+-   OVC
 
-    -   GEND
+-   GEND
 
-    -   AGYW
+-   AGYW
 
-    -   PrEP
+-   PrEP
 
-    -   KP_MAT
+-   KP_MAT
 
-    -   KP Validation
+-   KP Validation
 
-    -   Mechanism Mapping
+-   Mechanism Mapping
 
-    -   PSNU x IM
+-   PSNU x IM
 
 \newpage
 
@@ -588,25 +569,25 @@ discovered that may need to be addressed in DATIM, follow the below
 procedure:
 
 1.  Raise specific issues with historic data to your PPM and DUIT
-    Liaison. Determine together whether any issue identified requires
-    updating values in DATIM.
+Liaison. Determine together whether any issue identified requires
+updating values in DATIM.
 
 2.  It maybe that together with your PPM and DUIT Liaison you decide
-    that changes to historic values are not necessary in DATIM, but
-    still necessary in the DataPack. This is an extraordinary
-    circumstance and must have approval from PRIME/DUIT leadership via
-    your Liaison to allow. If approved, you may make changes directly in
-    the related column of the DataPack.
+that changes to historic values are not necessary in DATIM, but
+still necessary in the DataPack. This is an extraordinary
+circumstance and must have approval from PRIME/DUIT leadership via
+your Liaison to allow. If approved, you may make changes directly in
+the related column of the DataPack.
 
 3.  If it is the case that DATIM values should be updated, follow the
-    usual process for OPU Target changes, requesting all necessary
-    approvals to initiate and expedite this process during COP.
+usual process for OPU Target changes, requesting all necessary
+approvals to initiate and expedite this process during COP.
 
 4.  Once changes are aprroved, either through an OPU for targets, or
-    through data change request for results, you can enter the new
-    values into the related column of the DataPack yourself. If you wish
-    to request a new DataPack, you may do so, but will have to start the
-    DataPack process afresh. For either of these routes, reach out to
-    the DataPack Systems Team via Zendesk for support.
+through data change request for results, you can enter the new
+values into the related column of the DataPack yourself. If you wish
+to request a new DataPack, you may do so, but will have to start the
+DataPack process afresh. For either of these routes, reach out to
+the DataPack Systems Team via Zendesk for support.
 
 \newpage

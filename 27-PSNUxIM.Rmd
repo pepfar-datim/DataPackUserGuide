@@ -178,13 +178,13 @@ self-service app.
 knitr::include_graphics("./images/image15.png")
 ```
 
-```{=tex}
+
 \begin{center}
 
 \includegraphics[width=5in]{./images/image15.png}
 
 \end{center}
-```
+
 ## Note on Peace Corps Mechanisms
 
 For the COP21 planning cycle, Peace Corps will transition from reporting

@@ -85,12 +85,12 @@ schema_table("KP-KP_ESTIMATES-E-G-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country Est. Total Size (FY22)** \[KP_ESTIMATES.Total.T\]
+-   **Host Country Est. Total Size (FY22)** $KP\_ESTIMATES.Total.T$
 
--   **Host Country Est. KPLHIV (FY22)** \[KP_ESTIMATES.Pos.T\]
+-   **Host Country Est. KPLHIV (FY22)** $KP\_ESTIMATES.Pos.T$
 
 -   **Host Country Est. HIV Prevalence (FY22) (%)**
-    \[KP_ESTIMATES.Prev.T\]
+    $KP\_ESTIMATES.Prev.T$
 
 ### Instructions
 
@@ -126,7 +126,7 @@ schema_table("KP-PrEP_CT-H-I-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CT - KeyPop** (FY23) \[PrEP_CT.KP.T\]
+-   **PrEP_CT - KeyPop** (FY23) $PrEP\_CT.KP.T$
 
 ### Instructions
 
@@ -167,7 +167,7 @@ schema_table("KP-PrEP_NEW-J-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_NEW - KeyPop (FY23)** \[PrEP_NEW.KP.T\]
+-   **PrEP_NEW - KeyPop (FY23)** $PrEP\_NEW.KP.T$
 
 ### Instructions
 
@@ -204,7 +204,7 @@ schema_table("KP-KP_PREV-L-M-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_PREV (FY23)** \[KP_PREV.T\]
+-   **KP_PREV (FY23)** $KP\_PREV.T$
 
 ### Instructions
 
@@ -232,7 +232,7 @@ schema_table("KP-TX_CURR-N-Q-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR - KeyPop (FY23)** \[TX_CURR.KP.T\]
+-   **TX_CURR - KeyPop (FY23)** $TX\_CURR.KP.T$
 
 ### Instructions
 
@@ -273,7 +273,7 @@ schema_table("KP-TX_NEW-R-V-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW - KeyPop (FY23)** \[TX_NEW.KP.T\]
+-   **TX_NEW - KeyPop (FY23)** $TX\_NEW.KP.T$
 
 ### Instructions
 
@@ -327,9 +327,9 @@ schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) - KeyPop (FY23)** \[TX_PVLS.D.KP.T\]
+-   **TX_PVLS (D) - KeyPop (FY23)** $TX\_PVLS.D.KP.T$
 
--   **TX_PVLS (N) - KeyPop (FY23)** \[TX_PVLS.N.KP.T\]
+-   **TX_PVLS (N) - KeyPop (FY23)** $TX\_PVLS.N.KP.T$
 
 ### Instructions
 
@@ -381,9 +381,9 @@ schema_table("KP-HTS_TST-AB-AJ-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST KeyPop, Positive (FY23)** \[HTS_TST.KP.Pos.T\]
+-   **HTS_TST KeyPop, Positive (FY23)** $HTS\_TST.KP.Pos.T$
 
--   **HTS_TST KeyPop, Negative (FY23)** \[HTS_TST.KP.Neg.T\]
+-   **HTS_TST KeyPop, Negative (FY23)** $HTS\_TST.KP.Neg.T$
 
 ### Instructions
 
@@ -437,7 +437,7 @@ The following data points will be imported into DATIM from this section:
 
 ## KP: HTS_RECENT
 
-**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged $\geq$ 15
 years with a test for recent infection result during the reporting
 period.
 
@@ -453,7 +453,7 @@ schema_table("KP-HTS_RECENT-AK-AL-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_RECENT - KeyPop (FY23)** \[HTS_RECENT.KP.T\]
+-   **HTS_RECENT - KeyPop (FY23)** $HTS\_RECENT.KP.T$
 
 ### Instructions
 
@@ -489,7 +489,7 @@ schema_table("KP-HTS_SELF-AM-AN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF - KeyPop (FY23)** \[HTS_SELF.KP.T\]
+-   **HTS_SELF - KeyPop (FY23)** $HTS\_SELF.KP.T$
 
 ### Instructions
 

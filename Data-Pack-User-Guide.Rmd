@@ -512,13 +512,12 @@ after you submit your preliminary DataPack.
 knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{images/UG_Sec 1-6 How Does Everything Connect.png}
 
 \end{center}
-```
+
 \newpage
 
 ## Elements of a Tab
@@ -527,13 +526,12 @@ knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 knitr::include_graphics("./images/image4.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image4.png}
 
 \end{center}
-```
+
 \newpage
 
 ## How to Navigate a DataPack Tab
@@ -542,13 +540,12 @@ knitr::include_graphics("./images/image4.png")
 knitr::include_graphics("./images/image5.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image5.png}
 
 \end{center}
-```
+
 \elandscape
 
 \newpage
@@ -572,13 +569,13 @@ suggestions as well.
 knitr::include_graphics("./images/image9.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=4.3in]{./images/image9.png}
 
 \end{center}
-```
+
+
 ## Adjustments to Historic Targets and Results
 
 Throughout the DataPack, historic targets and results have been provided
@@ -656,7 +653,7 @@ The introduction of 65+ age bands for TX_CURR targets this year will be visible 
 
 -   50-54: 42%
 
--   55-59: 35% 
+-   55-59: 35%
 
 -   60-64 14%
 
@@ -770,13 +767,13 @@ Remember that you can only change the sea green columns in the DP. The following
 knitr::include_graphics("./images/image16.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image16.png}
 
 \end{center}
-```
+
+
 **Goal: To reduce Column AU "Positives" from Post ANC1**
 
 -   This change will most likely only have a small impact on your total positives
@@ -794,13 +791,13 @@ knitr::include_graphics("./images/image16.png")
 knitr::include_graphics("./images/image17.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image17.png}
 
 \end{center}
-```
+
+
 ### TB tab - decrease positives from TB
 
 **Goal: To reduce column Q "Newly Tested, Positive" which feeds into the total HTS_TST_POS values that are too high**
@@ -821,13 +818,12 @@ knitr::include_graphics("./images/image17.png")
 knitr::include_graphics("./images/image18.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image18.png}
 
 \end{center}
-```
+
 
 <!--chapter:end:05-Cheat_Sheet.Rmd-->
 
@@ -839,26 +835,24 @@ knitr::include_graphics("./images/image18.png")
 knitr::include_graphics("./images/image12.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image12.png}
 
 \end{center}
-```
+
 \newpage
 
 ```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
 knitr::include_graphics("./images/image13.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image13.png}
 
 \end{center}
-```
+
 \elandscape
 
 \newpage
@@ -970,7 +964,7 @@ schema_table("Prioritization-Prioritization-B-E-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **SNU Prioritization (FY23)** \[IMPATT.PRIORITY_SNU.T\]
+-   **SNU Prioritization (FY23)** $IMPATT.PRIORITY\_SNU.T$
 
 ### Instructions
 
@@ -1077,38 +1071,38 @@ In specific, the Host Country Context section of the Cascade tab
 provides space for reflecting estimates from either Spectrum or an
 alternative approved source for the following data:
 
--   **Host Country Estimated Population (FY22) \[POP_EST.T_1\]**:
+-   **Host Country Estimated Population (FY22)** $POP\_EST.T\_1$:
     Estimated population, projected as of September 2022.
 
--   **Host Country Estimated PLHIV (FY22) \[PLHIV.T_1\]:** Estimated
+-   **Host Country Estimated PLHIV (FY22)** $PLHIV.T\_1$: Estimated
     number of people living with HIV, projected as of September 2022.
 
--   **Host Country Estimated HIV Prevalence (FY22) (%)
-    \[HIV_PREV.T_1\]**: Estimated HIV Prevalence, projected as of
+-   **Host Country Estimated HIV Prevalence (FY22) (%)**
+    $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of
     September 2022.
 
--   **Host Country Projected Incidence Rate (FY22) (%)
-    \[Incidence_SUBNAT.Rt.T_1\]**:
+-   **Host Country Projected Incidence Rate (FY22) (%)**
+    $Incidence\_SUBNAT.Rt.T\_1$:
 
--   **Host Country Projected New Infections (FY23)
-    \[NEW_INFECTIONS_SUBNAT.T_1\]:**
+-   **Host Country Projected New Infections (FY23)**
+    $NEW\_INFECTIONS\_SUBNAT.T\_1$:
 
--   **Host Country PLHIV Diagnosed (FY22) \[DIAGNOSED_SUBNAT.T_1\]:**
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED\_SUBNAT.T\_1$:
 
--   **Host Country Observed TX_CURR_SUBNAT (FY21)
-    \[TX_CURR_SUBNAT.R\]:** Observed/actual total number of PLHIV
+-   **Host Country Observed TX_CURR_SUBNAT (FY21)**
+    $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV
     receiving ART as of September 2021.
 
--   **Host Country Estimated TX_CURR_SUBNAT (FY22)
-    \[TX_CURR_SUBNAT.T_1\]:** Estimated number of PLHIV receiving ART,
+-   **Host Country Estimated TX_CURR_SUBNAT (FY22)**
+    $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART,
     projected as of September 2022.
 
--   **Host Country Est. ART Patients Tested for VLS (FY22)
-    \[VL_TESTING_SUBNAT.T_1\]:** Estimated number of ART Patients who
+-   **Host Country Est. ART Patients Tested for VLS (FY22)**
+    $VL\_TESTING\_SUBNAT.T\_1$: Estimated number of ART Patients who
     have been tested, PEPFAR projected as of September 2022.
 
 -   **Host Country Estimated Virally Suppressed ART Patients
-    (FY22)\[VL_SUPPRESSION_SUBNAT.T_1\]**: Estimated PLHIV on ART and
+    (FY22)**$VL\_SUPPRESSION\_SUBNAT.T\_1$: Estimated PLHIV on ART and
     virally suppressed, projected as of September 2022.
 
 ### DATIM Import
@@ -1280,8 +1274,8 @@ those lost to follow-up) to be added to host country ART totals.
 
 The following data points will be imported into DATIM from this section:
 
--   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)
-    \[**VL_SUPPRESSED.T\]
+-   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)**
+    $VL\_SUPPRESSED.T$
 
 ### Instructions
 
@@ -1329,16 +1323,19 @@ estimate of Host Country PopVLS Coverage. To calculate the estimated
 Host Country PopVLS Coverage for FY22 (i.e., projected as of September
 2022), the Data Pack uses the following formula:
 
-```{=tex}
-\begin{center} $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ \end{center}
-```
+\begin{center}
+
+$\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ 
+
+\end{center}
+
 In the case that PEPFAR's reported TX_CURR results for FY20 exceed the
 reported Host Country Observed TX_CURR_SUBNAT for FY20, the following
 function will be used to calculate ART Coverage instead of the above:
 
-```{=tex}
+
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
-```
+
 Reviewing and understanding the PopVLS Coverage estimate arrived at in
 this column is critical for much of the rest of the Data Pack. In
 particular, this column is later instrumental in determining the
@@ -1367,9 +1364,8 @@ denominator in the Data Pack calculation is Host Country Estimated PLHIV
 instead of only those PLHIV who know their HIV Status, this column
 should be the equivalent of:
 
-```{=tex}
 \begin{center} $(95\%\ of\ PLHIV\ know\ their\ HIV\ status)\ \  \times \ (95\%\ of\ PLHIV\ who\ know\ their\ status\ are\ on\ ART)$ \end{center}
-```
+
 However, in cases where baseline PopVLS Coverage may be greater than
 95%, baseline PopVLS Coverage will be used instead of 95%.
 
@@ -1390,15 +1386,15 @@ though should be coordinated with PPMs and DUIT Liaisons.
 Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23) is set as follows
 (rounded to the nearest integer):
 
-```{=tex}
+
 \begin{center} ${TX\_ CURR\_ SUBNAT}_{t}\  = \ \text{PLHIV}_{t - 1}\  \times \ \ Targeted\ Host\ Country\ ART\ Coverage$ \end{center}
-```
+
 Based on this target, Targeted Host Country VLS_NET_NEW_SUBNAT (FY23) is
 set as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ {TX\_ CURR\_ SUBNAT}_{t - 1}$ \end{center}
-```
+
 In performing this calculation, the Data Pack also compares projected
 FY21 Host Country TX_CURR_SUBNAT values reported in the Data Pack
 against FY21 PEPFAR TX_CURR targets as contained in DATIM. If PEPFAR
@@ -1406,9 +1402,9 @@ targets exceed Host Country projected TX_CURR_SUBNAT values for FY21,
 Targeted Host Country TX_NET_NEW_SUBNAT for FY22 is instead calculated
 as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ \frac{{PEPFAR\ TX\_ CURR}_{t - 1}}{{PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ CURR\_ SUBNAT\ }_{t - 1}}$ \end{center}
-```
+
 For those using Spectrum as their source for TX_CURR_SUBNAT projections,
 this scenario is rare because of incorporation of PEPFAR TX_CURR targets
 into Spectrum modeling. However, it may be possible to see discrepancies
@@ -1448,7 +1444,7 @@ schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (N): Routine (FY23)** \[TX_PVLS.N.Routine.T\]
+-   **TX_PVLS (N): Routine (FY23)** $TX\_PVLS.N.Routine.T$
 
 ### Instructions
 
@@ -1483,9 +1479,8 @@ indicator are set only for Routine Viral Load testing.
 Within the Data Pack, TX_PVLS Numerator targets for Routine Viral Load
 Testing are set as follows, rounded to the nearest integer:
 
-```{=tex}
 \begin{center} ${TX\_ PVLS.N.Routine}_{t}\  = \ {TX\_ PVLS.D.Routine}_{t}\  \times \ \text{Targeted\ VL\ Suppression\ Rate}_{t}$ \end{center}
-```
+
 ### VL_SUPPRESSION_SUBNAT (FY22)
 
 In conjunction with allowing import and update of FY21 targets in DATIM
@@ -1493,9 +1488,9 @@ for VL_SUPPRESSION_SUBNAT, the Data Pack also allows import of FY22
 targets for this indicator. These are modeled within the Data Pack as
 follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ \frac{{TX\_ PVLS.N.Routine}_{t}}{{PEPFAR\ Coverage\ of\ Host\ Country\ VL\_ SUPPRESSION\_ SUBNAT}_{t}}$ \end{center}
-```
+
 ## Cascade: TX_PVLS (D)
 
 **TX_PVLS (D):** Number of ART patients with a Viral Load (VL) result
@@ -1514,7 +1509,7 @@ schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D): Routine (FY23)** \[TX_PVLS.D.Routine.T\]
+-   **TX_PVLS (D): Routine (FY23)** $TX\_PVLS.D.Routine.T$
 
 ### Instructions
 
@@ -1538,9 +1533,9 @@ planning.
 Within the Data Pack, TX_PVLS Denominator targets for Routine Viral Load
 Testing are set as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
-```
+
 Note that no retention rates are applied against either TX_NEW~t~ nor
 TX_CURR~t-1~ , reflecting the goal that all individuals on ART should be
 tested for viral load suppression, no matter whether they may in the
@@ -1573,7 +1568,7 @@ No Targets will be imported to DATIM from this section.
 ## Cascade: TX_NEW
 
 **TX_NEW:** Number of adults and children newly enrolled on
-antiretroviral therapy (ART). \[Part 1 of 2\]
+antiretroviral therapy (ART). $Part 1 of 2$
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
@@ -1587,7 +1582,7 @@ schema_table("Cascade-TX_NEW-BM-BN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW (FY22)** \[TX_NEW.T\]
+-   **TX_NEW (FY22)** $TX\_NEW.T$
 
 ### Instructions
 
@@ -1644,32 +1639,32 @@ described in this section will apply to this non-zero total of
 individuals to be added to the Treatment cohort. In other words, the
 Proportion of TX_NET_NEW from New ART Initiation can be described as:
 
-```{=tex}
+
 \begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}}$ \end{center}
-```
+
 As explained above, the number of individuals to be added to the
 Treatment Cohort may not be the same as TX_NET_NEW in all cases due to
 Retention Rates among the prior year Treatment Cohort. In other words,
 
-```{=tex}
+
 \begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ NET\_ NEW}_{t}\  + \ ({TX\_ CURR}_{t - 1})(1 - {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-```
+
 and given that
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ CURR}_{t} - {TX\_ CURR}_{t - 1}$ \end{center}
-```
+
 therefore,
 
-```{=tex}
+
 \begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-```
+
 All this means that the Proportion of TX_NET_NEW from New ART can be
 framed as follows:
 
-```{=tex}
+
 \begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{{TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})}$ \end{center}
-```
+
 See below to see how this affects TX_NEW targeting.
 
 ### TX_NEW (FY22)
@@ -1679,9 +1674,9 @@ set using the formula laid out above for Proportion of TX_NET_NEW from
 New ART, solving for TX_NEW, with each component and the total rounded
 to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_NEW}_{t}\  = \ \frac{\lbrack{TX\_ CURR}_{t} - \ ({TX\_ CURR}_{t - 1} \times {Ret.\ Rate:\ Already\ on\ ART\ }_{t})\rbrack \times {Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}}{{Ret.\ Rate:\ New\ on\ ART\ }_{t}}$ \end{center}
-```
+
 See below for additional information about how TX_NEW targets are set
 among Infant populations.
 
@@ -1712,7 +1707,7 @@ schema_table("Cascade-TX_CURR-BO-BS-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR (FY23)** \[TX_CURR.T\]
+-   **TX_CURR (FY23)** $TX\_CURR.T$
 
 ### Instructions
 
@@ -1750,9 +1745,9 @@ The following data points will be imported into DATIM from this section:
 For those one year old and older, TX_NET_NEW targets for FY22 are set in
 the Data Pack as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ NET\_ NEW\_ SUBNAT}_{t}\  \times \ {PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ NET\_ NEW\_ SUBNAT\ }_{t}\ $ \end{center}
-```
+
 For a description of how TX_NET_NEW is modeled for infants, see section
 below.
 
@@ -1761,9 +1756,9 @@ below.
 For those one year old and older, TX_CURR targets for FY22 are set in
 the Data Pack as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ CURR}_{t}\  = \ {TX\_ CURR}_{t - 1}\  + \ {TX\_ NET\_ NEW}_{t}$ \end{center}
-```
+
 For a description of how TX_CURR is modeled for infants, see section
 below.
 
@@ -1806,7 +1801,7 @@ schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR_SUBNAT (FY23)** \[TX_CURR_SUBNAT.T\]
+-   **TX_CURR_SUBNAT (FY23)** $TX\_CURR\_SUBNAT.T$
 
 ### Instructions
 
@@ -1989,16 +1984,16 @@ schema_table("Cascade-HTS_INDEX-CQ-CX-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **COMMUNITY - Contacts Tested, New Positive**
-    \[HTS_INDEX_COM.New.Pos.T\]
+    $HTS\_INDEX\_COM.New.Pos.T$
 
 -   **COMMUNITY - Contacts Tested, New Negative**
-    \[HTS_INDEX_COM.New.Neg.T\]
+    $HTS\_INDEX\_COM.New.Neg.T$
 
 -   **FACILITY - Contacts Tested, New Positive**
-    \[HTS_INDEX_FAC.New.Pos.T\]
+    $HTS\_INDEX\_FAC.New.Pos.T$
 
 -   **FACILITY - Contacts Tested, New Negative**
-    \[HTS_INDEX_FAC.New.Neg.T\]
+    $HTS\_INDEX\_FAC.New.Neg.T$
 
 ### Instructions
 
@@ -2040,27 +2035,27 @@ above.
 FY22 targets for HTS_INDEX New Positives in Community Sites are set as
 follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
-```
+
 Building from this, FY22 targets for HTS_INDEX New Negatives in
 Community Sites are set as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-```
+
 Alternatively, FY22 targets for HTS_INDEX New Positives in Facility
 Sites are set as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-```
+
 And finally, FY22 targets for HTS_INDEX New Negatives in Community Sites
 are set as follows:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
-```
+
 ## 
 
 ## Cascade: DIAGNOSED_SUBNAT
@@ -2077,7 +2072,7 @@ schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country DIAGNOSED_SUBNAT (FY22)** \[DIAGNOSED_SUBNAT.T\]
+-   **Host Country DIAGNOSED_SUBNAT (FY22)** $DIAGNOSED\_SUBNAT.T$
 
 ### Instructions
 
@@ -2097,9 +2092,9 @@ for DIAGNOSED_SUBNAT, the Data Pack also allows import of FY22 targets
 for this indicator. These are modeled within the Data Pack as follows,
 rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${DIAGNOSED\_ SUBNAT}_{t}\  = \ DIAGNOSED\_ SUBNAT.T\_ 1 + \ \frac{{HTS\_TST\_POS\  +  \ PMTCT\_ HEI\_ POS}_{t}}{\text{PEPFAR Coverage of Host Country Total Positives Identified}_{t}}$ \end{center}
-```
+
 Note that this modeling approach does not take into account mortality
 rates among this population.
 
@@ -2123,9 +2118,13 @@ editor_options:
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
+```
 
+```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-J-N-2-3", "latex")
+```
 
+```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-O-R-3-3", "latex")
 ```
 
@@ -2139,25 +2138,25 @@ The following data will be imported into DATIM from this section of the
 DataPack:
 
 -   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY22)**
-    \[PMTCT_STAT_SUBNAT.D.T_1\]
+    $PMTCT\_STAT\_SUBNAT.D.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.New.Pos.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Pos.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.New.Neg.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Neg.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant women
-    (FY22)** \[PMTCT_ART_SUBNAT.D.T_1\]
+    (FY22)** $PMTCT\_ART\_SUBNAT.D.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY22)**
-    \[PMTCT_ART_SUBNAT.N.Already.T_1\]
+    $PMTCT\_ART\_SUBNAT.N.Already.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY22)**
-    \[PMTCT_ART_SUBNAT.N.New.T_1\]
+    $PMTCT\_ART\_SUBNAT.N.New.T\_1$
 
 ### Instructions
 
@@ -2213,7 +2212,7 @@ schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT (D) (FY23)** \[PMTCT_STAT.D.T\]
+-   **PMTCT_STAT (D) (FY23)** $PMTCT\_STAT.D.T$
 
 ### Instructions
 
@@ -2254,7 +2253,7 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT_SUBNAT (D) (FY23)** \[PMTCT_STAT_SUBNAT.D.T\]
+-   **PMTCT_STAT_SUBNAT (D) (FY23)** $PMTCT\_STAT\_SUBNAT.D.T$
 
 ### Instructions
 
@@ -2293,14 +2292,14 @@ schema_table("PMTCT-PMTCT_STAT (N)-Y-AG-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Total PMTCT_STAT (N)** \[PMTCT_STAT.N\]
+-   **Total PMTCT_STAT (N)** $PMTCT\_STAT.N$
 
 -   **PMTCT_STAT (N) Known HIV Status, Positive**
-    \[PMTCT_STAT.N.KnownPos.T\]
+    $PMTCT\_STAT.N.KnownPos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Positive** \[PMTCT_STAT.N.New.Pos.T\]
+-   **PMTCT_STAT (N) Newly Tested, Positive** $PMTCT\_STAT.N.New.Pos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Negative** \[PMTCT_STAT.N.New.Neg.T\]
+-   **PMTCT_STAT (N) Newly Tested, Negative** $PMTCT\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -2352,12 +2351,12 @@ this data is unavailable, upon PEPFAR FY21 results obtained from DATIM
 on the date of the DataPack's generation, as documented on the Home tab.
 These rates are calculated from Host Country Context data as follows:
 
-```{=tex}
+
 \begin{center} ${Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}$ \end{center}
-```
-```{=tex}
+
+
 \begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
-```
+
 ## PMTCT: PMTCT_STAT_SUBNAT (N)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
@@ -2373,13 +2372,13 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.New.Neg.T\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -2423,9 +2422,9 @@ schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** \[PMTCT_ART.Already.T\]
+-   **Already on ART** $PMTCT\_ART.Already.T$
 
--   **New on ART** \[PMTCT_ART.New\]
+-   **New on ART** $PMTCT\_ART.New$
 
 ### Instructions
 
@@ -2459,13 +2458,13 @@ schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Est. Host Country \# HIV-positive pregnant women (FY23)**
-    \[PMTCT_ART_SUBNAT.D.T\]
+    $PMTCT\_ART\_SUBNAT.D.T$
 
 -   **Est. Host Country \# HIV+ Pregnant Women Already on ART (FY23)**
-    \[PMTCT_ART_SUBNAT.N.Already.T\]
+    $PMTCT\_ART\_SUBNAT.N.Already.T$
 
 -   **Est. Host Country \# HIV+ Pregnant Women New on ART (FY23)**
-    \[PMTCT_ART_SUBNAT.N.New.T\]
+    $PMTCT\_ART\_SUBNAT.N.New.T$
 
 ### Instructions
 
@@ -2497,9 +2496,9 @@ schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AX-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST PMTCT Post ANC1, Positive** \[HTS_TST.PostANC1.Pos.T\]
+-   **HTS_TST PMTCT Post ANC1, Positive** $HTS\_TST.PostANC1.Pos.T$
 
--   **HTS_TST PMTCT Post ANC1, Negative** \[HTS_TST.PostANC1.Neg.T\]
+-   **HTS_TST PMTCT Post ANC1, Negative** $HTS\_TST.PostANC1.Neg.T$
 
 ### Instructions
 
@@ -2604,9 +2603,9 @@ schema_table("EID-PMTCT_EID (N)-C-G-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   ${\bf \leq 02 mo}$ \[PMTCT_EID.N.2.T\]
+-   ${\bf \leq 02 mo}$ $PMTCT\_EID.N.2.T$
 
--   ${\bf 02-12 mo}$ \[PMTCT_EID.N.12.T\]
+-   ${\bf 02-12 mo}$ $PMTCT\_EID.N.12.T$
 
 ### Instructions
 
@@ -2670,9 +2669,9 @@ No data points will be imported into DATIM from this section.
 
 To calculate the total number of HIV-infected infants to be tested and identified, the DataPack uses the following formula, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} $PMTCT\_ HEI\_ POS.T\  = \ (PMTCT\_ EID.N.2.T\  \times \ PMTCT\_ HEI\_ POS.2.Yield.T)\  + \ (PMTCT\_ EID.N.12.T\  \times PMTCT\_ HEI\_ POS.12.Yield.T)\ $ \end{center}
-```
+
 \elandscape
 
 \newpage
@@ -2706,7 +2705,7 @@ schema_table("TB-TB_STAT (D)-F-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_STAT (D)** \[TB_STAT.D.T\]
+-   **TB_STAT (D)** $TB\_STAT.D.T$
 
 ### Instructions
 
@@ -2746,11 +2745,11 @@ schema_table("TB-TB_STAT (N)-I-R-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Known HIV Status, Positive** \[TB_STAT.N.KnownPos.T\]
+-   **Known HIV Status, Positive** $TB\_STAT.N.KnownPos.T$
 
--   **Newly Tested, Positive** \[TB_STAT.N.New.Pos.T\]
+-   **Newly Tested, Positive** $TB\_STAT.N.New.Pos.T$
 
--   **Newly Tested, Negative** \[TB_STAT.N.New.Neg.T\]
+-   **Newly Tested, Negative** $TB\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -2784,31 +2783,31 @@ The following data points will be imported into DATIM from this section:
 Total TB_STAT (N) targets are modeled as follows, rounding to the
 nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}$ \end{center}
-```
+
 ### Known HIV Status, Positive
 
 Known HIV Status, Positive targets are modeled as follows, rounding to
 the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \ {Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}$ \end{center}
-```
+
 ### Newly Tested
 
 Targets for TB_STAT (N): Newly Tested, Positive are modeled as follows,
 rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \ \text{Estimated Positivity Rate among Newly Tested}_{t}$ \end{center}
-```
+
 Based on these and targets for Known HIV Status, Positive, targets for
 Newly Tested, Negative are modeled as a remainder, as follows:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \ {TB\_ STAT.N.New.Pos}_{t}$ \end{center}
-```
+
 **\
 **
 
@@ -2829,9 +2828,9 @@ schema_table("TB-TB_ART-S-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** \[TB_ART.Already.T\]
+-   **Already on ART** $TB\_ART.Already.T$
 
--   **New on ART** \[TB_ART.New.T\]
+-   **New on ART** $TB\_ART.New.T$
 
 ### Instructions
 
@@ -2852,18 +2851,18 @@ for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
 words, the following holds true in the DataPack:
 
-```{=tex}
+
 \begin{center} ${TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}$ \end{center}
-```
+
 ### New on ART
 
 FY23 Targets for TB_ART New on ART are based largely on TB_STAT Newly
 Identified HIV positive TB clients as follows, rounding to the nearest
 integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}$ \end{center}
-```
+
 ## TB: Testing Rationalization
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
@@ -2937,16 +2936,16 @@ schema_table("VMMC-VMMC_CIRC_SUBNAT-F-Q-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country VMMC_CIRC_SUBNAT (FY22)** \[VMMC_CIRC_SUBNAT.T_1\]
+-   **Host Country VMMC_CIRC_SUBNAT (FY22)** $VMMC\_CIRC\_SUBNAT.T\_1$
 
 -   **Host Country VMMC_TOTALCIRC_SUBNAT (FY22)**
-    \[VMMC_TOTALCIRC_SUBNAT.T_1\]
+    $VMMC\_TOTALCIRC\_SUBNAT.T\_1$
 
 -   **Targeted Host Country VMMC_TOTALCIRC_SUBNAT (FY23)**
-    \[VMMC_TOTALCIRC_SUBNAT.T\]
+    $VMMC\_TOTALCIRC\_SUBNAT.T$
 
 -   **Targeted Host Country VMMC_CIRC_SUBNAT (FY23)**
-    \[VMMC_CIRC_SUBNAT.T\]
+    $VMMC\_CIRC\_SUBNAT.T$
 
 ### Instructions
 
@@ -3019,11 +3018,11 @@ schema_table("VMMC-VMMC_CIRC-R-AD-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   VMMC_CIRC Indeterminate/Not Tested \[VMMC_CIRC.Unk.T\]
+-   VMMC_CIRC Indeterminate/Not Tested $VMMC\_CIRC.Unk.T$
 
--   VMMC_CIRC HIV Positive \[VMMC_CIRC.Pos.T\]
+-   VMMC_CIRC HIV Positive $VMMC\_CIRC.Pos.T$
 
--   VMMC_CIRC HIV Negative \[VMMC_CIRC.Neg.T\]
+-   VMMC_CIRC HIV Negative $VMMC\_CIRC.Neg.T$
 
 ### Instructions
 
@@ -3079,15 +3078,15 @@ The following data points will be imported into DATIM from this section:
 For Military organization units, FY23 targets for Total VMMC_CIRC is set
 as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VMMC\_ CIRC}_{t}\  = \ {VMMC\_ CIRC}_{t - 1}\  \times \ (1\  + \ {VMMC\_ CIRC.Change.Military}_{t})$ \end{center}
-```
+
 For all other organization units, FY23 targets for Total VMMC_CIRC are
 set as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VMMC\_ CIRC}_{t}\  = \ {Targeted\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}\  \times \ {PEPFAR\ Coverage\ of\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}$ \end{center}
-```
+
 ### VMMC_CIRC Disaggregates (FY23)
 
 In disaggregating total VMMC_CIRC for FY23 Targets, the DataPack will
@@ -3098,21 +3097,21 @@ and finally those negative.
 To set targets for Indeterminate/Not Tested, the DataPack will use the
 following formula, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}$ \end{center}
-```
+
 For VMMC_CIRC HIV Positive, the DataPack will set targets as follows,
 rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VMMC\_ CIRC.Pos}_{t}\  = \ ({VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t})\  \times \ \text{Est.\ Positivity\ Rate}_{t}$ \end{center}
-```
+
 And finally, VMMC_CIRC HIV Negative targets will be set as a remainder
 function, as follows:
 
-```{=tex}
+
 \begin{center} ${VMMC\_ CIRC.Neg}_{t}\  = \ {VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t}\  - \ {VMMC\_ CIRC.Pos}_{t}$ \end{center}
-```
+
 ## VMMC: ART Linkage
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
@@ -3265,12 +3264,12 @@ schema_table("KP-KP_ESTIMATES-E-G-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country Est. Total Size (FY22)** \[KP_ESTIMATES.Total.T\]
+-   **Host Country Est. Total Size (FY22)** $KP\_ESTIMATES.Total.T$
 
--   **Host Country Est. KPLHIV (FY22)** \[KP_ESTIMATES.Pos.T\]
+-   **Host Country Est. KPLHIV (FY22)** $KP\_ESTIMATES.Pos.T$
 
 -   **Host Country Est. HIV Prevalence (FY22) (%)**
-    \[KP_ESTIMATES.Prev.T\]
+    $KP\_ESTIMATES.Prev.T$
 
 ### Instructions
 
@@ -3306,7 +3305,7 @@ schema_table("KP-PrEP_CT-H-I-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CT - KeyPop** (FY23) \[PrEP_CT.KP.T\]
+-   **PrEP_CT - KeyPop** (FY23) $PrEP\_CT.KP.T$
 
 ### Instructions
 
@@ -3347,7 +3346,7 @@ schema_table("KP-PrEP_NEW-J-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_NEW - KeyPop (FY23)** \[PrEP_NEW.KP.T\]
+-   **PrEP_NEW - KeyPop (FY23)** $PrEP\_NEW.KP.T$
 
 ### Instructions
 
@@ -3384,7 +3383,7 @@ schema_table("KP-KP_PREV-L-M-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_PREV (FY23)** \[KP_PREV.T\]
+-   **KP_PREV (FY23)** $KP\_PREV.T$
 
 ### Instructions
 
@@ -3412,7 +3411,7 @@ schema_table("KP-TX_CURR-N-Q-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR - KeyPop (FY23)** \[TX_CURR.KP.T\]
+-   **TX_CURR - KeyPop (FY23)** $TX\_CURR.KP.T$
 
 ### Instructions
 
@@ -3453,7 +3452,7 @@ schema_table("KP-TX_NEW-R-V-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW - KeyPop (FY23)** \[TX_NEW.KP.T\]
+-   **TX_NEW - KeyPop (FY23)** $TX\_NEW.KP.T$
 
 ### Instructions
 
@@ -3507,9 +3506,9 @@ schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) - KeyPop (FY23)** \[TX_PVLS.D.KP.T\]
+-   **TX_PVLS (D) - KeyPop (FY23)** $TX\_PVLS.D.KP.T$
 
--   **TX_PVLS (N) - KeyPop (FY23)** \[TX_PVLS.N.KP.T\]
+-   **TX_PVLS (N) - KeyPop (FY23)** $TX\_PVLS.N.KP.T$
 
 ### Instructions
 
@@ -3561,9 +3560,9 @@ schema_table("KP-HTS_TST-AB-AJ-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST KeyPop, Positive (FY23)** \[HTS_TST.KP.Pos.T\]
+-   **HTS_TST KeyPop, Positive (FY23)** $HTS\_TST.KP.Pos.T$
 
--   **HTS_TST KeyPop, Negative (FY23)** \[HTS_TST.KP.Neg.T\]
+-   **HTS_TST KeyPop, Negative (FY23)** $HTS\_TST.KP.Neg.T$
 
 ### Instructions
 
@@ -3617,7 +3616,7 @@ The following data points will be imported into DATIM from this section:
 
 ## KP: HTS_RECENT
 
-**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged $\geq$ 15
 years with a test for recent infection result during the reporting
 period.
 
@@ -3633,7 +3632,7 @@ schema_table("KP-HTS_RECENT-AK-AL-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_RECENT - KeyPop (FY23)** \[HTS_RECENT.KP.T\]
+-   **HTS_RECENT - KeyPop (FY23)** $HTS\_RECENT.KP.T$
 
 ### Instructions
 
@@ -3669,7 +3668,7 @@ schema_table("KP-HTS_SELF-AM-AN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF - KeyPop (FY23)** \[HTS_SELF.KP.T\]
+-   **HTS_SELF - KeyPop (FY23)** $HTS\_SELF.KP.T$
 
 ### Instructions
 
@@ -3927,7 +3926,7 @@ schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF (FY23)** \[HTS_SELF.T\]
+-   **HTS_SELF (FY23)** $HTS\_SELF.T$
 
 ### Instructions
 
@@ -3972,7 +3971,7 @@ schema_table("CXCA-CXCA_SCRN-F-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **CXCA_SCRN (FY23)** \[CXCA_SCRN.T\]
+-   **CXCA_SCRN (FY23)** $CXCA\_SCRN.T$
 
 ### Instructions
 
@@ -4021,7 +4020,7 @@ editor_options:
 
 # HTS_RECENT
 
-**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged $\geq$ 15
 years with a test for recent infection result during the reporting
 period.
 
@@ -4142,13 +4141,13 @@ schema_table("TX_TB_PREV-TX_TB (D)-F-O-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **New on ART, TB Screen +** \[TX_TB.D.New.Pos.T\]
+-   **New on ART, TB Screen +** $TX\_TB.D.New.Pos.T$
 
--   **New on ART, TB Screen --** \[TX_TB.D.New.Neg.T\]
+-   **New on ART, TB Screen --** $TX\_TB.D.New.Neg.T$
 
--   **Already on ART, TB Screen +** \[TX_TB.D.Already.Pos.T\]
+-   **Already on ART, TB Screen +** $TX\_TB.D.Already.Pos.T$
 
--   **Already on ART, TB Screen --** \[TX_TB.D.Already.Neg.T\]
+-   **Already on ART, TB Screen --** $TX\_TB.D.Already.Neg.T$
 
 ### Instructions
 
@@ -4188,27 +4187,27 @@ The DataPack will set FY23 targets for TX_TB (D) as laid out below.
 Targets will be set for those New on ART and screened positive for TB as
 follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ TB.D.New.Pos}_{t}\  = \ {TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t}\  \times \ {TB\ Screen\ Positivity\ Rate:\ New\ on\ ART}_{t}$ \end{center}
-```
+
 FY23 targets for those Already on ART, but found negative for TB will be
 set as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ TB.D.New.Neg}_{t}\  = \ ({TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t})\  - \ {TX\_ TB.D.New.Pos}_{t}$ \end{center}
-```
+
 Similarly, targets for those Already on ART and screened positive for TB
 will be set as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ TB.D.Already.Pos}_{t}\  = \ {TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t}\  \times \ {TB\ Screen\ Positivity\ Rate:\ Already\ on\ ART}_{t}$ \end{center}
-```
+
 And finally, targets for those Already on ART and screened negative for
 TB will be set as below, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ TB.D.Already.Neg}_{t}\  = \ ({TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t})\  - \ {TX\_ TB.D.Already.Pos}_{t}$ \end{center}
-```
+
 ## TX_TB_PREV: TB_PREV (D)
 
 **TB_PREV (D):** Number of ART patients who are expected to complete a
@@ -4232,9 +4231,9 @@ schema_table("TX_TB_PREV-TX_PREV (D)-P-X-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_PREV (D): New on ART** \[TB_PREV.D.New.T\]
+-   **TB_PREV (D): New on ART** $TB\_PREV.D.New.T$
 
--   **TB_PREV (D): Already on ART** \[TB_PREV.D.Already.T\]
+-   **TB_PREV (D): Already on ART** $TB\_PREV.D.Already.T$
 
 ### Instructions
 
@@ -4285,9 +4284,9 @@ schema_table("TX_TB_PREV-TX_PREV (N)-Y-AC-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_PREV (N): New on ART** \[TB_PREV.N.New.T\]
+-   **TB_PREV (N): New on ART** $TB\_PREV.N.New.T$
 
--   **TB_PREV (N): Already on ART** \[TB_PREV.N.Already.T\]
+-   **TB_PREV (N): Already on ART** $TB\_PREV.N.Already.T$
 
 ### Instructions
 
@@ -4348,7 +4347,7 @@ schema_table("PP-PP_PREV-F-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PP_PREV (FY23)** \[PP_PREV.T\]
+-   **PP_PREV (FY23)** $PP\_PREV.T$
 
 ### Instructions
 
@@ -4412,13 +4411,13 @@ schema_table("OVC-OVC_SERV-F-S-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **DREAMS** \[OVC_SERV.DREAMS.T\]
+-   **DREAMS** $OVC\_SERV.DREAMS.T$
 
--   **Preventive** \[OVC_SERV.Prev.T\]
+-   **Preventive** $OVC\_SERV.Prev.T$
 
--   **Comprehensive -- Graduated** \[OVC_SERV.Grad.T\]
+-   **Comprehensive -- Graduated** $OVC\_SERV.Grad.T$
 
--   **Comprehensive -- Active** \[OVC_SERV.Active.T\]
+-   **Comprehensive -- Active** $OVC\_SERV.Active.T$
 
 ### Instructions
 
@@ -4537,7 +4536,7 @@ schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **\# OVC with reported HIV Status** \[OVC_HIVSTAT.T\] -- Note that
+-   **\# OVC with reported HIV Status** $OVC\_HIVSTAT.T$ -- Note that
     this data will be aggregated across age group, resulting in one
     value per PSNU.
 
@@ -4593,9 +4592,9 @@ schema_table("GEND-GEND_GBV-C-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Physical/Emotional Violence (FY23)** \[GEND_GBV.PE.T\]
+-   **Physical/Emotional Violence (FY23)** $GEND\_GBV.PE.T$
 
--   **Sexual Violence (FY23)** \[GEND_GBV.S.T\]
+-   **Sexual Violence (FY23)** $GEND\_GBV.S.T$
 
 ### Instructions
 
@@ -4658,9 +4657,9 @@ schema_table("AGYW-AGYW_PREV-F-V-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Denominator - Started or Completed any DREAMS Service**
-    \[AGYW_PREV.D.T\]
+    $AGYW\_PREV.D.T$
 
--   **Numerator - Completed at least Primary Package** \[AGYW_PREV.N.T\]
+-   **Numerator - Completed at least Primary Package** $AGYW\_PREV.N.T$
 
 ### Instructions
 
@@ -4697,9 +4696,9 @@ The following data points will be imported into DATIM from this section:
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
-```{=tex}
+
 \begin{center} ${AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\ (1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})$ \end{center}
-```
+
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
@@ -4708,9 +4707,9 @@ disaggregated by Service or Package Completion Status.
 FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t}$ \end{center}
-```
+
 \elandscape
 
 \newpage
@@ -4745,7 +4744,7 @@ schema_table("PrEP-PrEP_NEW-F-L-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Newly on PrEP (FY23)** \[PrEP_NEW.T\]
+-   **Newly on PrEP (FY23)** $PrEP\_NEW.T$
 
 ### Instructions
 
@@ -4782,7 +4781,7 @@ schema_table("PrEP-PrEP_CURR-M-O-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PREP_CT Continuing on PrEP (FY23)** \[PrEP_CT.T\]
+-   **PREP_CT Continuing on PrEP (FY23)** $PrEP\_CT.T$
 
 ### Instructions
 
@@ -4832,9 +4831,9 @@ schema_table("KP_MAT-KP_MAT-E-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_MAT (FY23)** \[KP_MAT.T\]
+-   **KP_MAT (FY23)** $KP\_MAT.T$
 
--   **Host Country KP_MAT_SUBNAT (FY23)** \[KP_MAT_SUBNAT.T\]
+-   **Host Country KP_MAT_SUBNAT (FY23)** $KP\_MAT\_SUBNAT.T$
 
 ### Instructions
 
@@ -5130,13 +5129,13 @@ self-service app.
 knitr::include_graphics("./images/image15.png")
 ```
 
-```{=tex}
+
 \begin{center}
 
 \includegraphics[width=5in]{./images/image15.png}
 
 \end{center}
-```
+
 ## Note on Peace Corps Mechanisms
 
 For the COP21 planning cycle, Peace Corps will transition from reporting

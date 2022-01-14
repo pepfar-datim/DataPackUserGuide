@@ -59,13 +59,13 @@ Remember that you can only change the sea green columns in the DP. The following
 knitr::include_graphics("./images/image16.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image16.png}
 
 \end{center}
-```
+
+
 **Goal: To reduce Column AU "Positives" from Post ANC1**
 
 -   This change will most likely only have a small impact on your total positives
@@ -83,13 +83,13 @@ knitr::include_graphics("./images/image16.png")
 knitr::include_graphics("./images/image17.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image17.png}
 
 \end{center}
-```
+
+
 ### TB tab - decrease positives from TB
 
 **Goal: To reduce column Q "Newly Tested, Positive" which feeds into the total HTS_TST_POS values that are too high**
@@ -110,10 +110,9 @@ knitr::include_graphics("./images/image17.png")
 knitr::include_graphics("./images/image18.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=7in]{./images/image18.png}
 
 \end{center}
-```
+

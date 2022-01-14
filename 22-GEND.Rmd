@@ -27,9 +27,9 @@ schema_table("GEND-GEND_GBV-C-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Physical/Emotional Violence (FY23)** \[GEND_GBV.PE.T\]
+-   **Physical/Emotional Violence (FY23)** $GEND\_GBV.PE.T$
 
--   **Sexual Violence (FY23)** \[GEND_GBV.S.T\]
+-   **Sexual Violence (FY23)** $GEND\_GBV.S.T$
 
 ### Instructions
 

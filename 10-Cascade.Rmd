@@ -62,38 +62,38 @@ In specific, the Host Country Context section of the Cascade tab
 provides space for reflecting estimates from either Spectrum or an
 alternative approved source for the following data:
 
--   **Host Country Estimated Population (FY22) \[POP_EST.T_1\]**:
+-   **Host Country Estimated Population (FY22)** $POP\_EST.T\_1$:
     Estimated population, projected as of September 2022.
 
--   **Host Country Estimated PLHIV (FY22) \[PLHIV.T_1\]:** Estimated
+-   **Host Country Estimated PLHIV (FY22)** $PLHIV.T\_1$: Estimated
     number of people living with HIV, projected as of September 2022.
 
--   **Host Country Estimated HIV Prevalence (FY22) (%)
-    \[HIV_PREV.T_1\]**: Estimated HIV Prevalence, projected as of
+-   **Host Country Estimated HIV Prevalence (FY22) (%)**
+    $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of
     September 2022.
 
--   **Host Country Projected Incidence Rate (FY22) (%)
-    \[Incidence_SUBNAT.Rt.T_1\]**:
+-   **Host Country Projected Incidence Rate (FY22) (%)**
+    $Incidence\_SUBNAT.Rt.T\_1$:
 
--   **Host Country Projected New Infections (FY23)
-    \[NEW_INFECTIONS_SUBNAT.T_1\]:**
+-   **Host Country Projected New Infections (FY23)**
+    $NEW\_INFECTIONS\_SUBNAT.T\_1$:
 
--   **Host Country PLHIV Diagnosed (FY22) \[DIAGNOSED_SUBNAT.T_1\]:**
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED\_SUBNAT.T\_1$:
 
--   **Host Country Observed TX_CURR_SUBNAT (FY21)
-    \[TX_CURR_SUBNAT.R\]:** Observed/actual total number of PLHIV
+-   **Host Country Observed TX_CURR_SUBNAT (FY21)**
+    $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV
     receiving ART as of September 2021.
 
--   **Host Country Estimated TX_CURR_SUBNAT (FY22)
-    \[TX_CURR_SUBNAT.T_1\]:** Estimated number of PLHIV receiving ART,
+-   **Host Country Estimated TX_CURR_SUBNAT (FY22)**
+    $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART,
     projected as of September 2022.
 
--   **Host Country Est. ART Patients Tested for VLS (FY22)
-    \[VL_TESTING_SUBNAT.T_1\]:** Estimated number of ART Patients who
+-   **Host Country Est. ART Patients Tested for VLS (FY22)**
+    $VL\_TESTING\_SUBNAT.T\_1$: Estimated number of ART Patients who
     have been tested, PEPFAR projected as of September 2022.
 
 -   **Host Country Estimated Virally Suppressed ART Patients
-    (FY22)\[VL_SUPPRESSION_SUBNAT.T_1\]**: Estimated PLHIV on ART and
+    (FY22)**$VL\_SUPPRESSION\_SUBNAT.T\_1$: Estimated PLHIV on ART and
     virally suppressed, projected as of September 2022.
 
 ### DATIM Import
@@ -265,8 +265,8 @@ those lost to follow-up) to be added to host country ART totals.
 
 The following data points will be imported into DATIM from this section:
 
--   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)
-    \[**VL_SUPPRESSED.T\]
+-   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)**
+    $VL\_SUPPRESSED.T$
 
 ### Instructions
 
@@ -314,16 +314,19 @@ estimate of Host Country PopVLS Coverage. To calculate the estimated
 Host Country PopVLS Coverage for FY22 (i.e., projected as of September
 2022), the Data Pack uses the following formula:
 
-```{=tex}
-\begin{center} $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ \end{center}
-```
+\begin{center}
+
+$\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ 
+
+\end{center}
+
 In the case that PEPFAR's reported TX_CURR results for FY20 exceed the
 reported Host Country Observed TX_CURR_SUBNAT for FY20, the following
 function will be used to calculate ART Coverage instead of the above:
 
-```{=tex}
+
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
-```
+
 Reviewing and understanding the PopVLS Coverage estimate arrived at in
 this column is critical for much of the rest of the Data Pack. In
 particular, this column is later instrumental in determining the
@@ -352,9 +355,8 @@ denominator in the Data Pack calculation is Host Country Estimated PLHIV
 instead of only those PLHIV who know their HIV Status, this column
 should be the equivalent of:
 
-```{=tex}
 \begin{center} $(95\%\ of\ PLHIV\ know\ their\ HIV\ status)\ \  \times \ (95\%\ of\ PLHIV\ who\ know\ their\ status\ are\ on\ ART)$ \end{center}
-```
+
 However, in cases where baseline PopVLS Coverage may be greater than
 95%, baseline PopVLS Coverage will be used instead of 95%.
 
@@ -375,15 +377,15 @@ though should be coordinated with PPMs and DUIT Liaisons.
 Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23) is set as follows
 (rounded to the nearest integer):
 
-```{=tex}
+
 \begin{center} ${TX\_ CURR\_ SUBNAT}_{t}\  = \ \text{PLHIV}_{t - 1}\  \times \ \ Targeted\ Host\ Country\ ART\ Coverage$ \end{center}
-```
+
 Based on this target, Targeted Host Country VLS_NET_NEW_SUBNAT (FY23) is
 set as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ {TX\_ CURR\_ SUBNAT}_{t - 1}$ \end{center}
-```
+
 In performing this calculation, the Data Pack also compares projected
 FY21 Host Country TX_CURR_SUBNAT values reported in the Data Pack
 against FY21 PEPFAR TX_CURR targets as contained in DATIM. If PEPFAR
@@ -391,9 +393,9 @@ targets exceed Host Country projected TX_CURR_SUBNAT values for FY21,
 Targeted Host Country TX_NET_NEW_SUBNAT for FY22 is instead calculated
 as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ \frac{{PEPFAR\ TX\_ CURR}_{t - 1}}{{PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ CURR\_ SUBNAT\ }_{t - 1}}$ \end{center}
-```
+
 For those using Spectrum as their source for TX_CURR_SUBNAT projections,
 this scenario is rare because of incorporation of PEPFAR TX_CURR targets
 into Spectrum modeling. However, it may be possible to see discrepancies
@@ -433,7 +435,7 @@ schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (N): Routine (FY23)** \[TX_PVLS.N.Routine.T\]
+-   **TX_PVLS (N): Routine (FY23)** $TX\_PVLS.N.Routine.T$
 
 ### Instructions
 
@@ -468,9 +470,8 @@ indicator are set only for Routine Viral Load testing.
 Within the Data Pack, TX_PVLS Numerator targets for Routine Viral Load
 Testing are set as follows, rounded to the nearest integer:
 
-```{=tex}
 \begin{center} ${TX\_ PVLS.N.Routine}_{t}\  = \ {TX\_ PVLS.D.Routine}_{t}\  \times \ \text{Targeted\ VL\ Suppression\ Rate}_{t}$ \end{center}
-```
+
 ### VL_SUPPRESSION_SUBNAT (FY22)
 
 In conjunction with allowing import and update of FY21 targets in DATIM
@@ -478,9 +479,9 @@ for VL_SUPPRESSION_SUBNAT, the Data Pack also allows import of FY22
 targets for this indicator. These are modeled within the Data Pack as
 follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ \frac{{TX\_ PVLS.N.Routine}_{t}}{{PEPFAR\ Coverage\ of\ Host\ Country\ VL\_ SUPPRESSION\_ SUBNAT}_{t}}$ \end{center}
-```
+
 ## Cascade: TX_PVLS (D)
 
 **TX_PVLS (D):** Number of ART patients with a Viral Load (VL) result
@@ -499,7 +500,7 @@ schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D): Routine (FY23)** \[TX_PVLS.D.Routine.T\]
+-   **TX_PVLS (D): Routine (FY23)** $TX\_PVLS.D.Routine.T$
 
 ### Instructions
 
@@ -523,9 +524,9 @@ planning.
 Within the Data Pack, TX_PVLS Denominator targets for Routine Viral Load
 Testing are set as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
-```
+
 Note that no retention rates are applied against either TX_NEW~t~ nor
 TX_CURR~t-1~ , reflecting the goal that all individuals on ART should be
 tested for viral load suppression, no matter whether they may in the
@@ -558,7 +559,7 @@ No Targets will be imported to DATIM from this section.
 ## Cascade: TX_NEW
 
 **TX_NEW:** Number of adults and children newly enrolled on
-antiretroviral therapy (ART). \[Part 1 of 2\]
+antiretroviral therapy (ART). $Part 1 of 2$
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
@@ -572,7 +573,7 @@ schema_table("Cascade-TX_NEW-BM-BN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW (FY22)** \[TX_NEW.T\]
+-   **TX_NEW (FY22)** $TX\_NEW.T$
 
 ### Instructions
 
@@ -629,32 +630,32 @@ described in this section will apply to this non-zero total of
 individuals to be added to the Treatment cohort. In other words, the
 Proportion of TX_NET_NEW from New ART Initiation can be described as:
 
-```{=tex}
+
 \begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}}$ \end{center}
-```
+
 As explained above, the number of individuals to be added to the
 Treatment Cohort may not be the same as TX_NET_NEW in all cases due to
 Retention Rates among the prior year Treatment Cohort. In other words,
 
-```{=tex}
+
 \begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ NET\_ NEW}_{t}\  + \ ({TX\_ CURR}_{t - 1})(1 - {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-```
+
 and given that
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ CURR}_{t} - {TX\_ CURR}_{t - 1}$ \end{center}
-```
+
 therefore,
 
-```{=tex}
+
 \begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-```
+
 All this means that the Proportion of TX_NET_NEW from New ART can be
 framed as follows:
 
-```{=tex}
+
 \begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{{TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})}$ \end{center}
-```
+
 See below to see how this affects TX_NEW targeting.
 
 ### TX_NEW (FY22)
@@ -664,9 +665,9 @@ set using the formula laid out above for Proportion of TX_NET_NEW from
 New ART, solving for TX_NEW, with each component and the total rounded
 to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_NEW}_{t}\  = \ \frac{\lbrack{TX\_ CURR}_{t} - \ ({TX\_ CURR}_{t - 1} \times {Ret.\ Rate:\ Already\ on\ ART\ }_{t})\rbrack \times {Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}}{{Ret.\ Rate:\ New\ on\ ART\ }_{t}}$ \end{center}
-```
+
 See below for additional information about how TX_NEW targets are set
 among Infant populations.
 
@@ -697,7 +698,7 @@ schema_table("Cascade-TX_CURR-BO-BS-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR (FY23)** \[TX_CURR.T\]
+-   **TX_CURR (FY23)** $TX\_CURR.T$
 
 ### Instructions
 
@@ -735,9 +736,9 @@ The following data points will be imported into DATIM from this section:
 For those one year old and older, TX_NET_NEW targets for FY22 are set in
 the Data Pack as follows, rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ NET\_ NEW\_ SUBNAT}_{t}\  \times \ {PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ NET\_ NEW\_ SUBNAT\ }_{t}\ $ \end{center}
-```
+
 For a description of how TX_NET_NEW is modeled for infants, see section
 below.
 
@@ -746,9 +747,9 @@ below.
 For those one year old and older, TX_CURR targets for FY22 are set in
 the Data Pack as follows:
 
-```{=tex}
+
 \begin{center} ${TX\_ CURR}_{t}\  = \ {TX\_ CURR}_{t - 1}\  + \ {TX\_ NET\_ NEW}_{t}$ \end{center}
-```
+
 For a description of how TX_CURR is modeled for infants, see section
 below.
 
@@ -791,7 +792,7 @@ schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR_SUBNAT (FY23)** \[TX_CURR_SUBNAT.T\]
+-   **TX_CURR_SUBNAT (FY23)** $TX\_CURR\_SUBNAT.T$
 
 ### Instructions
 
@@ -974,16 +975,16 @@ schema_table("Cascade-HTS_INDEX-CQ-CX-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **COMMUNITY - Contacts Tested, New Positive**
-    \[HTS_INDEX_COM.New.Pos.T\]
+    $HTS\_INDEX\_COM.New.Pos.T$
 
 -   **COMMUNITY - Contacts Tested, New Negative**
-    \[HTS_INDEX_COM.New.Neg.T\]
+    $HTS\_INDEX\_COM.New.Neg.T$
 
 -   **FACILITY - Contacts Tested, New Positive**
-    \[HTS_INDEX_FAC.New.Pos.T\]
+    $HTS\_INDEX\_FAC.New.Pos.T$
 
 -   **FACILITY - Contacts Tested, New Negative**
-    \[HTS_INDEX_FAC.New.Neg.T\]
+    $HTS\_INDEX\_FAC.New.Neg.T$
 
 ### Instructions
 
@@ -1025,27 +1026,27 @@ above.
 FY22 targets for HTS_INDEX New Positives in Community Sites are set as
 follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
-```
+
 Building from this, FY22 targets for HTS_INDEX New Negatives in
 Community Sites are set as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-```
+
 Alternatively, FY22 targets for HTS_INDEX New Positives in Facility
 Sites are set as follows, rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
-```
+
 And finally, FY22 targets for HTS_INDEX New Negatives in Community Sites
 are set as follows:
 
-```{=tex}
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
-```
+
 ## 
 
 ## Cascade: DIAGNOSED_SUBNAT
@@ -1062,7 +1063,7 @@ schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country DIAGNOSED_SUBNAT (FY22)** \[DIAGNOSED_SUBNAT.T\]
+-   **Host Country DIAGNOSED_SUBNAT (FY22)** $DIAGNOSED\_SUBNAT.T$
 
 ### Instructions
 
@@ -1082,9 +1083,9 @@ for DIAGNOSED_SUBNAT, the Data Pack also allows import of FY22 targets
 for this indicator. These are modeled within the Data Pack as follows,
 rounded to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${DIAGNOSED\_ SUBNAT}_{t}\  = \ DIAGNOSED\_ SUBNAT.T\_ 1 + \ \frac{{HTS\_TST\_POS\  +  \ PMTCT\_ HEI\_ POS}_{t}}{\text{PEPFAR Coverage of Host Country Total Positives Identified}_{t}}$ \end{center}
-```
+
 Note that this modeling approach does not take into account mortality
 rates among this population.
 

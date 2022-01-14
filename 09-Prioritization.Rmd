@@ -21,7 +21,7 @@ schema_table("Prioritization-Prioritization-B-E-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **SNU Prioritization (FY23)** \[IMPATT.PRIORITY_SNU.T\]
+-   **SNU Prioritization (FY23)** $IMPATT.PRIORITY\_SNU.T$
 
 ### Instructions
 

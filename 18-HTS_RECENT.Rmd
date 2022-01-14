@@ -8,7 +8,7 @@ editor_options:
 
 # HTS_RECENT
 
-**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged ≥ 15
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged $\geq$ 15
 years with a test for recent infection result during the reporting
 period.
 

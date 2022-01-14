@@ -31,13 +31,13 @@ schema_table("OVC-OVC_SERV-F-S-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **DREAMS** \[OVC_SERV.DREAMS.T\]
+-   **DREAMS** $OVC\_SERV.DREAMS.T$
 
--   **Preventive** \[OVC_SERV.Prev.T\]
+-   **Preventive** $OVC\_SERV.Prev.T$
 
--   **Comprehensive -- Graduated** \[OVC_SERV.Grad.T\]
+-   **Comprehensive -- Graduated** $OVC\_SERV.Grad.T$
 
--   **Comprehensive -- Active** \[OVC_SERV.Active.T\]
+-   **Comprehensive -- Active** $OVC\_SERV.Active.T$
 
 ### Instructions
 
@@ -156,7 +156,7 @@ schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **\# OVC with reported HIV Status** \[OVC_HIVSTAT.T\] -- Note that
+-   **\# OVC with reported HIV Status** $OVC\_HIVSTAT.T$ -- Note that
     this data will be aggregated across age group, resulting in one
     value per PSNU.
 

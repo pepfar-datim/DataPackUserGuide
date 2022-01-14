@@ -493,13 +493,12 @@ after you submit your preliminary DataPack.
 knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{images/UG_Sec 1-6 How Does Everything Connect.png}
 
 \end{center}
-```
+
 \newpage
 
 ## Elements of a Tab
@@ -508,13 +507,12 @@ knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 knitr::include_graphics("./images/image4.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image4.png}
 
 \end{center}
-```
+
 \newpage
 
 ## How to Navigate a DataPack Tab
@@ -523,13 +521,12 @@ knitr::include_graphics("./images/image4.png")
 knitr::include_graphics("./images/image5.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=9in]{./images/image5.png}
 
 \end{center}
-```
+
 \elandscape
 
 \newpage
@@ -553,13 +550,13 @@ suggestions as well.
 knitr::include_graphics("./images/image9.png")
 ```
 
-```{=tex}
 \begin{center}
 
 \includegraphics[width=4.3in]{./images/image9.png}
 
 \end{center}
-```
+
+
 ## Adjustments to Historic Targets and Results
 
 Throughout the DataPack, historic targets and results have been provided

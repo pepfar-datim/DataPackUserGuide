@@ -236,7 +236,7 @@ schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF (FY23)** \[HTS_SELF.T\]
+-   **HTS_SELF (FY23)** $HTS\_SELF.T$
 
 ### Instructions
 

@@ -1,6 +1,6 @@
 # Release Notes
 
-### January 21 DataPack Re-release
+## January 21 DataPack Re-release
 
 On January 21st, we re-generated and shared new DataPacks via HQ Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and Resources \> DataPack. Please use the \*.zip version from **January 21st**.
 

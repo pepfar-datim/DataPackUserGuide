@@ -26,7 +26,7 @@ schema_table("PrEP-PrEP_NEW-F-L-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Newly on PrEP (FY23)** \[PrEP_NEW.T\]
+-   **Newly on PrEP (FY23)** $PrEP\_NEW.T$
 
 ### Instructions
 
@@ -63,7 +63,7 @@ schema_table("PrEP-PrEP_CURR-M-O-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PREP_CT Continuing on PrEP (FY23)** \[PrEP_CT.T\]
+-   **PREP_CT Continuing on PrEP (FY23)** $PrEP\_CT.T$
 
 ### Instructions
 

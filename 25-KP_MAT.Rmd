@@ -25,9 +25,9 @@ schema_table("KP_MAT-KP_MAT-E-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_MAT (FY23)** \[KP_MAT.T\]
+-   **KP_MAT (FY23)** $KP\_MAT.T$
 
--   **Host Country KP_MAT_SUBNAT (FY23)** \[KP_MAT_SUBNAT.T\]
+-   **Host Country KP_MAT_SUBNAT (FY23)** $KP\_MAT\_SUBNAT.T$
 
 ### Instructions
 

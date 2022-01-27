@@ -27,7 +27,7 @@ schema_table("PP-PP_PREV-F-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PP_PREV (FY23)** \[PP_PREV.T\]
+-   **PP_PREV (FY23)** $PP\_PREV.T$
 
 ### Instructions
 

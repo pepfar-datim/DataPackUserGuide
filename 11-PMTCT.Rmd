@@ -12,9 +12,13 @@ editor_options:
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
+```
 
+```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-J-N-2-3", "latex")
+```
 
+```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("PMTCT-Host Country Context-O-R-3-3", "latex")
 ```
 
@@ -28,25 +32,25 @@ The following data will be imported into DATIM from this section of the
 DataPack:
 
 -   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY22)**
-    \[PMTCT_STAT_SUBNAT.D.T_1\]
+    $PMTCT\_STAT\_SUBNAT.D.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.New.Pos.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Pos.T\_1$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY22)**
-    \[PMTCT_STAT_SUBNAT.N.New.Neg.T_1\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Neg.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant women
-    (FY22)** \[PMTCT_ART_SUBNAT.D.T_1\]
+    (FY22)** $PMTCT\_ART\_SUBNAT.D.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY22)**
-    \[PMTCT_ART_SUBNAT.N.Already.T_1\]
+    $PMTCT\_ART\_SUBNAT.N.Already.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY22)**
-    \[PMTCT_ART_SUBNAT.N.New.T_1\]
+    $PMTCT\_ART\_SUBNAT.N.New.T\_1$
 
 ### Instructions
 
@@ -102,7 +106,7 @@ schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT (D) (FY23)** \[PMTCT_STAT.D.T\]
+-   **PMTCT_STAT (D) (FY23)** $PMTCT\_STAT.D.T$
 
 ### Instructions
 
@@ -143,7 +147,7 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT_SUBNAT (D) (FY23)** \[PMTCT_STAT_SUBNAT.D.T\]
+-   **PMTCT_STAT_SUBNAT (D) (FY23)** $PMTCT\_STAT\_SUBNAT.D.T$
 
 ### Instructions
 
@@ -182,14 +186,14 @@ schema_table("PMTCT-PMTCT_STAT (N)-Y-AG-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Total PMTCT_STAT (N)** \[PMTCT_STAT.N\]
+-   **Total PMTCT_STAT (N)** $PMTCT\_STAT.N$
 
 -   **PMTCT_STAT (N) Known HIV Status, Positive**
-    \[PMTCT_STAT.N.KnownPos.T\]
+    $PMTCT\_STAT.N.KnownPos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Positive** \[PMTCT_STAT.N.New.Pos.T\]
+-   **PMTCT_STAT (N) Newly Tested, Positive** $PMTCT\_STAT.N.New.Pos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Negative** \[PMTCT_STAT.N.New.Neg.T\]
+-   **PMTCT_STAT (N) Newly Tested, Negative** $PMTCT\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -241,12 +245,12 @@ this data is unavailable, upon PEPFAR FY21 results obtained from DATIM
 on the date of the DataPack's generation, as documented on the Home tab.
 These rates are calculated from Host Country Context data as follows:
 
-```{=tex}
+
 \begin{center} ${Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}$ \end{center}
-```
-```{=tex}
+
+
 \begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
-```
+
 ## PMTCT: PMTCT_STAT_SUBNAT (N)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
@@ -262,13 +266,13 @@ schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.Known.Pos.T\]
+    $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)**
-    \[PMTCT_STAT_SUBNAT.N.New.Neg.T\]
+    $PMTCT\_STAT\_SUBNAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -312,9 +316,9 @@ schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** \[PMTCT_ART.Already.T\]
+-   **Already on ART** $PMTCT\_ART.Already.T$
 
--   **New on ART** \[PMTCT_ART.New\]
+-   **New on ART** $PMTCT\_ART.New$
 
 ### Instructions
 
@@ -348,13 +352,13 @@ schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "html")
 The following data points will be imported into DATIM from this section:
 
 -   **Est. Host Country \# HIV-positive pregnant women (FY23)**
-    \[PMTCT_ART_SUBNAT.D.T\]
+    $PMTCT\_ART\_SUBNAT.D.T$
 
 -   **Est. Host Country \# HIV+ Pregnant Women Already on ART (FY23)**
-    \[PMTCT_ART_SUBNAT.N.Already.T\]
+    $PMTCT\_ART\_SUBNAT.N.Already.T$
 
 -   **Est. Host Country \# HIV+ Pregnant Women New on ART (FY23)**
-    \[PMTCT_ART_SUBNAT.N.New.T\]
+    $PMTCT\_ART\_SUBNAT.N.New.T$
 
 ### Instructions
 
@@ -386,9 +390,9 @@ schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AX-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST PMTCT Post ANC1, Positive** \[HTS_TST.PostANC1.Pos.T\]
+-   **HTS_TST PMTCT Post ANC1, Positive** $HTS\_TST.PostANC1.Pos.T$
 
--   **HTS_TST PMTCT Post ANC1, Negative** \[HTS_TST.PostANC1.Neg.T\]
+-   **HTS_TST PMTCT Post ANC1, Negative** $HTS\_TST.PostANC1.Neg.T$
 
 ### Instructions
 

@@ -27,7 +27,7 @@ schema_table("CXCA-CXCA_SCRN-F-K-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **CXCA_SCRN (FY23)** \[CXCA_SCRN.T\]
+-   **CXCA_SCRN (FY23)** $CXCA\_SCRN.T$
 
 ### Instructions
 

@@ -185,13 +185,13 @@ Self-Service App.
 knitr::include_graphics("./images/image15.png")
 ```
 
-```{=tex}
+
 \begin{center}
 
 \includegraphics[width=5in]{./images/image15.png}
 
 \end{center}
-```
+
 ## Note on Peace Corps Mechanisms
 
 As in COP21, Peace Corps will no longer report targets under their older

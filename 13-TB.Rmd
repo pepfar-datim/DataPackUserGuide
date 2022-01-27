@@ -25,7 +25,7 @@ schema_table("TB-TB_STAT (D)-F-H-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_STAT (D)** \[TB_STAT.D.T\]
+-   **TB_STAT (D)** $TB\_STAT.D.T$
 
 ### Instructions
 
@@ -65,11 +65,11 @@ schema_table("TB-TB_STAT (N)-I-R-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Known HIV Status, Positive** \[TB_STAT.N.KnownPos.T\]
+-   **Known HIV Status, Positive** $TB\_STAT.N.KnownPos.T$
 
--   **Newly Tested, Positive** \[TB_STAT.N.New.Pos.T\]
+-   **Newly Tested, Positive** $TB\_STAT.N.New.Pos.T$
 
--   **Newly Tested, Negative** \[TB_STAT.N.New.Neg.T\]
+-   **Newly Tested, Negative** $TB\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -103,31 +103,31 @@ The following data points will be imported into DATIM from this section:
 Total TB_STAT (N) targets are modeled as follows, rounding to the
 nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}$ \end{center}
-```
+
 ### Known HIV Status, Positive
 
 Known HIV Status, Positive targets are modeled as follows, rounding to
 the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \ {Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}$ \end{center}
-```
+
 ### Newly Tested
 
 Targets for TB_STAT (N): Newly Tested, Positive are modeled as follows,
 rounding to the nearest integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \ \text{Estimated Positivity Rate among Newly Tested}_{t}$ \end{center}
-```
+
 Based on these and targets for Known HIV Status, Positive, targets for
 Newly Tested, Negative are modeled as a remainder, as follows:
 
-```{=tex}
+
 \begin{center} ${TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \ {TB\_ STAT.N.New.Pos}_{t}$ \end{center}
-```
+
 **\
 **
 
@@ -148,9 +148,9 @@ schema_table("TB-TB_ART-S-U-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** \[TB_ART.Already.T\]
+-   **Already on ART** $TB\_ART.Already.T$
 
--   **New on ART** \[TB_ART.New.T\]
+-   **New on ART** $TB\_ART.New.T$
 
 ### Instructions
 
@@ -171,18 +171,18 @@ for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
 words, the following holds true in the DataPack:
 
-```{=tex}
+
 \begin{center} ${TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}$ \end{center}
-```
+
 ### New on ART
 
 FY23 Targets for TB_ART New on ART are based largely on TB_STAT Newly
 Identified HIV positive TB clients as follows, rounding to the nearest
 integer:
 
-```{=tex}
+
 \begin{center} ${TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}$ \end{center}
-```
+
 ## TB: Testing Rationalization
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}

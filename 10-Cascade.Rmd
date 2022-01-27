@@ -10,30 +10,39 @@ editor_options:
 
 The Cascade Tab allows DataPack users to view and set the overall
 contour of their treatment and testing program across both geography and
-population. The Cascade tab of the COP22 DataPack saw the most changes
-across all tabs from the COP21 version. New Section 7 COP guidance will
-begin setting the Cascade from Program Viral Load Suppression. This
-starting point will allow for country team users to build up a full
-cascade that will provide insight into VLS, VL Testing and how this will
-translate into determining the new on treatment and those returning to
-treatment. It will provide a full picture of the treatment ecosystem and
-the way in which countries understand if they will achieve 85% coverage
-across all three Cascades. This will allow countries that are at or
-close to Epi Control to better approach the understanding of how they
-will continue to sustain their 95-95-95 goals. This approach will put a
-greater emphasis on the Coverage Cascade as the driver of the target
-setting process, a direct shift from the past 5 years that have focused
-on the first two Cascades, and paint a picture of both VL to gap in
-Treatment and Testing.
+population. Of all tabs in the COP22 DataPack, this tab experienced the
+most changes compared to the COP21 DataPack, reflecting changes in
+PEPFAR COP guidance to reemphasize the importance of Viral Load Testing
+Coverage (VLC) and Viral Load Suppression (VLS) in the HIV response.
 
-This tab also links heavily with many other tabs of the Data Pack,
-including the PMTCT, TB, EID, VMMC, KP, HTS, CXCA, HTS_RECENT, and
-TX_TB_PREV tabs. By beginning with the Cascade tab, moving through each
-of these other tabs, and continually returning to the Cascade tab to
-monitor and iteratively adjust the overall program plan, Country Teams
-can both retain a cohesive and intentional strategy across program area,
-geography, and population, as well as anchor this strategy in data and
-the realities of past performance.
+As seen in Section 7 of PEPFAR COP/ROP 2022 Guidance, Country Teams are
+asked to center their COP22 discussions around the concept of Population
+Viral Load Suppression (PopVLS), or the percent of all People Living
+with HIV who have a suppressed viral load (see also "Consolidated
+Strategic Information Guidelines for HIV in the Health Sector", WHO:
+Geneva, May 2015, pp 149-151; "Consolidated HIV Strategic Information
+Guidelines: Driving Impact through Programme Monitoring and Management",
+WHO: Geneva, April 2020, pp 56-57). This metric provides a succinct,
+composite view of the HIV reponse, including: new infections, testing &
+diagnosis, linkage to and retention on treatment, eligibility for viral
+load testing, roll out of viral load testing, and viral load
+suppression.
+
+The DataPack's Cascade tab similarly centers itself around PopVLS, and
+applies dynamic logic to support target setting in geographies and
+populations that are near or at epidemic control, as well those that are
+further from this goal. This is made possible by incorporating, for the
+first time, explicit consideration of new infections across the Cascade
+tab, as well as enhanced consideration of those who were previously
+infected but not linked to ART.
+
+As in past DataPacks, this tab interweaves with many other tabs of the
+DataPack, including the PMTCT, TB, EID, VMMC, KP, HTS, CXCA, HTS_RECENT,
+and TX_TB_PREV tabs. As is explained below and in sections related to
+these tabs, DataPack logic is most useful when target-setting begins in
+the Cascade tab and progresses from left to right, both within that tab,
+and across and within all other tabs, returning iteratively to the
+Cascade tab throughout.
 
 ## Host Country Context
 
@@ -56,11 +65,11 @@ schema_table("Cascade-Host Country Context-F-Y-1-1", "html")
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack,
 once these have been loaded into the Spectrum tab of the Data Pack, this
 first portion of the Cascade tab will automatically update to reflect
-these estimates.
+these estimates. For those leveraging alternatives to Spectrum, see
+below.
 
 In specific, the Host Country Context section of the Cascade tab
-provides space for reflecting estimates from either Spectrum or an
-alternative approved source for the following data:
+provides space for reflecting the following data:
 
 -   **Host Country Estimated Population (FY22)** $POP\_EST.T\_1$:
     Estimated population, projected as of September 2022.
@@ -72,13 +81,17 @@ alternative approved source for the following data:
     $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of
     September 2022.
 
--   **Host Country Projected Incidence Rate (FY22) (%)**
-    $Incidence\_SUBNAT.Rt.T\_1$:
+-   **Host Country Projected Incidence Rate (FY22) (%)
+    $Incidence_SUBNAT.Rt.T_1$**: Estimated incidence rate, projected
+    as of September 2022.
 
--   **Host Country Projected New Infections (FY23)**
-    $NEW\_INFECTIONS\_SUBNAT.T\_1$:
+-   **Host Country Projected New Infections (FY23)
+    $NEW_INFECTIONS_SUBNAT.T_1$:** Estimated new infections projected
+    to occur in FY23, based on projected FY22 Incidence Rates.
 
--   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED\_SUBNAT.T\_1$:
+-   **Host Country PLHIV Diagnosed (FY22) $DIAGNOSED_SUBNAT.T_1$:**
+    Estimated number of people living with HIV who know their HIV
+    status, projected as of September 2022.
 
 -   **Host Country Observed TX_CURR_SUBNAT (FY21)**
     $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV
@@ -88,20 +101,34 @@ alternative approved source for the following data:
     $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART,
     projected as of September 2022.
 
--   **Host Country Est. ART Patients Tested for VLS (FY22)**
-    $VL\_TESTING\_SUBNAT.T\_1$: Estimated number of ART Patients who
-    have been tested, PEPFAR projected as of September 2022.
+-   **Host Country Est. ART Patients Tested for VLS (FY22)
+    $VL_TESTING_SUBNAT.T_1$:** Estimated number of ART Patients who
+    have been tested for Viral Load Suppression, projected as of
+    September 2022.
 
--   **Host Country Estimated Virally Suppressed ART Patients
-    (FY22)**$VL\_SUPPRESSION\_SUBNAT.T\_1$: Estimated PLHIV on ART and
-    virally suppressed, projected as of September 2022.
+-   **Host Country Estimated Virally Suppressed ART Patients (FY22)
+    $VL_SUPPRESSED.T_1$**: Estimated people living with HIV who are on
+    ART and have a suppressed viral load, projected as of
+    September 2022.
 
 ### DATIM Import
 
-As part of the DataPack approval process, all of the above FY22
-projected estimates will be uploaded into DATIM and replace any
-preexisting estimates for these indicators that may have already been
-entered in DATIM, perhaps via Data Pack upload during COP21.
+The following data points will be imported into DATIM from this section,
+replacing any preexisting estimates for these indicators that may have
+already been entered in DATIM:
+
+-   **Host Country Estimated Population (FY22)** $POP_EST.T_1$
+-   **Host Country Estimated PLHIV (FY22)** $PLHIV.T_1$
+-   **Host Country Estimated HIV Prevalence (FY22) (%)**
+    $HIV_PREV.T_1$
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED_SUBNAT.T_1$
+-   **Host Country Observed TX_CURR_SUBNAT (FY21)** $TX_CURR_SUBNAT.R$
+-   **Host Country Estimated TX_CURR_SUBNAT (FY22)**
+    $TX_CURR_SUBNAT.T_1$
+-   **Host Country Est. ART Patients Tested for VLS (FY22)**
+    $VL_TESTING_SUBNAT.T_1$
+-   **Host Country Estimated Virally Suppressed ART Patients (FY22)**
+    $VL_SUPPRESSED.T_1$
 
 ### Instructions
 
@@ -116,64 +143,56 @@ entered in DATIM, perhaps via Data Pack upload during COP21.
         with a Relative Standard Error of more than or equal to 20. See
         the section below for additional instructions.
 
-2.  If not using UNAIDS Spectrum as the source for these data, see the
-    below section.
+2.  If leveraging alternatives to UNAIDS Spectrum as the source for
+    these data, see the below section.
 
-3.  Confirm that no data has been entered against Military Organization
-    Units. See below for more explanation.
+3.  Confirm that no data has been entered against \_Military
+    Organization Units. See below for more explanation.
 
 ### Leveraging Alternatives to Spectrum
 
-In general, all data for the above should use UNAIDS Spectrum as their
-source. However, there may be cases where either a more up to date or
-reliable source exists, or where data may not be fully available from
-UNAIDS Spectrum. In these cases, Country Teams may request approval from
-their PPM and a DUIT Liaison to use an alternative data source. Be sure
-to request and document this approval before deciding not to use
-Spectrum as the source for your Data Pack host country estimates, as
-well as what source is approved for use in its place. This is true for
-all cases where you may need to leverage an alternative to Spectrum,
-whether for an entire indicator, or for a specific geography or
-population.
+Most countries are encouraged to use UNAIDS Spectrum as their source for
+the above data. However, Country Teams may request approval from their
+PPM and a DUIT Liaison to use an alternative data source if deemed more
+reliable.
 
-For those not leveraging Spectrum to provide host country context
-estimates, you may paste estimates from other approved sources into this
+In this case, paste estimates from other approved sources into this
 section of the Cascade tab by overwriting the formulas currently in
-these columns. Due to hidden Relative Standard Error columns between the
-various estimate columns, it is recommended you paste this data in one
-column at a time, rather than in bulk. It may also reduce technical
-issues to first copy geographic data in the SNU1, PSNU, Age, and Sex
-columns into a separate spreadsheet, then use Excel lookup functions to
-add estimates data against the correct geographies and populations, and
-then return to pasting data into the original Cascade tab column by
-column.
+these green columns. Due to hidden Relative Standard Error columns
+between the various estimate columns, it is recommended you paste this
+data in one column at a time, rather than in bulk. It may also reduce
+technical issues to first copy geographic data in the SNU1, PSNU, Age,
+and Sex columns into a separate spreadsheet, then use Excel lookup
+functions to add estimates data against the correct geographies and
+populations, and then return to pasting data into the original Cascade
+tab column by column.
 
 ### Relative Standard Errors
 
-Data exported from UNAIDS Spectrum will also come with a series Relative
-Standard Errors for each data point, both at the District level as well
-as the Age/Sex-specific level. Along with the data points listed above,
-Relative Standard Errors for each will also automatically be populated
-in the Cascade tab from data loaded into the Spectrum tab. While
-initially, these Error columns will be hidden, you may inspect these
-values by unhiding these columns. Based on these Relative Standard
-Errors, data points in related columns will be color-coded to indicate
-the relative uncertainty of each specific data point along the following
-ranges:
+UNAIDS Spectrum estimates are accompanied by Relative Standard Errors
+(RSE) for each data point, both at the District level as well as the
+Age/Sex-specific level. These indicate the relative reliability of each
+of these data, which should be considered when using these to make
+program planning decisions.
 
--   Red: Relative Standard Error of 40 or greater.
+Along with the data points above, RSEs will also automatically be
+populated in the Cascade tab from data loaded into the Spectrum tab.
+While initially these RSE columns will be hidden, you can unhide these
+columns to inspect these values. RSEs are also used to color-coded
+related columns based on the relative uncertainty of each specific data
+point as follows:
 
--   Yellow: Relative Standard Error of less than 40, but more than or
-    equal to 20.
+-   **Red:** RSE ≥ 40.
 
--   Green: Relative Standard Error of less than 20.
+-   **Yellow:** RSE \< 40, but ≥ 20.
 
-While these error estimates are available as a reference as teams
-formulate targets, red or yellow highlighting may not always mean a data
-point should be thrown out, nor is it the case that all green values
-should be taken at face value. Either way, consider these error
-estimates as helpful guideposts in interpreting the contextual meaning
-and data quality of data provided via UNAIDS Spectrum output.
+-   **Green:** RSE \< 20.
+
+Red or yellow highlighting may not always mean a data point should be
+disregarded, nor is it the case that all green values should be taken at
+face value. Either way, consider these RSEs as helpful guideposts in
+interpreting the contextual meaning and quality of UNAIDS Spectrum
+estimates.
 
 If, in reviewing Relative Standard Error values, the uncertainty
 interval of an estimate appears to be concerning, consider the following
@@ -192,24 +211,7 @@ for the above indicators should not be entered against Military
 Organization Units. Any case where this does occur will be flagged in
 the Data Pack Self-Service App, and removed during DATIM import.
 
-## Host Country Cascade
-
-With the pivot to setting the Cascade from a Program Viral Load
-Suppression rate this section will provide users with further insight
-into all three Cascades. This approach will also put a greater emphasis
-on the Coverage Cascade as the driver of the target setting process, a
-direct shift from the past 5 years that have focused on the first two
-Cascades.
-
-## PEPFAR Programmatic Cascade
-
-This section has been added in an effort to further highlight the
-progress being made as well as painting a picture of both VL to gap in
-Treatment and Testing. These columns will be populated with FY21 Results
-and FY22 Targets from DATIM and will serve as further reference as users
-set targets throughout the Cascade tab.
-
-## Cascade: PEPFAR FY21 Cascade (Observed and Planned)
+## PEPFAR FY21 Cascade (Observed) & PEPFAR FY22 Cascade (Planned)
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "latex")
@@ -227,13 +229,15 @@ schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "latex")
 schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "html")
 ```
 
-This Section of the Cascade tab has been added to give users an insight
-into key Cascade FY21 Results and FY22. Users can refer to these past
-indicator results and targets to aid in the target setting and review
-process. The following are included as both FY21 Results and FY22
-Targets in these two sections:
+This section provides an overview of PEPFAR FY21 results and FY22
+targets, both to give insight into the current status of PEPFAR's
+contribution to the host country HIV response, as well to serve as
+reference to many other sections in the Cascade tab. Review this section
+to understand PEPFAR's trends for the following data, as well as the
+linkages and relationships between them:
 
--   New Positives (This includes both HTS_TST_POS & PMTCT_HEI_POS)
+-   New Positives --- including from both HTS_TST_POS (serologic
+    testing) & PMTCT_HEI_POS (virologic testing)
 
 -   TX_NEW
 
@@ -243,7 +247,7 @@ Targets in these two sections:
 
 -   TX_PVLS (N)
 
-## Cascade: VL_SUPPRESSION_SUBNAT
+## VL_SUPPRESSION_SUBNAT
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "latex")
@@ -254,65 +258,77 @@ schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "html")
 ```
 
 This section of the Cascade tab builds upon the preceding Host Country
-Context and the PEPFAR Programmatic Cascade sections to arrive at an
-analysis of gap to VL coverage by geography and population. This
-analysis, in concert with projected goals for VL to gap in TX and VL gap
-to testing to be attained by the end of FY23, then helps DataPack users
-simulate the required net new amount of individuals (those added less
-those lost to follow-up) to be added to host country ART totals.
+Context and PEPFAR Cascade sections to arrive at an analysis of gap to
+PopVLS by geography and population. The distance between the current
+estimated PopVLS rate and the targeted PopVLS rate helps DataPack users
+simulate the number of individuals to be added into the pool of virally
+suppressed PLHIV.
 
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:
 
--   **Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23)**
-    $VL\_SUPPRESSED.T$
+-   **VL_SUPPRESSION_SUBNAT (FY23) $**VL_SUPPRESSED.T$
 
 ### Instructions
 
-1.  Review historic PEPFAR PVLS_NET_NEW and Coverage of Host Country
-    PopVLS data to understand existing trends and status of Host Country
-    VLS by geography and population.
+1.  Review historic PEPFAR and Host Country data to understand existing
+    trends by geography and population.
 
-2.  Review estimates of PEPFAR Coverage of Host Country
-    VLS_NET_NEW_SUBNAT and adjust as necessary. See below for additional
+2.  Review the estimated PEPFAR Contribution to HIV Response for FY22,
+    and adjust the planned PEPFAR Contribution to HIV Response for FY23.
+    See below.
+
+3.  Review baseline Working PopVLS Rate for FY22. This is estimated from
+    Host Country PLHIV estimates and either Host Country VLS data, if
+    available, or extrapolated from PEPFAR VLS data otherwise.
+
+4.  Review and adjust the Planned PopVLS Rate for FY23. See below for
+    additional information
+
+5.  Review resulting **VL_SUPPRESSION_SUBNAT**. See below for additional
     information.
 
-3.  Review baseline Host Country Estimated PopVLS Rate Coverage.
+### PEPFAR Contribution to HIV Response
 
-4.  Review and adjust Targeted Host Country PopVLS Rate Coverage. See
-    below for additional information
+While PEPFAR's contribution to the HIV response within the Host Country
+may vary across areas of that response, this column attempts to
+summarize this contribution for use in modeling subsequent targets.
 
-5.  Review resulting **Targeted Host Country VL_SUPPRESSION_SUB NAT**
-    and **Targeted Host Country VLS_NET_NEW_SUBNAT**. See below for
-    additional information.
+The DataPack first attempts to describe PEPFAR's contribution during
+FY22, based on both Host Country estimates as well as PEPFAR Results and
+Targets. Keep in mind as you review these data that the methodologies
+used in producing Host Country estimates may produce artificial
+discrepancies between PEPFAR and Host Country values. For example, if
+Host Country estimates are produced from household surveys, these
+residential-centric data may differ significantly from PEPFAR's data,
+which are largely collected at point of service. (Because of this, it is
+recommended that Host Country estimates follow a point-of-service model
+where possible.)
 
-### PEPFAR Coverage of Host Country VLS_NET_NEW_SUBNAT
+In the following column, adjust values to reflect PEPFAR's planned
+contribution to the HIV response. Keep in mind that if PEPFAR's FY21
+results or FY22 targets are greater than Host Country Estimates for a
+given geography of population, it may be wise to maintain this same
+relationship to avoid depressing treatment and testing values set later
+in the Cascade tab beyond what would be the result of projected
+retention rates.
 
-In the next section of the Data Pack, the VLS_NET_NEW_SUBNAT determined
-in this section will be used to estimate necessary PEPFAR
-TX_PVLS_NET_NEW.
-
-To estimate PEPFAR's contribution to total TX_NET_NEW_SUBNAT in the
-country, the Data Pack compares PEPFAR's most recent APR results for
-TX_CURR against the observed host country TX_CURR_SUBNAT results ---
-sourced from UNAIDS Spectrum, or an alternative approved source, as
-described in the Host Country Context section prior to this --- for the
-same time period.
-
-While the behavior of PEPFAR and Host Country TX_CURR may differ from
-that of TX_NET_NEW, this gives a baseline from which to begin, and
-ultimately you may adjust this baseline in the green column titled
-"**PEPFAR Coverage of Host Country TX_NET_NEW_SUBNAT (FY22) (%)**" to
-more accurately reflect the likely reality of PEPFAR's contribution to
-TX_NET_NEW_SUBNAT.
-
-### Targeted Host Country PopVLS Coverage
+### Working & Planned PopVLS Rates
 
 One of the most pivotal data points in the Data Pack is the baseline
-estimate of Host Country PopVLS Coverage. To calculate the estimated
-Host Country PopVLS Coverage for FY22 (i.e., projected as of September
-2022), the Data Pack uses the following formula:
+estimate of the Host Country PopVLS Rate. To calculate the estimated ---
+or, Working --- PopVLS Rate for FY22 (i.e., projected as of September
+2022), the Data Pack may use a variety data points, depending on data
+availability for a given geography and population.
+
+In all cases, the denominator of this calculation is the estimated
+PLHIV, making it critical that this data be added to the Data Pack in
+the Host Country Context section.
+
+For its numerator, the DataPack first attempts to use Host Country
+estimates of the total number of Virally Suppressed ART Patients
+(VL_SUPPRESSED.T_1):
 
 \begin{center}
 
@@ -320,23 +336,29 @@ $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Co
 
 \end{center}
 
-In the case that PEPFAR's reported TX_CURR results for FY20 exceed the
-reported Host Country Observed TX_CURR_SUBNAT for FY20, the following
-function will be used to calculate ART Coverage instead of the above:
-
+Where these Host Country data are unavailable, the DataPack references
+PEPFAR data for TX_PVLS (N) either from FY22 targets or, if these are
+also unavailable, FY21 results, and then extrapolates these to the Host
+Country context by referencing the Planned PEPFAR Contribution to HIV
+Response set previously.
 
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
 
-Reviewing and understanding the PopVLS Coverage estimate arrived at in
-this column is critical for much of the rest of the Data Pack. In
-particular, this column is later instrumental in determining the
-following key data points:
+Reviewing and understanding the Working PopVLS Rate arrived at in this
+column is critical for much of the rest of the Data Pack. In particular,
+this column is immediately used to inform the Planned PopVLS Rate (FY23)
+in the next column. While the default in this column is 95% x 95% x 95%,
+reflecting the UNAIDS "95 for All" goals, where the baseline Working
+PopVLS Rate is higher, this will be favored instead. The distance
+between the FY23 Planned and FY22 Working PopVLS Rates are instrumental
+in determining the following key data points throughout the remainder of
+the Cascade Tab:
 
--   Host Country VL_SUPPRESSION_SUB NAT
+-   Host Country VL_SUPPRESSION_SUBNAT
 
--   Host Country VLS_NET_NEW_SUBNAT
+-   PEPFAR TX_PVLS (N)
 
--   PEPFAR TX_PVLS
+-   PEPFAR TX_PVLS (D)
 
 -   PEPFAR TX_NEW
 
@@ -346,78 +368,43 @@ following key data points:
 
 -   PEPFAR HTS_TST totals
 
--   PEPFAR HTS_INDEX
+No matter the starting default for Planned PopVLS Rate, you may adjust
+this target to fit the realities of your country context and the
+strategy of your treatment program. It may also be helpful to leave this
+column's defaults to begin, then return to adjust it iteratively as you
+proceed through the next few sections of the DataPack and see how this
+rate impacts targets.
 
-After reviewing data in this column, examine the next column, **Targeted
-Host Country PopVLS Coverage (FY22) (%)**. In line with the UNAIDS
-95-95-95 goals, this column defaults to 95%, reflecting that since the
-denominator in the Data Pack calculation is Host Country Estimated PLHIV
-instead of only those PLHIV who know their HIV Status, this column
-should be the equivalent of:
+NOTE: The Data Pack will not prevent situations resulting in PopVLS Rate
+exceeding 100% in a given PSNU, but will flag these cases in Red to
+highlight when it occurs. Given that these may be a common occurrence in
+cases of urban PSNUs, they are allowable in the Data Pack, though should
+be coordinated with PPMs and DUIT Liaisons.
 
-\begin{center} $(95\%\ of\ PLHIV\ know\ their\ HIV\ status)\ \  \times \ (95\%\ of\ PLHIV\ who\ know\ their\ status\ are\ on\ ART)$ \end{center}
+### VL_SUPPRESSION_SUBNAT
 
-However, in cases where baseline PopVLS Coverage may be greater than
-95%, baseline PopVLS Coverage will be used instead of 95%.
+VL_SUPPRESSION_SUBNAT (FY23) is set as follows (rounded to the nearest
+integer):
 
-No matter the starting default for Targeted Host Country PopVLS
-Coverage, you may adjust this target to fit the realities of your
-country context, and the strategy of your treatment program. It may also
-be helpful to return to this column to iteratively adjust it as you
-proceed through the next few sections of the Data Pack.
+\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ ({PLHIV}_{t-1}\  \times \ \ Planned\ PopVLS\ Rate$ \end{center}
 
-NOTE: The Data Pack will not prevent situations resulting in ART
-coverage exceeding 100% in a given PSNU, but will flag these cases in
-yellow to highlight when it occurs. Given that these may be a common
-occurrence in cases of urban PSNUs, they are allowable in the Data Pack,
-though should be coordinated with PPMs and DUIT Liaisons.
+As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function
+of FY22 estimated PLHIV plus the New Infections projected for FY23. How
+these projected New Infections specifically impact PEPFAR targets for
+TX_NEW, HTS_TST_POS, and TX_CURR will be explained in subsequent
+sections.
 
-### Targeted VL_SUPPRESSION_SUBNAT and VLS_NET_NEW_SUBNAT
+### \_Military Organization Units
 
-Targeted Host Country VL_SUPPRESSION_SUBNAT (FY23) is set as follows
-(rounded to the nearest integer):
+Due to sensitivities around PopVLS estimates for Military organization
+units and populations, this data will not be reflected here in the Data
+Pack. Country Teams should coordinate closely with Department of Defense
+liaisons who will perform a similar analysis based on available data
+sources and then directly paste resulting TX_PVLS (N) targets against
+the Military organization unit, overwriting the formulas in the TX_PVLS
+(N) column described in the next section.
 
-
-\begin{center} ${TX\_ CURR\_ SUBNAT}_{t}\  = \ \text{PLHIV}_{t - 1}\  \times \ \ Targeted\ Host\ Country\ ART\ Coverage$ \end{center}
-
-Based on this target, Targeted Host Country VLS_NET_NEW_SUBNAT (FY23) is
-set as follows:
-
-
-\begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ {TX\_ CURR\_ SUBNAT}_{t - 1}$ \end{center}
-
-In performing this calculation, the Data Pack also compares projected
-FY21 Host Country TX_CURR_SUBNAT values reported in the Data Pack
-against FY21 PEPFAR TX_CURR targets as contained in DATIM. If PEPFAR
-targets exceed Host Country projected TX_CURR_SUBNAT values for FY21,
-Targeted Host Country TX_NET_NEW_SUBNAT for FY22 is instead calculated
-as follows:
-
-
-\begin{center} ${TX\_ NET\_ NEW\_ SUBNAT}_{t}\  = \ {TX\_ CURR\_ SUBNAT}_{t}\  - \ \frac{{PEPFAR\ TX\_ CURR}_{t - 1}}{{PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ CURR\_ SUBNAT\ }_{t - 1}}$ \end{center}
-
-For those using Spectrum as their source for TX_CURR_SUBNAT projections,
-this scenario is rare because of incorporation of PEPFAR TX_CURR targets
-into Spectrum modeling. However, it may be possible to see discrepancies
-between PEPFAR TX_CURR targets and modeled TX_CURR_SUBNAT values,
-especially as Country Teams continue to make necessary OPU target
-changes. In this case, as well as in cases where data from alternative
-sources may exhibit discrepancies, the Data Pack takes this into account
-and adjusts to maintain reasonable Host Country TX_NET_NEW_SUBNAT
-targets as best as possible.
-
-### Gap to Coverage Analysis for Military Organization Units
-
-Due to sensitivities around ART coverage estimates for Military
-organization units and populations, this data will not be reflected here
-in the Data Pack. Country Teams should coordinate closely with
-Department of Defense liaisons who will perform a similar analysis based
-on available data sources and then directly paste resulting TX_CURR
-targets into the Data Pack against the \_Military organization unit,
-overwriting the formulas present in the TX_CURR column described in the
-next section.
-
-## Cascade: TX_PVLS (N)
+## TX_PVLS (N)
 
 **TX_PVLS (N):** Number of ART patients with suppressed VL results
 (\<1,000 copies/mL) documented in the medical or laboratory results/LIS
@@ -439,50 +426,59 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review PMTCT_HEI_POS Virally Suppressed which will be set in the EID
-    tab for \<1 yr age group and pulled into the Cascade tab. .
+1.  Filter out both \<01 year olds and \_Military organization units.
+    See below for additional steps for these groups.
 
-2.  Review and adjust Targeted Host Country VLS_NET_NEW_SUBNAT for FY23
-    from the previous section. ((This is defaulted at 95%, reflective of
-    UNAIDS 95-95-95 goals))\*.
+2.  Review FY23 TX_PVLS (N) Routine targets. To make initial
+    adjustments, return to the Planned PopVLS Rate (FY23), Planned
+    PEPFAR Contribution to HIV Response (FY23), New Infections (FY23),
+    and PLHIV (FY22). However, at this stage, it is recommended to leave
+    defaults for these in place and review modeled targets for TX_PVLS
+    (N), TX_PVLS (D), TX_NEW, and TX_CURR, paying special attention to
+    TX_NET_NEW (FY23), which will be explained further in the TX_CURR
+    section below.
 
-3.  Review and adjust targeted PEPFAR Coverage of Host Country
-    VLS_NET_NEW_SUBNAT (FY23). This is defaulted to match the PEPFAR
-    Coverage of Host Country PopVLS (FY22) set in the VLS_NET_NEW_SUBNAT
-    section of the Cascade tab, but can be altered as appropriate.
-
-4.  Review targeted TX_PVLS_NET_NEW for routine viral load testing. See
-    below for additional information.
-
-5.  Review targeted VL_SUPPRESSION_SUBNAT. See below for additional
+3.  Unfilter \_Military organization units and coordinate with DOD SI so
+    they can paste TX_PVLS (N) targets here. In doing so, they may need
+    to adjust targets in other PSNUs as well. See below for additional
     information.
-
-6.  Review the Targeted Host Country VL Suppression Rate (FY22)
-    resulting from modeled Host Country VL_SUPPRESSION_SUBNAT and return
-    to previous sections and columns within this section to adjust
-    contributing assumptions. See below for further information.
 
 ### TX_PVLS (N): Routine (FY23)
 
-Similar to TX_PVLS Denominator, COP21 targets for the Numerator for this
-indicator are set only for Routine Viral Load testing.
+For both TX_PVLS (N) and TX_PVLS (D), targets are set in the Data Pack
+only for Routine viral load testing.
 
-Within the Data Pack, TX_PVLS Numerator targets for Routine Viral Load
-Testing are set as follows, rounded to the nearest integer:
+TX_PVLS (N) targets for Routine Viral Load Testing are set as follows,
+rounded to the nearest integer:
 
 \begin{center} ${TX\_ PVLS.N.Routine}_{t}\  = \ {TX\_ PVLS.D.Routine}_{t}\  \times \ \text{Targeted\ VL\ Suppression\ Rate}_{t}$ \end{center}
 
-### VL_SUPPRESSION_SUBNAT (FY22)
+### \_Military Organization Units
 
-In conjunction with allowing import and update of FY21 targets in DATIM
-for VL_SUPPRESSION_SUBNAT, the Data Pack also allows import of FY22
-targets for this indicator. These are modeled within the Data Pack as
-follows, rounded to the nearest integer:
+Due to the sensitive nature of DOD support for foreign government
+Military organization units, DOD SI teams model and set PSNU-level
+targets for TX_PVLS (N) separately so they can leverage granular data
+collected in their protected systems. DOD SI liaisons have authority to
+overwrite formulas so as to paste targets for Military organization
+units in the TX_PVLS (N) column of the Data Pack. As needed, they also
+have permission to coordinate with other interagency representatives to
+adjust assumptions and targets in other organization units in order to
+accommodate \_Military organization unit targets, which are effectively
+a cross-section subset of targets across all other PSNUs.
 
+### Infants Virally Suppressed
 
-\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ \frac{{TX\_ PVLS.N.Routine}_{t}}{{PEPFAR\ Coverage\ of\ Host\ Country\ VL\_ SUPPRESSION\_ SUBNAT}_{t}}$ \end{center}
+Targets for \<01 year olds who are virally suppressed are set and
+modeled separately from all other age groups as an extension of the
+PMTCT model used on the PMTCT tab of the Data Pack. These are initially
+set without sex disaggregation on the EID tab of the Data Pack, then
+equally allocated by male and female to be reflected on the Cascade Tab.
+As such, it is recommended that \<01 year olds be filtered out while
+working through the remaining sections of this Cascade tab, and reviewed
+here in the Cascade Tab only once targets on the PMTCT and EID tabs have
+been fully reviewed.
 
-## Cascade: TX_PVLS (D)
+## TX_PVLS (D)
 
 **TX_PVLS (D):** Number of ART patients with a Viral Load (VL) result
 documented in the medical or laboratory records/laboratory information
@@ -504,35 +500,36 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review and adjust assumptions for the proportion of TX_PVLS (D)
-    projected to be eligible for viral load testing during the coming
-    Fiscal Year. The default assumption is 95%, reflecting the MER 2.6
-    guidance that individuals must have been on ART for at least 3
-    months in order to be eligible for viral load testing. Red
-    highlighting in this column indicates values over 100%, and yellow
-    highlighting values below 70%.
+1.  In preparation for setting assumptions for the FY23 Planned VLS
+    Rate, review Host Country estimates and PEPFAR results and targets
+    for trends in VLS rates for each PSNU and population. This can be
+    done in the Data Pack in this section, as well as in PAW, DATIM, and
+    Panorama. Yellow highlights in these columns indicate where VLS
+    rates have historically been below the UNAIDS goal of 95%, and red
+    highlights indicate where reported data produces VLS rates above
+    100%.
 
-2.  Review targeted TX_PVLS (D) for routine viral load testing. See
-    below for additional information.
+2.  Review and adjust the FY23 Planned VLS Rate. This defaults to 95%,
+    unless historic Host Country or PEPFAR data shows a higher trend.
+    However, you may adjust these as needed. In many cases, it is
+    recommended to leave modeled assumptions in place and review targets
+    through to the TX_CURR section of this tab, paying special attention
+    to TX_NET_NEW, and then return to this and other assumptions to
+    adjust iteratively.
+
+3.  Review TX_PVLS (D) targets for routine viral load testing. See below
+    for additional information.
 
 ### TX_PVLS (D): Routine (FY23)
 
-While MER 2.6 allows for both Routine and Targeted Viral Load testing,
-only Routine Viral Load testing will be targeted as part of COP 22
-planning.
-
-Within the Data Pack, TX_PVLS Denominator targets for Routine Viral Load
-Testing are set as follows, rounded to the nearest integer:
+As mentioned above, only Routine Viral Load testing will be targeted in
+the Data Pack. Within the Data Pack, TX_PVLS (D) targets for Routine
+Viral Load Testing are set as follows, rounded to the nearest integer:
 
 
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
 
-Note that no retention rates are applied against either TX_NEW~t~ nor
-TX_CURR~t-1~ , reflecting the goal that all individuals on ART should be
-tested for viral load suppression, no matter whether they may in the
-future --- even within the same Fiscal Year --- be lost to follow-up.
-
-## Cascade: VLT Coverage
+## VLT Coverage
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-VLT Coverage-AV-AY-1-4", "latex")
@@ -554,12 +551,106 @@ No Targets will be imported to DATIM from this section.
 
 ### Instructions
 
-1.  Review
+1.  Filter to exclude \<01 year olds.
+2.  In preparation for setting targets for **diagnosis rates** for both
+    New Infections and those previously Undiagnosed, review historic
+    Host Country estimates of the percent of PLHIV with known HIV
+    Status, and the number of PLHIV who were previously Undiagnosed.
+    Yellow highlights indicate where diagnosis rates appear to be lower
+    than the UNAIDS goal of 95%.
+3.  Review and adjust the P**lanned Percent of New Infections to be
+    Diagnosed in FY23**. Return to the projected New Infections (FY23)
+    column in the Host Country Context section of this tab to add or
+    adjust New Infections and Incidence Rates as needed. Planned
+    diagnosis rates here default to 95%, unless historic Host Country
+    trends have been higher. In either case, you may adjust this
+    assumption as appropriate.
+4.  Review historic data about diagnosis rates, and adjust the **FY23
+    Targeted Linkage Rate**, which applies both to New Infections and
+    those Previously Infected who are not yet on ART including
+    Undiagnosed and those Previously Diagnosed but not on ART). Note
+    that Linkage Rates set here are *also* applied to the models used on
+    the PMTCT, TB, and VMMC tabs in order to maintain linkages between
+    TX_NEW, PMTCT_ART, TB_ART, and VMMC testing's linkage to treatment.
+5.  Adjust the **Percent of Recently Initiated on ART who are planned to
+    be Eligible for VLT during FY23**. Keep in mind that per MER
+    guidance, individuals must have been on ART for at least 3 months to
+    be eligible for VLT. As such, the default in this column is 70%,
+    though can be adjusted as needed. Also note that this eligibility
+    rate applies to all those planned to be initiated on ART during
+    FY23, whether treatment naive (New Infections, Previously
+    Undiagnosed, or Previously Diagnosed), or those Returning to
+    Treatment.
+6.  Review historic data about VLT coverage, and adjust the **FY23
+    Planned VLT Coverage Rate**. This rate defaults to 95%, though can
+    be adjusted as needed.
+7.  Coordinate with DOD SI Liaisons to paste targets for **FY23 New
+    Infections Initiated on ART**, overwriting formulas as needed, and
+    adjusting upstream assumptions for other organization units as
+    needed to reflect the cross-section of DOD targets.
+8.  Review FY23 targets modeled for **New Infections Initiated on ART**,
+    **Previous Infections to be Initiated on ART**, and the **Total
+    Initiated on ART**. See below for additional detail.
+9.  Review targets for the FY23 planned **Total Eligible for VLT**. See
+    below for additional detail.
+10. Review the **FY23 Final Planned VLT Coverage**, which may differ
+    from planned VLT Coverage Rates set in the steps above.
+    Discrepancies can be traced to assumptions set earlier for the
+    PopVLS Rate, the PEPFAR Contribution to the Host Country HIV
+    Response, Diagnosis Rates, Linkage Rates, and Eligibility Rates.
 
-## Cascade: TX_NEW
+### New Infections Initiated on ART (FY23)
+
+Based on Incidence Rates and projected New Infections modeled in the
+Host Country Context section of this tab, this section of the Data Pack
+models how PEPFAR will support identifying these individuals and linking
+them to ART. As such, FY23 New Infections Initiated on ART is set as
+follows, reflecting both diagnosis and linkage to ART:
+
+*Placeholder for formulas*
+
+Keep in mind that targets for infants to be initiated on ART, as
+mentioned above, are set on the EID tab and only reflected here. Also
+similar to the above, targets for new infections to be initiated on ART
+in \_Military organization units are set and modeled separately by DOD
+SI liaisons, and will be pasted here in this column.
+
+### Previous Infections Initiated on ART (FY23)
+
+The above step related to New Infections Initiated on ART (FY23)
+effectively institutes a floor on the number of individuals who can be
+considered eligible for VLT, and a cap on the VLT Coverage Rate,
+regardless of the elgibility and coverage rates set previously.
+
+After setting the PopVLS Rate and other assumptions earlier, the Data
+Pack calculates both TX_PVLS (N) and TX_PVLS (D) targets. Underlying
+these values are assumptions of VLS_NET_NEW as well. Subsequently, the
+Data Pack looks to satisfy this VLS_NET_NEW first via those New
+Infections to be Initiated on ART and Eligible for VLT. Then, if
+VLS_NET_NEW still remains, the Data Pack assumes the remainder must be
+filled by initiating on ART those that had been previously infected by
+otherwise not on ART.
+
+This column summarizes the result of that remainder calculation, though
+in cases where PopVLS Rates lead to exceptionally high VLS_NET_NEW, this
+remainder is prevented from ever being negative.
+
+*Placeholder for formulas*
+
+### Total Eligible for VLT (FY23)
+
+The total Eligible for VLT is based first on the total number of
+individuals in the incoming treatment pool (TX_CURR from the previous
+year's targets), and secondly on the total number of individuals to be
+Initiated on TX_CURR who are projected to be on ART within the first
+three quarters of the Fiscal Year.
+
+*Placeholder for formulas*
+
+## TX_NEW
 
 **TX_NEW:** Number of adults and children newly enrolled on
-antiretroviral therapy (ART). $Part 1 of 2$
+anti-retroviral therapy (ART). $Part 1 of 2$
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
@@ -577,112 +668,44 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review the column, % TX_NEW Eligible for VL Test (FY23) (%). This is
-    defaulted to 70%, but can be adjusted as necessary. See below for
-    additional instructions. Red highlighting will identify cases where
-    these may be set above 100%, and yellow highlighting those cases
-    were set below 70%.
+1.  Return to the VLT Coverage section to review assumptions and targets
+    related to **New Infections Initiated on ART (FY23)**, **Previous
+    Infections Initiated on ART (FY23)**, and **Total Initiated on ART
+    (FY23)**. Keep in mind that TX_NEW encompasses both those New
+    Infections Initiated on ART, as well as those previously infected
+    initiated on ART who are treatment naive (as opposed to those who
+    returning to treatment).
 
-2.  Review targeted % of eligible w/ access to VL testing (FY23) (%).
-    This is defaulted to 100%, but can be adjusted as necessary. Red
-    highlighting will identify cases where these may be set above 100%,
-    and yellow highlighting those cases were set below 100%.
+2.  Review and adjust assumptions for the **Percent of Previous
+    Infections Initiated on ART who are Treatment Naive (FY23)**. The
+    default for this column is 100% (i.e., none of those previous
+    infections to be initiated on treatment in FY23 are returning to
+    treatment), though you can adjust this column as appropriate for
+    your context.
 
-3.  Review historic data for TX_NEW Results and Targets for reference
-    from the PEPFAR Programmatic Cascade section.
+3.  Review **FY23 TX_NEW** targets and return to previous steps to
+    adjust assumptions and modeling decisions as necessary. See below
+    for additional information.
 
-4.  Review FY23 TX_NEW targets and return to previous sections to adjust
-    assumptions and modeling decisions as necessary. See below for
-    additional information.
+4.  Again, it is recommended that you filter out infant populations, as
+    these are set separately on the EID tab, and focus on other
+    populations at first. Only once you have confirmed targets for \<01
+    year olds on the EID tab, return to review those targets on the
+    Cascade tab alongside other populations.
 
-### Proportion of TX_NET_NEW from New ART Initiation
+### TX_NEW
 
-New to the COP21 Data Pack, this column allows for several scenarios
-that may impact how PEPFAR TX_NET_NEW translates to TX_NEW targets. The
-most common of these scenarios include:
+Because MER guidance stipulates that TX_NEW is to be used for reporting
+initiation on ART of those who are treatment naive, TX_NEW may not
+always be the same as the target for the Total Initiated on ART (FY23)
+set in the VLT Coverage section previously due to portions of the total
+number initiated that may be comprised of individuals who are returning
+to treatment.
 
--   Cases where TX_RTT may contribute in part to TX_NET_NEW, requiring a
-    reduction in how much TX_NET_NEW is converted into targets for
-    TX_NEW. While TX_RTT targets are not set in the COP21 Data Pack,
-    this column does allow for the possibility that some amount of
-    TX_RTT may be an unavoidable part of a cohesive, effective treatment
-    strategy.
-
--   Cases where PEPFAR may be absorbing or beginning support for an
-    existing Treatment cohort from a non-PEPFAR partner, such as the
-    Global Fund to Fight AIDS, Tuberculosis, and Malaria.
-
-Red highlighting will identify cases where this column is set above
-100%, and yellow highlighting where it is set below 100% for review
-purposes.
-
-As described below, any adjustments to this column will directly impact
-the target set for TX_NEW. As such, be sure to receive approval from
-your PPM and DUIT Liaison for any changes to this column, and be
-prepared to explain and justify the rationale for these changes as
-necessary.
-
-It is important to note that even in cases where TX_NET_NEW may be zero,
-it still may be necessary to add individuals into the Treatment cohort,
-whether from new initiation or otherwise, to compensate for those
-individuals lost to follow up. In these scenarios, the proportion
-described in this section will apply to this non-zero total of
-individuals to be added to the Treatment cohort. In other words, the
-Proportion of TX_NET_NEW from New ART Initiation can be described as:
-
-
-\begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}}$ \end{center}
-
-As explained above, the number of individuals to be added to the
-Treatment Cohort may not be the same as TX_NET_NEW in all cases due to
-Retention Rates among the prior year Treatment Cohort. In other words,
-
-
-\begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ NET\_ NEW}_{t}\  + \ ({TX\_ CURR}_{t - 1})(1 - {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-
-and given that
-
-
-\begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ CURR}_{t} - {TX\_ CURR}_{t - 1}$ \end{center}
-
-therefore,
-
-
-\begin{center} $\text{Individuals\ to\ be\ added\ to\ Treatment\ Cohort}_{t}\  = \ {TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})$ \end{center}
-
-All this means that the Proportion of TX_NET_NEW from New ART can be
-framed as follows:
-
-
-\begin{center} ${Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}\  = \ \frac{{(TX\_ NEW}_{t}) \times ({Ret.\ Rate:\ New\ on\ ART}_{t})}{{TX\_ CURR}_{t}\  - \ ({TX\_ CURR}_{t - 1}\  \times \ {Ret.\ Rate:\ Already\ on\ ART}_{t})}$ \end{center}
-
-See below to see how this affects TX_NEW targeting.
-
-### TX_NEW (FY22)
-
-For those one year old and older, PEPFAR TX_NEW targets for FY23 will be
-set using the formula laid out above for Proportion of TX_NET_NEW from
-New ART, solving for TX_NEW, with each component and the total rounded
-to the nearest integer:
-
-
-\begin{center} ${TX\_NEW}_{t}\  = \ \frac{\lbrack{TX\_ CURR}_{t} - \ ({TX\_ CURR}_{t - 1} \times {Ret.\ Rate:\ Already\ on\ ART\ }_{t})\rbrack \times {Proportion\ TX\_ NET\_ NEW\ from\ New\ ART}_{t}}{{Ret.\ Rate:\ New\ on\ ART\ }_{t}}$ \end{center}
-
-See below for additional information about how TX_NEW targets are set
-among Infant populations.
-
-### Setting TX_NEW Targets among Infant Populations
-
-Based upon rationales explained in previous sections above, TX_NEW
-targets for infant populations will simply reflect TX_NET_NEW values
-determined in the TX_CURR section of the Cascade tab. Refer to that
-section for more information about how to adjust TX_NEW targets for
-infant populations.
-
-## Cascade: TX_CURR
+## TX_CURR
 
 **TX_CURR:** Number of adults and children currently receiving
-antiretroviral therapy (ART).
+anti-retroviral therapy (ART).
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-TX_CURR-BO-BS-1-1", "latex")
@@ -702,81 +725,33 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For ages one and older:
+1.  Review and adjust assumptions for **Targeted Retention Rates**, both
+    for those Initiated on ART during FY23, and those Already on ART at
+    the start of FY23. The default for each of these is 98%, though you
+    may adjust these as needed.
 
-    a.  Compare TX_NET_NEW (FY22) against TX_NET_NEW (FY21) from the
-        TX_NET_NEW_SUBNAT section (described above) to identify any
-        geographies or populations where previous modeling decisions
-        pertaining to FY22 Targeted Host Country TX_CURR_SUBNAT, FY22
-        Targeted Host Country TX_NET_NEW_SUBNAT, PEPFAR Coverage of Host
-        Country TX_NET_NEW_SUBNAT, and/or FY22 Targeted Host Country ART
-        Coverage may be leading to over targeting of FY22 PEPFAR
-        TX_NET_NEW. Adjust assumptions in previous sections as
-        necessary. (See below for additional information about
-        TX_NET_NEW_SUBNAT targeting.)
+2.  Return to the PEPFAR FY22 Targets Cascade section to review the
+    **incoming Treatment Cohort**, which often times comprises the bulk
+    of TX_CURR targets set in this section.
 
-    b.  Review FY22 TX_CURR targets to identify and resolve any issues
-        pertaining to previous modeling assumptions or decisions. (See
-        below for additional information about TX_CURR targeting.)
+3.  Return to the VLT Coverage section to review targets for the **Total
+    Initiated on ART (FY23)**.
 
-2.  For infant populations:
+4.  Review targets for **TX_CURR (FY23)**, which is based on the
+    incoming Treatment Cohort, the Total Initiated on ART (FY23), and
+    related retention rates for each.
 
-    a.  Continue moving on through the remainder of the Cascade tab,
-        taking special care to review the PMTCT and EID tabs of the Data
-        Pack, reconciling issues with overall Testing Rationalization
-        along the way.
+5.  Review historic TX_NET_NEW planned during the previous COP, as well
+    as targeted TX_NET_NEW resulting from targets modeled in this Data
+    Pack for the upcoming Fiscal Year. In some cases, negative
+    TX_NET_NEW may result, and may not necessarily indicate quality
+    failure, but will be highlighted red to encourage intentional
+    discussion about these cases. It may be necessary to return to
+    previous sections at this point to adjust assumptions. This review
+    and adjustment process may be iterative, and may also depend on
+    targets set in the PMTCT, TB, and VMMC tabs as well.
 
-    b.  Once modeling of PMTCT, EID, and HEI_POS targets is complete,
-        return to this section of the Data Pack to review how HEI_POS
-        targets on the EID tab link to TX_CURR on the Cascade tab. See
-        below for additional information.
-
-### TX_NET_NEW (FY23)
-
-For those one year old and older, TX_NET_NEW targets for FY22 are set in
-the Data Pack as follows, rounded to the nearest integer:
-
-
-\begin{center} ${TX\_ NET\_ NEW}_{t}\  = \ {TX\_ NET\_ NEW\_ SUBNAT}_{t}\  \times \ {PEPFAR\ Coverage\ of\ Host\ Country\ TX\_ NET\_ NEW\_ SUBNAT\ }_{t}\ $ \end{center}
-
-For a description of how TX_NET_NEW is modeled for infants, see section
-below.
-
-### TX_CURR (FY23)
-
-For those one year old and older, TX_CURR targets for FY22 are set in
-the Data Pack as follows:
-
-
-\begin{center} ${TX\_ CURR}_{t}\  = \ {TX\_ CURR}_{t - 1}\  + \ {TX\_ NET\_ NEW}_{t}$ \end{center}
-
-For a description of how TX_CURR is modeled for infants, see section
-below.
-
-### Setting TX_CURR Targets among Infant Population Groups
-
-Because infants enter the Treatment cohort through a distinctly separate
-method than the rest of the population, and also given that all infants
-in the previous year's Treatment cohort will entirely shift into the 1-4
-year old age group leaving none to carry over into the next year's
-cohort, TX_CURR targets for this population do not follow the chain of
-logic described thus far. Instead, TX_CURR targets for infants are
-driven by the model for EID testing, which is in turn based on the model
-for PMTCT testing and treatment.
-
-As described above in the Instructions section for this tab, upon
-confirming targets set in the PMTCT and EID tabs, return to the
-**PMTCT_HEI_POS Linked to ART (FY22)** column in this section to review
-ART targets for infants. Because HEI_POS targets are set without
-disaggregation by sex, these are allocated equally to male and female
-infants in the Cascade tab.
-
-Because all infants in the previous year's Treatment cohort will
-entirely shift into the 1-4 year old age group, both TX_NET_NEW and
-TX_CURR for infants will reflect 100% of the value in the
-**PMTCT_HEI_POS Linked to ART (FY22)** column.
-
-## Cascade: TX_CURR_SUBNAT
+## TX_CURR_SUBNAT
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "latex")
@@ -796,9 +771,23 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For ages one and older:
+1.  Return and review assumptions for the **PEPFAR Contribution to Host
+    Country HIV Response (FY23)** set previously in the
+    VL_SUPPRESSION_SUBNAT section of this tab.
+2.  Return and review PEPFAR targets for **TX_CURR (FY23)**.
+3.  Targets for **TX_CURR_SUBNAT (FY23)** are set in this section by
+    extrapolating PEPFAR TX_CURR targets to a broader context based on
+    PEPFAR's planned contribution to the Host Country HIV Response
+    (FY23).
+4.  Review the **historic estimated Population ART Coverage** (the total
+    on ART, divided by the total PLHIV).
+5.  Review the **Planned Population ART Coverage** for the upcoming
+    Fiscal Year, based on all the targets set to this point. As needed,
+    return to previous sections to adjust assumptions in order to
+    influence this column, especially assumptions related to TX_CURR and
+    TX_CURR_SUBNAT.
 
-## Cascade: PEPFAR Testing
+## PEPFAR Testing
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-Testing-BW-CA-1-3", "latex")
@@ -818,59 +807,46 @@ There are no Targets from this section that will be imported into DATIM.
 
 ### Instructions
 
-1.  Review TX_NEW from Previously Diagnosed and adjust as appropriate.
-    This is defaulted to 0%, reflecting an emphasis for Test and Start
-    approaches for testing and linkage to treatment. Red highlights
-    indicate percentages over 100%; yellow highlights indicate
-    percentages changed from the default.
+1.  As explained above, TX_NEW includes both those who are newly
+    infected, as well as those who had been previously living with HIV,
+    but who had never been linked to ART. Among this second cohort, one
+    portion may have been previously undiagnosed, while another
+    previously diagnosed but not on ART. In this section, review and
+    adjust assumptions to indicate what percent of those previously
+    living with HIV had been **Previously Diagnosed**, as opposed to
+    **New Diagnoses**.
 
-2.  Review the total TX_NEW from all other sources (FY22) for those to
-    be linked to treatment from all HTS and EID testing modalities.
+2.  Review historic trends from FY22 targets for the **Percent of
+    HTS_TST_POS from HTS_INDEX**, and determine how to adjust this
+    percentage for FY23 targets.
 
-3.  Review observed ART Linkage Rate, based on FY20 Results reported in
-    DATIM, for historical context.
-
-4.  Review and adjust Targeted ART Linkage Rates for FY22. These are
-    defaulted to 95%, but can be adjusted as necessary. Red highlights
-    indicate percentages over 100%; yellow highlights indicate
-    percentages below 95%.
-
-5.  Review the Percent of HTS_TST_POS from HTS_INDEX from FY20 results,
-    based on data reported in DATIM, for historical context.
-
-6.  Review and adjust Targeted % of HTS_TST_POS from HTS_INDEX for FY22.
-    These are set based on FY21 ART Coverage, per COP 21 Guidance, but
-    can be altered as needed. Red highlights indicate percentages above
-    100%; yellow highlights indicate percentages below thresholds
-    stipulated in COP 21 Guidance. See below for additional information.
-
-7.  Review total testing targets (HTS_TST_POS + PMTCT_HEI_POS) for FY22.
-    Where necessary, return to previous assumptions and adjust
+3.  Review total testing targets (**HTS_TST_POS + PMTCT_HEI_POS**) for
+    FY23. Where necessary, return to previous assumptions and adjust
     appropriately.
 
-8.  Review total Index testing targets (HTS_INDEX) for FY22 and adjust
-    the Targeted % of HTS_TST_POS from HTX_INDEX for FY22 as necessary.
+4.  Review FY23 targets for **HTS_INDEX Positive** and adjust the
+    Targeted % of HTS_TST_POS from HTX_INDEX for FY23 as necessary.
 
-9.  Review FY22 targets for PMTCT_STAT New Positives and HTS_TST Post
-    ANC1 New Positives and navigate to the PMTCT tab to adjust
+5.  Review FY23 targets for **PMTCT_STAT New Positives** and **HTS_TST
+    Post ANC1 New Positives** and navigate to the PMTCT tab to adjust
     underlying assumptions as necessary.
 
-10. Review FY22 targets for TB_STAT New Positives and navigate to the TB
-    tab to adjust underlying assumptions as necessary.
+6.  Review FY23 targets for **TB_STAT New Positives** and navigate to
+    the TB tab to adjust underlying assumptions as necessary.
 
-11. Review FY22 targets for VMMC_CIRC Tested Positives and navigate to
-    the VMMC tab to adjust underlying assumptions as necessary.
+7.  Review FY23 targets for **VMMC_CIRC Tested Positives** and navigate
+    to the VMMC tab to adjust underlying assumptions as necessary.
 
-12. Review FY22 targets for PMTCT_HEI_POS and navigate to the EID tab to
-    adjust underlying assumptions as necessary. For infants under 1 year
-    old, 100% of testing targets should come through PMTCT_HEI_POS. See
-    below for additional information.
+8.  Review FY23 targets for **PMTCT_HEI_POS** and navigate to the EID
+    tab to adjust underlying assumptions as necessary. For infants under
+    1 year old, 100% of testing targets should come through
+    PMTCT_HEI_POS. See below for additional information.
 
-13. Review FY22 targets for HTS_TST_POS from All Other Modalities and
-    navigate to the HTS tab to adjust underlying assumptions as
+9.  Review FY23 targets for **HTS_TST_POS from All Other Modalities**
+    and navigate to the HTS tab to adjust underlying assumptions as
     necessary.
 
-14. Review percentage contributions toward FY22 targeted Total Positives
+10. Review percentage contributions toward FY23 targeted Total Positives
     from HTS_INDEX, PMTCT ANC1, PMTCT Post ANC1, TB_STAT, VMMC,
     PMTCT_HEI_POS, and All Other Modalities. Red highlights across these
     columns indicate cases where targets have been over- or
@@ -879,63 +855,47 @@ There are no Targets from this section that will be imported into DATIM.
 
 ### Targeted % of HTS_TST_POS from HTS_INDEX
 
-Per COP 21 Guidance, the total number of positives targeted to be
-identified through Index Testing is initially modeled based on FY21 ART
-Coverage as follows:
-
--   **ART Coverage \< 70%:** 30% of total positives to be identified
-    through Index Testing
-
--   **ART Coverage >= 70% & \<80%:** 50% of total positives to be
-    identified through Index Testing
-
--   **ART Coverage >= 80%:** 75% of total positives to be identified
-    through Index Testing
-
-In cases where historic FY20 results showed Index Testing contributing
-to more than this share of testing, the larger value will be used.
-
-Again, while modeled per the above, this value can adjusted as needed.
+Unlike in past years, the COP22 Data Pack initially sets the percentage
+of HTS_TST_POS from HTS_INDEX based on the percentage used in the
+previous year's targets, but allows adjustments from this beginning rate
+as needed.
 
 ### Testing Rationalization
 
 As testing targets are set in the PMTCT, TB, VMMC, and EID tabs, these
 will be reflected here on the Cascade tab to reconcile against those
-high-level testing targets set following the logic flow set forth in
-preceding sections. This section of the Cascade tab can serve as a sort
-of Table of Contents to help you navigate across these various tabs as
-you adjust assumptions and reconcile targets. Similar Testing
-Rationalization sections exist in each of these separate tabs for easier
-reference.
+high-level testing targets set following the logic flow in preceding
+sections. This section of the Cascade tab can serve as a Table of
+Contents across these tabs as you adjust assumptions and reconcile
+targets. Similar Testing Rationalization sections also exist in each of
+these tabs for easier reference.
 
 Red highlighting will indicate any case where over- or
 under-distribution of testing targets across testing modalities has
-occurred, keying primarily from the Total Positives from All Other
-Modalities (FY22) (%) column. As these issues arise, determine whether
-these issues require adjustment of either preceding Treatment and total
-Testing targets, or related targets in the PMTCT, TB, VMMC, or EID tabs.
+occurred. As these issues arise, determine whether to adjust either
+TX_NEW or total Testing targets, or related targets in the PMTCT, TB,
+VMMC, or EID tabs.
 
 After testing targets have been allocated to PMTCT ANC1, PMTCT Post
 ANC1, TB_STAT, VMMC_CIRC, and PMTCT_HEI_POS, any remainder will be
-available for further allocation against all remaining testing
-modalities in the HTS tab of the Data Pack.
+available for further allocation against other testing modalities in the
+HTS tab of the Data Pack.
 
 ### Testing Targets for Infant Populations
 
-Similar to targets for HIV-positive infants linked to ART as explained
-above, targets for infants identified as HIV-positive are initially set
-in the EID tab, without sex disaggregation. In reflecting these in the
-Cascade tab, these values are equally allocated across male and female
-infants.
+Similar to other targets for \<01 year olds seen on the Cascade Tab,
+targets for infants identified as HIV-positive are initially set in the
+EID tab, without sex disaggregation. In reflecting these in the Cascade
+tab, these values are equally allocated across male and female infants.
 
-Per COP 21 Guidance, 100% of these testing targets for infant
-populations should be accommodated for via PMTCT_HEI_POS, and no other
-modality. Should any portion of these targets be allocated to any other
-modality, an alert will be flagged in the Data Pack Self-Service App.
-Conditional formatting within the Data Pack will also indicate when this
-has occurred.
+Per COP Guidance, 100% of these testing targets for infant populations
+should be accommodated for via PMTCT_HEI_POS, and no other modality.
+Should any portion of these targets be allocated to any other modality,
+an alert will be flagged in the Data Pack Self-Service App. Conditional
+formatting within the Data Pack will also indicate when this has
+occurred.
 
-## Cascade: Testing Reference Distribution
+## Testing Reference Distribution
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-Testing Reference Distribution-CJ-CL-1-2", "latex")
@@ -949,13 +909,18 @@ schema_table("Cascade-Testing Reference Distribution-CJ-CP-1-1", "html")
 
 ### DATIM Import
 
-There are no Targets from this section that will be imported into DATIM.
+No Targets from this section will be imported into DATIM.
 
 ### Instructions
 
-1.  Review
+1.  Review this section for any cases where targets may be over- or
+    under-allocated across modalities, which will be highlighted red for
+    easy distinction.
+2.  Return to the previous section to review target values as needed, or
+    navigate to the PMTCT, TB, EID, or VMMC tabs to adjust targets set
+    on these tabs.
 
-## Cascade: HTS_Index
+## HTS_Index
 
 **HTS_INDEX:** Number of individuals who were identified and tested
 using Index testing services and received their results
@@ -989,17 +954,17 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  Review the estimated percent of total HTS_INDEX positives to be
-    identified in Community Sites. This will initially be pre-populated
-    based on FY20 results as recorded in DATIM, but may be adjusted as
-    needed. Red highlights indicate percentages over 100%, or under 0%.
+    identified in **Community Sites**. This will initially be
+    pre-populated based on historic trends as recorded in DATIM, but may
+    be adjusted as needed. Red highlights indicate percentages over
+    100%, or under 0%.
 
-2.  Review estimated yields among HTS_INDEX contacts newly tested, both
-    for those tested at Community sites, as well as for those tested in
-    Facility sites. These are initially pre-populated based on FY20
-    results from DATIM, but can be adjusted as needed. Red highlights
-    indicate percentages over 100%, or under 0%; yellow highlights
-    indicate cases where yield rates are less than 20% for 15+ year
-    olds.
+2.  Review estimated **yields** among HTS_INDEX contacts newly tested,
+    both for Community and Facility sites. These are initially
+    pre-populated based on historic trends from DATIM, but can be
+    adjusted as needed. Red highlights indicate percentages over 100%,
+    or under 0%; yellow highlights indicate cases where yield rates are
+    less than 20% for 15+ year olds.
 
 3.  Review modeled targets for the following columns. See below for
     additional information:
@@ -1023,33 +988,27 @@ sites, and across both Negative and Positive HIV test results, are set
 by combining HTS_INDEX_POS with the percentages set in steps 1 and 2
 above.
 
-FY22 targets for HTS_INDEX New Positives in Community Sites are set as
+Targets for HTS_INDEX New Positives in Community Sites are set as
 follows, rounding to the nearest integer:
-
 
 \begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
 
-Building from this, FY22 targets for HTS_INDEX New Negatives in
-Community Sites are set as follows, rounding to the nearest integer:
-
+Building from this, targets for HTS_INDEX New Negatives in Community
+Sites are set as follows, rounding to the nearest integer:
 
 \begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
 
-Alternatively, FY22 targets for HTS_INDEX New Positives in Facility
-Sites are set as follows, rounding to the nearest integer:
-
+Alternatively, targets for HTS_INDEX New Positives in Facility Sites are
+set as follows, rounding to the nearest integer:
 
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
 
-And finally, FY22 targets for HTS_INDEX New Negatives in Community Sites
-are set as follows:
-
+And finally, targets for HTS_INDEX New Negatives in Community Sites are
+set as follows:
 
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
 
-## 
-
-## Cascade: DIAGNOSED_SUBNAT
+## DIAGNOSED_SUBNAT
 
 ```{r echo=FALSE, include=knitr::is_latex_output()}
 schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "latex")
@@ -1063,31 +1022,19 @@ schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country DIAGNOSED_SUBNAT (FY22)** $DIAGNOSED\_SUBNAT.T$
+-   **Host Country DIAGNOSED_SUBNAT (FY23)** $DIAGNOSED_SUBNAT.T$
 
 ### Instructions
 
-1.  Review and adjust the expected PEPFAR Coverage of Host Country Total
-    Positives Identified for FY22. This is defaulted to match the PEPFAR
-    Coverage of Host Country TX_NET_NEW_SUBNAT (FY22) set in the
-    TX_NET_NEW_SUBNAT section of the Cascade tab, but can be altered as
-    appropriate.
+1.  Return to the VL_SUPPRESSION_SUBNAT section to review the **planned
+    PEPFAR Contribution to HIV Response**.
 
-2.  Review FY22 targets for Host Country DIAGNOSED_SUBNAT. See below for
-    additional information.
-
-### DIAGNOSED_SUBNAT (FY22)
-
-In conjunction with allowing import and update of FY21 targets in DATIM
-for DIAGNOSED_SUBNAT, the Data Pack also allows import of FY22 targets
-for this indicator. These are modeled within the Data Pack as follows,
-rounded to the nearest integer:
-
-
-\begin{center} ${DIAGNOSED\_ SUBNAT}_{t}\  = \ DIAGNOSED\_ SUBNAT.T\_ 1 + \ \frac{{HTS\_TST\_POS\  +  \ PMTCT\_ HEI\_ POS}_{t}}{\text{PEPFAR Coverage of Host Country Total Positives Identified}_{t}}$ \end{center}
-
-Note that this modeling approach does not take into account mortality
-rates among this population.
+2.  Review FY23 targets for **Host Country DIAGNOSED_SUBNAT**. This is
+    based on the PEPFAR target for Total Testing, but extrapolated to
+    the Host Country context following the planned PEPFAR Contribution
+    to the HIV Response, then added to the estimated FY22
+    DIAGNOSED_SUBNAT indicated in the Host Country Context section of
+    the Data Pack.
 
 \elandscape
 

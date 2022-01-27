@@ -129,18 +129,20 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  Review "Cumulative Previous Completion of TPT (Results FY17-21)" as
-    well as "B_PREV (N) - New on ART (FY22 Targets)" and "TB_PREV (N) -
+    well as "TB_PREV (N) - New on ART (FY22 Targets)" and "TB_PREV (N) -
     Already on ART (FY22 Targets)". These three columns will help
-    calcualte "Already on ART who have likely completed TPT in last 5
+    calculate "Already on ART who have likely completed TPT in last 5
     years (FY23) (%)".
 
 2.  Review "Already on ART who have likely completed TPT in last 5 years
     (FY23) (%)" which is the summation of the previous three columns
-    from the beggining of this section, divided by the "TX_CURR (FY22)"
-    value from column G of the TX_TB (D) section.
+    from step 1 above, divided by the "TX_CURR (FY22)" value from column
+    G of the TX_TB (D) section.
 
-3.  Review "Est. \# Already on ART Eligible for TPT (FY23)" which is the
-    product of the previous step and "Already on ART, TB Screen -"
+3.  Review "Est. \# Already on ART Eligible for TPT (FY23)" which is
+    equivalent to "Already on ART, TB Screen -" set in the TX_TB (D)
+    section, less the projected number of these who have likely already
+    received TPT in the previous few years.
 
 4.  Review both "% TPT Initiation Rate - New on ART (FY23) (%)" and "%
     TPT Initiation Rate - Already on ART (FY23) (%)" which are defaulted

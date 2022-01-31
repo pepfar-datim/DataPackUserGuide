@@ -352,7 +352,6 @@ Response set previously.
 
 ```{=tex}
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
-```
 Reviewing and understanding the Working PopVLS Rate arrived at in this
 column is critical for much of the rest of the Data Pack. In particular,
 this column is immediately used to inform the Planned PopVLS Rate (FY23)

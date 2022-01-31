@@ -1017,7 +1017,6 @@ set as follows, rounding to the nearest integer:
 And finally, targets for HTS_INDEX New Negatives in Community Sites are
 set as follows:
 
-```{=tex}
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
 ```
 ## DIAGNOSED_SUBNAT

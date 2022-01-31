@@ -394,6 +394,7 @@ VL_SUPPRESSION_SUBNAT (FY23) is set as follows (rounded to the nearest
 integer):
 
 \begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ ({PLHIV}_{t-1}\  \times \ \ Planned\ PopVLS\ Rate$ \end{center}
+
 As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function
 of FY22 estimated PLHIV plus the New Infections projected for FY23. How
 these projected New Infections specifically impact PEPFAR targets for

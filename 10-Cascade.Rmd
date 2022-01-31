@@ -275,7 +275,7 @@ suppressed PLHIV.
 
 The following data points will be imported into DATIM from this section:
 
--   \*\*VL_SUPPRESSION_SUBNAT (FY23) $**VL_SUPPRESSED.T$
+-   **VL_SUPPRESSION_SUBNAT (FY23)** $VL_SUPPRESSED.T$
 
 ### Instructions
 

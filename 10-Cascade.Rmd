@@ -337,7 +337,6 @@ For its numerator, the DataPack first attempts to use Host Country
 estimates of the total number of Virally Suppressed ART Patients
 (VL_SUPPRESSED.T_1):
 
-```{=tex}
 \begin{center}
 
 $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ 

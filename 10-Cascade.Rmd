@@ -529,7 +529,6 @@ As mentioned above, only Routine Viral Load testing will be targeted in
 the Data Pack. Within the Data Pack, TX_PVLS (D) targets for Routine
 Viral Load Testing are set as follows, rounded to the nearest integer:
 
-```{=tex}
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
 ```
 ## VLT Coverage

@@ -455,7 +455,6 @@ only for Routine viral load testing.
 TX_PVLS (N) targets for Routine Viral Load Testing are set as follows,
 rounded to the nearest integer:
 
-```{=tex}
 \begin{center} ${TX\_ PVLS.N.Routine}_{t}\  = \ {TX\_ PVLS.D.Routine}_{t}\  \times \ \text{Targeted\ VL\ Suppression\ Rate}_{t}$ \end{center}
 ```
 ### \_Military Organization Units

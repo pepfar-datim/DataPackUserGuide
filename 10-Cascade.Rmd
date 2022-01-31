@@ -81,15 +81,15 @@ provides space for reflecting the following data:
     $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of
     September 2022.
 
--   **Host Country Projected Incidence Rate (FY22) (%)
-    $Incidence_SUBNAT.Rt.T_1$**: Estimated incidence rate, projected
-    as of September 2022.
+-   **Host Country Projected Incidence Rate (FY22) (%)**
+    $Incidence_SUBNAT.Rt.T_1$: Estimated incidence rate, projected as of
+    September 2022.
 
--   **Host Country Projected New Infections (FY23)
-    $NEW_INFECTIONS_SUBNAT.T_1$:** Estimated new infections projected
-    to occur in FY23, based on projected FY22 Incidence Rates.
+-   **Host Country Projected New Infections (FY23)**
+    $NEW_INFECTIONS_SUBNAT.T_1$: Estimated new infections projected to
+    occur in FY23, based on projected FY22 Incidence Rates.
 
--   **Host Country PLHIV Diagnosed (FY22) $DIAGNOSED_SUBNAT.T_1$:**
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED_SUBNAT.T_1$:
     Estimated number of people living with HIV who know their HIV
     status, projected as of September 2022.
 
@@ -101,15 +101,23 @@ provides space for reflecting the following data:
     $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART,
     projected as of September 2022.
 
--   **Host Country Est. ART Patients Tested for VLS (FY22)
-    $VL_TESTING_SUBNAT.T_1$:** Estimated number of ART Patients who
-    have been tested for Viral Load Suppression, projected as of
-    September 2022.
+-   **Host Country Est. ART Patients Tested for VLS (FY22)**
+    $VL_TESTING_SUBNAT.T_1$: Estimated number of ART Patients who have
+    been tested for Viral Load Suppression, projected as of
+    September 2022. \**See note below*
 
--   **Host Country Estimated Virally Suppressed ART Patients (FY22)
-    $VL_SUPPRESSED.T_1$**: Estimated people living with HIV who are on
-    ART and have a suppressed viral load, projected as of
-    September 2022.
+-   **Host Country Estimated Virally Suppressed ART Patients (FY22)**
+    $VL_SUPPRESSED.T_1$: Estimated people living with HIV who are on ART
+    and have a suppressed viral load, projected as of September 2022.
+    \**See note below*
+
+\**Note:* These two columns have been added and left blank for country
+teams to add in data, should they have reliable Host Country Data
+available to them. Should a team have access to this data, they should
+consult their PPM and DUIT Liaison prior to populating the columns. If a
+country does not have good Host Country Data VL data, the best way
+forward is likely to leave blank, and the DataPack will work with your
+PEPFAR TX_PVLS data on it's own.
 
 ### DATIM Import
 
@@ -119,8 +127,7 @@ already been entered in DATIM:
 
 -   **Host Country Estimated Population (FY22)** $POP_EST.T_1$
 -   **Host Country Estimated PLHIV (FY22)** $PLHIV.T_1$
--   **Host Country Estimated HIV Prevalence (FY22) (%)**
-    $HIV_PREV.T_1$
+-   **Host Country Estimated HIV Prevalence (FY22) (%)** $HIV_PREV.T_1$
 -   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED_SUBNAT.T_1$
 -   **Host Country Observed TX_CURR_SUBNAT (FY21)** $TX_CURR_SUBNAT.R$
 -   **Host Country Estimated TX_CURR_SUBNAT (FY22)**
@@ -268,7 +275,7 @@ suppressed PLHIV.
 
 The following data points will be imported into DATIM from this section:
 
--   **VL_SUPPRESSION_SUBNAT (FY23) $**VL_SUPPRESSED.T$
+-   **VL_SUPPRESSION_SUBNAT (FY23)** $VL_SUPPRESSED.T$
 
 ### Instructions
 
@@ -525,7 +532,6 @@ The following data points will be imported into DATIM from this section:
 As mentioned above, only Routine Viral Load testing will be targeted in
 the Data Pack. Within the Data Pack, TX_PVLS (D) targets for Routine
 Viral Load Testing are set as follows, rounded to the nearest integer:
-
 
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
 

@@ -348,7 +348,6 @@ also unavailable, FY21 results, and then extrapolates these to the Host
 Country context by referencing the Planned PEPFAR Contribution to HIV
 Response set previously.
 
-```{=tex}
 \begin{center} $\frac{PEPFAR\ TX\_ CURR\ (FY20\ Results)}{Host\ Country\ Est.\ PLHIV\ (FY21)}$ \end{center}
 Reviewing and understanding the Working PopVLS Rate arrived at in this
 column is critical for much of the rest of the Data Pack. In particular,

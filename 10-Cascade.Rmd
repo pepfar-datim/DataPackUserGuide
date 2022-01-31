@@ -343,7 +343,6 @@ estimates of the total number of Virally Suppressed ART Patients
 $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ 
 
 \end{center}
-```
 Where these Host Country data are unavailable, the DataPack references
 PEPFAR data for TX_PVLS (N) either from FY22 targets or, if these are
 also unavailable, FY21 results, and then extrapolates these to the Host

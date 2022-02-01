@@ -51,10 +51,6 @@ knitr::opts_chunk$set(echo = FALSE, fig.align="center")
 ```
 
 ```{r echo=FALSE}
-filepath <- "static/COP22_Data_Pack_Template.xlsx"
-skip <- NULL
-type <- "Data Pack Template"
-cop_year <- datapackr::getCurrentCOPYear()
 
 spectrum_schema <- tibble::tribble(
   ~sheet_name, ~col, ~col_name, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,

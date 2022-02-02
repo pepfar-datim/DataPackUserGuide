@@ -14,12 +14,11 @@ period.
 
 ## HTS_TST Modalities
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS_RECENT-Index (Community)-F-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS_RECENT-Index (Community)-F-G-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS_RECENT",
+             section = "Index (Community)",
+             columns = col_seq("N", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -55,12 +54,11 @@ The following data points will be imported into DATIM from this section:
 
 ## HTS_RECENT (Total)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS_RECENT",
+             section = "HTS_RECENT (Total)",
+             columns = col_seq("AJ", "AL"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

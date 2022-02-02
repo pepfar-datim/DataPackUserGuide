@@ -10,20 +10,11 @@ editor_options:
 
 ## Host Country Context
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-J-N-2-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-O-R-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Host Country Context-F-R-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "Host Country Context",
+             columns = col_seq("F", "R"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -94,12 +85,11 @@ DataPack:
 
 **PMTCT_STAT (D):** Number of new ANC clients in reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT (D)",
+             columns = col_seq("S", "U"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -135,12 +125,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: PMTCT_STAT_SUBNAT (D)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT_SUBNAT (D)",
+             columns = col_seq("V", "X"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -170,16 +159,11 @@ The following data points will be imported into DATIM from this section:
 first antenatal care visit (ANC1) (includes those who already knew their
 HIV status prior to ANC1).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-Y-AB-1-3", "latex")
-
-schema_table("PMTCT-PMTCT_STAT (N)-AB-AD-2-3", "latex")
-
-schema_table("PMTCT-PMTCT_STAT (N)-AD-AG-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-Y-AG-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT (N)",
+             columns = col_seq("Y", "AG"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -251,14 +235,14 @@ These rates are calculated from Host Country Context data as follows:
 
 \begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
 
+
 ## PMTCT: PMTCT_STAT_SUBNAT (N)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT_SUBNAT (N)",
+             columns = col_seq("AH", "AK"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -304,12 +288,11 @@ The following data points will be imported into DATIM from this section:
 **PMTCT_ART (N):** Number of HIV-positive pregnant women who received
 ART to reduce the risk of mother-to-child transmission during pregnancy.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_ART (N)",
+             columns = col_seq("AL", "AN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -339,12 +322,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: PMTCT_ART_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_ART_SUBNAT",
+             columns = col_seq("AO", "AQ"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -376,14 +358,11 @@ who receive a test POST ANC1, this includes women who are tested later
 in pregnancy (>ANC2), during labor & delivery (L&D), and while
 breastfeeding.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AU-1-2", "latex")
-
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AU-AX-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AX-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "HTS_TST: PMTCT Post ANC1",
+             columns = col_seq("AR", "AX"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -427,14 +406,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Testing Rationalization-AY-BB-1-2", "latex")
-
-schema_table("PMTCT-Testing Rationalization-BB-BE-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Testing Rationalization-AY-BE-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "Testing Rationalization",
+             columns = col_seq("AY", "BE"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

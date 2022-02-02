@@ -10,16 +10,11 @@ editor_options:
 
 ## VMMC_CIRC_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-VMMC_CIRC_SUBNAT-F-I-1-3", "latex")
-
-schema_table("VMMC-VMMC_CIRC_SUBNAT-J-M-2-3", "latex")
-
-schema_table("VMMC-VMMC_CIRC_SUBNAT-N-Q-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC_SUBNAT-F-Q-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "VMMC_CIRC_SUBNAT",
+             columns = col_seq("F", "Q"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -90,18 +85,11 @@ reporting period.
 **Note: For FY23 targets, males less than 15 years old will not be
 eligible for PEPFAR-supported VMMC services.**
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-VMMC_CIRC-R-T-1-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-U-X-2-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-Y-AB-3-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-AC-AD-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC-R-AD-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "VMMC_CIRC",
+             columns = col_seq("R", "AD"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -204,12 +192,11 @@ function, as follows:
 
 ## VMMC: ART Linkage
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-ART Linkage-AE-AF-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-ART Linkage-AE-AF-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "ART Linkage",
+             columns = col_seq("AE", "AF"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -226,12 +213,11 @@ No data will be imported into DATIM from this section.
 
 ## VMMC: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "Testing Rationalization",
+             columns = col_seq("AG", "AK"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

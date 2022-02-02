@@ -181,7 +181,7 @@ note that it may take up to 24 hours for active mechanism flags to be
 carried over into DATIM and resolve validation errors in the
 Self-Service App.
 
-```{r echo=FALSE, out.width = '70%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '70%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image15.png")
 ```
 

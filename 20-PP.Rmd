@@ -15,12 +15,11 @@ standardized, evidence-based interventions (s) required that are
 designed to promote the adoption of HIV prevention behaviors and service
 uptake.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PP-PP_PREV-F-H-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PP-PP_PREV-F-H-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PP",
+             section = "PP_PREV",
+             columns = col_seq("F", "H"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

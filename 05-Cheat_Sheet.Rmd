@@ -55,7 +55,7 @@ Remember that you can only change the sea green columns in the DP. The following
     -   Decreasing column AB directly decreases column AE "Newly Tested, Positive" by the same amount it decreases column AF "Newly Tested, Negative"
     -   This reduction in Newly Tested Positives will be bigger, proceed with caution
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image16.png")
 ```
 
@@ -79,7 +79,7 @@ knitr::include_graphics("./images/image16.png")
 
 -   While it is possible to change Column AQ, we recommend not altering this column directly so as to not create logical gaps in PMTCT testing process
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image17.png")
 ```
 
@@ -106,7 +106,7 @@ knitr::include_graphics("./images/image17.png")
     -   Decreasing column N directly decreases column Q "Newly Tested, Positive" by the same amount it decreases column R "Newly Tested, Negative"
     -   This reduction in Newly Tested Positives will be bigger, proceed with caution
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image18.png")
 ```
 
@@ -116,3 +116,4 @@ knitr::include_graphics("./images/image18.png")
 
 \end{center}
 
+\newpage

@@ -2,7 +2,7 @@
 
 # How to Fill Out the DataPack
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image12.png")
 ```
 
@@ -14,7 +14,7 @@ knitr::include_graphics("./images/image12.png")
 
 \newpage
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image13.png")
 ```
 

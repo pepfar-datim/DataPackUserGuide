@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # PrEP
@@ -14,12 +8,11 @@ editor_options:
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
 in the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PrEP-PrEP_NEW-F-L-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PrEP-PrEP_NEW-F-L-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PrEP",
+             section = "PrEP_NEW",
+             columns = col_seq("F", "L"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -51,12 +44,11 @@ return for a follow-up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PrEP-PrEP_CURR-M-O-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PrEP-PrEP_CURR-M-O-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PrEP",
+             section = "PrEP_CT",
+             columns = col_seq("M", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

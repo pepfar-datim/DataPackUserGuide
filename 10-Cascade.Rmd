@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # CASCADE
@@ -46,20 +40,11 @@ Cascade tab throughout.
 
 ## Host Country Context
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Host Country Context-F-I-1-5", "latex")
-
-schema_table("Cascade-Host Country Context-J-M-2-5", "latex")
-
-schema_table("Cascade-Host Country Context-N-P-3-5", "latex")
-
-schema_table("Cascade-Host Country Context-Q-S-4-5", "latex")
-
-schema_table("Cascade-Host Country Context-T-Y-4-5", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Host Country Context-F-Y-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Host Country Context",
+             columns = col_seq("F", "Y"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack,
@@ -220,20 +205,18 @@ the Data Pack Self-Service App, and removed during DATIM import.
 
 ## PEPFAR FY21 Cascade (Observed) & PEPFAR FY22 Cascade (Planned)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "latex")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Cascade-PEPFAR FY21 Cascade (Observed)",
+             columns = col_seq("Z", "AD"),
+             is_html_knit = knitr::is_html_output())
 ```
 
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "html")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Cascade-PEPFAR FY21 Cascade (Planned)",
+             columns = col_seq("AE", "AI"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 This section provides an overview of PEPFAR FY21 results and FY22
@@ -256,12 +239,11 @@ linkages and relationships between them:
 
 ## VL_SUPPRESSION_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "VL_SUPPRESSION_SUBNAT",
+             columns = col_seq("AJ", "AN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 This section of the Cascade tab builds upon the preceding Host Country
@@ -275,7 +257,7 @@ suppressed PLHIV.
 
 The following data points will be imported into DATIM from this section:
 
--   **VL_SUPPRESSION_SUBNAT (FY23)** $VL_SUPPRESSED.T$
+-   **VL_SUPPRESSION_SUBNAT (FY23)** $VL\_SUPPRESSED.T$
 
 ### Instructions
 
@@ -393,7 +375,7 @@ be coordinated with PPMs and DUIT Liaisons.
 VL_SUPPRESSION_SUBNAT (FY23) is set as follows (rounded to the nearest
 integer):
 
-\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ ({PLHIV}_{t-1}\  \times \ \ Planned\ PopVLS\ Rate$ \end{center}
+\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\ = \ ({PLHIV}_{t-1}\  \times \ {Planned\ Pop\ VLS\ Rate})$ \end{center}
 
 As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function
 of FY22 estimated PLHIV plus the New Infections projected for FY23. How
@@ -417,12 +399,11 @@ the Military organization unit, overwriting the formulas in the TX_PVLS
 (\<1,000 copies/mL) documented in the medical or laboratory results/LIS
 within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_PVLS (N)",
+             columns = col_seq("AU", "AW"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -491,12 +472,11 @@ been fully reviewed.
 documented in the medical or laboratory records/laboratory information
 system (LIS) within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_PVLS (D)",
+             columns = col_seq("AM", "AO"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -535,20 +515,14 @@ Viral Load Testing are set as follows, rounded to the nearest integer:
 
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
 
+
 ## VLT Coverage
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-VLT Coverage-AV-AY-1-4", "latex")
-
-schema_table("Cascade-VLT Coverage-AZ-BC-2-4", "latex")
-
-schema_table("Cascade-VLT Coverage-BD-BG-3-4", "latex")
-
-schema_table("Cascade-VLT Coverage-BH-BL-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-VLT Coverage-AV-BL-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "VLT Coverage",
+             columns = col_seq("AV", "BL"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -658,12 +632,11 @@ three quarters of the Fiscal Year.
 **TX_NEW:** Number of adults and children newly enrolled on
 anti-retroviral therapy (ART). $Part 1 of 2$
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_NEW-BM-BN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_NEW",
+             columns = col_seq("BM", "BN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -713,14 +686,11 @@ to treatment.
 **TX_CURR:** Number of adults and children currently receiving
 anti-retroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_CURR-BO-BS-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_CURR-BO-BS-1-1", "html")
-
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_CURR",
+             columns = col_seq("BO", "BS"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -759,14 +729,11 @@ The following data points will be imported into DATIM from this section:
 
 ## TX_CURR_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "html")
-
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_CURR_SUBNAT",
+             columns = col_seq("BT", "BV"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -795,16 +762,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PEPFAR Testing
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Testing-BW-CA-1-3", "latex")
-
-schema_table("Cascade-Testing-CB-CE-2-3", "latex")
-
-schema_table("Cascade-Testing-CF-CI-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Testing-BW-CI-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Testing",
+             columns = col_seq("BW", "CI"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -903,14 +865,11 @@ occurred.
 
 ## Testing Reference Distribution
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Testing Reference Distribution-CJ-CL-1-2", "latex")
-
-schema_table("Cascade-Testing Reference Distribution-CM-CP-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Testing Reference Distribution-CJ-CP-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Testing Reference Distribution",
+             columns = col_seq("CJ", "CP"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -931,14 +890,11 @@ No Targets from this section will be imported into DATIM.
 **HTS_INDEX:** Number of individuals who were identified and tested
 using Index testing services and received their results
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-HTS_INDEX-CQ-CT-1-1", "latex")
-
-schema_table("Cascade-HTS_INDEX-CU-CX-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-HTS_INDEX-CQ-CX-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "HTS_INDEX",
+             columns = col_seq("CQ", "CX"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -997,31 +953,38 @@ above.
 Targets for HTS_INDEX New Positives in Community Sites are set as
 follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
+
 
 Building from this, targets for HTS_INDEX New Negatives in Community
 Sites are set as follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+
 
 Alternatively, targets for HTS_INDEX New Positives in Facility Sites are
 set as follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+
 
 And finally, targets for HTS_INDEX New Negatives in Community Sites are
 set as follows:
 
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
+
 
 ## DIAGNOSED_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "DIAGNOSED_SUBNAT",
+             columns = "CY",
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

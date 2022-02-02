@@ -6,12 +6,11 @@
 
 **PMTCT_EID:** Number of infants who had a first virologic HIV test (sample collected) by 12 months of age during the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("EID-PMTCT_EID (N)-C-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("EID-PMTCT_EID (N)-C-G-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "EID",
+             section = "PMTCT_EID (N)",
+             columns = col_seq("C", "G"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -36,18 +35,11 @@ The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive
 
 **PMTCT_HEI_POS (N):** Number of HIV-infected infants identified in the reporting period, whose diagnostic sample was collected by 12 months of age.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("EID-PMTCT_EID (N)-H-K-1-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-L-N-2-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-O-Q-3-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-R-V-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("EID-PMTCT_EID (N)-H-V-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "EID",
+             section = "PMTCT_EID (N)",
+             columns = col_seq("H", "V"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -83,7 +75,6 @@ No data points will be imported into DATIM from this section.
 ### PMTCT_HEI_POS (FY22)
 
 To calculate the total number of HIV-infected infants to be tested and identified, the DataPack uses the following formula, rounding to the nearest integer:
-
 
 \begin{center} $PMTCT\_ HEI\_ POS.T\  = \ (PMTCT\_ EID.N.2.T\  \times \ PMTCT\_ HEI\_ POS.2.Yield.T)\  + \ (PMTCT\_ EID.N.12.T\  \times PMTCT\_ HEI\_ POS.12.Yield.T)\ $ \end{center}
 

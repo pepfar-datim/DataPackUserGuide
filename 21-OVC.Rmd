@@ -13,18 +13,11 @@ editor_options:
 **OVC_SERV:** Number of beneficiaries served by PEPFAR OVC programs for
 children and families affected by HIV.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("OVC-OVC_SERV-F-I-1-4", "latex")
-
-schema_table("OVC-OVC_SERV-J-M-2-4", "latex")
-
-schema_table("OVC-OVC_SERV-N-P-3-4", "latex")
-
-schema_table("OVC-OVC_SERV-Q-S-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("OVC-OVC_SERV-F-S-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "OVC",
+             section = "OVC_SERV",
+             columns = col_seq("F", "S"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -144,12 +137,11 @@ Transferred Out in Denominator.
 **OVC_HIVSTAT:** Number of orphans and vulnerable children (\<18 years
 old) with HIV status reported, disaggregated by HIV status.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "OVC",
+             section = "OVC_HIVSTAT",
+             columns = col_seq("T", "U"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import

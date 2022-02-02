@@ -32,6 +32,7 @@ suppressWarnings(suppressPackageStartupMessages({
   library(data.table)
   library(tidyr)
   library(datapackr)
+  library(openxlsx)
   library(knitr)
   library(kableExtra)
 }))
@@ -52,50 +53,60 @@ number2letter <- function(n) {
   return(x)
 }
 
-int2col <- function(n) {
-  n_letters <- floor(log(n, base = 26)) + 1
-  col <-
-    1:n_letters %>%
-    lapply(function(x) {
-      place <- n_letters - x + 1
-      letter <- number2letter(n %% (26**place))
-      return(letter)
-    }) %>%
-    paste0()
-  return(col)
+# int2col <- function(n) {
+#   stopifnot("Argument `n` must be numeric" = is.numeric(n),
+#             "Argument `n` must be greater than zero" = n > 0)
+# 
+#   if (n < 27) { return(number2letter(n)) } #nolint
+#   digits <- ceiling(log(n, base = 26))
+# 
+#   col <- seq_len(digits) %>%
+#     lapply(function(x) {
+#       i <- digits - x + 1
+#       # offset <- Reduce(`+`, lapply(seq_len(i - 1), function(j) { 26 ** (j - 1) }))
+#       key <- n + ifelse(!is.null(offset), offset, 0)
+#       letters_above <- floor(key / (26 ** (i))) * (26 ** (i))
+#       letters_below <- key %% (26 ** (i - 1))
+#       offset <- ifelse()
+#       nth_letter <- (key - letters_above - letters_below) / 26 ** (i - 1) + offset
+#       number2letter(nth_letter)
+#     }) %>%
+#     Reduce(paste0, .)
+# 
+#   return(col)
+# }
+
+col_seq <- function(col_start, col_end) {
+  n_start <- letter2number(col_start)
+  n_end <- letter2number(col_end)
+  
+  # Applies `int2col` against list from start number to end number
+  col_list <- sapply(n_start:n_end, int2col)
+    
+  # Return list of columns
+  col_list
 }
 
 knitr::opts_chunk$set(echo = FALSE, fig.align="center")
 
-```
-
-```{r echo=FALSE}
-filepath <- "static/COP22_Data_Pack_Template.xlsx"
-skip <- NULL
-type <- "Data Pack Template"
-cop_year <- datapackr::getCurrentCOPYear()
-
 spectrum_schema <- tibble::tribble(
-  ~sheet_name, ~col, ~col_name, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
-  "Spectrum", 4, "psnu", "string", "N", "Y", "N", "N",
-  "Spectrum", 5, "psnu_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", 6, "area_id", "string", "N", "Y", "N", "N",
-  "Spectrum", 7, "indicator_code", "string", "N", "Y", "N", "N",
-  "Spectrum", 8, "dataelement_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", 9, "age", "string", "N", "Y", "N", "N",
-  "Spectrum", 10, "age_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", 11, "sex", "string", "N", "Y", "N", "N",
-  "Spectrum", 12, "sex_uid", "string", "N", "Y", "N", "N",
-  "Spectrum", 13, "calendar_quarter", "string", "N", "Y", "N", "N",
-  "Spectrum", 14, "value", "integer", "N", "Y", "N", "N",
-  "Spectrum", 15, "age_sex_rse", "percentage", "N", "Y", "N", "N",
-  "Spectrum", 16, "district_rse", "percentage", "N", "Y", "N", "N",
-  "Spectrum", 17, "ID", "string", "N", "N", "Y", "N",
+  ~sheet_name, ~col_num, ~col_name, ~col_type, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
+  "Spectrum", 4, "psnu", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 5, "psnu_uid", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 6, "area_id", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 7, "indicator_code", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 8, "dataelement_uid", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 9, "age", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 10, "age_uid", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 11, "sex", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 12, "sex_uid", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 13, "calendar_quarter", "assumption", "string", "N", "Y", "N", "N",
+  "Spectrum", 14, "value", "assumption", "integer", "N", "Y", "N", "N",
+  "Spectrum", 15, "age_sex_rse", "assumption", "percentage", "N", "Y", "N", "N",
+  "Spectrum", 16, "district_rse", "assumption", "percentage", "N", "Y", "N", "N",
+  "Spectrum", 17, "ID", "string", "assumption", "N", "N", "Y", "N",
 ) %>%
-  dplyr::mutate(
-    col_ref = openxlsx::int2col(col),
-    col_num = col
-  )
+  dplyr::mutate(col_ref = openxlsx::int2col(col_num))
 
 schema <- datapackr::cop22_data_pack_schema %>%
   dplyr::filter(!sheet_name %in% c("Home", "Spectrum"),
@@ -123,60 +134,20 @@ schema <- datapackr::cop22_data_pack_schema %>%
     "Calculated column?" = calculated,
     "Linked column?" = linked)
 
-```
+schema_table <- function(sheet_name = NULL,
+                         section = NULL,
+                         columns = NULL,
+                         is_html_knit = knitr::is_html_output()){
 
-```{r echo=FALSE}
-schema_table <- function(table_reference, knit_type){
-  
-  inputs <- stringr::str_split(table_reference, "-")
-  
-  sheet_name <- inputs[[1]][1]
-  section <- inputs[[1]][2]
-  col_start <- inputs[[1]][3] %>% letter2number()
-  col_end <- inputs[[1]][4] %>% letter2number()
-  part <- inputs[[1]][5]
-  total <- inputs[[1]][6]
-  
   t <- schema %>%
     {if(sheet_name == "Spectrum") dplyr::select(schema, -UID) else .} %>%
     dplyr::filter(`Sheet Name` == sheet_name,
-                  `Column Number` %in% c(col_start:col_end)) %>%
+                  `Column` %in% columns) %>%
     dplyr::select(-`Sheet Name`, -`Column Number`) %>%
     tidyr::pivot_longer(cols = !Column) %>%
     tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
   
-  if (knit_type == "latex") {
-    t %<>%
-      knitr::kable(
-        format = "latex",
-        escape = TRUE,
-        booktabs = TRUE
-      ) %>%
-      kableExtra::kable_styling(font_size = 12,
-                                latex_options="scale_down") %>%
-      kableExtra::column_spec(1:(col_end-col_start+1),
-                              width=paste0(toString(7.5/(col_end-col_start+1)),
-                                           "in")) %>%
-      kableExtra::row_spec(0, background = "#E6DFA7", align = "c")
-    # flextable::flextable() %>%
-    # flextable::align(part = "all", align = "center") %>%
-    # flextable::align(j = 1, part = "body", align = "right") %>%
-    # flextable::void(j = 1, part = "header") %>%
-    # flextable::bold(part = "header") %>%
-    # flextable::bg(part = "header", bg = "#E6DFA7") %>%
-    # flextable::bg(part = "body",
-    #               bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
-    # flextable::hline_top(
-    #   part = "header",
-    #   border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-    # flextable::hline_bottom(
-    #   part = "header",
-    #   border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-    # flextable::border(
-    #   border = officer::fp_border(color = "#E5E7E9", width = 1)) %>%
-    # flextable::set_table_properties(width = 1, layout = "autofit") %>%
-    # flextable::autofit()
-  } else {
+  if (is_html_knit) {
     t %<>%
       tibble::as_tibble() %>%
       tibble::column_to_rownames(var = "name") %>%
@@ -186,13 +157,33 @@ schema_table <- function(table_reference, knit_type){
         booktabs = TRUE
       ) %>%
       kableExtra::kable_styling(font_size = 12) %>%
-      kableExtra::column_spec(1:(col_end-col_start+1),
-                              width=paste0(toString(7.5/(col_end-col_start+1)),
+      kableExtra::column_spec(seq_len(length(columns) + 1),
+                              width=paste0(toString(7.5/(length(columns)+1)),
                                            "in")) %>%
       kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
       kableExtra::row_spec(1:{ifelse(sheet_name == "Spectrum", 7, 8)},
                            extra_css = "border:1px solid lightgrey;") %>%
       kableExtra::scroll_box(width = "100%")
+  } else {
+    t %<>%
+      flextable::flextable() %>%
+      flextable::align(part = "all", align = "center") %>%
+      flextable::align(j = 1, part = "body", align = "right") %>%
+      flextable::void(j = 1, part = "header") %>%
+      flextable::bold(part = "header") %>%
+      flextable::bg(part = "header", bg = "#E6DFA7") %>%
+      flextable::bg(part = "body",
+                    bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
+      flextable::hline_top(
+        part = "header",
+        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+      flextable::hline_bottom(
+        part = "header",
+        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
+      flextable::border(
+        border = officer::fp_border(color = "#E5E7E9", width = 1)) %>%
+      flextable::set_table_properties(width = 1, layout = "autofit") %>%
+      flextable::autofit()
   }
   
   return(t)
@@ -522,7 +513,7 @@ knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 
 ## Elements of a Tab
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image4.png")
 ```
 
@@ -536,7 +527,7 @@ knitr::include_graphics("./images/image4.png")
 
 ## How to Navigate a DataPack Tab
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image5.png")
 ```
 
@@ -565,7 +556,7 @@ suggestions as well.
 
 **Example:**
 
-```{r echo=FALSE, out.width = '50%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '50%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image9.png")
 ```
 
@@ -775,7 +766,7 @@ Remember that you can only change the sea green columns in the DP. The following
     -   Decreasing column AB directly decreases column AE "Newly Tested, Positive" by the same amount it decreases column AF "Newly Tested, Negative"
     -   This reduction in Newly Tested Positives will be bigger, proceed with caution
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image16.png")
 ```
 
@@ -799,7 +790,7 @@ knitr::include_graphics("./images/image16.png")
 
 -   While it is possible to change Column AQ, we recommend not altering this column directly so as to not create logical gaps in PMTCT testing process
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image17.png")
 ```
 
@@ -826,7 +817,7 @@ knitr::include_graphics("./images/image17.png")
     -   Decreasing column N directly decreases column Q "Newly Tested, Positive" by the same amount it decreases column R "Newly Tested, Negative"
     -   This reduction in Newly Tested Positives will be bigger, proceed with caution
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image18.png")
 ```
 
@@ -836,6 +827,7 @@ knitr::include_graphics("./images/image18.png")
 
 \end{center}
 
+\newpage
 
 <!--chapter:end:05-Cheat_Sheet.Rmd-->
 
@@ -843,7 +835,7 @@ knitr::include_graphics("./images/image18.png")
 
 # How to Fill Out the DataPack
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image12.png")
 ```
 
@@ -855,7 +847,7 @@ knitr::include_graphics("./images/image12.png")
 
 \newpage
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image13.png")
 ```
 
@@ -935,14 +927,11 @@ more information on each program area in the COP21 Guidance.
 
 The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Spectrum file for your OU will be provided at the conclusion of the UNAIDS Spectrum Training for Country Teams. The contents of this file will be manually loaded into the Spectrum tab which is setup as below:
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Spectrum-NA-D-I-1-2", "latex")
-
-schema_table("Spectrum-NA-J-P-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Spectrum-NA-D-P-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Spectrum",
+             section = NA,
+             columns = col_seq("D", "P"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 With OGAC approval, countries can also populate input their own data into this tab with a different MOH/country approved set of estimates. Estimate changes can also be made in the two associated tabs, Cascade and PMTCT.
@@ -963,13 +952,11 @@ editor_options:
 
 # PRIORITIZATION
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Prioritization-Prioritization-B-E-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Prioritization-Prioritization-B-E-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Prioritization",
+             section = "Prioritization",
+             columns = col_seq("C", "E"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1019,12 +1006,6 @@ The following data points will be imported into DATIM from this section:
 
 <!--chapter:end:09-Prioritization.Rmd-->
 
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # CASCADE
@@ -1067,20 +1048,11 @@ Cascade tab throughout.
 
 ## Host Country Context
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Host Country Context-F-I-1-5", "latex")
-
-schema_table("Cascade-Host Country Context-J-M-2-5", "latex")
-
-schema_table("Cascade-Host Country Context-N-P-3-5", "latex")
-
-schema_table("Cascade-Host Country Context-Q-S-4-5", "latex")
-
-schema_table("Cascade-Host Country Context-T-Y-4-5", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Host Country Context-F-Y-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Host Country Context",
+             columns = col_seq("F", "Y"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack,
@@ -1241,20 +1213,18 @@ the Data Pack Self-Service App, and removed during DATIM import.
 
 ## PEPFAR FY21 Cascade (Observed) & PEPFAR FY22 Cascade (Planned)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "latex")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Cascade-PEPFAR FY21 Cascade (Observed)",
+             columns = col_seq("Z", "AD"),
+             is_html_knit = knitr::is_html_output())
 ```
 
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-PEPFAR FY21 Cascade (Observed)-Z-AD-1-1", "html")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-PEPFAR FY22 Cascade (Planned)-AE-AI-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Cascade-PEPFAR FY21 Cascade (Planned)",
+             columns = col_seq("AE", "AI"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 This section provides an overview of PEPFAR FY21 results and FY22
@@ -1277,12 +1247,11 @@ linkages and relationships between them:
 
 ## VL_SUPPRESSION_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-VL_SUPPRESSION_SUBNAT-AJ-AN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "VL_SUPPRESSION_SUBNAT",
+             columns = col_seq("AJ", "AN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 This section of the Cascade tab builds upon the preceding Host Country
@@ -1296,7 +1265,7 @@ suppressed PLHIV.
 
 The following data points will be imported into DATIM from this section:
 
--   **VL_SUPPRESSION_SUBNAT (FY23)** $VL_SUPPRESSED.T$
+-   **VL_SUPPRESSION_SUBNAT (FY23)** $VL\_SUPPRESSED.T$
 
 ### Instructions
 
@@ -1414,7 +1383,7 @@ be coordinated with PPMs and DUIT Liaisons.
 VL_SUPPRESSION_SUBNAT (FY23) is set as follows (rounded to the nearest
 integer):
 
-\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\  = \ ({PLHIV}_{t-1}\  \times \ \ Planned\ PopVLS\ Rate$ \end{center}
+\begin{center} ${VL\_ SUPPRESSION\_ SUBNAT}_{t}\ = \ ({PLHIV}_{t-1}\  \times \ {Planned\ Pop\ VLS\ Rate})$ \end{center}
 
 As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function
 of FY22 estimated PLHIV plus the New Infections projected for FY23. How
@@ -1438,12 +1407,11 @@ the Military organization unit, overwriting the formulas in the TX_PVLS
 (\<1,000 copies/mL) documented in the medical or laboratory results/LIS
 within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_PVLS (N)-AU-AW-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_PVLS (N)",
+             columns = col_seq("AU", "AW"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1512,12 +1480,11 @@ been fully reviewed.
 documented in the medical or laboratory records/laboratory information
 system (LIS) within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_PVLS (D)-AM-AO-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_PVLS (D)",
+             columns = col_seq("AM", "AO"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1556,20 +1523,14 @@ Viral Load Testing are set as follows, rounded to the nearest integer:
 
 \begin{center} ${TX\_ PVLS.D.Routine}_{t}\  = \ \lbrack({TX\_ NEW}_{t}\  \times \ {\%\ TX\_ NEW\ eligible\ for\ VL\ Testing}_{t})\  + \ {TX\_ CURR}_{t - 1}\rbrack\  \times \ {\%\ Access\ to\ VL\ Testing}_{t}$ \end{center}
 
+
 ## VLT Coverage
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-VLT Coverage-AV-AY-1-4", "latex")
-
-schema_table("Cascade-VLT Coverage-AZ-BC-2-4", "latex")
-
-schema_table("Cascade-VLT Coverage-BD-BG-3-4", "latex")
-
-schema_table("Cascade-VLT Coverage-BH-BL-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-VLT Coverage-AV-BL-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "VLT Coverage",
+             columns = col_seq("AV", "BL"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1679,12 +1640,11 @@ three quarters of the Fiscal Year.
 **TX_NEW:** Number of adults and children newly enrolled on
 anti-retroviral therapy (ART). $Part 1 of 2$
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_NEW-BM-BN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_NEW-BM-BN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_NEW",
+             columns = col_seq("BM", "BN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1734,14 +1694,11 @@ to treatment.
 **TX_CURR:** Number of adults and children currently receiving
 anti-retroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_CURR-BO-BS-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_CURR-BO-BS-1-1", "html")
-
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_CURR",
+             columns = col_seq("BO", "BS"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1780,14 +1737,11 @@ The following data points will be imported into DATIM from this section:
 
 ## TX_CURR_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-TX_CURR_SUBNAT-BT-BV-1-1", "html")
-
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "TX_CURR_SUBNAT",
+             columns = col_seq("BT", "BV"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1816,16 +1770,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PEPFAR Testing
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Testing-BW-CA-1-3", "latex")
-
-schema_table("Cascade-Testing-CB-CE-2-3", "latex")
-
-schema_table("Cascade-Testing-CF-CI-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Testing-BW-CI-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Testing",
+             columns = col_seq("BW", "CI"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1924,14 +1873,11 @@ occurred.
 
 ## Testing Reference Distribution
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-Testing Reference Distribution-CJ-CL-1-2", "latex")
-
-schema_table("Cascade-Testing Reference Distribution-CM-CP-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-Testing Reference Distribution-CJ-CP-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "Testing Reference Distribution",
+             columns = col_seq("CJ", "CP"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -1952,14 +1898,11 @@ No Targets from this section will be imported into DATIM.
 **HTS_INDEX:** Number of individuals who were identified and tested
 using Index testing services and received their results
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-HTS_INDEX-CQ-CT-1-1", "latex")
-
-schema_table("Cascade-HTS_INDEX-CU-CX-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-HTS_INDEX-CQ-CX-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "HTS_INDEX",
+             columns = col_seq("CQ", "CX"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2018,31 +1961,38 @@ above.
 Targets for HTS_INDEX New Positives in Community Sites are set as
 follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \ {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}$ \end{center}
+
 
 Building from this, targets for HTS_INDEX New Negatives in Community
 Sites are set as follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+
 
 Alternatively, targets for HTS_INDEX New Positives in Facility Sites are
 set as follows, rounding to the nearest integer:
 
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \ {HTS\_ INDEX\_ COM.New.Pos}_{t}$ \end{center}
+
 
 And finally, targets for HTS_INDEX New Negatives in Community Sites are
 set as follows:
 
+
 \begin{center} ${HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \ {HTS\_ INDEX\_ FAC.New.Pos}_{t}$ \end{center}
+
 
 ## DIAGNOSED_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Cascade-DIAGNOSED_SUBNAT-CY-CY-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "Cascade",
+             section = "DIAGNOSED_SUBNAT",
+             columns = "CY",
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2081,20 +2031,11 @@ editor_options:
 
 ## Host Country Context
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-F-I-1-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-J-N-2-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Host Country Context-O-R-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Host Country Context-F-R-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "Host Country Context",
+             columns = col_seq("F", "R"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2165,12 +2106,11 @@ DataPack:
 
 **PMTCT_STAT (D):** Number of new ANC clients in reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (D)-S-U-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT (D)",
+             columns = col_seq("S", "U"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2206,12 +2146,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: PMTCT_STAT_SUBNAT (D)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (D)-V-X-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT_SUBNAT (D)",
+             columns = col_seq("V", "X"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2241,16 +2180,11 @@ The following data points will be imported into DATIM from this section:
 first antenatal care visit (ANC1) (includes those who already knew their
 HIV status prior to ANC1).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-Y-AB-1-3", "latex")
-
-schema_table("PMTCT-PMTCT_STAT (N)-AB-AD-2-3", "latex")
-
-schema_table("PMTCT-PMTCT_STAT (N)-AD-AG-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT (N)-Y-AG-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT (N)",
+             columns = col_seq("Y", "AG"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2322,14 +2256,14 @@ These rates are calculated from Host Country Context data as follows:
 
 \begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
 
+
 ## PMTCT: PMTCT_STAT_SUBNAT (N)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_STAT_SUBNAT (N)-AH-AK-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_STAT_SUBNAT (N)",
+             columns = col_seq("AH", "AK"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2375,12 +2309,11 @@ The following data points will be imported into DATIM from this section:
 **PMTCT_ART (N):** Number of HIV-positive pregnant women who received
 ART to reduce the risk of mother-to-child transmission during pregnancy.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AL-AN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_ART (N)",
+             columns = col_seq("AL", "AN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2410,12 +2343,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: PMTCT_ART_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-PMTCT_ART (N)-AO-AQ-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "PMTCT_ART_SUBNAT",
+             columns = col_seq("AO", "AQ"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2447,14 +2379,11 @@ who receive a test POST ANC1, this includes women who are tested later
 in pregnancy (>ANC2), during labor & delivery (L&D), and while
 breastfeeding.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AU-1-2", "latex")
-
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AU-AX-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-HTST_TST: PMTCT Post ANC1-AR-AX-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "HTS_TST: PMTCT Post ANC1",
+             columns = col_seq("AR", "AX"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2498,14 +2427,11 @@ The following data points will be imported into DATIM from this section:
 
 ## PMTCT: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PMTCT-Testing Rationalization-AY-BB-1-2", "latex")
-
-schema_table("PMTCT-Testing Rationalization-BB-BE-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PMTCT-Testing Rationalization-AY-BE-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PMTCT",
+             section = "Testing Rationalization",
+             columns = col_seq("AY", "BE"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2556,12 +2482,11 @@ No data from this section will be imported into DATIM.
 
 **PMTCT_EID:** Number of infants who had a first virologic HIV test (sample collected) by 12 months of age during the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("EID-PMTCT_EID (N)-C-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("EID-PMTCT_EID (N)-C-G-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "EID",
+             section = "PMTCT_EID (N)",
+             columns = col_seq("C", "G"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2586,18 +2511,11 @@ The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive
 
 **PMTCT_HEI_POS (N):** Number of HIV-infected infants identified in the reporting period, whose diagnostic sample was collected by 12 months of age.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("EID-PMTCT_EID (N)-H-K-1-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-L-N-2-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-O-Q-3-4", "latex")
-
-schema_table("EID-PMTCT_EID (N)-R-V-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("EID-PMTCT_EID (N)-H-V-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "EID",
+             section = "PMTCT_EID (N)",
+             columns = col_seq("H", "V"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2634,7 +2552,6 @@ No data points will be imported into DATIM from this section.
 
 To calculate the total number of HIV-infected infants to be tested and identified, the DataPack uses the following formula, rounding to the nearest integer:
 
-
 \begin{center} $PMTCT\_ HEI\_ POS.T\  = \ (PMTCT\_ EID.N.2.T\  \times \ PMTCT\_ HEI\_ POS.2.Yield.T)\  + \ (PMTCT\_ EID.N.12.T\  \times PMTCT\_ HEI\_ POS.12.Yield.T)\ $ \end{center}
 
 \elandscape
@@ -2658,12 +2575,11 @@ editor_options:
 **TB_STAT (D):** Total number of new and relapsed TB cases, during the
 reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_STAT (D)-F-H-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_STAT (D)-F-H-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TB",
+             section = "TB_STAT (D)",
+             columns = col_seq("F", "H"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2694,16 +2610,11 @@ The following data points will be imported into DATIM from this section:
 **TB_STAT (N):** Number of new and relapsed TB cases with documented HIV
 status, during the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_STAT (N)-I-K-1-3", "latex")
-
-schema_table("TB-TB_STAT (N)-L-N-2-3", "latex")
-
-schema_table("TB-TB_STAT (N)-O-R-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_STAT (N)-I-R-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TB",
+             section = "TB_STAT (N)",
+             columns = col_seq("I", "R"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2781,12 +2692,11 @@ Newly Tested, Negative are modeled as a remainder, as follows:
 **TB_ART:** Proportion of HIV-positive new and relapsed TB cases on ART
 during TB treatment.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_ART-S-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_ART-S-U-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TB",
+             section = "TB_ART",
+             columns = col_seq("S", "U"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2830,14 +2740,11 @@ integer:
 
 ## TB: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-Testing Rationalization-V-Y-1-2", "latex")
-
-schema_table("TB-Testing Rationalization-Z-AB-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-Testing Rationalization-V-AB-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TB",
+             section = "Testing Rationalization",
+             columns = col_seq("V", "AB"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2885,16 +2792,11 @@ editor_options:
 
 ## VMMC_CIRC_SUBNAT
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-VMMC_CIRC_SUBNAT-F-I-1-3", "latex")
-
-schema_table("VMMC-VMMC_CIRC_SUBNAT-J-M-2-3", "latex")
-
-schema_table("VMMC-VMMC_CIRC_SUBNAT-N-Q-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC_SUBNAT-F-Q-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "VMMC_CIRC_SUBNAT",
+             columns = col_seq("F", "Q"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -2965,18 +2867,11 @@ reporting period.
 **Note: For FY23 targets, males less than 15 years old will not be
 eligible for PEPFAR-supported VMMC services.**
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-VMMC_CIRC-R-T-1-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-U-X-2-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-Y-AB-3-4", "latex")
-
-schema_table("VMMC-VMMC_CIRC-AC-AD-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-VMMC_CIRC-R-AD-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "VMMC_CIRC",
+             columns = col_seq("R", "AD"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3079,12 +2974,11 @@ function, as follows:
 
 ## VMMC: ART Linkage
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-ART Linkage-AE-AF-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-ART Linkage-AE-AF-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "ART Linkage",
+             columns = col_seq("AE", "AF"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3101,12 +2995,11 @@ No data will be imported into DATIM from this section.
 
 ## VMMC: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("VMMC-Testing Rationalization-AG-AK-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "VMMC",
+             section = "Testing Rationalization",
+             columns = col_seq("AG", "AK"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3217,12 +3110,11 @@ listed.
 
 ## KP: KP_ESTIMATES
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-KP_ESTIMATES-E-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-KP_ESTIMATES-E-G-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "KP_ESTIMATES",
+             columns = col_seq("E", "G"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3258,12 +3150,11 @@ return for a follow up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-PrEP_CT-H-I-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-PrEP_CT-H-I-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "PrEP_CT",
+             columns = col_seq("H", "I"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3299,12 +3190,11 @@ PrEP_CT. See PrEP_CT on PrEP tab.
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
 in the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-PrEP_NEW-J-K-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-PrEP_NEW-J-K-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "PrEP_NEW",
+             columns = col_seq("J", "K"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3336,12 +3226,11 @@ then set the general PrEP target.
 small group-level HIV prevention interventions designed for the target
 population.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-KP_PREV-L-M-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-KP_PREV-L-M-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "KP_PREV",
+             columns = col_seq("L", "M"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3364,12 +3253,11 @@ The following data points will be imported into DATIM from this section:
 **TX_CURR:** Number of adults and children currently receiving
 antiretroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_CURR-N-Q-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_CURR-N-Q-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "TX_CURR",
+             columns = col_seq("N", "Q"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3405,12 +3293,11 @@ not exceed total population targets set on the Cascade tab.
 **TX_NEW:** Number of adults and children newly enrolled on
 antiretroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_NEW-R-V-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_NEW-R-V-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "TX_NEW",
+             columns = col_seq("R", "V"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3455,16 +3342,18 @@ the medical or laboratory records/LIS within the past 12 months
 (\<1,000 copies/mL) documented in the medical or laboratory results/LIS
 within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_PVLS (D)-W-Y-1-1", "latex")
-
-schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "latex")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "TX_PVLS (D)",
+             columns = col_seq("W", "Y"),
+             is_html_knit = knitr::is_html_output())
 ```
 
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_PVLS (D)-W-Y-1-1", "html")
-
-schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "TX_PVLS (N)",
+             columns = col_seq("Z", "AA"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3511,14 +3400,11 @@ The following data points will be imported into DATIM from this section:
 **HTS_TST:** Number of individuals who received HIV Testing Services
 (HTS) and received their test results.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_TST-AB-AF-1-2", "latex")
-
-schema_table("KP-HTS_TST-AG-AJ-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_TST-AB-AJ-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "HTS_TST",
+             columns = col_seq("AB", "AJ"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3585,12 +3471,11 @@ The following data points will be imported into DATIM from this section:
 years with a test for recent infection result during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_RECENT-AK-AL-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_RECENT-AK-AL-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "HTS_RECENT",
+             columns = col_seq("AK", "AL"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3621,12 +3506,11 @@ The following data points will be imported into DATIM from this section:
 
 **HTS_SELF:** Number of individual HIV self-test kits distributed.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_SELF-AM-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_SELF-AM-AN-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP",
+             section = "HTS_SELF",
+             columns = col_seq("AM", "AN"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3661,14 +3545,11 @@ targets set on the HTS tab.
 
 ## HTS: Testing Summary from Other Tabs
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Testing Summary-F-J-1-2", "latex")
-
-schema_table("HTS-Testing Summary-K-O-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Testing Summary-F-O-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS",
+             section = "Testing Summary",
+             columns = col_seq("F", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3701,18 +3582,11 @@ No data will be imported from this section of the DataPack.
 
 ## HTS: HTS_TST -- Distribution of Positive Tests
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-P-T-1-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-U-Y-2-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-Z-AC-3-4", "latex")
-
-schema_table("HTS-HTS_TST Distribution of Positive Tests-AD-AG-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST Distribution of Positive Tests-P-AG-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS",
+             section = "HTS_TST Distribution of Positive Tests",
+             columns = col_seq("P", "AG"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3765,12 +3639,11 @@ No data will be imported from this section of the DataPack.
 
 ## HTS: HTS_TST -- Modality Yields
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-Inpatient (Facility)-AH-AJ-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS",
+             section = "Inpatient (Facility)",
+             columns = col_seq("AH", "AJ"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3815,16 +3688,11 @@ The following data points will be imported into DATIM from this section:
 
 These calculated columns provide a roll up sum of the total targets set by age, sex and modality in the rest of the HTS tab. This section should serve as a check and will not be uploaded into DATIM.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_TST (Total)-BO-BS--1-3", "latex")
-
-schema_table("HTS-HTS_TST (Total)-BT-BW-2-3", "latex")
-
-schema_table("HTS-HTS_TST (Total)-BX-BZ-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_TST (Total)-BO-BZ-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS",
+             section = "HTS_TST (Total)",
+             columns = col_seq("BO", "BZ"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3879,12 +3747,11 @@ At the culmination of this iterative approach, there should be no values or high
 
 **HTS_SELF (N):** Number of individual HIV self-test kits distributed.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS-HTS_SELF (N)-CA-CC-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS",
+             section = "HTS_SELF (N)",
+             columns = col_seq("CA", "CC"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3922,14 +3789,11 @@ editor_options:
 **CXCA_SCRN (N):** Number of HIV-positive women on ART screened for
 cervical cancer.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("CXCA-CXCA_SCRN-F-H-1-2", "latex")
-
-schema_table("CXCA-CXCA_SCRN-I-K-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("CXCA-CXCA_SCRN-F-K-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "CXCA",
+             section = "CXCA_SCRN",
+             columns = col_seq("F", "K"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -3991,12 +3855,11 @@ period.
 
 ## HTS_TST Modalities
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS_RECENT-Index (Community)-F-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS_RECENT-Index (Community)-F-G-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS_RECENT",
+             section = "Index (Community)",
+             columns = col_seq("N", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4032,12 +3895,11 @@ The following data points will be imported into DATIM from this section:
 
 ## HTS_RECENT (Total)
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("HTS_RECENT-HTS_RECENT (Total)-AJ-AL-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "HTS_RECENT",
+             section = "HTS_RECENT (Total)",
+             columns = col_seq("AJ", "AL"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4090,16 +3952,11 @@ once during the semiannual reporting period.
 Note: Targets set across this tab are set at Coarse Age Bands,
 aggregating incoming data from any finer age bands to \<15 or 15+.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_TB (D)-F-I-1-3", "latex")
-
-schema_table("TX_TB_PREV-TX_TB (D)-J-L-2-3", "latex")
-
-schema_table("TX_TB_PREV-TX_TB (D)-M-O-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_TB (D)-F-O-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TX_TB_PREV",
+             section = "TX_TB (D)",
+             columns = col_seq("F", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4180,16 +4037,11 @@ course of TB preventive therapy during the reporting period (for
 programs using continuous IPT, this includes only the patients who are
 scheduled to complete the first 6 months of therapy).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-S-1-3", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (D)-T-V-2-3", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (D)-W-X-2-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-X-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TX_TB_PREV",
+             section = "TB_PREV (D)",
+             columns = col_seq("P", "X"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4237,14 +4089,11 @@ preventive therapy during the reporting period (for continuous IPT
 programs, this includes the patients who have completed the first 6
 months of isoniazid preventive therapy (IPT)).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-Y-AA-1-2", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (N)-AB-AC-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-Y-AC-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "TX_TB_PREV",
+             section = "TX_PREV (N)",
+             columns = col_seq("Y", "AC"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4302,12 +4151,11 @@ standardized, evidence-based interventions (s) required that are
 designed to promote the adoption of HIV prevention behaviors and service
 uptake.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PP-PP_PREV-F-H-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PP-PP_PREV-F-H-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PP",
+             section = "PP_PREV",
+             columns = col_seq("F", "H"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4360,18 +4208,11 @@ editor_options:
 **OVC_SERV:** Number of beneficiaries served by PEPFAR OVC programs for
 children and families affected by HIV.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("OVC-OVC_SERV-F-I-1-4", "latex")
-
-schema_table("OVC-OVC_SERV-J-M-2-4", "latex")
-
-schema_table("OVC-OVC_SERV-N-P-3-4", "latex")
-
-schema_table("OVC-OVC_SERV-Q-S-4-4", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("OVC-OVC_SERV-F-S-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "OVC",
+             section = "OVC_SERV",
+             columns = col_seq("F", "S"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4491,12 +4332,11 @@ Transferred Out in Denominator.
 **OVC_HIVSTAT:** Number of orphans and vulnerable children (\<18 years
 old) with HIV status reported, disaggregated by HIV status.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("OVC-OVC_HIVSTAT-T-U-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "OVC",
+             section = "OVC_HIVSTAT",
+             columns = col_seq("T", "U"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4545,14 +4385,11 @@ editor_options:
 **GEND_GBV:** Number of people receiving post-gender-based violence
 (GBV) clinical care based on the minimum package.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("GEND-GEND_GBV-C-E-1-2", "latex")
-
-schema_table("GEND-GEND_GBV-F-H-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("GEND-GEND_GBV-C-H-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "GEND",
+             section = "GEND_GBV",
+             columns = col_seq("C", "H"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4603,20 +4440,11 @@ editor_options:
 or completed any DREAMS service/intervention as of the end of the
 reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("AGYW-AGYW_PREV-F-I-1-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-J-M-2-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-N-P-3-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-Q-S-4-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-T-V-5-5", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("AGYW-AGYW_PREV-F-V-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "AGYW",
+             section = "AGYW_PREV",
+             columns = col_seq("F", "V"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4663,7 +4491,6 @@ The following data points will be imported into DATIM from this section:
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
-
 \begin{center} ${AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\ (1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})$ \end{center}
 
 Note that neither this target nor the target for AGYW_PREV Numerator are
@@ -4683,12 +4510,6 @@ as follows, rounding to the nearest integer:
 
 <!--chapter:end:23-AGYW.Rmd-->
 
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # PrEP
@@ -4699,12 +4520,11 @@ editor_options:
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
 in the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PrEP-PrEP_NEW-F-L-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PrEP-PrEP_NEW-F-L-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PrEP",
+             section = "PrEP_NEW",
+             columns = col_seq("F", "L"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4736,12 +4556,11 @@ return for a follow-up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("PrEP-PrEP_CURR-M-O-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("PrEP-PrEP_CURR-M-O-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "PrEP",
+             section = "PrEP_CT",
+             columns = col_seq("M", "O"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4771,12 +4590,6 @@ The following data points will be imported into DATIM from this section:
 
 <!--chapter:end:24-PrEP.Rmd-->
 
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # KP_MAT
@@ -4784,14 +4597,11 @@ editor_options:
 **KP_MAT:** Number of people who inject drugs (PWID) on
 medication-assisted therapy (MAT) for at least 6 months
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP_MAT-KP_MAT-E-H-1-1", "latex")
-
-schema_table("KP_MAT-KP_MAT-I-K-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP_MAT-KP_MAT-E-K-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP_MAT",
+             section = "KP_MAT",
+             columns = col_seq("E", "K"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -4839,12 +4649,6 @@ The following data points will be imported into DATIM from this section:
 
 <!--chapter:end:25-KP_MAT.Rmd-->
 
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # KP Validation
@@ -4856,14 +4660,11 @@ Male 15+ populations for each PSNU. Under each of these sections there
 is conditional formatting that will highlight any of the "KP Targets
 Validation" columns in red if those values exceed the Total Targets.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP Validation-PrEP_CT-C-F-1-2", "latex")
-
-schema_table("KP Validation-PrEP_CT-G-J-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP Validation-PrEP_CT-C-J-1-1", "html")
+```{r echo=FALSE}
+schema_table(sheet_name = "KP Validation",
+             section = "PrEP_CT",
+             columns = col_seq("C", "J"),
+             is_html_knit = knitr::is_html_output())
 ```
 
 ### DATIM Import
@@ -5099,7 +4900,7 @@ note that it may take up to 24 hours for active mechanism flags to be
 carried over into DATIM and resolve validation errors in the
 Self-Service App.
 
-```{r echo=FALSE, out.width = '70%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '70%', include = !knitr::is_latex_output()}
 knitr::include_graphics("./images/image15.png")
 ```
 

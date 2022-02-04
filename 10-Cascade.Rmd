@@ -35,19 +35,19 @@ In specific, the Host Country Context section of the Cascade tab provides space 
 
 -   **Host Country Estimated HIV Prevalence (FY22) (%)** $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of September 2022.
 
--   **Host Country Projected Incidence Rate (FY22) (%)** $Incidence_SUBNAT.Rt.T_1$: Estimated incidence rate, projected as of September 2022.
+-   **Host Country Projected Incidence Rate (FY22) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2022.
 
--   **Host Country Projected New Infections (FY23)** $NEW_INFECTIONS_SUBNAT.T_1$: Estimated new infections projected to occur in FY23, based on projected FY22 Incidence Rates.
+-   **Host Country Projected New Infections (FY23)** $NEW\_INFECTIONS\_SUBNAT.T\_1$: Estimated new infections projected to occur in FY23, based on projected FY22 Incidence Rates.
 
--   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED_SUBNAT.T_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2022.
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED\_SUBNAT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2022.
 
 -   **Host Country Observed TX_CURR_SUBNAT (FY21)** $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV receiving ART as of September 2021.
 
 -   **Host Country Estimated TX_CURR_SUBNAT (FY22)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2022.
 
--   **Host Country Est. ART Patients Tested for VLS (FY22)** $VL_TESTING_SUBNAT.T_1$: Estimated number of ART Patients who have been tested for Viral Load Suppression, projected as of September 2022. \**See note below*
+-   **Host Country Est. ART Patients Tested for VLS (FY22)** $VL\_TESTING\_SUBNAT.T\_1$: Estimated number of ART Patients who have been tested for Viral Load Suppression, projected as of September 2022. \**See note below*
 
--   **Host Country Estimated Virally Suppressed ART Patients (FY22)** $VL_SUPPRESSED.T_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2022. \**See note below*
+-   **Host Country Estimated Virally Suppressed ART Patients (FY22)** $VL\_SUPPRESSED.T\_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2022. \**See note below*
 
 \**Note:* This indicator is not available via Spectrum and will not auto-populate from the Spectrum tab. If Country Teams have a high quality non-PEPFAR data source for this indicator, they may enter it. But if this is not readily available, it is best to leave blank. The DataPack does not need it populated to work, and if it is left blank the DataPack will rely on PEPFAR MER data, and will work with your PEPFAR TX_PVLS data on it's own.
 
@@ -55,14 +55,14 @@ In specific, the Host Country Context section of the Cascade tab provides space 
 
 The following data points will be imported into DATIM from this section, replacing any preexisting estimates for these indicators that may have already been entered in DATIM:
 
--   **Host Country Estimated Population (FY22)** $POP_EST.T_1$
--   **Host Country Estimated PLHIV (FY22)** $PLHIV.T_1$
--   **Host Country Estimated HIV Prevalence (FY22) (%)** $HIV_PREV.T_1$
--   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED_SUBNAT.T_1$
--   **Host Country Observed TX_CURR_SUBNAT (FY21)** $TX_CURR_SUBNAT.R$
--   **Host Country Estimated TX_CURR_SUBNAT (FY22)** $TX_CURR_SUBNAT.T_1$
--   **Host Country Est. ART Patients Tested for VLS (FY22)** $VL_TESTING_SUBNAT.T_1$
--   **Host Country Estimated Virally Suppressed ART Patients (FY22)** $VL_SUPPRESSED.T_1$
+-   **Host Country Estimated Population (FY22)** $POP\_EST.T\_1$
+-   **Host Country Estimated PLHIV (FY22)** $PLHIV.T\_1$
+-   **Host Country Estimated HIV Prevalence (FY22) (%)** $HIV\_PREV.T\_1$
+-   **Host Country PLHIV Diagnosed (FY22)** $DIAGNOSED\_SUBNAT.T\_1$
+-   **Host Country Observed TX_CURR_SUBNAT (FY21)** $TX\_CURR\_SUBNAT.R$
+-   **Host Country Estimated TX_CURR_SUBNAT (FY22)** $TX\_CURR_SUBNAT.T\_1$
+-   **Host Country Est. ART Patients Tested for VLS (FY22)** $VL\_TESTING\_SUBNAT.T\_1$
+-   **Host Country Estimated Virally Suppressed ART Patients (FY22)** $VL\_SUPPRESSED.T\_1$
 
 ### Instructions
 
@@ -181,7 +181,7 @@ One of the most pivotalassumptions in the DataPack is the Planned PopVLS Rate (F
 
 In all cases, the denominator of this calculation is the estimated PLHIV, making it critical that this data be added to the Data Pack in the Host Country Context section.
 
-For its numerator, the DataPack first attempts to use Host Country estimates of the total number of Virally Suppressed ART Patients (VL_SUPPRESSED.T_1):
+For its numerator, the DataPack first attempts to use Host Country estimates of the total number of Virally Suppressed ART Patients ($VL\_SUPPRESSED.T\_1$):
 
 ```{=tex}
 \begin{center}

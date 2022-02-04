@@ -266,51 +266,15 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 ***DataPack Review***
 
-+----------+----------+----------+----------+----------+-----------+
-|          | Single   | Single   | Single   | OUs at   | Regional/ |
-|          | OU       | OU       | OU       | Epi      | Country   |
-|          | Track:   | Track:   | Track:   | Control  | Pair      |
-|          | Group 1  | Group 2  | Group 3  |          | Track     |
-+==========+:========:+:========:+:========:+:========:+:=========:+
-| 1st      | Feb 28   | Mar 7    | Mar 14   | Mar 7 or | Feb 28    |
-| Draft    |          |          |          | Mar 14   |           |
-| Tool     |          |          |          |          |           |
-| Su       |          |          |          |          |           |
-| bmission |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
-| COP      | Mar 7-11 | Mar      | Mar      | Mar      | Mar 22-25 |
-| Meeting  |          | 14-18    | 22-25    | 14-18 or |           |
-|          |          |          |          | Mar      |           |
-|          |          |          |          | 22-25    |           |
-+----------+----------+----------+----------+----------+-----------+
-| M        |          |          |          |          |           |
-| id-point |          |          |          |          |           |
-| Tool     |          |          |          |          |           |
-| Check    |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
-| Tools    | Apr 4    | Apr 11   | Apr 18   | Apr 11   | Apr 18    |
-| Due for  |          |          |          | or Apr   |           |
-| Final    |          |          |          | 18       |           |
-| Review   |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
-| Ad       |          |          |          |          | Rolling   |
-| ditional |          |          |          |          | Each      |
-| Touc     |          |          |          |          | Monday    |
-| hpoints/ |          |          |          |          |           |
-| Reviews  |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
-| Tools    | Apr 11   | Apr 18   | Apr 25   | Apr 18   | Apr 25    |
-| S        |          |          |          | or Apr   |           |
-| ubmitted |          |          |          | 23       |           |
-| for      |          |          |          |          |           |
-| Upload   |          |          |          |          |           |
-| to       |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
-| COP21    | Apr 19   | Apr 22   | Apr 29   | Apr 22   | Apr 29    |
-| Su       |          |          |          | or Apr   |           |
-| bmission |          |          |          | 29       |           |
-| Due      |          |          |          |          |           |
-+----------+----------+----------+----------+----------+-----------+
+|                                 | Single OU Track: Group 1 | Single OU Track: Group 2 | Singel OU Track: Group 3 | OUs at Epi Control     | Regional/Country Pair Track |
+|---------------------------------|--------------------------|--------------------------|--------------------------|------------------------|-----------------------------|
+| 1st Draft Tool Submission       | Feb 28                   | Mar 7                    | Mar 14                   | Mar 7 or Mar 14        | Feb 28                      |
+| COP Meeting                     | Mar 7-11                 | Mar 14-18                | Mar 22-25                | Mar 14-18 or Mar 22-25 | Mar 22-25                   |
+| Mid-point Tool Check            |                          |                          |                          |                        |                             |
+| Tools Due for Final Review      | Apr 4                    | Apr 11                   | Apr 18                   | Apr 11 or Apr 18       | Apr 18                      |
+| Additional Touchpoints/ Reviews |                          |                          |                          |                        | Rolling Each Monday         |
+| Tools Submitted for Upload      | Apr 11                   | Apr 18                   | Apr 25                   | Apr 18 or Apr 25       | Apr 25                      |
+| COP21 Submission Due            | Apr 19                   | Apr 22                   | Apr 29                   | Apr 22 or Apr 29       | Apr 29                      |
 
 **Submission Process**
 

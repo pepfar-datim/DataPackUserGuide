@@ -2,7 +2,7 @@
 
 # SPECTRUM
 
-The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A DataPack specific csv file will be produced for your OU at the conclusion of the UNAIDS Spectrum Workshops for Country Teams based on the Naomi model. The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:
+The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Data Pack specific csv file will be produced for your OU at the conclusion of the UNAIDS Spectrum Workshops for Country Teams based on the Naomi model. The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:
 
 ```{r echo=FALSE}
 schema_table(sheet_name = "Spectrum",

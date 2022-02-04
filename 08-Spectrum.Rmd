@@ -2,7 +2,7 @@
 
 # SPECTRUM
 
-The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Spectrum file for your OU will be provided at the conclusion of the UNAIDS Spectrum Training for Country Teams. The contents of this file will be manually loaded into the Spectrum tab which is setup as below:
+The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Data Pack specific csv file will be produced for your OU at the conclusion of the UNAIDS Spectrum Workshops for Country Teams based on the Naomi model. The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:
 
 ```{r echo=FALSE}
 schema_table(sheet_name = "Spectrum",
@@ -11,7 +11,7 @@ schema_table(sheet_name = "Spectrum",
              is_html_knit = knitr::is_html_output())
 ```
 
-With OGAC approval, countries can also populate input their own data into this tab with a different MOH/country approved set of estimates. Estimate changes can also be made in the two associated tabs, Cascade and PMTCT.
+With OGAC approval, countries can also populate input their own data into this tab with a different MOH/country approved set of estimates as an alternate to Spectrum/Naomi results. Estimate changes can also be made in the two associated tabs, Cascade and PMTCT. Note in CY2022 the Spectrum/Naomi models will not include estimates of programmatic viral load coverage and suppression. This is okay, the DataPack does not rely on these being present. If these columns are blank, DataPack will default to using PEPFAR data.
 
 \elandscape
 

@@ -21,19 +21,18 @@ suppressWarnings(suppressPackageStartupMessages({
 letter2number <- function(x) {
   col_ref <- stringr::str_to_upper(x)
   digits <- stringr::str_length(col_ref)
-  ls <- 1:digits %>%
-    lapply(function(y) {
+  ls <- lapply(seq_len(digits), function(y) {
       (utf8ToInt(stringr::str_sub(col_ref, y, y)) - utf8ToInt("A") + 1L) * (26**(digits - y))
     })
   n <- Reduce(`+`, ls)
   return(n)
 }
 
-number2letter <- function(n) {
-  x <- intToUtf8(n + utf8ToInt("A") - 1L)
-  return(x)
-}
-
+# number2letter <- function(n) {
+#   x <- intToUtf8(n + utf8ToInt("A") - 1L)
+#   return(x)
+# }
+# 
 # int2col <- function(n) {
 #   stopifnot("Argument `n` must be numeric" = is.numeric(n),
 #             "Argument `n` must be greater than zero" = n > 0)

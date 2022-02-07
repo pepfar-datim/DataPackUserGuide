@@ -2,5 +2,11 @@
 .Rproj.user
 .Rprofile
 .Rhistory
+.RData
+.Ruserdata
+.R_Cache
 .log
+www/
 renv/
+packrate/
+.DS_Store

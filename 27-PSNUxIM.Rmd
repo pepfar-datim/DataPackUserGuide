@@ -181,16 +181,10 @@ note that it may take up to 24 hours for active mechanism flags to be
 carried over into DATIM and resolve validation errors in the
 Self-Service App.
 
-```{r echo=FALSE, out.width = '70%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '70%'}
 knitr::include_graphics("./images/image15.png")
 ```
 
-
-\begin{center}
-
-\includegraphics[width=5in]{./images/image15.png}
-
-\end{center}
 
 ## Note on Peace Corps Mechanisms
 

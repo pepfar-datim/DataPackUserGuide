@@ -12,7 +12,7 @@ The DataPack then calculates the TX_NEW target from the TX_PVLS (D) target. Beca
 
 As in past DataPacks, this tab interweaves with many other tabs of the DataPack, including the PMTCT, TB, EID, VMMC, KP, HTS, CXCA, HTS_RECENT, and TX_TB_PREV tabs. As is explained below and in sections related to these tabs, DataPack logic is most useful when target-setting begins in the Cascade tab and progresses from left to right, both within that tab, and across and within all other tabs, returning iteratively to the Cascade tab throughout.
 
-```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/Cascade from PLHIV to TX_NEW Target and Relationship to Datapack Assumptions.png")
 ```
 
@@ -184,11 +184,7 @@ In all cases, the denominator of this calculation is the estimated PLHIV, making
 For its numerator, the DataPack first attempts to use Host Country estimates of the total number of Virally Suppressed ART Patients ($VL\_SUPPRESSED.T\_1$):
 
 ```{=tex}
-\begin{center}
-
-$\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ 
-
-\end{center}
+\begin{center} $\frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}$ \end{center}
 ```
 Where these Host Country data are unavailable, the DataPack references PEPFAR data for TX_PVLS (N) either from FY22 targets or, if these are also unavailable, FY21 results, and then extrapolates these to the Host Country context by referencing the Planned PEPFAR Contribution to HIV Response set previously.
 

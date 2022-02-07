@@ -18,7 +18,9 @@ suppressWarnings(suppressPackageStartupMessages({
   library(kableExtra)
 }))
 
-letter2number <- function(x) {
+knitr::opts_chunk$set(echo = FALSE, fig.align="center")
+
+col2number <- function(x) {
   col_ref <- stringr::str_to_upper(x)
   digits <- stringr::str_length(col_ref)
   ls <- lapply(seq_len(digits), function(y) {
@@ -28,37 +30,9 @@ letter2number <- function(x) {
   return(n)
 }
 
-# number2letter <- function(n) {
-#   x <- intToUtf8(n + utf8ToInt("A") - 1L)
-#   return(x)
-# }
-# 
-# int2col <- function(n) {
-#   stopifnot("Argument `n` must be numeric" = is.numeric(n),
-#             "Argument `n` must be greater than zero" = n > 0)
-# 
-#   if (n < 27) { return(number2letter(n)) } #nolint
-#   digits <- ceiling(log(n, base = 26))
-# 
-#   col <- seq_len(digits) %>%
-#     lapply(function(x) {
-#       i <- digits - x + 1
-#       # offset <- Reduce(`+`, lapply(seq_len(i - 1), function(j) { 26 ** (j - 1) }))
-#       key <- n + ifelse(!is.null(offset), offset, 0)
-#       letters_above <- floor(key / (26 ** (i))) * (26 ** (i))
-#       letters_below <- key %% (26 ** (i - 1))
-#       offset <- ifelse()
-#       nth_letter <- (key - letters_above - letters_below) / 26 ** (i - 1) + offset
-#       number2letter(nth_letter)
-#     }) %>%
-#     Reduce(paste0, .)
-# 
-#   return(col)
-# }
-
 col_seq <- function(col_start, col_end) {
-  n_start <- letter2number(col_start)
-  n_end <- letter2number(col_end)
+  n_start <- col2number(col_start)
+  n_end <- col2number(col_end)
   
   # Applies `int2col` against list from start number to end number
   col_list <- sapply(n_start:n_end, int2col)
@@ -66,8 +40,6 @@ col_seq <- function(col_start, col_end) {
   # Return list of columns
   col_list
 }
-
-knitr::opts_chunk$set(echo = FALSE, fig.align="center")
 
 spectrum_schema <- tibble::tribble(
   ~sheet_name, ~col_num, ~col_name, ~col_type, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
@@ -124,6 +96,9 @@ schema_table <- function(sheet_name = NULL,
     dplyr::filter(`Sheet Name` == sheet_name,
                   `Column` %in% columns) %>%
     dplyr::select(-`Sheet Name`, -`Column Number`) %>%
+    dplyr::mutate(
+      `Column Name` = stringr::str_wrap(`Column Name`, width = 30),
+      `UID` = stringr::str_wrap(`UID`, width = 30)) %>%
     tidyr::pivot_longer(cols = !Column) %>%
     tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
   
@@ -454,47 +429,26 @@ after you submit your preliminary DataPack.
 
 ## How Does Everything Connect?
 
-```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("images/UG_Sec 1-6 How Does Everything Connect.png")
 ```
 
-```{=tex}
-\begin{center}
-
-\includegraphics[width=9in]{images/UG_Sec 1-6 How Does Everything Connect.png}
-
-\end{center}
-```
 \newpage
 
 ## Elements of a Tab
 
-```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/image4.png")
 ```
 
-```{=tex}
-\begin{center}
-
-\includegraphics[width=9in]{./images/image4.png}
-
-\end{center}
-```
 \newpage
 
 ## How to Navigate a DataPack Tab
 
-```{r echo=FALSE, out.width = '100%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/image5.png")
 ```
 
-```{=tex}
-\begin{center}
-
-\includegraphics[width=9in]{./images/image5.png}
-
-\end{center}
-```
 \elandscape
 
 \newpage
@@ -514,17 +468,10 @@ suggestions as well.
 
 **Example:**
 
-```{r echo=FALSE, out.width = '50%', include = !knitr::is_latex_output()}
+```{r echo=FALSE, out.width = '50%'}
 knitr::include_graphics("./images/image9.png")
 ```
 
-```{=tex}
-\begin{center}
-
-\includegraphics[width=4.3in]{./images/image9.png}
-
-\end{center}
-```
 ## Adjustments to Historic Targets and Results
 
 Throughout the DataPack, historic targets and results have been provided

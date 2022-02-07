@@ -96,9 +96,9 @@ schema_table <- function(sheet_name = NULL,
     dplyr::filter(`Sheet Name` == sheet_name,
                   `Column` %in% columns) %>%
     dplyr::select(-`Sheet Name`, -`Column Number`) %>%
-    dplyr::mutate(
-      `Column Name` = stringr::str_wrap(`Column Name`, width = 30),
-      `UID` = stringr::str_wrap(`UID`, width = 30)) %>%
+    # dplyr::mutate(
+    #   `Column Name` = stringr::str_wrap(`Column Name`, width = 30),
+    #   `UID` = stringr::str_wrap(`UID`, width = 30)) %>%
     tidyr::pivot_longer(cols = !Column) %>%
     tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
   

@@ -97,31 +97,38 @@ The following data points will be imported into DATIM from this section:
 Total TB_STAT (N) targets are modeled as follows, rounding to the
 nearest integer:
 
-```{=tex}
-\begin{center} ${TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}
+\end{equation}$$
+
 ### Known HIV Status, Positive
 
 Known HIV Status, Positive targets are modeled as follows, rounding to
 the nearest integer:
 
-```{=tex}
-\begin{center} ${TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \ {Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \\
+{Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}
+\end{equation}$$
+
 ### Newly Tested
 
 Targets for TB_STAT (N): Newly Tested, Positive are modeled as follows,
 rounding to the nearest integer:
 
-```{=tex}
-\begin{center} ${TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \ \text{Estimated Positivity Rate among Newly Tested}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \\
+\text{Estimated Positivity Rate among Newly Tested}_{t}
+\end{equation}$$
+
 Based on these and targets for Known HIV Status, Positive, targets for
 Newly Tested, Negative are modeled as a remainder, as follows:
 
-```{=tex}
-\begin{center} ${TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \ {TB\_ STAT.N.New.Pos}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \\
+{TB\_ STAT.N.New.Pos}_{t}
+\end{equation}$$
+
 **\
 **
 
@@ -164,18 +171,20 @@ for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
 words, the following holds true in the DataPack:
 
-```{=tex}
-\begin{center} ${TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}
+\end{equation}$$
+
 ### New on ART
 
 FY23 Targets for TB_ART New on ART are based largely on TB_STAT Newly
 Identified HIV positive TB clients as follows, rounding to the nearest
 integer:
 
-```{=tex}
-\begin{center} ${TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}$ \end{center}
-```
+$$\begin{equation}
+{TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}
+\end{equation}$$
+
 ## TB: Testing Rationalization
 
 ```{r echo=FALSE}

@@ -65,9 +65,11 @@ The following data points will be imported into DATIM from this section:
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
-```{=tex}
-\begin{center} ${AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\ (1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})$ \end{center}
-```
+$$\begin{equation}
+{AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\\
+(1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})
+\end{equation}$$
+
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
@@ -76,9 +78,9 @@ disaggregated by Service or Package Completion Status.
 FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
-```{=tex}
-\begin{center} ${AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t}$ \end{center}
-```
+$$\begin{equation}
+{AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t} 
+\end{equation}$$
 \elandscape
 
 \newpage

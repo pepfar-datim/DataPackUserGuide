@@ -241,12 +241,16 @@ this data is unavailable, upon PEPFAR FY21 results obtained from DATIM
 on the date of the DataPack's generation, as documented on the Home tab.
 These rates are calculated from Host Country Context data as follows:
 
-```{=tex}
-\begin{center} ${Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}$ \end{center}
-```
-```{=tex}
-\begin{center} ${Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \ \frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}$ \end{center}
-```
+$$\begin{equation}
+{Estimated\ \%\ ANC1\ clients\ already\ Known\ HIV\ Positive}_{t}\  = \\
+\frac{{PMTCT\_ STAT\_ SUBNAT.N.Known.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}}
+\end{equation}$$
+
+$$\begin{equation}
+{Estimated\ Positivity\ Rate\ among\ Newly\ Tested\ ANC1\ clients}_{t}\  = \\
+\frac{{PMTCT\_ STAT\_ SUBNAT.N.New.Pos.}_{t - 1}}{{PMTCT\_ STAT\_ SUBNAT.D}_{t - 1}\  - \ {PMTCT\_ STAT\_ SUBNAT.N.Known.Pos}_{t - 1}}
+\end{equation}$$
+
 ## PMTCT: PMTCT_STAT_SUBNAT (N)
 
 ```{r echo=FALSE, results='asis'}

@@ -13,11 +13,14 @@ editor_options:
 **TB_STAT (D):** Total number of new and relapsed TB cases, during the
 reporting period.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "TB",
-             section = "TB_STAT (D)",
-             columns = col_seq("F", "H"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_STAT (D)"
+columns <- col_seq("F", "H")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -48,11 +51,14 @@ The following data points will be imported into DATIM from this section:
 **TB_STAT (N):** Number of new and relapsed TB cases with documented HIV
 status, during the reporting period.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "TB",
-             section = "TB_STAT (N)",
-             columns = col_seq("I", "R"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_STAT (N)"
+columns <- col_seq("I", "R")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -130,11 +136,14 @@ Newly Tested, Negative are modeled as a remainder, as follows:
 **TB_ART:** Proportion of HIV-positive new and relapsed TB cases on ART
 during TB treatment.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "TB",
-             section = "TB_ART",
-             columns = col_seq("S", "U"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_ART"
+columns <- col_seq("S", "U")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -178,11 +187,14 @@ integer:
 ```
 ## TB: Testing Rationalization
 
-```{r echo=FALSE}
-schema_table(sheet_name = "TB",
-             section = "Testing Rationalization",
-             columns = col_seq("V", "AB"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "Testing Rationalization"
+columns <- col_seq("V", "AB")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

@@ -13,11 +13,14 @@ editor_options:
 **GEND_GBV:** Number of people receiving post-gender-based violence
 (GBV) clinical care based on the minimum package.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "GEND",
-             section = "GEND_GBV",
-             columns = col_seq("C", "H"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "GEND"
+section <- "GEND_GBV"
+columns <- col_seq("C", "H")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

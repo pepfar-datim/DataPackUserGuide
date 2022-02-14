@@ -6,11 +6,14 @@
 
 **PMTCT_EID:** Number of infants who had a first virologic HIV test (sample collected) by 12 months of age during the reporting period.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "EID",
-             section = "PMTCT_EID (N)",
-             columns = col_seq("C", "G"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "EID"
+section <- "PMTCT_EID (N)"
+columns <- col_seq("C", "G")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -35,11 +38,14 @@ The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive
 
 **PMTCT_HEI_POS (N):** Number of HIV-infected infants identified in the reporting period, whose diagnostic sample was collected by 12 months of age.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "EID",
-             section = "PMTCT_EID (N)",
-             columns = col_seq("H", "V"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "EID"
+section <- "PMTCT_EID (N)"
+columns <- col_seq("H", "V")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

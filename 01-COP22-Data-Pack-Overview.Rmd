@@ -7,143 +7,20 @@ editor_options:
 ```{r setup, echo=FALSE}
 suppressWarnings(suppressPackageStartupMessages({
   library(magrittr)
-  library(dplyr)
   library(stringr)
-  library(tidyxl)
-  library(data.table)
-  library(tidyr)
   library(datapackr)
+  library(dplyr)
+  library(tidyr)
   library(openxlsx)
   library(knitr)
   library(kableExtra)
 }))
 
+source("R/schema.R")
+source("R/tables.R")
+source("R/utils.R")
+
 knitr::opts_chunk$set(echo = FALSE, fig.align="center")
-
-col2number <- function(x) {
-  col_ref <- stringr::str_to_upper(x)
-  digits <- stringr::str_length(col_ref)
-  ls <- lapply(seq_len(digits), function(y) {
-      (utf8ToInt(stringr::str_sub(col_ref, y, y)) - utf8ToInt("A") + 1L) * (26**(digits - y))
-    })
-  n <- Reduce(`+`, ls)
-  return(n)
-}
-
-col_seq <- function(col_start, col_end) {
-  n_start <- col2number(col_start)
-  n_end <- col2number(col_end)
-  
-  # Applies `int2col` against list from start number to end number
-  col_list <- sapply(n_start:n_end, int2col)
-    
-  # Return list of columns
-  col_list
-}
-
-spectrum_schema <- tibble::tribble(
-  ~sheet_name, ~col_num, ~col_name, ~col_type, ~value_type, ~prepopulated, ~enter_or_modify, ~calculated, ~linked,
-  "Spectrum", 4, "psnu", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 5, "psnu_uid", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 6, "area_id", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 7, "indicator_code", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 8, "dataelement_uid", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 9, "age", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 10, "age_uid", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 11, "sex", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 12, "sex_uid", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 13, "calendar_quarter", "assumption", "string", "N", "Y", "N", "N",
-  "Spectrum", 14, "value", "assumption", "integer", "N", "Y", "N", "N",
-  "Spectrum", 15, "age_sex_rse", "assumption", "percentage", "N", "Y", "N", "N",
-  "Spectrum", 16, "district_rse", "assumption", "percentage", "N", "Y", "N", "N",
-  "Spectrum", 17, "ID", "string", "assumption", "N", "N", "Y", "N",
-) %>%
-  dplyr::mutate(col_ref = openxlsx::int2col(col_num))
-
-schema <- datapackr::cop22_data_pack_schema %>%
-  dplyr::filter(!sheet_name %in% c("Home", "Spectrum"),
-                col_type != "row_header") %>%
-  dplyr::mutate(
-    col_ref = openxlsx::int2col(col),
-    col_num = col,
-    prepopulated = dplyr::if_else(col_type == "past", "Y", "N"),
-    enter_or_modify = dplyr::case_when(col_type == "past" ~ "?",
-                                       col %in% c(8:9) ~ "Y",
-                                       TRUE ~ "N"),
-    calculated = dplyr::if_else(col_type == "past", "N", "Y"),
-    linked = dplyr::if_else(col == 8, "Y", "N")) %>%
-  dplyr::bind_rows(spectrum_schema) %>%
-  dplyr::select(
-    "Sheet Name" = sheet_name,
-    "Column" = col_ref,
-    "Column Number" = col_num,
-    "Column Name" = col_name,
-    "UID" = indicator_code,
-    "Column Type?" = col_type,
-    "What type of data?" = value_type,
-    "Prepopulated data?" = prepopulated,
-    "Enter or modify data?" = enter_or_modify,
-    "Calculated column?" = calculated,
-    "Linked column?" = linked)
-
-schema_table <- function(sheet_name = NULL,
-                         section = NULL,
-                         columns = NULL,
-                         is_html_knit = knitr::is_html_output()){
-
-  t <- schema %>%
-    {if(sheet_name == "Spectrum") dplyr::select(schema, -UID) else .} %>%
-    dplyr::filter(`Sheet Name` == sheet_name,
-                  `Column` %in% columns) %>%
-    dplyr::select(-`Sheet Name`, -`Column Number`) %>%
-    dplyr::mutate(
-      `Column Name` = stringr::str_wrap(`Column Name`, width = 30),
-      `UID` = stringr::str_wrap(`UID`, width = 30)) %>%
-    tidyr::pivot_longer(cols = !Column) %>%
-    tidyr::pivot_wider(id_cols = name, names_from = Column, values_from = value)
-  
-  if (is_html_knit) {
-    t %<>%
-      tibble::as_tibble() %>%
-      tibble::column_to_rownames(var = "name") %>%
-      knitr::kable(
-        format = "html",
-        escape = FALSE,
-        booktabs = TRUE
-      ) %>%
-      kableExtra::kable_styling(font_size = 12) %>%
-      kableExtra::column_spec(seq_len(length(columns) + 1),
-                              width=paste0(toString(7.5/(length(columns)+1)),
-                                           "in")) %>%
-      kableExtra::row_spec(0, background = "#E6DFA7", align = "c") %>%
-      kableExtra::row_spec(1:{ifelse(sheet_name == "Spectrum", 7, 8)},
-                           extra_css = "border:1px solid lightgrey;") %>%
-      kableExtra::scroll_box(width = "100%")
-  } else {
-    t %<>%
-      flextable::flextable() %>%
-      flextable::align(part = "all", align = "center") %>%
-      flextable::align(j = 1, part = "body", align = "right") %>%
-      flextable::void(j = 1, part = "header") %>%
-      flextable::bold(part = "header") %>%
-      flextable::bg(part = "header", bg = "#E6DFA7") %>%
-      flextable::bg(part = "body",
-                    bg = rep(c("#FFFFFF", "#F2F3F4"), length.out = NROW(t))) %>%
-      flextable::hline_top(
-        part = "header",
-        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-      flextable::hline_bottom(
-        part = "header",
-        border = officer::fp_border(color = "#D7DBDD", width = 2)) %>%
-      flextable::border(
-        border = officer::fp_border(color = "#E5E7E9", width = 1)) %>%
-      flextable::set_table_properties(width = 1, layout = "autofit") %>%
-      flextable::autofit()
-  }
-  
-  return(t)
-}
-
 ```
 
 # COP22 DataPack Overview

@@ -8,11 +8,14 @@
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
 in the reporting period.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "PrEP",
-             section = "PrEP_NEW",
-             columns = col_seq("F", "L"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "PrEP"
+section <- "PrEP_NEW"
+columns <- col_seq("F", "L")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -44,11 +47,14 @@ return for a follow-up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "PrEP",
-             section = "PrEP_CT",
-             columns = col_seq("M", "O"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "PrEP"
+section <- "PrEP_CT"
+columns <- col_seq("M", "O")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

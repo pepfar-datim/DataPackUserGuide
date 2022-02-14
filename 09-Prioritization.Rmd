@@ -8,11 +8,14 @@ editor_options:
 
 # PRIORITIZATION
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Prioritization",
-             section = "Prioritization",
-             columns = col_seq("C", "E"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Prioritization"
+section <- "Prioritization"
+columns <- col_seq("C", "E")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+}
 ```
 
 ### DATIM Import

@@ -5,11 +5,14 @@
 **KP_MAT:** Number of people who inject drugs (PWID) on
 medication-assisted therapy (MAT) for at least 6 months
 
-```{r echo=FALSE}
-schema_table(sheet_name = "KP_MAT",
-             section = "KP_MAT",
-             columns = col_seq("E", "K"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP_MAT"
+section <- "KP_MAT"
+columns <- col_seq("E", "K")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

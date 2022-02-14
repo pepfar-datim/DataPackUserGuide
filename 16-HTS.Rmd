@@ -6,11 +6,14 @@
 
 ## HTS: Testing Summary from Other Tabs
 
-```{r echo=FALSE}
-schema_table(sheet_name = "HTS",
-             section = "Testing Summary",
-             columns = col_seq("F", "O"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "Testing Summary"
+columns <- col_seq("F", "O")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -43,11 +46,14 @@ No data will be imported from this section of the DataPack.
 
 ## HTS: HTS_TST -- Distribution of Positive Tests
 
-```{r echo=FALSE}
-schema_table(sheet_name = "HTS",
-             section = "HTS_TST Distribution of Positive Tests",
-             columns = col_seq("P", "AG"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_TST Distribution of Positive Tests"
+columns <- col_seq("P", "AG")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -100,11 +106,14 @@ No data will be imported from this section of the DataPack.
 
 ## HTS: HTS_TST -- Modality Yields
 
-```{r echo=FALSE}
-schema_table(sheet_name = "HTS",
-             section = "Inpatient (Facility)",
-             columns = col_seq("AH", "AJ"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "Inpatient (Facility)"
+columns <- col_seq("AH", "AJ")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -149,11 +158,14 @@ The following data points will be imported into DATIM from this section:
 
 These calculated columns provide a roll up sum of the total targets set by age, sex and modality in the rest of the HTS tab. This section should serve as a check and will not be uploaded into DATIM.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "HTS",
-             section = "HTS_TST (Total)",
-             columns = col_seq("BO", "BZ"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_TST (Total)"
+columns <- col_seq("BO", "BZ")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -208,11 +220,14 @@ At the culmination of this iterative approach, there should be no values or high
 
 **HTS_SELF (N):** Number of individual HIV self-test kits distributed.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "HTS",
-             section = "HTS_SELF (N)",
-             columns = col_seq("CA", "CC"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_SELF (N)"
+columns <- col_seq("CA", "CC")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

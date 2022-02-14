@@ -18,11 +18,14 @@ knitr::include_graphics("./images/Cascade from PLHIV to TX_NEW Target and Relati
 
 ## Host Country Context
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "Host Country Context",
-             columns = col_seq("F", "Y"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Host Country Context"
+columns <- col_seq("F", "Y")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+}
 ```
 
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack, once these have been loaded into the Spectrum tab of the Data Pack, this first portion of the Cascade tab will automatically update to reflect these estimates. For those leveraging alternatives to Spectrum, see below.
@@ -112,18 +115,24 @@ Due to issues of political sensitivity and national security, estimates for the 
 
 ## PEPFAR FY21 Cascade (Observed) & PEPFAR FY22 Cascade (Planned)
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "Cascade-PEPFAR FY21 Cascade (Observed)",
-             columns = col_seq("Z", "AD"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Cascade-PEPFAR FY21 Cascade (Observed)"
+columns <- col_seq("Z", "AD")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "Cascade-PEPFAR FY21 Cascade (Planned)",
-             columns = col_seq("AE", "AI"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Cascade-PEPFAR FY21 Cascade (Planned)"
+columns <- col_seq("AE", "AI")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 This section provides an overview of PEPFAR FY21 results and FY22 targets, both to give insight into the current status of PEPFAR's contribution to the host country HIV response, as well to serve as reference to many other sections in the Cascade tab. Review this section to understand PEPFAR's trends for the following data, as well as the linkages and relationships between them:
@@ -140,11 +149,14 @@ This section provides an overview of PEPFAR FY21 results and FY22 targets, both 
 
 ## VL_SUPPRESSION_SUBNAT
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "VL_SUPPRESSION_SUBNAT",
-             columns = col_seq("AJ", "AN"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "VL_SUPPRESSION_SUBNAT"
+columns <- col_seq("AJ", "AN")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 This section of the Cascade tab builds upon the preceding Host Country Context and PEPFAR Cascade sections to arrive at an analysis of gap to PopVLS by geography and population. This analysis for popVLS, helps the DataPack user simulate the percentage of PLHIV who are virally suppressed, either from Host Country or PEPFAR data, which derives downstream PEPFAR cascade indicators beginning with TX_PVLS.
@@ -242,11 +254,14 @@ Due to sensitivities around PopVLS estimates for Military organization units and
 
 **TX_PVLS (N):** Number of ART patients with suppressed VL results (\<1,000 copies/mL) documented in the medical or laboratory results/LIS within the past 12 months.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "TX_PVLS (N)",
-             columns = col_seq("AU", "AW"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "TX_PVLS (N)"
+columns <- col_seq("AU", "AW")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -284,11 +299,14 @@ Targets for \<01 year olds who are virally suppressed are set and modeled separa
 
 **TX_PVLS (D):** Number of ART patients with a Viral Load (VL) result documented in the medical or laboratory records/laboratory information system (LIS) within the past 12 months.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "TX_PVLS (D)",
-             columns = col_seq("AM", "AO"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "TX_PVLS (D)"
+columns <- col_seq("AM", "AO")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -318,11 +336,14 @@ ${TX\_ PVLS.D.Routine}_{t}\  = \ \frac{{TX\_ PVLS.N.Routine}_{t}}{{Planned\ VLS\
 ```
 ## VLT Coverage
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "VLT Coverage",
-             columns = col_seq("AV", "BL"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "VLT Coverage"
+columns <- col_seq("AV", "BL")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -370,11 +391,14 @@ The total Eligible for VLT is based first on the total number of individuals in 
 
 **TX_NEW:** Number of adults and children newly enrolled on anti-retroviral therapy (ART). $Part 1 of 2$
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "TX_NEW",
-             columns = col_seq("BM", "BN"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "TX_NEW"
+columns <- col_seq("BM", "BN")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -401,11 +425,14 @@ Because MER guidance stipulates that TX_NEW is to be used for reporting initiati
 
 **TX_CURR:** Number of adults and children currently receiving anti-retroviral therapy (ART).
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "TX_CURR",
-             columns = col_seq("BO", "BS"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "TX_CURR"
+columns <- col_seq("BO", "BS")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -428,11 +455,14 @@ The following data points will be imported into DATIM from this section:
 
 ## TX_CURR_SUBNAT
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "TX_CURR_SUBNAT",
-             columns = col_seq("BT", "BV"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "TX_CURR_SUBNAT"
+columns <- col_seq("BT", "BV")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -451,11 +481,14 @@ The following data points will be imported into DATIM from this section:
 
 ## PEPFAR Testing
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "Testing",
-             columns = col_seq("BW", "CI"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Testing"
+columns <- col_seq("BW", "CI")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -504,11 +537,14 @@ Per COP Guidance, 100% of these testing targets for infant populations should be
 
 ## Testing Reference Distribution
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "Testing Reference Distribution",
-             columns = col_seq("CJ", "CP"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Testing Reference Distribution"
+columns <- col_seq("CJ", "CP")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -524,11 +560,15 @@ No Targets from this section will be imported into DATIM.
 
 **HTS_INDEX:** Number of individuals who were identified and tested using Index testing services and received their results
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "HTS_INDEX",
-             columns = col_seq("CQ", "CX"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "HTS_INDEX"
+columns <- col_seq("CQ", "CX")
+
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+}
 ```
 
 ### DATIM Import
@@ -587,11 +627,15 @@ And finally, targets for HTS_INDEX New Negatives in Community Sites are set as f
 ```
 ## DIAGNOSED_SUBNAT
 
-```{r echo=FALSE}
-schema_table(sheet_name = "Cascade",
-             section = "DIAGNOSED_SUBNAT",
-             columns = "CY",
-             is_html_knit = knitr::is_html_output())
+```{r, cascade_diagnosedsubnat, echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "DIAGNOSED_SUBNAT"
+columns <- "CY"
+
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+}
 ```
 
 ### DATIM Import

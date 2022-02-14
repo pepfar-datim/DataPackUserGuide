@@ -13,11 +13,14 @@ editor_options:
 **CXCA_SCRN (N):** Number of HIV-positive women on ART screened for
 cervical cancer.
 
-```{r echo=FALSE}
-schema_table(sheet_name = "CXCA",
-             section = "CXCA_SCRN",
-             columns = col_seq("F", "K"),
-             is_html_knit = knitr::is_html_output())
+```{r echo=FALSE, results='asis'}
+sheet_name <- "CXCA"
+section <- "CXCA_SCRN"
+columns <- col_seq("F", "K")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

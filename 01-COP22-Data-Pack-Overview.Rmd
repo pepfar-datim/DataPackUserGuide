@@ -20,7 +20,8 @@ source("R/schema.R")
 source("R/tables.R")
 source("R/utils.R")
 
-knitr::opts_chunk$set(echo = FALSE, fig.align="center")
+knitr::opts_chunk$set(echo = FALSE, fig.align ="center")
+flextable::set_flextable_defaults(fonts_ignore = TRUE)
 ```
 
 # COP22 DataPack Overview

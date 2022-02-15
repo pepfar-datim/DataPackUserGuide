@@ -20,25 +20,14 @@ col_seq <- function(col_start, col_end) {
   col_list
 }
 
-name_wrap <- function(x, length = 20) {
-  if (stringr::str_length(x) < length) { return(x) }
+uid_wrap <- function(x, length = 15) {
+  if (stringr::str_length(x) < length) {return(x)}
   x %<>%
-    stringr::str_extract_all(pattern = ".{1,20}(\\s|$)", simplify = TRUE) %>%
-    {if (knitr::is_html_output()) paste(., collapse = "\\n") else paste(., collapse = "\\n ")} %>%
-    stringr::str_replace_all("\\\\linebreak", "\\linebreak")
+    stringr::str_extract_all(pattern = ".{1,20}(\\.|$)", simplify = TRUE) %>%
+    paste(., collapse = " ")
   ## Return modified string
   x
 }
-
-# uid_wrap <- function(x, length = 20) {
-#   if (stringr::str_length(x) < length) {return(x)}
-#   x %<>% 
-#     stringr::str_extract_all(pattern = ".{1,20}(\\.|$)", simplify = TRUE) %>%
-#     {if (knitr::is_html_output()) paste(., collapse = "\\n") else paste(., collapse = "\\linebreak ")} %>%
-#     stringr::str_replace_all("\\\\linebreak", "\\linebreak")
-#   ## Return modified string
-#   x
-# }
 
 # ```{r, schema_tables, eval=FALSE}
 # data <- prepare_table_data(sheet_name, columns)

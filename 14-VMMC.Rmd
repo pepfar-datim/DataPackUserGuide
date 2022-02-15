@@ -162,17 +162,17 @@ The following data points will be imported into DATIM from this section:
 For Military organization units, FY23 targets for Total VMMC_CIRC is set
 as follows, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {VMMC\_ CIRC}_{t}\  = \ {VMMC\_ CIRC}_{t - 1}\  \times \ (1\  + \ {VMMC\_ CIRC.Change.Military}_{t})
-\end{equation}$$
+$$
 
 For all other organization units, FY23 targets for Total VMMC_CIRC are
 set as follows, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {VMMC\_ CIRC}_{t}\  = \ {Targeted\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}\  \times \\
 {PEPFAR\ Coverage\ of\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}
-\end{equation}$$
+$$
 
 ### VMMC_CIRC Disaggregates (FY23)
 
@@ -184,23 +184,23 @@ and finally those negative.
 To set targets for Indeterminate/Not Tested, the DataPack will use the
 following formula, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}
-\end{equation}$$
+$$
 
 For VMMC_CIRC HIV Positive, the DataPack will set targets as follows,
 rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {VMMC\_ CIRC.Pos}_{t}\  = \ ({VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t})\  \times \ \text{Est. Positivity Rate}_{t}
-\end{equation}$$
+$$
 
 And finally, VMMC_CIRC HIV Negative targets will be set as a remainder
 function, as follows:
 
-$$\begin{equation}
+$$
 {VMMC\_ CIRC.Neg}_{t}\  = \ {VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t}\  - \ {VMMC\_ CIRC.Pos}_{t}
-\end{equation}$$
+$$
 
 ## VMMC: ART Linkage
 

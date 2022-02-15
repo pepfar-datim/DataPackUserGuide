@@ -82,10 +82,10 @@ No data points will be imported into DATIM from this section.
 
 To calculate the total number of HIV-infected infants to be tested and identified, the DataPack uses the following formula, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 PMTCT\_ HEI\_ POS.T\  = \ (PMTCT\_ EID.N.2.T\  \times \ PMTCT\_ HEI\_ POS.2.Yield.T)\  +\\
 \ (PMTCT\_ EID.N.12.T\  \times PMTCT\_ HEI\_ POS.12.Yield.T)
-\end{equation}$$
+$$
 \elandscape
 
 \newpage

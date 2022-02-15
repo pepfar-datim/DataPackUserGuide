@@ -95,9 +95,9 @@ UNAIDS Spectrum estimates are accompanied by Relative Standard Errors (RSE) for 
 
 Along with the data points above, RSEs will also automatically be populated in the Cascade tab from data loaded into the Spectrum tab. While initially these RSE columns will be hidden, you can unhide these columns to inspect these values. RSEs are also used to color-coded related columns based on the relative uncertainty of each specific data point as follows:
 
--   **Red:** RSE ≥ 40.
+-   **Red:** RSE $\geq$ 40.
 
--   **Yellow:** RSE \< 40, but ≥ 20.
+-   **Yellow:** RSE \< 40, but $\geq$ 20.
 
 -   **Green:** RSE \< 20.
 
@@ -195,15 +195,15 @@ In all cases, the denominator of this calculation is the estimated PLHIV, making
 
 For its numerator, the DataPack first attempts to use Host Country estimates of the total number of Virally Suppressed ART Patients ($VL\_SUPPRESSED.T\_1$):
 
-$$\begin{equation}
+$$
 \frac{Host\ Country\ Est.\ Virally\ Suppressed\ ART\ Patients\ (FY22)}{Host\ Country\ Est.\ PLHIV\ (FY22)}
-\end{equation}$$
+$$
 
 However, when Host Country estimates of the number of virally suppressed ART patients are unavailable, the DataPack refers instead to PEPFAR data for TX_PVLS (N) either from FY22 targets or, if these are also unavailable, FY21 results, and then extrapolates these to the Host Country context by referencing the Planned PEPFAR Contribution to HIV Response set previously.
 
-$$\begin{equation}
+$$
 \frac{PEPFAR\ TX\_ PVLS}{Host\ Country\ Est.\ PLHIV\ (FY22)}
-\end{equation}$$
+$$
 
 Reviewing and understanding the Working PopVLS Rate arrived at in this column is critical for much of the rest of the DataPack. In particular, this column is immediately used to inform the Planned PopVLS Rate (FY23) in the next column. While the default in this column is 95% x 95% x 95%, reflecting the UNAIDS "95 for All" goals, anytime the Working PopVLS Rate from FY22 is higher than this default for a given geography/population, the higher number will be used instead. The gap between the FY23 Planned and FY22 Working PopVLS Rates is instrumental in determining the following key data points throughout the remainder of the Cascade Tab:
 
@@ -243,9 +243,9 @@ NOTE: The Data Pack will not prevent situations resulting in PopVLS Rate exceedi
 
 VL_SUPPRESSION_SUBNAT (FY23) is set as follows (rounded to the nearest integer):
 
-$$\begin{equation}
+$$
 {Planned\ PopVLS\ Rate\ (FY23)}\ \times \ ({PLHIV\ (FY22)}\ +\ {Projected New Infections (FY23)})
-\end{equation}$$
+$$
 
 As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function of FY22 estimated PLHIV plus the New Infections projected for FY23. How these projected New Infections specifically impact PEPFAR targets for TX_NEW, HTS_TST_POS, and TX_CURR will be explained in subsequent sections.
 
@@ -287,10 +287,10 @@ For both TX_PVLS (N) and TX_PVLS (D), targets are set in the Data Pack only for 
 
 TX_PVLS (N) targets for Routine Viral Load Testing are set as follows, rounded to the nearest integer:
 
-$$\begin{equation}
+$$
 {TX\_ PVLS.N.Routine}_{t}\  = \ {VL\_SUPPRESSION\_SUBNAT}_{t}\  \times \\
 \text{Planned PEPFAR Contribution to HIV Response (FY23)}
-\end{equation}$$
+$$
 
 ### \_Military Organization Units
 
@@ -332,9 +332,9 @@ The following data points will be imported into DATIM from this section:
 
 As mentioned above, only Routine Viral Load testing will be targeted in the Data Pack. Within the Data Pack, TX_PVLS (D) targets for Routine Viral Load Testing are set as follows, rounded to the nearest integer:
 
-$$\begin{equation}
+$$
 {TX\_ PVLS.D.Routine}_{t}\  = \ \frac{{TX\_ PVLS.N.Routine}_{t}}{{Planned\ VLS\ Rate\ (FY23)}}
-\end{equation}$$
+$$
 
 ## VLT Coverage
 
@@ -609,30 +609,30 @@ In general, HTS_INDEX disaggregates across both Community and Facility sites, an
 
 Targets for HTS_INDEX New Positives in Community Sites are set as follows, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {HTS\_ INDEX\_ COM.New.Pos}_{t}\  = \ {HTS\_ INDEX.Pos}_{t}\  \times \\
 {\%\ HTS\_ INDEX\_ POS\ identified\ in\ Community\ Sites}_{t}
-\end{equation}$$
+$$
 
 Building from this, targets for HTS_INDEX New Negatives in Community Sites are set as follows, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {HTS\_ INDEX\_ COM.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ COM.New.Pos}_{t}}{\text{Community New Tested Yield}_{t}}\  - \\
 {HTS\_ INDEX\_ COM.New.Pos}_{t}
-\end{equation}$$
+$$
 
 Alternatively, targets for HTS_INDEX New Positives in Facility Sites are set as follows, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {HTS\_ INDEX\_ FAC.New.Pos}_{t}\  = \ {HTS\_ INDEX\_ POS}_{t}\  - \\
 {HTS\_ INDEX\_ COM.New.Pos}_{t}
-\end{equation}$$
+$$
 
 And finally, targets for HTS_INDEX New Negatives in Community Sites are set as follows:
-$$\begin{equation}
+$$
 {HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \\
 {HTS\_ INDEX\_ FAC.New.Pos}_{t}
-\end{equation}$$
+$$
 
 ## DIAGNOSED_SUBNAT
 

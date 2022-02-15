@@ -74,36 +74,34 @@ The following data points will be imported into DATIM from this section:
 The DataPack will set FY23 targets for TX_TB (D) as laid out below.
 
 Targets will be set for those New on ART and screened positive for TB as
-follows, rounded to the nearest integer:
-$$\begin{equation}
+follows, rounded to the nearest integer: $$
 {TX\_ TB.D.New.Pos}_{t}\  = \ {TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t}\  \times \\
 {TB\ Screen\ Positivity\ Rate:\ New\ on\ ART}_{t}
-\end{equation}$$
+$$
 
 FY23 targets for those Already on ART, but found negative for TB will be
 set as follows, rounded to the nearest integer:
 
-$$\begin{equation}
+$$
 {TX\_ TB.D.New.Neg}_{t}\  = \ ({TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t})\  - \\
 {TX\_ TB.D.New.Pos}_{t}
-\end{equation}$$
+$$
 
 Similarly, targets for those Already on ART and screened positive for TB
 will be set as follows, rounded to the nearest integer:
 
-$$\begin{equation}
+$$
 {TX\_ TB.D.Already.Pos}_{t}\  = \ {TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t}\  \times \\
 {TB\ Screen\ Positivity\ Rate:\ Already\ on\ ART}_{t}
-\end{equation}$$
+$$
 
 And finally, targets for those Already on ART and screened negative for
 TB will be set as below, rounding to the nearest integer:
 
-$$\begin{equation}
+$$
 {TX\_ TB.D.Already.Neg}_{t}\  = \ ({TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t})\ - \\
 {TX\_ TB.D.Already.Pos}_{t}
-\end{equation}$$
-## TX_TB_PREV: TB_PREV (D)
+$$ ## TX_TB_PREV: TB_PREV (D)
 
 **TB_PREV (D):** Number of ART patients who are expected to complete a
 course of TB preventive therapy during the reporting period (for

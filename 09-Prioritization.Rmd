@@ -8,13 +8,14 @@ editor_options:
 
 # PRIORITIZATION
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("Prioritization-Prioritization-B-E-1-1", "latex")
-
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("Prioritization-Prioritization-B-E-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Prioritization"
+section <- "Prioritization"
+columns <- col_seq("C", "E")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+}
 ```
 
 ### DATIM Import
@@ -35,23 +36,23 @@ The following data points will be imported into DATIM from this section:
     below. This column should only be populated using integers 1-8 and
     "M", "NA", or "Not a PSNU", as follows:
 
-    a.  1 = "Scale-up: Saturation"
+    -   1 = "Scale-up: Saturation"
 
-    b.  2 = "Scale-up: Aggressive"
+    -   2 = "Scale-up: Aggressive"
 
-    c.  4 = "Sustained"
+    -   4 = "Sustained"
 
-    d.  5 = "Centrally Supported"
+    -   5 = "Centrally Supported"
 
-    e.  6 = "Sustained: Commodities"
+    -   6 = "Sustained: Commodities"
 
-    f.  7 = "Attained"
+    -   7 = "Attained"
 
-    g.  8 = "Not PEPFAR Supported"
+    -   8 = "Not PEPFAR Supported"
 
-    h.  "M" = "Military"
+    -   "M" = "Military"
 
-    i.  "NA","Not a PSNU" = "INVALID"
+    -   "NA","Not a PSNU" = "INVALID"
 
 3.  Review the column "FY23 SNU Prioritization Translation" to ensure
     the prioritization level for each PSNU is correct. To make any

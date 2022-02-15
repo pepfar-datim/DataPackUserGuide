@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # KP Validation
@@ -15,14 +9,14 @@ Male 15+ populations for each PSNU. Under each of these sections there
 is conditional formatting that will highlight any of the "KP Targets
 Validation" columns in red if those values exceed the Total Targets.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP Validation-PrEP_CT-C-F-1-2", "latex")
-
-schema_table("KP Validation-PrEP_CT-G-J-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP Validation-PrEP_CT-C-J-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP Validation"
+section <- "PrEP_CT"
+columns <- col_seq("C", "J")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

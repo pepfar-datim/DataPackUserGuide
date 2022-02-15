@@ -16,16 +16,14 @@ once during the semiannual reporting period.
 Note: Targets set across this tab are set at Coarse Age Bands,
 aggregating incoming data from any finer age bands to \<15 or 15+.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_TB (D)-F-I-1-3", "latex")
-
-schema_table("TX_TB_PREV-TX_TB (D)-J-L-2-3", "latex")
-
-schema_table("TX_TB_PREV-TX_TB (D)-M-O-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_TB (D)-F-O-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TX_TB_PREV"
+section <- "TX_TB (D)"
+columns <- col_seq("F", "O")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -76,46 +74,48 @@ The following data points will be imported into DATIM from this section:
 The DataPack will set FY23 targets for TX_TB (D) as laid out below.
 
 Targets will be set for those New on ART and screened positive for TB as
-follows, rounded to the nearest integer:
-
-
-\begin{center} ${TX\_ TB.D.New.Pos}_{t}\  = \ {TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t}\  \times \ {TB\ Screen\ Positivity\ Rate:\ New\ on\ ART}_{t}$ \end{center}
+follows, rounded to the nearest integer: $$
+{TX\_ TB.D.New.Pos}_{t}\  = \ {TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t}\  \times \\
+{TB\ Screen\ Positivity\ Rate:\ New\ on\ ART}_{t}
+$$
 
 FY23 targets for those Already on ART, but found negative for TB will be
 set as follows, rounded to the nearest integer:
 
-
-\begin{center} ${TX\_ TB.D.New.Neg}_{t}\  = \ ({TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t})\  - \ {TX\_ TB.D.New.Pos}_{t}$ \end{center}
+$$
+{TX\_ TB.D.New.Neg}_{t}\  = \ ({TX\_ NEW}_{t}\  \times \ {Targeted\ Coverage:\ New\ on\ ART}_{t})\  - \\
+{TX\_ TB.D.New.Pos}_{t}
+$$
 
 Similarly, targets for those Already on ART and screened positive for TB
 will be set as follows, rounded to the nearest integer:
 
-
-\begin{center} ${TX\_ TB.D.Already.Pos}_{t}\  = \ {TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t}\  \times \ {TB\ Screen\ Positivity\ Rate:\ Already\ on\ ART}_{t}$ \end{center}
+$$
+{TX\_ TB.D.Already.Pos}_{t}\  = \ {TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t}\  \times \\
+{TB\ Screen\ Positivity\ Rate:\ Already\ on\ ART}_{t}
+$$
 
 And finally, targets for those Already on ART and screened negative for
 TB will be set as below, rounding to the nearest integer:
 
-
-\begin{center} ${TX\_ TB.D.Already.Neg}_{t}\  = \ ({TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t})\  - \ {TX\_ TB.D.Already.Pos}_{t}$ \end{center}
-
-## TX_TB_PREV: TB_PREV (D)
+$$
+{TX\_ TB.D.Already.Neg}_{t}\  = \ ({TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t})\ - \\
+{TX\_ TB.D.Already.Pos}_{t}
+$$ ## TX_TB_PREV: TB_PREV (D)
 
 **TB_PREV (D):** Number of ART patients who are expected to complete a
 course of TB preventive therapy during the reporting period (for
 programs using continuous IPT, this includes only the patients who are
 scheduled to complete the first 6 months of therapy).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-S-1-3", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (D)-T-V-2-3", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (D)-W-X-2-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (D)-P-X-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TX_TB_PREV"
+section <- "TB_PREV (D)"
+columns <- col_seq("P", "X")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -163,14 +163,14 @@ preventive therapy during the reporting period (for continuous IPT
 programs, this includes the patients who have completed the first 6
 months of isoniazid preventive therapy (IPT)).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-Y-AA-1-2", "latex")
-
-schema_table("TX_TB_PREV-TX_PREV (N)-AB-AC-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TX_TB_PREV-TX_PREV (N)-Y-AC-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TX_TB_PREV"
+section <- "TX_PREV (N)"
+columns <- col_seq("Y", "AC")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

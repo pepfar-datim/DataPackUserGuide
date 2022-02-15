@@ -14,20 +14,14 @@ editor_options:
 or completed any DREAMS service/intervention as of the end of the
 reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("AGYW-AGYW_PREV-F-I-1-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-J-M-2-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-N-P-3-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-Q-S-4-5", "latex")
-
-schema_table("AGYW-AGYW_PREV-T-V-5-5", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("AGYW-AGYW_PREV-F-V-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "AGYW"
+section <- "AGYW_PREV"
+columns <- col_seq("F", "V")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -74,8 +68,10 @@ The following data points will be imported into DATIM from this section:
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
-
-\begin{center} ${AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\ (1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})$ \end{center}
+$$
+{AGYW\_ PREV.D}_{t}\  = \ {AGYW\_ PREV.D}_{r}\ *\\
+(1\  + \ {Projected\ Net\ Change\ in\ Total\ AGYW\_ PREV}_{t})
+$$
 
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
@@ -85,9 +81,8 @@ disaggregated by Service or Package Completion Status.
 FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
-
-\begin{center} ${AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t}$ \end{center}
-
-\elandscape
+$$
+{AGYW\_ PREV.N}_{t}\  = \ {AGYW\_ PREV.D}_{t}\ *\ \text{Targeted Percent Completion}_{t} 
+$$ \elandscape
 
 \newpage

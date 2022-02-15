@@ -2,27 +2,15 @@
 
 # How to Fill Out the DataPack
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/image12.png")
 ```
 
-\begin{center}
-
-\includegraphics[width=9in]{./images/image12.png}
-
-\end{center}
-
 \newpage
 
-```{r echo=FALSE, out.width = '100%', include = knitr::is_html_output()}
+```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/image13.png")
 ```
-
-\begin{center}
-
-\includegraphics[width=9in]{./images/image13.png}
-
-\end{center}
 
 \elandscape
 

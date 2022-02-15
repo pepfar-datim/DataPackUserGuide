@@ -13,12 +13,14 @@ editor_options:
 **TB_STAT (D):** Total number of new and relapsed TB cases, during the
 reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_STAT (D)-F-H-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_STAT (D)-F-H-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_STAT (D)"
+columns <- col_seq("F", "H")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -49,16 +51,14 @@ The following data points will be imported into DATIM from this section:
 **TB_STAT (N):** Number of new and relapsed TB cases with documented HIV
 status, during the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_STAT (N)-I-K-1-3", "latex")
-
-schema_table("TB-TB_STAT (N)-L-N-2-3", "latex")
-
-schema_table("TB-TB_STAT (N)-O-R-3-3", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_STAT (N)-I-R-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_STAT (N)"
+columns <- col_seq("I", "R")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -103,30 +103,37 @@ The following data points will be imported into DATIM from this section:
 Total TB_STAT (N) targets are modeled as follows, rounding to the
 nearest integer:
 
-
-\begin{center} ${TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}$ \end{center}
+$$
+{TB\_ STAT.N}_{t}\  = \ {TB\_ STAT.D}_{t}\  \times \ {Targeted\ TB\_ STAT\ Coverage}_{t}
+$$
 
 ### Known HIV Status, Positive
 
 Known HIV Status, Positive targets are modeled as follows, rounding to
 the nearest integer:
 
-
-\begin{center} ${TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \ {Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}$ \end{center}
+$$
+{TB\_ STAT.N.KnownPos}_{t}\  = \ {TB\_ STAT.N}_{t}\  \times \\
+{Estimated\ \%\ TB\ clients\ already\ Known\ HIV\ Positive}_{t}
+$$
 
 ### Newly Tested
 
 Targets for TB_STAT (N): Newly Tested, Positive are modeled as follows,
 rounding to the nearest integer:
 
-
-\begin{center} ${TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \ \text{Estimated Positivity Rate among Newly Tested}_{t}$ \end{center}
+$$
+{TB\_ STAT.N.New.Pos}_{t}\  = \ ({TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t})\  \times \\
+\text{Estimated Positivity Rate among Newly Tested}_{t}
+$$
 
 Based on these and targets for Known HIV Status, Positive, targets for
 Newly Tested, Negative are modeled as a remainder, as follows:
 
-
-\begin{center} ${TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \ {TB\_ STAT.N.New.Pos}_{t}$ \end{center}
+$$
+{TB\_ STAT.N.New.Neg}_{t}\  = \ {TB\_ STAT.N}_{t}\  - \ {TB\_ STAT.N.KnownPos}_{t}\  - \\
+{TB\_ STAT.N.New.Pos}_{t}
+$$
 
 **\
 **
@@ -136,12 +143,14 @@ Newly Tested, Negative are modeled as a remainder, as follows:
 **TB_ART:** Proportion of HIV-positive new and relapsed TB cases on ART
 during TB treatment.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-TB_ART-S-U-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-TB_ART-S-U-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "TB_ART"
+columns <- col_seq("S", "U")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -171,8 +180,9 @@ for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
 words, the following holds true in the DataPack:
 
-
-\begin{center} ${TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}$ \end{center}
+$$
+{TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}
+$$
 
 ### New on ART
 
@@ -180,19 +190,20 @@ FY23 Targets for TB_ART New on ART are based largely on TB_STAT Newly
 Identified HIV positive TB clients as follows, rounding to the nearest
 integer:
 
-
-\begin{center} ${TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}$ \end{center}
+$$
+{TB\_ ART.New}_{t}\  = \ {TB\_ STAT.N.New.Pos}_{t}\  \times \ \text{Targeted ART Linkage Rate}_{t}
+$$
 
 ## TB: Testing Rationalization
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("TB-Testing Rationalization-V-Y-1-2", "latex")
-
-schema_table("TB-Testing Rationalization-Z-AB-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("TB-Testing Rationalization-V-AB-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "TB"
+section <- "Testing Rationalization"
+columns <- col_seq("V", "AB")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

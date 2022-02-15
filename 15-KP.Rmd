@@ -73,12 +73,14 @@ listed.
 
 ## KP: KP_ESTIMATES
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-KP_ESTIMATES-E-G-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-KP_ESTIMATES-E-G-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "KP_ESTIMATES"
+columns <- col_seq("E", "G")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -114,12 +116,14 @@ return for a follow up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-PrEP_CT-H-I-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-PrEP_CT-H-I-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "PrEP_CT"
+columns <- col_seq("H", "I")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -155,12 +159,14 @@ PrEP_CT. See PrEP_CT on PrEP tab.
 antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection
 in the reporting period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-PrEP_NEW-J-K-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-PrEP_NEW-J-K-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "PrEP_NEW"
+columns <- col_seq("J", "K")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -192,12 +198,14 @@ then set the general PrEP target.
 small group-level HIV prevention interventions designed for the target
 population.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-KP_PREV-L-M-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-KP_PREV-L-M-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "KP_PREV"
+columns <- col_seq("L", "M")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -220,12 +228,14 @@ The following data points will be imported into DATIM from this section:
 **TX_CURR:** Number of adults and children currently receiving
 antiretroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_CURR-N-Q-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_CURR-N-Q-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "TX_CURR"
+columns <- col_seq("N", "Q")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -261,12 +271,14 @@ not exceed total population targets set on the Cascade tab.
 **TX_NEW:** Number of adults and children newly enrolled on
 antiretroviral therapy (ART).
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_NEW-R-V-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_NEW-R-V-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "TX_NEW"
+columns <- col_seq("R", "V")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -311,16 +323,24 @@ the medical or laboratory records/LIS within the past 12 months
 (\<1,000 copies/mL) documented in the medical or laboratory results/LIS
 within the past 12 months.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-TX_PVLS (D)-W-Y-1-1", "latex")
-
-schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "latex")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "TX_PVLS (D)"
+columns <- col_seq("W", "Y")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-TX_PVLS (D)-W-Y-1-1", "html")
-
-schema_table("KP-TX_PVLS (N)-Z-AA-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "TX_PVLS (N)"
+columns <- col_seq("Z", "AA")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -367,14 +387,14 @@ The following data points will be imported into DATIM from this section:
 **HTS_TST:** Number of individuals who received HIV Testing Services
 (HTS) and received their test results.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_TST-AB-AF-1-2", "latex")
-
-schema_table("KP-HTS_TST-AG-AJ-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_TST-AB-AJ-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "HTS_TST"
+columns <- col_seq("AB", "AJ")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -441,12 +461,14 @@ The following data points will be imported into DATIM from this section:
 years with a test for recent infection result during the reporting
 period.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_RECENT-AK-AL-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_RECENT-AK-AL-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "HTS_RECENT"
+columns <- col_seq("AK", "AL")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -477,12 +499,14 @@ The following data points will be imported into DATIM from this section:
 
 **HTS_SELF:** Number of individual HIV self-test kits distributed.
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP-HTS_SELF-AM-AN-1-1", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP-HTS_SELF-AM-AN-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP"
+section <- "HTS_SELF"
+columns <- col_seq("AM", "AN")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

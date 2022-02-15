@@ -1,7 +1,7 @@
 book_filename: "Data-Pack-User-Guide"
 repo: https://github.com/pepfar-datim/DataPackUserGuide
 output_dir: www
-delete_merged_file: false
+delete_merged_file: true
 language:
   label:
     fig: "FIGURE "

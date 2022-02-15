@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 \blandscape
 
 # KP_MAT
@@ -11,14 +5,14 @@ editor_options:
 **KP_MAT:** Number of people who inject drugs (PWID) on
 medication-assisted therapy (MAT) for at least 6 months
 
-```{r echo=FALSE, include=knitr::is_latex_output()}
-schema_table("KP_MAT-KP_MAT-E-H-1-1", "latex")
-
-schema_table("KP_MAT-KP_MAT-I-K-2-2", "latex")
-```
-
-```{r echo=FALSE, include=knitr::is_html_output()}
-schema_table("KP_MAT-KP_MAT-E-K-1-1", "html")
+```{r echo=FALSE, results='asis'}
+sheet_name <- "KP_MAT"
+section <- "KP_MAT"
+columns <- col_seq("E", "K")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

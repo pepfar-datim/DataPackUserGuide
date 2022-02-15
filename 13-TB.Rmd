@@ -56,7 +56,7 @@ sheet_name <- "TB"
 section <- "TB_STAT (N)"
 columns <- col_seq("I", "R")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -201,7 +201,7 @@ sheet_name <- "TB"
 section <- "Testing Rationalization"
 columns <- col_seq("V", "AB")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

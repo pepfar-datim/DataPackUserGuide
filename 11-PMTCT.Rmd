@@ -15,7 +15,7 @@ sheet_name <- "PMTCT"
 section <- "Host Country Context"
 columns <- col_seq("F", "R")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 3)) {
   make_table(t, section)
   }
 ```
@@ -173,7 +173,7 @@ sheet_name <- "PMTCT"
 section <- "PMTCT_STAT (N)"
 columns <- col_seq("Y", "AG")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -387,7 +387,7 @@ sheet_name <- "PMTCT"
 section <- "HTS_TST: PMTCT Post ANC1"
 columns <- col_seq("AR", "AX")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -438,7 +438,7 @@ sheet_name <- "PMTCT"
 section <- "Testing Rationalization"
 columns <- col_seq("AY", "BE")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

@@ -11,7 +11,7 @@ sheet_name <- "HTS"
 section <- "Testing Summary"
 columns <- col_seq("F", "O")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -51,7 +51,7 @@ sheet_name <- "HTS"
 section <- "HTS_TST Distribution of Positive Tests"
 columns <- col_seq("P", "AG")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -163,7 +163,7 @@ sheet_name <- "HTS"
 section <- "HTS_TST (Total)"
 columns <- col_seq("BO", "BZ")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

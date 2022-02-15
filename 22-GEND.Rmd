@@ -18,7 +18,7 @@ sheet_name <- "GEND"
 section <- "GEND_GBV"
 columns <- col_seq("C", "H")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 3)) {
   make_table(t, section)
   }
 ```

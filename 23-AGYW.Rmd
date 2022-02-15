@@ -19,7 +19,7 @@ sheet_name <- "AGYW"
 section <- "AGYW_PREV"
 columns <- col_seq("F", "V")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

@@ -15,7 +15,7 @@ sheet_name <- "VMMC"
 section <- "VMMC_CIRC_SUBNAT"
 columns <- col_seq("F", "Q")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 3)) {
   make_table(t, section)
   }
 ```
@@ -93,7 +93,7 @@ sheet_name <- "VMMC"
 section <- "VMMC_CIRC"
 columns <- col_seq("R", "AD")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -233,7 +233,7 @@ sheet_name <- "VMMC"
 section <- "Testing Rationalization"
 columns <- col_seq("AG", "AK")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

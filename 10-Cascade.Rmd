@@ -23,7 +23,7 @@ sheet_name <- "Cascade"
 section <- "Host Country Context"
 columns <- col_seq("F", "Y")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
 }
 ```
@@ -343,7 +343,7 @@ sheet_name <- "Cascade"
 section <- "VLT Coverage"
 columns <- col_seq("AV", "BL")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -488,7 +488,7 @@ sheet_name <- "Cascade"
 section <- "Testing"
 columns <- col_seq("BW", "CI")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -544,7 +544,7 @@ sheet_name <- "Cascade"
 section <- "Testing Reference Distribution"
 columns <- col_seq("CJ", "CP")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -568,7 +568,7 @@ section <- "HTS_INDEX"
 columns <- col_seq("CQ", "CX")
 
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
 }
 ```

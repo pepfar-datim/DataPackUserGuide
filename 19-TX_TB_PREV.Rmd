@@ -21,7 +21,7 @@ sheet_name <- "TX_TB_PREV"
 section <- "TX_TB (D)"
 columns <- col_seq("F", "O")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -113,7 +113,7 @@ sheet_name <- "TX_TB_PREV"
 section <- "TB_PREV (D)"
 columns <- col_seq("P", "X")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```
@@ -168,7 +168,7 @@ sheet_name <- "TX_TB_PREV"
 section <- "TX_PREV (N)"
 columns <- col_seq("Y", "AC")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

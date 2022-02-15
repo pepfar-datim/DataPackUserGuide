@@ -392,7 +392,7 @@ sheet_name <- "KP"
 section <- "HTS_TST"
 columns <- col_seq("AB", "AJ")
 data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
+for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
   }
 ```

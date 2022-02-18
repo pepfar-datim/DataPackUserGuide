@@ -543,7 +543,7 @@ guidance needed to make the changes and if any approvals are needed.
 +-------+------------+--------------+----------+----------------------+
 | EID   | PMT        | Est.         | Set to   | Free to change       |
 |       | CT_HEI_POS | Positivity   | equal:   | depending on context |
-|       | (N)        | Rate, ≤ 02   | Yield    |                      |
+|       | (N)        | Rate, $\leq$ 02   | Yield    |                      |
 |       |            | mo (FY23)    | (FY21    |                      |
 |       |            | (%)          | Results) |                      |
 |       |            |              | (%)      |                      |

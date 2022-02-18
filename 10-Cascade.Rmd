@@ -224,8 +224,11 @@ Reviewing and understanding the Working PopVLS Rate arrived at in this column is
 No matter the starting default for Planned PopVLS rate, you may adjust this target to fit the realities of your country context and your treatment program. It may also be helpful to return to this column to iteratively adjust it as you proceed through the next few sections of the DataPack. To help conceptualize how you might adjust the planned PopVLS Rate, please review the figure in the introduction of this section which describes the role of the Planned PopVLS Rate assumption in the overall logic of calculating the TX_PVLS and TX_NEW targets. As described in the introduction, Planned PopVLS is not intended to convey the idea of population viral load suppression as used in some other settings to mean the theoretical fraction of the PLHIV population that is virally suppressed (whether in care or out of care, tested or untested). Rather, it is best thought of as a programmatic PopVLS value that summarizes the relationship between PLHIV and the clinically known and measured number of virally suppressed PLHIV on treatment as described in the figure above. The single Planned PopVLS number should take into account the % diagnosed, % linked to ART, % contributed to by PEPFAR, % eligible for viral load testing, % tested for viral load, and % virally suppressed. The calculations in this figure may also be written out as the following formula:
 
 $$
-{Planned\_ PopVLS}\  = \text{% Diagnosed in Full Population} \times \\ 
-\text{% Linked Among All Diagnosed} \times \\ \text{Planned PEPFAR Contribution to HIV Response (FY23)}  \times \\ \text{Proportion of full FY23 TX_CURR Eligible for VLT}  \times \\ \text{Planned VLT Coverage (FY23)}  \times \ \text{Planned VLS Rate (FY23)}
+{Planned\_PopVLS}\ =\ {\%\ Diagnosed\ in\ Full\ Population} \times \\
+{\%\ Linked\ Among\ All\ Diagnosed} \times \\
+{Planned\ PEPFAR\ Contribution\ to\ HIV\ Response\ (FY23)} \times \\
+{Proportion\ of\ full\ FY23\ TX\_CURR\ Eligible\ for\ VLT} \times \\
+{Planned\ VLT\ Coverage\ (FY23)} \times {Planned\ VLS\ Rate\ (FY23)}
 $$
 
 Of the factors included in the Planned PopVLS formula, Planned PEPFAR Contribution to HIV Responses (FY23), Planned VLT Coverage (FY23) and Planned VLS Rate (FY23) are present as such in the DataPack. However, percent diagnosed in the full population may be different from the DataPack assumption column "Planned % New Infections Diagnosed (FY23)", which is applied to new (FY23) infections only.
@@ -235,7 +238,8 @@ Percent linked among all diagnosed may similarly be different from the DataPack 
 Finally, the proportion of the full FY22 TX_CURR eligible for VLT relates to the entire FY23 treatment cohort, whereas the DataPack assumption of Planned % Recently Initiated on ART Eligible for VLT (FY23) with default of 70% only applies to those initiated on ART in FY23; the proportion eligible in the full treatment cohort will be substantially higher and can be calculated by assuming that 100% of the FY22 treatment cohort are eligible for viral load and taking a weighted average of the percentages as follows:
 
 $$
-\ \frac{\text{Total Initiated on ART (FY23)}  \times \\ \text{Planned % Recently Initiated on ART Eligible for VLT (FY23)} + \ \text{(100% * TX_CURR Target (FY23)}}{{Total\ Initiated\ \ on\ ART\ (FY23)} + {TX\_CURR \ Target \ (FY23)}}
+\frac{{Total\ Initiated\ on\ ART\ (FY23)}  \times
+{Planned\ \%\ Recently\ Initiated\ on\ ART\ Eligible\ for\ VLT\ (FY23)} + \ {(100\ \%\ *\ TX\_CURR\ Target\ (FY23))}}{{Total\ Initiated\ \ on\ ART\ (FY23)} + {TX\_CURR \ Target \ (FY23)}}
 $$
 
 Because the DataPack calculates viral load testing, treatment, and testing targets by first setting the measured number of virally suppressed persons (VL_SUPPRESSION_SUBNAT \[FY23\]) using the Planned PopVLS Rate and then stepping back up the cascade, if the Planned PopVLS Rate and these other assumptions are not internally consistent, then the DataPack may give unexpected results, such as setting targets above the PLHIV estimate. Having an understanding of the relationship between the Planned PopVLS and its component assumptions may help teams troubleshoot the DataPack if it seems to be setting inappropriate targets.
@@ -633,7 +637,8 @@ $$
 {HTS\_ INDEX\_ COM.New.Pos}_{t}
 $$
 
-And finally, targets for HTS_INDEX New Negatives in Community Sites are set as follows: $$
+And finally, targets for HTS_INDEX New Negatives in Community Sites are set as follows:
+$$
 {HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \\
 {HTS\_ INDEX\_ FAC.New.Pos}_{t}
 $$

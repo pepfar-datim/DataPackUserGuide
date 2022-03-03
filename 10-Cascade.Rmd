@@ -221,12 +221,13 @@ Reviewing and understanding the Working PopVLS Rate arrived at in this column is
 
 -   PEPFAR HTS_TST totals
 
-No matter the starting default for Planned PopVLS rate, you may adjust this target to fit the realities of your country context and your treatment program. It may also be helpful to return to this column to iteratively adjust it as you proceed through the next few sections of the DataPack. To help conceptualize how you might adjust the planned PopVLS Rate, please review the figure in the introduction of this section which describes the role of the Planned PopVLS Rate assumption in the overall logic of calculating the TX_PVLS and TX_NEW targets. As described in the introduction, Planned PopVLS is not intended to convey the idea of population viral load suppression as used in some other settings to mean the theoretical fraction of the PLHIV population that is virally suppressed (whether in care or out of care, tested or untested). Rather, it is best thought of as a programmatic PopVLS value that summarizes the relationship between PLHIV and the clinically known and measured number of virally suppressed PLHIV on treatment as described in the figure above. The single Planned PopVLS number should take into account the % diagnosed, % linked to ART, % contributed to by PEPFAR, % eligible for viral load testing, % tested for viral load, and % virally suppressed. The calculations in this figure may also be written out as the following formula:
+No matter the starting default for Planned PopVLS rate, you may adjust this target to fit the realities of your country context and your treatment program. It may also be helpful to return to this column to iteratively adjust it as you proceed through the next few sections of the DataPack. To help conceptualize how you might adjust the planned PopVLS Rate, please review the figure in the introduction of this section which describes the role of the Planned PopVLS Rate assumption in the overall logic of calculating the TX_PVLS and TX_NEW targets. As described in the introduction, Planned PopVLS is not intended to convey the idea of population viral load suppression as used in some other settings to mean the theoretical fraction of the PLHIV population that is virally suppressed (whether in care or out of care, tested or untested). Rather, it is best thought of as a programmatic PopVLS value that summarizes the relationship between PLHIV and the clinically known and measured number of virally suppressed PLHIV on treatment.
+
+Because the single Planned PopVLS number is multiplied by the PLHIV estimate to yield the targeted national number of virally suppressed persons (Viral_Suppression_SUBNAT), it should take into account all intermediate steps, i.e. the % diagnosed, % linked to ART, % eligible for viral load testing, % tested for viral load, and % virally suppressed. The calculations in this figure may also be written out as the following formula:
 
 $$
 {Planned\_PopVLS}\ =\ {\%\ Diagnosed\ in\ Full\ Population} \times \\
 {\%\ Linked\ Among\ All\ Diagnosed} \times \\
-{Planned\ PEPFAR\ Contribution\ to\ HIV\ Response\ (FY23)} \times \\
 {Proportion\ of\ full\ FY23\ TX\_CURR\ Eligible\ for\ VLT} \times \\
 {Planned\ VLT\ Coverage\ (FY23)} \times {Planned\ VLS\ Rate\ (FY23)}
 $$
@@ -368,7 +369,7 @@ No Targets will be imported to DATIM from this section.
 3.  Review and adjust the P**lanned Percent of New Infections to be Diagnosed in FY23**. Return to the projected New Infections (FY23) column in the Host Country Context section of this tab to add or adjust New Infections and Incidence Rates as needed. Planned diagnosis rates here default to 95%, unless historic Host Country trends have been higher. In either case, you may adjust this assumption as appropriate.
 4.  Review historic data about diagnosis rates, and adjust the **FY23 Targeted Linkage Rate**, which applies both to New Infections and those Previously Infected who are not yet on ART including Undiagnosed and those Previously Diagnosed but not on ART). Note that Linkage Rates set here are *also* applied to the models used on the PMTCT, TB, and VMMC tabs in order to maintain linkages between TX_NEW, PMTCT_ART, TB_ART, and VMMC testing's linkage to treatment.
 5.  Adjust the **Percent of Recently Initiated on ART who are planned to be Eligible for VLT during FY23**. Keep in mind that per MER guidance, individuals must have been on ART for at least 3 months to be eligible for VLT. As such, the default in this column is 70%, though can be adjusted as needed. Also note that this eligibility rate applies to all those planned to be initiated on ART during FY23, whether treatment naive (New Infections, Previously Undiagnosed, or Previously Diagnosed), or those Returning to Treatment.
-6.  Review historic data about VLT coverage, and adjust the **FY23 Planned VLT Coverage Rate**. This rate defaults to 95%, though can be adjusted as needed.
+6.  Review historic data about VLT coverage, and adjust the **FY23 Planned VLT Coverage Rate**. This rate defaults to 95%, though can be adjusted with approval from Chair.
 7.  Coordinate with DOD SI Liaisons to paste targets for **FY23 New Infections Initiated on ART**, overwriting formulas as needed, and adjusting upstream assumptions for other organization units as needed to reflect the cross-section of DOD targets.
 8.  Review FY23 targets modeled for **New Infections Initiated on ART**, **Previous Infections to be Initiated on ART**, and the **Total Initiated on ART**. See below for additional detail.
 9.  Review targets for the FY23 planned **Total Eligible for VLT**. See below for additional detail.
@@ -378,25 +379,41 @@ No Targets will be imported to DATIM from this section.
 
 Based on Incidence Rates and projected New Infections modeled in the Host Country Context section of this tab, this section of the Data Pack models how PEPFAR will support identifying these individuals and linking them to ART. As such, FY23 New Infections Initiated on ART is set as follows, reflecting both diagnosis and linkage to ART:
 
-*Placeholder for formulas*
+$$
+{New\ Infections\ Initiated\ on\ ART}\ =\ {Projected\ New\ Infections\ (FY23)} \times \\
+{Planned \ PEPFAR\ Contribution\ to\ HIV\ Response\ (FY23) \ (\%)} \times \\
+{Planned\ \%\ New\ Infetcions\ Diagnosed\ (FY23)\ (\%)} \times \\ {Targeted\ Linkage\ Rate\ (FY23)\ (\%)}
+$$
 
 Keep in mind that targets for infants to be initiated on ART, as mentioned above, are set on the EID tab and only reflected here. Also similar to the above, targets for new infections to be initiated on ART in \_Military organization units are set and modeled separately by DOD SI liaisons, and will be pasted here in this column.
 
 ### Previous Infections Initiated on ART (FY23)
 
-The above step related to New Infections Initiated on ART (FY23) effectively institutes a floor on the number of individuals who can be considered eligible for VLT, and a cap on the VLT Coverage Rate, regardless of the elgibility and coverage rates set previously.
+After setting the Planned PopVLS Rate and other assumptions earlier (see above section on Working and Planned PopVLS Rate), the Data Pack calculates both TX_PVLS (N) and TX_PVLS (D) targets. 
 
-After setting the PopVLS Rate and other assumptions earlier, the Data Pack calculates both TX_PVLS (N) and TX_PVLS (D) targets. Underlying these values are assumptions of VLS_NET_NEW as well. Subsequently, the Data Pack looks to satisfy this VLS_NET_NEW first via those New Infections to be Initiated on ART and Eligible for VLT. Then, if VLS_NET_NEW still remains, the Data Pack assumes the remainder must be filled by initiating on ART those that had been previously infected by otherwise not on ART.
 
-This column summarizes the result of that remainder calculation, though in cases where PopVLS Rates lead to exceptionally high VLS_NET_NEW, this remainder is prevented from ever being negative.
+Subsequently, the Data Pack looks to calculate the total newly eligible for VLT in FY23 (Note= This is not a column in the COP22 Data Pack but is part of the equation within the column that estimates the Previous Infections Initiated on ART (FY23). Since the exact number of individuals that will be eligible for viral load testing in FY22 is unknown, the data pack gives us the assumption that all those planned to be on ART at the end of FY22 are eligible for VLT in FY23, therefore the VLT_NET_NEW = (Planned VLT Coverage (FY23) (%)- Planned TX_PVLS_D (FY22).
 
-*Placeholder for formulas*
+The full equation for estimating Previous Infections Initiated on ART is:
+
+$$
+{(\ VLT\_NET\_NEW / Planned \ \% \ Recently\ Initiated\ on\ ART \ Eligible \ for \ VLT\ (FY23))}
+\ -\\ {New\ infections\ Initiated\ on\ ART\ (FY23)}
+$$
+
+This is a remainder calculation, in that the data pack assumes all those planned to be on ART at the end of COP22 were eligible for VLT in FY22, then estimates those that are planned to be eligible in FY23, and subtracts them first via those New Infections to be Initiated on ART and Eligible for VLT. Then, if VLT_NET_NEW remains, the Data Pack assumes the remainder must be filled by initiating on ART those that had been previously infected by otherwise not on ART. Also note, that in cases where PopVLS Rates lead to a negative VLT_NET_NEW, this remainder is prevented from ever being below zero.
 
 ### Total Eligible for VLT (FY23)
 
 The total Eligible for VLT is based first on the total number of individuals in the incoming treatment pool (TX_CURR from the previous year's targets), and secondly on the total number of individuals to be Initiated on TX_CURR who are projected to be on ART within the first three quarters of the Fiscal Year.
 
-*Placeholder for formulas*
+$$
+{PEPFAR\ Total\ EVLT\ (FY23)}\ =\ {(Total\ Initiated\ on\ ART\ (FY23)} \times \\
+{Planned \ \%\ Recently\ Initiated\ on\ ART\ Eliglible\ for\ VLT\ (FY23) \ (\%))} \\+ \\
+{FY22\ TX\_CURR\ (Planned\ TX\_CURR\ Result\ for\ FY22)}
+$$
+
+This formula assumes all those who are targeted in COP21 to be on treatment at the end of FY22 are eligible for VLT in FY23 and a % of those that are initiated on ART in FY23 are eligible for ART. See step 5 in the instructions above for how review and modify this assumption.
 
 ## TX_NEW
 
@@ -637,8 +654,7 @@ $$
 {HTS\_ INDEX\_ COM.New.Pos}_{t}
 $$
 
-And finally, targets for HTS_INDEX New Negatives in Community Sites are set as follows:
-$$
+And finally, targets for HTS_INDEX New Negatives in Community Sites are set as follows: $$
 {HTS\_ INDEX\_ FAC.New.Neg}_{t}\  = \ \frac{{HTS\_ INDEX\_ FAC.New.Pos}_{t}}{\text{Facility New Tested Yield}_{t}}\  - \\
 {HTS\_ INDEX\_ FAC.New.Pos}_{t}
 $$

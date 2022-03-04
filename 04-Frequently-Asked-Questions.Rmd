@@ -8,6 +8,14 @@ A: The PEPFAR Virtal Academy (PVA, [learn.pepfar.net](http://learn.pepfar.net
 
 A: This is a bug with the conditional formatting of the column. Because surrounding columns are all measuring percentages, the conditional formatting is set to flag anything over 1 (i.e. anything over 100%). As a result almost all cells will be highlighted RED in this section. This should be ignored, and the only values that should be reviewed are those that are less than zero.
 
+***Q: I have generated a PSNUxIM Tab, but there are duplicate rows for the 50+ age band that have been added to the bottom on the tab, how can I fix this?***
+
+A: For countries that generated a PSNUxIM tab and have the presence of the duplicate 50+ age bands. The following needs to be done:
+
+-   Teams need to delete ALL green appended rows in the PSNUxIM tab.
+
+-   Once deleted, save the file, and run it back through the app. If there were other targets they will be re-added, but there will no longer be any duplicates
+
 ***Q: On the HTS tab, the reference columns for "Host Country Est. ART Coverage (FY22) (%)" (column F) and "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)" (column G) are highlighting red for the 50+ Age bands. Why are these percentages so high?***
 
 A: There is an error in the formula. Though this is only a reference formula and will not impact any calculations for targets on the HTS Tab, the following new formulas can be applied to these columns to fix this error. The two formulas below you will be able to copy into your DataPack to resolve this. Please note that when you copy this formula, that you paste it into ROW 15 of the HTS tab and then drag the formula down across all rows in that column.

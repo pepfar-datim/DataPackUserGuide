@@ -1,5 +1,35 @@
 # Frequently Asked Questions
 
+***Q: We are having trouble setting TX_CURR appropriately, given new structure of Cascade tab of the DataPack, which starts with viral load, what help is there?***
+
+A: The PEPFAR Virtal Academy (PVA, [learn.pepfar.net](http://learn.pepfar.net/ "Follow link")) DataPack course is a key resource, particularly Module 3, Cascade tab, fifth chapter "VLT Coverage (Columns AV-BL)" and sixth chapter "TX_NEW, TX_CURR, TX_CURR_SUBNAT (Columns BM-BV)," as well as third chapter "VL_SUPPRESSION_SUBNAT (Columns AJ-AN)." Although the defaults of the DataPack begin around a program that plans to get to 95-95-95 for all age and sex groups by PSNU, we recognize that many countries have different contexts, and thus need flexibility in setting ambitious yet achievable targets on the path to this goal. So, a number of green columns can be changed, yet your Chair and PPM should be made aware of how you are changing these assumptions, and how it leads to ambitious but achievable targets. It is also important to remember that DataPack goes through the cascade in reverse, from VL to TX to HTS. Now with viral load being the starting point, the DataPack gets to COP22 TX_CURR by adding and thinking through the COP21 TX_CURR contribution and the COP22 TX_NEW contribution separately -- including breaking out new and prior infection-based TX_NEW -- because there are different implications for how we think about planning for viral load testing for those groups. It is also important to keep in mind that the single Planned PopVLS number is multiplied by the PLHIV estimate to yield the targeted national number of virally suppressed persons (Viral_Suppression_SUBNAT), and thus needs to take into account all intermediate steps, i.e. the % diagnosed, % linked to ART, % eligible for viral load testing, % tested for viral load, and % virally suppressed. Thus, this likely will need to be reduced if you are not yet able to achieve 95-95-95 in COP22 for a given age-sex-PSNU combination, no matter which of the 95s are your largest gap, as well as changing the other separate percentages. For the PEPFAR targets "Planned PEPFAR Contribution to HIV Response (FY23) (%)" also plays an important role. If you need more specific OU assistance, be sure to reach out by either submitting a DATIM Zendesk ticket cc'ing your DUIT Liaison and PPM, or emailing your DUIT Liaison and PPM as much as you need for additional guidance and resources.
+
+***Q: Column AZ of the Cascade tab "H.C. Est. \# Previously Diagnosed not on ART (FY22)" is being highlighted red, how can I get rid of this?***
+
+A: This is a bug with the conditional formatting of the column. Because surrounding columns are all measuring percentages, the conditional formatting is set to flag anything over 1 (i.e. anything over 100%). As a result almost all cells will be highlighted RED in this section. This should be ignored, and the only values that should be reviewed are those that are less than zero.
+
+***Q: I have generated a PSNUxIM Tab, but there are duplicate rows for the 50+ age band that have been added to the bottom on the tab, how can I fix this?***
+
+A: For countries that generated a PSNUxIM tab and have the presence of the duplicate 50+ age bands. The following needs to be done:
+
+-   Teams need to delete ALL green appended rows in the PSNUxIM tab.
+
+-   Once deleted, save the file, and run it back through the app. If there were other targets they will be re-added, but there will no longer be any duplicates
+
+***Q: On the HTS tab, the reference columns for "Host Country Est. ART Coverage (FY22) (%)" (column F) and "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)" (column G) are highlighting red for the 50+ Age bands. Why are these percentages so high?***
+
+A: There is an error in the formula. Though this is only a reference formula and will not impact any calculations for targets on the HTS Tab, the following new formulas can be applied to these columns to fix this error. The two formulas below you will be able to copy into your DataPack to resolve this. Please note that when you copy this formula, that you paste it into ROW 15 of the HTS tab and then drag the formula down across all rows in that column.
+
+For Column F "Host Country Est. ART Coverage (FY22) (%)", paste the following into cell F15 and drag it down:
+
+    =IFERROR(1/(1/IF($C15="50+",AVERAGE(AVERAGEIFS(Cascade!$BU:$BU,Cascade!$B:$B,$B15,Cascade!$C:$C,{"50-54","55-59","60-64","65+"},Cascade!$D:$D,$D15)),INDEX(Cascade!$BU:$BU,MATCH($E15,Cascade!$E:$E,0)))),"")
+
+For Column G "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)", paste the following into cell G15 and drag it down:
+
+    =IFERROR(1/(1/IF($C15="50+",AVERAGE(AVERAGEIFS(Cascade!$AL:$AL,Cascade!$B:$B,$B15,Cascade!$C:$C,{"50-54","55-59","60-64","65+"},Cascade!$D:$D,$D15)),INDEX(Cascade!$AL:$AL,MATCH($E15,Cascade!$E:$E,0)))),"")
+
+This should resolve this issue.
+
 ***Q: Cascade Tab "Host Country Context" section column V "H.C. Est. ART Patients Tested for VLS" and column X "H.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?***
 
 A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the DataPack will work with your PEPFAR TX_PVLS data on it's own.

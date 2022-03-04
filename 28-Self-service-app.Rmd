@@ -143,6 +143,17 @@ prior to the allocation of the data in the PSNUxIM tab.
 This table listing provides all of the data from each of the main
 DataPack tabs summarized by the SNU level.
 
+## Memo Tables Pivot
+
+A recent update to the Self Service App now includes a "Memo Tables" tab
+that replaces what was the "Prioritization" tab view. This Pivot table
+function allows users to view by Prioritization, by Agency, or by
+Partner. There is also the "PSNUxIM Pivot" which contains data elements,
+while the "Memo Tables" Pivot contains derived indicators. If a user
+ever needs to rest to the original view, select one of the other "Pivot
+Styles" from the drop-down, and then re-select the "Prioritization"
+option.
+
 ## Validation rules
 
 This tab provides a listing of all validation rule violations, if any.

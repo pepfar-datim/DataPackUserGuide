@@ -143,6 +143,17 @@ prior to the allocation of the data in the PSNUxIM tab.
 This table listing provides all of the data from each of the main
 DataPack tabs summarized by the SNU level.
 
+## Memo Tables Pivot
+
+A recent update to the Self Service App now includes a "Memo Tables" tab
+that replaces what was the "Prioritization" tab view. This Pivot table
+function allows users to view by Prioritization, by Agency, or by
+Partner. There is also the "PSNUxIM Pivot" which contains data elements,
+while the "Memo Tables" Pivot contains derived indicators. If a user
+ever needs to rest to the original view, select one of the other "Pivot
+Styles" from the drop-down, and then re-select the "Prioritization"
+option.
+
 ## Validation rules
 
 This tab provides a listing of all validation rule violations, if any.
@@ -165,17 +176,24 @@ The table provides the following fields
 -   Diff (Absolute) : Provides the numeric difference between the left
     and right side.
 
-+-----------------+----------+------------+----------+---------------------+----------+
-| Validation rule | PSNU     | Mechanism  | Formula  | Diff (%) (Absolute) | Diff     |
-+=================+==========+============+==========+=====================+==========+
-| PMTCT_STAT      | Namuno   | 160448     | 5317 \<= | 0.02                | 1        |
-| (N, DSD,        |          |            | 5316     |                     |          |
-| Age/Sex/        |          |            |          |                     |          |
-| KnownNewResult) |          |            |          |                     |          |
-| TARGET \<=      |          |            |          |                     |          |
-| PMTCT_STAT      |          |            |          |                     |          |
-| (D, DSD,        |          |            |          |                     |          |
-| Age/Sex) TARGET |          |            |          |                     |          |
-+-----------------+----------+------------+----------+---------------------+----------+
++----------+----------+----------+----------+-----------+----------+
+| Va       | PSNU     | M        | Formula  | Diff (%)  | Diff     |
+| lidation |          | echanism |          | (         |          |
+| rule     |          |          |          | Absolute) |          |
++==========+==========+==========+==========+===========+==========+
+| PM       | Namuno   | 160448   | 5317 \<= | 0.02      | 1        |
+| TCT_STAT |          |          | 5316     |           |          |
+| (N, DSD, |          |          |          |           |          |
+| Age/Sex/ |          |          |          |           |          |
+| KnownNe  |          |          |          |           |          |
+| wResult) |          |          |          |           |          |
+| TARGET   |          |          |          |           |          |
+| \<=      |          |          |          |           |          |
+| PM       |          |          |          |           |          |
+| TCT_STAT |          |          |          |           |          |
+| (D, DSD, |          |          |          |           |          |
+| Age/Sex) |          |          |          |           |          |
+| TARGET   |          |          |          |           |          |
++----------+----------+----------+----------+-----------+----------+
 
 \newpage

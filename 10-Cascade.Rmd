@@ -389,8 +389,7 @@ Keep in mind that targets for infants to be initiated on ART, as mentioned above
 
 ### Previous Infections Initiated on ART (FY23)
 
-After setting the Planned PopVLS Rate and other assumptions earlier (see above section on Working and Planned PopVLS Rate), the Data Pack calculates both TX_PVLS (N) and TX_PVLS (D) targets. 
-
+After setting the Planned PopVLS Rate and other assumptions earlier (see above section on Working and Planned PopVLS Rate), the Data Pack calculates both TX_PVLS (N) and TX_PVLS (D) targets.
 
 Subsequently, the Data Pack looks to calculate the total newly eligible for VLT in FY23 (Note= This is not a column in the COP22 Data Pack but is part of the equation within the column that estimates the Previous Infections Initiated on ART (FY23). Since the exact number of individuals that will be eligible for viral load testing in FY22 is unknown, the data pack gives us the assumption that all those planned to be on ART at the end of FY22 are eligible for VLT in FY23, therefore the VLT_NET_NEW = (Planned VLT Coverage (FY23) (%)- Planned TX_PVLS_D (FY22).
 
@@ -409,7 +408,7 @@ The total Eligible for VLT is based first on the total number of individuals in 
 
 $$
 {PEPFAR\ Total\ EVLT\ (FY23)}\ =\ {(Total\ Initiated\ on\ ART\ (FY23)} \times \\
-{Planned \ \%\ Recently\ Initiated\ on\ ART\ Eliglible\ for\ VLT\ (FY23) \ (\%))} \\+ \\
+{Planned \ \%\ Recently\ Initiated\ on\ ART\ Eliglible\ for\ VLT\ (FY23) \ (\%))} + \\
 {FY22\ TX\_CURR\ (Planned\ TX\_CURR\ Result\ for\ FY22)}
 $$
 

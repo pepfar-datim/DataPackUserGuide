@@ -176,24 +176,17 @@ The table provides the following fields
 -   Diff (Absolute) : Provides the numeric difference between the left
     and right side.
 
-+----------+----------+----------+----------+-----------+----------+
-| Va       | PSNU     | M        | Formula  | Diff (%)  | Diff     |
-| lidation |          | echanism |          | (         |          |
-| rule     |          |          |          | Absolute) |          |
-+==========+==========+==========+==========+===========+==========+
-| PM       | Namuno   | 160448   | 5317 \<= | 0.02      | 1        |
-| TCT_STAT |          |          | 5316     |           |          |
-| (N, DSD, |          |          |          |           |          |
-| Age/Sex/ |          |          |          |           |          |
-| KnownNe  |          |          |          |           |          |
-| wResult) |          |          |          |           |          |
-| TARGET   |          |          |          |           |          |
-| \<=      |          |          |          |           |          |
-| PM       |          |          |          |           |          |
-| TCT_STAT |          |          |          |           |          |
-| (D, DSD, |          |          |          |           |          |
-| Age/Sex) |          |          |          |           |          |
-| TARGET   |          |          |          |           |          |
-+----------+----------+----------+----------+-----------+----------+
++-----------------+----------+------------+----------+---------------------+----------+
+| Validation rule | PSNU     | Mechanism  | Formula  | Diff (%) (Absolute) | Diff     |
++=================+==========+============+==========+=====================+==========+
+| PMTCT_STAT      | Namuno   | 160448     | 5317 \<= | 0.02                | 1        |
+| (N, DSD,        |          |            | 5316     |                     |          |
+| Age/Sex/        |          |            |          |                     |          |
+| KnownNewResult) |          |            |          |                     |          |
+| TARGET \<=      |          |            |          |                     |          |
+| PMTCT_STAT      |          |            |          |                     |          |
+| (D, DSD,        |          |            |          |                     |          |
+| Age/Sex) TARGET |          |            |          |                     |          |
++-----------------+----------+------------+----------+---------------------+----------+
 
 \newpage

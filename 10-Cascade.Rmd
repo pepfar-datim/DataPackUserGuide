@@ -401,7 +401,7 @@ The full equation for estimating Previous Infections Initiated on ART is:
 
 $$
 \frac {VLT \_NET \_NEW}{Planned \ \% \ Recently \ Initiated \ on 
- \ ART \ Eligible \ for \ VLT \ (FY23)} \ -\ {New \ Infections \ Initiated \ on \ ART \ (FY22)}
+ \ ART \ Eligible \ for \ VLT \ (FY23)} \ -\\ {New \ Infections \ Initiated \ on \ ART \ (FY22)}
 $$
 
 This is a remainder calculation, in that the data pack assumes all those planned to be on ART at the end of COP22 were eligible for VLT in FY22, then estimates those that are planned to be eligible in FY23, and subtracts them first via those New Infections to be Initiated on ART and Eligible for VLT. Then, if VLT_NET_NEW remains, the Data Pack assumes the remainder must be filled by initiating on ART those that had been previously infected by otherwise not on ART. Also note, that in cases where PopVLS Rates lead to a negative VLT_NET_NEW, this remainder is prevented from ever being below zero.

@@ -12,6 +12,10 @@ A: The larger portion of your TX_CURR targets that come from newly initiated (TX
 
 A: This is a bug with the conditional formatting of the column. Because surrounding columns are all measuring percentages, the conditional formatting is set to flag anything over 1 (i.e. anything over 100%). As a result almost all cells will be highlighted RED in this section. This should be ignored, and the only values that should be reviewed are those that are less than zero.
 
+***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
+
+A: For cells that are labeled with "\*For DOD Military Use Only", in OU DataPacks that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
+
 ***Q: I have generated a PSNUxIM Tab, but there are duplicate rows for the 50+ age band that have been added to the bottom on the tab, how can I fix this?***
 
 A: For countries that generated a PSNUxIM tab and have the presence of the duplicate 50+ age bands. The following needs to be done:

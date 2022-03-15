@@ -263,6 +263,8 @@ As is evident here, targeted VL_SUPPRESSION_SUBNAT is set as a function of FY22 
 
 Due to sensitivities around PopVLS estimates for Military organization units and populations, this data will not be reflected here in the Data Pack. Country Teams should coordinate closely with Department of Defense liaisons who will perform a similar analysis based on available data sources and then directly paste resulting TX_PVLS (N) targets against the Military organization unit, overwriting the formulas in the TX_PVLS (N) column described in the next section.
 
+For cells that are labeled with "\*For DOD Military Use Only", in OU DataPacks that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
+
 ## TX_PVLS (N)
 
 **TX_PVLS (N):** Number of ART patients with suppressed VL results (\<1,000 copies/mL) documented in the medical or laboratory results/LIS within the past 12 months.

@@ -24,6 +24,10 @@ A: For countries that generated a PSNUxIM tab and have the presence of the dupli
 
 -   Once deleted, save the file, and run it back through the app. If there were other targets they will be re-added, but there will no longer be any duplicates
 
+***Q: I have AGYW targets, but they are not appearing in my PSNUxIM tab, why?***
+
+A: AGYW_PREV is reported by the USG team, not an IM, it doesn't have to be assigned to an IM. It is automatically assigned to USG team.
+
 ***Q: On the HTS tab, the reference columns for "Host Country Est. ART Coverage (FY22) (%)" (column F) and "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)" (column G) are highlighting red for the 50+ Age bands. Why are these percentages so high?***
 
 A: There is an error in the formula. Though this is only a reference formula and will not impact any calculations for targets on the HTS Tab, the following new formulas can be applied to these columns to fix this error. The two formulas below you will be able to copy into your DataPack to resolve this. Please note that when you copy this formula, that you paste it into ROW 15 of the HTS tab and then drag the formula down across all rows in that column.

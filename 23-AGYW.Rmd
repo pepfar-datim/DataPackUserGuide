@@ -63,6 +63,10 @@ The following data points will be imported into DATIM from this section:
     and return to steps 1-6 to adjust values as necessary. See below for
     additional information.
 
+\*Note: AGYW_PREV is reported by the USG team, not an IM, it doesn't
+have to be assigned to an IM. It is automatically assigned to USG team,
+and will not appear in the PSNUxIM tab for target allocation.
+
 ### AGYW_PREV Denominator (FY23)
 
 FY23 targets for AGYW_PREV Denominator are set as follows, rounding to

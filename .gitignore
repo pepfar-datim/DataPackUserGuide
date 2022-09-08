@@ -1,6 +1,19 @@
-.Rproj
-.Rproj.user
-.Rprofile
-.Rhistory
-.log
+*.log
 renv/
+www/
+
+# Rprofile files
+.Rprofile
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# RStudio files
+.Rproj.user/
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/

@@ -22,11 +22,9 @@ col_seq <- function(col_start, col_end) {
 
 uid_wrap <- function(x, length = 15) {
   if (stringr::str_length(x) < length) {return(x)}
-  x %<>%
-    stringr::str_extract_all(pattern = ".{1,20}(\\.|$)", simplify = TRUE) %>%
-    paste(., collapse = " ")
-  ## Return modified string
-  x
+  x |>
+    stringr::str_extract_all(pattern = ".{1,20}(\\.|$)", simplify = TRUE) |>
+    paste(collapse = " ")
 }
 
 # ```{r, schema_tables, eval=FALSE}

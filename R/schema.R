@@ -7,8 +7,11 @@ link_identification <- function(sheet_name, col) {
       }
   }
   
-  schema <- datapackr::pick_schema(cop_year = 2022, tool = "Data Pack") %>%
-    .[c("sheet_name", "col", "formula")] %>%
+  schema <-
+    datapackr::pick_schema(cop_year = 2022,
+                           tool = "Data Pack")[c("sheet_name",
+                                                 "col",
+                                                 "formula")] |>
     unique()
 
   if (!is.na(schema[schema$sheet_name == sheet_name &
@@ -60,11 +63,11 @@ userguide_schema <- function() {
     "Spectrum",    17,               "ID", "assumption",     "string"
   )
   
-  schema <- datapackr::pick_schema(cop_year = 2022, tool = "Data Pack") %>%
+  schema <- datapackr::pick_schema(cop_year = 2022, tool = "Data Pack") |>
     dplyr::filter(!sheet_name %in% c("Home", "Spectrum", "PSNUxIM"),
                   col_type != "row_header") %>%
-    dplyr::bind_rows(spectrum_schema, .) %>%
-    dplyr::rowwise() %>%
+    dplyr::bind_rows(spectrum_schema, .) |>
+    dplyr::rowwise() |>
     dplyr::mutate(
       col_ref = openxlsx::int2col(col),
       col_num = col,
@@ -75,7 +78,7 @@ userguide_schema <- function() {
       calculated = dplyr::if_else(!is.na(formula) |
                                     (sheet_name == "Spectrum" &
                                        col_name == "ID"), "Y", "N"),
-      linked = ifelse(link_identification(`sheet_name`, `col`), "Y", "N")) %>%
+      linked = ifelse(link_identification(`sheet_name`, `col`), "Y", "N")) |>
     dplyr::select(
       "Sheet Name" = sheet_name,
       "Column" = col_ref,

@@ -1,17 +1,6 @@
-col2number <- function(x) {
-  col_ref <- stringr::str_to_upper(x)
-  digits <- stringr::str_length(col_ref)
-  ls <- lapply(seq_len(digits), function(y) {
-    stringr::str_sub(col_ref, y, y) %>%
-      {(utf8ToInt(.) - utf8ToInt("A") + 1L) * (26**(digits - y))}
-  })
-  n <- Reduce(`+`, ls)
-  return(n)
-}
-
 col_seq <- function(col_start, col_end) {
-  n_start <- col2number(col_start)
-  n_end <- col2number(col_end)
+  n_start <- col2int(col_start)
+  n_end <- col2int(col_end)
   
   # Applies `int2col` against list from start number to end number
   col_list <- sapply(n_start:n_end, int2col)

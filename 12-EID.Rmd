@@ -10,10 +10,10 @@
 sheet_name <- "EID"
 section <- "PMTCT_EID (N)"
 columns <- col_seq("C", "G")
-# data <- prepare_table_data(sheet_name, columns)
-# for (t in table_seq(data)) {
-#   make_table(t, section)
-#   }
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import
@@ -42,10 +42,10 @@ The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive
 sheet_name <- "EID"
 section <- "PMTCT_EID (N)"
 columns <- col_seq("H", "V")
-# data <- prepare_table_data(sheet_name, columns)
-# for (t in table_seq(data, max_col = 4)) {
-#   make_table(t, section)
-#   }
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
 ```
 
 ### DATIM Import

@@ -17,13 +17,18 @@ reviewed. While these may not prevent import of your data, ignoring them
 may lead to data quality problems. The app also provides a number of
 charts and tables to assist with review of your DataPack. Each of these
 functions will be described in more detail in the remained of this
-chapter.
+chapter. 
 
 ## Logging in
 
 In order to access the app, you will need to login with your DATIM
 credentials. If you do not have a DATIM username and password or if your
-account has been deactivated, please contact DATIM support.
+account has been deactivated, please contact DATIM support before you 
+login. 
+
+When you open the DataPack self-service app and press "Login with DATIM",
+you will be redirected to DATIM to enter your login credentials. You will 
+be asked if you want to authorize the "Datapack App" to access your resources on DATIM. You should click "Authorize" to proceed, whereby you will be redirected back to the app to proceed with the validation of your DataPack.
 
 ## Uploading a DataPack
 
@@ -131,14 +136,14 @@ determination regarding the approval of the DataPack for import.
 The app will provide a list of all analytics checks which have been
 flagged in the "Analytics checks" tab on the right side of the app pane.
 
-## Indicator summary
+## Indicator Summary
 
 This table provides a high-level SNU level summary of indicators from
 each of the main tabs of the DataPack. Note, that this data is NOT drawn
 from the PSNUxIM tab. This can be a useful first check of your DataPack,
 prior to the allocation of the data in the PSNUxIM tab.
 
-## SNUlevel summary
+## SNU Level Summary
 
 This table listing provides all of the data from each of the main
 DataPack tabs summarized by the SNU level.

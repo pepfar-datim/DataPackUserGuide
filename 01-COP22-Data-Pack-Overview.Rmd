@@ -18,7 +18,7 @@ suppressWarnings(suppressPackageStartupMessages({
 
 source("R/schema.R")
 source("R/tables.R")
-source("R/utils.R")
+source("R/utilities.R")
 
 knitr::opts_chunk$set(echo = FALSE, fig.align ="center")
 flextable::set_flextable_defaults(fonts_ignore = TRUE)

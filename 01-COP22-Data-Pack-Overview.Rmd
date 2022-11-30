@@ -24,24 +24,24 @@ knitr::opts_chunk$set(echo = FALSE, fig.align ="center")
 flextable::set_flextable_defaults(fonts_ignore = TRUE)
 ```
 
-# COP23 Health Equity Analysis and Targeting Tool (HEATT) Overview
+# COP23 Target Setting Tool Overview
 
-Welcome to the COP23 HEATT User Manual. The following pages aim to
-provide users of the HEATT with the information necessary to
-successfully complete each tab of the HEATT tool and determine
-accurate, data-driven targets. For the past several years, the HEATT
+Welcome to the COP23 DP User Manual. The following pages aim to
+provide users of the DP with the information necessary to
+successfully complete each tab of the DP tool and determine
+accurate, data-driven targets. For the past several years, the DP
 has a been a key element of PEPFAR COP planning, and for COP23 serves a
 critical function in assisting PEPFAR Country Teams in setting targets
 in line with the UNAIDS 95-95-95 goals for Testing, Care & Treatment,
 PMTCT, VMMC, OVC, and other program areas. Please note that the COP23
-HEATT is mandatory and must be used to set targets for COP23. For
-COP23, all indicators included in the HEATT are **MER 2.6**
+DP is mandatory and must be used to set targets for COP23. For
+COP23, all indicators included in the DP are **MER 2.6**
 indicators. For further information on the MER 2.6 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 
-## About the HEATT
+## About the DP
 
-The COP23 HEATT supports analysis for all targets by Priority
+The COP23 DP supports analysis for all targets by Priority
 Subnational Unit (PSNU), population, and Implementing Mechanism (IM).
 This tool supports calculation of targets based on expected treatment
 coverage rates by type of PSNU and population prioritization:
@@ -58,38 +58,38 @@ Prioritizations for PSNUs are based on COP Guidance section 7.3.2.ba.
 These determine for a given PSNU programmatically what HIV treatment and
 prevention services should be planned and informs both the overall
 strategy and the targets. Teams must review and revise their PSNU
-prioritization levels for COP23. The COP23 HEATT assumes a 'test and
+prioritization levels for COP23. The COP23 DP assumes a 'test and
 start' treatment platform and will develop targets for achieving 95%
 coverage in Scale up: Aggressive and Scale-up: Saturation PSNUs; all
-other targets in the HEATT are based on the treatment targets,
+other targets in the DP are based on the treatment targets,
 insofar as the treatment targets are the main focus of reaching epidemic
 control, and therefore relate to both testing and prevention targets.
 
-The HEATT will allow PEPFAR teams to use country specific
+The DP will allow PEPFAR teams to use country specific
 programmatic assumptions to develop the optimal targets by PSNU along
 the program cascades to ensure the necessary number of PLHIV are
-diagnosed, linked, and start treatment. The HEATT does not
+diagnosed, linked, and start treatment. The DP does not
 necessarily calculate targets for every indicator, but it has space for
 teams to enter targets for all indicators and thus can be used to record
 agreed-upon COP targets, even for non-calculated indicators.
 
-**Teams must not modify the structure of the COP23 HEATT in any
+**Teams must not modify the structure of the COP23 DP in any
 way**. The Office of the US Global Aids Coordinator (OGAC) has developed
 a process by which targets can be directly imported into DATIM via the
-HEATT Site Tool in order to generate targets. However, this is *only*
+DP Site Tool in order to generate targets. However, this is *only*
 possible for teams that do not in any way alter the structure or format
-of the HEATT. Additional details are provided in COP Guidance and
+of the DP. Additional details are provided in COP Guidance and
 will be available through COP webinars.
 
 ## Highlighted Changes from COP22 to COP23
 
-The COP23 HEATT is largely the same as the COP21 HEATT. However,
+The COP23 DP is largely the same as the COP21 DP. However,
 please note the following updates that have been implemented as a result
 of multiple feedback sessions with various country teams that had been
 identified by the PRIME team, as well as new programmatic changes that
 are reflected in the Section 7 of COP guidance. These changes revolve
 around workflow, ease of target setting, and linkage to the COP guidance
-based on different aspects of the HEATT that worked well and others
+based on different aspects of the DP that worked well and others
 that did not during COP21 target stetting:
 
 -   New Cascade Approach that will flow from Program Viral Load
@@ -111,12 +111,12 @@ that did not during COP21 target stetting:
 ## Data Flow and Review Process to COP23 Submission
 
 The results from APR20 have been taken from DATIM and used to populate
-the HEATT. In turn, the HEATT targets will produce FY22 targets
+the DP. In turn, the DP targets will produce FY22 targets
 that will be subsequently submitted through DATIM after COP23 has been
 finalized and the PSNU level data entered into the Strategic Direction
 Summary (SDS) tables, where appropriate (Target related data).
 
-***HEATT Review***
+***DP Review***
 
 +--------+--------+--------+--------+--------+--------+
 |        | Single | Single | Singel | OUs at | R      |
@@ -179,19 +179,19 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 For each of the below submissions, the following process will occur:
 
--   Country Teamspre-validates their HEATT submission in the HEATT
+-   Country Teamspre-validates their DP submission in the DP
     Self-Service App (available at <https://apps.datim.org/datapack/>).
 
--   Country Team uses HEATT Self-Service App to sync data with PAW
+-   Country Team uses DP Self-Service App to sync data with PAW
     Dossiers.
 
--   Country Team saves HEATT to SharePoint under the OU's HQ
+-   Country Team saves DP to SharePoint under the OU's HQ
     Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and
     Resources folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
-    -   A link to the HEATT file saved in SharePoint
+    -   A link to the DP file saved in SharePoint
 
     -   Confirmation that this file has been pre-validated in the
         DataPack Self-Service App
@@ -202,7 +202,7 @@ For each of the below submissions, the following process will occur:
     -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
         members that should be aware of ongoing review and discussions.
 
--   Once this ticket is received, the HEATT Support Team will confirm
+-   Once this ticket is received, the DP Support Team will confirm
     all the above has occurred and send additional instructions as
     needed
 
@@ -211,17 +211,17 @@ For each of the below submissions, the following process will occur:
 
 -   The assigned PPM and the assigned DUIT Liaison use both the DataPack
     Self-Service App and the PAW COP Dossiers to validate and review the
-    HEATT, noting any feedback in the ticket/email thread.
+    DP, noting any feedback in the ticket/email thread.
 
 -   The assigned Chair should also review all feedback on the ticket
     thread and any additional comments as needed.
 
 As is possible, all the above should occur within a 24 hour turnaround
-from the initial submission of a HEATT from a Country Team. While
+from the initial submission of a DP from a Country Team. While
 this process will remain the same for each submission for review, the
 content of each review will differ, as explained below. Once a Zendesk
-ticket and email thread has been started with an initial HEATT
-submission, all future HEATT submissions related to the same Country
+ticket and email thread has been started with an initial DP
+submission, all future DP submissions related to the same Country
 should use the same thread/ticket to allow for easy coordination.
 
 **Submission 1**
@@ -231,7 +231,7 @@ should use the same thread/ticket to allow for easy coordination.
 
 -   Highlight any areas for technical assistance.
 
--   Ensure construction of HEATT has not been tampered with.
+-   Ensure construction of DP has not been tampered with.
 
 For this stage of review, it is not expected that your PSNUxIM tab be
 completed or even populated. At this stage, the focus should be on
@@ -246,7 +246,7 @@ addition of more data to the PSNUxIM tab.
     submission.
 
 -   Confirm no discrepancies between targets modeled in your submitted
-    HEATT and any COP Meeting presentations to date or other
+    DP and any COP Meeting presentations to date or other
     high-level discussions had with PPMs and Chairs.
 
 -   Review the PSNUxIM tab and address issues related to IM and DSD-TA
@@ -254,41 +254,41 @@ addition of more data to the PSNUxIM tab.
 
 **Submission 3**
 
--   Again confirm HEATT alignment with all high-level decisions and
+-   Again confirm DP alignment with all high-level decisions and
     any final presentations given by the Country Team.
 
 -   Confirm resolution of any issues flagged during the second
     submission.
 
 -   Track down and resolve any last bugs and issues in seen in the
-    HEATT
+    DP
 
--   Confirm the HEATT is as near final as possible
+-   Confirm the DP is as near final as possible
 
 **Final Submission**
 
--   Confirm all targets modeled in the HEATT are ready for submission
+-   Confirm all targets modeled in the DP are ready for submission
     to DATIM.
 
 -   Secure Interagency Government sign-off for import of your submitted
-    HEATT to DATIM.
+    DP to DATIM.
 
 -   Note authority to waive any lingering validation issues flagged by
     the DataPack Self-Service App.
 
 Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk
-thread/ticket, the HEATT Support Team will move forward with
-uploading your submitted HEATT to DATIM, then note completion of this
+thread/ticket, the DP Support Team will move forward with
+uploading your submitted DP to DATIM, then note completion of this
 here on this ticket. Once this is done, it is recommended that you
 review your data in DATIM to ensure alignment between DATIM and your
-HEATT. Please note in addition to these regular formal submissions,
+DP. Please note in addition to these regular formal submissions,
 we encourage regular sharing and dialogue with Chair, PPM, and DUIT
-Liaison around target setting process generally, and HEATT
+Liaison around target setting process generally, and DP
 specifically. Feel free to share draft versions as often as is helpful.
 
-## HEATT SharePoint Location
+## DP SharePoint Location
 
-The HEATT will be posted on PEPFAR SharePoint:
+The DP will be posted on PEPFAR SharePoint:
 [www.pepfar.net](http://www.pepfar.net).
 
 -   The file path will be OU \> Country Name \> HQ Collaboration \> COP
@@ -297,12 +297,12 @@ The HEATT will be posted on PEPFAR SharePoint:
 -   The file name will be "Datapack_CountryName_20220121.....". Please
     reference the day in which the file was added to the folder. If
     there are new .zip files added, please utilize this file as it may
-    be a new version of the HEATT tool.
+    be a new version of the DP tool.
 
 ## Tab Categories
 
-Each HEATT will start with 20 tabs organized in the order presented
-below. Upon downloading the HEATT, the PSNUxIM tab will appear as a
+Each DP will start with 20 tabs organized in the order presented
+below. Upon downloading the DP, the PSNUxIM tab will appear as a
 blank sheet, but will be generated by the self-service validation app
 after you submit your preliminary DataPack.
 
@@ -346,7 +346,7 @@ after you submit your preliminary DataPack.
 
 -   Year 2
 
--   PSNU x IM
+-   PSNU x IM (The PSNUxIM Tab will be a stand alone tool, similar to that used for OPUs)
 
 \newpage
 

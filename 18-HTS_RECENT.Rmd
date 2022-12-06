@@ -8,9 +8,9 @@ editor_options:
 
 # HTS_RECENT
 
-**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged $\geq$ 15
-years with a test for recent infection result during the reporting
-period.
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged
+$\geq$ 15 years with a test for recent infection result during the
+reporting period.
 
 ## HTS_TST Modalities
 
@@ -44,7 +44,7 @@ The following data points will be imported into DATIM from this section:
     should they be less than 100%.
 
 2.  Review the target column for each of these modalities will be set in
-    the column "# Tested for Recent Infection" and will be a product of
+    the column "\# Tested for Recent Infection" and will be a product of
     the "% of Positives" and the "Newly Tested, Positive" targets that
     were set in previous tabs that relate to each modality column.
 
@@ -74,11 +74,11 @@ No data points will be imported into DATIM from this section.
 ### Instructions
 
 1.  Review "Total Recency Tests" column which is calculated by
-    aggregating "# Tested for Recent Infection" across all modalities on
-    the HTS_RECENT tab. To adjust individual targets by modality, return
-    to the previous section. In some circumstances, it may also be
-    necessary to return to the Cascade, PMTCT, TB, VMMC, or HTS tabs to
-    adjust the number of HTS_TST_POS coming from each modality.
+    aggregating "\# Tested for Recent Infection" across all modalities
+    on the HTS_RECENT tab. To adjust individual targets by modality,
+    return to the previous section. In some circumstances, it may also
+    be necessary to return to the Cascade, PMTCT, TB, VMMC, or HTS tabs
+    to adjust the number of HTS_TST_POS coming from each modality.
 
 2.  Review "Total HTS_TST_POS" column which references "Final
     HTS_TST_POS" targets on the HTS tab. This column is here for

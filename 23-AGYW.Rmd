@@ -36,20 +36,20 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review Host Country Estimated Female
-    Population for FY22, which is referenced from the Cascade tab.
+    Population for FY23, which is referenced from the Cascade tab.
 
 2.  Enter values for the Host Country Estimated Number of Vulnerable
     AGYW projected as of September 2021, as available. These are for
     reference and not used to model targets in proceeding steps.
 
-3.  For context, review FY23 targets for PrEP_NEW, PrEP_CT, PP_PREV,
+3.  For context, review FY24 targets for PrEP_NEW, PrEP_CT, PP_PREV,
     HTS_TST_POS, and HTS_TST, set in other tabs of the DatatPack.
 
-4.  For additional context, review FY21 results for AGYW_PREV and
+4.  For additional context, review FY22 results for AGYW_PREV and
     Observed Percent Completion as reported in DATIM.
 
 5.  Review and adjust assumptions for Projected Net Change in Total
-    AGYW_PREV from FY21 Results (%). This is defaulted to 0%, but can be
+    AGYW_PREV from FY22 Results (%). This is defaulted to 0%, but can be
     adjusted as necessary. Red highlights indicate percentages over
     100%; yellow highlights indicate percentages less than 100% but not
     0%.
@@ -59,7 +59,7 @@ The following data points will be imported into DATIM from this section:
     highlights indicate percentages over 100%; yellow highlights
     indicate percentages less than 60%.
 
-7.  Review modeled FY23 targets for AGYW_PREV Denominator and Numerator,
+7.  Review modeled FY24 targets for AGYW_PREV Denominator and Numerator,
     and return to steps 1-6 to adjust values as necessary. See below for
     additional information.
 
@@ -67,9 +67,9 @@ The following data points will be imported into DATIM from this section:
 have to be assigned to an IM. It is automatically assigned to USG team,
 and will not appear in the PSNUxIM tab for target allocation.
 
-### AGYW_PREV Denominator (FY23)
+### AGYW_PREV Denominator (FY24)
 
-FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
+FY24 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
 $$
@@ -80,9 +80,9 @@ $$
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
-### AGYW_PREV Numerator (FY23)
+### AGYW_PREV Numerator (FY24)
 
-FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
+FY24 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
 $$

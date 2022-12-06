@@ -29,11 +29,11 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PP_PREV (FY23)** $PP\_PREV.T$
+-   **PP_PREV (FY24)** $PP\_PREV.T$
 
 ### Instructions
 
-1.  "FY22 Targets" column will come prepopulated with FY22 PP_PREV
+1.  "FY23 Targets" column will come prepopulated with FY23 PP_PREV
     targets as currently reported in DATIM. Countries will review this
     data, but should not make changes to it. Though this column does not
     prevent users from making edits, teams must receive approval from
@@ -45,14 +45,14 @@ The following data points will be imported into DATIM from this section:
     from S/GAC. Adjust these growth rates to reflect intentional,
     data-driven, strategic programming. Values can be negative or
     positive percentages in this column, which will decrease or increase
-    the FY23 target for PP_PREV respectively.
+    the FY24 target for PP_PREV respectively.
 
-3.  "PP_PREV (FY23)" targets will be set as a growth rate function of
-    the FY22 Targets and the Expected change % set in the previous two
+3.  "PP_PREV (FY24)" targets will be set as a growth rate function of
+    the FY23 Targets and the Expected change % set in the previous two
     columns. To make changes to the COP21 target in this column,
     increase or decrease the Expected Change in PP_PREV services. In the
-    case services are planned in FY23 where these were not provided in
-    FY22, you may manually enter FY23 targets in these columns.
+    case services are planned in FY24 where these were not provided in
+    FY23, you may manually enter FY24 targets in these columns.
 
 \elandscape
 

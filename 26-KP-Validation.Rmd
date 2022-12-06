@@ -2,12 +2,7 @@
 
 # KP Validation
 
-Each section of the KP_Validation tab looks at each indicator that sets
-a Key Population target to ensure the total for each of these Key
-Population disaggregated targets does not exceed the total Female and
-Male 15+ populations for each PSNU. Under each of these sections there
-is conditional formatting that will highlight any of the "KP Targets
-Validation" columns in red if those values exceed the Total Targets.
+Each section of the KP_Validation tab looks at each indicator that sets a Key Population target to ensure the total for each of these Key Population disaggregated targets does not exceed the total Female and Male 15+ populations for each PSNU. Under each of these sections there is conditional formatting that will highlight any of the "KP Targets Validation" columns in red if those values exceed the Total Targets.
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP Validation"
@@ -27,41 +22,19 @@ There are no data points that will be imported into DATIM from this tab.
 
 For each section of this tab, follow the below steps:
 
-1.  Review the Total Population targets in the "Female, 15+ (FY23)",
-    "AGYW, 15+ (FY23)", and "Male, 15+ (FY23)" columns, which sum
-    targets across all 15+ age groups from where these are set in
-    previous tabs of the DataPack.
+1.  Review the Total Population targets in the "Female, 15+ (FY24)", "AGYW, 15+ (FY24)", and "Male, 15+ (FY24)" columns, which sum targets across all 15+ age groups from where these are set in previous tabs of the DataPack.
 
-    a.  Note that for the PrEP_CT and PrEP_NEW sections, the summation
-        is pulling age group totals from the PrEP tab, TX sections from
-        the Cascade tab, and HTS Sections from the HTS tab. Return to
-        those tabs to investigate and adjust values. Changes made in
-        this section of the KP Validation tab WILL NOT affect actual
-        targets set in those tabs.
+    a.  Note that for the PrEP_CT and PrEP_NEW sections, the summation is pulling age group totals from the PrEP tab, TX sections from the Cascade tab, and HTS Sections from the HTS tab. Return to those tabs to investigate and adjust values. Changes made in this section of the KP Validation tab WILL NOT affect actual targets set in those tabs.
 
-    b.  **NOTE**: Confirm for PrEP indicators that DREAMS age groups are
-        aligned between KP and Total Populations, and ensure there is
-        sufficient excess to target AGYW demographics.
+    b.  **NOTE**: Confirm for PrEP indicators that DREAMS age groups are aligned between KP and Total Populations, and ensure there is sufficient excess to target AGYW demographics.
 
-2.  Review each column of the KP Targets Validation section. Data for
-    these columns come originally from the KP tab of the DataPack.
-    Return to that tab to investigate and adjust values. Changes made in
-    this section of the KP Validation tab WILL NOT affect actual targets
-    in the KP tab.
+2.  Review each column of the KP Targets Validation section. Data for these columns come originally from the KP tab of the DataPack. Return to that tab to investigate and adjust values. Changes made in this section of the KP Validation tab WILL NOT affect actual targets in the KP tab.
 
-3.  Review the "FSW" column and ensure the total in this column does not
-    exceed the total target for "Female, 15+ (FY23)". Cases where this
-    does occur will be highlighted red.
+3.  Review the "FSW" column and ensure the total in this column does not exceed the total target for "Female, 15+ (FY24)". Cases where this does occur will be highlighted red.
 
-4.  Review the "MSM" column and ensure the total in this column does not
-    exceed the total target for "Male, 15+ (FY23)". Cases where this
-    does occur will be highlighted red.
+4.  Review the "MSM" column and ensure the total in this column does not exceed the total target for "Male, 15+ (FY24)". Cases where this does occur will be highlighted red.
 
-5.  Review the final three columns "People in prisons and other enclosed
-    settings", "PWID", and "TG" to ensure that the sum of these three
-    columns does not exceed the remainder of KP's --- the remainder
-    after subtracting the amounts targeted in the "FSW" and "MSM"
-    columns. Cases where this does occur will be highlighted red.
+5.  Review the final three columns "People in prisons and other enclosed settings", "PWID", and "TG" to ensure that the sum of these three columns does not exceed the remainder of KP's --- the remainder after subtracting the amounts targeted in the "FSW" and "MSM" columns. Cases where this does occur will be highlighted red.
 
 \elandscape
 

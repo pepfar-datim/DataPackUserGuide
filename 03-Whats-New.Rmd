@@ -12,7 +12,7 @@
 
 -   Reduction of Target Setting Age Bands. The number of Cascade Age Bands has been reduced from COP22. This year teams will set Targets using the following age bands: <01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. In most target setting tabs, these are the age bands that will be present, however due to the nature of certain tabs and the already smaller scope of ages on which the prevention or treatment focuses, AGYW and OVC will retain their historic target setting age bands. 
 
--
+-   Year 2 Targets. In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcomign fiscal year. Year 2 targets will not be imported into DATIM and will only be set at a National Level with Age/Sex dissaggregates. 
 
 ## **PSNUxIM Tool Formulas**
 

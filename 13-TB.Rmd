@@ -54,7 +54,7 @@ status, during the reporting period.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "TB_STAT (N)"
-columns <- col_seq("I", "R")
+columns <- col_seq("I", "Q")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -146,7 +146,7 @@ during TB treatment.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "TB_ART"
-columns <- col_seq("S", "U")
+columns <- col_seq("R", "T")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -199,7 +199,7 @@ $$
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "Testing Rationalization"
-columns <- col_seq("V", "AB")
+columns <- col_seq("U", "Z")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)

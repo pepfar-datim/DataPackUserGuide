@@ -13,7 +13,7 @@ editor_options:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "VMMC_CIRC_SUBNAT"
-columns <- col_seq("F", "Q")
+columns <- col_seq("F", "R")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 3)) {
   make_table(t, section)
@@ -51,7 +51,6 @@ The following data points will be imported into DATIM from this section:
 
     e.  Host Country Estimated ART Coverage (FY23)
 
-    f.  Host Country Est. PopVLS Rate (VLS/PLHIV) (FY23) (%)
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
@@ -91,7 +90,7 @@ eligible for PEPFAR-supported VMMC services.**
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "VMMC_CIRC"
-columns <- col_seq("R", "AD")
+columns <- col_seq("S", "AB")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)

@@ -8,9 +8,7 @@ editor_options:
 
 # KP
 
-**NOTE: The HTS_TST, TX_NEW, TX_CURR, PrEP_CT, and PrEP_NEW indicators
-in the KP tab are related to Key Populations only and are not linked to
-other tabs that feature those indicators.**
+**NOTE: The PrEP_CT, PrEP_NEW, KP_PREV, TX_CURR, TX_NEW, TX_PVLS (), TX_PVLS (N), HTS_TST, HTS_RECENT, and HTS_SELF indicators in the KP tab are related to Key Populations only and are not linked to other tabs that feature those indicators.**
 
 This tab is provided to facilitate and inform (1) data-driven program
 intent or relationships amongst indicators, where relevant, for KP

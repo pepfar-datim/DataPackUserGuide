@@ -107,6 +107,16 @@ The following data points will be imported into DATIM from this section:
 
 -   **PrEP_CT - # HIV tests administered (FY24)** $PrEP\_CT.TestResult.T$
 
+### Instructions
+
+1.  The number of HIV Tests administered for PrEP_CT will be calculated by multiplying
+    the FY24 Target for PrEP_CT by the # of PrEP follow-up visits per year.
+    This will be prepopulated with 4 under the assumption that a test will be administered
+    once a quarter, but this value can be adjusted as needed to determine the final
+    target for column Q. 
+2.  This target for FY24 PrEP_CT - # HIV tests administered will then pull directly 
+    into the HTS tab in which PrEP_CT tests will all fall under the roll-up for 
+    TotalHTS_TST_NEG (FY24).
 
 \elandscape
 

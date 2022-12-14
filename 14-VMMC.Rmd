@@ -201,36 +201,12 @@ $$
 {VMMC\_ CIRC.Neg}_{t}\  = \ {VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t}\  - \ {VMMC\_ CIRC.Pos}_{t}
 $$
 
-## VMMC: ART Linkage
-
-```{r echo=FALSE, results='asis'}
-sheet_name <- "VMMC"
-section <- "ART Linkage"
-columns <- col_seq("AE", "AF")
-data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
-  make_table(t, section)
-  }
-```
-
-### DATIM Import
-
-No data will be imported into DATIM from this section.
-
-### Instructions
-
-1.  Review VMMC_CIRC_POS linked to ART which is determined as the
-    product of using Targeted ART Linkage Rate (FY24) (%) that is pulled
-    from the Cascade tab and HIV Positive from the previous VMMC_CIRC
-    section. This is not reported in DATIM, but used as internal check
-    against TX_NEW in TX tab.
-
 ## VMMC: Testing Rationalization
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "Testing Rationalization"
-columns <- col_seq("AG", "AK")
+columns <- col_seq("AC", "AF")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)

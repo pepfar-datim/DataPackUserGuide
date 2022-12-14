@@ -16,7 +16,7 @@ cervical cancer.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "CXCA"
 section <- "CXCA_SCRN"
-columns <- col_seq("F", "K")
+columns <- col_seq("F", "M")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -42,10 +42,13 @@ Screening coverage rate (%)" to 0%.
 
 1.  For historical context, review FY22 results, FY23 targets, and FY22
     Observed CXCA Screen Coverage rates as reported in DATIM, as well as
-    FY24 Targets for TX_CURR from the Cascade tab of the DataPack.
+    FY23 Targets for TX_CURR and those to be Initiated on ART in FY24
+    from the Cascade tab of the DataPack.
 
-2.  Review and adjust Targeted CXCA Screening Coverage Rate (%). Column
-    "Targeted CXCA Screening coverage rate (%)" will determine the
+2.  Review and adjust CXCA_SCRN Coverage - Already on ART (FY24) (%) which
+    will be defaulted to 33% and Coverage - Initiated on ART (FY24) (%) will
+    be defaulted to 100%. 
+    determine the
     proportion of HIV positive women currently on treatment that will
     receive cervical cancer screening in COP2120/FY23 implementation
     year. Each team will have a default value of 50% set in this column

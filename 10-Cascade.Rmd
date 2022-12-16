@@ -176,6 +176,83 @@ If, in reviewing Relative Standard Error values, the uncertainty interval of an 
 
 Due to issues of political sensitivity and national security, estimates for the above indicators should not be entered against Military Organization Units. Any case where this does occur will be flagged in the Data Pack Self-Service App, and removed during DATIM import.
 
+## ART Modeling
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "ART Modeling"
+columns <- col_seq("AI", "AL")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+
+## ART
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "ART"
+columns <- col_seq("AM", "AO")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+
+## ART Initiation
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "ART Initiation"
+columns <- col_seq("AP", "AU")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+
+## VL Testing Coverage
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "VL Testing Coverage"
+columns <- col_seq("AV", "AZ")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+
+## Viral Load Suppression
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Viral Load Suppression"
+columns <- col_seq("BA", "BC")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+
+## Testing
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "Cascade"
+section <- "Testing"
+columns <- col_seq("BD", "BE")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
 
 ## VL_SUPPRESSION_SUBNAT
 

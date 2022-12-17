@@ -188,8 +188,27 @@ for (t in table_seq(data)) {
   }
 ```
 
+### DATIM Import
+
+No Targets will be imported to DATIM from this section.
+
+### Instructions
+
+This section does not need to be utilize if teams have modeled their TX_CURR (FY24) target in column F, but this section can still be used should teams want to see a modeled TX_CURR to compare to that they derived through their own analysis. 
+
+-   Review Targeted H.C. ART Coverage (ART/PLHIV) (FY24) (%) that will be defaulted to 90%, unless the Host Country Estimated ART Coverage (ART/PLHIV) (FY23) (%) from column Z is greater. If either of these two coverage rates are not sufficient, teams can enter a different rate. 
+
+-   The modeled Targeted H.C. # on ART (FY24) $TX\_CURR\_SUBNAT.M$ will multiply the Host Country FY24 Projected Estimate byt the ART Coverage rate.
+
+-   For <01 yr olds, PMTCT_HEI_POS Linked & Retained on ART (FY24) will pull from the EID tab and teams should review the EID tab for these targets.
+
+-   The modeled Calculated TX_CURR (FY24) takes TX_CURR_SUBNAT.M from column AJ divided by the rate which is a rate of  TX_CURR.Expected.T_1 from column O divided by the Estimated H.C. # on ART from column Y (TX_CURR_SUBNAT.T_1).
+
+-   This will produce the modeled TX_CURR for FY24. The next section will explain how the final TX_CURR is set to be imported.
 
 ## ART
+
+**TX_CURR:** Number of adults and children currently receiving anti-retroviral therapy (ART).
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
@@ -201,8 +220,28 @@ for (t in table_seq(data)) {
   }
 ```
 
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **TX_CURR (FY24)** $TX\_CURR.T$
+-   **TX_CURR_SUBNAT (FY24)** $TX\_CURR\_SUBNAT.T$
+
+### Instructions
+
+-   If teams entered a FY24 TX_CURR Target in column F to begin the Cascade tab, this will take precedent to be used in Column AM and be imported into DATIM. For teams that do not utilize column F, they will need to return to the ART Modeling section to calculate and complete the modeling of the TX_CURR target in column AL that will popualte column AM.
+
+-   The H.C. # on ART (FY24) is calculated using the following formula, and if needed, teams can adjust this as needed.
+
+$$
+\frac{TX\_CURR (FY24)}{TX\_CURR (FY23)} * Host\ Country\ Est.\ TX\_CURR\_SUBNAT\ (FY23)
+$$
+
+-   Lastly, the H.C. ART Coverage (ART/PLHIV) (FY24) (%) will take the TX_CURR_SUBNAT and the H.C. Estimated FY24 PLHIV.
 
 ## ART Initiation
+
+**TX_NEW:** Number of adults and children newly enrolled on anti-retroviral therapy (ART).
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
@@ -214,6 +253,24 @@ for (t in table_seq(data)) {
   }
 ```
 
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **TX_NEW (FY23)** $TX\_NEW.T$
+
+### Instructions
+
+1.  Review Retention - Already on ART (FY24) (%) and Retention - Initiated on ART (FY24) (%) which will be defaulted to 98% and can be adjusted by users as needed.
+
+2.  TX_NET_NEW (FY24) is set taking the difference of the TX_CURR (FY24) Target and the expected acheivement for FY23 TX_CURR from Column O. 
+
+3.  
+
+
+### TX_NEW
+
+Because MER guidance stipulates that TX_NEW is to be used for reporting initiation on ART of those who are treatment naive, TX_NEW may not always be the same as the target for the Total Initiated on ART (FY23) set in the VLT Coverage section previously due to portions of the total number initiated that may be comprised of individuals who are returning to treatment.
 
 ## VL Testing Coverage
 

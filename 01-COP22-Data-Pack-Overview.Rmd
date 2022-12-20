@@ -186,7 +186,7 @@ For each of the below submissions, the following process will occur:
     Dossiers.
 
 -   Country Team saves DP to SharePoint under the OU's HQ
-    Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and
+    Collaboration > COP 2022 - FY 2023 > Guidance, Tools, and
     Resources folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:
@@ -291,8 +291,8 @@ specifically. Feel free to share draft versions as often as is helpful.
 The DP will be posted on PEPFAR SharePoint:
 [www.pepfar.net](http://www.pepfar.net).
 
--   The file path will be OU \> Country Name \> HQ Collaboration \> COP
-    2023 -- FY2024 \> Guidance, Tools, and Resources.
+-   The file path will be OU > Country Name > HQ Collaboration > COP
+    2023 -- FY2024 > Guidance, Tools, and Resources.
 
 -   The file name will be "Datapack_CountryName_20220121.....". Please
     reference the day in which the file was added to the folder. If
@@ -438,13 +438,13 @@ the tab in which they are located, the Indicator, the Assumption, and
 guidance needed to make the changes and if any approvals are needed.
 
 +---------+---------+---------+---------+---------+---------+
-| Tab     | Section | In      | As s    | G       |         |
+| Tab     | Section | In      | Ass     | G       |         |
 |         |         | dicator | umption | uidance |         |
-| ======= | # ===== |         | ===     |         |         |
-| Ca      |         | #       | ======= | # ==    |         |
-| scade   | Host    | ======= | 90%     |         |         |
-|         | Country |         |         | ===     |         |
-|         | Context | T       |         | ======= |         |
++=========+=========+=========+=========+=========+=========+
+| Ca      |         |         |         |         |         |
+| scade   | Host    |         | 90%     |         |         |
+|         | Country |         |         |         |         |
+|         | Context | T       |         |         |         |
 |         |         | argeted |         | Free to |         |
 |         |         | Host    |         | change  |         |
 |         |         | Country |         | de      |         |
@@ -459,8 +459,6 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         |         |         | COP     |         |
 |         |         |         |         | G       |         |
 |         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-|         |         |         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
 | Ca      | Host    | T       | 95%     | Free to |         |
 | scade   | Country | argeted |         | change  |         |

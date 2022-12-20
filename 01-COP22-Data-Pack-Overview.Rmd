@@ -429,46 +429,44 @@ the tab in which they are located, the Indicator, the Assumption, and
 guidance needed to make the changes and if any approvals are needed.
 
 +---------+---------+---------+---------+---------+---------+
-| Tab     | Section | In      | Ass     | G       |         |
-|         |         | dicator | umption | uidance |         |
+| Tab     | Section |Indicator| Assumpt | Guidance|         |
+|         |         |         | tion    |         |         |
 +=========+=========+=========+=========+=========+=========+
-| Ca      |         |         |         |         |         |
-| scade   | Host    |         | 90%     |         |         |
+| Cascade |         |         |         |         |         |
+|         | Host    |         | 90%     |         |         |
 |         | Country |         |         |         |         |
-|         | Context | T       |         |         |         |
-|         |         | argeted |         | Free to |         |
+|         | Context |         |         |         |         |
+|         |         | Targeted|         | Free to |         |
 |         |         | Host    |         | change  |         |
-|         |         | Country |         | de      |         |
-|         |         | ART C   |         | pending |         |
-|         |         | overage |         | on      |         |
+|         |         | Country |         | depend  |         |
+|         |         | ART     |         | ing     |         |
+|         |         | Coverage|         | on      |         |
 |         |         | (FY23)  |         | context |         |
 |         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
+|         |         |         |         | long    |         |
 |         |         |         |         | as in   |         |
 |         |         |         |         | line    |         |
 |         |         |         |         | with    |         |
 |         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
+|         |         |         |         | Guidance|         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | Host    | T       | 95%     | Free to |         |
-| scade   | Country | argeted |         | change  |         |
+| Cascade | Host    |         | 95%     | Free to |         |
+|         | Country | Targeted|         | change  |         |
 |         | Context | Host    |         | de      |         |
 |         |         | Country |         | pending |         |
 |         |         | CVLS    |         | on      |         |
 |         |         | (FY23)  |         | context |         |
 |         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
+|         |         |         |         | long    |         |
 |         |         |         |         | as in   |         |
 |         |         |         |         | line    |         |
 |         |         |         |         | with    |         |
 |         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
+|         |         |         |         | Guidance |        |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_PVLS | PEPFAR  | 95%     | Re      |         |
-| scade   | (D)     | T       |         | duction |         |
-|         |         | argeted |         | r       |         |
+| Cascade | TX_PVLS | PEPFAR  | 95%     | Re      |         |
+|         | (D)     |         |         | duction |         |
+|         |         | Targeted|         | r       |         |
 |         |         | VLS     |         | equires |         |
 |         |         | Rate    |         | Chair   |         |
 |         |         | (FY23)  |         | and     |         |
@@ -476,8 +474,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         |         |         | a       |         |
 |         |         |         |         | pproval |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_NEW  | \% of   | 70%     | Free to |         |
-| scade   |         | TX_NEW  |         | change  |         |
+| Cascade | TX_NEW  | \% of   | 70%     | Free to |         |
+|         |         | TX_NEW  |         | change  |         |
 |         |         | E       |         | de      |         |
 |         |         | ligible |         | pending |         |
 |         |         | for VL  |         | on      |         |
@@ -498,8 +496,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         |         |         | p       |         |
 |         |         |         |         | riority |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_NEW  | Pro     | 100%    | Re      |         |
-| scade   |         | portion |         | duction |         |
+| Cascade | TX_NEW  | Pro     | 100%    | Re      |         |
+|         |         | portion |         | duction |         |
 |         |         | of e    |         | r       |         |
 |         |         | ligible |         | equires |         |
 |         |         | w/      |         | Chair   |         |
@@ -508,8 +506,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         | testing |         |         |         |
 |         |         | (%)     |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_CURR | Pro     | 100%    | Free to |         |
-| scade   |         | portion |         | change, |         |
+| Cascade | TX_CURR | Pro     | 100%    | Free to |         |
+|         |         | portion |         | change, |         |
 |         |         | of TX\_ |         | if      |         |
 |         |         | NET_NEW |         | needed, |         |
 |         |         | from    |         | along   |         |
@@ -525,8 +523,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         |         |         | ch      |         |
 |         |         |         |         | anging. |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_CURR | T       | 98%     | Re      |         |
-| scade   |         | argeted |         | duction |         |
+| Cascade | TX_CURR | T       | 98%     | Re      |         |
+|         |         | argeted |         | duction |         |
 |         |         | Re      |         | r       |         |
 |         |         | tention |         | equires |         |
 |         |         | Rate -  |         | Chair   |         |
@@ -535,8 +533,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         | (FY22)  |         | a       |         |
 |         |         | (%)     |         | pproval |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | TX_CURR | T       | 98%     | Re      |         |
-| scade   |         | argeted |         | duction |         |
+| Cascade | TX_CURR | T       | 98%     | Re      |         |
+|         |         | argeted |         | duction |         |
 |         |         | Re      |         | r       |         |
 |         |         | tention |         | equires |         |
 |         |         | Rate -  |         | Chair   |         |
@@ -545,8 +543,8 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         | (FY22)  |         | a       |         |
 |         |         | (%)     |         | pproval |         |
 +---------+---------+---------+---------+---------+---------+
-| Ca      | testing | T       | 95%     | Re      |         |
-| scade   |         | argeted |         | duction |         |
+| Cascade | testing |         | 95%     | Re      |         |
+|         |         | Targeted|         | duction |         |
 |         |         | ART     |         | r       |         |
 |         |         | Linkage |         | equires |         |
 |         |         | Rate    |         | Chair   |         |

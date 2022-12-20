@@ -91,16 +91,6 @@ return for a follow-up visit or re-initiation visit to receive
 pre-exposure prophylaxis (PrEP) to prevent HIV during the reporting
 period.
 
-```{r echo=FALSE, results='asis'}
-sheet_name <- "PrEP"
-section <- "PrEP_CT - HIV Testing"
-columns <- col_seq("P", "Q")
-data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
-  make_table(t, section)
-  }
-```
-
 ### DATIM Import
 
 The following data points will be imported into DATIM from this section:

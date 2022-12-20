@@ -119,29 +119,24 @@ Summary (SDS) tables, where appropriate (Target related data).
 ***DP Review***
 
 +--------+--------+--------+--------+--------+--------+
-|        | Single | Single | Singel | OUs at | R      |
-|        | OU     | OU     | OU     | Epi    | e      |
-|        | Track: | Track: | Track: | C      | gional |
-|        | Group  | Group  | Group  | ontrol | /      |
-|        | 1      | 2      | 3      |        | C      |
-|        |        |        |        |        | ountry |
-|        |        |        |        |        | Pair   |
-|        |        |        |        |        | Track  |
+|        | Single | Single | Single | OUs at |Regional|
+|        | OU     | OU     | OU     | Epi    |    /   |
+|        | Track: | Track: | Track: | Control| Country|
+|        | Group  | Group  | Group  |        | Pair   |
+|        | 1      | 2      | 3      |        | Track  |
 +========+========+========+========+========+========+
 | 1st    | Feb 28 | Mar 7  | Mar 14 | Mar 7  | Feb 28 |
 | Draft  |        |        |        | or Mar |        |
 | Tool   |        |        |        | 14     |        |
-| Su b   |        |        |        |        |        |
-| m      |        |        |        |        |        |
-| ission |        |        |        |        |        |
+| Submi  |        |        |        |        |        |
+| ssion  |        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
 | COP    | Mar    | Mar    | Mar    | Mar    | Mar    |
-| M      | 7-11   | 14-18  | 22-25  | 14-18  | 22-25  |
-| eeting |        |        |        | or Mar |        |
+| Meeting| 7-11   | 14-18  | 22-25  | 14-18  | 22-25  |
+|        |        |        |        | or Mar |        |
 |        |        |        |        | 22-25  |        |
 +--------+--------+--------+--------+--------+--------+
-| M i    |        |        |        |        |        |
-| d      |        |        |        |        |        |
+| Mid    |        |        |        |        |        |
 | -point |        |        |        |        |        |
 | Tool   |        |        |        |        |        |
 | Check  |        |        |        |        |        |
@@ -152,26 +147,22 @@ Summary (SDS) tables, where appropriate (Target related data).
 | Final  |        |        |        |        |        |
 | Review |        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
-| Ad d   |        |        |        |        | R      |
-| i      |        |        |        |        | olling |
-| tional |        |        |        |        | Each   |
-| Touc h |        |        |        |        | Monday |
-| p      |        |        |        |        |        |
-| oints/ |        |        |        |        |        |
-| R      |        |        |        |        |        |
-| eviews |        |        |        |        |        |
+| Additi |        |        |        |        | Rolling|
+| onal   |        |        |        |        |        |
+|        |        |        |        |        | Each   |
+| Touch  |        |        |        |        | Monday |
+| points/|        |        |        |        |        |
+| Reviews|        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
 | Tools  | Apr 11 | Apr 18 | Apr 25 | Apr 18 | Apr 25 |
-| S u    |        |        |        | or Apr |        |
-| b      |        |        |        | 25     |        |
-| mitted |        |        |        |        |        |
+| Submit |        |        |        | or Apr |        |
+| ted    |        |        |        | 25     |        |
 | for    |        |        |        |        |        |
 | Upload |        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
 | COP21  | Apr 19 | Apr 22 | Apr 29 | Apr 22 | Apr 29 |
-| Su b   |        |        |        | or Apr |        |
-| m      |        |        |        | 29     |        |
-| ission |        |        |        |        |        |
+| Submi  |        |        |        | or Apr |        |
+| ssion  |        |        |        | 29     |        |
 | Due    |        |        |        |        |        |
 +--------+--------+--------+--------+--------+--------+
 

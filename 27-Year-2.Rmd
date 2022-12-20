@@ -1,20 +1,20 @@
 \blandscape
 
-Year 2 Targets. In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcomign fiscal year. Year 2 targets will not be imported into DATIM and will only be set at a National Level with Age/Sex dissaggregates. Teams should be aware that all final YEar 2 (FY25) Targets are editable, and will not be imported to DATIM.
+# Year 2 Targets
 
-# CASCADE
+In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcomign fiscal year. Year 2 targets will not be imported into DATIM and will only be set at a National Level with Age/Sex dissaggregates. Teams should be aware that all final YEar 2 (FY25) Targets are editable, and will not be imported to DATIM.
+
+### CASCADE
 
 The Cascade Section will model the Year 2  (FY25) Target in a very simlar manner to that of the Cascade tab. 
 
-# Testing Distribution
+### Testing Distribution
 
 The Testing Distribution will only look at the % used for FY24 and how they could relate for FY25, band this % will be the baseline for FY25. There are no HTS_TST_POS or HTS_TST_NEG to be set for FY25, only the PLHIV to Identify (HTS_TST_POS + PMTCT_HEI_POS) (FY25).
 
-# All Other Indicators
+### All Other Indicators
 
 All other MER Indiciators will be set for FY25. The Year 2 tab will pull in the FY24 target from the main tabs and this will pre-populate the blue FY25 target column as a starting point in which teams can then adjust and add multipliers to set the Year 2 (FY25) Target.
-
-
 
 \elandscape
 

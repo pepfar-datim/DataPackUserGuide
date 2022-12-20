@@ -2,6 +2,16 @@
 
 # HTS
 
+With the significant changes to the HTS tab and the collapse of HTS Modalities for target setting purposes. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+
+The HTS target setting groupings and which modalities fall under each of these are as follows:
+
+-   Active Index: Facility and Community Index Modalities
+
+-   Active SNS: Facility and Community SNS Modalities
+
+-   
+
 **HTS_TST:** Number of individuals who received HIV Testing Services (HTS) and received their test results.
 
 ## HTS: Testing Summary from Other Tabs

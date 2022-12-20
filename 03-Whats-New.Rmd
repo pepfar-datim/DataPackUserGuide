@@ -8,7 +8,7 @@
 
 **Changes in line with MER 2.6.1**:
 
--   Integration of the new collapsed HTS modalities. For target setting there has been a collapse of many modalities to reduce the total number of targets being set, while still  maintaining an infectious disease testing approach. More insight into these modalities will be in the HTS section of the User Guide. 
+-   Integration of the new collapsed HTS modalities. For target setting there has been a collapse of many modalities to reduce the total number of targets being set, while still  maintaining an infectious disease testing approach. More insight into these modalities will be in the HTS section of the User Guide. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
 -   Reduction of Target Setting Age Bands. The number of Cascade Age Bands has been reduced from COP22. This year teams will set Targets using the following age bands: <01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. In most target setting tabs, these are the age bands that will be present, however due to the nature of certain tabs and the already smaller scope of ages on which the prevention or treatment focuses, AGYW and OVC will retain their historic target setting age bands. 
 

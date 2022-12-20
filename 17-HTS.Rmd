@@ -10,7 +10,11 @@ The HTS target setting groupings and which modalities fall under each of these a
 
 -   Active SNS: Facility and Community SNS Modalities
 
--   
+-   Active Other: Community Other and Community Mobile Modailities
+
+-   STI Clinic: STI Facility Modality
+
+-   Other Facility: Inpatient, Emergency, Other PITC, VCT, Pediatric, and Malnutrition Facility Modalities
 
 **HTS_TST:** Number of individuals who received HIV Testing Services (HTS) and received their test results.
 

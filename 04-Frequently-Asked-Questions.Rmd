@@ -50,9 +50,6 @@ A: These two columns have been added and left blank for country teams to add in 
 
 A: For OU's with outstanding target-shift OPUs that are only shifting targets from one IM to another. This OPU will not affect the DataPack that has been issued thus far since it does not have a generated PSNUxIM tab (note this tab [should not be generated]{.ul} until all main tabs have been filled-in). However, if the team would like the OPU to be taken into account in the COP22 DataPack's PSNUxIM tab, the OU SI teams should NOT generate a PSNUxIM tab for the COP22 DataPack until their target shift OPU memos are fully approved, and the target shifts are imported into DATIM. Otherwise, they should be prepared to also make the allocation updates in their COP22 PSNUxIM tab that will align with the OPU update.
 
-***Q: Why are there more than just TX_CURR (FY23) Indicators being set at the new finer 65+ age bands despite MER2.6 Guidance?***
-
-A: Due to the structure of the Cascade tab, and other COP22 - FY23 Targets that rely on TX_CURR (FY23), the tool had to be built, such that these tabs are all disaggregated to the the 65+ age band. However, upon completion of the DataPack, ONLY TX_CURR (FY23) will be import to DATIM with the finer age bands. All other indicators will be aggregated to 50+.
 
 ***Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disaggregates are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?***
 

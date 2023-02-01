@@ -8,6 +8,35 @@ editor_options:
 
 # AGYW
 
+This year’s AGYW_PREV Tab is updated to incorporate results from the DREAMS R-Shiny Saturation Application for OUs that choose to utilize it. There are two paths an OU can take to generate COP23 AGYW_PREV Targets – Path 1 for those using outputs from the R-shiny App and Path 2 for those not using outputs from the R-Shiny App. 
+
+**Column F Est. Female Population**
+
+The R-Shiny App can be used to generate the AGYW population by 5-year age bands in the absence of Spectrum data aggregated to the necessary geographic level for the 25–29-year-old age band. The population data source in the R-shiny App is from the US Census Bureau.**If your OU has a different source you’d prefer, please provide the proper justification to your DUIT Liaison during the Target Setting Tool Review**  
+  
+  
+
+**Column G:  H.C. Est # of Vulnerable AGYW (FY23)**  
+  
+-   Path 1: Please enter the estimated number of vulnerable (DREAMS eligible) AGYW by age/PSNU into the column from the R-Shiny App  
+-   Path 2: Estimate vulnerable AGYW by using =F*Proxy Vulnerability Estimator  
+   
+**Column H: DREAMS Sat App Percent Coverage – Saturation (%) FY22**  
+
+This is the estimated percent saturated.  
+-   Path 1:This estimate can come from the R-Shiny App output directly.  
+-   Path 2: If app is not used, in-country DREAMS databases can be utilized and path to determine this saturation percentage should be submitted as a narrative to DUIT Liaison.  
+  
+**Column I: DREAMS Sat App DREAMS Eligible Girls Not Yet Reached FY22**  
+
+-   Path 1: This column can be copied directly from the app.
+-   Path 2:  Populate this column with the following formula:  =**(F*G*H)**. This will determine the number of DREAMS Eligible AGYW. For both paths it is necessary to calculate this column. 
+
+ 
+ 
+
+
+
 ## AGYW: AGYW_PREV
 
 **AGYW_PREV:** Number of active DREAMS beneficiaries that have started

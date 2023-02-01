@@ -14,7 +14,6 @@ This year’s AGYW_PREV Tab is updated to incorporate results from the DREAMS R-
 
 The R-Shiny App can be used to generate the AGYW population by 5-year age bands in the absence of Spectrum data aggregated to the necessary geographic level for the 25–29-year-old age band. The population data source in the R-shiny App is from the US Census Bureau.**If your OU has a different source you’d prefer, please provide the proper justification to your DUIT Liaison during the Target Setting Tool Review**  
   
-  
 
 **Column G:  H.C. Est # of Vulnerable AGYW (FY23)**  
   
@@ -30,10 +29,39 @@ This is the estimated percent saturated.
 **Column I: DREAMS Sat App DREAMS Eligible Girls Not Yet Reached FY22**  
 
 -   Path 1: This column can be copied directly from the app.
--   Path 2:  Populate this column with the following formula:  =**(F*G*H)**. This will determine the number of DREAMS Eligible AGYW. For both paths it is necessary to calculate this column. 
+-   Path 2:  Populate this column with the following formula:  =**(F*G*H)**. *This will determine the number of DREAMS Eligible AGYW. For both paths it is necessary to calculate this column.*  
 
- 
- 
+**Column J: Denominator - Started or Completed any DREAMS Service (FY23 Target)**  
+
+FY23 Targets for FY23 are prepopulated.  
+  
+**Column K: Projected DREAMS Eligible Girls Not Yet Reached (FY24)**  
+
+This is the difference between Column I and Column J. It gives teams the number of girls who have not yet been reached (either completed or enrolled) into DREAMS services. This is the number of girls who can be targeted within an OU.  *For both paths it is necessary to calculate this column.*  
+  
+  
+**Columns L – Q: FY22 results across AGYW_PREV cascade. This is pre-populated**  
+  
+**Column R: Projected Net Change in Total AGYW_PREV from FY22 Results or FY23 Targets  (%)**  
+  
+This column determines which path you take for targeting:
+-   Path 1: If you are using the R-shiny app saturation results, you will base this projected net change from last year’s target (Column J).  If you anticipate a reduction, make sure the percentage is negative. 
+-   Path 2: If you are using the traditional targeting method, you will determine your projected net change from last year’s results (Column P). If you anticipate a reduction, make sure the percentage is negative.  
+
+**Column S: Targeted Percent Completion (FY24) (%)**  
+This column will determine how many of the AGYW you plan to enroll into DREAMS will complete the program based off her needs-profile. If the completion rate from FY22 is over 60%, this column will mirror the completion rate in column Q. If the completion rate from FY22 is under 60%, this column will default to 60%.  
+
+**Column T: Denominator - Started or Completed any DREAMS Service (FY24)**  
+Please use the following formulas:  
+-   If you selected path 1 (Using the R-shiny app), please insert this formula: __J17*(R+S17)__ and drag it to the bottom.  
+-   If you selected path 2, the more traditional option, please insert this formula: __P20*(1+R20)__ and drag it to the bottom. This is your denominator.  
+  
+This column determines your AGYW_PREV denominator. Please note – you will receive an error message if Column T > Column K.  
+
+**Column U: Numberator - Completed at least Primary Package (FY24)**  
+This is your numerator. The formula calculate the denominator (Column T) with the targeted percent completion (Column S).  
+  
+  
 
 
 

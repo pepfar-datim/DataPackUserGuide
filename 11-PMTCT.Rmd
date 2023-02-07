@@ -12,7 +12,7 @@ editor_options:
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "PMTCT"
-section <- "Host Country Context"
+section <- "Partner Country (P.C.) Context"
 columns <- col_seq("F", "Q")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 3)) {
@@ -22,8 +22,8 @@ for (t in table_seq(data, max_col = 3)) {
 
 ### DATIM Import
 
-The following data will be imported into DATIM from this section of the
-DataPack:
+The following data will NOT be imported into DATIM but will appear in the COP Dossier from this section of the
+Target Setting Tool:
 
 -   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY23)**
     $PMTCT\_STAT\_SUBNAT.D.T\_1$
@@ -37,8 +37,8 @@ DataPack:
 -   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)**
     $PMTCT\_STAT\_SUBNAT.N.New.Neg.T\_1$
 
--   **Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant women
-    (FY23)** $PMTCT\_ART\_SUBNAT.D.T\_1$
+-   **Host Country PMTCT_ART_SUBNAT (D) - HIV-positive pregnant women (FY23)**
+    $PMTCT\_ART\_SUBNAT.D.T\_1$
 
 -   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY23)**
     $PMTCT\_ART\_SUBNAT.N.Already.T\_1$
@@ -64,7 +64,7 @@ DataPack:
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
-    Spectrum export dataset added to the Spectrum tab of the DataPack.
+    Spectrum export dataset added to the Spectrum tab of the Target Setting Tool.
     Review these and return to Spectrum to adjust assumptions there as
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
@@ -111,7 +111,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review FY23 targets for PMTCT_STAT (D),
-    reflected in the DataPack per data reported in DATIM.
+    reflected in the Target Setting Tool per data reported in DATIM.
 
 2.  Review and adjust the Expected change in new ANC clients, which
     should help indicate whether there is an anticipated change in the
@@ -210,10 +210,10 @@ The following data points will be imported into DATIM from this section:
 ### FY24 Projected Known Positivity and New Positivity Rates
 
 In projecting rates of Known and New positivity for PMTCT_STAT ANC1
-clients, the COP21 DataPack relies first upon Host Country Context
+clients, the COP21 Target Setting Tool relies first upon Host Country Context
 estimates, provided by Spectrum or another approved source, and where
 this data is unavailable, upon PEPFAR FY22 results obtained from DATIM
-on the date of the DataPack's generation, as documented on the Home tab.
+on the date of the Target Setting Tool's generation, as documented on the Home tab.
 These rates are calculated from Host Country Context data as follows:
 
 $$
@@ -231,7 +231,7 @@ $$
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "PMTCT"
-section <- "ANC1 Testing - Host Country"
+section <- "ANC1 Testing - Partner Country"
 columns <- col_seq("AE", "AH")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
@@ -310,7 +310,7 @@ The following data points will be imported into DATIM from this section:
     this will alter linkage rates across all modalities.
 
 2.  Review modeled targets for PMTCT_ART (N) Already on ART. For the
-    purposes of COP21 target setting in the DataPack, FY24 targets for
+    purposes of COP21 target setting in the Target Setting Tool, FY24 targets for
     PMTCT_ART Already on ART are set assuming that 100% of those ANC1
     clients with already known HIV positive status are already on ART.
 
@@ -445,15 +445,15 @@ No data from this section will be imported into DATIM.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to PMTCT_STAT are warranted may prevent issues and
-    additional work in other sections of the DataPack.
+    additional work in other sections of the Target Setting Tool.
 
-4.  Return to other tabs of the DataPack where issues flagged in this
+4.  Return to other tabs of the Target Setting Tool where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
     sections can be also found in each of these other tabs of the
-    DataPack. You may also use hyperlinks in column headers in this
+    Target Setting Tool. You may also use hyperlinks in column headers in this
     section to quickly navigate to the most relevant section of the
-    DataPack.
+    Target Setting Tool.
 
 \elandscape
 

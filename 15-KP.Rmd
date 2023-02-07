@@ -41,7 +41,7 @@ listed.
 3.  As per COP23 Guidance, OUs should strive to ensure all KPs reached
     with KP programming (KP_PREV), who do not already know their HIV
     status are either tested for HIV or actively referred for HIV
-    testing. Therefore, DataPacks will be reviewed for the relationship
+    testing. Therefore, Target Setting Tools will be reviewed for the relationship
     between KP_PREV to HTS for KP, and if the relationship is
     substantially different from one to one, it will be important to
     discuss rationale and context with Chair and PPM.
@@ -60,8 +60,8 @@ listed.
     it will also be checked by the validation apps and the KP Validation
     tab.
 
-6.  Therefore we have moved the KP tab earlier in the DataPack, and
-    suggest that you start the KP tab early in the DataPack process, and
+6.  Therefore we have moved the KP tab earlier in the Target Setting Tool, and
+    suggest that you start the KP tab early in the Target Setting Tool process, and
     regularly compare against Cascade, HTS, and PrEP tabs.
 
 7.  Also note that IMs that do not provide actual clinical services
@@ -103,7 +103,7 @@ The following data points will be imported into DATIM from this section:
     these three columns will be imported into DATIM.
 
 2.  Where these data may not be available, the absence of this data will
-    not adversely impact target-setting within the DataPack for Key
+    not adversely impact target-setting within the Target Setting Tool for Key
     Populations.**\
     **
 
@@ -229,7 +229,7 @@ antiretroviral therapy (ART).
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "TX_CURR"
-columns <- col_seq("N", "Q")
+columns <- col_seq("N", "S")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -272,7 +272,7 @@ antiretroviral therapy (ART).
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "TX_NEW"
-columns <- col_seq("R", "V")
+columns <- col_seq("T", "Z")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -324,7 +324,7 @@ within the past 12 months.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "TX_PVLS (D)"
-columns <- col_seq("W", "Y")
+columns <- col_seq("AA", "AD")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -334,7 +334,7 @@ for (t in table_seq(data)) {
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "TX_PVLS (N)"
-columns <- col_seq("Z", "AA")
+columns <- col_seq("AE", "AF")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -388,7 +388,7 @@ The following data points will be imported into DATIM from this section:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "HTS_TST"
-columns <- col_seq("AB", "AJ")
+columns <- col_seq("AG", "AL")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -462,7 +462,7 @@ reporting period.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "HTS_RECENT"
-columns <- col_seq("AK", "AL")
+columns <- col_seq("AM", "AN")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -500,7 +500,7 @@ The following data points will be imported into DATIM from this section:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "KP"
 section <- "HTS_SELF"
-columns <- col_seq("AM", "AN")
+columns <- col_seq("AO", "AP")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)

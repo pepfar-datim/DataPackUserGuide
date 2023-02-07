@@ -36,7 +36,7 @@ The following data points will be imported into DATIM from this section:
 
 6.  Review "KP_MAT (FY24)" which will be the product of "PEPFAR KP_MAT (FY23 Targets)" multiplied against "Targeted Growth in KP_MAT (FY24) (%)". In the case services are planned in FY24 where these were not provided in FY23, you may manually enter FY24 targets in these columns.
 
-7.  Review "Host Country KP_MAT_SUBNAT (FY24)" and adjust previous assumptions as needed. The DataPack will model these targets based upon FY24 PEPFAR KP_MAT targets and the Targeted PEPFAR Coverage of KP_MAT_SUBNAT (FY24) (%).
+7.  Review "Host Country KP_MAT_SUBNAT (FY24)" and adjust previous assumptions as needed. The Target Setting Tool will model these targets based upon FY24 PEPFAR KP_MAT targets and the Targeted PEPFAR Coverage of KP_MAT_SUBNAT (FY24) (%).
 
 \elandscape
 

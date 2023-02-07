@@ -22,7 +22,7 @@ for (t in table_seq(data, max_col = 3)) {
 
 ### DATIM Import
 
-The following data points will be imported into DATIM from this section:
+The following data points will be imported into DATIM (only FY24 SUBNAT Targets) from this section:
 
 -   **Host Country VMMC_CIRC_SUBNAT (FY23)** $VMMC\_CIRC\_SUBNAT.T\_1$
 
@@ -54,7 +54,7 @@ The following data points will be imported into DATIM from this section:
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
-    Spectrum export dataset added to the Spectrum tab of the DataPack.
+    Spectrum export dataset added to the Spectrum tab of the Target Setting Tool.
     Review these and return to Spectrum to adjust assumptions there as
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
@@ -110,7 +110,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review FY22 results and FY23 targets for
-    PEPFAR VMMC_CIRC, supplied in the DataPack as an export from data
+    PEPFAR VMMC_CIRC, supplied in the Target Setting Tool as an export from data
     currently reported in DATIM.
 
 2.  Review the FY23 estimated PEPFAR Coverage of Host Country
@@ -175,19 +175,19 @@ $$
 
 ### VMMC_CIRC Disaggregates (FY24)
 
-In disaggregating total VMMC_CIRC for FY24 Targets, the DataPack will
+In disaggregating total VMMC_CIRC for FY24 Targets, the Target Setting Tool will
 first set targets for those projected to have indeterminate HIV testing
 results or to deny testing, then targets for those identified positive,
 and finally those negative.
 
-To set targets for Indeterminate/Not Tested, the DataPack will use the
+To set targets for Indeterminate/Not Tested, the Target Setting Tool will use the
 following formula, rounding to the nearest integer:
 
 $$
 {VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}
 $$
 
-For VMMC_CIRC HIV Positive, the DataPack will set targets as follows,
+For VMMC_CIRC HIV Positive, the Target Setting Tool will set targets as follows,
 rounding to the nearest integer:
 
 $$
@@ -230,15 +230,15 @@ No data will be imported into DATIM from this section.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to VMMC_CIRC are warranted may prevent issues and
-    additional work in other sections of the DataPack.
+    additional work in other sections of the Target Setting Tool.
 
-3.  Return to other tabs of the DataPack where issues flagged in this
+3.  Return to other tabs of the Target Setting Tool where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
     sections can be also found in each of these other tabs of the
-    DataPack. You may also use hyperlinks in column headers in this
+    Target Setting Tool. You may also use hyperlinks in column headers in this
     section to quickly navigate to the most relevant section of the
-    DataPack.
+    Target Setting Tool.
 
 \elandscape
 

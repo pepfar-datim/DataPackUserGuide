@@ -64,12 +64,12 @@ This section provides an overview of PEPFAR FY22 results and FY23 targets, both 
 
 -   In the Cascade-PEPFAR FY22 Cascade (Planned) section we have added a new column based on feedback gathered in the retrospective process. The TX_CURR: Expected Achievement (FY23) has been added to default to be the larger of the TX_CURR FY22 Result or the TX_CURR FY23 Target. This column is editable for teams to indicate what the expected achievement for FY23 will be. The value in this column is the TX_CURR (FY23) that will be referenced in the ART Modeling and ART sections as well as subsequent sections of the Cascade tab.
 
-## Host Country Context
+## Partner Country Context
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
-section <- "Host Country Cascade (from Spectrum tab, or manually entered here)"
-columns <- col_seq("S", "AH")
+section <- "Partner Country Cascade (from Spectrum tab, or manually entered here)"
+columns <- col_seq("S", "AL")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -78,41 +78,49 @@ for (t in table_seq(data, max_col = 4)) {
 
 For those leveraging UNAIDS Spectrum estimate exports for the Data Pack, once these have been loaded into the Spectrum tab of the Data Pack, this first portion of the Cascade tab will automatically update to reflect these estimates. For those leveraging alternatives to Spectrum, see below.
 
-In specific, the Host Country Context section of the Cascade tab provides space for reflecting the following data:
+In specific, the Partner Country Context section of the Cascade tab provides space for reflecting the following data:
 
--   **Host Country Observed TX_CURR_SUBNAT (FY22)** $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV receiving ART as of September 2022.
+-   **Partner Country Observed TX_CURR_SUBNAT (FY22)** $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV receiving ART as of September 2022.
 
--   **Host Country Estimated Population (FY23)** $POP\_EST.T\_1$: Estimated population, projected as of September 2023.
+-   **Partner Country Estimated Population (FY23)** $POP\_EST.T\_1$: Estimated population, projected as of September 2023.
 
--   **Host Country Estimated PLHIV (FY23)** $PLHIV.T\_1$: Estimated number of people living with HIV, projected as of September 2023.
+-   **Partner Country PLHIV by Residence (FY23)** $PLHIV\_Residents.T\_1$: Estimated number of people residing with HIV in an area, projected as of September 2023.
 
--   **Host Country Estimated HIV Prevalence (FY23) (%)** $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of September 2023.
+-   **Partner Country PLHIV by ART attendance (FY23)** $PLHIV\_Attend.T\_1$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2023.
 
--   **Host Country PLHIV Diagnosed (FY23)** $DIAGNOSED\_SUBNAT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
+-   **Partner Country Estimated HIV Prevalence (FY23) (%)** $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of September 2023.
 
--   **Host Country % PLHIV Diagnosed (FY23) (%)** $DIAGNOSED\_SUBNAT.RT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
+-   **Partner Country PLHIV Diagnosed (FY23)** $DIAGNOSED\_SUBNAT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
 
--   **Host Country Projected Incidence Rate (FY23) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023.
+-   **Partner Country % PLHIV Diagnosed (FY23) (%)** $DIAGNOSED\_SUBNAT.RT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
 
--   **Host Country On ART (FY23)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2023.
+-   **Partner Country Projected Incidence Rate (FY23) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023. *TO DELETE*
 
--   **Host Country ART Coverage (ART/PLHIV) (FY23) (%)** $PopART.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR SUBNAT from Column Y divided by Column U for HC Est. for PLHIV.
+-   **Partner Country On ART (FY23)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2023.
 
--   **Host Country % Diagnosed on ART (FY23) (%)** $TX\_CURR\_SUBNAT.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR_SUBNAT from Column Y divided by Column W for HC DIAGNOSED_SUBNAT.T_1.
+-   **Partner Country ART Coverage (ART/PLHIV) (FY23) (%)** $PopART.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR SUBNAT from Column Y divided by Column U for HC Est. for PLHIV.
 
--   **Host Country ART Patients with Documented VLT (FY23)** $VL\_TESTING\_SUBNAT.T\_1$ Estimated number of people who are ART Patients with Documented Viral Load Testing, projected as of September 2023.
+-   **Partner Country % Diagnosed on ART (FY23) (%)** $TX\_CURR\_SUBNAT.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR_SUBNAT from Column Y divided by Column W for HC DIAGNOSED_SUBNAT.T_1.
 
--   **Host Country VLT Coverage (FY23) (%)** $VL\_TESTING\_SUBNAT.Rt.T\_1$ Estimated coverage taking Host Country ART Patients with Documented VLT (FY23) divinded by ost Country On ART (FY23).
+-   **Partner Country Untreated PLHIV in health facility catchment area (FY23)** $Untreated\_PLHIV\_Attend.T\_1$ Estimated number of PLHIV who are Untreated and in a health facility catchment area, projected as of September 2023.
 
--   **Host Country Estimated Virally Suppressed ART Patients (FY23)** $VL\_SUPPRESSED.T\_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2023. \**See note below*
+-   **Partner Country ART Patients with Documented VLT (FY23)** $VL\_TESTING\_SUBNAT.T\_1$ Estimated number of people who are ART Patients with Documented Viral Load Testing, projected as of September 2023.
 
--   **Host Country Est. VLS Rate (Virally Suppressed/Documented VLT) (FY23) (%)** $VLS\_SUBNAT.Rt.T\_1$: Estimated rate of Virally Suppressed ART Patients (FY23) divided by ART Patients with Documented VLT, projected as of September 2023. \**See note below*
+-   **Partner Country VLT Coverage (FY23) (%)** $VL\_TESTING\_SUBNAT.Rt.T\_1$ Estimated coverage taking Partner Country ART Patients with Documented VLT (FY23) divinded by ost Country On ART (FY23).
 
--   **Host Country Projected Incidence Rate (FY24) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estiamted new Incidence rate projected to occur in FY24, based on projected FY23 Incidence Rates.
+-   **Partner Country Estimated Virally Suppressed ART Patients (FY23)** $VL\_SUPPRESSED.T\_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2023. \**See note below*
 
--   **Host Country Projected New Infections (FY24)** $NEW\_INFECTIONS\_SUBNAT.T\_1$: Estimated new infections projected to occur in FY24, based on projected FY23 Incidence Rates.
+-   **Partner Country Est. VLS Rate (Virally Suppressed/Documented VLT) (FY23) (%)** $VLS\_SUBNAT.Rt.T\_1$: Estimated rate of Virally Suppressed ART Patients (FY23) divided by ART Patients with Documented VLT, projected as of September 2023. \**See note below*
 
--   **Host Country Projected PLHIV (FY24)** $PLHIV.T$: Porjected PLHIV from sum of Host Country PLHIV Diagnosed (FY23) and  Host Country Projected New Infections (FY24).
+-   **Partner Country Projected Incidence Rate (FY24) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estiamted new Incidence rate projected to occur in FY24, based on projected FY23 Incidence Rates.
+
+-   **Partner Country Projected New Infections (FY24)** $NEW\_INFECTIONS\_SUBNAT.T\_1$: Estimated new infections projected to occur in FY24, based on projected FY23 Incidence Rates.
+
+-   **Partner Country PLHIV by Residence (FY24)** $PLHIV\_Residents.T$: Estimated number of people residing with HIV in an area, projected as of September 2024.
+
+-   **Partner Country PLHIV by ART attendance (FY24)** $PLHIV\_Attend.T$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2024.
+
+-   **Partner Country Projected PLHIV (FY24)** $PLHIV.T$: Teams must select whether the final PLHIV will pull from Partner Country PLHIV by Residence (FY24) (column AJ) or Partner Country PLHIV by ART attendance (FY24) (column AK). You must chose one PLHIV and cannot mix and match. This is the PLHIV that will flow to DATIM and PAW.
 
 
 \**Note:* This indicator is not available via Spectrum for COP23. If high quality data is available from another source, you may enter it this here, overwriting formulas, though retain data source documentation. However, if data is not readily available, it is best to leave this column blank --- the DataPack was designed to populate subsequent columns even without this data.
@@ -121,14 +129,7 @@ In specific, the Host Country Context section of the Cascade tab provides space 
 
 The following data points will be imported into DATIM from this section, replacing any preexisting estimates for these indicators that may have already been entered in DATIM:
 
--   **Host Country Estimated Population (FY23)** $POP\_EST.T\_1$
--   **Host Country Estimated PLHIV (FY23)** $PLHIV.T\_1$
--   **Host Country Estimated HIV Prevalence (FY23) (%)** $HIV\_PREV.T\_1$
--   **Host Country PLHIV Diagnosed (FY23)** $DIAGNOSED\_SUBNAT.T\_1$
--   **Host Country Observed TX_CURR_SUBNAT (FY22)** $TX\_CURR\_SUBNAT.R$
--   **Host Country Estimated TX_CURR_SUBNAT (FY23)** $TX\_CURR_SUBNAT.T\_1$
--   **Host Country Est. ART Patients Tested for VLS (FY23)** $VL\_TESTING\_SUBNAT.T\_1$
--   **Host Country Estimated Virally Suppressed ART Patients (FY23)** $VL\_SUPPRESSED.T\_1$
+-   **Partner Country Projected PLHIV (FY24)** $PLHIV.T$
 
 ### Instructions
 
@@ -142,7 +143,7 @@ The following data points will be imported into DATIM from this section, replaci
 
 3.  Confirm that no data has been entered against \_Military Organization Units. See below for more explanation.
 
-Please note that the Host Country Estimated Patients Tested for VLS (FY23) and the Host Country Estimated Virally Suppressed ART Patients (FY23) are not available from Spectrum/Naomi. Therefore, they will not populate from the Spectrum tab. The DataPack does not need it populated to work, and if it is left blank the DataPack will rely on PEPFAR MER data.
+Please note that the Partner Country Estimated Patients Tested for VLS (FY23) and the Partner Country Estimated Virally Suppressed ART Patients (FY23) are not available from Spectrum/Naomi. Therefore, they will not populate from the Spectrum tab. The DataPack does not need it populated to work, and if it is left blank the DataPack will rely on PEPFAR MER data.
 
 ### Leveraging Alternatives to Spectrum
 
@@ -150,7 +151,7 @@ Most countries are encouraged to use UNAIDS Spectrum as their source for the abo
 
 In this case, paste estimates from other approved sources into this section of the Cascade tab by overwriting the formulas currently in these green columns. Due to hidden Relative Standard Error columns between the various estimate columns, it is recommended you paste this data in one column at a time, rather than in bulk. It may also reduce technical issues to first copy geographic data in the SNU1, PSNU, Age, and Sex columns into a separate spreadsheet, then use Excel lookup functions to add estimates data against the correct geographies and populations, and then return to pasting data into the original Cascade tab column by column.
 
-Please note that it is not required to populate the Host Country Estimated Patients Tested for VLS (FY23) and the Host Country Estimated Virally Suppressed ART Patients (FY23) columns. In fact, in the absence of appropriate programmatic or clinical data, it is inadvisable to expend great effort on making these estimates. The DataPack has been redesigned with the understanding that most countries will not have these data. If these columns are left blank, the DataPack will automatically use PEPFAR program data to estimate the Working PopVLS Rate and the cascade calculations will still be able to proceed.
+Please note that it is not required to populate the Partner Country Estimated Patients Tested for VLS (FY23) and the Partner Country Estimated Virally Suppressed ART Patients (FY23) columns. In fact, in the absence of appropriate programmatic or clinical data, it is inadvisable to expend great effort on making these estimates. The DataPack has been redesigned with the understanding that most countries will not have these data. If these columns are left blank, the DataPack will automatically use PEPFAR program data to estimate the Working PopVLS Rate and the cascade calculations will still be able to proceed.
 
 ### Relative Standard Errors
 
@@ -172,7 +173,7 @@ If, in reviewing Relative Standard Error values, the uncertainty interval of an 
 
 2.  Communicate concerns to assigned UNAIDS liaisons and discuss appropriate methods for improving or better understanding data quality for the data points in question.
 
-### Host Country Estimates for Military Organization Units
+### Partner Country Estimates for Military Organization Units
 
 Due to issues of political sensitivity and national security, estimates for the above indicators should not be entered against Military Organization Units. Any case where this does occur will be flagged in the Data Pack Self-Service App, and removed during DATIM import.
 
@@ -181,7 +182,7 @@ Due to issues of political sensitivity and national security, estimates for the 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "ART Modeling"
-columns <- col_seq("AI", "AL")
+columns <- col_seq("AM", "AP")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -196,9 +197,9 @@ No Targets will be imported to DATIM from this section.
 
 This section does not need to be utilize if teams have modeled their TX_CURR (FY24) target in column F, but this section can still be used should teams want to see a modeled TX_CURR to compare to that they derived through their own analysis. 
 
--   Review Targeted H.C. ART Coverage (ART/PLHIV) (FY24) (%) that will be defaulted to 90%, unless the Host Country Estimated ART Coverage (ART/PLHIV) (FY23) (%) from column Z is greater. If either of these two coverage rates are not sufficient, teams can enter a different rate. 
+-   Review Targeted H.C. ART Coverage (ART/PLHIV) (FY24) (%) that will be defaulted to 90%, unless the Partner Country Estimated ART Coverage (ART/PLHIV) (FY23) (%) from column Z is greater. If either of these two coverage rates are not sufficient, teams can enter a different rate. 
 
--   The modeled Targeted H.C. # on ART (FY24) $TX\_CURR\_SUBNAT.M$ will multiply the Host Country FY24 Projected Estimate byt the ART Coverage rate.
+-   The modeled Targeted H.C. # on ART (FY24) $TX\_CURR\_SUBNAT.M$ will multiply the Partner Country FY24 Projected Estimate byt the ART Coverage rate.
 
 -   For <01 yr olds, PMTCT_HEI_POS Linked & Retained on ART (FY24) will pull from the EID tab and teams should review the EID tab for these targets.
 
@@ -213,7 +214,7 @@ This section does not need to be utilize if teams have modeled their TX_CURR (FY
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "ART"
-columns <- col_seq("AM", "AO")
+columns <- col_seq("AQ", "AS")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -246,7 +247,7 @@ $$
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "ART Initiation"
-columns <- col_seq("AP", "AU")
+columns <- col_seq("AT", "AY")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -292,7 +293,7 @@ Because MER guidance stipulates that TX_NEW is to be used for reporting initiati
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "VL Testing Coverage"
-columns <- col_seq("AV", "AZ")
+columns <- col_seq("AZ", "BD")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -325,7 +326,7 @@ The following data points will be imported into DATIM from this section:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "Viral Load Suppression"
-columns <- col_seq("BA", "BC")
+columns <- col_seq("BE", "BG")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -351,7 +352,7 @@ The following data points will be imported into DATIM from this section:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
 section <- "Testing"
-columns <- col_seq("BD", "BE")
+columns <- col_seq("BH", "BI")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -374,11 +375,11 @@ No Targets will be imported to DATIM from this section.
 
 ### PEPFAR Contribution to HIV Response
 
-While PEPFAR's contribution to the HIV response within the Host Country may vary across areas of that response, this column attempts to summarize this contribution for use in modeling subsequent targets.
+While PEPFAR's contribution to the HIV response within the Partner Country may vary across areas of that response, this column attempts to summarize this contribution for use in modeling subsequent targets.
 
-The DataPack first attempts to describe PEPFAR's contribution during FY23, based on both Host Country estimates as well as PEPFAR Results and Targets. Keep in mind as you review these data that the methodologies used in producing Host Country estimates may produce artificial discrepancies between PEPFAR and Host Country values. For example, if Host Country estimates are produced from household surveys, these residential-centric data may differ significantly from PEPFAR's data, which are largely collected at point of service. (Because of this, it is recommended that Host Country estimates follow a point-of-service model where possible.)
+The DataPack first attempts to describe PEPFAR's contribution during FY23, based on both Partner Country estimates as well as PEPFAR Results and Targets. Keep in mind as you review these data that the methodologies used in producing Partner Country estimates may produce artificial discrepancies between PEPFAR and Partner Country values. For example, if Partner Country estimates are produced from household surveys, these residential-centric data may differ significantly from PEPFAR's data, which are largely collected at point of service. (Because of this, it is recommended that Partner Country estimates follow a point-of-service model where possible.)
 
-In the following column, adjust values to reflect PEPFAR's planned contribution to the HIV response. Keep in mind that if PEPFAR's FY22 results or FY23 targets are greater than Host Country Estimates for a given geography of population, it may be wise to maintain this same relationship to avoid depressing treatment and testing values set later in the Cascade tab beyond what would be the result of projected retention rates.
+In the following column, adjust values to reflect PEPFAR's planned contribution to the HIV response. Keep in mind that if PEPFAR's FY22 results or FY23 targets are greater than Partner Country Estimates for a given geography of population, it may be wise to maintain this same relationship to avoid depressing treatment and testing values set later in the Cascade tab beyond what would be the result of projected retention rates.
 
 
 \elandscape

@@ -71,7 +71,7 @@ The following data points will be imported into DATIM from this section:
 
 ### TX_TB (D) Disaggregates (FY24)
 
-The DataPack will set FY24 targets for TX_TB (D) as laid out below.
+The Target Setting Tool will set FY24 targets for TX_TB (D) as laid out below.
 
 Targets will be set for those New on ART and screened positive for TB as
 follows, rounded to the nearest integer: $$

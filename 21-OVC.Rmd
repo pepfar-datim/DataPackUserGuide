@@ -16,7 +16,7 @@ children and families affected by HIV.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "OVC"
 section <- "OVC_SERV"
-columns <- col_seq("F", "S")
+columns <- col_seq("F", "R")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -47,14 +47,14 @@ The following data points will be imported into DATIM from this section:
     maintained by PEPFAR O/GAC. To add or remove any SNUs on this list
     during the COP21 process, notify your assigned PPM, as well as
     DREAMS liaisons on the PEPFAR Program Quality Team to ensure these
-    changes are reflected in your DataPack. After communicating and
-    documenting these updates centrally, the DataPack Self-Service App
+    changes are reflected in your Target Setting Tool. After communicating and
+    documenting these updates centrally, the Target Setting Tool Self-Service App
     will alert to an update in the DREAMS SNU list and provide an
-    updated DataPack with updated data in this "DREAMS SNU?" column.
+    updated Target Setting Tool with updated data in this "DREAMS SNU?" column.
     Note that in the interim, you may manually overwrite or alter flags
     in this column, though any discrepancies between this column in the
-    DataPack and the centrally-maintained list of DREAMS SNUs will be
-    flagged in the DataPack Self-Service App and must be resolved prior
+    Target Setting Tool and the centrally-maintained list of DREAMS SNUs will be
+    flagged in the Target Setting Tool Self-Service App and must be resolved prior
     to COP Approval and DATIM import.
 
 3.  Review columns "FY22 Results" and "FY23 Targets" which will come
@@ -118,10 +118,10 @@ The following data points will be imported into DATIM from this section:
 
 11. Review the targeted number of Active OVC Comprehensive beneficiaries
     for COP21. The Active OVC Comprehensive target is derived in the
-    DataPack as a remainder of Total OVC_SERV to be served via
+    Target Setting Tool as a remainder of Total OVC_SERV to be served via
     Comprehensive services, less those captured in the "Comprehensive -
     Graduated" target. To make changes to "Comprehensive - Active"
-    targets in the DataPack, adjust the proportion in the "Comprehensive
+    targets in the Target Setting Tool, adjust the proportion in the "Comprehensive
     % of Total OVC_SERV (%)" column, as set in step 5.
 
 NOTE: There is no denominator for **OVC_SERV**
@@ -143,7 +143,7 @@ old) with HIV status reported, disaggregated by HIV status.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "OVC"
 section <- "OVC_HIVSTAT"
-columns <- col_seq("T", "U")
+columns <- col_seq("S", "T")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)

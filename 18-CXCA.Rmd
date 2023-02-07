@@ -43,13 +43,12 @@ Screening coverage rate (%)" to 0%.
 1.  For historical context, review FY22 results, FY23 targets, and FY22
     Observed CXCA Screen Coverage rates as reported in DATIM, as well as
     FY23 Targets for TX_CURR and those to be Initiated on ART in FY24
-    from the Cascade tab of the DataPack.
+    from the Cascade tab of the Target Setting Tool.
 
 2.  Review and adjust CXCA_SCRN Coverage - Already on ART (FY24) (%) which
     will be defaulted to 33% and Coverage - Initiated on ART (FY24) (%) will
     be defaulted to 100%. 
-    determine the
-    proportion of HIV positive women currently on treatment that will
+    Determine the proportion of HIV positive women currently on treatment that will
     receive cervical cancer screening in COP2120/FY23 implementation
     year. Each team will have a default value of 50% set in this column
     as in past years. However, please follow COP21 Guidance and adjust

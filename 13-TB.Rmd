@@ -32,7 +32,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  For historical context, review FY23 targets for TB_STAT (D),
-    including in the DataPack reflective of data reported in DATIM.
+    including in the Target Setting Tool reflective of data reported in DATIM.
 
 2.  Review and adjust the Estimated Change in Incidence to reflect most
     reliable projections of TB trends into FY24. This value defaults to
@@ -175,10 +175,10 @@ The following data points will be imported into DATIM from this section:
 
 ### Already on ART
 
-For the purposes of COP21 target setting in the DataPack, FY24 targets
+For the purposes of COP21 target setting in the Target Setting Tool, FY24 targets
 for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
-words, the following holds true in the DataPack:
+words, the following holds true in the Target Setting Tool:
 
 $$
 {TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}
@@ -223,15 +223,15 @@ No data from this section will be imported into DATIM.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to TB_STAT are warranted may prevent issues and
-    additional work in other sections of the DataPack.
+    additional work in other sections of the Target Setting Tool.
 
-3.  Return to other tabs of the DataPack where issues flagged in this
+3.  Return to other tabs of the Target Setting Tool where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
     sections can be also found in each of these other tabs of the
-    DataPack. You may also use hyperlinks in column headers in this
+    Target Setting Tool. You may also use hyperlinks in column headers in this
     section to quickly navigate to the most relevant section of the
-    DataPack.
+    Target Setting Tool.
 
 \elandscape
 

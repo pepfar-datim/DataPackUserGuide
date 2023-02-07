@@ -2,29 +2,17 @@
 
 ## Section 7 Changes
 
-**Reorienting of the Cascade Tab around PVLS**, rather than ART Coverage, although both are taken into account. This year's new shift to begin setting the Cascade from Program Viral Load Suppression. This starting point will allow for country team users to build up a full cascade that will provide insight into VLS, VL Testing and how this will translate into determining the new on treatment and those returning to treatment. It will provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. This will allow countries that are at or close to Epidemic Control to better approach the understanding of how they will continue to sustain their 95-95-95 goals. This approach will put a greater emphasis on the Coverage Cascade as the driver of the target setting process, a direct shift from the past 5 years that have focused on the first two Cascades, and paint a picture of both VL to gap in Treatment and Testing.
+**Reorienting of the Cascade Tab Viral Load Coverage and Gap Analysis**, rather than ART Coverage, although both are taken into account. This year's new shift to begin setting the Cascade from Program Viral Load Suppression. This starting point will allow for country team users to build up a full cascade that will provide insight into VLS, VL Testing and how this will translate into determining the new on treatment and those returning to treatment. It will provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. This will allow countries that are at or close to Epidemic Control to better approach the understanding of how they will continue to sustain their 95-95-95 goals. This approach will put a greater emphasis on the Coverage Cascade as the driver of the target setting process, a direct shift from the past 5 years that have focused on the first two Cascades, and paint a picture of both VL to gap in Treatment and Testing.
 
 ## MER2.6 Changes
 
-**Changes in line with MER 2.6**:
+**Changes in line with MER 2.6.1**:
 
--   Use of PrEP_CT in lieu of PrEP_CURR.
+-   Integration of the new collapsed HTS modalities. For target setting there has been a collapse of many modalities to reduce the total number of targets being set, while still  maintaining an infectious disease testing approach. More insight into these modalities will be in the HTS section of the User Guide. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
--   Integration of the new SNS modality.
+-   Reduction of Target Setting Age Bands. The number of Cascade Age Bands has been reduced from COP22. This year teams will set Targets using the following age bands: <01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. In most target setting tabs, these are the age bands that will be present, however due to the nature of certain tabs and the already smaller scope of ages on which the prevention or treatment focuses, AGYW and OVC will retain their historic target setting age bands. 
 
--   50+ finer age bands across the clinical cascade. These will be aggregated to 50+ upon DATIM import for all but TX_CURR.
-
-The introduction of 65+ age bands for TX_CURR targets this year will be visible across the Cascade, PMTCT, TB, and VMMC tabs. For structural purposes of these tabs to seamlessly work with the new inclusion of the 50+ finer age bands, targets will be set across many indicators at the finer age bands across the clinical cascade. The most important thing for users to note is that these will be aggregated to 50+ upon DATIM import for all but TX_CURR. The breakdown that has been used to disaggregate the 50+ age band into the finer age bands up to 65+ is the following:
-
--   50-54: 42%
-
--   55-59: 35%
-
--   60-64 14%
-
--   65+: 9%
-
-These percentages were determined through various research studies. If teams feel as though they need to adjust the breakdowns based on local data and research they are able to do so, but should first consult their Chair, PPM and DUIT Liaison.
+-   Year 2 Targets. In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcomign fiscal year. Year 2 targets will not be imported into DATIM and will only be set at a National Level with Age/Sex dissaggregates. 
 
 ## **PSNUxIM Tool Formulas**
 

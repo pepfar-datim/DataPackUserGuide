@@ -22,14 +22,14 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **SNU Prioritization (FY23)** $IMPATT.PRIORITY\_SNU.T$
+-   **SNU Prioritization (FY24)** $IMPATT.PRIORITY\_SNU.T$
 
 ### Instructions
 
-1.  Review the column "SNU Prioritization (FY22)" which will indicate
+1.  Review the column "SNU Prioritization (FY23)" which will indicate
     prioritization levels set in COP22 for each PSNU.
 
-2.  Review "SNU Prioritization (FY23)" and adjust as appropriate for
+2.  Review "SNU Prioritization (FY24)" and adjust as appropriate for
     COP21 programming. This is currently set to populate with the same
     level of prioritization that was referenced in step 1. Overwrite
     this column to set new levels of prioritization based on the list
@@ -54,10 +54,10 @@ The following data points will be imported into DATIM from this section:
 
     -   "NA","Not a PSNU" = "INVALID"
 
-3.  Review the column "FY23 SNU Prioritization Translation" to ensure
+3.  Review the column "FY24 SNU Prioritization Translation" to ensure
     the prioritization level for each PSNU is correct. To make any
-    changes, only edit the column "SNU Prioritization (FY23)" from
-    Step 2.
+    changes, only edit the column "SNU Prioritization (FY24)" from Step
+    2.
 
 \elandscape
 

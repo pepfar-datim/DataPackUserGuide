@@ -32,11 +32,11 @@ for (t in table_seq(data, max_col = 4)) {
 
 ### DATIM Import
 
-No data will be imported from this section of the DataPack.
+No data will be imported from this section of the Target Setting Tool.
 
 ### Instructions
 
-1.  For context, review the following data, pulled from other locations in the DataPack and gathered here for reference:
+1.  For context, review the following data, pulled from other locations in the Target Setting Tool and gathered here for reference:
 
     a.  Host Country ART Coverage (FY23) (%)
 
@@ -66,13 +66,13 @@ for (t in table_seq(data, max_col = 4)) {
 
 ### DATIM Import
 
-No data will be imported from this section of the DataPack.
+No data will be imported from this section of the Target Setting Tool.
 
 ### Instructions
 
 1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2022 Guidance document for the required parameters based on TX coverage.
 
-2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the DataPack. Note that to adjust these allocations, you must return to the section or tab of the DataPack where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
+2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the Target Setting Tool. Note that to adjust these allocations, you must return to the section or tab of the Target Setting Tool where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
 
 
     c.  PMTCT_STAT: New Positives (FY24)
@@ -154,7 +154,7 @@ for (t in table_seq(data, max_col = 4)) {
 
 ### DATIM Import
 
-No data points will be imported to DATIM from this section of the DataPack.
+No data points will be imported to DATIM from this section of the Target Setting Tool.
 
 ### Instructions
 
@@ -166,13 +166,13 @@ No data points will be imported to DATIM from this section of the DataPack.
 
 ### Resolve HTS_TST_POS Rounding Differences
 
-In the process of allocating HTS_TST_POS targets across HTS modalities, the multiplication of integer values representing whole people by percentage allocations, followed by rough rounding, often causes slight rounding errors to accumulate across ages, sexes, and geographies. In situations where there may be significantly small HTS_TST_POS targets being spread over multiple HTS modalities, the aggregation of many small rounding errors can lead to large differences in planned and final HTS_TST_POS. This section of the DataPack is built to help identify and resolve these cases, where they occur.
+In the process of allocating HTS_TST_POS targets across HTS modalities, the multiplication of integer values representing whole people by percentage allocations, followed by rough rounding, often causes slight rounding errors to accumulate across ages, sexes, and geographies. In situations where there may be significantly small HTS_TST_POS targets being spread over multiple HTS modalities, the aggregation of many small rounding errors can lead to large differences in planned and final HTS_TST_POS. This section of the Target Setting Tool is built to help identify and resolve these cases, where they occur.
 
-Prior to using this section, it is key that all allocations be complete, either in those modalities called out specifically in the Cascade tab, or in the HTS tab's Distribution of Positive Tests section. With this complete, only true rounding error cases will remain to be identified in this section of the DataPack.
+Prior to using this section, it is key that all allocations be complete, either in those modalities called out specifically in the Cascade tab, or in the HTS tab's Distribution of Positive Tests section. With this complete, only true rounding error cases will remain to be identified in this section of the Target Setting Tool.
 
 Cases where rounding errors may have occurred will be highlighted in red formatting in the column titled, "HTS_TST_POS difference to adjust"; Excel filters may be helpful in narrowing to these rows.
 
-By first reviewing and refining allocations in the Cascade tab of the DataPack for overall HTS_INDEX, PMTCT_STAT, HTS_TST PMTCT Post ANC1, TB_STAT, and VMMC_CIRC, any rounding errors still present on the HTS tab are more likely the result of distributions decided on this tab across the following modalities:
+By first reviewing and refining allocations in the Cascade tab of the Target Setting Tool for overall HTS_INDEX, PMTCT_STAT, HTS_TST PMTCT Post ANC1, TB_STAT, and VMMC_CIRC, any rounding errors still present on the HTS tab are more likely the result of distributions decided on this tab across the following modalities:
 
 -   Active Index (%)
 
@@ -210,7 +210,7 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review FY23 targets for HTS_SELF included in the DataPack, reflecting data reported in DATIM.
+1.  Review FY23 targets for HTS_SELF included in the Target Setting Tool, reflecting data reported in DATIM.
 
 2.  Review and adjust the % Change in HTS_SELF to set the rate at which FY24 targets for HTS_SELF should either increase or decrease from FY23 Targets.
 

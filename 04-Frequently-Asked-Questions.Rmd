@@ -10,7 +10,7 @@ A: This is a bug with the conditional formatting of the column. Because surround
 
 ***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
 
-A: For cells that are labeled with "\*For DOD Military Use Only", in OU DataPacks that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
+A: For cells that are labeled with "\*For DOD Military Use Only", in OU Target Setting Tools that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
 
 ***Q: I have generated a PSNUxIM Tab, but there are duplicate rows for the 50+ age band that have been added to the bottom on the tab, how can I fix this?***
 
@@ -24,56 +24,37 @@ A: For countries that generated a PSNUxIM tab and have the presence of the dupli
 
 A: AGYW_PREV is reported by the USG team, not an IM, it doesn't have to be assigned to an IM. It is automatically assigned to USG team.
 
-***Q: On the HTS tab, the reference columns for "Host Country Est. ART Coverage (FY22) (%)" (column F) and "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)" (column G) are highlighting red for the 50+ Age bands. Why are these percentages so high?***
-
-A: There is an error in the formula. Though this is only a reference formula and will not impact any calculations for targets on the HTS Tab, the following new formulas can be applied to these columns to fix this error. The two formulas below you will be able to copy into your DataPack to resolve this. Please note that when you copy this formula, that you paste it into ROW 15 of the HTS tab and then drag the formula down across all rows in that column.
-
-For Column F "Host Country Est. ART Coverage (FY22) (%)", paste the following into cell F15 and drag it down:
-
-    =IFERROR(1/(1/IF($C15="50+",AVERAGE(AVERAGEIFS(Cascade!$BU:$BU,Cascade!$B:$B,$B15,Cascade!$C:$C,{"50-54","55-59","60-64","65+"},Cascade!$D:$D,$D15)),INDEX(Cascade!$BU:$BU,MATCH($E15,Cascade!$E:$E,0)))),"")
-
-For Column G "Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)", paste the following into cell G15 and drag it down:
-
-    =IFERROR(1/(1/IF($C15="50+",AVERAGE(AVERAGEIFS(Cascade!$AL:$AL,Cascade!$B:$B,$B15,Cascade!$C:$C,{"50-54","55-59","60-64","65+"},Cascade!$D:$D,$D15)),INDEX(Cascade!$AL:$AL,MATCH($E15,Cascade!$E:$E,0)))),"")
-
-This should resolve this issue.
-
 ***Q: Cascade Tab "Host Country Context" section column V "H.C. Est. ART Patients Tested for VLS" and column X "H.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?***
 
-A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the DataPack will work with your PEPFAR TX_PVLS data on it's own.
+A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the Target Setting Tool will work with your PEPFAR TX_PVLS data on it's own.
 
-***Q: I have an outstanding COP21 OPU for IM shifts, what should I do?***
+***Q: I have an outstanding COP22 OPU for IM shifts, what should I do?***
 
-A: For OU's with outstanding target-shift OPUs that are only shifting targets from one IM to another. This OPU will not affect the DataPack that has been issued thus far since it does not have a generated PSNUxIM tab (note this tab [should not be generated]{.underline} until all main tabs have been filled-in). However, if the team would like the OPU to be taken into account in the COP22 DataPack's PSNUxIM tab, the OU SI teams should NOT generate a PSNUxIM tab for the COP22 DataPack until their target shift OPU memos are fully approved, and the target shifts are imported into DATIM. Otherwise, they should be prepared to also make the allocation updates in their COP22 PSNUxIM tab that will align with the OPU update.
-
+A: For OU's with outstanding target-shift OPUs that are only shifting targets from one IM to another. This OPU will not affect the Target Setting Tool that has been issued thus far since it does not have a generated PSNUxIM tab (note this tab [should not be generated]{.underline} until all main tabs have been filled-in). However, if the team would like the OPU to be taken into account in the COP22 Target Setting Tool's PSNUxIM tab, the OU SI teams should NOT generate a PSNUxIM tab for the COP22 Target Setting Tool until their target shift OPU memos are fully approved, and the target shifts are imported into DATIM. Otherwise, they should be prepared to also make the allocation updates in their COP22 PSNUxIM tab that will align with the OPU update.
 
 ***Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disaggregates are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?***
 
 A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop. Note however, that only clinical, facility partners may have targets and report many indicators. For these indicators, the KP targets must be assigned to a partner and site qualified to report the results.
 
-***Q: Can you use FY23 Spectrum estimates to work through the Cascade tab?***
+***Q: Can you use FY24 Spectrum estimates to work through the Cascade tab?***
 
-A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP22 DataPack should be to set FY23 targets based on where you are ending FY22.
-
-***Q: Is the coverage rate that is used to calculate "Targeted Host Country TX_CURR_SUBNAT (FY22)" and "Targeted Host Country TX_NET_NEW_SUBNAT (FY22)" too high or being miscalculated?***
-
-A: No, this is not a formula error. The calculations occurring are focusing on PLHIV for each district that are being treated for HIV/AIDS for each age band, as opposed to those being treated for HIV/AIDS in the district regardless of whether they live in that district. if the PEPFAR results are higher than the PLHIV Spectrum estimate in a particular district, then back-calculating the coverage rate shows a greater than 100% value for that PSNU-Age-Sex band. This can come from one of two things generally: People are coming from outside the district to seek treatment, leading to a higher PEPFAR TX_CURR value than PLHIV in the district; or The PLHIV estimate from Spectrum is too low. Either way if you have good programmatic reason for doing so, particularly health seeking behavior of PLHIV, you can aim for a coverage rate even higher than 100% (e.g., current coverage in capital city is estimated at 105%, but due to health seeking behavior you want to aim for 120% to achieve 95% for across all metropolitan area).
+A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP23 Target Setting Tool should be to set FY24 targets based on where you are ending FY23.
 
 ***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
 
-A: Once you have regenerated your PSNUxIM tab from the DataPack Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right "Target Values" section of the PSNUxIM tab to ensure all rows are populated with the proper formula.
+A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right "Target Values" section of the PSNUxIM tab to ensure all rows are populated with the proper formula.
 
-***Q: If my program performs testing but not treatment, how do I represent this in the DataPack?***
+***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 
-A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY22)" (BD). Please make the alterations to this column and not on the HTS tab.
+A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY23)" (BH). Please make the alterations to this column and not on the HTS tab.
 
-***Q: When I try to validate my DataPack in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
+***Q: When I try to validate my Target Setting Tool in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
 
 A: This error can be caused by a number of different issues. The most common causes and their resolutions include:
 
--   Trying to validate a newly regenerated DataPack before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.
+-   Trying to validate a newly regenerated Target Setting Tool before opening it and saving it. After generating or regenerating your PSNUxIM tab, it is necessary to first open your tool and save it before uploading it to the app.
 -   The browser is causing issues with the app. This can be resolved by opening an Incognito window or by clearing your cache. PLEASE NOTE: Clearing your cache will sign you out of all accounts in that browser.
--   Trying to validate a file that isn't an XLSX. If your team has saved your DataPack in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.
+-   Trying to validate a file that isn't an XLSX. If your team has saved your Target Setting Tool in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.
 -   The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the "Target Value" section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.
 
-If none of the above issues apply to your DataPack tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the DataPack tool that caused the error in the app.
+If none of the above issues apply to your Target Setting Tool tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Target Setting Tool tool that caused the error in the app.

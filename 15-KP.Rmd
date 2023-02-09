@@ -379,7 +379,6 @@ The following data points will be imported into DATIM from this section:
 > Cascade tab, therefore be sure to review KP targets against total
 > population targets in the KP Validation tab to ensure Key Population
 > targets do not exceed total population targets set on the Cascade tab.
-
 ## KP: HTS_TST
 
 **HTS_TST:** Number of individuals who received HIV Testing Services
@@ -452,7 +451,6 @@ The following data points will be imported into DATIM from this section:
 > therefore be sure to review KP targets against total population
 > targets in the KP Validation tab to ensure Key Population targets do
 > not exceed total population targets set on the Cascade tab.
-
 ## KP: HTS_RECENT
 
 **HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged
@@ -492,20 +490,19 @@ The following data points will be imported into DATIM from this section:
 > to review KP targets against total population targets in the KP
 > Validation tab to ensure Key Population targets do not exceed total
 > population targets set on the HTS_RECENT tab.
-
 ## KP: HTS_SELF
 
 **HTS_SELF:** Number of individual HIV self-test kits distributed.
 
-```{r echo=FALSE, results='asis'}
-sheet_name <- "KP"
-section <- "HTS_SELF"
-columns <- col_seq("AO", "AP")
-data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
-  make_table(t, section)
-  }
-```
+<!-- # ```{r echo=FALSE, results='asis'} -->
+<!-- # sheet_name <- "KP" -->
+<!-- # section <- "HTS_SELF" -->
+<!-- # columns <- col_seq("AM", "AN") -->
+<!-- # data <- prepare_table_data(sheet_name, columns) -->
+<!-- # for (t in table_seq(data)) { -->
+<!-- #   make_table(t, section) -->
+<!-- #   } -->
+<!-- # ``` -->
 
 ### DATIM Import
 

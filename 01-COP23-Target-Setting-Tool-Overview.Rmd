@@ -118,53 +118,50 @@ Summary (SDS) tables, where appropriate (Target related data).
 
 ***Target Setting Tool Review***
 
-+--------+--------+--------+--------+--------+--------+
-|        | Single | Single | Single | OUs at |Regional|
-|        | OU     | OU     | OU     | Epi    |    /   |
-|        | Track: | Track: | Track: | Control| Country|
-|        | Group  | Group  | Group  |        | Pair   |
-|        | 1      | 2      | 3      |        | Track  |
-+========+========+========+========+========+========+
-| 1st    | Feb 28 | Mar 7  | Mar 14 | Mar 7  | Feb 28 |
-| Draft  |        |        |        | or Mar |        |
-| Tool   |        |        |        | 14     |        |
-| Submi  |        |        |        |        |        |
-| ssion  |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| COP    | Mar    | Mar    | Mar    | Mar    | Mar    |
-| Meeting| 7-11   | 14-18  | 22-25  | 14-18  | 22-25  |
-|        |        |        |        | or Mar |        |
-|        |        |        |        | 22-25  |        |
-+--------+--------+--------+--------+--------+--------+
-| Mid    |        |        |        |        |        |
-| -point |        |        |        |        |        |
-| Tool   |        |        |        |        |        |
-| Check  |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| Tools  | Apr 4  | Apr 11 | Apr 18 | Apr 11 | Apr 18 |
-| Due    |        |        |        | or Apr |        |
-| for    |        |        |        | 18     |        |
-| Final  |        |        |        |        |        |
-| Review |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| Additi |        |        |        |        | Rolling|
-| onal   |        |        |        |        |        |
-|        |        |        |        |        | Each   |
-| Touch  |        |        |        |        | Monday |
-| points/|        |        |        |        |        |
-| Reviews|        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| Tools  | Apr 11 | Apr 18 | Apr 25 | Apr 18 | Apr 25 |
-| Submit |        |        |        | or Apr |        |
-| ted    |        |        |        | 25     |        |
-| for    |        |        |        |        |        |
-| Upload |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
-| COP21  | Apr 19 | Apr 22 | Apr 29 | Apr 22 | Apr 29 |
-| Submi  |        |        |        | or Apr |        |
-| ssion  |        |        |        | 29     |        |
-| Due    |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+
++-------------+-------------+
+|             |             |
+|             | COP/ROP 23  |
+|             | Timeline    |
+|             |             |
+|             |             |
++=============+=============+
+|             |             |
+| Feb 27 -    | Johannesburg|
+| March 10    | Co-Planning |
+|             | Meetings    |
+|             |             |
++-------------+-------------+
+|             |             |
+| March 6 -   | In-Country  |
+| March 24    | Strategy    |
+|             | Planning    |
+|             |             |
++-------------+-------------+
+|             |             |
+| March 20 -  | Strategy &  |
+| March 31    | Tool        |
+|             | Checkpoint 1|
+|             |             |
++-------------+-------------+
+|             |             |
+| March 27 -  | Stakeholder |
+| April 7     | Meeting &   |
+|             | Stratgy     |
+|             | Update      |
++-------------+-------------+
+|             |             |
+| April 11 -  | Incorporate |
+| April 21    | Feedback &  |
+|             | Complete    |
+|             | Tool        |
+|             | Checkpoint 2|
++-------------+-------------+
+|             |             |
+| April 24 -  | Virtual     |
+| April 28    | Approval    |
+|             | Meetings    |
+|             |             |
++-------------+-------------+
 
 **Submission Process**
 
@@ -185,10 +182,10 @@ For each of the below submissions, the following process will occur:
     -   A link to the Target Setting Tool file saved in SharePoint
 
     -   Confirmation that this file has been pre-validated in the
-        DataPack Self-Service App
+        Target Setting Tool (DataPack) Self-Service App
 
     -   Confirmation that this file has been sent to PAW via the
-        DataPack Self-Service App
+        Target Setting Tool (DataPack) Self-Service App
 
     -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
         members that should be aware of ongoing review and discussions.
@@ -200,7 +197,7 @@ For each of the below submissions, the following process will occur:
 -   The PPM reviews the ticket/email thread and confirms the correct
     individuals have all been copied.
 
--   The assigned PPM and the assigned DUIT Liaison use both the DataPack
+-   The assigned PPM and the assigned DUIT Liaison use both the Target Setting Tool
     Self-Service App and the PAW COP Dossiers to validate and review the
     Target Setting Tool, noting any feedback in the ticket/email thread.
 
@@ -265,7 +262,7 @@ addition of more data to the PSNUxIM tab.
     Target Setting Tool to DATIM.
 
 -   Note authority to waive any lingering validation issues flagged by
-    the DataPack Self-Service App.
+    the Target Setting Tool Self-Service App.
 
 Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk
 thread/ticket, the Target Setting Tool Support Team will move forward with
@@ -295,7 +292,7 @@ The Target Setting Tool will be posted on PEPFAR SharePoint:
 Each Target Setting Tool will start with 20 tabs organized in the order presented
 below. Upon downloading the Target Setting Tool, the PSNUxIM tab will appear as a
 blank sheet, but will be generated by the self-service validation app
-after you submit your preliminary DataPack.
+after you submit your preliminary Target Setting Tool.
 
 -   Home
 
@@ -359,7 +356,7 @@ knitr::include_graphics("./images/image4.png")
 
 \newpage
 
-## How to Navigate a DataPack Tab
+## How to Navigate a Target Setting Tool Tab
 
 ```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/image5.png")
@@ -390,7 +387,7 @@ knitr::include_graphics("./images/image9.png")
 
 ## Adjustments to Historic Targets and Results
 
-Throughout the DataPack, historic targets and results have been provided
+Throughout the Target Setting Tool, historic targets and results have been provided
 for reference and often to drive target modeling algorithms. If, in the
 process of reviewing these historic data, issues with the data are
 discovered that may need to be addressed in DATIM, follow the below
@@ -402,10 +399,10 @@ procedure:
 
 2.  It maybe that together with your PPM and DUIT Liaison you decide
     that changes to historic values are not necessary in DATIM, but
-    still necessary in the DataPack. This is an extraordinary
+    still necessary in the Target Setting Tool. This is an extraordinary
     circumstance and must have approval from PRIME/DUIT leadership via
     your Liaison to allow. If approved, you may make changes directly in
-    the related column of the DataPack.
+    the related column of the Target Setting Tool.
 
 3.  If it is the case that DATIM values should be updated, follow the
     usual process for OPU Target changes, requesting all necessary
@@ -413,76 +410,174 @@ procedure:
 
 4.  Once changes are aprroved, either through an OPU for targets, or
     through data change request for results, you can enter the new
-    values into the related column of the DataPack yourself. If you wish
-    to request a new DataPack, you may do so, but will have to start the
-    DataPack process afresh. For either of these routes, reach out to
-    the DataPack Systems Team via Zendesk for support.
+    values into the related column of the Target Setting Tool yourself. If you wish
+    to request a new Target Setting Tool, you may do so, but will have to start the
+    Target Setting Tool process afresh. For either of these routes, reach out to
+    the Target Setting Tool Systems Team via Zendesk for support.
 
-## DataPack Assumptions
+## Target Setting Tool Assumptions
 
 There are many pre-populated assumptions that appear throughout the
-DataPack. These assumptions are included as a result of COP and MER
-Guidance. Although DataPacks come pre-populated with these assumptions,
+Target Setting Tool. These assumptions are included as a result of COP and MER
+Guidance. Although Target Setting Tools come pre-populated with these assumptions,
 there are various cases and guidance that allow user's to make edits to
 these assumptions. Below is a table of all pre-populated assumptions,
-the tab in which they are located, the Indicator, the Assumption, and
-guidance needed to make the changes and if any approvals are needed.
+the tab in which they are located, the Indicator, the Assumption. 
+**Please note that all of these assumptions are all in in editable (Blue) columns** 
+in the Target Setting Tool, to align with COP Reform and allow for a reduction
+of LOE and need for approvals. Changing these assumptions do not require
+approval, and teams are free to change these assumptions as needed.
 
++---------+---------+---------+---------+
+| Tab     | Section |Indicator| Assumpt |
+|         |         |         | tion    |
++=========+=========+=========+=========+
+| Cascade |         |         |         |
+|         | ART     |         | 90%     |
+|         | Modeling|         |         |
+|         |         |         |         |
+|         |         | Targeted|         |
+|         |         | Partner |         |
+|         |         | Country |         |
+|         |         | ART     |         |
+|         |         | Coverage|         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| Cascade | ART     | T       | 98%     |
+|         | Initia  | argeted |         |
+|         | tion    | Re      |         |
+|         |         | tention |         |
+|         |         | Rate -  |         |
+|         |         | Already |         |
+|         |         | on ART  |         |
+|         |         | (FY22)  |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| Cascade | ART     | T       | 98%     |
+|         | Initia  | argeted |         |
+|         | tion    | Re      |         |
+|         |         | tention |         |
+|         |         | Rate -  |         |
+|         |         | New on  |         |
+|         |         | ART     |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| Cascade | ART     | Percent | 100%    |
+|         | Initia  | Initia  |         |
+|         | tion    | ted     |         |
+|         |         | on ART  |         |
+|         |         | that are|         |
+|         |         | TX      |         |
+|         |         | Naive   |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| Cascade | VL      | \% of   | 70%     |
+|         | Testing | TX_NEW  |         |
+|         | Coverage| E       |         |
+|         |         | ligible |         |
+|         |         | for VL  |         |
+|         |         | Test    |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| Cascade | VL      |         | 95%     |
+|         | Testing |         |         |
+|         | Coverage| Planned |         |
+|         |         | VLT     |         |
+|         |         | Coverage|         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Tab     | Section |Indicator| Assumpt | Guidance|         |
-|         |         |         | tion    |         |         |
-+=========+=========+=========+=========+=========+=========+
-| Cascade |         |         |         |         |         |
-|         | Host    |         | 90%     |         |         |
-|         | Country |         |         |         |         |
-|         | Context |         |         |         |         |
-|         |         | Targeted|         | Free to |         |
-|         |         | Host    |         | change  |         |
-|         |         | Country |         | depend  |         |
-|         |         | ART     |         | ing     |         |
-|         |         | Coverage|         | on      |         |
-|         |         | (FY23)  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | long    |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | Guidance|         |
+| Cascade | Viral   |         | 95%     | Free    |         |
+|         | Load    | Targeted|         | to      |         |
+|         | Suppres | VL      |         | Change  |         |
+|         | sion    | Suppres |         |         |         |
+|         |         | sion    |         |         |         |
+|         |         | Rate    |         |         |         |
+|         |         | (FY24)  |         |         |         |
+|         |         | (%)     |         |         |         |
+|         |         |         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | Host    |         | 95%     | Free to |         |
-|         | Country | Targeted|         | change  |         |
-|         | Context | Host    |         | de      |         |
-|         |         | Country |         | pending |         |
-|         |         | CVLS    |         | on      |         |
-|         |         | (FY23)  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | long    |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | Guidance |        |
+| Cascade | Testing |         | 95%     | Free    |         |
+|         |         | Targeted|         | to      |         |
+|         |         | ART     |         | Change  |         |
+|         |         | Linkage |         |         |         |
+|         |         | Rate    |         |         |         |
+|         |         | (FY24)  |         |         |         |
+|         |         | (%)     |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | TX_PVLS | PEPFAR  | 95%     | Re      |         |
-|         | (D)     |         |         | duction |         |
-|         |         | Targeted|         | r       |         |
-|         |         | VLS     |         | equires |         |
-|         |         | Rate    |         | Chair   |         |
-|         |         | (FY23)  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
+| KP      | TX_NEW  | T       | 98%     | Free    |         |
+|         |         | argeted |         | to      |         |
+|         |         | Re      |         | Change  |         |
+|         |         | tention |         |         |         |
+|         |         | Rate -  |         |         |         |
+|         |         | Already |         |         |         |
+|         |         | on ART  |         |         |         |
+|         |         | (FY24)  |         |         |         |
+|         |         | (%)     |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | TX_NEW  | \% of   | 70%     | Free to |         |
-|         |         | TX_NEW  |         | change  |         |
-|         |         | E       |         | de      |         |
-|         |         | ligible |         | pending |         |
-|         |         | for VL  |         | on      |         |
-|         |         | Test    |         | local   |         |
-|         |         | (%)     |         | policy  |         |
-|         |         |         |         | (70%    |         |
-|         |         |         |         | for     |         |
+| KP      | TX_NEW  | T       | 98%     | Free    |         |
+|         |         | argeted |         | to      |         |
+|         |         | Re      |         | Change  |         |
+|         |         | tention |         |         |         |
+|         |         | Rate -  |         |         |         |
+|         |         | New on  |         |         |         |
+|         |         | ART     |         |         |         |
+|         |         | (FY24)  |         |         |         |
+|         |         | (%)     |         |         |         |
++---------+---------+---------+---------+---------+---------+
+| KP      | TX_NEW  | Percent | 100%    | Free to |         |
+|         |         | Initia  |         | change, |         |
+|         |         | ted     |         | if      |         |
+|         |         | on ART  |         | needed, |         |
+|         |         | that    |         | along   |         |
+|         |         | are     |         | as in   |         |
+|         |         | TX      |         | line    |         |
+|         |         | Naive   |         | with    |         |
+|         |         | (FY24)  |         | COP     |         |
+|         |         | (%)     |         | Gu      |         |
+|         |         |         |         | idance. |         |
+|         |         |         |         | Re      |         |
+|         |         |         |         | commend |         |
+|         |         |         |         | not     |         |
+|         |         |         |         | ch      |         |
+|         |         |         |         | anging. |         |
++---------+---------+---------+---------+---------+---------+
+| KP      | TX_PVLS | \%      | 70%     | Free to |         |
+|         | (D)     | initia  |         | change  |         |
+|         |         | ted on  |         | de      |         |
+|         |         | ART     |         | pending |         |
+|         |         | Eligible|         | on      |         |
+|         |         | for     |         | local   |         |
+|         |         | VLT     |         | policy  |         |
+|         |         | (FY24)  |         | (70%    |         |
+|         |         | (%)     |         | for     |         |
 |         |         |         |         | 3       |         |
 |         |         |         |         | -month, |         |
 |         |         |         |         | 50% for |         |
@@ -496,62 +591,51 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         |         |         | p       |         |
 |         |         |         |         | riority |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | TX_NEW  | Pro     | 100%    | Re      |         |
-|         |         | portion |         | duction |         |
-|         |         | of e    |         | r       |         |
-|         |         | ligible |         | equires |         |
-|         |         | w/      |         | Chair   |         |
-|         |         | access  |         | a       |         |
-|         |         | to VL   |         | pproval |         |
-|         |         | testing |         |         |         |
+| KP      | TX_PVLS | Planned | 95%     | Free to |         |
+|         | (D)     | VLT     |         | change  |         |
+|         |         | Coverage|         |         |         |
+|         |         | (FY24)  |         |         |         |
 |         |         | (%)     |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | TX_CURR | Pro     | 100%    | Free to |         |
-|         |         | portion |         | change, |         |
-|         |         | of TX\_ |         | if      |         |
-|         |         | NET_NEW |         | needed, |         |
-|         |         | from    |         | along   |         |
-|         |         | New ART |         | as in   |         |
-|         |         | Ini     |         | line    |         |
-|         |         | tiation |         | with    |         |
-|         |         | (FY22)  |         | COP     |         |
-|         |         | (%)     |         | Gu      |         |
-|         |         |         |         | idance. |         |
-|         |         |         |         | Re      |         |
-|         |         |         |         | commend |         |
-|         |         |         |         | not     |         |
-|         |         |         |         | ch      |         |
-|         |         |         |         | anging. |         |
+| KP      | TX_PVLS | T       | 95%     | Free to |         |
+|         | (N)     | argeted |         | change  |         |
+|         |         | VL Supp |         |         |         |
+|         |         | ression |         |         |         |
+|         |         | Rate    |         |         |         |
+|         |         | (FY23)  |         |         |         |
+|         |         | (%)     |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| Cascade | TX_CURR | T       | 98%     | Re      |         |
-|         |         | argeted |         | duction |         |
-|         |         | Re      |         | r       |         |
-|         |         | tention |         | equires |         |
-|         |         | Rate -  |         | Chair   |         |
-|         |         | New on  |         | and     |         |
-|         |         | ART     |         | PRIME   |         |
-|         |         | (FY22)  |         | a       |         |
-|         |         | (%)     |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| Cascade | TX_CURR | T       | 98%     | Re      |         |
-|         |         | argeted |         | duction |         |
-|         |         | Re      |         | r       |         |
-|         |         | tention |         | equires |         |
-|         |         | Rate -  |         | Chair   |         |
-|         |         | Already |         | and     |         |
-|         |         | on ART  |         | PRIME   |         |
-|         |         | (FY22)  |         | a       |         |
-|         |         | (%)     |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| Cascade | testing |         | 95%     | Re      |         |
-|         |         | Targeted|         | duction |         |
-|         |         | ART     |         | r       |         |
-|         |         | Linkage |         | equires |         |
+| KP      | HTS_TST | T       | 95%     | Free to |         |
+|         |         | argeted |         | change  |         |
+|         |         | ART     |         |         |         |
+|         |         | Linkage |         |         |         |
 |         |         | Rate    |         | Chair   |         |
-|         |         | (FY22)  |         | and     |         |
+|         |         | (FY23)  |         | and     |         |
 |         |         | (%)     |         | PRIME   |         |
 |         |         |         |         | a       |         |
 |         |         |         |         | pproval |         |
++---------+---------+---------+---------+---------+---------+
+| KP      | HTS\_   | \% of   | 100%    | Free to |         |
+|         | TST     | HTS_TST |         | change  |         |
+|         | \       | KeyPop  |         | de      |         |
+|         | _RECENT | Po      |         | pending |         |
+|         |         | sitives |         | on      |         |
+|         |         | (FY23)  |         | context |         |
+|         |         | (%)     |         | as      |         |
+|         |         |         |         | along   |         |
+|         |         |         |         | as in   |         |
+|         |         |         |         | line    |         |
+|         |         |         |         | with    |         |
+|         |         |         |         | COP     |         |
+|         |         |         |         | G       |         |
+|         |         |         |         | uidance |         |
 +---------+---------+---------+---------+---------+---------+
 | PMTCT   | PMT     | E       | 0%      | Free to |         |
 |         | CT_STAT | xpected |         | change  |         |
@@ -779,111 +863,7 @@ guidance needed to make the changes and if any approvals are needed.
 |         |         | (FY23)  |         |         |         |
 |         |         | (%)     |         |         |         |
 +---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | Pro     | 100%    | Free to |         |
-|         |         | portion |         | change, |         |
-|         |         | of TX\_ |         | if      |         |
-|         |         | NET_NEW |         | needed, |         |
-|         |         | from    |         | along   |         |
-|         |         | New ART |         | as in   |         |
-|         |         | Ini     |         | line    |         |
-|         |         | tiation |         | with    |         |
-|         |         | (FY23)  |         | COP     |         |
-|         |         | (%)     |         | Gu      |         |
-|         |         |         |         | idance. |         |
-|         |         |         |         | Re      |         |
-|         |         |         |         | commend |         |
-|         |         |         |         | not     |         |
-|         |         |         |         | ch      |         |
-|         |         |         |         | anging. |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | T       | 98%     | Re      |         |
-|         |         | argeted |         | duction |         |
-|         |         | Re      |         | r       |         |
-|         |         | tention |         | equires |         |
-|         |         | Rate -  |         | Chair   |         |
-|         |         | Already |         | and     |         |
-|         |         | on ART  |         | PRIME   |         |
-|         |         | (FY23)  |         | a       |         |
-|         |         | (%)     |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | T       | 98%     | Re      |         |
-|         |         | argeted |         | duction |         |
-|         |         | Re      |         | r       |         |
-|         |         | tention |         | equires |         |
-|         |         | Rate -  |         | Chair   |         |
-|         |         | New on  |         | and     |         |
-|         |         | ART     |         | PRIME   |         |
-|         |         | (FY23)  |         | a       |         |
-|         |         | (%)     |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | \% of   | 70%     | Free to |         |
-|         | (D)     | TX_NEW  |         | change  |         |
-|         |         | E       |         | de      |         |
-|         |         | ligible |         | pending |         |
-|         |         | for VL  |         | on      |         |
-|         |         | Test    |         | local   |         |
-|         |         | (FY23)  |         | policy  |         |
-|         |         | (%)     |         | (70%    |         |
-|         |         |         |         | for     |         |
-|         |         |         |         | 3       |         |
-|         |         |         |         | -month, |         |
-|         |         |         |         | 50% for |         |
-|         |         |         |         | 6-      |         |
-|         |         |         |         | month); |         |
-|         |         |         |         | local   |         |
-|         |         |         |         | policy  |         |
-|         |         |         |         | change  |         |
-|         |         |         |         | should  |         |
-|         |         |         |         | be COP  |         |
-|         |         |         |         | p       |         |
-|         |         |         |         | riority |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | Pro     | 100%    | Re      |         |
-|         | (D)     | portion |         | duction |         |
-|         |         | of e    |         | r       |         |
-|         |         | ligible |         | equires |         |
-|         |         | w/      |         | Chair   |         |
-|         |         | access  |         | ap      |         |
-|         |         | to VL   |         | proval. |         |
-|         |         | testing |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | T       | 95%     | Re      |         |
-|         | (N)     | argeted |         | duction |         |
-|         |         | VL Supp |         | r       |         |
-|         |         | ression |         | equires |         |
-|         |         | Rate    |         | Chair   |         |
-|         |         | (FY23)  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | HTS_TST | T       | 95%     | Re      |         |
-|         |         | argeted |         | duction |         |
-|         |         | ART     |         | r       |         |
-|         |         | Linkage |         | equires |         |
-|         |         | Rate    |         | Chair   |         |
-|         |         | (FY23)  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | HTS\_   | \% of   | 100%    | Free to |         |
-|         | TST     | HTS_TST |         | change  |         |
-|         | \       | KeyPop  |         | de      |         |
-|         | _RECENT | Po      |         | pending |         |
-|         |         | sitives |         | on      |         |
-|         |         | (FY23)  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
+
 | HTS     | H       | \%      | 0%      | Free to |         |
 |         | TS_SELF | Change  |         | change  |         |
 |         |         | in H    |         | de      |         |

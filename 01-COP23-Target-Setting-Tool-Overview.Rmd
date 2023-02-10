@@ -511,667 +511,340 @@ approval, and teams are free to change these assumptions as needed.
 |         |         | (%)     |         |
 |         |         |         |         |
 |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| Cascade | Viral   |         | 95%     | Free    |         |
-|         | Load    | Targeted|         | to      |         |
-|         | Suppres | VL      |         | Change  |         |
-|         | sion    | Suppres |         |         |         |
-|         |         | sion    |         |         |         |
-|         |         | Rate    |         |         |         |
-|         |         | (FY24)  |         |         |         |
-|         |         | (%)     |         |         |         |
-|         |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| Cascade | Testing |         | 95%     | Free    |         |
-|         |         | Targeted|         | to      |         |
-|         |         | ART     |         | Change  |         |
-|         |         | Linkage |         |         |         |
-|         |         | Rate    |         |         |         |
-|         |         | (FY24)  |         |         |         |
-|         |         | (%)     |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | T       | 98%     | Free    |         |
-|         |         | argeted |         | to      |         |
-|         |         | Re      |         | Change  |         |
-|         |         | tention |         |         |         |
-|         |         | Rate -  |         |         |         |
-|         |         | Already |         |         |         |
-|         |         | on ART  |         |         |         |
-|         |         | (FY24)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | T       | 98%     | Free    |         |
-|         |         | argeted |         | to      |         |
-|         |         | Re      |         | Change  |         |
-|         |         | tention |         |         |         |
-|         |         | Rate -  |         |         |         |
-|         |         | New on  |         |         |         |
-|         |         | ART     |         |         |         |
-|         |         | (FY24)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_NEW  | Percent | 100%    | Free to |         |
-|         |         | Initia  |         | change, |         |
-|         |         | ted     |         | if      |         |
-|         |         | on ART  |         | needed, |         |
-|         |         | that    |         | along   |         |
-|         |         | are     |         | as in   |         |
-|         |         | TX      |         | line    |         |
-|         |         | Naive   |         | with    |         |
-|         |         | (FY24)  |         | COP     |         |
-|         |         | (%)     |         | Gu      |         |
-|         |         |         |         | idance. |         |
-|         |         |         |         | Re      |         |
-|         |         |         |         | commend |         |
-|         |         |         |         | not     |         |
-|         |         |         |         | ch      |         |
-|         |         |         |         | anging. |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | \%      | 70%     | Free to |         |
-|         | (D)     | initia  |         | change  |         |
-|         |         | ted on  |         | de      |         |
-|         |         | ART     |         | pending |         |
-|         |         | Eligible|         | on      |         |
-|         |         | for     |         | local   |         |
-|         |         | VLT     |         | policy  |         |
-|         |         | (FY24)  |         | (70%    |         |
-|         |         | (%)     |         | for     |         |
-|         |         |         |         | 3       |         |
-|         |         |         |         | -month, |         |
-|         |         |         |         | 50% for |         |
-|         |         |         |         | 6-      |         |
-|         |         |         |         | month); |         |
-|         |         |         |         | local   |         |
-|         |         |         |         | policy  |         |
-|         |         |         |         | change  |         |
-|         |         |         |         | should  |         |
-|         |         |         |         | be COP  |         |
-|         |         |         |         | p       |         |
-|         |         |         |         | riority |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | Planned | 95%     | Free to |         |
-|         | (D)     | VLT     |         | change  |         |
-|         |         | Coverage|         |         |         |
-|         |         | (FY24)  |         |         |         |
-|         |         | (%)     |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | TX_PVLS | T       | 95%     | Free to |         |
-|         | (N)     | argeted |         | change  |         |
-|         |         | VL Supp |         |         |         |
-|         |         | ression |         |         |         |
-|         |         | Rate    |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-|         |         |         |         |         |         |
-|         |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | HTS_TST | T       | 95%     | Free to |         |
-|         |         | argeted |         | change  |         |
-|         |         | ART     |         |         |         |
-|         |         | Linkage |         |         |         |
-|         |         | Rate    |         | Chair   |         |
-|         |         | (FY23)  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| KP      | HTS\_   | \% of   | 100%    | Free to |         |
-|         | TST     | HTS_TST |         | change  |         |
-|         | \       | KeyPop  |         | de      |         |
-|         | _RECENT | Po      |         | pending |         |
-|         |         | sitives |         | on      |         |
-|         |         | (FY23)  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | PMT     | E       | 0%      | Free to |         |
-|         | CT_STAT | xpected |         | change  |         |
-|         | (D)     | change  |         | de      |         |
-|         |         | in new  |         | pending |         |
-|         |         | ANC     |         | on      |         |
-|         |         | clients |         | context |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | PMTCT_S | T       | SET TO  | Free to |         |
-|         | TAT     | argeted | EQUAL:  | change  |         |
-|         | \       | PEPFAR  | P r     | de      |         |
-|         | _SUBNAT | pro     | ojected | pending |         |
-|         | (D)     | portion | PEPFAR  | on      |         |
-|         |         | of Host | pr o    | context |         |
-|         |         | Country | portion |         |         |
-|         |         | PMTCT   | of Host |         |         |
-|         |         | \_STAT  | Country |         |         |
-|         |         | \       | P M     |         |         |
-|         |         | _SUBNAT | TCT_STA |         |         |
-|         |         | (D)     | T       |         |         |
-|         |         | (FY23)  | \       |         |         |
-|         |         | (%)     | _SUBNAT |         |         |
-|         |         |         | (D)     |         |         |
-|         |         |         | (FY22)  |         |         |
-|         |         |         | (%)     |         |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | PMT     | T       | 100%    | Re      |         |
-|         | CT_STAT | argeted |         | duction |         |
-|         | (N)     | testing |         | r       |         |
-|         |         | c       |         | equires |         |
-|         |         | overage |         | Chair   |         |
-|         |         | of ANC1 |         | and     |         |
-|         |         | clients |         | PRIME   |         |
-|         |         | (FY23)  |         | a       |         |
-|         |         | (%)     |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | PMT     | Est. %  | ca l    | Free to |         |
-|         | CT_STAT | ANC1    | culated | change  |         |
-|         | (N)     | clients |         | de      |         |
-|         |         | already |         | pending |         |
-|         |         | Known   |         | on      |         |
-|         |         | HIV P   |         | context |         |
-|         |         | ositive |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | PMT     | Est.    | ca l    | Free to |         |
-|         | CT_STAT | Pos     | culated | change  |         |
-|         | (N)     | itivity |         | de      |         |
-|         |         | Rate    |         | pending |         |
-|         |         | among   |         | on      |         |
-|         |         | Newly   |         | context |         |
-|         |         | Tested  |         |         |         |
-|         |         | ANC1    |         |         |         |
-|         |         | clients |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| PMTCT   | H       | Yield   | Set to  | Free to |         |
-|         | TS_TST: | (%)     | equal:  | change  |         |
-|         | PMTCT   |         | Yield   | de      |         |
-|         | Post    |         | (FY21 R | pending |         |
-|         | ANC1    |         | esults) | on      |         |
-|         |         |         | (%)     | context |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PM      | T       | 95%     | Re      |         |
-|         | TCT_EID | argeted |         | duction |         |
-|         | (N)     | % HIV   |         | r       |         |
-|         |         | exposed |         | equires |         |
-|         |         | infants |         | Chair   |         |
-|         |         | tested  |         | and     |         |
-|         |         | by 2 mo |         | PRIME   |         |
-|         |         | (%)     |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PM      | T       | 100%    | Re      |         |
-|         | TCT_EID | argeted |         | duction |         |
-|         | (N)     | % HIV   |         | r       |         |
-|         |         | exposed |         | equires |         |
-|         |         | infants |         | Chair   |         |
-|         |         | tested  |         | and     |         |
-|         |         | by 12   |         | PRIME   |         |
-|         |         | mo (%)  |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PMT     | Est. \| |         |         |         |
-|         | CT\_    | Set to  |         |         |         |
-|         | HEI_POS | \| Free |         |         |         |
-|         | (N)     | to      |         |         |         |
-|         |         | change  |         |         |         |
-|         |         | \| Pos  |         |         |         |
-|         |         | itivity |         |         |         |
-|         |         | \|      |         |         |         |
-|         |         | equal:  |         |         |         |
-|         |         | \| de   |         |         |         |
-|         |         | pending |         |         |         |
-|         |         | on      |         |         |         |
-|         |         | context |         |         |         |
-|         |         | \|      |         |         |         |
-|         |         | Rate,   |         |         |         |
-|         |         | $\leq$  |         |         |         |
-|         |         | 02 \|   |         |         |         |
-|         |         | Yield   |         |         |         |
-|         |         | \| mo   |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | \|      |         |         |         |
-|         |         | (FY21   |         |         |         |
-|         |         | \| \|   |         |         |         |
-|         |         | (%) \|  |         |         |         |
-|         |         | R       |         |         |         |
-|         |         | esults) |         |         |         |
-|         |         | \| \|   |         |         |         |
-|         |         | \| (%)  |         |         |         |
-|         |         | \| \|   |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PMT     | Est.    | Set to  | Free to |         |
-|         | CT\_    | Pos     | equal:  | change  |         |
-|         | HEI_POS | itivity | Yield   | de      |         |
-|         | (N)     | Rate,   | (FY21 R | pending |         |
-|         |         | 02 - 12 | esults) | on      |         |
-|         |         | mo      | (%)     | context |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PMT     | \% E    | 70%     | Re      |         |
-|         | CT\_    | ligible |         | duction |         |
-|         | HEI_POS | for VLS |         | r       |         |
-|         | (N)     | Testing |         | equires |         |
-|         |         |         |         | Chair   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PMT     | \% E    | 100%    | Re      |         |
-|         | CT\_    | ligible |         | duction |         |
-|         | HEI_POS | tested  |         | r       |         |
-|         | (N)     | for VLS |         | equires |         |
-|         |         |         |         | Chair   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| EID     | PMT     | Est. VL | 95%     | Re      |         |
-|         | CT\_    | Supp    |         | duction |         |
-|         | HEI_POS | ression |         | r       |         |
-|         | (N)     | Rate    |         | equires |         |
-|         |         | (%)     |         | Chair   |         |
-|         |         |         |         | and     |         |
-|         |         |         |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| TB      | TB_STAT | Es      | 0%      | Free to |         |
-|         | (D)     | timated |         | change  |         |
-|         |         | Change  |         | de      |         |
-|         |         | in In   |         | pending |         |
-|         |         | cidence |         | on      |         |
-|         |         | (%)     |         | context |         |
-+---------+---------+---------+---------+---------+---------+
-| TB      | TB_STAT | T       | 100%    | Re      |         |
-|         | (N)     | argeted |         | duction |         |
-|         |         | TB_STAT |         | r       |         |
-|         |         | C       |         | equires |         |
-|         |         | overage |         | Chair   |         |
-|         |         | (FY23)  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| TB      | TB_STAT | Est. %  | Set to  | Free to |         |
-|         | (N)     | TB      | equal   | change  |         |
-|         |         | clients | FY21    | de      |         |
-|         |         | already | Results | pending |         |
-|         |         | Known   | %       | on      |         |
-|         |         | HIV P   |         | context |         |
-|         |         | ositive |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| TB      | TB_STAT | Est.    | Set to  | Free to |         |
-|         | (N)     | Pos     | equal   | change  |         |
-|         |         | itivity | FY21    | de      |         |
-|         |         | Rate    | Results | pending |         |
-|         |         | among   | %       | on      |         |
-|         |         | Newly   |         | context |         |
-|         |         | Tested  |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| VMMC    | VM      | PEPFAR  | Set to  | Free to |         |
-|         | MC_CIRC | C       | equal   | change  |         |
-|         |         | overage | FY22    | de      |         |
-|         |         | of Host | Targets | pending |         |
-|         |         | Country | %       | on      |         |
-|         |         | VMMC    |         | context |         |
-|         |         | \_CIRC  |         |         |         |
-|         |         | \       |         |         |         |
-|         |         | _SUBNAT |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| VMMC    | VM      | \_M     | SET BY  | Only    |         |
-|         | MC_CIRC | ilitary | DoD     | DOD     |         |
-|         |         | ONLY:   |         | should  |         |
-|         |         | Change  |         | change  |         |
-|         |         | in VM   |         |         |         |
-|         |         | MC_CIRC |         |         |         |
-|         |         | FY      |         |         |         |
-|         |         | 21-FY22 |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| VMMC    | VM      | Est.    | Set to  | Free to |         |
-|         | MC_CIRC | Indet   | equal   | change  |         |
-|         |         | ermin   | FY21    | de      |         |
-|         |         | ate/Not | Results | pending |         |
-|         |         | Tested  | %       | on      |         |
-|         |         | rate    |         | context |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
-| VMMC    | VM      | Est.    | Set to  | Free to |         |
-|         | MC_CIRC | Pos     | equal   | change  |         |
-|         |         | itivity | FY21    | de      |         |
-|         |         | Rate    | Results | pending |         |
-|         |         | among   | %       | on      |         |
-|         |         | Newly   |         | context |         |
-|         |         | Tested  |         |         |         |
-|         |         | (FY23)  |         |         |         |
-|         |         | (%)     |         |         |         |
-+---------+---------+---------+---------+---------+---------+
++---------+---------+---------+---------+
+| Cascade | Viral   |         | 95%     |
+|         | Load    | Targeted|         |
+|         | Suppres | VL      |         |
+|         | sion    | Suppres |         |
+|         |         | sion    |         |
+|         |         | Rate    |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| Cascade | Testing |         | 95%     |
+|         |         | Targeted|         |
+|         |         | ART     |         |
+|         |         | Linkage |         |
+|         |         | Rate    |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| KP      | TX_NEW  | T       | 98%     |
+|         |         | argeted |         |
+|         |         | Re      |         |
+|         |         | tention |         |
+|         |         | Rate -  |         |
+|         |         | Already |         |
+|         |         | on ART  |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| KP      | TX_NEW  | T       | 98%     |
+|         |         | argeted |         |
+|         |         | Re      |         |
+|         |         | tention |         |
+|         |         | Rate -  |         |
+|         |         | New on  |         |
+|         |         | ART     |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| KP      | TX_NEW  | Percent | 100%    |
+|         |         | Initia  |         |
+|         |         | ted     |         |
+|         |         | on ART  |         |
+|         |         | that    |         |
+|         |         | are     |         |
+|         |         | TX      |         |
+|         |         | Naive   |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| KP      | TX_PVLS | \%      | 70%     |
+|         | (D)     | initia  |         |
+|         |         | ted on  |         |
+|         |         | ART     |         |
+|         |         | Eligible|         |
+|         |         | for     |         |
+|         |         | VLT     |         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| KP      | TX_PVLS | Planned | 95%     |
+|         | (D)     | VLT     |         |
+|         |         | Coverage|         |
+|         |         | (FY24)  |         |
+|         |         | (%)     |         |
+|         |         |         |         | 
++---------+---------+---------+---------+
+| KP      | TX_PVLS | T       | 95%     |
+|         | (N)     | argeted |         |
+|         |         | VL Supp |         |
+|         |         | ression |         |
+|         |         | Rate    |         |
+|         |         | (FY23)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| KP      | HTS_TST | T       | 95%     |
+|         |         | argeted |         |
+|         |         | ART     |         |
+|         |         | Linkage |         |
+|         |         | Rate    |         |
+|         |         | (FY23)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| KP      | HTS\_   | \% of   | 100%    |
+|         | TST     | HTS_TST |         |
+|         | \       | KeyPop  |         |
+|         | _RECENT | Po      |         |
+|         |         | sitives |         |
+|         |         | (FY23)  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| PMTCT   | PMT     | E       | 0%      |
+|         | CT_STAT | xpected |         |
+|         | (D)     | change  |         |
+|         |         | in new  |         |
+|         |         | ANC     |         |
+|         |         | clients |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| EID     | PM      | T       | 95%     |
+|         | TCT_EID | argeted |         |
+|         | (N)     | % HIV   |         |
+|         |         | exposed |         |
+|         |         | infants |         |
+|         |         | tested  |         |
+|         |         | by 2 mo |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| EID     | PM      | T       | 100%    |
+|         | TCT_EID | argeted |         |
+|         | (N)     | % HIV   |         |
+|         |         | exposed |         |
+|         |         | infants |         |
+|         |         | tested  |         |
+|         |         | by 12   |         |
+|         |         | mo (%)  |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| EID     | PMT     | Est. ART| 98%     |
+|         | CT\_    | Linkage |         |
+|         | HEI_POS | Rate    |         |
+|         | (N)     | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| EID     | PMT     | Est. TX | 98%     |
+|         | CT\_    | Retent  |         |
+|         | HEI_POS | ion     |         |
+|         | (N)     | Rate    |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| EID     | PMT     | \% E    | 70%     |
+|         | CT\_    | ligible |         |
+|         | HEI_POS | for VLS |         |
+|         | (N)     | Testing |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| EID     | PMT     | Est. VL | 95%     |
+|         | CT\_    | Testing |         |
+|         | HEI_POS | Coverage|         |
+|         | (N)     | Rate    |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| EID     | PMT     | Est. VL | 95%     |
+|         | CT\_    | Supp    |         |
+|         | HEI_POS | ression |         |
+|         | (N)     | Rate    |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| TB      | TB_STAT | Es      | 0%      |
+|         | (D)     | timated |         |
+|         |         | Change  |         |
+|         |         | in In   |         |
+|         |         | cidence |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| HTS     | H       | \%      | 0%      |
+|         | TS_SELF | Change  |         |
+|         |         | in H    |         |
+|         |         | TS_SELF |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| HTS_R   | all mod | \% of   | 100%    | 
+| ECENT   | alities | Po      |         | 
+|         |         | sitives |         | 
+|         |         | 15+     |         |
+|         |         |         |         | 
+|         |         |         |         | 
++---------+---------+---------+---------+
+| CXCA    | CX      | T       | 33%     |
+|         | CA_SCRN | argeted |         |
+|         |         | CXCA Sc |         |
+|         |         | reening |         |
+|         |         | c       |         |
+|         |         | overage |         |
+|         |         | rate    |         |
+|         |         | Already |         | 
+|         |         | On      |         |
+|         |         | ART     |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
+| CXCA    | CX      | T       | 100%    |
+|         | CA_SCRN | argeted |         |
+|         |         | CXCA Sc |         |
+|         |         | reening |         |
+|         |         | c       |         |
+|         |         | overage |         |
+|         |         | rate    |         |
+|         |         | Initia  |         | 
+|         |         | ted On  |         |
+|         |         | ART     |         |
+|         |         | (%)     |         |
++---------+---------+---------+---------+
 
-| HTS     | H       | \%      | 0%      | Free to |         |
-|         | TS_SELF | Change  |         | change  |         |
-|         |         | in H    |         | de      |         |
-|         |         | TS_SELF |         | pending |         |
-|         |         | (%)     |         | on      |         |
-|         |         |         |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| CXCA    | CX      | T       | D       | Free to |         |
-|         | CA_SCRN | argeted | efaults | change  |         |
-|         |         | CXCA Sc | to 50%; | de      |         |
-|         |         | reening |         | pending |         |
-|         |         | c       |         | on      |         |
-|         |         | overage |         | context |         |
-|         |         | rate    |         | as      |         |
-|         |         | (%)     |         | along   |         |
-|         |         |         |         | ref     |         |
-|         |         |         |         | lecting |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | gu      |         |
-|         |         |         |         | idance, |         |
-|         |         |         |         | which   |         |
-|         |         |         |         | was     |         |
-|         |         |         |         | updated |         |
-|         |         |         |         | to      |         |
-|         |         |         |         | suggest |         |
-|         |         |         |         | 100%    |         |
-|         |         |         |         | FY23    |         |
-|         |         |         |         | T       |         |
-|         |         |         |         | X_NEW + |         |
-|         |         |         |         | 33%     |         |
-|         |         |         |         | (1/3)   |         |
-|         |         |         |         | of FY22 |         |
-|         |         |         |         | TX_CURR |         |
-+---------+---------+---------+---------+---------+---------+
-| HTS_R   | all mod | \% of   | 100%    | Free to |         |
-| ECENT   | alities | Po      |         | change  |         |
-|         |         | sitives |         | de      |         |
-|         |         | 15+     |         | pending |         |
-|         |         |         |         | on      |         |
-|         |         |         |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| TX_TB   | TX_TB   | T       | 100%    | Free to |         |
-| \_PREV  | (D)     | argeted |         | change  |         |
-|         |         | co      |         | de      |         |
-|         |         | verage: |         | pending |         |
-|         |         | New on  |         | on      |         |
-|         |         | ART (%) |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| TX_TB   | TX_TB   | T       | 100%    | Free to |         |
-| \_PREV  | (D)     | argeted |         | change  |         |
-|         |         | co      |         | de      |         |
-|         |         | verage: |         | pending |         |
-|         |         | Already |         | on      |         |
-|         |         | on ART  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| TX_TB   | TB_PREV | \%      | 100%    | Free to |         |
-| \_PREV  | (D)     | TX_TB   |         | change  |         |
-|         |         | (D)     |         | de      |         |
-|         |         | Screen  |         | pending |         |
-|         |         | Neg.,   |         | on      |         |
-|         |         | New on  |         | context |         |
-|         |         | ART in  |         | as      |         |
-|         |         | itiated |         | along   |         |
-|         |         | on TPT  |         | as in   |         |
-|         |         | (%)     |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| TX_TB   | TB_PREV | \%      | 90%     | Free to |         |
-| \_PREV  | (D)     | TX_TB   |         | change  |         |
-|         |         | (D)     |         | de      |         |
-|         |         | Screen  |         | pending |         |
-|         |         | Neg.,   |         | on      |         |
-|         |         | Already |         | context |         |
-|         |         | on ART  |         | as      |         |
-|         |         | in      |         | along   |         |
-|         |         | itiated |         | as in   |         |
-|         |         | on TPT  |         | line    |         |
-|         |         | (%)     |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| TX_TB   | TB_PREV | T       | 90%     | Free to |         |
-| \_PREV  | (N)     | argeted |         | change  |         |
-|         |         | TPT com |         | de      |         |
-|         |         | pletion |         | pending |         |
-|         |         | (%)     |         | on      |         |
-|         |         |         |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| PP      | PP_PREV | E       | 0%      | Free to |         |
-|         |         | xpected |         | change  |         |
-|         |         | change  |         | de      |         |
-|         |         | in      |         | pending |         |
-|         |         | PP_PREV |         | on      |         |
-|         |         | s       |         | context |         |
-|         |         | ervices |         | as      |         |
-|         |         | (%)     |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| OVC     | O       | Pr      | 0%      | Free to |         |
-|         | VC_SERV | ojected |         | change  |         |
-|         |         | Net     |         | de      |         |
-|         |         | Change  |         | pending |         |
-|         |         | in O    |         | on      |         |
-|         |         | VC_SERV |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| OVC     | O       | DREAMS  | 0%      | Free to |         |
-|         | VC_SERV | % of    |         | change  |         |
-|         |         | Total O |         | de      |         |
-|         |         | VC_SERV |         | pending |         |
-|         |         | (%)     |         | on      |         |
-|         |         |         |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| OVC     | O       | Pre     | 0%      | Free to |         |
-|         | VC_SERV | ventive |         | change  |         |
-|         |         | % of    |         | de      |         |
-|         |         | Total O |         | pending |         |
-|         |         | VC_SERV |         | on      |         |
-|         |         | (%)     |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| OVC     | O       | T       | 20%     | Free to |         |
-|         | VC_SERV | argeted |         | change  |         |
-|         |         | Gra     |         | de      |         |
-|         |         | duation |         | pending |         |
-|         |         | Rate    |         | on      |         |
-|         |         | among C |         | context |         |
-|         |         | ompre   |         | as      |         |
-|         |         | hensive |         | along   |         |
-|         |         | (%)     |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| OVC     | O VC\_  | \% OVC  | 100%    | Re      |         |
-|         | HIVSTAT | (\<18)  |         | duction |         |
-|         |         | with r  |         | r       |         |
-|         |         | eported |         | equires |         |
-|         |         | HIV     |         | Chair   |         |
-|         |         | Status  |         | and     |         |
-|         |         | (%)     |         | PRIME   |         |
-|         |         |         |         | a       |         |
-|         |         |         |         | pproval |         |
-+---------+---------+---------+---------+---------+---------+
-| GEND    | G       | E       | 0%      | Free to |         |
-|         | END_GBV | xpected |         | change  |         |
-|         |         | change  |         | de      |         |
-|         |         | in GEN  |         | pending |         |
-|         |         | D_GBV - |         | on      |         |
-|         |         | Physic  |         | context |         |
-|         |         | al/Em   |         | as      |         |
-|         |         | otional |         | along   |         |
-|         |         | V       |         | as in   |         |
-|         |         | iolence |         | line    |         |
-|         |         | s       |         | with    |         |
-|         |         | ervices |         | COP     |         |
-|         |         | (%)     |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| GEND    | G       | E       | 0%      | Free to |         |
-|         | END_GBV | xpected |         | change  |         |
-|         |         | change  |         | de      |         |
-|         |         | in GEN  |         | pending |         |
-|         |         | D_GBV - |         | on      |         |
-|         |         | Sexual  |         | context |         |
-|         |         | V       |         | as      |         |
-|         |         | iolence |         | along   |         |
-|         |         | s       |         | as in   |         |
-|         |         | ervices |         | line    |         |
-|         |         | (%)     |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| AGYW    | AG      | Pr      | 0%      | Free to |         |
-|         | YW_PREV | ojected |         | change  |         |
-|         |         | Net     |         | de      |         |
-|         |         | Change  |         | pending |         |
-|         |         | in      |         | on      |         |
-|         |         | Total   |         | context |         |
-|         |         | AG      |         | as      |         |
-|         |         | YW_PREV |         | along   |         |
-|         |         | from    |         | as in   |         |
-|         |         | FY21    |         | line    |         |
-|         |         | Results |         | with    |         |
-|         |         | (%)     |         | COP and |         |
-|         |         |         |         | DREAMS  |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| AGYW    | AG      | T       | 60%     | Free to |         |
-|         | YW_PREV | argeted |         | change  |         |
-|         |         | Percent |         | de      |         |
-|         |         | Com     |         | pending |         |
-|         |         | pletion |         | on      |         |
-|         |         | (%)     |         | context |         |
-|         |         |         |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP and |         |
-|         |         |         |         | DREAMS  |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| K P_MAT | KP_MAT  | T       | Set to  | Free to |         |
-|         |         | argeted | equal   | change  |         |
-|         |         | PEPFAR  | FY22    | de      |         |
-|         |         | C       | Targets | pending |         |
-|         |         | overage | %       | on      |         |
-|         |         | of K    |         | context |         |
-|         |         | P_MAT   |         | as      |         |
-|         |         | \       |         | along   |         |
-|         |         | _SUBNAT |         | as in   |         |
-|         |         | (FY23)  |         | line    |         |
-|         |         | (%)     |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
-| K P_MAT | KP_MAT  | T       | 0%      | Free to |         |
-|         |         | argeted |         | change  |         |
-|         |         | Change  |         | de      |         |
-|         |         | in      |         | pending |         |
-|         |         | KP_MAT  |         | on      |         |
-|         |         | (FY23)  |         | context |         |
-|         |         | (%)     |         | as      |         |
-|         |         |         |         | along   |         |
-|         |         |         |         | as in   |         |
-|         |         |         |         | line    |         |
-|         |         |         |         | with    |         |
-|         |         |         |         | COP     |         |
-|         |         |         |         | G       |         |
-|         |         |         |         | uidance |         |
-+---------+---------+---------+---------+---------+---------+
+| TX_TB   | TX_TB   | T       | 100%    |
+| \_PREV  | (D)     | argeted |         |
+|         |         | co      |         |
+|         |         | verage: |         |
+|         |         | New on  |         |
+|         |         | ART (%) |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| TX_TB   | TX_TB   | T       | 100%    |
+| \_PREV  | (D)     | argeted |         |
+|         |         | co      |         |
+|         |         | verage: |         |
+|         |         | Already |         |
+|         |         | on ART  |         |
+|         |         | (%)     |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| TX_TB   | TB_PREV | \%      | 100%    |
+| \_PREV  | (D)     | TX_TB   |         |
+|         |         | (D)     |         |
+|         |         | Screen  |         |
+|         |         | Neg.,   |         |
+|         |         | New on  |         |
+|         |         | ART in  |         |
+|         |         | itiated |         |
+|         |         | on TPT  |         |
+|         |         | (%)     |         | 
+|         |         |         |         |
+|         |         |         |         | 
++---------+---------+---------+---------+
+| TX_TB   | TB_PREV | \%      | 100%    | 
+| \_PREV  | (D)     | TX_TB   |         |
+|         |         | (D)     |         |
+|         |         | Screen  |         |
+|         |         | Neg.,   |         |
+|         |         | Already |         |
+|         |         | on ART  |         |
+|         |         | in      |         |
+|         |         | itiated |         |
+|         |         | on TPT  |         |
+|         |         | (%)     |         | 
+|         |         |         |         | 
++---------+---------+---------+---------+
+| TX_TB   | TB_PREV | T       | 90%     | 
+| \_PREV  | (N)     | argeted |         |
+|         |         | pletion |         |
+|         |         | (%)     |         | 
+|         |         |         |         | 
+|         |         |         |         |
++---------+---------+---------+---------+
+| PP      | PP_PREV | E       | 0%      |
+|         |         | xpected |         |
+|         |         | change  |         |
+|         |         | PP_PREV |         |
+|         |         | s       |         |
+|         |         | ervices |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| OVC     | O       | T       | 20%     |
+|         | VC_SERV | argeted |         |
+|         |         | Gra     |         |
+|         |         | duation |         |
+|         |         | Rate    |         |
+|         |         | among C |         |
+|         |         | ompre   |         |
+|         |         | hensive |         |
+|         |         | (%)     |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| AGYW    | AG      | Pr      | 0%      |
+|         | YW_PREV | ojected |         |
+|         |         | Net     |         |
+|         |         | Change  |         |
+|         |         | in      |         |
+|         |         | Total   |         |
+|         |         | AG      |         |
+|         |         | YW_PREV |         |
+|         |         | from    |         |
+|         |         | FY21    |         |
+|         |         | Results |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+| AGYW    | AG      | T       | 60%     |
+|         | YW_PREV | argeted |         |
+|         |         | Percent |         |
+|         |         | Com     |         |
+|         |         | pletion |         |
+|         |         | (%)     |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
+|         |         |         |         |
++---------+---------+---------+---------+
+
 
 \newpage

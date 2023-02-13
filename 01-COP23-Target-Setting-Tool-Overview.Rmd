@@ -85,8 +85,8 @@ will be available through COP webinars.
 
 ## Highlighted Changes from COP22 to COP23
 
-The COP23 Target Setting Tool is largely the same as the COP21 Target
-Setting Tool. However, please note the following updates that have been
+The COP23 Target Setting Tool algorithm is largely the same as the COP21
+DataPack. However, please note the following updates that have been
 implemented as a result of multiple feedback sessions with various
 country teams that had been identified by the PRIME team, as well as new
 programmatic changes that are reflected in the Section 7 of COP
@@ -95,70 +95,58 @@ and linkage to the COP guidance based on different aspects of the Target
 Setting Tool that worked well and others that did not during COP21
 target stetting:
 
--   New Cascade Approach that will flow from Program Viral Load
-    Suppression to testing to allow for countries closer or at Epi
-    Control to more easily set targets, based on Section 7 of COP23
-    Guidance.
 
--   Integration of new SNS Modalities for HTS and HTS_Recent.
-
--   Targets will no longer be set for PrEP_CURR, but instead will be set
-    for a replacement indicator of PrEP_CT.
-
--   50+ finer age bands across the clinical cascade. These will be
-    aggregated to 50+ upon DATIM import for all but TX_CURR.
-
--   **PSNUxIM tab structure** that will again handle de-duplication and
-    IM allocation.
+-   **PSNUxIM tab** that will again handle de-duplication and
+    IM allocation has now been moved into a separate file.
 
 ## Data Flow and Review Process to COP23 Submission
 
 The results from FY22 Q4 have been taken from DATIM and used to populate
 the Target Setting Tool. In turn, the Target Setting Tool targets will
-produce FY22 targets that will be subsequently submitted through DATIM
+produce FY24 targets that will be subsequently submitted through DATIM
 after COP23 has been finalized and the PSNU level data entered into the
 Strategic Direction Summary (SDS) tables, where appropriate (Target
 related data).
 
 ***Target Setting Tool Review***
 
-+------------+----------------+
-|            | COP/ROP 23     |
-|            | Timeline       |
-+============+=================+
-| Feb 27 -   | Johannesburg   |
-| March 10   |                |
-|            | Co-Planning    |
-|            |                |
-|            | Meetings       |
-+------------+-----------------+
-| March 6 -  | In-Country     |
-| March 24   | Strategy       |
-|            | Planning       |
-+------------+-----------------+
-| March 20 - | Strategy &     |
-| March 31   | Tool           |
-|            | Checkpoint     |
-|            | 1              |
-+------------+-----------------+
-| March 27 - |                |
-| April 7    | Stakeholder    |
-|            | Meeting &      |
-|            | Stratgy        |
-|            | Update         |
-+------------+-----------------+
-| April 11 - |                |
-| April 21   | Incorporate    |
-|            | Feedback &     |
-|            | Complete       |
-|            | Tool           |
-|            | Checkpoint     |
-|            | 2              |
-+------------+-----------------+
-| April 24 - | Virtual        |
-| April 28   | Approval       |
-|            | Meetings       |
-+------------+-----------------+
++------------+--------------------+
+|               | COP/ROP 23      |
+|               | Timeline        |
++===============+=================+
+| Feb 27 -      | Johannesburg    |
+| March 10      |                 |
+|               | Co-Planning     |
+|               |                 |
+|               | Meetings        |
++---------------+-----------------+
+| March 6 -     | In-Country      |
+| March 24      | Strategy        |
+|               | Planning        |
++---------------+-----------------+
+| March 20 -    | Strategy &      |
+| March 31      | Tool            |
+|               | Checkpoint      |
+|               | 1               |
++---------------+-----------------+
+| March 27 -    |                 |
+| April 7       | Stakeholder     |
+|               | Meeting &       |
+|               | Stratgy         |
+|               | Update          |
++---------------+-----------------+
+| April 11 -    |                 |
+| April 21      | Incorporate     |
+|               | Feedback &      |
+|               | Complete        |
+|               | Tool            |
+|               | Checkpoint      |
+|               | 2               |
++---------------+-----------------+
+| April 24 -    | Virtual         |
+| April 28      | Approval        |
+|               | Meetings        |
++---------------+-----------------+
 
 **Submission Process**
 
@@ -215,7 +203,7 @@ thread/ticket to allow for easy coordination.
 **Submission 1**
 
 -   Validate high-level strategic planning direction aligns with the
-    vision set by the PLL.
+    vision agreed upon Johannesburg Co-Planning Meetings.
 
 -   Highlight any areas for technical assistance.
 

@@ -96,7 +96,7 @@ Setting Tool that worked well and others that did not during COP21
 target stetting:
 
 
--   **PSNUxIM tab** that will again handle de-duplication and
+-   **PSNUxIM tool** that will again handle de-duplication and
     IM allocation has now been moved into a separate file.
 
 ## Data Flow and Review Process to COP23 Submission
@@ -215,7 +215,7 @@ completed or even populated. At this stage, the focus should be on
 ensuring the high-level cascade is strategically aligned, and only
 afterward proceeding to allocating targets to IMs. Note that this is
 also partly to avoid Excel performance issues that may occur with the
-addition of more data to the PSNUxIM tab.
+addition of more data to the PSNUxIM file.
 
 **Submission 2**
 

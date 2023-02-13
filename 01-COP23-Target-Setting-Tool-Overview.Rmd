@@ -113,7 +113,7 @@ target stetting:
 
 ## Data Flow and Review Process to COP23 Submission
 
-The results from APR20 have been taken from DATIM and used to populate
+The results from FY22 Q4 have been taken from DATIM and used to populate
 the Target Setting Tool. In turn, the Target Setting Tool targets will
 produce FY22 targets that will be subsequently submitted through DATIM
 after COP23 has been finalized and the PSNU level data entered into the

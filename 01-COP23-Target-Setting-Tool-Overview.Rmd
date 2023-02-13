@@ -122,43 +122,43 @@ related data).
 
 ***Target Setting Tool Review***
 
-+------------+------------+
-|            | COP/ROP 23 |
-|            | Timeline   |
-+============+============+
-| Feb 27 -   | Jo         |
-| March 10   | hannesburg |
-|            | C          |
-|            | o-Planning |
-|            | Meetings   |
-+------------+------------+
-| March 6 -  | In-Country |
-| March 24   | Strategy   |
-|            | Planning   |
-+------------+------------+
-| March 20 - | Strategy & |
-| March 31   | Tool       |
-|            | Checkpoint |
-|            | 1          |
-+------------+------------+
-| March 27 - | S          |
-| April 7    | takeholder |
-|            | Meeting &  |
-|            | Stratgy    |
-|            | Update     |
-+------------+------------+
-| April 11 - | I          |
-| April 21   | ncorporate |
-|            | Feedback & |
-|            | Complete   |
-|            | Tool       |
-|            | Checkpoint |
-|            | 2          |
-+------------+------------+
-| April 24 - | Virtual    |
-| April 28   | Approval   |
-|            | Meetings   |
-+------------+------------+
++------------+----------------+
+|            | COP/ROP 23     |
+|            | Timeline       |
++============+=================+
+| Feb 27 -   | Jo             |
+| March 10   | hannesburg     |
+|            | C              |
+|            | o-Planning     |
+|            | Meetings       |
++------------+-----------------+
+| March 6 -  | In-Country     |
+| March 24   | Strategy       |
+|            | Planning       |
++------------+-----------------+
+| March 20 - | Strategy &     |
+| March 31   | Tool           |
+|            | Checkpoint     |
+|            | 1              |
++------------+-----------------+
+| March 27 - | S              |
+| April 7    | takeholder     |
+|            | Meeting &      |
+|            | Stratgy        |
+|            | Update         |
++------------+-----------------+
+| April 11 - | I              |
+| April 21   | ncorporate     |
+|            | Feedback &     |
+|            | Complete       |
+|            | Tool           |
+|            | Checkpoint     |
+|            | 2              |
++------------+-----------------+
+| April 24 - | Virtual        |
+| April 28   | Approval       |
+|            | Meetings       |
++------------+-----------------+
 
 **Submission Process**
 

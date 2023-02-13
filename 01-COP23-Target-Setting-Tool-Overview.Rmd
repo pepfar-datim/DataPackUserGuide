@@ -126,10 +126,10 @@ related data).
 |            | COP/ROP 23     |
 |            | Timeline       |
 +============+=================+
-| Feb 27 -   | Jo             |
-| March 10   | hannesburg     |
-|            | C              |
-|            | o-Planning     |
+| Feb 27 -   | Johannesburg   |
+| March 10   |                |
+|            | Co-Planning    |
+|            |                |
 |            | Meetings       |
 +------------+-----------------+
 | March 6 -  | In-Country     |
@@ -141,14 +141,14 @@ related data).
 |            | Checkpoint     |
 |            | 1              |
 +------------+-----------------+
-| March 27 - | S              |
-| April 7    | takeholder     |
+| March 27 - |                |
+| April 7    | Stakeholder    |
 |            | Meeting &      |
 |            | Stratgy        |
 |            | Update         |
 +------------+-----------------+
-| April 11 - | I              |
-| April 21   | ncorporate     |
+| April 11 - |                |
+| April 21   | Incorporate    |
 |            | Feedback &     |
 |            | Complete       |
 |            | Tool           |
@@ -172,7 +172,7 @@ For each of the below submissions, the following process will occur:
     with PAW Dossiers.
 
 -   Country Team saves Target Setting Tool to SharePoint under the OU's
-    HQ Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and
+    HQ Collaboration \> COP 2023 - FY 2024 \> Guidance, Tools, and
     Resources folder.
 
 -   Country Team submits a ticket in ZenDesk that includes:

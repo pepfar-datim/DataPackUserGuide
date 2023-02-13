@@ -81,7 +81,7 @@ developed a process by which targets can be directly imported into DATIM
 via the Target Setting Tool Site Tool in order to generate targets.
 However, this is *only* possible for teams that do not in any way alter
 the structure or format of the Target Setting Tool. Additional details
-are provided in COP Guidance and will be available through COP webinars.
+will be available through COP webinars.
 
 ## Highlighted Changes from COP22 to COP23
 

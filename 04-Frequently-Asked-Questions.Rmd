@@ -46,3 +46,38 @@ A: This error can be caused by a number of different issues. The most common cau
 -   The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the "Target Value" section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.
 
 If none of the above issues apply to your Target Setting Tool tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Target Setting Tool tool that caused the error in the app, please always cc your DUIT Liaison on ZenDesk Tickets.
+
+***Q: The Self-Service Validation App is flagging that I have Invalid Mechanism. How and where do I fix this?***
+
+A: The PSNUxIM tab will only populate with mechanisms that are marked as
+"active" for the current COP year in DATIM. Any mechanisms that are
+manually added to the PSNUxIM tab that are not active and valid will be
+flagged by the Self-Service App.
+
+To ensure a mechanism is valid for the current COP year, go into the COP
+module in FACTS Info-Next Gen (FI-NG) and check the box for "PEPFAR
+Systems Active Reporting Years" for the appropriate COP year. Please
+note that it may take up to 24 hours for active mechanism flags to be
+carried over into DATIM and resolve validation errors in the
+Self-Service App.
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 1.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 2.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 3.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 4.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 5.png")
+```
+

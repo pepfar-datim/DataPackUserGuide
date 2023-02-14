@@ -4,9 +4,9 @@
 
 The Target Setting Tool has been returned to an ART Coverage model, because this tried-and-true algorithm is more stable and user-friendly.  However, it is still important to provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. In particular, despite the return to an ART Coverage model, please retain the focus on Viral Load Coverage that was gained by the COP22 DataPack algorithm.
 
-## MER 2.6.1
+## Changes in line with COP Reform
 
-**Changes in line with COP Reform and MER 2.6.1**:
+**MER 2.6.1**:
 
 -   Integration of the new collapsed HTS modalities. For target setting there has been a collapse of many modalities to reduce the total number of targets being set, while still  maintaining an infectious disease testing approach. More insight into these modalities will be in the HTS section of the User Guide. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
@@ -14,6 +14,10 @@ The Target Setting Tool has been returned to an ART Coverage model, because this
 
 -   Year 2 Targets. In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcoming fiscal year. Year 2 PEPFAR targets will not be imported into DATIM and will only be set at a National Level with Age/Sex disaggregates. 
 
-## **PSNUxIM Tool Formulas**
+## **PSNUxIM Tool & Formulas**
+
+The PSNUxIM Tab will be a stand alone tool, similar to that used for OPUs, and will no longer appear as a blank sheet, but will be generated as its own file by the self-service validation app after you submit your preliminary Target Setting Tool. Once teams begin to allocate their COP23/FY24 Targets to IMs, the PSNUxIM file will be the main file in which teams work. The self-service validation app will allow for both a Main Target Setting Tool AND PSNUxIM Tool to be upload and validated simulaneously. Please note, the main Target Setting Tool file, **will be the source of truth for COP23 Targets to be allocated and imported to DATIM.** Therefore, as teams allocated targets in the PSNUxIM tool, and changes are made to any target in the main tab, the validation app will need ot be utilized to ensure that targets are properly matching across both files to avoid discrepancies and issues with final targets imported to DATIM. 
 
 When you received your newly generated PSNUxIM tool for the first time by generating it from the Validation Self-Service App, you will need to scroll to the "Target Values" Section that begins in column CW and copy down (auto-fill) the formulas populated in row 15 all the way down to the bottom of your DataPack. This will be required in order for your Roll-up column to properly populate as well as the Deduplication sections. If you have difficulty with this, please reach out to your DUIT Liaison as soon as possible.
+
+The PSNUxIM Section will have more details.

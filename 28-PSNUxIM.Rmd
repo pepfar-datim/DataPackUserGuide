@@ -28,7 +28,7 @@ The following data points will be imported into DATIM from this section:
 *Adding data to the PSNUxIM tab of your Target Setting Tool may cause the the
 filesize of* *your Target Setting Tool to increase, sometimes significantly. As
 this may have* *implications for the performance of your Target Setting Tool, it is
-recommended to run* *initial validations in the Self-Service App and
+recommended to run* *initial validations in the self-service validation App and
 ensure the Target Setting Tool is in a* *good state of completeness prior to
 generating the PSNUxIM tab. Although the* *App will give the option to
 generate the PSNUxIM tab each time you validate* *your tool, it is not
@@ -39,10 +39,10 @@ Upon first receipt, the Target Setting Tool will not contain a populated PSNUxIM
 tab. To receive a populated version of this tab, follow the below
 instructions:
 
-1)  Submit a preliminary Target Setting Tool for validation to the self-service
-    validation tool at [datapack.DATIM.org](http://datapack.datim.org/).
+1)  Submit a preliminary Target Setting Tool for validation to the self-service validation
+    tool at [datapack.DATIM.org](http://datapack.datim.org/).
 
-2)  The Target Setting Tool Self-Service App will automatically detect that the
+2)  The self-service validation App will automatically detect that the
     PSNUxIM tab has not yet been populated and will do so, returning a
     new copy of the Target Setting Tool with all other parts of the Target Setting Tool left
     unaltered, but containing a populated PSNUxIM tab. Note that this
@@ -57,7 +57,7 @@ instructions:
     App and make it available to the rest of your team as appropriate.
 
 4)  When you received your newly generated PSNUxIM tool for the first
-    time by generating it from the Target Setting Tool Self-Service App, you will
+    time by generating it from the self-service validation app, you will
     need to scroll to the "Target Values" Section that begins in column
     CW and copy down the formulas populated in row 15 all the way down
     to the bottom of your Target Setting Tool. This will be required in order for
@@ -73,8 +73,8 @@ instructions:
     an error and will not allow the Target Setting Tool to validate the next time
     it is imported into the Self-Service App.
 
-In producing a PSNU x IM tab for the first time, the Target Setting Tool
-Self-Service app will write data and formulas into this tab as follows:
+In producing a PSNU x IM tab for the first time, the self-service validation app
+will write data and formulas into this tab as follows:
 
 -   Each PSNU.
 
@@ -84,7 +84,7 @@ Self-Service app will write data and formulas into this tab as follows:
 -   Age, Sex, & Key Population for each sub-population, where specified.
 
 -   Total Target Setting Tool Targets, as set in previous tabs of the Target Setting Tool. In
-    adding these targets, the Target Setting Tool Self-Service App will write
+    adding these targets, the self-service validation app will write
     formulas allowing dynamic referencing of each target. In cases where
     additional updates to previous tabs of the Target Setting Tool may be
     necessary, any updates to target values will automatically be
@@ -170,9 +170,9 @@ tab, follow the below instructions:
         approved and valid in FACTS Info, its 4-6 digit numeric code can
         be entered here in the Target Setting Tool, and you can begin allocating
         targets to this new mechanism. However, note that in order to
-        validate these data using the Target Setting Tool Self-Service App,
+        validate these data using the self-service validation app,
         mechanisms must have already been synchronized from FACTS Info
-        to DATIM. Validation alerts in the Target Setting Tool Self-Service App
+        to DATIM. Validation alerts in the self-service validation app
         will note where this may not be the case.
 
     d.  Add allocations in the rows below any new mechanisms, making
@@ -195,12 +195,28 @@ carried over into DATIM and resolve validation errors in the
 Self-Service App.
 
 ```{r echo=FALSE, out.width = '70%'}
-knitr::include_graphics("./images/image15.png")
+knitr::include_graphics("./images/FACTS Info Valid mech 1.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 2.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 3.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 4.png")
+```
+
+```{r echo=FALSE, out.width = '70%'}
+knitr::include_graphics("./images/FACTS Info Valid mech 5.png")
 ```
 
 ## Note on Peace Corps Mechanisms
 
-As in COP21, Peace Corps will no longer report targets under their older
+As in COP22, Peace Corps will no longer report targets under their older
 mechanisms, and will instead report all targets under Management &
 Operations (M&O) mechanisms. Note that the PSNUxIM tab will initially
 populate mechanisms and distributions based on previous year targets, so

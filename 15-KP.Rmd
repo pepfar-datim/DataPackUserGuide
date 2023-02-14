@@ -494,15 +494,15 @@ The following data points will be imported into DATIM from this section:
 
 **HTS_SELF:** Number of individual HIV self-test kits distributed.
 
-<!-- # ```{r echo=FALSE, results='asis'} -->
-<!-- # sheet_name <- "KP" -->
-<!-- # section <- "HTS_SELF" -->
-<!-- # columns <- col_seq("AM", "AN") -->
-<!-- # data <- prepare_table_data(sheet_name, columns) -->
-<!-- # for (t in table_seq(data)) { -->
-<!-- #   make_table(t, section) -->
-<!-- #   } -->
-<!-- # ``` -->
+```{r echo=FALSE, results='asis'}
+ sheet_name <- "KP"
+ section <- "HTS_SELF"
+ columns <- col_seq("AM", "AN")
+ data <- prepare_table_data(sheet_name, columns)
+ for (t in table_seq(data)) {
+   make_table(t, section)
+   }
+```
 
 ### DATIM Import
 

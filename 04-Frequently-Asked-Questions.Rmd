@@ -40,7 +40,7 @@ A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-
 
 ***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 
-A: You will first need approval from OGAC Leadership to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY23)" (BH). Please make the alterations to this column and not on the HTS tab.
+A: You will first need approval from your Chair, who should confirm for DUIT Liaison,  to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY23)” (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
 
 ***Q: When I try to validate my Target Setting Tool in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
 
@@ -51,4 +51,4 @@ A: This error can be caused by a number of different issues. The most common cau
 -   Trying to validate a file that isn't an XLSX. If your team has saved your Target Setting Tool in a different file format for sharing, such as XLSB, ensure that you resave the file as an XLSX before validating it in the app.
 -   The target distribution formulas on the PSNUxIM tab have not been applied to all rows. By default, the formulas in the "Target Value" section (Column CW and right) are only applied to Row 15. Once you generate or regenerate your PSNUxIM tab, ensure that you copy these formulas all the way down to the bottom row of your targets. After this is done, try validating your tool again.
 
-If none of the above issues apply to your Target Setting Tool tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Target Setting Tool tool that caused the error in the app.
+If none of the above issues apply to your Target Setting Tool tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Target Setting Tool tool that caused the error in the app, please always cc your DUIT Liaison on ZenDesk Tickets.

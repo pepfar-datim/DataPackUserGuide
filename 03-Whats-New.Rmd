@@ -16,4 +16,4 @@ The Target Setting Tool has been returned to an ART Coverage model, because this
 
 ## **PSNUxIM Tool Formulas**
 
-When you received your newly generated PSNUxIM tool for the first time by generating it from the Validation Self-Service App, you will need to scroll to the "Target Values" Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your DataPack. This will be required in order for your Roll-up column to properly populate as well as the Deduplication sections.
+When you received your newly generated PSNUxIM tool for the first time by generating it from the Validation Self-Service App, you will need to scroll to the "Target Values" Section that begins in column CW and copy down the formulas populated in row 15 all the way down to the bottom of your DataPack. This will be required in order for your Roll-up column to properly populate as well as the Deduplication sections. If you have difficulty with this, please reach out to your DUIT Liaison as soon as possible.

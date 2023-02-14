@@ -47,7 +47,7 @@ to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 The COP23 Target Setting Tool supports analysis for all targets by
 Priority Subnational Unit (PSNU), population, and Implementing Mechanism
 (IM). This tool supports calculation of targets based on expected
-treatment coverage rates by type of PSNU and population prioritization:
+treatment coverage rates by type of PSNU and population prioritization.
 
 
  - Teams must review and revise their PSNU prioritization levels for COP23. 
@@ -80,7 +80,6 @@ and linkage to the COP guidance based on different aspects of the Target
 Setting Tool that worked well and others that did not during COP22
 target stetting:
 
-
 -   **PSNUxIM tab structure** that will again handle de-duplication and
     IM allocation, but now is a single tab in a standalone file.
     
@@ -92,7 +91,6 @@ target stetting:
 multiple years.However, these targets will not be imported into DATIM until after a 
 Mid-COP23 Year 2 review, in which they may be updated. 
 
-    
 
 ## Data Flow and Review Process to COP23 Submission
 

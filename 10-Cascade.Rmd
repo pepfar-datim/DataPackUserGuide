@@ -13,8 +13,6 @@ The Target Setting Tool then calculates the TX_NEW target from the TX_PVLS (D) t
 As in past Target Setting Tools, this tab interweaves with many other tabs of the Target Setting Tool, including the PMTCT, TB, EID, VMMC, KP, HTS, CXCA, HTS_RECENT, and TX_TB_PREV tabs. As is explained below and in sections related to these tabs, Target Setting Tool logic is most useful when target-setting begins in the Cascade tab and progresses from left to right, both within that tab, and across and within all other tabs, returning iteratively to the Cascade tab throughout.
 
 
-
-
 ## TX_CURR (FY24), PEPFAR FY22 Cascade (Observed) & PEPFAR FY23 Cascade (Planned)
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
@@ -46,7 +44,7 @@ for (t in table_seq(data)) {
   }
 ```
 
-The first column of the Cascade, column F, introduces a long requested change to the Target Setting Tool. The column for whether TX_CURR Target derived by OU analysis. This column gives teams the ability to enter a FY24 TX_CURR Target that has been dtermined through external analysis or modeling can be entered into this column. If teams enter target values into this column, this target will take precedent to be the TX_CURR FY24 target that will be used as the target that is imported into DATIM in the ART Section (please see that section for more details). 
+The first column of the Cascade, column F, introduces a long requested change to the Target Setting Tool. The column for whether TX_CURR Target derived by OU analysis. This column gives teams the ability to enter a FY24 TX_CURR Target that has been determined through external analysis or modeling can be entered into this column. If teams enter target values into this column, this target will take precedent to be the TX_CURR FY24 target that will be used as the target that is imported into DATIM in the ART Section (please see that section for more details). 
 
 This section provides an overview of PEPFAR FY22 results and FY23 targets, both to give insight into the current status of PEPFAR's contribution to the host country HIV response, as well to serve as reference to many other sections in the Cascade tab. Review this section to understand PEPFAR's trends for the following data, as well as the linkages and relationships between them:
 
@@ -145,9 +143,9 @@ Please note that the Partner Country Estimated Patients Tested for VLS (FY23) an
 
 ### Leveraging Alternatives to Spectrum
 
-Most countries are encouraged to use UNAIDS Spectrum as their source for the above data. However, Country Teams may request approval from their PPM and a DUIT Liaison to use an alternative data source if deemed more reliable.
+Most countries are encouraged to use UNAIDS Spectrum as their source for the above data. However, Country Teams may request approval from their PPM and a DUIT Liaison to use an alternative data source if deemed more reliable, or if Naomi output is not available for their country/OU. 
 
-In this case, paste estimates from other approved sources into this section of the Cascade tab by overwriting the formulas currently in these green columns. Due to hidden Relative Standard Error columns between the various estimate columns, it is recommended you paste this data in one column at a time, rather than in bulk. It may also reduce technical issues to first copy geographic data in the SNU1, PSNU, Age, and Sex columns into a separate spreadsheet, then use Excel lookup functions to add estimates data against the correct geographies and populations, and then return to pasting data into the original Cascade tab column by column.
+In this case, paste estimates from other approved sources into this section of the Cascade tab by overwriting the formulas currently in these blue columns. Due to hidden Relative Standard Error columns between the various estimate columns, it is recommended you paste this data in one column at a time, rather than in bulk. It may also reduce technical issues to first copy geographic data in the SNU1, PSNU, Age, and Sex columns into a separate spreadsheet, then use Excel lookup functions to add estimates data against the correct geographies and populations, and then return to pasting data into the original Cascade tab column by column.
 
 Please note that it is not required to populate the Partner Country Estimated Patients Tested for VLS (FY23) and the Partner Country Estimated Virally Suppressed ART Patients (FY23) columns. In fact, in the absence of appropriate programmatic or clinical data, it is inadvisable to expend great effort on making these estimates. The Target Setting Tool has been redesigned with the understanding that most countries will not have these data. If these columns are left blank, the Target Setting Tool will automatically use PEPFAR program data to estimate the Working PopVLS Rate and the cascade calculations will still be able to proceed.
 

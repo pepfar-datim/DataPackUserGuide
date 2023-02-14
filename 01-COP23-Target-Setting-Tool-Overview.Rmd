@@ -266,12 +266,12 @@ draft versions as often as is helpful.
 ## Target Setting Tool SharePoint Location
 
 The Target Setting Tool will be posted on PEPFAR SharePoint:
-[www.pepfar.net](http://www.pepfar.net).
+[pepfar.sharepoint.com](https://pepfar.sharepoint.com/).
 
 -   The file path will be OU \> Country Name \> HQ Collaboration \> COP
     2023 -- FY2024 \> Guidance, Tools, and Resources.
 
--   The file name will be "Datapack_CountryName_20220121.....". Please
+-   The file name will be "Datapack_CountryName_20230215.....". Please
     reference the day in which the file was added to the folder. If
     there are new .zip files added, please utilize this file as it may
     be a new version of the Target Setting Tool tool.

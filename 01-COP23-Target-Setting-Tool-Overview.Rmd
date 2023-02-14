@@ -72,19 +72,27 @@ will be available through COP webinars.
 
 ## Highlighted Changes from COP22 to COP23
 
-The COP23 Target Setting Tool algorithm is largely the same as the COP21
+The COP23 Target Setting Tool algorithms are largely the same as the COP21
 DataPack. However, please note the following updates that have been
 implemented as a result of multiple feedback sessions with various
-country teams that had been identified by the PRIME team, as well as new
-programmatic changes that are reflected in the Section 7 of COP
-guidance. These changes revolve around workflow, ease of target setting,
+country teams. These changes revolve around workflow, ease of target setting,
 and linkage to the COP guidance based on different aspects of the Target
-Setting Tool that worked well and others that did not during COP21
+Setting Tool that worked well and others that did not during COP22
 target stetting:
 
 
--   **PSNUxIM tool** that will again handle de-duplication and
-    IM allocation has now been moved into a separate file.
+-   **PSNUxIM tab structure** that will again handle de-duplication and
+    IM allocation, but now is a single tab in a standalone file.
+    
+-   Collapsing HTS modalities into larger groupings to simplify target setting.
+
+-   Grouping age bands into larger groups to simplify target setting.
+
+-   Year 2 national level PEPFAR targets to better inform strategic planning across
+multiple years.However, these targets will not be imported into DATIM until after a 
+Mid-COP23 Year 2 review, in which they may be updated. 
+
+    
 
 ## Data Flow and Review Process to COP23 Submission
 

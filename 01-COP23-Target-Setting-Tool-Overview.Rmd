@@ -392,13 +392,6 @@ follow the below procedure:
     are in agreement, the values can be updated in the Target Setting Tool. 
     The DUIT Liaison may need to check with PRIME and/or DUIT leadership if 
     the changes are substantial.
-    
-3.  Ideally, post-COP an OPU (COP22-FY23 targets) or a Data Change request 
-    (results) will be completed.  Please talk to your DUIT Liaison 
-    if you are unclear of which option, or any part of these 
-    processes post-COP.  In extraordinary circumstances, or if changes 
-    are minor, it may not be necessary to complete these post-COP 
-
 
 
 ## Target Setting Tool Assumptions

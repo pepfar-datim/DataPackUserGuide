@@ -1,26 +1,16 @@
 # Frequently Asked Questions
 
-
-
 ***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
 
 A: For cells that are labeled with "\*For DOD Military Use Only", in OU Target Setting Tools that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
-
-***Q: I have generated a PSNUxIM Tab, but there are duplicate rows for the 50+ age band that have been added to the bottom on the tab, how can I fix this?***
-
-A: For countries that generated a PSNUxIM tab and have the presence of the duplicate 50+ age bands. The following needs to be done:
-
--   Teams need to delete ALL green appended rows in the PSNUxIM tab.
-
--   Once deleted, save the file, and run it back through the app. If there were other targets they will be re-added, but there will no longer be any duplicates
 
 ***Q: I have AGYW targets, but they are not appearing in my PSNUxIM tab, why?***
 
 A: AGYW_PREV is reported by the USG team, not an IM, it doesn't have to be assigned to an IM. It is automatically assigned to USG team.
 
-***Q: Cascade Tab "Host Country Context" section column V "H.C. Est. ART Patients Tested for VLS" and column X "H.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?***
+<!-- #  ***Q: Cascade Tab "Host Country Context" section column V "H.C. Est. ART Patients Tested for VLS" and column X "H.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?*** -->
 
-A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the Target Setting Tool will work with your PEPFAR TX_PVLS data on it's own.
+<!-- # A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the Target Setting Tool will work with your PEPFAR TX_PVLS data on it's own. -->
 
 ***Q: I have an outstanding COP22 OPU for IM shifts, what should I do?***
 
@@ -30,13 +20,13 @@ A: For OU's with outstanding target-shift OPUs that are only shifting targets fr
 
 A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop. Note however, that only clinical, facility partners may have targets and report many indicators. For these indicators, the KP targets must be assigned to a partner and site qualified to report the results.
 
-***Q: Can you use FY24 Spectrum estimates to work through the Cascade tab?***
+<!-- # ***Q: Can you use FY24 Spectrum estimates to work through the Cascade tab?***
 
-A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP23 Target Setting Tool should be to set FY24 targets based on where you are ending FY23.
+A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP23 Target Setting Tool should be to set FY24 targets based on where you are ending FY23. -->
 
-***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
+<!-- ***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
 
-A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right "Target Values" section of the PSNUxIM tab to ensure all rows are populated with the proper formula.
+A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right "Target Values" section of the PSNUxIM tab to ensure all rows are populated with the proper formula. -->
 
 ***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 

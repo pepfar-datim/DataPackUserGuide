@@ -1,12 +1,6 @@
 # Frequently Asked Questions
 
-***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
 
-A: The larger portion of your TX_CURR targets that come from newly initiated (TX_NEW), the less likely you will be able to have a Planned Population VLS rate that reaches 87%, because 30% of your newly initiated won't be eligible for Viral Load Testing (VLT) ( Default 70% eligible, equivalent to 3 months of treatment before VLT), or even 50% (if your national guidelines are still 6 months of treatment before VLT eligibility). If you stick with a Planned PopVLS of 87%, and don't account for this, a number of your targets may overshoot your PLHIV.
-
-***Q: Column AZ of the Cascade tab "H.C. Est. \# Previously Diagnosed not on ART (FY22)" is being highlighted red, how can I get rid of this?***
-
-A: This is a bug with the conditional formatting of the column. Because surrounding columns are all measuring percentages, the conditional formatting is set to flag anything over 1 (i.e. anything over 100%). As a result almost all cells will be highlighted RED in this section. This should be ignored, and the only values that should be reviewed are those that are less than zero.
 
 ***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
 

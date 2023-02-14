@@ -2936,7 +2936,7 @@
       "checksum": "2b76c3cc66b59f5d0496bf402450f064"
     },
     ".Rprofile": {
-      "checksum": "6c9daa2c877d1afe9af87568c118051d"
+      "checksum": "6e69ff4ebfb20276e656c319bf93f903"
     },
     "01-COP23-Target-Setting-Tool-Overview.Rmd": {
       "checksum": "857143ab1f7b29681a932cdbf1d93bd5"
@@ -2981,10 +2981,10 @@
       "checksum": "4ab79bf64a451d6595b9a0045ae85287"
     },
     "15-KP.Rmd": {
-      "checksum": "22d2a6568fa8144de5af72a48fb27778"
+      "checksum": "07430922457bade4c86be1ab4d74daf9"
     },
     "16-PrEP.Rmd": {
-      "checksum": "509e7d0de9d4a155015f88d6d8fd08e1"
+      "checksum": "24dfce5c835c5aa6b97e14c452fe6b15"
     },
     "17-HTS.Rmd": {
       "checksum": "193b9d09ece20317d609865e50304b8a"
@@ -3028,8 +3028,14 @@
     "css/style.css": {
       "checksum": "19f0b33dc27d4f748874d2cde5cea5bc"
     },
+    "Data-Pack-User-Guide.log": {
+      "checksum": "9b5a829854b38b4a30e6ba511a688062"
+    },
     "Data-Pack-User-Guide.Rmd": {
-      "checksum": "07403d6a47893cef9a2e8bc729ef07ea"
+      "checksum": "6399266d1a6cbd326ca5352dcae55228"
+    },
+    "Data-Pack-User-Guide.tex": {
+      "checksum": "bbc1a1c79c60d326b6de6ec85bed8cfa"
     },
     "images/.DS_Store": {
       "checksum": "194577a7e20bdcc7afbb718f502c134c"
@@ -3134,7 +3140,7 @@
       "checksum": "64170dc65186139b0e166d3387d68ff8"
     },
     "R/schema.R": {
-      "checksum": "b181db919124deec0840966674fb2bd1"
+      "checksum": "eaed2372beb055bcf9a7705724b89225"
     },
     "R/tables.R": {
       "checksum": "32b46d4f649582534baaf031328b5389"
@@ -3363,9 +3369,6 @@
     },
     "www/manifest.json": {
       "checksum": "1dd5164addcd10d70349cdd7d97172d4"
-    },
-    "www/reference-keys.txt": {
-      "checksum": "3390f9fd63c16acf5409304bcf1c0034"
     },
     "www/search_index.json": {
       "checksum": "58d4b7e7ffe1fbb6fdd55259670ade0d"

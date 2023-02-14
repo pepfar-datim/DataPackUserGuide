@@ -202,7 +202,7 @@ thread/ticket to allow for easy coordination.
 **Submission 1**
 
 -   Validate high-level strategic planning direction aligns with the
-    vision agreed upon Johannesburg Co-Planning Meetings.
+    vision agreed to durring Johannesburg Co-Planning Meetings.
 
 -   Highlight any areas for technical assistance.
 
@@ -239,7 +239,7 @@ addition of more data to the PSNUxIM file.
 -   Track down and resolve any last bugs and issues in seen in the
     Target Setting Tool
 
--   Confirm the Target Setting Tool is as near final as possible
+-   Confirm the Target Setting Tool is as near final as possible.
 
 **Final Submission**
 

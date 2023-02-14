@@ -49,25 +49,10 @@ Priority Subnational Unit (PSNU), population, and Implementing Mechanism
 (IM). This tool supports calculation of targets based on expected
 treatment coverage rates by type of PSNU and population prioritization:
 
--   Attained
 
--   Scale-up: Aggressive
+ - Teams must review and revise their PSNU prioritization levels for COP23. 
+The COP23 Target Setting Tool assumes a 'test and start' treatment platform.
 
--   Scale-up: Saturation
-
--   Sustained
-
-Prioritizations for PSNUs are based on COP Guidance section 7.3.2.ba.
-These determine for a given PSNU programmatically what HIV treatment and
-prevention services should be planned and informs both the overall
-strategy and the targets. Teams must review and revise their PSNU
-prioritization levels for COP23. The COP23 Target Setting Tool assumes a
-'test and start' treatment platform and will develop targets for
-achieving 95% coverage in Scale up: Aggressive and Scale-up: Saturation
-PSNUs; all other targets in the Target Setting Tool are based on the
-treatment targets, insofar as the treatment targets are the main focus
-of reaching epidemic control, and therefore relate to both testing and
-prevention targets.
 
 The Target Setting Tool will allow PEPFAR teams to use country specific
 programmatic assumptions to develop the optimal targets by PSNU along

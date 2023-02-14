@@ -30,14 +30,16 @@ Welcome to the COP23 Target Setting Tool User Manual. The following
 pages aim to provide users of the Target Setting Tool with the
 information necessary to successfully complete each tab of the Target
 Setting Tool tool and determine accurate, data-driven targets. For the
-past several years, the Target Setting Tool has a been a key element of
-PEPFAR COP planning, and for COP23 serves a critical function in
+past several years, the DataPack has a been a key element of
+PEPFAR COP planning. In the spirit of COP Reform, we have endeavored to 
+reduce the level of effort in target setting and have developed a simplified 
+Target Setting Tool for COP23. This tool serves a critical function in
 assisting PEPFAR Country Teams in setting targets in line with the
 UNAIDS 95-95-95 goals for Testing, Care & Treatment, PMTCT, VMMC, OVC,
 and other program areas. Please note that the COP23 Target Setting Tool
 is mandatory and must be used to set targets for COP23. For COP23, all
-indicators included in the Target Setting Tool are **MER 2.6**
-indicators. For further information on the MER 2.6 indicators, please go
+indicators included in the Target Setting Tool are **MER 2.6.1**
+indicators. For further information on the MER 2.6.1 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 
 ## About the Target Setting Tool

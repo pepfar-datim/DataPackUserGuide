@@ -101,7 +101,8 @@ the Target Setting Tool. In turn, the Target Setting Tool targets will
 produce FY24 targets that will be subsequently submitted through DATIM
 after COP23 has been finalized and the PSNU level data entered into the
 Strategic Direction Summary (SDS) tables, where appropriate (Target
-related data).
+related data).There will also be strategic national level targets for the 
+PEPFAR program for COP23 Year 2 (FY25), but these will not be imported into DATIM.
 
 ***Target Setting Tool Review***
 
@@ -147,9 +148,9 @@ related data).
 
 For each of the below submissions, the following process will occur:
 
--   Country Teamspre-validates their Target Setting Tool submission in
+-   Country Teams pre-validate their Target Setting Tool submission in
     the Validation Self-Service App (available at
-    <https://apps.datim.org/datapack/>).
+    <https://apps.datim.org/datapack/>).cc
 
 -   Country Team uses Validation Self-Service App to sync data
     with PAW Dossiers.
@@ -170,6 +171,9 @@ For each of the below submissions, the following process will occur:
 
     -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
         members that should be aware of ongoing review and discussions.
+        
+    -   Country team should generate Flatpack for sharing with CSOs and 
+        send to PPM and DUIT Liaison.  PPM will then post to public PEPFAR SharePoint site.
 
 -   Once this ticket is received, the Target Setting Tool Support Team
     will confirm all the above has occurred and send additional

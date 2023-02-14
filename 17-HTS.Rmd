@@ -2,7 +2,7 @@
 
 # HTS
 
-With the significant changes to the HTS tab and the collapse of HTS Modalities for target setting purposes. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS Modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
 The HTS target setting groupings and which modalities fall under each of these are as follows:
 
@@ -70,7 +70,7 @@ No data will be imported from this section of the Target Setting Tool.
 
 ### Instructions
 
-1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2022 Guidance document for the required parameters based on TX coverage.
+1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2023 Guidance document for the required parameters based on TX coverage.
 
 2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the Target Setting Tool. Note that to adjust these allocations, you must return to the section or tab of the Target Setting Tool where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
 
@@ -96,7 +96,7 @@ No data will be imported from this section of the Target Setting Tool.
     e.  Other Facility (%)
 
 
-4.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in over- or under-allocation. Where this check column is either greater than or less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to 100%.
+4.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in under-allocation. Where this check column is less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to at least 100%. Reminer, a key change made as part of COP reform is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets.
 
 ## HTS: HTS_TST -- Modality Yields
 

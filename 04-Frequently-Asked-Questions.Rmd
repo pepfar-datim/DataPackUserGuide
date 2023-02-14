@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
+
+A: The Target Setting Tool will not prevent situations resulting in ART coverage exceeding 100% in a given PSNU, but will flag these cases in yellow to highlight when it occurs. Given that these may be a common occurrence in cases of urban PSNUs, or other case where service seeking behavior by clients leads them to cross PSNU boundaries, they are allowable in the tool. It may be worth considering whether the UNAIDS $PLHIV\_Attend$ estimates might provide better context in these situations, but countries need to use a consistent version of the PLHIV estimates for the whole country, otherwise they risk over or under estimating the number of PLHIV.  
+
 ***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
 
 A: For cells that are labeled with "\*For DOD Military Use Only", in OU Target Setting Tools that do not have Military targets, these cells can be overwritten with zero (0). If they are left with the "\*For DOD Military Use Only", they will be dropped upon import.
@@ -8,7 +12,7 @@ A: For cells that are labeled with "\*For DOD Military Use Only", in OU Target S
 
 A: AGYW_PREV is reported by the USG team, not an IM, it doesn't have to be assigned to an IM. It is automatically assigned to USG team.
 
-<!-- #  ***Q: Cascade Tab "Host Country Context" section column V "H.C. Est. ART Patients Tested for VLS" and column X "H.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?*** -->
+<!-- #  ***Q: Cascade Tab "Patner Country Context" section column V "P.C. Est. ART Patients Tested for VLS" and column X "P.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?*** -->
 
 <!-- # A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the Target Setting Tool will work with your PEPFAR TX_PVLS data on it's own. -->
 

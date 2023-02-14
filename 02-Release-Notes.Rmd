@@ -1,10 +1,10 @@
 # Release Notes
 
-## January 21 DataPack Re-release
+<!-- ## January 21 DataPack Re-release -->
 
-On January 21st, we re-generated and shared new DataPacks via HQ Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and Resources \> DataPack. Please use the \*.zip version from **January 21st**.
+<!-- On January 21st, we re-generated and shared new DataPacks via HQ Collaboration \> COP 2022 - FY 2023 \> Guidance, Tools, and Resources \> DataPack. Please use the \*.zip version from **January 21st**. -->
 
-This new released version addresses small bugs that were caught after the initial version was released. It also added in missing "ROUND" functions into formulas on the Cascade tab as well as correcting comments to properly reflect COP Guidance.
+<!-- This new released version addresses small bugs that were caught after the initial version was released. It also added in missing "ROUND" functions into formulas on the Cascade tab as well as correcting comments to properly reflect COP Guidance. -->
 
 ```{r, echo=FALSE, results='asis'}
 news_file <-
@@ -20,5 +20,5 @@ pasteReadMe <- function(fileName) {
   cat(paste0(lapply(storeLines, FUN = function(x) indent_headers(x)), "\n", collapse = ""))
 }
 
-pasteReadMe(news_file)
+#pasteReadMe(news_file)
 ```

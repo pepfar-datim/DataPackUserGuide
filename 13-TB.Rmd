@@ -31,20 +31,20 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For historical context, review FY22 targets for TB_STAT (D),
-    including in the DataPack reflective of data reported in DATIM.
+1.  For historical context, review FY23 targets for TB_STAT (D),
+    including in the Target Setting Tool reflective of data reported in DATIM.
 
 2.  Review and adjust the Estimated Change in Incidence to reflect most
-    reliable projections of TB trends into FY23. This value defaults to
+    reliable projections of TB trends into FY24. This value defaults to
     0%, though this should not be interpreted as a suggested
     epidemiological estimate. If the incidence of TB is expected to
-    remain unchanged from FY22, this value should remain at 0%; if the
+    remain unchanged from FY23, this value should remain at 0%; if the
     incidence is expected to double, the cell should read "100%".
 
-3.  Review FY23 Targets for TB_STAT (D) and return to step 2 to adjust
+3.  Review FY24 Targets for TB_STAT (D) and return to step 2 to adjust
     driving assumptions as necessary. In the case services are planned
-    in FY23 where these were not provided in FY22, you may manually
-    enter FY23 targets in this column.
+    in FY24 where these were not provided in FY23, you may manually
+    enter FY24 targets in this column.
 
 ## TB: TB_STAT (N)
 
@@ -54,7 +54,7 @@ status, during the reporting period.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "TB_STAT (N)"
-columns <- col_seq("I", "R")
+columns <- col_seq("I", "Q")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -73,7 +73,7 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review historic data for TB_STAT (N): New Positives from FY22
+1.  Review historic data for TB_STAT (N): New Positives from FY23
     Targets for context.
 
 2.  Review and adjust Targeted TB_STAT Coverage. This defaults to 100%,
@@ -82,16 +82,16 @@ The following data points will be imported into DATIM from this section:
     indicate percentages over 100%; yellow highlights indicate
     percentages under 100%.
 
-3.  Review FY21 Results for (a) Estimated % TB clients with already
+3.  Review FY22 Results for (a) Estimated % TB clients with already
     Known HIV Positive status, and (b) Estimated Positivity Rate among
     Newly Tested TB clients.
 
-4.  Review FY23 projections for (a) Estimated % TB clients with already
+4.  Review FY24 projections for (a) Estimated % TB clients with already
     Known HIV Positive status, and (b) Estimated Positivity Rate among
     Newly Tested TB clients. These data default to remain static from
-    FY21 results trends, but can be adjusted as necessary. Red
+    FY22 results trends, but can be adjusted as necessary. Red
     highlights indicate percentages over 100%; yellow highlights
-    indicate percentages different from FY21 results.
+    indicate percentages different from FY22 results.
 
 5.  Review modeled targets for Total TB_STAT (N), Known HIV Status,
     Positive, Newly Tested, Positive, and Newly Tested, Negative, and
@@ -146,7 +146,7 @@ during TB treatment.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "TB_ART"
-columns <- col_seq("S", "U")
+columns <- col_seq("R", "T")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
   make_table(t, section)
@@ -175,10 +175,10 @@ The following data points will be imported into DATIM from this section:
 
 ### Already on ART
 
-For the purposes of COP21 target setting in the DataPack, FY23 targets
+For the purposes of COP21 target setting in the Target Setting Tool, FY24 targets
 for TB_ART Already on ART are set assuming that 100% of those TB clients
 with already known HIV positive status are already on ART. In other
-words, the following holds true in the DataPack:
+words, the following holds true in the Target Setting Tool:
 
 $$
 {TB\_ ART.Already}_{t}\  = \ {TB\_ STAT.N.KnownPos}_{t}
@@ -186,7 +186,7 @@ $$
 
 ### New on ART
 
-FY23 Targets for TB_ART New on ART are based largely on TB_STAT Newly
+FY24 Targets for TB_ART New on ART are based largely on TB_STAT Newly
 Identified HIV positive TB clients as follows, rounding to the nearest
 integer:
 
@@ -199,7 +199,7 @@ $$
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "TB"
 section <- "Testing Rationalization"
-columns <- col_seq("V", "AB")
+columns <- col_seq("U", "Z")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -223,15 +223,15 @@ No data from this section will be imported into DATIM.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to TB_STAT are warranted may prevent issues and
-    additional work in other sections of the DataPack.
+    additional work in other sections of the Target Setting Tool.
 
-3.  Return to other tabs of the DataPack where issues flagged in this
+3.  Return to other tabs of the Target Setting Tool where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
     sections can be also found in each of these other tabs of the
-    DataPack. You may also use hyperlinks in column headers in this
+    Target Setting Tool. You may also use hyperlinks in column headers in this
     section to quickly navigate to the most relevant section of the
-    DataPack.
+    Target Setting Tool.
 
 \elandscape
 

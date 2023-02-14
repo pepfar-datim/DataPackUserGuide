@@ -153,10 +153,10 @@ related data).
 For each of the below submissions, the following process will occur:
 
 -   Country Teamspre-validates their Target Setting Tool submission in
-    the Target Setting Tool Self-Service App (available at
+    the Validation Self-Service App (available at
     <https://apps.datim.org/datapack/>).
 
--   Country Team uses Target Setting Tool Self-Service App to sync data
+-   Country Team uses Validation Self-Service App to sync data
     with PAW Dossiers.
 
 -   Country Team saves Target Setting Tool to SharePoint under the OU's
@@ -167,11 +167,11 @@ For each of the below submissions, the following process will occur:
 
     -   A link to the Target Setting Tool file saved in SharePoint
 
-    -   Confirmation that this file has been pre-validated in the Target
-        Setting Tool (DataPack) Self-Service App
+    -   Confirmation that this file has been pre-validated in the
+        Validation (DataPack) Self-Service App
 
-    -   Confirmation that this file has been sent to PAW via the Target
-        Setting Tool (DataPack) Self-Service App
+    -   Confirmation that this file has been sent to PAW via the
+        Validation (DataPack) Self-Service App
 
     -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
         members that should be aware of ongoing review and discussions.

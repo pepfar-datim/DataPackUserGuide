@@ -28,7 +28,7 @@ The following data points will be imported into DATIM from this section:
 
 **Important notes on Prioritization levels**
 
--   *Attained SNUs*: Geographic areas that have achieved ≥90% (95 x 95)
+-   *Attained SNUs*: Geographic areas that have achieved ${\geq 90}$% (95 x 95)
     ART coverage in both males and females within the following age
     bands: \<01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. Getting to \>90%
     ART coverage by both males and females within the target setting age
@@ -46,6 +46,34 @@ The following data points will be imported into DATIM from this section:
         overall goal of an increased rate of 'new on ART,' but are not
         expected to reach 95/95/95 by 2024 or 2025.
 
+-   *Sustained SNUs*: Sustained SNUs receive a package of services
+    provided by PEPFAR that are different in each country and include
+    passive enrollment via HIV testing and counseling on request or as
+    indicated by clinical symptomology, care and treatment services for
+    PLHIV, and essential laboratory services for PLHIV.
+
+-   *Central Support SNUs*: In Central Support SNUs, site-specific
+    activities have transitioned to government or other support. Central
+    Support Districts will continue to receive PEPFAR national support
+    for overarching activities, such as quality assurance and quality
+    improvement (QA/QI) to ensure that patients continue to receive
+    quality services.
+
+-   *For Countries that raised their PSNU level*: The OU should use the
+    definitions above to determine their prioritization level at their
+    new future PSNU level (e.g., the one they are using for
+    COP23-FY24-FY25). However, they should not expand their intensity of
+    site level support beyond their prior PSNU level support areas
+    (e.g., the one they are using for COP22-FY23 and before), without
+    explicit Chair approval. Additionally, any future PSNUs that contain
+    Scale-Up or Attained prior PSNUs, should likely be categorized into
+    one of those groups. So for example, if Zone A contains Regions 1
+    (Attained), 2 (Scale-Up Aggressive), 3 (Central Support), and 4
+    (Sustained). Zone A should be categorized based on ART coverage as
+    Attained, Scale-Up: Saturation or Scale-Up: Aggressive. But that
+    does not mean that site-level support should automatically be
+    extended to facilities in Region 3 or 4 of Zone A, unless there is
+    explicit discussion with and concurrence of Chair.
 -   *Sustained SNUs*: Sustained SNUs receive a package of services
     provided by PEPFAR that are different in each country and include
     passive enrollment via HIV testing and counseling on request or as

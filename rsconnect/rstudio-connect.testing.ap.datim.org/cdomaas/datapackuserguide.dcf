@@ -5,10 +5,10 @@ account: cdomaas
 server: rstudio-connect.testing.ap.datim.org
 hostUrl: https://rstudio-connect.testing.ap.datim.org/__api__
 appId: 186
-bundleId: 1481
+bundleId: 1491
 url: https://rstudio-connect.testing.ap.datim.org:443/content/186/
-when: 1676401999.03438
-lastSyncTime: 1676401999.03439
+when: 1676430336.24608
+lastSyncTime: 1676430336.24609
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .Rprofile|static/COP21 Data Pack User Guide.docx|static/COP21_Data_Pack_Template.xlsx|static/COP22_Data_Pack_Template.xlsx

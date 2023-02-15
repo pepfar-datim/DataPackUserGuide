@@ -26,6 +26,55 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
+**Important notes on Prioritization levels**
+
+-   *Attained SNUs*: Geographic areas that have achieved ≥90% (95 x 95)
+    ART coverage in both males and females within the following age
+    bands: \<01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. Getting to \>90%
+    ART coverage by both males and females within the target setting age
+    bands at sub-national levels will ensure that the country gets to
+    95/95/95 overall.
+
+-   *Scale-up: Saturation and Aggressive Scale-Up SNUs*: Geographic
+    areas with the highest HIV prevalence nationally that have not yet
+    achieved 95/95/95, particularly among the population groups
+    experiencing the greatest burden of disease.
+    -   *Scale-Up: Saturation* SNUs receive intensive PEPFAR support with a
+        target of reaching 95/95/95 at all ages, gender and risk groups,
+        PLHIV on ART by 2024 or 2025.
+    -   *Scale-Up: Aggressive* SNUs receive intensive PEPFAR support with an
+        overall goal of an increased rate of 'new on ART,' but are not
+        expected to reach 95/95/95 by 2024 or 2025.
+
+-   *Sustained SNUs*: Sustained SNUs receive a package of services
+    provided by PEPFAR that are different in each country and include
+    passive enrollment via HIV testing and counseling on request or as
+    indicated by clinical symptomology, care and treatment services for
+    PLHIV, and essential laboratory services for PLHIV.
+
+-   *Central Support SNUs*: In Central Support SNUs, site-specific
+    activities have transitioned to government or other support. Central
+    Support Districts will continue to receive PEPFAR national support
+    for overarching activities, such as quality assurance and quality
+    improvement (QA/QI) to ensure that patients continue to receive
+    quality services.
+
+-   *For Countries that raised their PSNU level*: The OU should use the
+    definitions above to determine their prioritization level at their
+    new future PSNU level (e.g., the one they are using for
+    COP23-FY24-FY25). However, they should not expand their intensity of
+    site level support beyond their prior PSNU level support areas
+    (e.g., the one they are using for COP22-FY23 and before), without
+    explicit Chair approval. Additionally, any future PSNUs that contain
+    Scale-Up or Attained prior PSNUs, should likely be categorized into
+    one of those groups. So for example, if Zone A contains Regions 1
+    (Attained), 2 (Scale-Up Aggressive), 3 (Central Support), and 4
+    (Sustained). Zone A should be categorized based on ART coverage as
+    Attained, Scale-Up: Saturation or Scale-Up: Aggressive. But that
+    does not mean that site-level support should automatically be
+    extended to facilities in Region 3 or 4 of Zone A, unless there is
+    explicit discussion with and concurrence of Chair.
+
 1.  Review the column "SNU Prioritization (FY23)" which will indicate
     prioritization levels set in COP22 for each PSNU.
 
@@ -57,7 +106,6 @@ The following data points will be imported into DATIM from this section:
 3.  Review the column "FY24 SNU Prioritization Translation" to ensure
     the prioritization level for each PSNU is correct. To make any
     changes, only edit the column "SNU Prioritization (FY24)" from Step
-    2.
 
 \elandscape
 

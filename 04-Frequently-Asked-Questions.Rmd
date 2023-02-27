@@ -7,12 +7,20 @@ The following should be pasted in Row 15 of each of the respective columns and t
 
 - TX_CURR (FY23) - Column F: 
 $$
-=IFERROR(1/(1/SUM(SUMIFS(Cascade!$O:$O,Cascade!$B:$B,$B15,Cascade!$C:$C,IF($C15="<15",{"=<01","01-09","10-14"},{"15-24","25-34","35-49","50+"}),Cascade!$D:$D,$D15))),"")
+\begin{aligned}
+=IFERROR(1/(1/SUM(SUMIFS(Cascade!\$O:\$O,Cascade!\$B:\$B,\$B15,\nonumber \\
+Cascade!\$C:\$C, IF(\$C15="<15",{"=<01","01-09","10-14"},\nonumber \\
+{"15-24","25-34","35-49","50+"}),Cascade!\$D:\$D,\$D15))),"")\nonumber
+\end{aligned}
 $$
 
 - TX_NEW (FY24) - Column G:
 $$
-=IFERROR(1/(1/SUM(SUMIFS(Cascade!$AY:$AY,Cascade!$B:$B,$B15,Cascade!$C:$C,IF($C15="<15",{"=<01","01-09","10-14"},{"15-24","25-34","35-49","50+"}),Cascade!$D:$D,$D15))),"")
+\begin{aligned}
+=IFERROR(1/(1/SUM(SUMIFS(Cascade!\$AY:\$AY,Cascade!\$B:\$B,\$B15,\nonumber \\
+Cascade!\$C:\$C,IF(\$C15="<15",{"=<01","01-09","10-14"},\nonumber \\
+{"15-24","25-34","35-49","50+"}),Cascade!\$D:\$D,\$D15))),"")\nonumber
+\end{aligned}
 $$
 
 

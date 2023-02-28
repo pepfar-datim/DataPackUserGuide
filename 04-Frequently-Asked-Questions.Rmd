@@ -2,27 +2,7 @@
 
 ***Q: On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the <15 and 15+ age bands properly, how can we address this?***
 
-A: In both of the formulas in columns F and G of this tab there is an "@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to drag this formula down through both of these columns to have the aggregation work as intended. 
-The following should be pasted in Row 15 of each of the respective columns and then dragged down through the entire column:
-
-- TX_CURR (FY23) - Column F: 
-$$
-\begin{aligned}
-=IFERROR(1/(1/SUM(SUMIFS(Cascade!\$O:\$O,Cascade!\$B:\$B,\$B15,\nonumber \\
-Cascade!\$C:\$C, IF(\$C15="<15",{"=<01","01-09","10-14"},\nonumber \\
-{"15-24","25-34","35-49","50+"}),Cascade!\$D:\$D,\$D15))),"")\nonumber
-\end{aligned}
-$$
-
-- TX_NEW (FY24) - Column G:
-$$
-\begin{aligned}
-=IFERROR(1/(1/SUM(SUMIFS(Cascade!\$AY:\$AY,Cascade!\$B:\$B,\$B15,\nonumber \\
-Cascade!\$C:\$C,IF(\$C15="<15",{"=<01","01-09","10-14"},\nonumber \\
-{"15-24","25-34","35-49","50+"}),Cascade!\$D:\$D,\$D15))),"")\nonumber
-\end{aligned}
-$$
-
+A: Important Note, if this issue is present in your tool, it may be your version of excel that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "@", and then drag this formula down through both of these columns to have the aggregation work as intended.
 
 ***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
 

@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+***Q: On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the <15 and 15+ age bands properly, how can we address this?***
+
+A: Important Note, if this issue is present in your tool, it may be your version of excel that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "@", and then drag this formula down through both of these columns to have the aggregation work as intended.
+
 ***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
 
 A: The Target Setting Tool will not prevent situations resulting in ART coverage exceeding 100% in a given PSNU, but will flag these cases in yellow to highlight when it occurs. Given that these may be a common occurrence in cases of urban PSNUs, or other case where service seeking behavior by clients leads them to cross PSNU boundaries, they are allowable in the tool. It may be worth considering whether the UNAIDS $PLHIV\_Attend$ estimates might provide better context in these situations, but countries need to use a consistent version of the PLHIV estimates for the whole country, otherwise they risk over or under estimating the number of PLHIV.  

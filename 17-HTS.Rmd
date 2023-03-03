@@ -2,7 +2,7 @@
 
 # HTS
 
-As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS Modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse has only been approved for Target Setting, and any potential changes with HTS reporting will be conveyed through MER 3.0 Resources. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
 The HTS target setting groupings and which modalities fall under each of these are as follows:
 
@@ -10,7 +10,7 @@ The HTS target setting groupings and which modalities fall under each of these a
 
 -   Active SNS: Facility and Community SNS Modalities
 
--   Active Other: Community Other and Community Mobile Modailities
+-   Active Other: Community Other and Community Mobile Modalities
 
 -   STI Clinic: STI Facility Modality
 

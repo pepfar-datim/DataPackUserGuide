@@ -4,18 +4,18 @@ editor_options:
     wrap: 72
 ---
 
-# Datapack Self-service App
+# Target Setting Tool Self-service App
 
-The DataPack self-service app provides a one-stop shop for validating
-and analyzing your DataPack. After logging into the app, you can upload
-a copy of your DataPack, and receive feedback regarding the structure
-and content of the DataPack. The app will attempt to provide feedback
-regarding any errors which may prevent the import of your DataPack into
+The Target Setting Tool self-service app provides a one-stop shop for validating
+and analyzing your Target Setting Tool. After logging into the app via https://apps.datim.org/datapack/, you can upload
+a copy of your Target Setting Tool, and receive feedback regarding the structure
+and content of the Target Setting Tool. The app will attempt to provide feedback
+regarding any errors which may prevent the import of your Target Setting Tool into
 DATIM. In general, all errors must be resolved prior to any approval or
 import of data into DATIM. Warning messages should be carefully
 reviewed. While these may not prevent import of your data, ignoring them
 may lead to data quality problems. The app also provides a number of
-charts and tables to assist with review of your DataPack. Each of these
+charts and tables to assist with review of your Target Setting Tool. Each of these
 functions will be described in more detail in the remained of this
 chapter.
 
@@ -25,44 +25,56 @@ In order to access the app, you will need to login with your DATIM
 credentials. If you do not have a DATIM username and password or if your
 account has been deactivated, please contact DATIM support.
 
-## Uploading a DataPack
+When you log on you will be redirected to a page for DHIS2 Authorization. There will be a question "Do you authorize 'Datapack' to access your protected resources?" to which you must click "Authorize" in order to then be redirected to the app for validation. 
+
+## Uploading a Target Setting Tool
 
 Once you have logged into the app, choose "Browse" from the left side
-pane. Select the DataPack you wish to validate. Please be sure to use an
-"XLSX" file! Other formats such as XLSB or ZIP archives of your DataPack
+pane. Select the Target Setting Tool you wish to validate. Please be sure to use an
+"XLSX" file! Other formats such as XLSB or ZIP archives of your Target Setting Tool
 are not supported, and cannot be used.
+
+Because the Main tabs of the target setting tool and the PSNUxIM tab are in separate files/tools this year, you will see two areas for files to be selected and upaloded. 
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./images/App Step 1.png")
+```
+
+Users should note that the top option is for the main Target Setting Tool file and the bottom will be used when there is an additional PSNUxIM Tool to validate. 
+
+Please note that the Main Target Setting Tool File will be the source of truth for targets. In order for final approvals, full validation, and DATIM import to occur, both of these files will be needed. 
 
 Once you file is completely uploaded to the server, the "Validate"
 button should become active.
 
-## Validating your DataPack
+## Validating your Target Setting Tool
 
 After pressing the "Validate" button on the left-side pane, the app will
 perform a number of structural checks on your file. It is critical that
-the structure of the DataPack matches that which was provided to you.
+the structure of the Target Setting Tool matches that which was provided to you.
 Any tabs or columns which have been removed will result in a parsing
 error, and these will need to be fixed prior to import. Other checks
 include:
 
 -   Altered formulas: Generally, formulas should not be altered, but
     there can be valid programmatic reasons for doing so. These warnings
-    are provided in order to allow those reviewing the DataPack to make
-    a determination as to whether they are valid changes or not.
+    are provided in order to allow those reviewing the Target Setting Tool to make
+    a determination as to whether they are valid changes or not. The app will only flag when formulas have been altered in Grey Columns of the tool which could require approval or justification for changing. 
 
 -   Decimal values: In general, all values (with a few exceptions)
     should be whole integer numbers. Decimals cannot be imported into
     DATIM, and thus must be rounded prior to import. This can lead to
-    variations in the numbers which are visible in the DataPack and
+    variations in the numbers which are visible in the Target Setting Tool and
     those which are imported into DATIM.
 
--   Negative numbers: In general, all numbers in the DataPack should be
+-   Negative numbers: In general, all numbers in the Target Setting Tool should be
     whole, positive integers.
 
 -   Non-numeric values: Any values which are not numeric, e.g.
     characters, is not allowed.
 
 -   Imbalanced PSNUxIM distribution: When distributing data from the
-    main DataPack tabs, to the PSNUxIM tab, small varations due to
+    main Target Setting Tool tabs, to the PSNUxIM tab, small varations due to
     rounding may result. As an example, if a target of 100 has been set
     in the main tab, and is then distributed evenly between three
     partners, each with a target value of 33, a value of 1 remains
@@ -82,7 +94,7 @@ include:
 -   Duplicated rows: There should be no duplicated rows in any of the
     main tabs or the PSNUxIM tab.
 
--   Invalid organisation units: All PSNUs referened in the DataPack must
+-   Invalid organisation units: All PSNUs referened in the Target Setting Tool must
     exist in DATIM.
 
 -   Missing metadata: Certain columns such as the PSNU, Indicator code,
@@ -100,11 +112,11 @@ not be violated, but there can be certain programmatic reasons why these
 violations should be waived.
 
 A number of rules have been created, and many of them are enforced in
-the DataPack itself. However, not all rules have been implemented in the
-DataPack, and due to formula changes and subtleties in how targets are
+the Target Setting Tool itself. However, not all rules have been implemented in the
+Target Setting Tool, and due to formula changes and subtleties in how targets are
 allocated at the PSNUxIM level, additional review of the data in the
 PSNUxIM tab and main tabs may be required. During the validation of the
-datapack, all data contained in the PSNUxIM tab will be checked against
+Target Setting Tool, all data contained in the PSNUxIM tab will be checked against
 all of the validation rules defined in DATIM. If there are any
 violations of the validation rules, the app will provide detailed
 feedback in regards to which PSNUxIM combination is affected. In order
@@ -126,7 +138,7 @@ as possible, but if for some reason targets have been set where the rate
 is greater than 5 %, the app will inform you about the specific PSNUxIM
 where this occurs. Again, these flags will not prevent the import of
 your data into DATIM, but are provided to help reviewers to make a
-determination regarding the approval of the DataPack for import.
+determination regarding the approval of the Target Setting Tool for import.
 
 The app will provide a list of all analytics checks which have been
 flagged in the "Analytics checks" tab on the right side of the app pane.
@@ -134,14 +146,14 @@ flagged in the "Analytics checks" tab on the right side of the app pane.
 ## Indicator summary
 
 This table provides a high-level SNU level summary of indicators from
-each of the main tabs of the DataPack. Note, that this data is NOT drawn
-from the PSNUxIM tab. This can be a useful first check of your DataPack,
+each of the main tabs of the Target Setting Tool. Note, that this data is NOT drawn
+from the PSNUxIM tab. This can be a useful first check of your Target Setting Tool,
 prior to the allocation of the data in the PSNUxIM tab.
 
 ## SNUlevel summary
 
 This table listing provides all of the data from each of the main
-DataPack tabs summarized by the SNU level.
+Target Setting Tool tabs summarized by the SNU level.
 
 ## Memo Tables Pivot
 
@@ -188,5 +200,9 @@ The table provides the following fields
 | (D, DSD,        |          |            |          |                     |          |
 | Age/Sex) TARGET |          |            |          |                     |          |
 +-----------------+----------+------------+----------+---------------------+----------+
+
+## Year 2 Pivot
+
+There is an added tab in the app in which users can view Year 2 Strategic Direction targets in a pivot table view. 
 
 \newpage

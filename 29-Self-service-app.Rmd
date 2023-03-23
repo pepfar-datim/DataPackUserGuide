@@ -7,7 +7,7 @@ editor_options:
 # Target Setting Tool Self-service App
 
 The Target Setting Tool self-service app provides a one-stop shop for validating
-and analyzing your Target Setting Tool. After logging into the app via https://apps.datim.org/datapack/, you can upload
+and analyzing your Target Setting Tool. After logging into the app via [datapack.DATIM.org](http://datapack.datim.org/), you can upload
 a copy of your Target Setting Tool, and receive feedback regarding the structure
 and content of the Target Setting Tool. The app will attempt to provide feedback
 regarding any errors which may prevent the import of your Target Setting Tool into

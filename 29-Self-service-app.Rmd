@@ -42,9 +42,13 @@ knitr::include_graphics("./images/App Step 1.png")
 
 Users should note that the top option is for the main Target Setting Tool file and the bottom will be used when there is an additional PSNUxIM Tool to validate. 
 
-Please note that the Main Target Setting Tool File will be the source of truth for targets. In order for final approvals, full validation, and DATIM import to occur, both of these files will be needed. 
+Please note that the Main Target Setting Tool File will be the source of truth for targets. In order for final approvals, full validation, and DATIM import to occur, both of these files will be needed as shown below. 
 
-Once you file is completely uploaded to the server, the "Validate"
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./images/App Step 3.png")
+```
+
+Once your file(s) is completely uploaded to the server, the "Validate"
 button should become active.
 
 ## Validating your Target Setting Tool

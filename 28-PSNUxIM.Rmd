@@ -47,7 +47,7 @@ instructions:
     tool at [datapack.DATIM.org](http://datapack.datim.org/). Validate your Tool in the prompted box. 
 
 ```{r echo=FALSE, out.width = '100%'}
-knitr::include_graphics("./images/App Step 1.png")
+knitr::include_graphics("./images/App Step 2.png")
 ```
 
 2)  The self-service validation App will automatically detect that a
@@ -349,6 +349,19 @@ DATIM.
     from the Target Setting Tool Targets in column G; yellow highlights indicate
     values 1 or 2 (integer, absolute value) away from the Target Setting Tool
     Targets column G.
+
+## Key Nuances/Scenarios for this year's PSNUxIM Validation
+
+1.    If you only have a Target Setting tool, you get a new PSNUxIM Tool.
+
+2.    If at any point you revceive a WARNING Message for missing combos and you choose "Missing PSNUxIM" you will only get the missing rows
+
+3.    If in the above case, you choose "New PSNUxIM" tab and you have equal targets, they will be appended to the existing PSNUxIM
+
+4.    If you receive an ERROR for Targets in Column G that do not match, you will need to do one of the following
+  -   If you have unequal targets, and you only want missing rows, you will need to update Column G yourself
+  
+  <!--  If you have unequal targets, and choose "New PSNUxIM", your allocations will be preserved and your targets in column G will be updated, but you will need to drag the formulas again (and any other changes like custom dedupes) will be lost -->
 
 \elandscape
 

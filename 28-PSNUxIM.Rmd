@@ -35,7 +35,7 @@ in the main tabs of the tool.* *Due to this new user approach, it is
 recommended to run* *initial validations in the self-service validation App and
 ensure the Target Setting Tool is in a* *good state of completeness prior to
 generating and working on the PSNUxIM tool. Although the* *App will give the option to
-update the PSNUxIM tool each time both files are validated,* * it is not
+update the PSNUxIM tool each time both files are validated,* *it is not
 required to complete this step until you are fully* *prepared to begin
 the mechanism allocation process.*
 
@@ -75,7 +75,7 @@ knitr::include_graphics("./images/App Step 2.png")
     an error and will not allow the Target Setting Tool to validate the next time
     it is imported into the Self-Service App.
 
-In producing a PSNU x IM tool for the first time, the self-service validation app
+In producing a PSNUxIM tool for the first time, the self-service validation app
 will write data and formulas into this tab as follows:
 
 -   Each PSNU.
@@ -97,9 +97,9 @@ will write data and formulas into this tab as follows:
     totals have been over- or under-allocated across DSD or TA, and IMs.
     Red highlighting indicates cases where Rollup sums differ from
     original Target Setting Tool Target totals.
+    Yellow highlighting indicates where roll-up has a different less than or euqal to 2, which may arise from rounding. This can be waived, but the Roll-up total is what will be imported to DATIM. 
 
--   Percentage totals allocated to a column new in the COP23 Data Pack
-    titled "Not PEPFAR", signifying targets that may have been modeled
+-   Percentage totals allocated to a column titled "Not PEPFAR", signifying targets that may have been modeled
     in the Target Setting Tool to allow a full picture of services to be
     demonstrated, but which will likely be implemented by another
     partner organization separately from PEPFAR's support. These values
@@ -356,10 +356,9 @@ DATIM.
 
 2.    If at any point you revceive a WARNING Message for missing combos and you choose "Missing PSNUxIM" you will only get the missing rows
 
-3.    If in the above case, you choose "New PSNUxIM" tab and you have equal targets, they will be appended to the existing PSNUxIM
+3.    If in the above case, you choose "Append Missing PSNUxIM" and you have equal targets, they will be appended to the existing rows to the bottom of the PSNUxIM
 
-4.    If you receive an ERROR for Targets in Column G that do not match, you will need to do one of the following
-  -   If you have unequal targets, and you only want missing rows, you will need to update Column G yourself
+4.    If you receive an ERROR for Targets in Column G that do not match, you will need to do is use the "non_euqal_targets" tab from the Validation Report. This will show you what the discrepancies are between then Main tabs and column G of the PSNUxIM tab. You will then need to update Column G yourself. 
   
   <!--  If you have unequal targets, and choose "New PSNUxIM", your allocations will be preserved and your targets in column G will be updated, but you will need to drag the formulas again (and any other changes like custom dedupes) will be lost -->
 

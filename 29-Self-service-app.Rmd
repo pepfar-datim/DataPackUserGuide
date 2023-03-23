@@ -115,12 +115,14 @@ individuals tested. Under most circumstances, validation rules should
 not be violated, but there can be certain programmatic reasons why these
 violations should be waived.
 
+With the separation of the two tools, it is important that validation rules be resolved in the main tabs before proceed to the PSNUxIM Tool. When both files are uplaoded and validated, the app will flag all validation rules, but will be be able to specify which file is causing the rule to flag. It is also likely that if you have Validation Rule issues in your main tabs, this will be compounded when you then allocate and validate targets in the PSNUxIM process. 
+
 A number of rules have been created, and many of them are enforced in
 the Target Setting Tool itself. However, not all rules have been implemented in the
 Target Setting Tool, and due to formula changes and subtleties in how targets are
 allocated at the PSNUxIM level, additional review of the data in the
-PSNUxIM tab and main tabs may be required. During the validation of the
-Target Setting Tool, all data contained in the PSNUxIM tab will be checked against
+PSNUxIM tool and main tabs may be required. During the validation of the
+Target Setting Tool, all data contained in the PSNUxIM tool will be checked against
 all of the validation rules defined in DATIM. If there are any
 violations of the validation rules, the app will provide detailed
 feedback in regards to which PSNUxIM combination is affected. In order

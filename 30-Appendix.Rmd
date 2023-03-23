@@ -1,29 +1,15 @@
-
 \blandscape
 
-Appendix
-========
+# Appendix
 
-Reference Materials
--------------------
+## Reference Materials
 
--   COP/ROP 2022 Guidance:
-    <https://www.state.gov/wp-content/uploads/2020/12/PEPFAR-COP21-Guidance-Final.pdf>
+-   COP/ROP 2023 Guidance: <https://www.state.gov/wp-content/uploads/2023/02/PEPFAR-2023-Country-and-Regional-Operational-Plan.pdf>
 
--   MER Data Validation Rules User Guide:
-    <https://datim.zendesk.com/hc/en-us/articles/360055112711-MER-Validation-Guide>
+-   MER Data Validation Rules User Guide: <https://datim.zendesk.com/hc/en-us/articles/360055112711-MER-Validation-Guide>
 
-    -   This Document has been designed to communicate all validation
-        rules that the DataPack, as well as other COP21 documents, will
-        go through in the validation and upload process. A description
-        of the validation rules, their definitions and user actions to
-        correct any flagged errors can be found in this document.
+    -   This Document has been designed to communicate all validation rules that the DataPack, as well as other COP21 documents, will go through in the validation and upload process. A description of the validation rules, their definitions and user actions to correct any flagged errors can be found in this document.
 
--   Monitoring, Evaluation, and Reporting Indicator Reference Guide
-    (MER) v2.6:
-    <https://datim.zendesk.com/hc/en-us/articles/360000084446-MER-Indicator-Reference-Guides>
-
--   MER 2.6 Training Videos:
-    <https://datim.zendesk.com/hc/en-us/articles/360051593031-MER-2-5-Training-Videos>
+-   Monitoring, Evaluation, and Reporting Indicator Reference Guide (MER) v2.6: <https://www.state.gov/pepfar-fy-2022-mer-indicators/fy23-mer-2-6-1-indicator-reference-guide/>
 
 \elandscape

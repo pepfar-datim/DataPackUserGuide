@@ -106,16 +106,16 @@ include:
     values is for some reason missing, please find the location of the
     error and fix the issue.
     
--   Non-equal targets: This situation occurs when the targets which are in the main tabs of the DataPack do not match those contained
+-   Non-equal targets: This situation occurs when the targets which are in the main tabs of the Target Setting Tool do not match those contained
     in the PSNUxIM tab. This situation may occur if you have altered
-    the data in the DataPack **after** you have received a PSNUxIM Tool. 
+    the data in the Target Setting Tool **after** you have received a PSNUxIM Tool. 
     In order to rectify this siutation, you can manually update the values
     in the PSNUxIM tab, or you can choose to regenerate your PSNUxIM Tool. 
     Please note that if you decide to regenerate your PSNUxIM Tool, 
     any custom dedupe values which you have populated will be lost. 
--   Missing PSNUxIM values: This situation occurs when you have already 
+-   Missing PSNUxIM values: This situation occurs when you already 
     have a PSNUxIM tool, but additional targets have been added to the 
-    main tabs of the DataPack. You can download the missing PSNUxIM targets
+    main tabs of the Target Setting Tool. You can download the missing PSNUxIM targets
     and manually append them to your existing PSNUxIM tab. Alternatlively, 
     you can also have the app append these rows for you. Please note that
     appending the rows to your PSNUxIM tab, may require a singnificant amount
@@ -132,7 +132,7 @@ individuals tested. Under most circumstances, validation rules should
 not be violated, but there can be certain programmatic reasons why these
 violations should be waived.
 
-With the separation of the two tools, it is important that validation rules be resolved in the main tabs before proceed to the PSNUxIM Tool. When both files are uplaoded and validated, the app will flag all validation rules, but will be be able to specify which file is causing the rule to flag. It is also likely that if you have Validation Rule issues in your main tabs, this will be compounded when you then allocate and validate targets in the PSNUxIM process. 
+With the separation of the two tools, it is important that validation rules be resolved in the main tabs before proceeding to the PSNUxIM Tool. When both files are uplaoded and validated, the app will flag all validation rules, but will be be able to specify which file is causing the rule to flag. It is also likely that if you have Validation Rule issues in your main tabs, this will be compounded when you then allocate and validate targets in the PSNUxIM process. 
 
 A number of rules have been created, and many of them are enforced in
 the Target Setting Tool itself. However, not all rules have been implemented in the
@@ -150,7 +150,7 @@ While validation rule violations will not prevent the import of your
 data into DATIM, they may lead to data quality problems in both DATIM
 and downstream systems such as Panorama and PAW. If there are any
 validation rule issues, your PPM and DUIT can be requested to waive
-these at their discreation.
+these at their discretion.
 
 ## Analytics Checks
 
@@ -228,14 +228,14 @@ The table provides the following fields
 ## Indicator Summary
 
 This table provides a high-level SNU level summary of indicators from
-each of the main tabs of the DataPack. Note, that this data is NOT drawn
-from the PSNUxIM tab. This can be a useful first check of your DataPack,
+each of the main tabs of the Target Setting Tool. Note, that this data is NOT drawn
+from the PSNUxIM tab. This can be a useful first check of your Target Setting Tool,
 prior to the allocation of the data in the PSNUxIM tab.
 
 ## SNU Level Summary
 
 This table listing provides all of the data from each of the main
-DataPack tabs summarized by the SNU level.
+Target Setting Tool tabs summarized by the SNU level.
 
 ## HTS Summary Chart
 
@@ -274,12 +274,6 @@ by Agency, Partner and Mechanism.
 This pivot table is very similar to the PSNUxIM pivot, except it contains data 
 from the Year 2 Tab of the Target Setting Tool. 
 
-## Memo Tables
-
-This pivot table provides you with an overview of the indicator values
-which will be used in your COP Memo. Data can be viewed by Prioritization, by Agency, or by
-Partner. 
-
 # Download types
 
 The Self-service app provides you with the possibility to download a number of different reports and 
@@ -292,15 +286,15 @@ the structure and validation issues which were detected by the app.
 
 ## Flatpack
 
-This report provides you with a plain data source of all of the data in your DataPack/PSNU. Each of the tabs contained in the workbook are described below.
+This report provides you with a plain data source of all of the data in your Target Setting Tool/PSNU. Each of the tabs contained in the workbook are described below.
 
 - The "Analytics" tab of thisExcel workbook is well suited to being a data source for PivotTable analysis in Excel. 
-- SNU Summary: When using the DataPack as the main data source, these numbers are obtained directly from the main tabs of the DataPack 
+- SNU Summary: When using the Target Setting Tool as the main data source, these numbers are obtained directly from the main tabs of the Target Setting Tool 
 - HTS Summary: This tab provides a summary of HTS modalities at the operating unit level. 
 - Prioritization: This tab provides a table of COP Memo indicators.
-- MER Data: This tab provides additional details of the DataPack data, including
+- MER Data: This tab provides additional details of the Target Setting Tool data, including
 Age, Sex and KP disaggregates. 
-- DATIM Export: This tab provides an output of DataPack data in the standard DATIM export format. 
+- DATIM Export: This tab provides an output of Target Setting Tool data in the standard DATIM export format. 
 
 ## CSO Flatpack
 
@@ -310,15 +304,15 @@ allocation to specific mechanisms.
 ## Comparison
 
 This report is typically used during the OPU process to compare data which is already
-in DATIM to that which is contained in a DataPack. 
+in DATIM to that which is contained in a Target Setting Tool. 
 
 ## New PSNUxIM
 
 This download function will generate a completely new PSNUxIM tab for you. This 
-can be done using your DataPack. In this case, allocation at the PSNUxIM level
+can be done using your Target Setting Tool. In this case, allocation at the PSNUxIM level
 will be done using a model of prior year targets and results. 
 
-Alternatively, you can also generate a completely new PSNUxIM tab using a DataPack with an existing PSNUxIM tab. In this case, any allocation which you have made to mechanisms will be preserved, any missing targets will be added, and any non-equal targets will be
+Alternatively, you can also generate a completely new PSNUxIM tab using a Target Setting Tool with an existing PSNUxIM tab. In this case, any allocation which you have made to mechanisms will be preserved, any missing targets will be added, and any non-equal targets will be
 overwritten with new values. However, if you have made any additional modifications to your PSNUxIM tab, this work will be lost. 
 
 ## Only missing PSNUxIM targets
@@ -337,11 +331,11 @@ This download type will provide you with a draft version of the tables which wil
 
 # Send to PAW
 
-Clicking this button will start a process to upload the results from the DataPack/PSNUxIM tool to PAW. 
+Clicking this button will start a process to upload the results from the Target Setting Tool/PSNUxIM tool to PAW. If ONLY the Main COP23 Target Setting Tool is validated, the FY24 Targets will be sent to PAW as Unallocasted Targets, and the Year 2 National Level Targets will also be sent. When a PSNUxIM Tool is also included and BOTH files are validated, the allocated FY24 targets from the PSNUxIM Tool will be sent to PAW and the Year 2 National Level Targets will once again be pulled and sent from the Main Target Setting Tool. 
 
 # Reset inputs
 
-If you wish to start over, and upload a new Datapack while you are still logged into the system, you can click this button and start the validation process over from the beginning. 
+If you wish to start over, and upload a new Target Setting Tool while you are still logged into the system, you can click this button and start the validation process over from the beginning. 
 
 # Logout
 

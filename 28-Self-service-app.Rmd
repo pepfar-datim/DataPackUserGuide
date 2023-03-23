@@ -7,7 +7,8 @@ editor_options:
 # Datapack Self-service App
 
 The DataPack self-service app provides a one-stop shop for validating
-and analyzing your DataPack. After logging into the app, you can upload
+and analyzing your DataPack. The self-service app is available [here](https.//apps.datim.org/datapack)
+After logging into the app, you can upload
 a copy of your DataPack, and receive feedback regarding the structure
 and content of the DataPack. The app will attempt to provide feedback
 regarding any errors which may prevent the import of your DataPack into
@@ -40,14 +41,34 @@ are not supported, and cannot be used.
 Once you file is completely uploaded to the server, the "Validate"
 button should become active.
 
-## Validating your DataPack
+## Uploading a PSNUxIM Tool
+
+During COP23, the PSNUxIM Tool is a separate worksheet. Once you have 
+completed your PSNUxIM Tool and wish to validate it, you should first 
+upload the associated DataPack, and then also upload the standalone 
+PSNUxIM Tool.  Note that when you are validating a PSNUxIM Tool, with 
+its the associated DataPack, all data for the visuals in the app will 
+be drawn from the PSNUxIM Tool, with the exception of the figures in 
+the Year 2 Pivot. 
+
+
+## Validating your DataPack and PSNUxIM
 
 After pressing the "Validate" button on the left-side pane, the app will
 perform a number of structural checks on your file. It is critical that
-the structure of the DataPack matches that which was provided to you.
-Any tabs or columns which have been removed will result in a parsing
-error, and these will need to be fixed prior to import. Other checks
-include:
+the structure of the DataPack and PSNUxIM matches that which was provided to you.
+Each of the tabs in the app will be explained in further detail below. 
+
+## Messages
+The messages tab provides a listing of all of the validation checks performed
+on your DataPack/PSNUxIM. Messages listed in red and marked as an **ERROR**
+generally must always be resolved prior to importing your data. Any issues
+which are errors will require to be waived by your PPM, DUIT and Systems. 
+Any issues which are marked with **WARNING** will not prevent your data
+from being imported into DATIM, but will need to be waived by your PPM
+prior to import.
+
+Each of the types of validation checks is explained in more detail in the next section. 
 
 -   Altered formulas: Generally, formulas should not be altered, but
     there can be valid programmatic reasons for doing so. These warnings
@@ -61,10 +82,11 @@ include:
     those which are imported into DATIM.
 
 -   Negative numbers: In general, all numbers in the DataPack should be
-    whole, positive integers.
+    whole, positive integers. The only exception to this are negative
+    values associated with the deduplication mechanisms.
 
 -   Non-numeric values: Any values which are not numeric, e.g.
-    characters, is not allowed.
+    characters, are not allowed.
 
 -   Imbalanced PSNUxIM distribution: When distributing data from the
     main DataPack tabs, to the PSNUxIM tab, small varations due to
@@ -76,6 +98,25 @@ include:
     the values allocated in the PSNUxIM tab match those in the main
     programmatic area tabs.
 
+-   Non-equal targets: This situation occurs when the targets which 
+    are in the main tabs of the DataPack do not match those contained
+    in the PSNUxIM tab. This situation may occur if you have altered
+    the data in the DataPack **after** you have received a PSNUxIM Tool. 
+    In order to rectify this siutation, you can manually update the values
+    in the PSNUxIM tab, or you can choose to regenerate your PSNUxIM Tool. 
+    Please note that if you decide to regenerate your PSNUxIM Tool, 
+    any custom dedupe values which you have populated will be lost. 
+    
+-   Missing PSNUxIM values: This situation occurs when you have already 
+    have a PSNUxIM tool, but additional targets have been added to the 
+    main tabs of the DataPack. You can download the missing PSNUxIM targets
+    and manually append them to your existing PSNUxIM tab. Alternatlively, 
+    you can also have the app append these rows for you. Please note that
+    appending the rows to your PSNUxIM tab, may require a singnificant amount
+    of time to execute, depending on the size of your PSNUxIM tab. If you
+    only have a few missing PSNUxIM combinations, then it is advised that you
+    manually copy and paste them into your existing PSNUxIM tab. 
+    
 -   Threaded comments: This type of comment, as opposed to the previous
     type of Notes used in Microsoft Excel, causes corruption issues when
     the app attempts to update your PSNUxIM tab. Prior to submitting for
@@ -95,7 +136,22 @@ include:
     values is for some reason missing, please find the location of the
     error and fix the issue.
 
-## Validation rule checks
+## Analytics checks
+
+Analytics checks provide an additional type of data quality control. As
+an example, one analytics check looks for VMMC indeterminate rates
+greater than 5 percent. Ideally, the indeterminate rate should be a low
+as possible, but if for some reason targets have been set where the rate
+is greater than 5 %, the app will inform you about the specific PSNUxIM
+where this occurs. Again, these flags will not prevent the import of
+your data into DATIM, but are provided to help reviewers to make a
+determination regarding the approval of the DataPack for import.
+
+The app will provide a list of all analytics checks which have been
+flagged in the "Analytics checks" tab on the right side of the app pane.
+
+
+## Validation rules
 
 Validation rules provide additional data quality controls between
 certain indicators. As a simple example, the number of persons testing
@@ -122,44 +178,6 @@ and downstream systems such as Panorama and PAW. If there are any
 validation rule issues, your PPM and DUIT can be requested to waive
 these at their discreation.
 
-## Analytics checks
-
-Analytics checks provide an additional type of data quality control. As
-an example, one analytics check looks for VMMC indeterminate rates
-greater than 5 percent. Ideally, the indeterminate rate should be a low
-as possible, but if for some reason targets have been set where the rate
-is greater than 5 %, the app will inform you about the specific PSNUxIM
-where this occurs. Again, these flags will not prevent the import of
-your data into DATIM, but are provided to help reviewers to make a
-determination regarding the approval of the DataPack for import.
-
-The app will provide a list of all analytics checks which have been
-flagged in the "Analytics checks" tab on the right side of the app pane.
-
-## Indicator Summary
-
-This table provides a high-level SNU level summary of indicators from
-each of the main tabs of the DataPack. Note, that this data is NOT drawn
-from the PSNUxIM tab. This can be a useful first check of your DataPack,
-prior to the allocation of the data in the PSNUxIM tab.
-
-## SNU Level Summary
-
-This table listing provides all of the data from each of the main
-DataPack tabs summarized by the SNU level.
-
-## Memo Tables Pivot
-
-A recent update to the Self Service App now includes a "Memo Tables" tab
-that replaces what was the "Prioritization" tab view. This Pivot table
-function allows users to view by Prioritization, by Agency, or by
-Partner. There is also the "PSNUxIM Pivot" which contains data elements,
-while the "Memo Tables" Pivot contains derived indicators. If a user
-ever needs to rest to the original view, select one of the other "Pivot
-Styles" from the drop-down, and then re-select the "Prioritization"
-option.
-
-## Validation rules
 
 This tab provides a listing of all validation rule violations, if any.
 The table provides the following fields
@@ -171,7 +189,7 @@ The table provides the following fields
 -   Formula: The rule is specified with a left side, a right side, and
     an operator. The left and right side correspond to a data element
     (or data elements) located in the PSNUxIM tab. Using a combination
-    of filters (PSNU, Mechanism and Data elemement), you should be able
+    of filters (PSNU, Mechanism and Data element), you should be able
     to locate the specific rows in the PSNUxIM tab which are leading to
     the validation rule violation.
 
@@ -193,5 +211,133 @@ The table provides the following fields
 | (D, DSD,        |          |            |          |                     |          |
 | Age/Sex) TARGET |          |            |          |                     |          |
 +-----------------+----------+------------+----------+---------------------+----------+
+
+
+## Indicator Summary
+
+This table provides a high-level SNU level summary of indicators from
+each of the main tabs of the DataPack. Note, that this data is NOT drawn
+from the PSNUxIM tab. This can be a useful first check of your DataPack,
+prior to the allocation of the data in the PSNUxIM tab.
+
+## SNU Level Summary
+
+This table listing provides all of the data from each of the main
+DataPack tabs summarized by the SNU level.
+
+## HTS Summary Chart
+
+This visual provides an operating unit level chart of HTS testing modalities.
+
+## HTS Summary Table
+This table provides a break down of the HTS Testing modalities. Positive 
+and negative tests, along with yield and overall percentage of HTS_TST_POS
+are provided. 
+
+## HTS Yield
+
+This visual provides an overview of testing yields by modality, aggregated
+at the operating unit level. 
+
+## VLS Testing
+
+This stacked row chart provides an overview of TX_CURR, TX_PVLS(D), and TX_PVLS(N)
+aggregated to the SNU level. 
+
+## EPI Cascade Pyramid
+
+This chart provides a pyramid chart for PLHIV, TX_CURR and TX_PVLS broken
+down by age and sex. Data can be viewed either at the operation unit level, 
+or alternatively you can select a particular SNU1 to view.
+
+
+## PSNUxIM Pivot
+
+This tab provides you with a pivot table of data elements which will be imported
+into DATIM. The data can be aggregated and filtered in various ways. If you are using
+a PSNUxIM tab and have allocated data to mechanisms, the data can be aggregated
+by Agency, Partner and Mechanism.
+
+## Year2 Pivot
+
+This pivot table is very similar to the PSNUxIM pivot, except it contains data 
+from the Year 2 Tab of the Target Setting Tool. 
+
+## Memo Tables
+
+This pivot table provides you with an overview of the indicator values
+which will be used in your COP Memo. Data can be viewed by Prioritization, by Agency, or by
+Partner. 
+
+# Download types
+
+The Self-service app provides you with the possibility to download a number of different reports and 
+outputs. Each of these will be described in the following section. 
+
+## Messages
+
+With this report, you can output all of the messages which are provided by the app regarding
+the structure and validation issues which were detected by the app. 
+
+
+
+## Flatpack
+
+This report provides you with a plain data source of all of the data in your DataPack/PSNU. Each of the tabs contained in the workbook are described below.
+
+- The "Analytics" tab of thisExcel workbook is well suited to being a data source for PivotTable analysis in Excel. 
+- SNU Summary: When using the DataPack as the main data source, these numbers are obtained directly from the main tabs of the DataPack 
+- HTS Summary: This tab provides a summary of HTS modalities at the operating unit level. 
+- Prioritization: This tab provides a table of COP Memo indicators.
+- MER Data: This tab provides additional details of the DataPack data, including
+Age, Sex and KP disaggregates. 
+- DATIM Export: This tab provides an output of DataPack data in the standard DATIM export format. 
+
+## CSO Flatpack
+
+This report is similar to the Flatpack, except that it contains no information regarding
+allocation to specific mechanisms. 
+
+## Comparison
+
+This report is typically used during the OPU process to compare data which is already
+in DATIM to that which is contained in a DataPack. 
+
+## New PSNUxIM
+
+This download function will generate a completely new PSNUxIM tab for you. This 
+can be done using your DataPack. In this case, allocation at the PSNUxIM level
+will be done using a model of prior year targets and results. 
+
+Alternatively, you can also generate a completely new PSNUxIM tab using a DataPack with an existing PSNUxIM tab. In this case, any allocation which you have made to mechanisms will be preserved, any missing targets will be added, and any non-equal targets will be
+overwritten with new values. However, if you have made any additional modifications to your PSNUxIM tab, this work will be lost. 
+
+## Only missing PSNUxIM targets
+
+This download type will produce a new PSNUxIM workbook with only your missing targets. 
+These can then be pasted into your existing PSNUxIM workbook. This process is usually much faster than regenerating a completely new PSNUxIM tool. If you only have a few missing targets, this would be the recommended download type to use. 
+
+## Append missing PSNUxIM Targets
+
+This download type will appened any missing targets to the first blank row of your existing PSNUxIM tool. Note however, that if you have any unequal targets, and choose this download type, those
+targets will not be updated. You will have to update these yourself. New rows will be marked in green. Note that you must also populate all of the right side formulas in order for your allolcations to function properly. 
+
+## COP Memo
+
+This download type will provide you with a draft version of the tables which will eventually become part of your full COP Memo or OPU. 
+
+# Send to PAW
+
+Clicking this button will start a process to upload the results from the DataPack/PSNUxIM tool to PAW. 
+
+# Reset inputs
+
+If you wish to start over, and upload a new Datapack while you are still logged into the system, you can click this button and start the validation process over from the beginning. 
+
+# Logout
+
+You can logout of the app by clicking this button. Note that you will be automatically logged out of the app and DATIM after a certain point of time. It is advisable to log out of the app when you have completely your work, so that you can make the server
+resources available for other users. 
+
 
 \newpage

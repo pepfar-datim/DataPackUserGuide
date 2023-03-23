@@ -23,9 +23,9 @@ chapter.
 
 In order to access the app, you will need to login with your DATIM
 credentials. If you do not have a DATIM username and password or if your
-account has been deactivated, please contact DATIM support.
+account has been deactivated, please contact DATIM support before you login.
 
-When you log on you will be redirected to a page for DHIS2 Authorization. There will be a question "Do you authorize 'Datapack' to access your protected resources?" to which you must click "Authorize" in order to then be redirected to the app for validation. 
+When you log on you will first be prompted with a "Login with DATIM" and be redirected to a DATIM login screen. Once you have logged in, you will be redirected to a page for DHIS2 Authorization. There will be a question "Do you authorize 'Datapack' to access your protected resources?" to which you must click "Authorize" in order to then be redirected to the app for validation. 
 
 ## Uploading a Target Setting Tool
 
@@ -42,7 +42,7 @@ knitr::include_graphics("./images/App Step 1.png")
 
 Users should note that the top option is for the main Target Setting Tool file and the bottom will be used when there is an additional PSNUxIM Tool to validate. 
 
-Please note that the Main Target Setting Tool File will be the source of truth for targets. In order for final approvals, full validation, and DATIM import to occur, both of these files will be needed as shown below. 
+Please note that the Main Target Setting Tool File will be the source of truth for targets. In order for final approvals, full validation, and DATIM import to occur, both of these files will be needed as shown below. Note that when you are validating a PSNUxIM Tool, with its the associated Target Setting Tool, all data for the visuals in the app will be drawn from the PSNUxIM Tool, with the exception of the figures in the Year 2 Pivot.
 
 ```{r echo=FALSE, out.width = '100%'}
 knitr::include_graphics("./images/App Step 3.png")
@@ -51,7 +51,7 @@ knitr::include_graphics("./images/App Step 3.png")
 Once your file(s) is completely uploaded to the server, the "Validate"
 button should become active.
 
-## Validating your Target Setting Tool
+## Validating your Target Setting and PSNUxIM Tools
 
 After pressing the "Validate" button on the left-side pane, the app will
 perform a number of structural checks on your file. It is critical that
@@ -75,7 +75,7 @@ include:
     whole, positive integers.
 
 -   Non-numeric values: Any values which are not numeric, e.g.
-    characters, is not allowed.
+    characters, are not allowed.
 
 -   Imbalanced PSNUxIM distribution: When distributing data from the
     main Target Setting Tool tabs, to the PSNUxIM tab, small varations due to
@@ -105,8 +105,25 @@ include:
     Age, Sex and KeyPop columns must always be present. If any of these
     values is for some reason missing, please find the location of the
     error and fix the issue.
+    
+-   Non-equal targets: This situation occurs when the targets which are in the main tabs of the DataPack do not match those contained
+    in the PSNUxIM tab. This situation may occur if you have altered
+    the data in the DataPack **after** you have received a PSNUxIM Tool. 
+    In order to rectify this siutation, you can manually update the values
+    in the PSNUxIM tab, or you can choose to regenerate your PSNUxIM Tool. 
+    Please note that if you decide to regenerate your PSNUxIM Tool, 
+    any custom dedupe values which you have populated will be lost. 
+-   Missing PSNUxIM values: This situation occurs when you have already 
+    have a PSNUxIM tool, but additional targets have been added to the 
+    main tabs of the DataPack. You can download the missing PSNUxIM targets
+    and manually append them to your existing PSNUxIM tab. Alternatlively, 
+    you can also have the app append these rows for you. Please note that
+    appending the rows to your PSNUxIM tab, may require a singnificant amount
+    of time to execute, depending on the size of your PSNUxIM tab. If you
+    only have a few missing PSNUxIM combinations, then it is advised that you
+    manually copy and paste them into your existing PSNUxIM tab. 
 
-## Validation rule checks
+## Validation Rule Checks
 
 Validation rules provide additional data quality controls between
 certain indicators. As a simple example, the number of persons testing
@@ -135,7 +152,7 @@ and downstream systems such as Panorama and PAW. If there are any
 validation rule issues, your PPM and DUIT can be requested to waive
 these at their discreation.
 
-## Analytics checks
+## Analytics Checks
 
 Analytics checks provide an additional type of data quality control. As
 an example, one analytics check looks for VMMC indeterminate rates
@@ -149,14 +166,14 @@ determination regarding the approval of the Target Setting Tool for import.
 The app will provide a list of all analytics checks which have been
 flagged in the "Analytics checks" tab on the right side of the app pane.
 
-## Indicator summary
+## Indicator Summary
 
 This table provides a high-level SNU level summary of indicators from
 each of the main tabs of the Target Setting Tool. Note, that this data is NOT drawn
 from the PSNUxIM tab. This can be a useful first check of your Target Setting Tool,
 prior to the allocation of the data in the PSNUxIM tab.
 
-## SNUlevel summary
+## SNU Level Summary
 
 This table listing provides all of the data from each of the main
 Target Setting Tool tabs summarized by the SNU level.
@@ -172,7 +189,7 @@ ever needs to rest to the original view, select one of the other "Pivot
 Styles" from the drop-down, and then re-select the "Prioritization"
 option.
 
-## Validation rules
+## Validation Rules
 
 This tab provides a listing of all validation rule violations, if any.
 The table provides the following fields
@@ -210,5 +227,128 @@ The table provides the following fields
 ## Year 2 Pivot
 
 There is an added tab in the app in which users can view Year 2 Strategic Direction targets in a pivot table view. 
+
+## Indicator Summary
+
+This table provides a high-level SNU level summary of indicators from
+each of the main tabs of the DataPack. Note, that this data is NOT drawn
+from the PSNUxIM tab. This can be a useful first check of your DataPack,
+prior to the allocation of the data in the PSNUxIM tab.
+
+## SNU Level Summary
+
+This table listing provides all of the data from each of the main
+DataPack tabs summarized by the SNU level.
+
+## HTS Summary Chart
+
+This visual provides an operating unit level chart of HTS testing modalities.
+
+## HTS Summary Table
+This table provides a break down of the HTS Testing modalities. Positive 
+and negative tests, along with yield and overall percentage of HTS_TST_POS
+are provided. 
+
+## HTS Yield
+
+This visual provides an overview of testing yields by modality, aggregated
+at the operating unit level. 
+
+## VLS Testing
+
+This stacked row chart provides an overview of TX_CURR, TX_PVLS(D), and TX_PVLS(N)
+aggregated to the SNU level. 
+
+## EPI Cascade Pyramid
+
+This chart provides a pyramid chart for PLHIV, TX_CURR and TX_PVLS broken
+down by age and sex. Data can be viewed either at the operation unit level, 
+or alternatively you can select a particular SNU1 to view.
+
+## PSNUxIM Pivot
+
+This tab provides you with a pivot table of data elements which will be imported
+into DATIM. The data can be aggregated and filtered in various ways. If you are using
+a PSNUxIM tab and have allocated data to mechanisms, the data can be aggregated
+by Agency, Partner and Mechanism.
+
+## Year2 Pivot
+
+This pivot table is very similar to the PSNUxIM pivot, except it contains data 
+from the Year 2 Tab of the Target Setting Tool. 
+
+## Memo Tables
+
+This pivot table provides you with an overview of the indicator values
+which will be used in your COP Memo. Data can be viewed by Prioritization, by Agency, or by
+Partner. 
+
+# Download types
+
+The Self-service app provides you with the possibility to download a number of different reports and 
+outputs. Each of these will be described in the following section. 
+
+## Messages
+
+With this report, you can output all of the messages which are provided by the app regarding
+the structure and validation issues which were detected by the app.
+
+## Flatpack
+
+This report provides you with a plain data source of all of the data in your DataPack/PSNU. Each of the tabs contained in the workbook are described below.
+
+- The "Analytics" tab of thisExcel workbook is well suited to being a data source for PivotTable analysis in Excel. 
+- SNU Summary: When using the DataPack as the main data source, these numbers are obtained directly from the main tabs of the DataPack 
+- HTS Summary: This tab provides a summary of HTS modalities at the operating unit level. 
+- Prioritization: This tab provides a table of COP Memo indicators.
+- MER Data: This tab provides additional details of the DataPack data, including
+Age, Sex and KP disaggregates. 
+- DATIM Export: This tab provides an output of DataPack data in the standard DATIM export format. 
+
+## CSO Flatpack
+
+This report is similar to the Flatpack, except that it contains no information regarding
+allocation to specific mechanisms. 
+
+## Comparison
+
+This report is typically used during the OPU process to compare data which is already
+in DATIM to that which is contained in a DataPack. 
+
+## New PSNUxIM
+
+This download function will generate a completely new PSNUxIM tab for you. This 
+can be done using your DataPack. In this case, allocation at the PSNUxIM level
+will be done using a model of prior year targets and results. 
+
+Alternatively, you can also generate a completely new PSNUxIM tab using a DataPack with an existing PSNUxIM tab. In this case, any allocation which you have made to mechanisms will be preserved, any missing targets will be added, and any non-equal targets will be
+overwritten with new values. However, if you have made any additional modifications to your PSNUxIM tab, this work will be lost. 
+
+## Only missing PSNUxIM targets
+
+This download type will produce a new PSNUxIM workbook with only your missing targets. 
+These can then be pasted into your existing PSNUxIM workbook. This process is usually much faster than regenerating a completely new PSNUxIM tool. If you only have a few missing targets, this would be the recommended download type to use. 
+
+## Append missing PSNUxIM Targets
+
+This download type will appened any missing targets to the first blank row of your existing PSNUxIM tool. Note however, that if you have any unequal targets, and choose this download type, those
+targets will not be updated. You will have to update these yourself. New rows will be marked in green. Note that you must also populate all of the right side formulas in order for your allolcations to function properly. 
+
+## COP Memo
+
+This download type will provide you with a draft version of the tables which will eventually become part of your full COP Memo or OPU. 
+
+# Send to PAW
+
+Clicking this button will start a process to upload the results from the DataPack/PSNUxIM tool to PAW. 
+
+# Reset inputs
+
+If you wish to start over, and upload a new Datapack while you are still logged into the system, you can click this button and start the validation process over from the beginning. 
+
+# Logout
+
+You can logout of the app by clicking this button. Note that you will be automatically logged out of the app and DATIM after a certain point of time. It is advisable to log out of the app when you have completely your work, so that you can make the server
+resources available for other users. 
 
 \newpage

@@ -224,9 +224,6 @@ The table provides the following fields
 | Age/Sex) TARGET |          |            |          |                     |          |
 +-----------------+----------+------------+----------+---------------------+----------+
 
-## Year 2 Pivot
-
-There is an added tab in the app in which users can view Year 2 Strategic Direction targets in a pivot table view. 
 
 ## Indicator Summary
 
@@ -272,7 +269,7 @@ into DATIM. The data can be aggregated and filtered in various ways. If you are 
 a PSNUxIM tab and have allocated data to mechanisms, the data can be aggregated
 by Agency, Partner and Mechanism.
 
-## Year2 Pivot
+## Year 2 Pivot
 
 This pivot table is very similar to the PSNUxIM pivot, except it contains data 
 from the Year 2 Tab of the Target Setting Tool. 

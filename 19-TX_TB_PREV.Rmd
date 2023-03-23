@@ -50,12 +50,12 @@ The following data points will be imported into DATIM from this section:
 
 2.  Review and adjust Estimated TB Screen Positivity Rates, both for
     those New on ART as well as for those Already on ART. These will
-    both come prepopulated based on FY21 Results in DATIM. Red
+    both come prepopulated based on FY22 Results in DATIM. Red
     highlights indicate percentages over 100%, or under 0%, or may also
     indicate where values have been left blank but are necessary for
     further steps.
 
-3.  For historical context, review FY23 Targets for TX_NEW and TX_CURR.
+3.  For historical context, review FY24 Targets for TX_NEW and TX_CURR.
     Follow hyperlinks to see and adjust source data as needed.
 
 4.  Review modeled targets for the following columns. See below for
@@ -69,9 +69,9 @@ The following data points will be imported into DATIM from this section:
 
     d.  Already on ART, TB Screen --
 
-### TX_TB (D) Disaggregates (FY23)
+### TX_TB (D) Disaggregates (FY24)
 
-The DataPack will set FY23 targets for TX_TB (D) as laid out below.
+The Target Setting Tool will set FY24 targets for TX_TB (D) as laid out below.
 
 Targets will be set for those New on ART and screened positive for TB as
 follows, rounded to the nearest integer: $$
@@ -79,7 +79,7 @@ follows, rounded to the nearest integer: $$
 {TB\ Screen\ Positivity\ Rate:\ New\ on\ ART}_{t}
 $$
 
-FY23 targets for those Already on ART, but found negative for TB will be
+FY24 targets for those Already on ART, but found negative for TB will be
 set as follows, rounded to the nearest integer:
 
 $$
@@ -101,7 +101,7 @@ TB will be set as below, rounding to the nearest integer:
 $$
 {TX\_ TB.D.Already.Neg}_{t}\  = \ ({TX\_ CURR}_{t}\  \times \ {Targeted\ Coverage:\ Already\ on\ ART}_{t})\ - \\
 {TX\_ TB.D.Already.Pos}_{t}
-$$ ## TX_TB_PREV: TB_PREV (D)
+$$ \## TX_TB_PREV: TB_PREV (D)
 
 **TB_PREV (D):** Number of ART patients who are expected to complete a
 course of TB preventive therapy during the reporting period (for
@@ -128,33 +128,33 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review "Cumulative Previous Completion of TPT (Results FY17-21)" as
-    well as "TB_PREV (N) - New on ART (FY22 Targets)" and "TB_PREV (N) -
-    Already on ART (FY22 Targets)". These three columns will help
+1.  Review "Cumulative Previous Completion of TPT (Results FY17-22)" as
+    well as "TB_PREV (N) - New on ART (FY23 Targets)" and "TB_PREV (N) -
+    Already on ART (FY23 Targets)". These three columns will help
     calculate "Already on ART who have likely completed TPT in last 5
-    years (FY23) (%)".
+    years (FY24) (%)".
 
 2.  Review "Already on ART who have likely completed TPT in last 5 years
-    (FY23) (%)" which is the summation of the previous three columns
-    from step 1 above, divided by the "TX_CURR (FY22)" value from column
+    (FY24) (%)" which is the summation of the previous three columns
+    from step 1 above, divided by the "TX_CURR (FY23)" value from column
     G of the TX_TB (D) section.
 
-3.  Review "Est. \# Already on ART Eligible for TPT (FY23)" which is
+3.  Review "Est. \# Already on ART Eligible for TPT (FY24)" which is
     equivalent to "Already on ART, TB Screen -" set in the TX_TB (D)
     section, less the projected number of these who have likely already
     received TPT in the previous few years.
 
-4.  Review both "% TPT Initiation Rate - New on ART (FY23) (%)" and "%
-    TPT Initiation Rate - Already on ART (FY23) (%)" which are defaulted
-    to 100%. "% TPT Initiation Rate - New on ART (FY23) (%)" will flag
+4.  Review both "% TPT Initiation Rate - New on ART (FY24) (%)" and "%
+    TPT Initiation Rate - Already on ART (FY24) (%)" which are defaulted
+    to 100%. "% TPT Initiation Rate - New on ART (FY24) (%)" will flag
     yellow if it is less than 100% while "% TPT Initiation Rate -
-    Already on ART (FY23) (%)" will flag if it is set less than 90%.
+    Already on ART (FY24) (%)" will flag if it is set less than 90%.
 
 5.  Review modeled targets for TB_PREV (D) New on ART --- set by
     multiplying "New on ART, TB Screen -" and "% TPT Initiation Rate -
-    New on ART (FY23) (%)" --- and TB_PREV (D) Already on ART --- set by
-    multiplying "Est. \# Already on ART Eligible for TPT (FY23)" by "%
-    TPT Initiation Rate - Already on ART (FY23) (%)"
+    New on ART (FY24) (%)" --- and TB_PREV (D) Already on ART --- set by
+    multiplying "Est. \# Already on ART Eligible for TPT (FY24)" by "%
+    TPT Initiation Rate - Already on ART (FY24) (%)"
 
 ## TX_TB_PREV: TB_PREV (N)
 
@@ -183,17 +183,16 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For historical context, review FY22 targets from DATIM for
-    TB_PREV (N) for those New on ART and those Already on ART.
+1.  For historical context, review FY23 targets from DATIM for TB_PREV
+    (N) for those New on ART and those Already on ART.
 
 2.  Review Targeted TPT completion rates, which will default to 90%, but
     can be adjusted as needed, taking into account persons who (1) are
-    already on TB preventative therapy (2) will likely screen
-    negative (3) will be medically ineligible for TPT (4) will be on TPT
-    by the end of COP19. Note that data in this column will NOT be
-    imported into DATIM. Red highlights indicate percentages over 100%
-    or less than 0%; yellow highlights indicate percentages less than
-    90%.
+    already on TB preventative therapy (2) will likely screen negative
+    (3) will be medically ineligible for TPT (4) will be on TPT by the
+    end of COP19. Note that data in this column will NOT be imported
+    into DATIM. Red highlights indicate percentages over 100% or less
+    than 0%; yellow highlights indicate percentages less than 90%.
 
 3.  Review modeled targets for TB_PREV (N) New on ART and Already on
     ART, set by multiplying TB_PREV (D) New on ART and TB_PREV (D)
@@ -201,8 +200,8 @@ The following data points will be imported into DATIM from this section:
     set in step 2. Return to step 2 or previous sections to adjust
     driving assumptions.
 
-4.  Review projected rates of change between FY22 targets and planned
-    FY23 targets to identify cases where rates of change indicate
+4.  Review projected rates of change between FY23 targets and planned
+    FY24 targets to identify cases where rates of change indicate
     significant departures from historic trends.
 
 \elandscape

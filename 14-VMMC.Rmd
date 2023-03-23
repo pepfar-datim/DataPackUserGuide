@@ -13,7 +13,7 @@ editor_options:
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "VMMC_CIRC_SUBNAT"
-columns <- col_seq("F", "Q")
+columns <- col_seq("F", "R")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 3)) {
   make_table(t, section)
@@ -22,17 +22,17 @@ for (t in table_seq(data, max_col = 3)) {
 
 ### DATIM Import
 
-The following data points will be imported into DATIM from this section:
+The following data points will be imported into DATIM (only FY24 SUBNAT Targets) from this section:
 
--   **Host Country VMMC_CIRC_SUBNAT (FY22)** $VMMC\_CIRC\_SUBNAT.T\_1$
+-   **Host Country VMMC_CIRC_SUBNAT (FY23)** $VMMC\_CIRC\_SUBNAT.T\_1$
 
--   **Host Country VMMC_TOTALCIRC_SUBNAT (FY22)**
+-   **Host Country VMMC_TOTALCIRC_SUBNAT (FY23)**
     $VMMC\_TOTALCIRC\_SUBNAT.T\_1$
 
--   **Targeted Host Country VMMC_TOTALCIRC_SUBNAT (FY23)**
+-   **Targeted Host Country VMMC_TOTALCIRC_SUBNAT (FY24)**
     $VMMC\_TOTALCIRC\_SUBNAT.T$
 
--   **Targeted Host Country VMMC_CIRC_SUBNAT (FY23)**
+-   **Targeted Host Country VMMC_CIRC_SUBNAT (FY24)**
     $VMMC\_CIRC\_SUBNAT.T$
 
 ### Instructions
@@ -41,41 +41,40 @@ The following data points will be imported into DATIM from this section:
     corollaries on the Cascade tab. Follow hyperlinks to navigate to the
     source of this data:
 
-    a.  Host Country Estimated Male Population (FY22)
+    a.  Host Country Estimated Male Population (FY23)
 
-    b.  Host Country Estimated PLHIV (FY22)
+    b.  Host Country Estimated PLHIV (FY23)
 
-    c.  Host Country Estimated HIV Prevalence (FY22)
+    c.  Host Country Estimated HIV Prevalence (FY23)
 
-    d.  Host Country Estimated TX_CURR_SUBNAT (FY22)
+    d.  Host Country Estimated TX_CURR_SUBNAT (FY23)
 
-    e.  Host Country Estimated ART Coverage (FY22)
+    e.  Host Country Estimated ART Coverage (FY23)
 
-    f.  Host Country Est. PopVLS Rate (VLS/PLHIV) (FY22) (%)
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
-    Spectrum export dataset added to the Spectrum tab of the DataPack.
+    Spectrum export dataset added to the Spectrum tab of the Target Setting Tool.
     Review these and return to Spectrum to adjust assumptions there as
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
 
-    a.  Host Country VMMC_CIRC_SUBNAT (FY22)
+    a.  Host Country VMMC_CIRC_SUBNAT (FY23)
 
-    b.  Host Country VMMC_TOTALCIRC_SUBNAT (FY22)
+    b.  Host Country VMMC_TOTALCIRC_SUBNAT (FY23)
 
-3.  Review Host Country Estimated VMMC Coverage (FY22), which is
-    calculated by dividing the FY22 Host Country Estimated
-    VMMC_TOTALCIRC_SUBNAT by the FY22 Host Country Estimated Male
+3.  Review Host Country Estimated VMMC Coverage (FY23), which is
+    calculated by dividing the FY23 Host Country Estimated
+    VMMC_TOTALCIRC_SUBNAT by the FY23 Host Country Estimated Male
     Population.
 
-4.  Review Targeted Host Country VMMC Coverage (FY23), which is
+4.  Review Targeted Host Country VMMC Coverage (FY24), which is
     initially set to 80% per PEPFAR VMMC coverage goals, but you may
     adjust this based on PEPFAR Country-specific VMMC strategies and
     goals. Note that this statistic represents the targeted VMMC
     coverage to be achieved by October 2022.
 
-5.  Review modeled FY23 targets for Host Country VMMC_TOTALCIRC_SUBNAT
+5.  Review modeled FY24 targets for Host Country VMMC_TOTALCIRC_SUBNAT
     and VMMC_CIRC_SUBNAT. Return to steps 1-4 to adjust underlying
     assumptions as needed.
 
@@ -85,13 +84,13 @@ The following data points will be imported into DATIM from this section:
 medical male circumcision (VMMC) for HIV prevention program within the
 reporting period.
 
-**Note: For FY23 targets, males less than 15 years old will not be
+**Note: For FY24 targets, males less than 15 years old will not be
 eligible for PEPFAR-supported VMMC services.**
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "VMMC_CIRC"
-columns <- col_seq("R", "AD")
+columns <- col_seq("S", "AB")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -102,7 +101,7 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   VMMC_CIRC Indeterminate/Not Tested $VMMC\_CIRC.Unk.T$
+-   VMMC_CIRC Not Tested by PEPFAR $VMMC\_CIRC.Unk.T$
 
 -   VMMC_CIRC HIV Positive $VMMC\_CIRC.Pos.T$
 
@@ -110,27 +109,27 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For historical context, review FY21 results and FY22 targets for
-    PEPFAR VMMC_CIRC, supplied in the DataPack as an export from data
+1.  For historical context, review FY22 results and FY23 targets for
+    PEPFAR VMMC_CIRC, supplied in the Target Setting Tool as an export from data
     currently reported in DATIM.
 
-2.  Review the FY22 estimated PEPFAR Coverage of Host Country
-    VMMC_CIRC_SUBNAT, calculated by dividing FY22 PEPFAR VMMC_CIRC
-    targets by the projected FY22 Host Country VMMC_CIRC_SUBNAT.
+2.  Review the FY23 estimated PEPFAR Coverage of Host Country
+    VMMC_CIRC_SUBNAT, calculated by dividing FY23 PEPFAR VMMC_CIRC
+    targets by the projected FY23 Host Country VMMC_CIRC_SUBNAT.
 
-3.  Review the FY23 PEPFAR coverage of Host Country VMMC_CIRC_SUBNAT,
-    which is initially set equal to the FY22 estimated coverage rate set
+3.  Review the FY24 PEPFAR coverage of Host Country VMMC_CIRC_SUBNAT,
+    which is initially set equal to the FY23 estimated coverage rate set
     in step 2, but can be adjusted as needed.
 
-4.  For Military SNUs only, adjust the FY22 to FY23 Change in VMMC_CIRC.
+4.  For Military SNUs only, adjust the FY23 to FY24 Change in VMMC_CIRC.
     For Military SNUs, this defaults to zero, but can be adjusted to
     match strategic programming as necessary.
 
-5.  Review FY21 results for Observed Indeterminate/Not Tested Rate and
+5.  Review FY22 results for Observed Indeterminate/Not Tested Rate and
     Observed Positivity Rate among those VMMC clients newly tested for
     HIV, both of which are obtained from DATIM.
 
-6.  Review and adjust FY23 projections for Estimated Indeterminate/Not
+6.  Review and adjust FY24 projections for Estimated Indeterminate/Not
     Tested Rate and Estimated Positivity Rate among VMMC clients newly
     tested for HIV. Both of these estimates are initially set equal to
     their counterpart set in step 5, but can be adjusted as needed. Red
@@ -157,16 +156,16 @@ The following data points will be imported into DATIM from this section:
     those identified HIV positive by the ART linkage rate reviewed in
     step 7.
 
-### Total VMMC_CIRC (FY23)
+### Total VMMC_CIRC (FY24)
 
-For Military organization units, FY23 targets for Total VMMC_CIRC is set
+For Military organization units, FY24 targets for Total VMMC_CIRC is set
 as follows, rounding to the nearest integer:
 
 $$
 {VMMC\_ CIRC}_{t}\  = \ {VMMC\_ CIRC}_{t - 1}\  \times \ (1\  + \ {VMMC\_ CIRC.Change.Military}_{t})
 $$
 
-For all other organization units, FY23 targets for Total VMMC_CIRC are
+For all other organization units, FY24 targets for Total VMMC_CIRC are
 set as follows, rounding to the nearest integer:
 
 $$
@@ -174,21 +173,21 @@ $$
 {PEPFAR\ Coverage\ of\ Host\ Country\ VMMC\_ CIRC\_ SUBNAT}_{t}
 $$
 
-### VMMC_CIRC Disaggregates (FY23)
+### VMMC_CIRC Disaggregates (FY24)
 
-In disaggregating total VMMC_CIRC for FY23 Targets, the DataPack will
+In disaggregating total VMMC_CIRC for FY24 Targets, the Target Setting Tool will
 first set targets for those projected to have indeterminate HIV testing
 results or to deny testing, then targets for those identified positive,
 and finally those negative.
 
-To set targets for Indeterminate/Not Tested, the DataPack will use the
+To set targets for Indeterminate/Not Tested, the Target Setting Tool will use the
 following formula, rounding to the nearest integer:
 
 $$
 {VMMC\_ CIRC.Unk}_{t}\  = \ {VMMC\_ CIRC}_{t}\  \times \ {Est.\ Indeterminate}/{Not\ Tested\ Rate}_{t}
 $$
 
-For VMMC_CIRC HIV Positive, the DataPack will set targets as follows,
+For VMMC_CIRC HIV Positive, the Target Setting Tool will set targets as follows,
 rounding to the nearest integer:
 
 $$
@@ -202,36 +201,12 @@ $$
 {VMMC\_ CIRC.Neg}_{t}\  = \ {VMMC\_ CIRC}_{t}\  - \ {VMMC\_ CIRC.Unk}_{t}\  - \ {VMMC\_ CIRC.Pos}_{t}
 $$
 
-## VMMC: ART Linkage
-
-```{r echo=FALSE, results='asis'}
-sheet_name <- "VMMC"
-section <- "ART Linkage"
-columns <- col_seq("AE", "AF")
-data <- prepare_table_data(sheet_name, columns)
-for (t in table_seq(data)) {
-  make_table(t, section)
-  }
-```
-
-### DATIM Import
-
-No data will be imported into DATIM from this section.
-
-### Instructions
-
-1.  Review VMMC_CIRC_POS linked to ART which is determined as the
-    product of using Targeted ART Linkage Rate (FY23) (%) that is pulled
-    from the Cascade tab and HIV Positive from the previous VMMC_CIRC
-    section. This is not reported in DATIM, but used as internal check
-    against TX_NEW in TX tab.
-
 ## VMMC: Testing Rationalization
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "VMMC"
 section <- "Testing Rationalization"
-columns <- col_seq("AG", "AK")
+columns <- col_seq("AC", "AF")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -255,15 +230,15 @@ No data will be imported into DATIM from this section.
     modalities. While these allocation issues may be more the result of
     a different modality(ies), analysis of these to confirm no
     adjustments to VMMC_CIRC are warranted may prevent issues and
-    additional work in other sections of the DataPack.
+    additional work in other sections of the Target Setting Tool.
 
-3.  Return to other tabs of the DataPack where issues flagged in this
+3.  Return to other tabs of the Target Setting Tool where issues flagged in this
     section require adjustment of either total HTS_TST_POS targets, or
     targets via other modalities. Similar Testing Rationalization
     sections can be also found in each of these other tabs of the
-    DataPack. You may also use hyperlinks in column headers in this
+    Target Setting Tool. You may also use hyperlinks in column headers in this
     section to quickly navigate to the most relevant section of the
-    DataPack.
+    Target Setting Tool.
 
 \elandscape
 

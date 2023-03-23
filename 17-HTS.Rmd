@@ -1,0 +1,250 @@
+\blandscape
+
+# HTS
+
+As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS Modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+
+The HTS target setting groupings and which modalities fall under each of these are as follows:
+
+-   Active Index: Facility and Community Index Modalities
+
+-   Active SNS: Facility and Community SNS Modalities
+
+-   Active Other: Community Other and Community Mobile Modailities
+
+-   STI Clinic: STI Facility Modality
+
+-   Other Facility: Inpatient, Emergency, Other PITC, VCT, Pediatric, and Malnutrition Facility Modalities
+
+**HTS_TST:** Number of individuals who received HIV Testing Services (HTS) and received their test results.
+
+## HTS: Testing Summary from Other Tabs
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "Testing Summary from Other Tabs"
+columns <- col_seq("F", "L")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+No data will be imported from this section of the Target Setting Tool.
+
+### Instructions
+
+1.  For context, review the following data, pulled from other locations in the Target Setting Tool and gathered here for reference:
+
+    a.  Host Country ART Coverage (FY23) (%)
+
+    b.  Total HTS_TST_POS (FY24)
+
+    c.  PMTCT_STAT New Positives (FY24)
+
+    d.  HTS_TST Post ANC1 New Positives (FY24)
+
+    e.  TB_STAT New Positives (FY24)
+
+    f.  VMMC_CIRC New Positives (FY24)
+
+    g.  HTS_TST_POS from All Other Modalities (FY24)
+
+## HTS: HTS_TST -- Distribution of Positive Tests
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_TST Distribution of Positive Tests"
+columns <- col_seq("M", "V")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+No data will be imported from this section of the Target Setting Tool.
+
+### Instructions
+
+1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2023 Guidance document for the required parameters based on TX coverage.
+
+2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the Target Setting Tool. Note that to adjust these allocations, you must return to the section or tab of the Target Setting Tool where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
+
+
+    c.  PMTCT_STAT: New Positives (FY24)
+
+    d.  HTS_TST PMTCT Post ANC1: Positives (FY24)
+
+    e.  TB_STAT: New Positives (FY24)
+
+    f.  VMMC_CIRC: HIV Positive (FY24)
+
+3.  Review and adjust planned percentage contributions to HTS_TST_POS from all other HTS modalities, which will initially be populated based on trends seen in FY23 targets, but can be adjusted as needed to align with COP22 - FY24 testing strategies. Note that as you adjust these allocation percentages, the number of projected individuals to be identified HIV positive will change in the corresponding modality block to the right. These modalities to be adjusted in this section include:
+
+    a.  Active Index (%)
+
+    b.  Active SNS (%)
+
+    c.  Active Other (%)
+
+    d.  STI Clinic (%)
+
+    e.  Other Facility (%)
+
+
+4.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in under-allocation. Where this check column is less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to at least 100%. Reminer, a key change made as part of COP reform is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets.
+
+## HTS: HTS_TST -- Modality Yields
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "Active Index (Facility and Community Index)"
+columns <- col_seq("W", "Y")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   For each of the below modalities in these sections, the **Positive** and **Negative** target value will be imported into DATIM:
+
+    a.  Active Index (%)
+
+    b.  Active SNS (%)
+
+    c.  Active Other (%)
+
+    d.  STI Clinic (%)
+
+    e.  Other Facility (%)
+
+### Instructions
+
+1.  For each of the modalities listed above, please reference the COP23 Guidance to understand how the HTS Modalities that were used in COP22 have been collapsed into the new Modalities to be used in COP23. Review and adjust Yield rates, which are initially populated from DATIM based on FY22 results but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate cases either where:
+
+    a.  ART Coverage is greater than or equal to 70%, but yields are less than 10%; or
+
+    b.  ART Coverage is less than 70%, but yields are less than 5%.
+
+2.  Review targets for the number of individuals to be tested and found HIV Positive through each modality, using hyperlinks in column headers to return to the Distribution of Positive Tests section of this tab to adjust allocation rates as needed. Note that these are rounded to the nearest integer. See the following section for instructions as to how to identify and resolve rounding errors that may compound across modalities as a result.
+
+3.  Review targets for the number of individuals to be tested and found HIV Negative through each modality, which are based on the combination of allocations set in the Distribution of Positive Tests section of this tab, and yield rates set in step 1. Note that these are rounded to the nearest integer. See the following section for instructions as to how to identify and resolve rounding errors that may compound across modalities as a result. In cases where yields are 0%, but Negative test results are targeted, you may manually enter these in this step, though note that this will prevent further dynamic modeling of targets should Positive test result targets be needed in the future. Please also mind conditional formatting guiding entry of these targets against correct ages, which may differ across modality, particularly for Pediatric and Malnutrition modalities.
+
+## HTS: HTS_TST (Total)
+
+These calculated columns provide a roll up sum of the total targets set by age, sex and modality in the rest of the HTS tab. This section should serve as a check and will not be uploaded into DATIM.
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_TST (Total)"
+columns <- col_seq("AL", "AV")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+No data points will be imported to DATIM from this section of the Target Setting Tool.
+
+### Instructions
+
+1.  Investigate and resolve issues related to rounding differences caused by allocations of remaining HTS_TST_POS on the HTS tab. See below for additional, detailed instructions. Any cell that is highlighted indicates that it is in a row that users should review the distribution of positives.
+
+2.  Review FY24 Targets for individuals to be tested and found HIV negative through PMTCT_STAT, HTS_TST Post ANC1, TB_STAT, and VMMC_CIRC. To adjust these values, follow hyperlinks to the source of data for these columns.
+
+3.  Review modeled targets for Total HTS_TST_NEG, Total HTS_TST, and the Aggregate Yield Rate, which is modeled simply by dividing the final HTS_TST_POS total by the total HTS_TST target.
+
+### Resolve HTS_TST_POS Rounding Differences
+
+In the process of allocating HTS_TST_POS targets across HTS modalities, the multiplication of integer values representing whole people by percentage allocations, followed by rough rounding, often causes slight rounding errors to accumulate across ages, sexes, and geographies. In situations where there may be significantly small HTS_TST_POS targets being spread over multiple HTS modalities, the aggregation of many small rounding errors can lead to large differences in planned and final HTS_TST_POS. This section of the Target Setting Tool is built to help identify and resolve these cases, where they occur.
+
+Prior to using this section, it is key that all allocations be complete, either in those modalities called out specifically in the Cascade tab, or in the HTS tab's Distribution of Positive Tests section. With this complete, only true rounding error cases will remain to be identified in this section of the Target Setting Tool.
+
+Cases where rounding errors may have occurred will be highlighted in red formatting in the column titled, "HTS_TST_POS difference to adjust"; Excel filters may be helpful in narrowing to these rows.
+
+By first reviewing and refining allocations in the Cascade tab of the Target Setting Tool for overall HTS_INDEX, PMTCT_STAT, HTS_TST PMTCT Post ANC1, TB_STAT, and VMMC_CIRC, any rounding errors still present on the HTS tab are more likely the result of distributions decided on this tab across the following modalities:
+
+-   Active Index (%)
+
+-   Active SNS (%)
+
+-   Active Other (%)
+
+-   STI Clinic (%)
+
+-   Other Facility (%)
+
+The process for resolving rounding errors across these modalities may involve some trial and error. In all cases, but especially for cases where total HTS_TST_POS is small and rounding errors could represent large swings in total targets, it is necessary to determine which modality(ies) should be allocated remainder HTS_TST_POS identified in this section. Iteratively return to the HTS_TST Distribution of Positive Tests section on this HTS tab to adjust allocations, then return to this section to check for lingering rounding remainders.
+
+At the culmination of this iterative approach, there should be no values or highlighting remaining in the HTS_TST_POS difference to adjust column of this section.
+
+## HTS: HTS_SELF
+
+**HTS_SELF (N):** Number of individual HIV self-test kits distributed.
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_SELF (N)"
+columns <- col_seq("AW", "AY")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+The following data points will be imported into DATIM from this section:
+
+-   **HTS_SELF (FY24)** $HTS\_SELF.T$
+
+### Instructions
+
+1.  Review FY23 targets for HTS_SELF included in the Target Setting Tool, reflecting data reported in DATIM.
+
+2.  Review and adjust the % Change in HTS_SELF to set the rate at which FY24 targets for HTS_SELF should either increase or decrease from FY23 Targets.
+
+3.  Review modeled FY24 targets for HTS_SELF and return to step 2 to adjust as needed. In the case services are planned in FY24 where these were not provided in FY23, you may manually enter FY24 targets in this column.
+
+
+# HTS_RECENT
+
+**HTS_RECENT:** Number of newly diagnosed HIV-positive persons aged
+$\geq$ 15 years with a test for recent infection result during the
+reporting period.
+
+## HTS_RECENT (Total)
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "HTS"
+section <- "HTS_RECENT"
+columns <- col_seq("AZ", "BA")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data)) {
+  make_table(t, section)
+  }
+```
+
+### DATIM Import
+
+-   **Total HTS_RECENT (FY24)** $HTs\_RECENT.T$
+
+### Instructions
+
+1.  Review and adjust the % Aggregate Recency Test Coverage to set the rate for FY24.
+
+2.  Review modeled FY24 targets for HTS_RECENT and return to step 1 to adjust as needed. 
+
+\elandscape
+
+\newpage

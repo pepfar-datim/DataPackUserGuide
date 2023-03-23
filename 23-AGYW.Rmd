@@ -8,6 +8,88 @@ editor_options:
 
 # AGYW
 
+This year's AGYW_PREV Tab is updated to incorporate results from the
+DREAMS R-Shiny Saturation Application for OUs that choose to utilize it.
+There are two paths an OU can take to generate COP23 AGYW_PREV Target
+Thresholds -- Path 1 for those using outputs from the R-shiny App and
+Path 2 for those not using outputs from the R-Shiny App. Targeting will
+mirror the previous process.
+
+```{r echo=FALSE, results='asis'}
+sheet_name <- "AGYW"
+section <- "AGYW_PREV"
+columns <- col_seq("F", "S")
+data <- prepare_table_data(sheet_name, columns)
+for (t in table_seq(data, max_col = 4)) {
+  make_table(t, section)
+  }
+```
+
+**Column F Est. Female Population**
+
+The R-Shiny App can be used to generate the AGYW population by 5-year
+age bands in the absence of Spectrum data aggregated to the necessary
+geographic level for the 25--29-year-old age band. The population data
+source in the R-shiny App is from the US Census Bureau. **If your OU has
+a different source you'd prefer, please provide the proper justification
+to your DUIT Liaison during the Target Setting Tool Review.**
+
+**Column G: H.C. Est \# of Vulnerable AGYW (FY23)**
+
+-   Path 1: Please enter the estimated number of vulnerable (DREAMS
+    eligible) AGYW by age/PSNU into the column from the R-Shiny App
+-   Path 2: Estimate vulnerable AGYW by using =F\*Proxy Vulnerability
+    Estimator
+    -   Proxy Vulnerability Estimator is OUs estimate of \# of
+        vulnerable/DREAMS eligible AGYW by age/geography.
+
+**Column H: DREAMS Sat App Percent Coverage -- Saturation (%) FY22**
+
+This is the estimated percent saturated. 
+-   Path 1: This estimate can
+come from the R-Shiny App output directly.
+-   Path 2: If app is not used, in-country DREAMS databases can 
+be utilized to determine this saturation percentage. The process 
+of how this is done should be submitted as a narrative to DUIT Liaison
+
+**Column I: DREAMS Sat App DREAMS Eligible Girls Not Yet Reached FY22**
+
+-   Path 1: This column can be copied directly from the app.
+-   Path 2: Populate this column with the following formula: $=(F*G*H)$.
+    This will determine the number of DREAMS Eligible AGYW. *For both
+    paths it is necessary to calculate this column.*
+
+**Column J: Denominator - Started or Completed any DREAMS Service (FY23
+Target)**
+
+FY23 Targets for FY23 are pre-populated.
+
+**Column K: Projected DREAMS Eligible Girls Not Yet Reached (FY24) -
+Targeting Threshold**
+
+This is the difference between Column I and Column J. It gives teams the
+number of girls who have not yet been reached (either completed or
+enrolled) into DREAMS services. This is the number of girls who can be
+targeted within an OU. *For both paths it is necessary to calculate this
+column.*
+
+**Columns L -- Q: FY22 results across AGYW_PREV cascade. This is
+pre-populated**
+
+**Column R: Projected Net Change in Total AGYW_PREV from FY22 Results or
+FY23 Targets (%)**
+
+You will determine your projected net change from last year's results
+(Column P). Over 100% is a targeted increase from Column P, and under
+100% is a reduction from Column P.
+
+**Column S: Targeted Percent Completion (FY24) (%)**\
+This column will determine how many of the AGYW you plan to enroll into
+DREAMS will complete the program based off her needs-profile. If the
+completion rate from FY22 is over 60%, this column will mirror the
+completion rate in column Q. If the completion rate from FY22 is under
+60%, this column will default to 60%.
+
 ## AGYW: AGYW_PREV
 
 **AGYW_PREV:** Number of active DREAMS beneficiaries that have started
@@ -17,7 +99,7 @@ reporting period.
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "AGYW"
 section <- "AGYW_PREV"
-columns <- col_seq("F", "V")
+columns <- col_seq("T", "U")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data, max_col = 4)) {
   make_table(t, section)
@@ -35,41 +117,23 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For historical context, review Host Country Estimated Female
-    Population for FY22, which is referenced from the Cascade tab.
+1.  **Column T: Denominator - Started or Completed any DREAMS Service
+    (FY24)**\
+    This column determines your AGYW_PREV denominator. Please note --
+    you will receive an error message if Column T \> Column K.
 
-2.  Enter values for the Host Country Estimated Number of Vulnerable
-    AGYW projected as of September 2021, as available. These are for
-    reference and not used to model targets in proceeding steps.
-
-3.  For context, review FY23 targets for PrEP_NEW, PrEP_CT, PP_PREV,
-    HTS_TST_POS, and HTS_TST, set in other tabs of the DatatPack.
-
-4.  For additional context, review FY21 results for AGYW_PREV and
-    Observed Percent Completion as reported in DATIM.
-
-5.  Review and adjust assumptions for Projected Net Change in Total
-    AGYW_PREV from FY21 Results (%). This is defaulted to 0%, but can be
-    adjusted as necessary. Red highlights indicate percentages over
-    100%; yellow highlights indicate percentages less than 100% but not
-    0%.
-
-6.  Review and adjust assumptions for Targeted Percent Completion. This
-    is defaulted to 60%, but can be adjusted as necessary. Red
-    highlights indicate percentages over 100%; yellow highlights
-    indicate percentages less than 60%.
-
-7.  Review modeled FY23 targets for AGYW_PREV Denominator and Numerator,
-    and return to steps 1-6 to adjust values as necessary. See below for
-    additional information.
+2.  **Column U: Numberator - Completed at least Primary Package
+    (FY24)**\
+    This is your numerator. The formula calculate the denominator
+    (Column T) with the targeted percent completion (Column S).
 
 \*Note: AGYW_PREV is reported by the USG team, not an IM, it doesn't
 have to be assigned to an IM. It is automatically assigned to USG team,
 and will not appear in the PSNUxIM tab for target allocation.
 
-### AGYW_PREV Denominator (FY23)
+### AGYW_PREV Denominator (FY24)
 
-FY23 targets for AGYW_PREV Denominator are set as follows, rounding to
+FY24 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
 
 $$
@@ -80,9 +144,9 @@ $$
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
-### AGYW_PREV Numerator (FY23)
+### AGYW_PREV Numerator (FY24)
 
-FY23 Targets for AGYW_PREV Numerator are similarly modeled very simply
+FY24 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
 $$

@@ -42,6 +42,8 @@ indicators included in the Target Setting Tool are **MER 2.6.1**
 indicators. For further information on the MER 2.6.1 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
 
+To submut a help desk ticket at any point please use     [DATIM.Zendesk.com](http://datim.zendesk.com/).
+
 ## About the Target Setting Tool
 
 The COP23 Target Setting Tool supports analysis for all targets by

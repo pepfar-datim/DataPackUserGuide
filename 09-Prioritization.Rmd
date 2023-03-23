@@ -36,7 +36,7 @@ The following data points will be imported into DATIM from this section:
     95/95/95 overall.
 
 -   *Scale-up: Saturation and Aggressive Scale-Up SNUs*: Geographic
-    areas with the highest HIV prevalence nationally that have not yet
+    areas with the highest HIV prevalence and disease burden nationally that have not yet
     achieved 95/95/95, particularly among the population groups
     experiencing the greatest burden of disease.
     -   *Scale-Up: Saturation* SNUs receive intensive PEPFAR support with a
@@ -65,7 +65,7 @@ The following data points will be imported into DATIM from this section:
     COP23-FY24-FY25). However, they should not expand their intensity of
     site level support beyond their prior PSNU level support areas
     (e.g., the one they are using for COP22-FY23 and before), without
-    explicit Chair approval. Additionally, any future PSNUs that contain
+    explicit Chair approval, and concurrence from S/GAC/PRIME. Additionally, any future PSNUs that contain
     Scale-Up or Attained prior PSNUs, should likely be categorized into
     one of those groups. So for example, if Zone A contains Regions 1
     (Attained), 2 (Scale-Up Aggressive), 3 (Central Support), and 4
@@ -73,7 +73,7 @@ The following data points will be imported into DATIM from this section:
     Attained, Scale-Up: Saturation or Scale-Up: Aggressive. But that
     does not mean that site-level support should automatically be
     extended to facilities in Region 3 or 4 of Zone A, unless there is
-    explicit discussion with and concurrence of Chair.
+    explicit discussion with with Chair, PPM and DUIT Liaison, and concurrence of Chair and S/GAC/PRIME.
 -   *Sustained SNUs*: Sustained SNUs receive a package of services
     provided by PEPFAR that are different in each country and include
     passive enrollment via HIV testing and counseling on request or as

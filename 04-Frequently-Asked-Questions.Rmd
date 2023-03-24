@@ -1,8 +1,12 @@
 # Frequently Asked Questions
 
+***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
+
+A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interuption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.
+
 ***Q: I have PLHIV Estimates, but they are not appearing in PAW, what do I need to do?***
 
-A: Users will see three (3) columns for PLHIV in the Cascade and Year 2 tabs. In some cases, teams will receive two different PLHIV Estimates, one for "PLHIV_Residents.T" and another for "PLHIV_Attend.T". Please refer back to the Cascade section in the  [Partner Country Context] portion. The default is to point to column AK, but if the tool only has values in column AL, the formula will need to be updated as specified in the note in you hover over cell AL3. Once you make this change and drag down the formula and you have PLHIV in column AL, and re-validate and send to PAW, PLHIV should appear.
+A: Users will see three (3) columns for PLHIV in the Cascade and Year 2 tabs. In some cases, teams will receive two different PLHIV Estimates, one for "PLHIV_Residents.T" and another for "PLHIV_Attend.T". Please refer back to the Cascade section in the  [Partner Country Context] portion at the bottom where these FY24 indicators are explained. The default is to point to column AK, but if the tool only has values in column AL, the formula will need to be updated to point to AJ as specified in the note when you hover over cell AL3. Once you make this change and drag down the formula and you have PLHIV in column AL, and re-validate and send to PAW, PLHIV should appear.
 
 ***Q: On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. What needs to be done for this to pull into the PMTCT Tab?***
 

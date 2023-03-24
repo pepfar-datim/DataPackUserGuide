@@ -1,12 +1,24 @@
 # Frequently Asked Questions
 
-***Q: On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the <15 and 15+ age bands properly, how can we address this?***
+***Q: I have PLHIV Estimates, but they are not appearing in PAW, what do I need to do?***
 
-A: Important Note, if this issue is present in your tool, it may be your version of excel that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "@", and then drag this formula down through both of these columns to have the aggregation work as intended.
+A: Users will see three (3) columns for PLHIV in the Cascade and Year 2 tabs. In some cases, teams will receive two different PLHIV Estimates, one for "PLHIV_Residents.T" and another for "PLHIV_Attend.T". Please refer back to the Cascade section in the  [Partner Country Context] portion. The default is to point to column AK, but if the tool only has values in column AL, the formula will need to be updated as specified in the note in you hover over cell AL3. Once you make this change and drag down the formula and you have PLHIV in column AL, and re-validate and send to PAW, PLHIV should appear.
+
+***Q: On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. What needs to be done for this to pull into the PMTCT Tab?***
+
+A: In the formula to pull from the Spectrum tab there is a reference to "CY2022Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
+
+***Q: On the PMTCT Tab, the Spectrum Estimate for column L "P.C. ANC Clients - Known Positive (FY23)" is not pulling from the Spectrum estimates tab. What needs to be done for this to pull into the PMTCT Tab?***
+
+A: In the spectrum estimates, there is a syntax error in the indicator code that is causing the estimates to not populate. The indicator code in the PMTCT Tab is "PMTCT_STAT_SUBNAT.N.KnownPos.T_1" whereas the Spectrum estimates are using "PMTCT_STAT_SUBNAT.N.Known.Pos.T_1". The inclusion of the "." in "Known.Pos" is why the estimates are not populating. Teams should edit the spectrum estimates to remove the period "." and ensure it reads "PMTCT_STAT_SUBNAT.N.KnownPos.T_1". Once these indicator codes in Column G of the Spectrum tab are updated they will pull into the PMTCT Tab.
+
+***Q: On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the \<15 and 15+ age bands properly, how can we address this?***
+
+A: Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a "\@", that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "\@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "\@", and then drag this formula down through both of these columns to have the aggregation work as intended.
 
 ***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
 
-A: The Target Setting Tool will not prevent situations resulting in ART coverage exceeding 100% in a given PSNU, but will flag these cases in yellow to highlight when it occurs. Given that these may be a common occurrence in cases of urban PSNUs, or other case where service seeking behavior by clients leads them to cross PSNU boundaries, they are allowable in the tool. It may be worth considering whether the UNAIDS $PLHIV\_Attend$ estimates might provide better context in these situations, but countries need to use a consistent version of the PLHIV estimates for the whole country, otherwise they risk over or under estimating the number of PLHIV.  
+A: The Target Setting Tool will not prevent situations resulting in ART coverage exceeding 100% in a given PSNU, but will flag these cases in yellow to highlight when it occurs. Given that these may be a common occurrence in cases of urban PSNUs, or other case where service seeking behavior by clients leads them to cross PSNU boundaries, they are allowable in the tool. It may be worth considering whether the UNAIDS $PLHIV\_Attend$ estimates might provide better context in these situations, but countries need to use a consistent version of the PLHIV estimates for the whole country, otherwise they risk over or under estimating the number of PLHIV.
 
 ***Q: I am not setting Military SNU Targets, but have cells with "\*For DOD Military Use Only", what should I do with these?***
 
@@ -28,17 +40,19 @@ A: For OU's with outstanding target-shift OPUs that are only shifting targets fr
 
 A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop. Note however, that only clinical, facility partners may have targets and report many indicators. For these indicators, the KP targets must be assigned to a partner and site qualified to report the results.
 
+```{=html}
 <!-- # ***Q: Can you use FY24 Spectrum estimates to work through the Cascade tab?***
 
 A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP23 Target Setting Tool should be to set FY24 targets based on where you are ending FY23. -->
-
+```
+```{=html}
 <!-- ***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
 
 A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-Service app, please open your newly regenerated tool, save your tool and close it. When you reopen your tool, it should populate your targets into that column. You will also need to drag down the formula in the far right "Target Values" section of the PSNUxIM tab to ensure all rows are populated with the proper formula. -->
-
+```
 ***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 
-A: You will first need approval from your Chair, who should confirm for DUIT Liaison,  to do this. If you receive this approval you will need to manually alter in the Cascade Tab column “HTS_TST_POS + PMTCT_HEI_POS (FY23)” (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
+A: You will first need approval from your Chair, who should confirm for DUIT Liaison, to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY23)" (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
 
 ***Q: When I try to validate my Target Setting Tool in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
 
@@ -53,17 +67,9 @@ If none of the above issues apply to your Target Setting Tool tool and you are s
 
 ***Q: The Self-Service Validation App is flagging that I have Invalid Mechanism. How and where do I fix this?***
 
-A: The PSNUxIM tab will only populate with mechanisms that are marked as
-"active" for the current COP year in DATIM. Any mechanisms that are
-manually added to the PSNUxIM tab that are not active and valid will be
-flagged by the Self-Service App.
+A: The PSNUxIM tab will only populate with mechanisms that are marked as "active" for the current COP year in DATIM. Any mechanisms that are manually added to the PSNUxIM tab that are not active and valid will be flagged by the Self-Service App.
 
-To ensure a mechanism is valid for the current COP year, go into the COP
-module in FACTS Info-Next Gen (FI-NG) and check the box for "PEPFAR
-Systems Active Reporting Years" for the appropriate COP year. Please
-note that it may take up to 24 hours for active mechanism flags to be
-carried over into DATIM and resolve validation errors in the
-Self-Service App.
+To ensure a mechanism is valid for the current COP year, go into the COP module in FACTS Info-Next Gen (FI-NG) and check the box for "PEPFAR Systems Active Reporting Years" for the appropriate COP year. Please note that it may take up to 24 hours for active mechanism flags to be carried over into DATIM and resolve validation errors in the Self-Service App.
 
 ```{r echo=FALSE, out.width = '70%'}
 knitr::include_graphics("./images/FACTS Info Valid mech 1.png")
@@ -84,4 +90,3 @@ knitr::include_graphics("./images/FACTS Info Valid mech 4.png")
 ```{r echo=FALSE, out.width = '70%'}
 knitr::include_graphics("./images/FACTS Info Valid mech 5.png")
 ```
-

@@ -84,7 +84,7 @@ In specific, the Partner Country Context section of the Cascade tab provides spa
 
 -   **Partner Country % PLHIV Diagnosed (FY23) (%)** $DIAGNOSED\_SUBNAT.RT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
 
--   **Partner Country Projected Incidence Rate (FY23) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023. *TO DELETE*
+-   **Partner Country Projected Incidence Rate (FY23) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023.
 
 -   **Partner Country On ART (FY23)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2023.
 

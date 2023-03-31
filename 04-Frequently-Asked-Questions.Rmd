@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+***Q: I am seeing decimal values for my HTS_RECENT Targrets in flatpacks and Validation Reports. How can I fix this?***
+
+A: Th
+
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
 
 A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interuption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.

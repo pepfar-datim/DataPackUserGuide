@@ -1,6 +1,6 @@
 # Frequently Asked Questions and Formula Updates
 
-##Formula Updates
+## Formula Updates
 
 The following are formula errors that have been flagged by Users and need to be updated in the Target Setting Tool:
 
@@ -17,7 +17,7 @@ The following are formula errors that have been flagged by Users and need to be 
   -   In the year 2 tab, VMMC section, column CQ VMMC_CIRC.Pos.T2 has formulas that are pointed to the incorrect rows. VMMC circ should only be pointed to rows associated to Males over 15. The formulas are pointed to the incorrect rows. Users should update the formulas so that for example, row 22 for 15-24 Males has its formulas referencing row 22 for columns AV and AI. 
 
 
-##FAQs
+## FAQs
 
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
 

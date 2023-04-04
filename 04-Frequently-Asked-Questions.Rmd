@@ -1,4 +1,23 @@
-# Frequently Asked Questions
+# Frequently Asked Questions and Formula Updates
+
+## Formula Updates
+
+The following are formula errors that have been flagged by Users and need to be updated in the Target Setting Tool:
+
+  -   On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. In the formula to pull from the Spectrum tab there is a reference to "CY2022Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
+  
+  -   On the PMTCT Tab, the Spectrum Estimate for column L "P.C. ANC Clients - Known Positive (FY23)" is not pulling from the Spectrum estimates tab. In the spectrum estimates, there is a syntax error in the indicator code that is causing the estimates to not populate. The indicator code in the PMTCT Tab is "PMTCT_STAT_SUBNAT.N.KnownPos.T_1" whereas the Spectrum estimates are using "PMTCT_STAT_SUBNAT.N.Known.Pos.T_1". The inclusion of the "." in "Known.Pos" is why the estimates are not populating. Teams should edit the spectrum estimates to remove the period "." and ensure it reads "PMTCT_STAT_SUBNAT.N.KnownPos.T_1". Once these indicator codes in Column G of the Spectrum tab are updated they will pull into the PMTCT Tab.
+  
+  -   On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the \<15 and 15+ age bands properly. Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a "\@", that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "\@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "\@", and then drag this formula down through both of these columns to have the aggregation work as intended.
+
+  -   If you seeing decimal values for my HTS_RECENT Targrets in flatpacks and Validation Reports. A rounding function needs to be added into the HTS tab, column BA for the HTS_RECENT Total Target. In Row 15 of Column BA, the ROUND function needs to be added around the calculation where column AM is multiplied by column AZ. Teams should add the ROUND function around this product, and then add the ",0" so that the formula rounds to the nearest whole integer. The drag this formula down through the entire HTS_RECENT column. This will also help clear issues with Target values not matching between the PSNUxIM Tool and Main Target Setting Tool. 
+  
+  -   In the Year 2 tab, there formula in the NEW INFECTIONS (FY25) column has a incorrect reference to CY2024Q3 starting in row 24. Teams need to drag the formula from Row 23 down through row 28 so that there is the reference to CY2025Q3 in all the formulas for Year 2 New Infections, and that these estimates properly populate.
+  
+  -   In the year 2 tab, VMMC section, column CQ VMMC_CIRC.Pos.T2 has formulas that are pointed to the incorrect rows. VMMC circ should only be pointed to rows associated to Males over 15. The formulas are pointed to the incorrect rows. Users should update the formulas so that for example, row 22 for 15-24 Males has its formulas referencing row 22 for columns AV and AI. 
+
+
+## FAQs
 
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
 
@@ -7,18 +26,6 @@ A: This is an intentional slight overestimate, rather than the alternative which
 ***Q: I have PLHIV Estimates, but they are not appearing in PAW, what do I need to do?***
 
 A: Users will see three (3) columns for PLHIV in the Cascade and Year 2 tabs. In some cases, teams will receive two different PLHIV Estimates, one for "PLHIV_Residents.T" and another for "PLHIV_Attend.T". Please refer back to the Cascade section in the  [Partner Country Context] portion at the bottom where these FY24 indicators are explained. The default is to point to column AK, but if the tool only has values in column AL, the formula will need to be updated to point to AJ as specified in the note when you hover over cell AL3. Once you make this change and drag down the formula and you have PLHIV in column AL, and re-validate and send to PAW, PLHIV should appear.
-
-***Q: On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. What needs to be done for this to pull into the PMTCT Tab?***
-
-A: In the formula to pull from the Spectrum tab there is a reference to "CY2022Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
-
-***Q: On the PMTCT Tab, the Spectrum Estimate for column L "P.C. ANC Clients - Known Positive (FY23)" is not pulling from the Spectrum estimates tab. What needs to be done for this to pull into the PMTCT Tab?***
-
-A: In the spectrum estimates, there is a syntax error in the indicator code that is causing the estimates to not populate. The indicator code in the PMTCT Tab is "PMTCT_STAT_SUBNAT.N.KnownPos.T_1" whereas the Spectrum estimates are using "PMTCT_STAT_SUBNAT.N.Known.Pos.T_1". The inclusion of the "." in "Known.Pos" is why the estimates are not populating. Teams should edit the spectrum estimates to remove the period "." and ensure it reads "PMTCT_STAT_SUBNAT.N.KnownPos.T_1". Once these indicator codes in Column G of the Spectrum tab are updated they will pull into the PMTCT Tab.
-
-***Q: On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the \<15 and 15+ age bands properly, how can we address this?***
-
-A: Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a "\@", that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "\@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "\@", and then drag this formula down through both of these columns to have the aggregation work as intended.
 
 ***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
 

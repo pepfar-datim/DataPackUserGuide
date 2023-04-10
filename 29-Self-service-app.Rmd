@@ -331,7 +331,7 @@ This download type will provide you with a draft version of the tables which wil
 
 # Send to PAW
 
-Clicking this button will start a process to upload the results from the Target Setting Tool/PSNUxIM tool to PAW. If ONLY the Main COP23 Target Setting Tool is validated, the FY24 Targets will be sent to PAW as Unallocasted Targets, and the Year 2 National Level Targets will also be sent. When a PSNUxIM Tool is also included and BOTH files are validated, the allocated FY24 targets from the PSNUxIM Tool will be sent to PAW and the Year 2 National Level Targets will once again be pulled and sent from the Main Target Setting Tool. 
+Clicking this button will start a process to upload the results from the Target Setting Tool/PSNUxIM tool to PAW. If ONLY the Main COP23 Target Setting Tool is validated, the FY24 Targets will be sent to PAW as Unallocasted Targets, and the Year 2 National Level Targets will also be sent. When a PSNUxIM Tool is also included and BOTH files are validated, the allocated FY24 targets from the PSNUxIM Tool will be sent to PAW and the Year 2 National Level Targets will once again be pulled and sent from the Main Target Setting Tool. Please note that the transfer of targets to PAW is not instant. It may take up to two hours for targets to appear as the Panorama systems has set times at which it refreshes. 
 
 # Reset inputs
 

@@ -19,9 +19,19 @@ The following are formula errors that have been flagged by Users and need to be 
 
 ## FAQs
 
+***Q: Am I receiving a lot of warnings for decimal values in the Validation App, how can I resolve these?***
+
+A: The app has two places where users can check for decimals. The first in the Validation Report is the "decimal_values" tab. It is key that users address the warnings of decimals for all FY24 Target Indicators that will be allocated in the PSNUxIM tab. There are some cases of the tab showing values that look like whole integers, but this may be the result of there being a value such as 12.00001, and these can be ignored and do not need to be addressed. For the other values that are appearing as decimals, users will need to go to the tab and address these. If there are formulas in place, it is likely a ROUND function with a round to the nearest integer be added, similar to the formula change mentioned above for HTS_RECENT. If a team has manually entered a target via copy and paste or added their own formula, they will need to address these on their own. 
+
+If you look at the "non_equal_targets" tab of the Validation report which will appear f there is the ERROR message for values in column G (DataPackTargets) which do not equal the targets set in the main tabs, you will see if some of these are a result of decimals and rounding if there are slight discrepancies. These will continue to flag until the above mentioned issues of decimals are resolved. Again, these decimals must be resolved to help resolve this error and to then utilize functionality of the App related to the PSNUxIM tab referenced at the bottom PSNUxIM Section 28 [Key Nuances/Scenarios for this year's PSNUxIM Validation] .
+
+***Q: I am having trouble sending my targets to PAW and other issues with the app that I was not having yesterday, how can I resolve this?***
+
+A: DATIM can sometimes cache a lot of data. Clearing your cache, closing your browser, and then logging back into the App should resolve this. 
+
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
 
-A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interuption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.
+A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interruption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.
 
 ***Q: I have PLHIV Estimates, but they are not appearing in PAW, what do I need to do?***
 

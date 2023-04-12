@@ -354,13 +354,11 @@ DATIM.
 
 1.    If you only have a Target Setting tool, you get a new PSNUxIM Tool.
 
-2.    If at any point you revceive a WARNING Message for missing combos and you choose "Missing PSNUxIM" you will only get the missing rows
+2.    If at any point you receive a WARNING Message for missing combos and you choose "Missing PSNUxIM" you will only get the missing rows
 
 3.    If in the above case, you choose "Append Missing PSNUxIM" and you have equal targets, they will be appended to the existing rows to the bottom of the PSNUxIM
 
-4.    If you receive an ERROR for Targets in Column G that do not match, what you will need to do is use the "non_euqal_targets" tab from the Validation Report. This will show you what the discrepancies are between the Main tabs and column G of the PSNUxIM tab. You will then need to update Column G yourself. 
-  
-  <!--  If you have unequal targets, and choose "New PSNUxIM", your allocations will be preserved and your targets in column G will be updated, but you will need to drag the formulas again (and any other changes like custom dedupes) will be lost -->
+4.    If you receive an ERROR for Targets in Column G that do not match, what you will need to do is use the "non_euqal_targets" tab from the Validation Report. This will show you what the discrepancies are between the Main tabs and column G of the PSNUxIM tab. You will then need to update Column G yourself. The other option if you have unequal targets, and choose "Update PSNUxIM Targets", your allocations will be preserved and your targets in column G will be updated. HOWEVER, if you have not addressed issues with decimals, the decimals will appear in the PSNUXIM tool column G. So it is key that decimals are resolved if this functionality is used. 
 
 \elandscape
 

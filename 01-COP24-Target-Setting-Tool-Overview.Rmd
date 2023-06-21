@@ -24,20 +24,20 @@ knitr::opts_chunk$set(echo = FALSE, fig.align ="center")
 flextable::set_flextable_defaults(fonts_ignore = TRUE)
 ```
 
-# COP23 Target Setting Tool Overview
+# COP24 Target Setting Tool Overview
 
-Welcome to the COP23 Target Setting Tool User Manual. The following
+Welcome to the COP24 Target Setting Tool User Manual. The following
 pages aim to provide users of the Target Setting Tool with the
 information necessary to successfully complete each tab of the Target
 Setting Tool tool and determine accurate, data-driven targets. For the
 past several years, the DataPack has a been a key element of
 PEPFAR COP planning. In the spirit of COP Reform, we have endeavored to 
 reduce the level of effort in target setting and have developed a simplified 
-Target Setting Tool for COP23. This tool serves a critical function in
+Target Setting Tool for COP24. This tool serves a critical function in
 assisting PEPFAR Country Teams in setting targets in line with the
 UNAIDS 95-95-95 goals for Testing, Care & Treatment, PMTCT, VMMC, OVC,
-and other program areas. Please note that the COP23 Target Setting Tool
-is mandatory and must be used to set targets for COP23. For COP23, all
+and other program areas. Please note that the COP24 Target Setting Tool
+is mandatory and must be used to set targets for COP24. For COP24, all
 indicators included in the Target Setting Tool are **MER 2.6.1**
 indicators. For further information on the MER 2.6.1 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
@@ -46,14 +46,14 @@ To submut a help desk ticket at any point please use     [DATIM.Zendesk.com](htt
 
 ## About the Target Setting Tool
 
-The COP23 Target Setting Tool supports analysis for all targets by
+The COP24 Target Setting Tool supports analysis for all targets by
 Priority Subnational Unit (PSNU), population, and Implementing Mechanism
 (IM). This tool supports calculation of targets based on expected
 treatment coverage rates by type of PSNU and population prioritization.
 
 
- - Teams must review and revise their PSNU prioritization levels for COP23. 
-The COP23 Target Setting Tool assumes a 'test and start' treatment platform.
+ - Teams must review and revise their PSNU prioritization levels for COP24. 
+The COP24 Target Setting Tool assumes a 'test and start' treatment platform.
 
 
 The Target Setting Tool will allow PEPFAR teams to use country specific
@@ -64,7 +64,7 @@ necessarily calculate targets for every indicator, but it has space for
 teams to enter targets for all indicators and thus can be used to record
 agreed-upon COP targets, even for non-calculated indicators.
 
-**Teams must not modify the structure of the COP23 Target Setting Tool
+**Teams must not modify the structure of the COP24 Target Setting Tool
 in any way**. The Office of the US Global Aids Coordinator (OGAC) has
 developed a process by which targets can be directly imported into DATIM
 via the Target Setting Tool Site Tool in order to generate targets.
@@ -72,14 +72,14 @@ However, this is *only* possible for teams that do not in any way alter
 the structure or format of the Target Setting Tool. Additional details
 will be available through COP webinars.
 
-## Highlighted Changes from COP22 to COP23
+## Highlighted Changes from COP23 to COP24
 
-The COP23 Target Setting Tool algorithms are largely the same as the COP21
+The COP24 Target Setting Tool algorithms are largely the same as the COP23
 DataPack. However, please note the following updates that have been
 implemented as a result of multiple feedback sessions with various
 country teams. These changes revolve around workflow, ease of target setting,
 and linkage to the COP guidance based on different aspects of the Target
-Setting Tool that worked well and others that did not during COP22
+Setting Tool that worked well and others that did not during COP23
 target stetting:
 
 -   **PSNUxIM tab structure** that will again handle de-duplication and
@@ -91,18 +91,18 @@ target stetting:
 
 -   Year 2 national level PEPFAR targets to better inform strategic planning across
 multiple years.However, these targets will not be imported into DATIM until after a 
-Mid-COP23 Year 2 review, in which they may be updated. 
+Mid-COP24 Year 2 review, in which they may be updated. 
 
 
 ## Data Flow and Review Process to COP23 Submission
 
-The results from FY22 Q4 have been taken from DATIM and used to populate
+The results from FY23 Q4 have been taken from DATIM and used to populate
 the Target Setting Tool. In turn, the Target Setting Tool targets will
-produce FY24 targets that will be subsequently submitted through DATIM
-after COP23 has been finalized and the PSNU level data entered into the
+produce FY25 targets that will be subsequently submitted through DATIM
+after COP24 has been finalized and the PSNU level data entered into the
 Strategic Direction Summary (SDS) tables, where appropriate (Target
 related data).There will also be strategic national level targets for the 
-PEPFAR program for COP23 Year 2 (FY25), but these will not be imported into DATIM.
+PEPFAR program for COP24 Year 2 (FY26), but these will not be imported into DATIM.
 
 ***Target Setting Tool Review***
 

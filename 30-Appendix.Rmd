@@ -4,7 +4,7 @@
 
 ## Reference Materials
 
--   COP/ROP 2023 Guidance: <https://www.state.gov/wp-content/uploads/2023/02/PEPFAR-2023-Country-and-Regional-Operational-Plan.pdf>
+-   COP/ROP 2024 Guidance: <https://www.state.gov/wp-content/uploads/2023/02/PEPFAR-2023-Country-and-Regional-Operational-Plan.pdf>
 
 -   MER Data Validation Rules User Guide: <https://datim.zendesk.com/hc/en-us/articles/360055112711-MER-Validation-Guide>
 

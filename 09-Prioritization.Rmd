@@ -90,9 +90,9 @@ The following data points will be imported into DATIM from this section:
 -   *For Countries that raised their PSNU level*: The OU should use the
     definitions above to determine their prioritization level at their
     new future PSNU level (e.g., the one they are using for
-    COP23-FY24-FY25). However, they should not expand their intensity of
+    COP24-FY25-FY26). However, they should not expand their intensity of
     site level support beyond their prior PSNU level support areas
-    (e.g., the one they are using for COP22-FY23 and before), without
+    (e.g., the one they are using for COP23-FY24 and before), without
     explicit Chair approval. Additionally, any future PSNUs that contain
     Scale-Up or Attained prior PSNUs, should likely be categorized into
     one of those groups. So for example, if Zone A contains Regions 1
@@ -103,8 +103,8 @@ The following data points will be imported into DATIM from this section:
     extended to facilities in Region 3 or 4 of Zone A, unless there is
     explicit discussion with and concurrence of Chair.
 
-1.  Review the column "SNU Prioritization (FY23)" which will indicate
-    prioritization levels set in COP22 for each PSNU.
+1.  Review the column "SNU Prioritization (FY24)" which will indicate
+    prioritization levels set in COP23 for each PSNU.
 
 2.  Review "SNU Prioritization (FY24)" and adjust as appropriate for
     COP23 programming. This is currently set to populate with the same

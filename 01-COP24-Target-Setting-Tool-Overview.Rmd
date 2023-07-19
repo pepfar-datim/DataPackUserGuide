@@ -91,10 +91,10 @@ target stetting:
 
 -   Year 2 national level PEPFAR targets to better inform strategic planning across
 multiple years.However, these targets will not be imported into DATIM until after a 
-Mid-COP24 Year 2 review, in which they may be updated. 
+Mid-COP25 Year 2 review, in which they may be updated. 
 
 
-## Data Flow and Review Process to COP23 Submission
+## Data Flow and Review Process to COP24 Submission
 
 The results from FY23 Q4 have been taken from DATIM and used to populate
 the Target Setting Tool. In turn, the Target Setting Tool targets will
@@ -107,7 +107,7 @@ PEPFAR program for COP24 Year 2 (FY26), but these will not be imported into DATI
 ***Target Setting Tool Review***
 
 +------------+--------------------+
-|               | COP/ROP 23      |
+|               | COP/ROP 24      |
 |               | Timeline        |
 +===============+=================+
 | Feb 27 -      | Johannesburg    |
@@ -156,7 +156,7 @@ For each of the below submissions, the following process will occur:
     with PAW Dossiers.
 
 -   Country Team saves Target Setting Tool to SharePoint under the OU's
-    HQ Collaboration \> COP 2023 - FY 2024 \> Guidance, Tools, and
+    HQ Collaboration \> COP 2024 - FY 2025 \> Guidance, Tools, and
     Resources folder \> Target Setting Tool.
 
 -   Country Team submits a ticket in ZenDesk that includes:

@@ -4,7 +4,7 @@
 
 The following are formula errors that have been flagged by Users and need to be updated in the Target Setting Tool:
 
-  -   On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. In the formula to pull from the Spectrum tab there is a reference to "CY2022Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
+  -   On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. In the formula to pull from the Spectrum tab there is a reference to "CY2023Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
   
   -   On the PMTCT Tab, the Spectrum Estimate for column L "P.C. ANC Clients - Known Positive (FY23)" is not pulling from the Spectrum estimates tab. In the spectrum estimates, there is a syntax error in the indicator code that is causing the estimates to not populate. The indicator code in the PMTCT Tab is "PMTCT_STAT_SUBNAT.N.KnownPos.T_1" whereas the Spectrum estimates are using "PMTCT_STAT_SUBNAT.N.Known.Pos.T_1". The inclusion of the "." in "Known.Pos" is why the estimates are not populating. Teams should edit the spectrum estimates to remove the period "." and ensure it reads "PMTCT_STAT_SUBNAT.N.KnownPos.T_1". Once these indicator codes in Column G of the Spectrum tab are updated they will pull into the PMTCT Tab.
   
@@ -62,9 +62,9 @@ A: For OU's with outstanding target-shift OPUs that are only shifting targets fr
 A: Yes, you should be setting a corresponding Total Pop target against each mechanism you set KeyPop targets against. This is because KeyPop is a subset of Total Pop. Note however, that only clinical, facility partners may have targets and report many indicators. For these indicators, the KP targets must be assigned to a partner and site qualified to report the results.
 
 ```{=html}
-<!-- # ***Q: Can you use FY24 Spectrum estimates to work through the Cascade tab?***
+<!-- # ***Q: Can you use FY25 Spectrum estimates to work through the Cascade tab?***
 
-A: No, unless you receive approval from OGAC Leadership you should use FY22 Spectrum Data. Your target setting process for the COP23 Target Setting Tool should be to set FY24 targets based on where you are ending FY23. -->
+A: No, unless you receive approval from OGAC Leadership you should use FY23 Spectrum Data. Your target setting process for the COP24 Target Setting Tool should be to set FY25 targets based on where you are ending FY24. -->
 ```
 ```{=html}
 <!-- ***Q: Why in the newly generated PSNUxIM tab are data-pack totals and roll up columns blank?***
@@ -73,7 +73,7 @@ A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-
 ```
 ***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 
-A: You will first need approval from your Chair, who should confirm for DUIT Liaison, to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY23)" (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
+A: You will first need approval from your Chair, who should confirm for DUIT Liaison, to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY24)" (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
 
 ***Q: When I try to validate my Target Setting Tool in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
 

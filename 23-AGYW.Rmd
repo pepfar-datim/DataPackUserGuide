@@ -10,7 +10,7 @@ editor_options:
 
 This year's AGYW_PREV Tab is updated to incorporate results from the
 DREAMS R-Shiny Saturation Application for OUs that choose to utilize it.
-There are two paths an OU can take to generate COP23 AGYW_PREV Target
+There are two paths an OU can take to generate COP24 AGYW_PREV Target
 Thresholds -- Path 1 for those using outputs from the R-shiny App and
 Path 2 for those not using outputs from the R-Shiny App. Targeting will
 mirror the previous process.
@@ -34,7 +34,7 @@ source in the R-shiny App is from the US Census Bureau. **If your OU has
 a different source you'd prefer, please provide the proper justification
 to your DUIT Liaison during the Target Setting Tool Review.**
 
-**Column G: H.C. Est \# of Vulnerable AGYW (FY23)**
+**Column G: H.C. Est \# of Vulnerable AGYW (FY24)**
 
 -   Path 1: Please enter the estimated number of vulnerable (DREAMS
     eligible) AGYW by age/PSNU into the column from the R-Shiny App
@@ -43,7 +43,7 @@ to your DUIT Liaison during the Target Setting Tool Review.**
     -   Proxy Vulnerability Estimator is OUs estimate of \# of
         vulnerable/DREAMS eligible AGYW by age/geography.
 
-**Column H: DREAMS Sat App Percent Coverage -- Saturation (%) FY22**
+**Column H: DREAMS Sat App Percent Coverage -- Saturation (%) FY23**
 
 This is the estimated percent saturated. 
 -   Path 1: This estimate can
@@ -52,19 +52,19 @@ come from the R-Shiny App output directly.
 be utilized to determine this saturation percentage. The process 
 of how this is done should be submitted as a narrative to DUIT Liaison
 
-**Column I: DREAMS Sat App DREAMS Eligible Girls Not Yet Reached FY22**
+**Column I: DREAMS Sat App DREAMS Eligible Girls Not Yet Reached FY23**
 
 -   Path 1: This column can be copied directly from the app.
 -   Path 2: Populate this column with the following formula: $=(F*G*H)$.
     This will determine the number of DREAMS Eligible AGYW. *For both
     paths it is necessary to calculate this column.*
 
-**Column J: Denominator - Started or Completed any DREAMS Service (FY23
+**Column J: Denominator - Started or Completed any DREAMS Service (FY24
 Target)**
 
-FY23 Targets for FY23 are pre-populated.
+FY24 Targets for FY24 are pre-populated.
 
-**Column K: Projected DREAMS Eligible Girls Not Yet Reached (FY24) -
+**Column K: Projected DREAMS Eligible Girls Not Yet Reached (FY25) -
 Targeting Threshold**
 
 This is the difference between Column I and Column J. It gives teams the
@@ -73,21 +73,21 @@ enrolled) into DREAMS services. This is the number of girls who can be
 targeted within an OU. *For both paths it is necessary to calculate this
 column.*
 
-**Columns L -- Q: FY22 results across AGYW_PREV cascade. This is
+**Columns L -- Q: FY23 results across AGYW_PREV cascade. This is
 pre-populated**
 
-**Column R: Projected Net Change in Total AGYW_PREV from FY22 Results or
-FY23 Targets (%)**
+**Column R: Projected Net Change in Total AGYW_PREV from FY23 Results or
+FY24 Targets (%)**
 
 You will determine your projected net change from last year's results
 (Column P). Over 100% is a targeted increase from Column P, and under
 100% is a reduction from Column P.
 
-**Column S: Targeted Percent Completion (FY24) (%)**\
+**Column S: Targeted Percent Completion (FY25) (%)**\
 This column will determine how many of the AGYW you plan to enroll into
 DREAMS will complete the program based off her needs-profile. If the
-completion rate from FY22 is over 60%, this column will mirror the
-completion rate in column Q. If the completion rate from FY22 is under
+completion rate from FY23 is over 60%, this column will mirror the
+completion rate in column Q. If the completion rate from FY23 is under
 60%, this column will default to 60%.
 
 ## AGYW: AGYW_PREV
@@ -118,12 +118,12 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  **Column T: Denominator - Started or Completed any DREAMS Service
-    (FY24)**\
+    (FY25)**\
     This column determines your AGYW_PREV denominator. Please note --
     you will receive an error message if Column T \> Column K.
 
 2.  **Column U: Numberator - Completed at least Primary Package
-    (FY24)**\
+    (FY25)**\
     This is your numerator. The formula calculate the denominator
     (Column T) with the targeted percent completion (Column S).
 
@@ -131,7 +131,7 @@ The following data points will be imported into DATIM from this section:
 have to be assigned to an IM. It is automatically assigned to USG team,
 and will not appear in the PSNUxIM tab for target allocation.
 
-### AGYW_PREV Denominator (FY24)
+### AGYW_PREV Denominator (FY25)
 
 FY24 targets for AGYW_PREV Denominator are set as follows, rounding to
 the nearest integer:
@@ -144,9 +144,9 @@ $$
 Note that neither this target nor the target for AGYW_PREV Numerator are
 disaggregated by Service or Package Completion Status.
 
-### AGYW_PREV Numerator (FY24)
+### AGYW_PREV Numerator (FY25)
 
-FY24 Targets for AGYW_PREV Numerator are similarly modeled very simply
+FY25 Targets for AGYW_PREV Numerator are similarly modeled very simply
 as follows, rounding to the nearest integer:
 
 $$

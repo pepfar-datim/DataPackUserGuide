@@ -21,24 +21,24 @@ listed.
 
 [Considerations as you complete and use this tab:]{.underline}
 
-1.  As per the COP23 Guidance, baseline data to support target
+1.  As per the COP24 Guidance, baseline data to support target
     development can come from bio-behavioral surveys (BBS) and size
     estimates, especially to understand current PLHIV burden and program
     results. Use the most recent and reliable estimates available where
     possible. For example, population size estimates and survey data on
     knowledge of status can inform PP_PREV and subsequent clinical
-    cascade targets. The COP23 Guidance Section 6.6.2 has substantial
+    cascade targets. The COP24 Guidance Section 6.6.2 has substantial
     guidance on expectations of an effective KP program, and should be
     reviewed before setting KP targets.
 
-2.  Where possible and relevant, use FY23 targets and, as available,
-    results to inform FY24 targets (the 'Assumption' column for each
+2.  Where possible and relevant, use FY24 targets and, as available,
+    results to inform FY25 targets (the 'Assumption' column for each
     indicator in the tab). But remember to consider expectations for
     scale-up based on current program needs and gaps. That is, FY22
     results may not be the most relevant and appropriate base from which
-    to develop FY24 targets.
+    to develop FY25 targets.
 
-3.  As per COP23 Guidance, OUs should strive to ensure all KPs reached
+3.  As per COP24 Guidance, OUs should strive to ensure all KPs reached
     with KP programming (KP_PREV), who do not already know their HIV
     status are either tested for HIV or actively referred for HIV
     testing. Therefore, Target Setting Tools will be reviewed for the relationship
@@ -85,18 +85,18 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country Est. Total Size (FY23)** $KP\_ESTIMATES.Total.T$
+-   **Host Country Est. Total Size (FY24)** $KP\_ESTIMATES.Total.T$
 
--   **Host Country Est. KPLHIV (FY23)** $KP\_ESTIMATES.Pos.T$
+-   **Host Country Est. KPLHIV (FY24)** $KP\_ESTIMATES.Pos.T$
 
--   **Host Country Est. HIV Prevalence (FY23) (%)**
+-   **Host Country Est. HIV Prevalence (FY24) (%)**
     $KP\_ESTIMATES.Prev.T$
 
 ### Instructions
 
 1.  Enter data directly into columns "Host Country Est. Total Size
-    (FY23)", "Host Country Est. KPLHIV (FY23)", and "Host Country Est.
-    HIV Prevalence (FY23) (%)". As mentioned above, these data should
+    (FY24)", "Host Country Est. KPLHIV (FY24)", and "Host Country Est.
+    HIV Prevalence (FY24) (%)". As mentioned above, these data should
     come from reliable, approved sources and then be pasted directly
     into the respective columns in this tab and used as reference when
     setting targets throughout the rest of the KP tab. All data from
@@ -128,16 +128,16 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CT - KeyPop** (FY24) $PrEP\_CT.KP.T$
+-   **PrEP_CT - KeyPop** (FY25) $PrEP\_CT.KP.T$
 
 ### Instructions
 
-1.  For historical context, review column "PrEP_CURR - KeyPop (FY23
+1.  For historical context, review column "PrEP_CURR - KeyPop (FY24
     Targets)", which will come pre-populated with FY23 targets for
     PREP_CURR as currently reported in DATIM.
 
-2.  Manually enter FY24 PrEP_CT targets in the column titled, "PrEP_CT -
-    KeyPop (FY24)".
+2.  Manually enter FY25 PrEP_CT targets in the column titled, "PrEP_CT -
+    KeyPop (FY25)".
 
 **NOTE:** The PrEP_CT targets here on the KP tab are not linked to those
 on the PrEP tab, but should nonetheless represent a subset of the total
@@ -175,12 +175,12 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For historical context, review column "PrEP_NEW - KeyPop (FY23
-    Targets)", which will come pre-populated with FY23 targets for
+1.  For historical context, review column "PrEP_NEW - KeyPop (FY24
+    Targets)", which will come pre-populated with FY24 targets for
     PREP_NEW as currently reported in DATIM.
 
 2.  Manually enter FY24 PrEP_NEW targets in the column titled,
-    "PrEP_NEW - KeyPop (FY24)".
+    "PrEP_NEW - KeyPop (FY25)".
 
 **NOTE:** PrEP_NEW targets here on the KP tab are not linked to those on
 the PrEP tab, but should nonetheless represent a subset of the total
@@ -210,16 +210,16 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **KP_PREV (FY24)** $KP\_PREV.T$
+-   **KP_PREV (FY25)** $KP\_PREV.T$
 
 ### Instructions
 
-1.  For historical context, review column "KP_PREV (FY23 Targets)",
+1.  For historical context, review column "KP_PREV (FY24 Targets)",
     which will come pre-populated with FY23 targets for KP_PREV as
     currently reported in DATIM.
 
-2.  Manually enter FY24 KP_PREV targets in the column titled, "KP_PREV
-    (FY24)".
+2.  Manually enter FY25 KP_PREV targets in the column titled, "KP_PREV
+    (FY25)".
 
 ## KP: TX_CURR
 
@@ -244,18 +244,18 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review columns "TX_CURR - KeyPop (FY22 Results)" and "TX_CURR - \>
-    KeyPop (FY23 Targets)", which will be imported from DATIM for \>
+1.  Review columns "TX_CURR - KeyPop (FY23 Results)" and "TX_CURR - \>
+    KeyPop (FY24 Targets)", which will be imported from DATIM for \>
     reference.
 
 2.  Manually enter TX_CURR targets in the column titled, "TX_CURR - \>
-    KeyPop (FY24)". Be prepared to explain target setting processes \>
+    KeyPop (FY25)". Be prepared to explain target setting processes \>
     and justify variations from previous years if asked during or \>
     prior to COP meetings.
 
-3.  Review "TX_NET_NEW - KeyPop (FY24)", which will be set by taking the
-    \> difference between "TX_CURR - KeyPop (FY24)" and "TX_CURR -
-    KeyPop \> (FY23 Targets)" and be used as further reference in
+3.  Review "TX_NET_NEW - KeyPop (FY25)", which will be set by taking the
+    \> difference between "TX_CURR - KeyPop (FY25)" and "TX_CURR -
+    KeyPop \> (FY24 Targets)" and be used as further reference in
     setting KP \> TX_NEW.
 
 NOTE: TX_CURR targets here on the KP tab are not linked to those on the
@@ -283,25 +283,25 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW - KeyPop (FY24)** $TX\_NEW.KP.T$
+-   **TX_NEW - KeyPop (FY25)** $TX\_NEW.KP.T$
 
 ### Instructions
 
-1.  Review column "TX_NEW - KeyPop (FY23 Targets)", which will come
-    pre-populated with FY23 targets for reference.
+1.  Review column "TX_NEW - KeyPop (FY24 Targets)", which will come
+    pre-populated with FY24 targets for reference.
 
 2.  Review and adjust the columns "Proportion of TX_NET_NEW from New ART
-    Initiation (FY24) (%)", "Targeted Retention Rate - Already on ART
-    (FY24) (%)", and "Targeted Retention Rate - New on ART (FY24) (%)",
+    Initiation (FY25) (%)", "Targeted Retention Rate - Already on ART
+    (FY25) (%)", and "Targeted Retention Rate - New on ART (FY25) (%)",
     which will be prepopulated with 100%, 98%, and 98% respectively.
     These columns serve similar roles along the KP Cascade as seen on
     the Cascade tab.
 
-3.  Review modeled FY24 targets for TX_NEW -- KeyPop, which are
-    initially set by multiplying the FY24 target for TX_CURR -- KeyPop
+3.  Review modeled FY25 targets for TX_NEW -- KeyPop, which are
+    initially set by multiplying the FY25 target for TX_CURR -- KeyPop
     by first the "Proportion of TX_NET_NEW from New ART Initiation
-    (FY24) (%)", and then the "Targeted Retention Rate - New on ART
-    (FY24) (%)". However, due to wide variation in KP programming, this
+    (FY25) (%)", and then the "Targeted Retention Rate - New on ART
+    (FY25) (%)". However, due to wide variation in KP programming, this
     value can be overwritten and manually adjusted as needed without
     further approval from PPMs or DUIT Liaisons.
 
@@ -345,35 +345,35 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) - KeyPop (FY24)** $TX\_PVLS.D.KP.T$
+-   **TX_PVLS (D) - KeyPop (FY25)** $TX\_PVLS.D.KP.T$
 
--   **TX_PVLS (N) - KeyPop (FY24)** $TX\_PVLS.N.KP.T$
+-   **TX_PVLS (N) - KeyPop (FY25)** $TX\_PVLS.N.KP.T$
 
 ### Instructions
 
 1.  Review and adjust the columns "% of TX_NEW Eligible for VL Test
-    (FY24) (%)" and "Proportion of eligible w/ access to VL testing
-    (FY24) (%)", which will be prepopulated with 70% and 100%,
+    (FY25) (%)" and "Proportion of eligible w/ access to VL testing
+    (FY25) (%)", which will be prepopulated with 70% and 100%,
     respectively. These columns serve similar roles along the KP Cascade
     as seen on the Cascade tab.
 
-2.  Review modeled targets for "TX_PVLS (D) - KeyPop (FY24)", which will
+2.  Review modeled targets for "TX_PVLS (D) - KeyPop (FY25)", which will
     initially be set by multiplying the FY24 target TX_NEW -- KeyPop
-    first by "% of TX_NEW Eligible for VL Test (FY24) (%)" and then by
-    "Proportion of eligible w/ access to VL testing (FY24) (%)".
+    first by "% of TX_NEW Eligible for VL Test (FY25) (%)" and then by
+    "Proportion of eligible w/ access to VL testing (FY25) (%)".
     However, due to wide variation in KP programming, this value can be
     overwritten and manually adjusted as needed without further approval
     from PPMs or DUIT Liaisons.
 
-3.  Review and adjust the "Targeted VL Suppression Rate (FY24) (%)",
+3.  Review and adjust the "Targeted VL Suppression Rate (FY25) (%)",
     which is set at a default 95% for all OUs, but can be changed with
     permission from your PPM and DUIT Liaisons. Decreasing the targeted
     suppression rate to any value below 95% will highlight the cell in
     Yellow, and in Red should it exceed 100% or drop below 0%.
 
-4.  Review modeled targets for "TX_PVLS (N) -- KeyPop (FY24) (%)", which
+4.  Review modeled targets for "TX_PVLS (N) -- KeyPop (FY25) (%)", which
     will initially be set by multiplying the Denominator Target for
-    TX_PVLS -- KeyPop by the "Targeted VL Suppression Rate (FY24) (%)".
+    TX_PVLS -- KeyPop by the "Targeted VL Suppression Rate (FY25) (%)".
 
 > NOTE: The KP tab TX_PVLS (D) and TX_PVLS (N) are not linked to the
 > Cascade tab, therefore be sure to review KP targets against total
@@ -398,29 +398,29 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST KeyPop, Positive (FY24)** $HTS\_TST.KP.Pos.T$
+-   **HTS_TST KeyPop, Positive (FY25)** $HTS\_TST.KP.Pos.T$
 
--   **HTS_TST KeyPop, Negative (FY24)** $HTS\_TST.KP.Neg.T$
+-   **HTS_TST KeyPop, Negative (FY25)** $HTS\_TST.KP.Neg.T$
 
 ### Instructions
 
-1.  Review "TX_NEW from Previously Diagnosed (FY24) (%)", which will
+1.  Review "TX_NEW from Previously Diagnosed (FY25) (%)", which will
     come prepopulated at 0%, but can be adjusted as needed. Note that
     this column serves a similar role along the KP Cascade as seen in
     the Cascade tab.
 
-2.  Review the number of "TX_NEW from Previously Diagnosed (FY24)",
+2.  Review the number of "TX_NEW from Previously Diagnosed (FY25)",
     which is calculated by multiplying the rate from Step 1 by "TX_NEW -
-    KeyPop (FY24)". Return to Step 1 to adjust this value.
+    KeyPop (FY25)". Return to Step 1 to adjust this value.
 
 3.  Review "TX_NEW from all other sources (FY24)", which will be set
     taking the difference of "TX_NEW - KeyPop (FY24)" and "TX_NEW from
-    Previously Diagnosed (FY24)".
+    Previously Diagnosed (FY25)".
 
-4.  The FY23 Targets for HTS_TST KeyPop Positive and Negative will be
+4.  The FY24 Targets for HTS_TST KeyPop Positive and Negative will be
     pulled from DATIM into this tab for added reference.
 
-5.  Review and adjust the "Targeted ART Linkage Rate (FY24) (%)", which
+5.  Review and adjust the "Targeted ART Linkage Rate (FY25) (%)", which
     is set at a default of 95% for all OUs. Change this value as needed,
     however, you [must seek permission]{.underline} from your assigned
     PPM and DUIT Liaisons before decreasing the targeted suppression
@@ -428,21 +428,21 @@ The following data points will be imported into DATIM from this section:
     percentages above 100% or below 0%; yellow highlights indicate
     percentages that have been altered to drop below 95%.
 
-6.  Set HTS_TST "Yield (FY24) (%)" which will resemble the Yield % that
+6.  Set HTS_TST "Yield (FY25) (%)" which will resemble the Yield % that
     was set in the various modalities of the HTS tab and should be
     approached similarly.
 
-7.  Review modeled FY24 targets for HTS_TST KeyPop, Positive, which are
-    the product of "TX_NEW from all other sources (FY24)" and the rate
-    set in "Targeted ART Linkage Rate (FY24) (%)". However, due to wide
+7.  Review modeled FY25 targets for HTS_TST KeyPop, Positive, which are
+    the product of "TX_NEW from all other sources (FY25)" and the rate
+    set in "Targeted ART Linkage Rate (FY25) (%)". However, due to wide
     variation in KP programming, this value can be overwritten and
     manually adjusted as needed without further approval from PPMs or
     DUIT Liaisons.
 
-8.  Lastly, review the modeled FY24 Targets for HTS_TST KeyPop,
-    Negative, which will be calculated by first dividing the FY24 target
+8.  Lastly, review the modeled FY25 Targets for HTS_TST KeyPop,
+    Negative, which will be calculated by first dividing the FY25 target
     for HTS_TST KeyPop, Positive by the Yield set in Step 5, and then
-    subtracting the FY24 target for HTS_TST KeyPop, Positive. Due to
+    subtracting the FY25 target for HTS_TST KeyPop, Positive. Due to
     wide variation in KP programming, this value can be overwritten and
     manually adjusted as needed without further approval from PPMs or
     DUIT Liaisons.
@@ -475,15 +475,15 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review and adjust the "% of HTS_TST KeyPop Positives (FY24) (%)",
+1.  Review and adjust the "% of HTS_TST KeyPop Positives (FY25) (%)",
     which will be prepopulated at a default of 100%. This assumption
     resembles that of the % of Positives used to help set targets in the
     HTS_RECENT tab. Red highlights in this column indicate percentages
     over 100% or under 0%; yellow highlights indicate percentages that
     have been changed to be less than 100%.
 
-2.  Review and adjust the modeled FY24 targets for HTS_RECENT - KeyPop,
-    which are the product of the rate set in step 1, and the FY24
+2.  Review and adjust the modeled FY25 targets for HTS_RECENT - KeyPop,
+    which are the product of the rate set in step 1, and the FY25
     Targets for HTS_TST KeyPop, Positives.
 
 > NOTE: HTS_RECENT KeyPop is not linked to the HTS_RECENT tab. Be sure
@@ -508,14 +508,14 @@ The following data points will be imported into DATIM from this section:
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_SELF - KeyPop (FY24)** $HTS\_SELF.KP.T$
+-   **HTS_SELF - KeyPop (FY25)** $HTS\_SELF.KP.T$
 
 ### Instructions
 
-1.  For historical context, review FY23 Targets for HTS_SELF -- KeyPop,
+1.  For historical context, review FY24 Targets for HTS_SELF -- KeyPop,
     which will be pulled from DATIM.
 
-2.  Manually populate FY24 Targets for HTS_SELF - KeyPop.
+2.  Manually populate FY25 Targets for HTS_SELF - KeyPop.
 
 NOTE: HTS_SELF on this tab is not linked to the HTS tab. Be sure to
 review KP targets against total population targets in the KP Validation

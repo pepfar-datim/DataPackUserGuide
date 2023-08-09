@@ -52,7 +52,7 @@ This section provides an overview of PEPFAR FY22 results and FY23 targets, both 
 
 -   TX_PVLS (N)
 
--   In the Cascade-PEPFAR FY22 Cascade (Planned) section we have added a new column based on feedback gathered in the retrospective process. The TX_CURR: Expected Achievement (FY23) has been added to default to be the larger of the TX_CURR FY22 Result or the TX_CURR FY23 Target. This column is editable for teams to indicate what the expected achievement for FY23 will be. The value in this column is the TX_CURR (FY23) that will be referenced in the ART Modeling and ART sections as well as subsequent sections of the Cascade tab.
+-   In the Cascade-PEPFAR FY23 Cascade (Planned) section we have added a new column based on feedback gathered in the retrospective process. The TX_CURR: Expected Achievement (FY24) has been added to default to be the larger of the TX_CURR FY22 Result or the TX_CURR FY23 Target. This column is editable for teams to indicate what the expected achievement for FY24 will be. The value in this column is the TX_CURR (FY24) that will be referenced in the ART Modeling and ART sections as well as subsequent sections of the Cascade tab.
 
 ## Partner Country Context
 

@@ -60,25 +60,25 @@ No data points will be imported into DATIM from this section.
 
 3.  Review Targeted proportion of HIV-infected infants linked to ART. This rate is defaulted to 95%.
 
-4.  Review Targeted TX Retention Rate (FY24) (%) which will default to 98%.
+4.  Review Targeted TX Retention Rate (FY25) (%) which will default to 98%.
 
-5.  Review Targeted % Eligible for VLS Testing (FY24) (%) which will default to 70%.
+5.  Review Targeted % Eligible for VLS Testing (FY25) (%) which will default to 70%.
 
 6.  Review Targeted % Eligible with Access to VLS Testing (FY24) (%) which will default to 100%.
 
-7.  Review Targeted VL Suppression Rate (FY24) (%) which will default to 95%.
+7.  Review Targeted VL Suppression Rate (FY25) (%) which will default to 95%.
 
 8.  Review "Total HIV infected infants identified" which will be the product of PMTCT_EID set in the previous section, multiplied by the Estimated Positivity Rates set in this section, summed across both PMTCT_EID age disaggregates. Please see below for a detailed formula of the calculation.
 
-9.  Review "HIV+ infants linked to ART (FY24)" which is the product of "Total HIV infected infants identified" and Targeted ART Linkage Rate (FY24) (%)from Step 3. Adjust this value with column L. This will be referenced back to the Cascade tab for the \<01 age group.
+9.  Review "HIV+ infants linked to ART (FY25)" which is the product of "Total HIV infected infants identified" and Targeted ART Linkage Rate (FY25) (%)from Step 3. Adjust this value with column L. This will be referenced back to the Cascade tab for the \<01 age group.
 
-10. Review "HIV+ infants retained on ART at end of FY24" which is the product of "HIV+ infants linked to ART (FY24)" and Targeted TX Retention Rate (FY24) (%) from Step 4. Adjust this value with column M. This will be referenced back to the Cascade tab for the \<01 age group.
+10. Review "HIV+ infants retained on ART at end of FY25" which is the product of "HIV+ infants linked to ART (FY25)" and Targeted TX Retention Rate (FY25) (%) from Step 4. Adjust this value with column M. This will be referenced back to the Cascade tab for the \<01 age group.
 
-11. Review "HIV+ infants tested for VLS (FY24)" which is the product of "HIV+ infants linked to ART (FY24)" with both Review Targeted % Eligible for VLS Testing (FY24) (%) from Step 5 and Targeted % Eligible with Access to VLS Testing (FY24) (%) from Step 6. Adjust this value with columns N and O. This will be referenced back to the Cascade tab for the \<01 age group.
+11. Review "HIV+ infants tested for VLS (FY25)" which is the product of "HIV+ infants linked to ART (FY25)" with both Review Targeted % Eligible for VLS Testing (FY25) (%) from Step 5 and Targeted % Eligible with Access to VLS Testing (FY25) (%) from Step 6. Adjust this value with columns N and O. This will be referenced back to the Cascade tab for the \<01 age group.
 
-12. Lastly, review "HIV+ infants Virally Suppressed (FY24)" which is the product of "HIV+ infants tested for VLS (FY24)" and Targeted VL Suppression Rate (FY24) (%) from Step 7. Adjust this value with columns P. This will be referenced back to the Cascade tab for the \<01 age group.
+12. Lastly, review "HIV+ infants Virally Suppressed (FY25)" which is the product of "HIV+ infants tested for VLS (FY25)" and Targeted VL Suppression Rate (FY25) (%) from Step 7. Adjust this value with columns P. This will be referenced back to the Cascade tab for the \<01 age group.
 
-### PMTCT_HEI_POS (FY23)
+### PMTCT_HEI_POS (FY24)
 
 To calculate the total number of HIV-infected infants to be tested and identified, the Target Setting Tool uses the following formula, rounding to the nearest integer:
 

@@ -25,25 +25,25 @@ for (t in table_seq(data, max_col = 3)) {
 The following data will NOT be imported into DATIM but will appear in the COP Dossier from this section of the
 Target Setting Tool:
 
--   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY23)**
+-   **Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY24)**
     $PMTCT\_STAT\_SUBNAT.D.T\_1$
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY24)**
     $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T\_1$
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY24)**
     $PMTCT\_STAT\_SUBNAT.N.New.Pos.T\_1$
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY24)**
     $PMTCT\_STAT\_SUBNAT.N.New.Neg.T\_1$
 
--   **Host Country PMTCT_ART_SUBNAT (D) - HIV-positive pregnant women (FY23)**
+-   **Host Country PMTCT_ART_SUBNAT (D) - HIV-positive pregnant women (FY24)**
     $PMTCT\_ART\_SUBNAT.D.T\_1$
 
--   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY23)**
+-   **Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY24)**
     $PMTCT\_ART\_SUBNAT.N.Already.T\_1$
 
--   **Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY23)**
+-   **Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY24)**
     $PMTCT\_ART\_SUBNAT.N.New.T\_1$
 
 ### Instructions
@@ -52,15 +52,15 @@ Target Setting Tool:
     corollaries on the Cascade tab. Follow hyperlinks to navigate to the
     source of this data:
 
-    a.  Host Country Estimated Female Population (FY23)
+    a.  Host Country Estimated Female Population (FY24)
 
-    b.  Host Country Estimated PLHIV (FY23)
+    b.  Host Country Estimated PLHIV (FY24)
 
-    c.  Host Country Estimated HIV Prevalence (FY23)
+    c.  Host Country Estimated HIV Prevalence (FY24)
 
-    d.  Host Country Estimated TX_CURR_SUBNAT (FY23)
+    d.  Host Country Estimated TX_CURR_SUBNAT (FY24)
 
-    e.  Host Country Estimated ART Coverage (FY23)
+    e.  Host Country Estimated ART Coverage (FY24)
 
 2.  If using Spectrum as the source for Host Country Context data, the
     following columns will initially be populated based on data from the
@@ -69,20 +69,20 @@ Target Setting Tool:
     needed. With approval by your PPM and assigned DUIT Liaison, you may
     also identify and use another source for this data.
 
-    a.  Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY23)
+    a.  Host Country PMTCT_STAT_SUBNAT (D) - \# New ANC clients (FY24)
 
-    b.  Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY23)
+    b.  Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY24)
 
-    c.  Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY23)
+    c.  Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY24)
 
-    d.  Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY23)
+    d.  Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY24)
 
     e.  Host Country PMTCT_ART_SUBNAT (D) - \# HIV-positive pregnant
         women (FY23)
 
-    f.  Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY23)
+    f.  Host Country PMTCT_ART_SUBNAT (N) - Already on ART (FY24)
 
-    g.  Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY23)
+    g.  Host Country PMTCT_ART_SUBNAT (N) - New on ART (FY24)
 
 ## PMTCT: New ANC Clients
 
@@ -106,11 +106,11 @@ The following data points will be imported into DATIM from this section:
 
 -   **PMTCT_STAT (D) (FY24)** $PMTCT\_STAT.D.T$
 
--   **PMTCT_STAT_SUBNAT (D) (FY24)** $PMTCT\_STAT\_SUBNAT.D.T$
+-   **PMTCT_STAT_SUBNAT (D) (FY25)** $PMTCT\_STAT\_SUBNAT.D.T$
 
 ### Instructions
 
-1.  For historical context, review FY23 targets for PMTCT_STAT (D),
+1.  For historical context, review FY24 targets for PMTCT_STAT (D),
     reflected in the Target Setting Tool per data reported in DATIM.
 
 2.  Review and adjust the Expected change in new ANC clients, which
@@ -125,20 +125,20 @@ The following data points will be imported into DATIM from this section:
     value in column F would be "0%". If it increased by 50%, the value
     would be "50%". If the number should decrease by 20%, enter "-20%".)
 
-3.  Review FY24 targets for PMTCT_STAT (D), which is calculated by
+3.  Review FY25 targets for PMTCT_STAT (D), which is calculated by
     multiplying the Expected change in new ANC clients (set in step 2)
     by the lesser of either the "Host Country PMTCT_STAT_SUBNAT (D) - \#
-    New ANC clients (FY23)" set in the Host Country Context section, or
+    New ANC clients (FY24)" set in the Host Country Context section, or
     the PMTCT_STAT (D) FY23 targets from DATIM. In the case services are
-    planned in FY24 where these were not provided in FY23, you may
-    manually enter FY24 targets in this column.
+    planned in FY25 where these were not provided in FY24, you may
+    manually enter FY25 targets in this column.
     
 4.  Review H.C. % ANC clients served at PEPFAR-supported sites (FY24) (%)
     which will be calculated by dividing historic PMTCT_STAT (D) (FY23)
     target by the column K H.C. New ANC Clients (FY23). This percentage
     can be modified if the calculation does not produce the proper coverage.
     
-5.  Column V H.C. PMTCT_STAT_SUBNAT (D) (FY24) target will divide the FY24 
+5.  Column V H.C. PMTCT_STAT_SUBNAT (D) (FY25) target will divide the FY25 
     target set for PMTCT_STAT (D) and the % calculated in step 4.
 
 ## PMTCT: ANC1 Testing - PEPFAR
@@ -174,19 +174,19 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  Review FY22 Results for (a) Estimated % ANC1 clients with already
+1.  Review FY23 Results for (a) Estimated % ANC1 clients with already
     Known HIV Positive status, and (b) Estimated Positivity Rate among
     Newly Tested ANC1 clients.
 
-2.  Review FY24 projections for (a) Estimated % ANC1 clients with
+2.  Review FY25 projections for (a) Estimated % ANC1 clients with
     already Known HIV Positive status, and (b) Estimated Positivity Rate
     among Newly Tested ANC1 clients. These data default to remain static
-    from related FY23 rates added to the Host Country Context section of
-    this tab. Where these are unavailable, these instead use FY22
+    from related FY24 rates added to the Host Country Context section of
+    this tab. Where these are unavailable, these instead use FY23
     results trends. In either case, these can be adjusted as necessary
     with approval by your PPM and DUIT Liaison. Red highlights indicate
     percentages over 100%; yellow highlights indicate percentages
-    different from FY22 results. See below for additional information.
+    different from FY23 results. See below for additional information.
 
 3.  Review "Total PMTCT_STAT (N)", which will display the numerator
     value for PMTCT_STAT based on the multiplication of "PMTCT_STAT (D)"
@@ -207,7 +207,7 @@ The following data points will be imported into DATIM from this section:
     as the remainder of Total PMTCT_STAT (N) less both PMTCT_STAT Known
     HIV Status, Positive and PMTCT_STAT Newly Tested, Positive.
 
-### FY24 Projected Known Positivity and New Positivity Rates
+### FY25 Projected Known Positivity and New Positivity Rates
 
 In projecting rates of Known and New positivity for PMTCT_STAT ANC1
 clients, the COP21 Target Setting Tool relies first upon Host Country Context
@@ -243,39 +243,39 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY24)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY25)**
     $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY24)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY25)**
     $PMTCT\_STAT\_SUBNAT.N.Known.Pos.T$
 
--   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY24)**
+-   **Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY25)**
     $PMTCT\_STAT\_SUBNAT.N.New.Neg.T$
 
 ### Instructions
 
 1.  Review the Total PMTCT_STAT_SUBNAT (N) that is calculated using the
-    target set in the previous section for PMTCT_STAT_SUBNAT (D) (FY24)
-    and Targeted testing coverage of ANC1 clients (FY24) (%) from the
+    target set in the previous section for PMTCT_STAT_SUBNAT (D) (FY25)
+    and Targeted testing coverage of ANC1 clients (FY25) (%) from the
     PMTCT_STAT (N) section. This will be used to calculate the FY24
     targets for the remainder of this section
 
-2.  Review Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY24)
+2.  Review Host Country PMTCT_STAT_SUBNAT (N) - Known Positive (FY25)
     which will be calculated as the product of the Total
     PMTCT_STAT_SUBNAT (N) and Projected % ANC1 clients Known HIV
     Positive (FY24) (%). Adjust this percentage from the previous
     section to make changes to this target.
 
-3.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY24) in
+3.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY25) in
     the same manner as it uses the SUBNAT Numerator and Est. Positivity
-    Rate among Newly Tested ANC1 clients (FY24) (%). Adjust this
+    Rate among Newly Tested ANC1 clients (FY25) (%). Adjust this
     percentage from the previous section to make changes to this target.
 
-4.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY24)
+4.  Review Host Country PMTCT_STAT_SUBNAT (N) - New Negative (FY25)
     which will be calcuated as the remainder of Host Country
-    PMTCT_STAT_SUBNAT (N) - Known Positive (FY24), less Host Country
-    PMTCT_STAT_SUBNAT (N) - Known Positive (FY24) and Host Country
-    PMTCT_STAT_SUBNAT (N) - New Positive (FY24).
+    PMTCT_STAT_SUBNAT (N) - Known Positive (FY25), less Host Country
+    PMTCT_STAT_SUBNAT (N) - Known Positive (FY25) and Host Country
+    PMTCT_STAT_SUBNAT (N) - New Positive (FY25).
 
 ## PMTCT: ART - PEPFAR
 ### PMTCT: PMTCT_ART (N)
@@ -335,19 +335,19 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Est. Host Country \# HIV-positive pregnant women (FY24)**
+-   **Est. Host Country \# HIV-positive pregnant women (FY25)**
     $PMTCT\_ART\_SUBNAT.D.T$
 
--   **Est. Host Country \# HIV+ Pregnant Women Already on ART (FY24)**
+-   **Est. Host Country \# HIV+ Pregnant Women Already on ART (FY25)**
     $PMTCT\_ART\_SUBNAT.N.Already.T$
 
--   **Est. Host Country \# HIV+ Pregnant Women New on ART (FY24)**
+-   **Est. Host Country \# HIV+ Pregnant Women New on ART (FY25)**
     $PMTCT\_ART\_SUBNAT.N.New.T$
 
 ### Instructions
 
-1.  Review Est. Host Country \# HIV-positive pregnant women (FY24). This
-    is the summation of FY24 Targets set in the PMTCT_STAT_SUBNAT (N)
+1.  Review Est. Host Country \# HIV-positive pregnant women (FY25). This
+    is the summation of FY25 Targets set in the PMTCT_STAT_SUBNAT (N)
     Section for Host Country PMTCT_STAT_SUBNAT (N) - Known Positive
     (FY24) and Host Country PMTCT_STAT_SUBNAT (N) - New Positive (FY24).
 

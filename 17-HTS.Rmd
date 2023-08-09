@@ -128,7 +128,7 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-1.  For each of the modalities listed above, please reference the COP23 Guidance to understand how the HTS Modalities that were used in COP23 have been collapsed into the new Modalities to be used in COP24. Review and adjust Yield rates, which are initially populated from DATIM based on FY24 results but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate cases either where:
+1.  For each of the modalities listed above, please reference the COP23 Guidance to understand how the HTS Modalities that were used in COP22 have been collapsed into the new Modalities to be used in COP23 Year 1 and 2. Review and adjust Yield rates, which are initially populated from DATIM based on FY23 results but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate cases either where:
 
     a.  ART Coverage is greater than or equal to 70%, but yields are less than 10%; or
 

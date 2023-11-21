@@ -104,7 +104,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PMTCT_STAT (D) (FY24)** $PMTCT\_STAT.D.T$
+-   **PMTCT_STAT (D) (FY25)** $PMTCT\_STAT.D.T$
 
 -   **PMTCT_STAT_SUBNAT (D) (FY25)** $PMTCT\_STAT\_SUBNAT.D.T$
 
@@ -115,7 +115,7 @@ The following data points will be imported into DATIM from this section:
 
 2.  Review and adjust the Expected change in new ANC clients, which
     should help indicate whether there is an anticipated change in the
-    number of women presenting to ANC compared to FY23. This is
+    number of women presenting to ANC compared to FY24. This is
     defaulted at 0%, though this reflects no suggestion of strategy from
     S/GAC. Adjust these growth rates to reflect intentional,
     data-driven, strategic programming. Values can be negative or
@@ -163,14 +163,14 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Total PMTCT_STAT (N)** $PMTCT\_STAT.N$
+-   **Total PMTCT_STAT (N) (FY25)** $PMTCT\_STAT.N$
 
--   **PMTCT_STAT (N) Known HIV Status, Positive**
+-   **PMTCT_STAT (N) Known HIV Status, Positive (FY25)**
     $PMTCT\_STAT.N.KnownPos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Positive** $PMTCT\_STAT.N.New.Pos.T$
+-   **PMTCT_STAT (N) Newly Tested, Positive (FY25)** $PMTCT\_STAT.N.New.Pos.T$
 
--   **PMTCT_STAT (N) Newly Tested, Negative** $PMTCT\_STAT.N.New.Neg.T$
+-   **PMTCT_STAT (N) Newly Tested, Negative (FY25)** $PMTCT\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -297,9 +297,9 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** $PMTCT\_ART.Already.T$
+-   **Already on ART (FY25)** $PMTCT\_ART.Already.T$
 
--   **New on ART** $PMTCT\_ART.New$
+-   **New on ART (FY25)** $PMTCT\_ART.New$
 
 ### Instructions
 
@@ -374,9 +374,9 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_TST PMTCT Post ANC1, Positive** $HTS\_TST.PostANC1.Pos.T$
+-   **HTS_TST PMTCT Post ANC1, Positive (FY25)** $HTS\_TST.PostANC1.Pos.T$
 
--   **HTS_TST PMTCT Post ANC1, Negative** $HTS\_TST.PostANC1.Neg.T$
+-   **HTS_TST PMTCT Post ANC1, Negative (FY25)** $HTS\_TST.PostANC1.Neg.T$
 
 ### Instructions
 

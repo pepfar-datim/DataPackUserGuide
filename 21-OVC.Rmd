@@ -27,13 +27,13 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **DREAMS** $OVC\_SERV.DREAMS.T$
+-   **DREAMS (FY25)** $OVC\_SERV.DREAMS.T$
 
--   **Preventive** $OVC\_SERV.Prev.T$
+-   **Preventive (FY25)** $OVC\_SERV.Prev.T$
 
--   **Comprehensive -- Graduated** $OVC\_SERV.Grad.T$
+-   **Comprehensive -- Graduated (FY25)** $OVC\_SERV.Grad.T$
 
--   **Comprehensive -- Active** $OVC\_SERV.Active.T$
+-   **Comprehensive -- Active (FY25)** $OVC\_SERV.Active.T$
 
 ### Instructions
 

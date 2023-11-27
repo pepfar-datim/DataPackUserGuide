@@ -32,7 +32,7 @@ listed.
     reviewed before setting KP targets.
 
 2.  Where possible and relevant, use FY24 targets and, as available,
-    results to inform FY25 targets (the 'Assumption' column for each
+    FY23 results to inform FY25 targets (the 'Assumption' column for each
     indicator in the tab). But remember to consider expectations for
     scale-up based on current program needs and gaps. That is, FY22
     results may not be the most relevant and appropriate base from which
@@ -171,7 +171,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_NEW - KeyPop (FY24)** $PrEP\_NEW.KP.T$
+-   **PrEP_NEW - KeyPop (FY25)** $PrEP\_NEW.KP.T$
 
 ### Instructions
 
@@ -240,7 +240,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR - KeyPop (FY24)** $TX\_CURR.KP.T$
+-   **TX_CURR - KeyPop (FY25)** $TX\_CURR.KP.T$
 
 ### Instructions
 
@@ -471,7 +471,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **HTS_RECENT - KeyPop (FY24)** $HTS\_RECENT.KP.T$
+-   **HTS_RECENT - KeyPop (FY25)** $HTS\_RECENT.KP.T$
 
 ### Instructions
 

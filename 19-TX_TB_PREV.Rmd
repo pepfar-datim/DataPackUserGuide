@@ -30,13 +30,13 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **New on ART, TB Screen +** $TX\_TB.D.New.Pos.T$
+-   **New on ART, TB Screen + (FY25)** $TX\_TB.D.New.Pos.T$
 
--   **New on ART, TB Screen --** $TX\_TB.D.New.Neg.T$
+-   **New on ART, TB Screen -- (FY25)** $TX\_TB.D.New.Neg.T$
 
--   **Already on ART, TB Screen +** $TX\_TB.D.Already.Pos.T$
+-   **Already on ART, TB Screen + (FY25)** $TX\_TB.D.Already.Pos.T$
 
--   **Already on ART, TB Screen --** $TX\_TB.D.Already.Neg.T$
+-   **Already on ART, TB Screen -- (FY25)** $TX\_TB.D.Already.Neg.T$
 
 ### Instructions
 
@@ -122,9 +122,9 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_PREV (D): New on ART** $TB\_PREV.D.New.T$
+-   **TB_PREV (D): New on ART (FY25)** $TB\_PREV.D.New.T$
 
--   **TB_PREV (D): Already on ART** $TB\_PREV.D.Already.T$
+-   **TB_PREV (D): Already on ART (FY25)** $TB\_PREV.D.Already.T$
 
 ### Instructions
 
@@ -177,9 +177,9 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_PREV (N): New on ART** $TB\_PREV.N.New.T$
+-   **TB_PREV (N): New on ART (FY25)** $TB\_PREV.N.New.T$
 
--   **TB_PREV (N): Already on ART** $TB\_PREV.N.Already.T$
+-   **TB_PREV (N): Already on ART (FY25)** $TB\_PREV.N.Already.T$
 
 ### Instructions
 

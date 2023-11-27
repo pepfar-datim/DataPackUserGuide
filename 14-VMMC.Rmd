@@ -101,15 +101,15 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   VMMC_CIRC Not Tested by PEPFAR $VMMC\_CIRC.Unk.T$
+-   VMMC_CIRC Not Tested by PEPFAR (FY25) $VMMC\_CIRC.Unk.T$
 
--   VMMC_CIRC HIV Positive $VMMC\_CIRC.Pos.T$
+-   VMMC_CIRC HIV Positive (FY25) $VMMC\_CIRC.Pos.T$
 
--   VMMC_CIRC HIV Negative $VMMC\_CIRC.Neg.T$
+-   VMMC_CIRC HIV Negative (FY25) $VMMC\_CIRC.Neg.T$
 
 ### Instructions
 
-1.  For historical context, review FY23 results and FY23 targets for
+1.  For historical context, review FY23 results and FY24 targets for
     PEPFAR VMMC_CIRC, supplied in the Target Setting Tool as an export from data
     currently reported in DATIM.
 

@@ -67,7 +67,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PREP_CT Continuing on PrEP (FY24)** $PrEP\_CT.T$
+-   **PREP_CT Continuing on PrEP (FY25)** $PrEP\_CT.T$
 
 ### Instructions
 

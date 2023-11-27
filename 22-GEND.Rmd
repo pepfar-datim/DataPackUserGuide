@@ -27,9 +27,9 @@ for (t in table_seq(data, max_col = 3)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Physical/Emotional Violence (FY24)** $GEND\_GBV.PE.T$
+-   **Physical/Emotional Violence (FY25)** $GEND\_GBV.PE.T$
 
--   **Sexual Violence (FY24)** $GEND\_GBV.S.T$
+-   **Sexual Violence (FY25)** $GEND\_GBV.S.T$
 
 ### Instructions
 

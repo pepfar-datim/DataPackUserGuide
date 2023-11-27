@@ -27,7 +27,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TB_STAT (D)** $TB\_STAT.D.T$
+-   **TB_STAT (D) (FY25)** $TB\_STAT.D.T$
 
 ### Instructions
 
@@ -65,11 +65,11 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Known HIV Status, Positive** $TB\_STAT.N.KnownPos.T$
+-   **Known HIV Status, Positive (FY25)** $TB\_STAT.N.KnownPos.T$
 
--   **Newly Tested, Positive** $TB\_STAT.N.New.Pos.T$
+-   **Newly Tested, Positive (FY25)** $TB\_STAT.N.New.Pos.T$
 
--   **Newly Tested, Negative** $TB\_STAT.N.New.Neg.T$
+-   **Newly Tested, Negative (FY25)** $TB\_STAT.N.New.Neg.T$
 
 ### Instructions
 
@@ -157,9 +157,9 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Already on ART** $TB\_ART.Already.T$
+-   **Already on ART (FY25)** $TB\_ART.Already.T$
 
--   **New on ART** $TB\_ART.New.T$
+-   **New on ART (FY25)** $TB\_ART.New.T$
 
 ### Instructions
 

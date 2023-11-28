@@ -110,10 +110,10 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Denominator - Started or Completed any DREAMS Service**
+-   **Denominator - Started or Completed any DREAMS Service (FY25)**
     $AGYW\_PREV.D.T$
 
--   **Numerator - Completed at least Primary Package** $AGYW\_PREV.N.T$
+-   **Numerator - Completed at least Primary Package (FY25)** $AGYW\_PREV.N.T$
 
 ### Instructions
 

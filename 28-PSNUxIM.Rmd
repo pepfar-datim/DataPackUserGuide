@@ -218,7 +218,7 @@ knitr::include_graphics("./images/FACTS Info Valid mech 5.png")
 
 ## Note on Peace Corps Mechanisms
 
-As in COP24, Peace Corps will no longer report targets under their older
+As in COP23, Peace Corps will no longer report targets under their older
 mechanisms, and will instead report all targets under Management &
 Operations (M&O) mechanisms. Note that the PSNUxIM tab will initially
 populate mechanisms and distributions based on previous year targets, so

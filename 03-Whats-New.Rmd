@@ -2,17 +2,15 @@
 
 ## COP Reform and Target Setting Tool Reform 
 
-The Target Setting Tool has been returned to an ART Coverage model, because this tried-and-true algorithm is more stable and user-friendly.  However, it is still important to provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. In particular, despite the return to an ART Coverage model, please retain the focus on Viral Load Coverage that was gained by the COP22 DataPack algorithm.
+The FY25 Target Setting Tool remains largely unaltered and consistent with the significant changes that occurred from last years COP refor. It will once again use an ART Coverage model, because this tried-and-true algorithm is more stable and user-friendly.  However, it is still important to provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. In particular, despite the return to an ART Coverage model, please retain the focus on Viral Load Coverage that was gained by the COP22 DataPack algorithm.
 
 ## Changes in line with COP Reform
 
-**MER 2.6.1**:
+**MER 2.7**:
 
--   Integration of the new collapsed HTS modalities. For target setting there has been a collapse of many modalities to reduce the total number of targets being set, while still  maintaining an infectious disease testing approach. More insight into these modalities will be in the HTS section of the User Guide. Teams should be aware that the modality collapse is only for Target Setting. Results will be reported against all individual modalities. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+-   Final targets metadata aligns with the new MER 2.7 Guidance. There are no significant changes other than to make sure targets can easily align with Results.
 
--   Reduction of Target Setting Age Bands. The number of Cascade Age Bands has been reduced from COP23. This year teams will set Targets using the following age bands: <01, 1-9, 10-14, 15-24, 25-34, 35-49, 50+. In most target setting tabs, these are the age bands that will be present, however due to the nature of certain tabs and the already smaller scope of ages on which the prevention or treatment focuses, AGYW and OVC will retain their historic target setting age bands. 
-
--   Year 2 Targets. In an effort to help teams think through multi-year programmatic approach while setting detailed targets for the upcoming fiscal year. Year 2 PEPFAR targets will not be imported into DATIM and will only be set at a National Level with Age/Sex disaggregates. 
+-   The OVC_HIVSTAT target now includes the age bands of 18-20
 
 ## **PSNUxIM Tool & Formulas**
 

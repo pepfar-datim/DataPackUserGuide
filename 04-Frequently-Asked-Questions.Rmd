@@ -2,28 +2,10 @@
 
 ## Formula Updates
 
-The following are formula errors that have been flagged by Users and need to be updated in the Target Setting Tool:
-
-  -   On the PMTCT Tab, the Spectrum Estimate for column Q "P.C. ANC Clients - New on ART (FY23)" is not pulling from the Spectrum estimates tab. In the formula to pull from the Spectrum tab there is a reference to "CY2023Q3". This needs to be changed starting in Row 15 (Cell Q15) to read "CY2023Q3". Once this is updated, the formula will need to be dragged down through the entire column Q so that it properly updates and pulls estimates throughout the entire column.
-  
-  -   On the PMTCT Tab, the Spectrum Estimate for column L "P.C. ANC Clients - Known Positive (FY23)" is not pulling from the Spectrum estimates tab. In the spectrum estimates, there is a syntax error in the indicator code that is causing the estimates to not populate. The indicator code in the PMTCT Tab is "PMTCT_STAT_SUBNAT.N.KnownPos.T_1" whereas the Spectrum estimates are using "PMTCT_STAT_SUBNAT.N.Known.Pos.T_1". The inclusion of the "." in "Known.Pos" is why the estimates are not populating. Teams should edit the spectrum estimates to remove the period "." and ensure it reads "PMTCT_STAT_SUBNAT.N.KnownPos.T_1". Once these indicator codes in Column G of the Spectrum tab are updated they will pull into the PMTCT Tab.
-  
-  -   On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the \<15 and 15+ age bands properly. Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a "\@", that caused this to appear in any "IFERROR" formula in the Target Setting Tool. If you see this in any other "IFERROR" formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an "\@" symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the "\@", and then drag this formula down through both of these columns to have the aggregation work as intended.
-
-  -   If you seeing decimal values for my HTS_RECENT Targrets in flatpacks and Validation Reports. A rounding function needs to be added into the HTS tab, column BA for the HTS_RECENT Total Target. In Row 15 of Column BA, the ROUND function needs to be added around the calculation where column AM is multiplied by column AZ. Teams should add the ROUND function around this product, and then add the ",0" so that the formula rounds to the nearest whole integer. The drag this formula down through the entire HTS_RECENT column. This will also help clear issues with Target values not matching between the PSNUxIM Tool and Main Target Setting Tool. 
-  
-  -   In the Year 2 tab, there formula in the NEW INFECTIONS (FY25) column has a incorrect reference to CY2024Q3 starting in row 24. Teams need to drag the formula from Row 23 down through row 28 so that there is the reference to CY2025Q3 in all the formulas for Year 2 New Infections, and that these estimates properly populate.
-  
-  -   In the year 2 tab, VMMC section, column CQ VMMC_CIRC.Pos.T2 has formulas that are pointed to the incorrect rows. VMMC circ should only be pointed to rows associated to Males over 15. The formulas are pointed to the incorrect rows. Users should update the formulas so that for example, row 22 for 15-24 Males has its formulas referencing row 22 for columns AV and AI. 
+The following are formula errors that have been flagged by Users and need to be updated in the Target Setting Tool. This section will be updated as needed throughout the COP/ROP process.
 
 
 ## FAQs
-
-***Q: Am I receiving a lot of warnings for decimal values in the Validation App, how can I resolve these?***
-
-A: The app has two places where users can check for decimals. The first in the Validation Report is the "decimal_values" tab. It is key that users address the warnings of decimals for all FY24 Target Indicators that will be allocated in the PSNUxIM tab. There are some cases of the tab showing values that look like whole integers, but this may be the result of there being a value such as 12.00001, and these can be ignored and do not need to be addressed. For the other values that are appearing as decimals, users will need to go to the tab and address these. If there are formulas in place, it is likely a ROUND function with a round to the nearest integer be added, similar to the formula change mentioned above for HTS_RECENT. If a team has manually entered a target via copy and paste or added their own formula, they will need to address these on their own. 
-
-If you look at the "non_equal_targets" tab of the Validation report which will appear f there is the ERROR message for values in column G (DataPackTargets) which do not equal the targets set in the main tabs, you will see if some of these are a result of decimals and rounding if there are slight discrepancies. These will continue to flag until the above mentioned issues of decimals are resolved. Again, these decimals must be resolved to help resolve this error and to then utilize functionality of the App related to the PSNUxIM tab referenced at the bottom PSNUxIM Section 28 [Key Nuances/Scenarios for this year's PSNUxIM Validation] .
 
 ***Q: I am having trouble sending my targets to PAW and other issues with the app that I was not having yesterday, how can I resolve this?***
 

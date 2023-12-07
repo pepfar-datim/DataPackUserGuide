@@ -294,7 +294,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) Routine (FY25)** $TX\_PVLS.D.Routine.T$
+-   **TX_PVLS (D) (FY25)** $TX\_PVLS.D.T$
 
 ### Instructions
 
@@ -304,9 +304,9 @@ The following data points will be imported into DATIM from this section:
 
 3.  Review Planned VLT Coverage (FY25) (%) which is defaulted to 95%
 
-4.  TX_PVLS (D) Routine (FY25) is those Eligible for VLT (FY25) times the Planned VLT Coverage (FY25) (%)
+4.  TX_PVLS (D) (FY25) is those Eligible for VLT (FY25) times the Planned VLT Coverage (FY25) (%)
 
-5.  H.C. ART Patients with Documented VLT (FY25) is then calculated by taking the product of TX_PVLS (D) Routine (FY25) and ART Patients with Documented VLT (from column AB) and dividing this by TX_PVLS (D) (FY24).
+5.  H.C. ART Patients with Documented VLT (FY25) is then calculated by taking the product of TX_PVLS (D) (FY25) and ART Patients with Documented VLT (from column AB) and dividing this by TX_PVLS (D) (FY24).
 
 
 ## Viral Load Suppression
@@ -327,15 +327,15 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (N) Routine (FY25)** $TX\_PVLS.N.Routine.T$
+-   **TX_PVLS (N) (FY25)** $TX\_PVLS.N.T$
 
 ### Instructions
 
 1.  Review Targeted VL Suppression Rate (FY25) (%) which is set to the default of 95%
 
-2.  TX_PVLS (N) Routine (FY25) is calculated by the Targeted VL Suppression Rate (FY25) (%) and TX_PVLS (D) Routine (FY25) that was set in the previous section.
+2.  TX_PVLS (N) (FY25) is calculated by the Targeted VL Suppression Rate (FY25) (%) and TX_PVLS (D) (FY25) that was set in the previous section.
 
-3.  Finally, review and adjust H.C. Virally Suppressed ART Patients (FY25) which is initially calculated by taking the product of TX_PVLS (N) Routine (FY25) and H.C. # on ART (FY25) (from column AN) and dividing this by TX_CURR (FY25). 
+3.  Finally, review and adjust H.C. Virally Suppressed ART Patients (FY25) which is initially calculated by taking the product of TX_PVLS (N) (FY25) and H.C. # on ART (FY25) (from column AN) and dividing this by TX_CURR (FY25). 
 
 ## Testing
 

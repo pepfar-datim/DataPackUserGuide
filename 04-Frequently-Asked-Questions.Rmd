@@ -72,7 +72,7 @@ If none of the above issues apply to your Target Setting Tool tool and you are s
 
 A: The PSNUxIM tab will only populate with mechanisms that are marked as "active" for the current COP year in DATIM. Any mechanisms that are manually added to the PSNUxIM tab that are not active and valid will be flagged by the Self-Service App.
 
-To ensure a mechanism is valid for the current COP year, go into the COP module in FACTS Info-Next Gen (FI-NG) and check the box for "PEPFAR Systems Active Reporting Years" for the appropriate COP year. Please note that it may take up to 24 hours for active mechanism flags to be carried over into DATIM and resolve validation errors in the Self-Service App.
+To ensure a mechanism is valid for the current COP year, go into the COP module in FACTS Info-Next Gen (FI-NG) and check the box for "PEPFAR Systems Active Reporting Years" for the appropriate COP year. Please note that it may take up to 24 hours for active mechanism flags to be carried over into DATIM and resolve validation errors in the Self-Service App. Please reference [How to Make Mechanisms "Active" in DATIM](https://peptest.dfafacts.gov/assets/guides/HowtoMakeMechanismsAppearinDATIM.pdf)
 
 ```{r echo=FALSE, out.width = '70%'}
 knitr::include_graphics("./images/FACTS Info Valid mech 1.png")

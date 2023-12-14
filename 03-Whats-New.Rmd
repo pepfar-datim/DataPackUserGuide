@@ -2,20 +2,28 @@
 
 ## COP Reform and Target Setting Tool Reform 
 
-The FY25 Target Setting Tool remains largely unaltered and consistent with the significant changes that occurred from last years COP refor. It will once again use an ART Coverage model, because this tried-and-true algorithm is more stable and user-friendly.  However, it is still important to provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) coverage across all three Cascades. In particular, despite the return to an ART Coverage model, please retain the focus on Viral Load Coverage that was gained by the COP22 DataPack algorithm.
+The FY25 Target Setting Tool remains largely unaltered and consistent with the significant changes that occurred from last years COP reform. It will once again use an ART Coverage model, because this tried-and-true algorithm is more stable and user-friendly.  However, it is still important to provide a full picture of the treatment ecosystem and the way in which countries understand if they will achieve 86% (95% x 95% x 95%) population Viral Load Suppression. In particular, despite the return to an ART Coverage model, please retain the focus on Viral Load Coverage that was gained by the COP22 DataPack algorithm.
 
 ## Changes in line with COP Reform
 
 **MER 2.7**:
 
--   Final targets metadata aligns with the new MER 2.7 Guidance. There are no significant changes other than to make sure targets can easily align with Results.
+-   Final targets metadata aligns with the new MER 2.7 Guidance. 
+    There are no significant changes other than to make sure 
+    targets can easily align with DATIM results.
 
--   The OVC_HIVSTAT target now includes the age bands of 18-20
+-   The OVC_HIVSTAT indicator now includes rows for 18-20 
+    year-old age band targets. However, as OVC_HIVSTAT 
+    targets are aggregated to the Total Numerator level, 
+    there is no need to change your OVC_HIVSTAT target 
+    setting process unless you choose to do so.
 
 ## **PSNUxIM Tool & Formulas**
 
-The PSNUxIM Tab will be a stand alone tool, similar to that used for OPUs, and will no longer appear as a blank sheet, but will be generated as its own file by the self-service validation app after you submit your preliminary Target Setting Tool. Once teams begin to allocate their COP23/FY24 Targets to IMs, the PSNUxIM file will be the main file in which teams work. The self-service validation app will allow for both a Main Target Setting Tool AND PSNUxIM Tool to be upload and validated simulaneously. Please note, the main Target Setting Tool file, **will be the source of truth for COP24 Targets to be allocated and imported to DATIM.** Therefore, as teams allocated targets in the PSNUxIM tool, and changes are made to any target in the main tab, the validation app will need ot be utilized to ensure that targets are properly matching across both files to avoid discrepancies and issues with final targets imported to DATIM. 
+The PSNUxIM Tab will be a stand-alone file, similar to that used for IM-shift OPUsi, and will need to be generated as its own file through the Self-Service Validation App after uploading and validating a preliminary Target Setting Tool main tabs file. Once teams begin to allocate FY25 targets to mechanisms, the PSNUxIM file should be the primary file in which teams work. Note that targets can only be adjusted at the IM-allocation level in the PSNUxIM file; all other target adjustments, including PSNU, age, sex, and topline targets, must be done in the main TST file. 
 
-When you received your newly generated PSNUxIM tool for the first time by generating it from the Validation Self-Service App, you will need to scroll to the "Target Values" Section that begins in column CW and copy down (auto-fill) the formulas populated in row 15 all the way down to the bottom of your DataPack. This will be required in order for your Roll-up column to properly populate as well as the Deduplication sections. If you have difficulty with this, please reach out to your DUIT Liaison as soon as possible.
+The self-service validation app will allow for both a main Target Setting Tool file and a PSNUxIM file to be uploaded and validated simultaneously. Please note that the main Target Setting Tool file **will be the source of truth for FY25 targets to be allocated to IMs.** Therefore, if changes are made to any targets in the main tabs file after target allocation has begun in the PSNUxIM file, teams must use the Self-Service Validation App to ensure that updated targets are carried over to the PSNUxIM file and targets match across both files to avoid discrepancies and issues with final targets imported to DATIM. 
+
+**NB: After downloading a new PSNUxIM tool once generated through the Validation Self-Service App, you will need to scroll to the “Target Values” Section that begins in column CW and copy down (auto-fill) the formulas populated in row 15 all the way down to the bottom row of your Target Setting Tool.** This is required for the Roll-up and Deduplication columns to properly populate. If you have difficulty with this, please reach out to your DUIT Liaison as soon as possible.
 
 The PSNUxIM Section will have more details.

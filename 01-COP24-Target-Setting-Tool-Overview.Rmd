@@ -24,16 +24,19 @@ knitr::opts_chunk$set(echo = FALSE, fig.align ="center")
 flextable::set_flextable_defaults(fonts_ignore = TRUE)
 ```
 
-# COP23 Year 2/ROP24 Year 1 Target Setting Tool Overview
+# FY25 Target Setting Tool Overview
 
-Welcome to the COP23 Year 2/ROP24 Year 1 Target Setting Tool User Manual. The following
-pages aim to provide users of the Target Setting Tool used to set FY25 with the
-information necessary to successfully complete each tab of the Target
-Setting Tool tool and determine accurate, data-driven targets. For the
-past several years, the DataPack has a been a key element of
-PEPFAR COP planning. In the spirit of COP Reform, we have endeavored to 
-reduce the level of effort in target setting and have developed a simplified 
-Target Setting Tool for COP24. This tool serves a critical function in
+Welcome to the FY25 Target Setting Tool User Manual. The FY25 Target Setting Tool
+is the tool for both COP23 Year 2 countries going through the COP Midpoint Review, 
+and the ROP24 Year 1 OUs, having a full two-year Regional Operational Planning process. 
+The following pages aim to provide users of the Target Setting Tool used to set 
+FY25 with the information necessary to successfully complete each tab of the Target
+Setting Tool tool and determine accurate, data-driven targets. In previous years, 
+the DataPack had been a key element of PEPFAR COP planning. 
+In the spirit of COP Reform, we endeavored to reduce the level of 
+effort in target setting and have developed a simplified 
+Target Setting Tool for COP24, and continue with that tool, 
+iterated a year forward for FY25. This tool serves a critical function in
 assisting PEPFAR Country Teams in setting targets in line with the
 UNAIDS 95-95-95 goals for Testing, Care & Treatment, PMTCT, VMMC, OVC,
 and other program areas. Please note that the FY25 Target Setting Tool
@@ -41,6 +44,13 @@ is mandatory and must be used to set targets for FY25. For FY25, all
 indicators included in the Target Setting Tool are **MER 2.7**
 indicators. For further information on the MER 2.7 indicators, please go
 to <https://datim.zendesk.com/hc/en-us/sections/200929315-MER>.
+
+For COP23 Year 2 countries, they will NOT need to fill out a notional 
+Year 2 tab, they will only need to plan targets for FY25. 
+COP23 Year 2 countries and should ignore any FY26 targets in PAW. 
+ROP23 Year 1 countries will need to plan targets to the PSNUxIM 
+level for FY25 (Year 1) and also plan notional targets at the 
+country level for the PEPFAR program for FY26 (Year 2). 
 
 To submut a help desk ticket at any point please use     [DATIM.Zendesk.com](http://datim.zendesk.com/).
 
@@ -64,15 +74,18 @@ necessarily calculate targets for every indicator, but it has space for
 teams to enter targets for all indicators and thus can be used to record
 agreed-upon COP targets, even for non-calculated indicators.
 
+In the first year of their Operational Planning Process, 
+OUs will also need to set high-level targets for their PEPFAR targets at the OU level. 
+
 **Teams must not modify the structure of the FY25 Target Setting Tool
-in any way**. The Office of the US Global Aids Coordinator (OGAC) has
+in any way**. The Bureau of Global Health Security and Diplomacy (GHSD) has
 developed a process by which targets can be directly imported into DATIM
 via the Target Setting Tool Site Tool in order to generate targets.
 However, this is *only* possible for teams that do not in any way alter
 the structure or format of the Target Setting Tool. Additional details
 will be available through COP webinars.
 
-## Highlighted Changes from COP23 (FY24) to COP23 Year 2/ROP24 Year 1 (FY25)
+## Highlighted adjustments from COP23 year 1 (FY24) to FY25 (COP23 Year 2/ROP24 Year 1)
 
 The FY25 Target Setting Tool algorithms are largely the same as the COP23 (FY24)
 Target Setting Tool. However, please note the following updates that have been
@@ -81,15 +94,16 @@ These changes revolve around workflow, ease of target setting,
 and linkage to the COP guidance based on different aspects of the Target
 Setting Tool that worked well and others that did not during COP23
 target stetting:
-
--   **PSNUxIM tab structure** that will again handle de-duplication and
-    IM allocation, but now is a single tab in a standalone file.
     
--   Fixes to formuals that arose during the last FY24 COP/ROP cycle.
+-   Fixes to formulae that arose during the last FY24 COP/ROP cycle.
 
--   Year 2 national level PEPFAR targets to better inform strategic planning across
-multiple years.However, these targets will not be imported into DATIM until after a 
-Mid-COP25 Year 2 review, in which they may be updated. 
+-   Update OVC_HIVSTAT age bands to include 18-20 
+
+Last year’s COP23/FY24 Target Setting Tool separated the PSNUxIM 
+tab into a separate file, and a new Year 2 tab was added to plan 
+notional strategic, national level FY25 PEPFAR targets, however 
+these targets were not imported into DATIM. Both of these changes 
+are also reflected in the COP23 Year 2 – FY25/ROP24 Year 1 Target Setting Tool.  
 
 
 ## Data Flow and Review Process to FY25 Submission
@@ -97,10 +111,10 @@ Mid-COP25 Year 2 review, in which they may be updated.
 The results from FY23 Q4 have been taken from DATIM and used to populate
 the Target Setting Tool. In turn, the Target Setting Tool targets will
 produce FY25 targets that will be subsequently submitted through DATIM
-after COP24 has been finalized and the PSNU level data entered into the
-Strategic Direction Summary (SDS) tables, where appropriate (Target
-related data).There will also be strategic national level targets for the 
-PEPFAR program for COP24 Year 2 (FY26), but these will not be imported into DATIM.
+after COP23 Midpoint Review has been finalized and the PSNU level data entered into the
+Strategic Direction Summary (SDS) tables, where appropriate (target
+related data).There will also be strategic national-level targets for the 
+PEPFAR program for ROP24 Year 2 (FY26), but these will not be imported into DATIM.
 
 <!-- #
 ***Target Setting Tool Review***
@@ -152,28 +166,29 @@ For each of the below submissions, the following process will occur:
     the Validation Self-Service App (available at
     <https://apps.datim.org/datapack/>).cc
 
--   Country Team uses Validation Self-Service App to sync data
-    with PAW Dossiers.
+-   Country Team uses Validation Self-Service App to send data
+    to PAW dossiers.
 
--   Country Team saves Target Setting Tool to SharePoint under the OU's
+-   Country Team saves Target Setting Tool file (Main TST file and PSNUxIM File) to SharePoint under the OU's
     HQ Collaboration \> COP 2023 Year 2 - FY 2025 OR ROP 2024 Year 1- FY2025 \> Guidance, Tools, and
-    Resources folder \> Target Setting Tool.
+    Resources folder \> Target Setting Tool folder.
+    
+-   Country team should generate CSO flatpack from the 
+Self-Service Validation App to share with CSOs and send 
+to PPM and DUIT Liaison. PPM will then post to public PEPFAR SharePoint site.
 
 -   Country Team submits a ticket in ZenDesk that includes:
 
-    -   A link to the Target Setting Tool file saved in SharePoint
+    -   A link to the two Target Setting Tool files saved in SharePoint
 
-    -   Confirmation that this file has been pre-validated in the
-        Validation (DataPack) Self-Service App
+    -   Confirmation that the files have been pre-validated in the
+        Validation (DataPack) Self-Service App and are error free
 
-    -   Confirmation that this file has been sent to PAW via the
+    -   Confirmation that the files have been sent to PAW via the
         Validation (DataPack) Self-Service App
 
     -   In copy: Chair, PPM, assigned DUIT Liaison, and any Interagency
         members that should be aware of ongoing review and discussions.
-        
-    -   Country team should generate Flatpack for sharing with CSOs and 
-        send to PPM and DUIT Liaison.  PPM will then post to public PEPFAR SharePoint site.
 
 -   Once this ticket is received, the Target Setting Tool Support Team
     will confirm all the above has occurred and send additional
@@ -190,7 +205,7 @@ For each of the below submissions, the following process will occur:
 -   The assigned Chair should also review all feedback on the ticket
     thread and any additional comments as needed.
 
-As is possible, all the above should occur within a 24 hour turnaround
+As is possible, all the above should occur within a 2-day turnaround
 from the initial submission of a Target Setting Tool from a Country
 Team. While this process will remain the same for each submission for
 review, the content of each review will differ, as explained below. Once
@@ -199,17 +214,25 @@ Target Setting Tool submission, all future Target Setting Tool
 submissions related to the same Country should use the same
 thread/ticket to allow for easy coordination.
 
-**Submission 1**
+**Submission 1 - Complete Draft Tool**
+
+-   Completed draft Target Setting Tool including both the 
+    main TST tabs file and the PSNUxIM file
 
 -   Validate high-level strategic planning direction aligns with the
-    vision agreed to durring Johannesburg Co-Planning Meetings.
+    vision agreed to during COP23 Year2/ROP24 Year 1 Midterm Review Meetings.
+    
+-   Compare draft FY25 targets from COP23 Year 2 tool to 
+    notional Year 2 targets set during last year’s COP and 
+    highlight significant differences and IM shifts
 
 -   Highlight any areas for technical assistance.
 
--   Ensure construction of Target Setting Tool has not been tampered
-    with.
+-   Ensure construction of Target Setting Tool has not been altered, tool is
+    able to be validated, and there are no major errors, flagged
+    in the Validation App.
 
-For this stage of review, it is not expected that your PSNUxIM tab be
+<!---For this stage of review, it is not expected that your PSNUxIM tab be
 completed or even populated. At this stage, the focus should be on
 ensuring the high-level cascade is strategically aligned, and only
 afterward proceeding to allocating targets to IMs. Note that this is
@@ -218,10 +241,10 @@ addition of more data to the PSNUxIM file. This year what has been the
 PSNUxIM Tab will be in a stand-alone file, similar to those used for 
 target shift OPUs. This is being done to also help combat the inflated 
 file size that generally occurs during COP. Please see the PSNUxIM 
-section of the User Guide for more on this. 
+section of the User Guide for more on this. --->
 
-**Submission 2**
-
+**Submission 2 - Final Submission**
+<!---
 -   Confirm resolution of any issues flagged during your first
     submission.
 
@@ -246,36 +269,45 @@ section of the User Guide for more on this.
 -   Confirm the Target Setting Tool is as near final as possible.
 
 **Final Submission**
-
--   Confirm all targets modeled in the Target Setting Tool are ready for
+--->
+-   Confirm all targets modeled in the Target Setting Tool are agreed on and ready for
     submission to DATIM.
+    
+-   Ensure tool is free of errors.
+
+-   Ensure aall validation rule issues are resolved. Chair,
+    PPM, and DUIT Liaison approval are required for any 
+    remaining validation rule issues.
 
 -   Secure Interagency Government sign-off for import of your submitted
     Target Setting Tool to DATIM.
 
--   Note authority to waive any lingering validation issues flagged by
-    the Target Setting Tool Self-Service App.
+-   Provide documentation of approcal to waive any lingering 
+    validation issues flagged by the Target Setting Tool Self-Service App.
 
 Once approval by PPMs, Chairs, and Liaisons is documented on the Zendesk
-thread/ticket, the Target Setting Tool Support Team will move forward
-with uploading your submitted Target Setting Tool to DATIM, then note
-completion of this here on this ticket. Once this is done, it is
-recommended that you review your data in DATIM to ensure alignment
-between DATIM and your Target Setting Tool. Please note in addition to
-these regular formal submissions, we encourage regular sharing and
-dialogue with Chair, PPM, and DUIT Liaison around target setting process
+ticket, the Target Setting Tool Support Team will move forward
+with uploading your submitted Target Setting Tool to DATIM and note
+completion of upload on the ticket. Once upload is done, it is
+recommended that you review the targets in DATIM to ensure alignment
+between DATIM and your Target Setting Tool. 
+
+**Please note:** in addition to the required tool submissions above, 
+we encourage regular sharing,review, and dialogue with 
+Chair, PPM, and DUIT Liaison(s) around the target setting process
 generally, and Target Setting Tool specifically. Feel free to share
-draft versions as often as is helpful.
+draft versions as often as is helpful, and request assistance for 
+any technical issues as early as possible.
 
 ## Target Setting Tool SharePoint Location
 
-The Target Setting Tool will be posted on PEPFAR SharePoint:
+The Target Setting Tool will be posted on the PEPFAR SharePoint:
 [pepfar.sharepoint.com](https://pepfar.sharepoint.com/).
 
--   The file path will be OU \> Country Name \> HQ Collaboration \> COP
-    2023 -- FY2024 \> Guidance, Tools, and Resources.
+-   **File path:** OU \> Country Name \> HQ Collaboration \> COP
+    2023 Year 2 - FY2025 OR ROP2024 Year 1 - FY2025 \> Guidance, Tools, and Resources.
 
--   The file name will be "Target Setting Tool_CountryName_20230215.....". 
+-   **File name:** "Target Setting Tool_CountryName_20231212.....". 
     Please reference the day in which the file was added to the folder. If
     there are new .zip files added, please utilize this file as it may
     be a new version of the Target Setting Tool tool.
@@ -284,9 +316,9 @@ The Target Setting Tool will be posted on PEPFAR SharePoint:
 
 Each Target Setting Tool will start with 20 tabs organized in the order
 presented below. Upon downloading the Target Setting Tool, the PSNUxIM
-tab will no longer appear as a blank sheet, but will be generated as 
-its own file by the self-service validation app after you submit 
-your preliminary Target Setting Tool.
+tab will no longer appear as a blank sheet. Teams will need to generate 
+their PSNUxIM file through the Self-Service Validation App after 
+uploading and validating a draft Target Setting Toolk main tabs (below) file.
 
 -   Home
 

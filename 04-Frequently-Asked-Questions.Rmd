@@ -11,15 +11,15 @@ The following are formula errors that have been flagged by Users and need to be 
 
 A: DATIM can sometimes cache a lot of data. Clearing your cache, closing your browser, and then logging back into the App should resolve this. 
 
-***Q: The Cascade tab is estimating TX_PVLS_D directly from FY23 TX_CURR + (TX_NEW FY24/2) without taking into account losses between the fiscal years, why is this?***
+***Q: The Cascade tab is estimating TX_PVLS_D directly from FY24 TX_CURR + (TX_NEW FY25/2) without taking into account losses between the fiscal years, why is this?***
 
 A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interruption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.
 
-***Q: I have PLHIV Estimates, but they are not appearing in PAW, what do I need to do?***
+***Q: I have PLHIV estimates, but they are not appearing in PAW, what do I need to do?***
 
 A: Users will see three (3) columns for PLHIV in the Cascade and Year 2 tabs. In some cases, teams will receive two different PLHIV Estimates, one for "PLHIV_Residents.T" and another for "PLHIV_Attend.T". Please refer back to the Cascade section in the  [Partner Country Context] portion at the bottom where these FY24 indicators are explained. The default is to point to column AK, but if the tool only has values in column AL, the formula will need to be updated to point to AJ as specified in the note when you hover over cell AL3. Once you make this change and drag down the formula and you have PLHIV in column AL, and re-validate and send to PAW, PLHIV should appear.
 
-***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, what is issue and how can we address this?***
+***Q: Many of our targets, including TX_CURR are exceeding our PLHIV, What is issue and how can we address this?***
 
 A: The Target Setting Tool will not prevent situations resulting in ART coverage exceeding 100% in a given PSNU, but will flag these cases in yellow to highlight when it occurs. Given that these may be a common occurrence in cases of urban PSNUs, or other case where service seeking behavior by clients leads them to cross PSNU boundaries, they are allowable in the tool. It may be worth considering whether the UNAIDS $PLHIV\_Attend$ estimates might provide better context in these situations, but countries need to use a consistent version of the PLHIV estimates for the whole country, otherwise they risk over or under estimating the number of PLHIV.
 
@@ -29,15 +29,15 @@ A: For cells that are labeled with "\*For DOD Military Use Only", in OU Target S
 
 ***Q: I have AGYW targets, but they are not appearing in my PSNUxIM tab, why?***
 
-A: AGYW_PREV is reported by the USG team, not an IM, it doesn't have to be assigned to an IM. It is automatically assigned to USG team.
+A: AGYW_PREV is reported by the USG team, not an IM, so AGYW_PREV targets are not assigned to an IM. It is automatically assigned to USG team.
 
 <!-- #  ***Q: Cascade Tab "Patner Country Context" section column V "P.C. Est. ART Patients Tested for VLS" and column X "P.C. Est. Virally Suppressed ART Patients (FY22)" are blank, how should I fill these out or can I leave them blank?*** -->
 
 <!-- # A: These two columns have been added and left blank for country teams to add in data, should they have reliable Host Country Data available to them. Should a team have access to this data, they should consult their PPM and DUIT Liaison prior to populating the columns. If a country does not have good Host Country Data VL data, the best way forward is likely to leave blank, and the Target Setting Tool will work with your PEPFAR TX_PVLS data on it's own. -->
 
-***Q: I have an outstanding COP22 OPU for IM shifts, what should I do?***
+***Q: I have an outstanding COP23 OPU for IM shifts, what should I do?***
 
-A: For OU's with outstanding target-shift OPUs that are only shifting targets from one IM to another. This OPU will not affect the Target Setting Tool that has been issued thus far since it does not have a generated PSNUxIM tab (note this tab [should not be generated]{.underline} until all main tabs have been filled-in). However, if the team would like the OPU to be taken into account in the COP22 Target Setting Tool's PSNUxIM tab, the OU SI teams should NOT generate a PSNUxIM tab for the COP22 Target Setting Tool until their target shift OPU memos are fully approved, and the target shifts are imported into DATIM. Otherwise, they should be prepared to also make the allocation updates in their COP22 PSNUxIM tab that will align with the OPU update.
+A: Outstanding target-shift OPUs that are only shifting targets from one IM to another will not affect the main Target Setting Tool file since it does not have a generated PSNUxIM tab (note this tab should not be generated until all main tabs have been completed). If the team would like the OPU’s target shifts to be reflected in the FY25 Target Setting Tool’s PSNUxIM file, the OU SI teams should not generate an FY25 PSNUxIM file until their target shift OPU memos are fully approved and the target shifts are imported into DATIM. Otherwise, they should be prepared to also make the IM allocation updates in their FY25 PSNUxIM file to align with the OPU updates.
 
 ***Q: When working through PSNUxIM KP mechanism allocations and I allocate the KP-specific targets to KP partners, given that the KP disaggregates are a subset of the total population being targeted, do I also need to allocate total pop targets to the KP partner?***
 
@@ -55,7 +55,7 @@ A: Once you have regenerated your PSNUxIM tab from the Target Setting Tool Self-
 ```
 ***Q: If my program performs testing but not treatment, how do I represent this in the Target Setting Tool?***
 
-A: You will first need approval from your Chair, who should confirm for DUIT Liaison, to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY24)" (BH). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
+A: You will first need approval from your Chair, who should confirm with your DUIT Liaison, to do this. If you receive this approval you will need to manually alter in the Cascade Tab column "HTS_TST_POS + PMTCT_HEI_POS (FY25)" (BI). Please make the alterations to this column and not on the HTS tab. You may also exceed the minimum HTS_POS needed for your TX_NEW, by having an HTS distribution that is over 100%.
 
 ***Q: When I try to validate my Target Setting Tool in the self-service app, I get a message saying "ERROR: An error has occurred. Check your logs or contact the app author for clarification." How do I resolve this?***
 
@@ -68,7 +68,7 @@ A: This error can be caused by a number of different issues. The most common cau
 
 If none of the above issues apply to your Target Setting Tool tool and you are still receiving this error, please submit a ZenDesk ticket identifying your country and attaching or linking to a copy of the Target Setting Tool tool that caused the error in the app, please always cc your DUIT Liaison on ZenDesk Tickets.
 
-***Q: The Self-Service Validation App is flagging that I have Invalid Mechanism. How and where do I fix this?***
+***Q: The Self-Service Validation App is flagging that I have an Invalid Mechanism. How and where do I fix this?***
 
 A: The PSNUxIM tab will only populate with mechanisms that are marked as "active" for the current COP year in DATIM. Any mechanisms that are manually added to the PSNUxIM tab that are not active and valid will be flagged by the Self-Service App.
 

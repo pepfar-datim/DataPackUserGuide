@@ -27,9 +27,9 @@ for (t in table_seq(data, max_col = 3)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Physical/Emotional Violence (FY24)** $GEND\_GBV.PE.T$
+-   **Physical/Emotional Violence (FY25)** $GEND\_GBV.PE.T$
 
--   **Sexual Violence (FY24)** $GEND\_GBV.S.T$
+-   **Sexual Violence (FY25)** $GEND\_GBV.S.T$
 
 ### Instructions
 
@@ -42,12 +42,12 @@ The following data points will be imported into DATIM from this section:
     GEND_GBV - Sexual Violence services (%)" columns. These will default
     to 0%, though this reflects no suggested strategic direction.
 
-3.  Review FY24 targets for both the "Physical/Emotional Violence" and
+3.  Review FY25 targets for both the "Physical/Emotional Violence" and
     "Sexual Violence" service types. Each of these is calculated as a
-    function of the expected change rate multiplied by the FY23 target
+    function of the expected change rate multiplied by the FY24 target
     for the related service type. In the case services are planned in
-    FY24 where these were not provided in FY23, you may manually enter
-    FY24 targets in these columns.
+    FY25 where these were not provided in FY24, you may manually enter
+    FY25 targets in these columns.
 
 \elandscape
 

@@ -27,18 +27,18 @@ for (t in table_seq(data, max_col = 4)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **DREAMS** $OVC\_SERV.DREAMS.T$
+-   **DREAMS (FY25)** $OVC\_SERV.DREAMS.T$
 
--   **Preventive** $OVC\_SERV.Prev.T$
+-   **Preventive (FY25)** $OVC\_SERV.Prev.T$
 
--   **Comprehensive -- Graduated** $OVC\_SERV.Grad.T$
+-   **Comprehensive -- Graduated (FY25)** $OVC\_SERV.Grad.T$
 
--   **Comprehensive -- Active** $OVC\_SERV.Active.T$
+-   **Comprehensive -- Active (FY25)** $OVC\_SERV.Active.T$
 
 ### Instructions
 
 1.  For historical context, review column "Host Country Est. PLHIV
-    (FY23)", which will pull from the Cascade tab.
+    (FY24)", which will pull from the Cascade tab.
 
 2.  Review the "DREAMS SNU?" column, which will indicate whether an SNU
     is actively implementing DREAMS activities by using "Y" for Yes and
@@ -57,7 +57,7 @@ The following data points will be imported into DATIM from this section:
     flagged in the Target Setting Tool Self-Service App and must be resolved prior
     to COP Approval and DATIM import.
 
-3.  Review columns "FY22 Results" and "FY23 Targets" which will come
+3.  Review columns "FY23 Results" and "FY24 Targets" which will come
     pre-populated with results and targets from DATIM and will serve as
     a baseline for COP21 target calculations.
 
@@ -91,15 +91,15 @@ The following data points will be imported into DATIM from this section:
     indicate graduation rates less than 20%.
 
 7.  Review modeled targets for "Total OVC_SERV", which are calculated by
-    applying the net rate of change decided in step 4 by the FY23 target
-    referenced in step 3. In the case services are planned in FY24 where
-    these were not provided in FY23, you may manually enter FY24 targets
+    applying the net rate of change decided in step 4 by the FY24 target
+    referenced in step 3. In the case services are planned in FY25 where
+    these were not provided in FY24, you may manually enter FY25 targets
     in this column.
 
 8.  Review the number of OVC beneficiaries that are targeted by the
     DREAMS program COP21 implementation. This target is calculated by
     multiplying the total OVC_SERV target by the "Targeted DREAMS % of
-    Total OVC_SERV (%) (FY24)" set in step 5. This formula is also
+    Total OVC_SERV (%) (FY25)" set in step 5. This formula is also
     dependent on the input into column "DREAMS SNU?", which must be
     marked with a "Y" to indicate the SNU is in fact a DREAMS SNU in
     order to set this target (see step 2).
@@ -107,7 +107,7 @@ The following data points will be imported into DATIM from this section:
 9.  Review the number of OVC beneficiaries that are targeted by the OVC
     Preventive program COP21 implementation. This target is calculated
     by multiplying the total OVC_SERV target by the "Targeted Preventive
-    % of Total OVC_SERV (%) (FY24)", set in step 5.
+    % of Total OVC_SERV (%) (FY25)", set in step 5.
 
 10. Review the number of OVC beneficiaries that are targeted for
     graduation from OVC Comprehensive services during COP21
@@ -161,7 +161,7 @@ The following data points will be imported into DATIM from this section:
 ### Instructions
 
 1.  Review the column "Targeted % OVC (\<18) with reported HIV Status
-    (%) (FY24)" which is prepopulated at 100% by default, representing a
+    (%) (FY25)" which is prepopulated at 100% by default, representing a
     goal of having 100% of those served via OVC Comprehensive services
     under 18 years old with reported HIV status. Adjust these values to
     either increase or decrease the COP22 target value in column "\# OVC
@@ -170,7 +170,7 @@ The following data points will be imported into DATIM from this section:
     percentages changed to less than 100%.
 
 2.  Review the target value in column ""\# OVC with reported HIV status
-    (FY24)", which is calculated by multiplying those allocated to the
+    (FY25)", which is calculated by multiplying those allocated to the
     OVC_SERV Comprehensive services disaggregates, whether Active or
     Graduated, and also less than 18 years of age. To adjust these
     targets, return to step 1.

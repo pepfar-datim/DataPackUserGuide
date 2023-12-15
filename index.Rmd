@@ -1,8 +1,9 @@
 ---
-title: "PEPFAR COP23 Target Setting Tool User Guide & Data Dictionary"
+title: "PEPFAR FY25 Target Setting Tool User Guide & Data Dictionary"
 author:
 - U.S. Department of State
-- U.S. Office of the Global AIDS Coordinator and Health Diplomacy (S/GAC)
+- Bureau of Global Health Security and Diplomacy
+- President's Emergency Program for AIDS Relief (GHSD/PEPFAR)
 date: "`r Sys.Date()`"
 geometry: margin=1in
 monofontoptions: Scale=0.8

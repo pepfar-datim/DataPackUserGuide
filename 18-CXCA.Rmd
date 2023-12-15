@@ -27,7 +27,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **CXCA_SCRN (FY24)** $CXCA\_SCRN.T$
+-   **CXCA_SCRN (FY25)** $CXCA\_SCRN.T$
 
 ### Instructions
 
@@ -40,24 +40,24 @@ cancer-related services as per the relevant MER indicators. To remove
 all cervical cancer targets, change the value in column "Targeted CXCA
 Screening coverage rate (%)" to 0%.
 
-1.  For historical context, review FY22 results, FY23 targets, and FY22
+1.  For historical context, review FY22 results, FY24 targets, and FY23
     Observed CXCA Screen Coverage rates as reported in DATIM, as well as
     FY23 Targets for TX_CURR and those to be Initiated on ART in FY24
     from the Cascade tab of the Target Setting Tool.
 
-2.  Review and adjust CXCA_SCRN Coverage - Already on ART (FY24) (%) which
-    will be defaulted to 33% and Coverage - Initiated on ART (FY24) (%) will
+2.  Review and adjust CXCA_SCRN Coverage - Already on ART (FY25) (%) which
+    will be defaulted to 33% and Coverage - Initiated on ART (FY25) (%) will
     be defaulted to 100%. 
     Determine the proportion of HIV positive women currently on treatment that will
-    receive cervical cancer screening in COP2120/FY23 implementation
+    receive cervical cancer screening in COP2120/FY24 implementation
     year. Each team will have a default value of 50% set in this column
     as in past years. However, please follow COP21 Guidance and adjust
     to approximate full coverage of TX_NEW and 25% of already on ART,
     depending on prior year achievements and any additional country
-    specific guidance from your Chair and PPM. To remove all FY24
+    specific guidance from your Chair and PPM. To remove all FY25
     cervical cancer targets, set this column to 0%.
 
-3.  Review FY24 targets for CXCA_SCRN and return to steps 1 and 2 to
+3.  Review FY25 targets for CXCA_SCRN and return to steps 1 and 2 to
     adjust. This target is set based on the number of eligible women in
     the COP 21 TX_CURR cohort multiplied by the Targeted CXCA Screening
     Coverage Rate.

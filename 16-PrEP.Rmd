@@ -28,7 +28,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **Newly on PrEP (FY24)** $PrEP\_NEW.T$
+-   **Newly on PrEP (FY25)** $PrEP\_NEW.T$
 
 ### Instructions
 
@@ -41,10 +41,10 @@ The following data points will be imported into DATIM from this section:
     "HTS_TST_NEG", "Host Country Est. PLHIV", "AGYW(PREV (D)", and
     "AGYW_PREV (N)". Also think through KP PrEP strategy and history.
 
-3.  Review data pulled from DATIM showing "PrEP_NEW (FY22 Results)", and
-    "PrEP_NEW (FY23 Targets)".
+3.  Review data pulled from DATIM showing "PrEP_NEW (FY23 Results)", and
+    "PrEP_NEW (FY24 Targets)".
 
-4.  Manually enter targets for "Newly on PrEP (FY24)".
+4.  Manually enter targets for "Newly on PrEP (FY25)".
 
 ## PrEP: PrEP_CT
 
@@ -67,7 +67,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PREP_CT Continuing on PrEP (FY24)** $PrEP\_CT.T$
+-   **PREP_CT Continuing on PrEP (FY25)** $PrEP\_CT.T$
 
 ### Instructions
 
@@ -82,7 +82,7 @@ The following data points will be imported into DATIM from this section:
     assistance, they do not necessarily provide direct insight into
     PrEP_CT targets.
 
-2.  Manually enter targets for "PrEP_CT (FY24)".
+2.  Manually enter targets for "PrEP_CT (FY25)".
 
 ## PrEP: PrEP_CT - HIV Testing
 
@@ -105,7 +105,7 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **PrEP_CT - # HIV tests administered (FY24)** $PrEP\_CT.TestResult.T$
+-   **PrEP_CT - # HIV tests administered (FY25)** $PrEP\_CT.TestResult.T$
 
 ### Instructions
 
@@ -114,9 +114,9 @@ The following data points will be imported into DATIM from this section:
     This will be prepopulated with 4 under the assumption that a test will be administered
     once a quarter, but this value can be adjusted as needed to determine the final
     target for column Q. 
-2.  This target for FY24 PrEP_CT - # HIV tests administered will then pull directly 
+2.  This target for FY25 PrEP_CT - # HIV tests administered will then pull directly 
     into the HTS tab in which PrEP_CT tests will all fall under the roll-up for 
-    TotalHTS_TST_NEG (FY24).
+    TotalHTS_TST_NEG (FY25).
 
 \elandscape
 

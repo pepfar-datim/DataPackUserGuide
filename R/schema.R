@@ -7,7 +7,7 @@ link_identification <- function(sheet_name, col) {
       }
   }
   
-  schema <- datapackr::pick_schema(cop_year = 2023, tool = "Data Pack") %>%
+  schema <- datapackr::pick_schema(cop_year = 2024, tool = "Data Pack") %>%
     .[c("sheet_name", "col", "formula")] %>%
     unique()
 
@@ -60,7 +60,7 @@ userguide_schema <- function() {
     "Spectrum",    17,               "ID", "assumption",     "string"
   )
   
-  schema <- datapackr::pick_schema(cop_year = 2023, tool = "Data Pack") %>%
+  schema <- datapackr::pick_schema(cop_year = 2024, tool = "Data Pack") %>%
     dplyr::filter(!sheet_name %in% c("Home", "Spectrum", "PSNUxIM"),
                   col_type != "row_header") %>%
     dplyr::bind_rows(spectrum_schema, .) %>%

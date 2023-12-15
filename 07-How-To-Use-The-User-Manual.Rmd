@@ -18,7 +18,7 @@ more information on each program area in the COP21 Guidance.
 
 > ***Column type?*** Indicates whether the data in this column is a
 > result from a previous fiscal year ("Result"), an assumption that the
-> country team is making ("Assumption"), a target for FY2023
+> country team is making ("Assumption"), a target for FY2024
 > ("Targets"), or a reference for the country team as they fill out the
 > DataPack ("Reference").
 >

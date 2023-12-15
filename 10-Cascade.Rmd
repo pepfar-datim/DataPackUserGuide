@@ -7,10 +7,10 @@ The Cascade Tab allows Target Setting Tool users to view and set the overall con
 As in past DataPacks, this tab interweaves with many other tabs of the Target Setting Tool, including the PMTCT, TB, EID, VMMC, KP, HTS, CXCA, HTS_RECENT, and TX_TB_PREV tabs. As is explained below and in sections related to these tabs, Target Setting Tool logic is most useful when target-setting begins in the Cascade tab and progresses from left to right, both within that tab, and across and within all other tabs, returning iteratively to the Cascade tab throughout.
 
 
-## TX_CURR (FY24), PEPFAR FY22 Cascade (Observed) & PEPFAR FY23 Cascade (Planned)
+## TX_CURR (FY25), PEPFAR FY23 Cascade (Observed) & PEPFAR FY24 Cascade (Planned)
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
-section <- "TX_CURR (FY24)"
+section <- "TX_CURR (FY25)"
 columns <- col_seq("F", "F")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
@@ -20,7 +20,7 @@ for (t in table_seq(data)) {
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
-section <- "PEPFAR FY22 Cascade (Observed)"
+section <- "PEPFAR FY23 Cascade (Observed)"
 columns <- col_seq("G", "K")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
@@ -30,7 +30,7 @@ for (t in table_seq(data)) {
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Cascade"
-section <- "PEPFAR FY23 Cascade (Planned)"
+section <- "PEPFAR FY24 Cascade (Planned)"
 columns <- col_seq("L", "R")
 data <- prepare_table_data(sheet_name, columns)
 for (t in table_seq(data)) {
@@ -38,9 +38,9 @@ for (t in table_seq(data)) {
   }
 ```
 
-The first column of the Cascade, column F, introduces a long requested change to the Target Setting Tool. The column for whether TX_CURR Target derived by OU analysis. This column gives teams the ability to enter a FY24 TX_CURR Target that has been determined through external analysis or modeling can be entered into this column. If teams enter target values into this column, this target will take precedent to be the TX_CURR FY24 target that will be used as the target that is imported into DATIM in the ART Section (please see that section for more details). 
+The first column of the Cascade, column F, introduces a long requested change to the Target Setting Tool. The column for whether TX_CURR Target derived by OU analysis. This column gives teams the ability to enter a FY25 TX_CURR Target that has been determined through external analysis or modeling can be entered into this column. If teams enter target values into this column, this target will take precedent to be the TX_CURR FY25 target that will be used as the target that is imported into DATIM in the ART Section (please see that section for more details). 
 
-This section provides an overview of PEPFAR FY22 results and FY23 targets, both to give insight into the current status of PEPFAR's contribution to the host country HIV response, as well to serve as reference to many other sections in the Cascade tab. Review this section to understand PEPFAR's trends for the following data, as well as the linkages and relationships between them:
+This section provides an overview of PEPFAR FY23 results and FY24 targets, both to give insight into the current status of PEPFAR's contribution to the host country HIV response, as well to serve as reference to many other sections in the Cascade tab. Review this section to understand PEPFAR's trends for the following data, as well as the linkages and relationships between them:
 
 -   New Positives --- including from both HTS_TST_POS (serologic testing) & PMTCT_HEI_POS (virologic testing)
 
@@ -52,7 +52,7 @@ This section provides an overview of PEPFAR FY22 results and FY23 targets, both 
 
 -   TX_PVLS (N)
 
--   In the Cascade-PEPFAR FY22 Cascade (Planned) section we have added a new column based on feedback gathered in the retrospective process. The TX_CURR: Expected Achievement (FY23) has been added to default to be the larger of the TX_CURR FY22 Result or the TX_CURR FY23 Target. This column is editable for teams to indicate what the expected achievement for FY23 will be. The value in this column is the TX_CURR (FY23) that will be referenced in the ART Modeling and ART sections as well as subsequent sections of the Cascade tab.
+-   In the Cascade-PEPFAR FY24 Cascade (Planned) section we have added a new column based on feedback gathered in the retrospective process. The TX_CURR: Expected Achievement (FY24) has been added to default to be the larger of the TX_CURR FY23 Result or the TX_CURR FY24 Target. This column is editable for teams to indicate what the expected achievement for FY24 will be. The value in this column is the TX_CURR (FY24) that will be referenced in the ART Modeling and ART sections as well as subsequent sections of the Cascade tab.
 
 ## Partner Country Context
 
@@ -70,47 +70,47 @@ For those leveraging UNAIDS Spectrum estimate exports for the Data Pack, once th
 
 In specific, the Partner Country Context section of the Cascade tab provides space for reflecting the following data:
 
--   **Partner Country Observed TX_CURR_SUBNAT (FY22)** $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV receiving ART as of September 2022.
+-   **Partner Country Observed TX_CURR_SUBNAT (FY23)** $TX\_CURR\_SUBNAT.R$: Observed/actual total number of PLHIV receiving ART as of September 2022.
 
--   **Partner Country Estimated Population (FY23)** $POP\_EST.T\_1$: Estimated population, projected as of September 2023.
+-   **Partner Country Estimated Population (FY24)** $POP\_EST.T\_1$: Estimated population, projected as of September 2023.
 
--   **Partner Country PLHIV by Residence (FY23)** $PLHIV\_Residents.T\_1$: Estimated number of people residing with HIV in an area, projected as of September 2023.
+-   **Partner Country PLHIV by Residence (FY24)** $PLHIV\_Residents.T\_1$: Estimated number of people residing with HIV in an area, projected as of September 2023.
 
--   **Partner Country PLHIV by ART attendance (FY23)** $PLHIV\_Attend.T\_1$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2023.
+-   **Partner Country PLHIV by ART attendance (FY24)** $PLHIV\_Attend.T\_1$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2023.
 
--   **Partner Country Estimated HIV Prevalence (FY23) (%)** $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of September 2023.
+-   **Partner Country Estimated HIV Prevalence (FY24) (%)** $HIV\_PREV.T\_1$: Estimated HIV Prevalence, projected as of September 2023.
 
--   **Partner Country PLHIV Diagnosed (FY23)** $DIAGNOSED\_SUBNAT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
+-   **Partner Country PLHIV Diagnosed (FY24)** $DIAGNOSED\_SUBNAT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
 
--   **Partner Country % PLHIV Diagnosed (FY23) (%)** $DIAGNOSED\_SUBNAT.RT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
+-   **Partner Country % PLHIV Diagnosed (FY24) (%)** $DIAGNOSED\_SUBNAT.RT.T\_1$: Estimated number of people living with HIV who know their HIV status, projected as of September 2023.
 
--   **Partner Country Projected Incidence Rate (FY23) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023.
+-   **Partner Country Projected Incidence Rate (FY24) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estimated incidence rate, projected as of September 2023.
 
--   **Partner Country On ART (FY23)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2023.
+-   **Partner Country On ART (FY24)** $TX\_CURR\_SUBNAT.T\_1$: Estimated number of PLHIV receiving ART, projected as of September 2023.
 
--   **Partner Country ART Coverage (ART/PLHIV) (FY23) (%)** $PopART.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR SUBNAT from Column Y divided by Column U for HC Est. for PLHIV.
+-   **Partner Country ART Coverage (ART/PLHIV) (FY24) (%)** $PopART.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR SUBNAT from Column Y divided by Column U for HC Est. for PLHIV.
 
--   **Partner Country % Diagnosed on ART (FY23) (%)** $TX\_CURR\_SUBNAT.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR_SUBNAT from Column Y divided by Column W for HC DIAGNOSED_SUBNAT.T_1.
+-   **Partner Country % Diagnosed on ART (FY24) (%)** $TX\_CURR\_SUBNAT.Rt.T\_1$ Estimated 2023 ART Coverage taking HC Est TX_CURR_SUBNAT from Column Y divided by Column W for HC DIAGNOSED_SUBNAT.T_1.
 
--   **Partner Country Untreated PLHIV in health facility catchment area (FY23)** $Untreated\_PLHIV\_Attend.T\_1$ Estimated number of PLHIV who are Untreated and in a health facility catchment area, projected as of September 2023.
+-   **Partner Country Untreated PLHIV in health facility catchment area (FY24)** $Untreated\_PLHIV\_Attend.T\_1$ Estimated number of PLHIV who are Untreated and in a health facility catchment area, projected as of September 2023.
 
--   **Partner Country ART Patients with Documented VLT (FY23)** $VL\_TESTING\_SUBNAT.T\_1$ Estimated number of people who are ART Patients with Documented Viral Load Testing, projected as of September 2023.
+-   **Partner Country ART Patients with Documented VLT (FY24)** $VL\_TESTING\_SUBNAT.T\_1$ Estimated number of people who are ART Patients with Documented Viral Load Testing, projected as of September 2023.
 
--   **Partner Country VLT Coverage (FY23) (%)** $VL\_TESTING\_SUBNAT.Rt.T\_1$ Estimated coverage taking Partner Country ART Patients with Documented VLT (FY23) divinded by ost Country On ART (FY23).
+-   **Partner Country VLT Coverage (FY24) (%)** $VL\_TESTING\_SUBNAT.Rt.T\_1$ Estimated coverage taking Partner Country ART Patients with Documented VLT (FY24) divinded by ost Country On ART (FY24).
 
--   **Partner Country Estimated Virally Suppressed ART Patients (FY23)** $VL\_SUPPRESSED.T\_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2023. \**See note below*
+-   **Partner Country Estimated Virally Suppressed ART Patients (FY24)** $VL\_SUPPRESSED.T\_1$: Estimated PLHIV who are on ART and have a suppressed viral load, projected as of September 2023. \**See note below*
 
--   **Partner Country Est. VLS Rate (Virally Suppressed/Documented VLT) (FY23) (%)** $VLS\_SUBNAT.Rt.T\_1$: Estimated rate of Virally Suppressed ART Patients (FY23) divided by ART Patients with Documented VLT, projected as of September 2023. \**See note below*
+-   **Partner Country Est. VLS Rate (Virally Suppressed/Documented VLT) (FY24) (%)** $VLS\_SUBNAT.Rt.T\_1$: Estimated rate of Virally Suppressed ART Patients (FY24) divided by ART Patients with Documented VLT, projected as of September 2023. \**See note below*
 
--   **Partner Country Projected Incidence Rate (FY24) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estiamted new Incidence rate projected to occur in FY24, based on projected FY23 Incidence Rates.
+-   **Partner Country Projected Incidence Rate (FY25) (%)** $Incidence\_SUBNAT.Rt.T\_1$: Estiamted new Incidence rate projected to occur in FY25, based on projected FY24 Incidence Rates.
 
--   **Partner Country Projected New Infections (FY24)** $NEW\_INFECTIONS\_SUBNAT.T\_1$: Estimated new infections projected to occur in FY24, based on projected FY23 Incidence Rates.
+-   **Partner Country Projected New Infections (FY25)** $NEW\_INFECTIONS\_SUBNAT.T\_1$: Estimated new infections projected to occur in FY25, based on projected FY24 Incidence Rates.
 
--   **Partner Country PLHIV by Residence (FY24)** $PLHIV\_Residents.T$: Estimated number of people residing with HIV in an area, projected as of September 2024.
+-   **Partner Country PLHIV by Residence (FY25)** $PLHIV\_Residents.T$: Estimated number of people residing with HIV in an area, projected as of September 2024.
 
--   **Partner Country PLHIV by ART attendance (FY24)** $PLHIV\_Attend.T$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2024.
+-   **Partner Country PLHIV by ART attendance (FY25)** $PLHIV\_Attend.T$:  Estimated number of PLHIV who would attend health facilities in a district if 100% ART coverage, projected as of September 2024.
 
--   **Partner Country Projected PLHIV (FY24)** $PLHIV.T$: Teams must select whether the final PLHIV will pull from Partner Country PLHIV by Residence (FY24) (column AJ) or Partner Country PLHIV by ART attendance (FY24) (column AK). You must chose one PLHIV and cannot mix and match. This is the PLHIV that will flow to DATIM and PAW.
+-   **Partner Country Projected PLHIV (FY25)** $PLHIV.T$: Teams must select whether the final PLHIV will pull from Partner Country PLHIV by Residence (FY25) (column AJ) or Partner Country PLHIV by ART attendance (FY25) (column AK). You must chose one PLHIV and cannot mix and match. This is the PLHIV that will flow to DATIM and PAW.
 
 
 \**Note:* This indicator is not available via Spectrum for COP23. If high quality data is available from another source, you may enter it this here, overwriting formulas, though retain data source documentation. However, if data is not readily available, it is best to leave this column blank --- the Target Setting Tool was designed to populate subsequent columns even without this data.
@@ -119,7 +119,7 @@ In specific, the Partner Country Context section of the Cascade tab provides spa
 
 The following data points will be imported into DATIM from this section, replacing any preexisting estimates for these indicators that may have already been entered in DATIM:
 
--   **Partner Country Projected PLHIV (FY24)** $PLHIV.T$
+-   **Partner Country Projected PLHIV (FY25)** $PLHIV.T$
 
 ### Instructions
 
@@ -133,7 +133,7 @@ The following data points will be imported into DATIM from this section, replaci
 
 3.  Confirm that no data has been entered against \_Military Organization Units. See below for more explanation.
 
-Please note that the Partner Country Estimated Patients Tested for VLS (FY23) and the Partner Country Estimated Virally Suppressed ART Patients (FY23) are not available from Spectrum/Naomi. Therefore, they will not populate from the Spectrum tab. The Target Setting Tool does not need it populated to work, and if it is left blank the Target Setting Tool will rely on PEPFAR MER data.
+Please note that the Partner Country Estimated Patients Tested for VLS (FY24) and the Partner Country Estimated Virally Suppressed ART Patients (FY24) are not available from Spectrum/Naomi. Therefore, they will not populate from the Spectrum tab. The Target Setting Tool does not need it populated to work, and if it is left blank the Target Setting Tool will rely on PEPFAR MER data.
 
 ### Leveraging Alternatives to Spectrum
 
@@ -141,7 +141,7 @@ Most countries are encouraged to use UNAIDS Spectrum as their source for the abo
 
 In this case, paste estimates from other approved sources into this section of the Cascade tab by overwriting the formulas currently in these blue columns. Due to hidden Relative Standard Error columns between the various estimate columns, it is recommended you paste this data in one column at a time, rather than in bulk. It may also reduce technical issues to first copy geographic data in the SNU1, PSNU, Age, and Sex columns into a separate spreadsheet, then use Excel lookup functions to add estimates data against the correct geographies and populations, and then return to pasting data into the original Cascade tab column by column.
 
-Please note that it is not required to populate the Partner Country Estimated Patients Tested for VLS (FY23) and the Partner Country Estimated Virally Suppressed ART Patients (FY23) columns. In fact, in the absence of appropriate programmatic or clinical data, it is inadvisable to expend great effort on making these estimates. The Target Setting Tool has been redesigned with the understanding that most countries will not have these data. If these columns are left blank, the Target Setting Tool will automatically use PEPFAR program data to estimate the Working PopVLS Rate and the cascade calculations will still be able to proceed.
+Please note that it is not required to populate the Partner Country Estimated Patients Tested for VLS (FY24) and the Partner Country Estimated Virally Suppressed ART Patients (FY24) columns. In fact, in the absence of appropriate programmatic or clinical data, it is inadvisable to expend great effort on making these estimates. The Target Setting Tool has been redesigned with the understanding that most countries will not have these data. If these columns are left blank, the Target Setting Tool will automatically use PEPFAR program data to estimate the Working PopVLS Rate and the cascade calculations will still be able to proceed.
 
 ### Relative Standard Errors
 
@@ -185,17 +185,17 @@ No Targets will be imported to DATIM from this section.
 
 ### Instructions
 
-This section does not need to be utilize if teams have modeled their TX_CURR (FY24) target in column F, but this section can still be used should teams want to see a modeled TX_CURR to compare to that they derived through their own analysis. 
+This section does not need to be utilize if teams have modeled their TX_CURR (FY25) target in column F, but this section can still be used should teams want to see a modeled TX_CURR to compare to that they derived through their own analysis. 
 
--   Review Targeted H.C. ART Coverage (ART/PLHIV) (FY24) (%) that will be defaulted to 90%, unless the Partner Country Estimated ART Coverage (ART/PLHIV) (FY23) (%) from column Z is greater. If either of these two coverage rates are not sufficient, teams can enter a different rate. 
+-   Review Targeted H.C. ART Coverage (ART/PLHIV) (FY25) (%) that will be defaulted to 90%, unless the Partner Country Estimated ART Coverage (ART/PLHIV) (FY24) (%) from column Z is greater. If either of these two coverage rates are not sufficient, teams can enter a different rate. 
 
--   The modeled Targeted H.C. # on ART (FY24) $TX\_CURR\_SUBNAT.M$ will multiply the Partner Country FY24 Projected Estimate byt the ART Coverage rate.
+-   The modeled Targeted H.C. # on ART (FY25) $TX\_CURR\_SUBNAT.M$ will multiply the Partner Country FY25 Projected Estimate byt the ART Coverage rate.
 
--   For <01 yr olds, PMTCT_HEI_POS Linked & Retained on ART (FY24) will pull from the EID tab and teams should review the EID tab for these targets.
+-   For <01 yr olds, PMTCT_HEI_POS Linked & Retained on ART (FY25) will pull from the EID tab and teams should review the EID tab for these targets.
 
--   The modeled Calculated TX_CURR (FY24) takes TX_CURR_SUBNAT.M from column AJ divided by the rate which is a rate of  TX_CURR.Expected.T_1 from column O divided by the Estimated H.C. # on ART from column Y (TX_CURR_SUBNAT.T_1).
+-   The modeled Calculated TX_CURR (FY25) takes TX_CURR_SUBNAT.M from column AJ divided by the rate which is a rate of  TX_CURR.Expected.T_1 from column O divided by the Estimated H.C. # on ART from column Y (TX_CURR_SUBNAT.T_1).
 
--   This will produce the modeled TX_CURR for FY24. The next section will explain how the final TX_CURR is set to be imported.
+-   This will produce the modeled TX_CURR for FY25. The next section will explain how the final TX_CURR is set to be imported.
 
 ## ART
 
@@ -215,20 +215,20 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_CURR (FY24)** $TX\_CURR.T$
--   **TX_CURR_SUBNAT (FY24)** $TX\_CURR\_SUBNAT.T$
+-   **TX_CURR (FY25)** $TX\_CURR.T$
+-   **TX_CURR_SUBNAT (FY25)** $TX\_CURR\_SUBNAT.T$
 
 ### Instructions
 
--   If teams entered a FY24 TX_CURR Target in column F to begin the Cascade tab, this will take precedent to be used in Column AM and be imported into DATIM. For teams that do not utilize column F, they will need to return to the ART Modeling section to calculate and complete the modeling of the TX_CURR target in column AL that will popualte column AM.
+-   If teams entered a FY25 TX_CURR Target in column F to begin the Cascade tab, this will take precedent to be used in Column AM and be imported into DATIM. For teams that do not utilize column F, they will need to return to the ART Modeling section to calculate and complete the modeling of the TX_CURR target in column AL that will popualte column AM.
 
--   The H.C. # on ART (FY24) is calculated using the following formula, and if needed, teams can adjust this as needed.
+-   The H.C. # on ART (FY25) is calculated using the following formula, and if needed, teams can adjust this as needed.
 
 $$
-\frac{TX\_CURR (FY24)}{TX\_CURR (FY23)} * Host\ Country\ Est.\ TX\_CURR\_SUBNAT\ (FY23)
+\frac{TX\_CURR (FY25)}{TX\_CURR (FY24)} * Host\ Country\ Est.\ TX\_CURR\_SUBNAT\ (FY24)
 $$
 
--   Lastly, the H.C. ART Coverage (ART/PLHIV) (FY24) (%) will take the TX_CURR_SUBNAT and the H.C. Estimated FY24 PLHIV.
+-   Lastly, the H.C. ART Coverage (ART/PLHIV) (FY25) (%) will take the TX_CURR_SUBNAT and the H.C. Estimated FY25 PLHIV.
 
 ## ART Initiation
 
@@ -248,13 +248,13 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_NEW (FY24)** $TX\_NEW.T$
+-   **TX_NEW (FY25)** $TX\_NEW.T$
 
 ### Instructions
 
-1.  Review Retention - Already on ART (FY24) (%) and Retention - Initiated on ART (FY24) (%) which will be defaulted to 98% and can be adjusted by users as needed.
+1.  Review Retention - Already on ART (FY25) (%) and Retention - Initiated on ART (FY25) (%) which will be defaulted to 98% and can be adjusted by users as needed.
 
-2.  TX_NET_NEW (FY24) is set taking the difference of the TX_CURR (FY24) Target and the expected achievement for FY23 TX_CURR from Column O. 
+2.  TX_NET_NEW (FY25) is set taking the difference of the TX_CURR (FY25) Target and the expected achievement for FY24 TX_CURR from Column O. 
 
 3.  To then calculate those Initiated on ART, the following is used:
 
@@ -264,9 +264,9 @@ $$
 Therefore
 
 $$
-Initiations =\frac{TX\_CURR (FY24) - (TX\_CURR (FY23)*TX\_RET.Already.T)}{(TX\_RET.New.T)}
+Initiations =\frac{TX\_CURR (FY25) - (TX\_CURR (FY24)*TX\_RET.Already.T)}{(TX\_RET.New.T)}
 $$
-to then determine TX_NEW (FY24)
+to then determine TX_NEW (FY25)
 
 $$
 TX\_NEW.T  = Initiations * (TX\_INITIATED.NewRt.T)
@@ -274,7 +274,7 @@ $$
 
 ### TX_NEW
 
-Because MER guidance stipulates that TX_NEW is to be used for reporting initiation on ART of those who are treatment naive, TX_NEW may not always be the same as the target for the Total Initiated on ART (FY23) set in the VLT Coverage section previously due to portions of the total number initiated that may be comprised of individuals who are returning to treatment.
+Because MER guidance stipulates that TX_NEW is to be used for reporting initiation on ART of those who are treatment naive, TX_NEW may not always be the same as the target for the Total Initiated on ART (FY24) set in the VLT Coverage section previously due to portions of the total number initiated that may be comprised of individuals who are returning to treatment.
 
 ## VL Testing Coverage
 
@@ -294,19 +294,19 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (D) Routine (FY24)** $TX\_PVLS.D.Routine.T$
+-   **TX_PVLS (D) (FY25)** $TX\_PVLS.D.T$
 
 ### Instructions
 
-1.  Review % Initiated on ART Eligible for VLT (FY24) (%) which is defaulted to 70%
+1.  Review % Initiated on ART Eligible for VLT (FY25) (%) which is defaulted to 70%
 
-2.  Eligible for VLT (FY24) takes TX_CURR (FY23) plus Initiated on ART (FY24) times the % Initiated eligible for VLT
+2.  Eligible for VLT (FY25) takes TX_CURR (FY24) plus Initiated on ART (FY25) times the % Initiated eligible for VLT
 
-3.  Review Planned VLT Coverage (FY24) (%) which is defaulted to 95%
+3.  Review Planned VLT Coverage (FY25) (%) which is defaulted to 95%
 
-4.  TX_PVLS (D) Routine (FY24) is those Eligible for VLT (FY24) times the Planned VLT Coverage (FY24) (%)
+4.  TX_PVLS (D) (FY25) is those Eligible for VLT (FY25) times the Planned VLT Coverage (FY25) (%)
 
-5.  H.C. ART Patients with Documented VLT (FY24) is then calculated by taking the product of TX_PVLS (D) Routine (FY24) and ART Patients with Documented VLT (from column AB) and dividing this by TX_PVLS (D) (FY23).
+5.  H.C. ART Patients with Documented VLT (FY25) is then calculated by taking the product of TX_PVLS (D) (FY25) and ART Patients with Documented VLT (from column AB) and dividing this by TX_PVLS (D) (FY24).
 
 
 ## Viral Load Suppression
@@ -327,15 +327,15 @@ for (t in table_seq(data)) {
 
 The following data points will be imported into DATIM from this section:
 
--   **TX_PVLS (N) Routine (FY24)** $TX\_PVLS.N.Routine.T$
+-   **TX_PVLS (N) (FY25)** $TX\_PVLS.N.T$
 
 ### Instructions
 
-1.  Review Targeted VL Suppression Rate (FY24) (%) which is set to the default of 95%
+1.  Review Targeted VL Suppression Rate (FY25) (%) which is set to the default of 95%
 
-2.  TX_PVLS (N) Routine (FY24) is calculated by the Targeted VL Suppression Rate (FY24) (%) and TX_PVLS (D) Routine (FY24) that was set in the previous section.
+2.  TX_PVLS (N) (FY25) is calculated by the Targeted VL Suppression Rate (FY25) (%) and TX_PVLS (D) (FY25) that was set in the previous section.
 
-3.  Finally, review and adjust H.C. Virally Suppressed ART Patients (FY24) which is initially calculated by taking the product of TX_PVLS (N) Routine (FY24) and H.C. # on ART (FY24) (from column AN) and dividing this by TX_CURR (FY24). 
+3.  Finally, review and adjust H.C. Virally Suppressed ART Patients (FY25) which is initially calculated by taking the product of TX_PVLS (N) (FY25) and H.C. # on ART (FY25) (from column AN) and dividing this by TX_CURR (FY25). 
 
 ## Testing
 
@@ -355,11 +355,11 @@ No Targets will be imported to DATIM from this section.
 
 ### Instructions
 
--   The Testing Section has been significantly reduced in the Cascade tab from COP22 to COP23. All of the detailed testing work will occur on the HTS tab. Below are the steps for how PLHIV to Identify (HTS_TST_POS + PMTCT_HEI_POS) (FY24) will be set. Note that these will then pull into the EID and HTS tabs where the full breakdown of Testing will occur.
+-   The Testing Section has been significantly reduced in the Cascade tab from COP22 to COP23. All of the detailed testing work will occur on the HTS tab. Below are the steps for how PLHIV to Identify (HTS_TST_POS + PMTCT_HEI_POS) (FY25) will be set. Note that these will then pull into the EID and HTS tabs where the full breakdown of Testing will occur.
 
--   Review Targeted ART Linkage Rate (FY24) (%) which will default to 95%.
+-   Review Targeted ART Linkage Rate (FY25) (%) which will default to 95%.
 
--   PLHIV to Identify (HTS_TST_POS + PMTCT_HEI_POS) (FY24) is then calcualted by dividing TX_NEW (FY24) by the Targeted ART Linkage Rate (FY24) (%).
+-   PLHIV to Identify (HTS_TST_POS + PMTCT_HEI_POS) (FY25) is then calcualted by dividing TX_NEW (FY25) by the Targeted ART Linkage Rate (FY25) (%).
 
 
 
@@ -367,9 +367,9 @@ No Targets will be imported to DATIM from this section.
 
 While PEPFAR's contribution to the HIV response within the Partner Country may vary across areas of that response, this column attempts to summarize this contribution for use in modeling subsequent targets.
 
-The Target Setting Tool first attempts to describe PEPFAR's contribution during FY23, based on both Partner Country estimates as well as PEPFAR Results and Targets. Keep in mind as you review these data that the methodologies used in producing Partner Country estimates may produce artificial discrepancies between PEPFAR and Partner Country values. For example, if Partner Country estimates are produced from household surveys, these residential-centric data may differ significantly from PEPFAR's data, which are largely collected at point of service. (Because of this, it is recommended that Partner Country estimates follow a point-of-service model where possible.)
+The Target Setting Tool first attempts to describe PEPFAR's contribution during FY24, based on both Partner Country estimates as well as PEPFAR Results and Targets. Keep in mind as you review these data that the methodologies used in producing Partner Country estimates may produce artificial discrepancies between PEPFAR and Partner Country values. For example, if Partner Country estimates are produced from household surveys, these residential-centric data may differ significantly from PEPFAR's data, which are largely collected at point of service. (Because of this, it is recommended that Partner Country estimates follow a point-of-service model where possible.)
 
-In the following column, adjust values to reflect PEPFAR's planned contribution to the HIV response. Keep in mind that if PEPFAR's FY22 results or FY23 targets are greater than Partner Country Estimates for a given geography of population, it may be wise to maintain this same relationship to avoid depressing treatment and testing values set later in the Cascade tab beyond what would be the result of projected retention rates.
+In the following column, adjust values to reflect PEPFAR's planned contribution to the HIV response. Keep in mind that if PEPFAR's FY23 results or FY24 targets are greater than Partner Country Estimates for a given geography of population, it may be wise to maintain this same relationship to avoid depressing treatment and testing values set later in the Cascade tab beyond what would be the result of projected retention rates.
 
 
 \elandscape

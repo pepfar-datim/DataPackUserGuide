@@ -2,7 +2,9 @@
 
 # SPECTRUM
 
-The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Target Setting Tool specific csv file will be produced for your OU at the conclusion of the UNAIDS Spectrum Workshops for Country Teams based on the Naomi model. The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:
+The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Target Setting Tool-specific .csv file will be produced for your OU. The contents of this file will need to be manually copied and pasted into the Spectrum tab. Because COP timelines are earlier this year, teams can choose to use the finalized July 2023 estimates from last year’s process, as long as they do not have any major epidemiological updates (e.g., PHIAs, other surveys). While this is not ideal, our understanding is that the UNAIDS Spectrum model has not had major assumption changes, so as long as input data is also stable, there should not be major changes.  We have worked with UNAIDS to ensure that the finalized & published July 2023 estimates can also produce a workable .csv file.
+
+The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:
 
 ```{r echo=FALSE, results='asis'}
 sheet_name <- "Spectrum"
@@ -14,7 +16,7 @@ for (t in table_seq(data)) {
 }
 ```
 
-With OGAC approval, countries can also populate input their own data into this tab with a different MOH/country approved set of estimates as an alternate to Spectrum/Naomi results. Estimate changes can also be made in the two associated tabs, Cascade, PMTCT, and VMMC. 
+With GHSD/PEPFAR approval, countries can also populate and input their own data into this tab with a different MOH/country approved set of estimates as an alternate to Spectrum/Naomi results. Estimates changes can also be made in the associated tabs, including Cascade, PMTCT, and VMMC.
 
 \elandscape
 

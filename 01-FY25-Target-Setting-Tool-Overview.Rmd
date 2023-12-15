@@ -103,7 +103,19 @@ Last year’s COP23/FY24 Target Setting Tool separated the PSNUxIM
 tab into a separate file, and a new Year 2 tab was added to plan 
 notional strategic, national level FY25 PEPFAR targets, however 
 these targets were not imported into DATIM. Both of these changes 
-are also reflected in the COP23 Year 2 – FY25/ROP24 Year 1 Target Setting Tool.  
+are also reflected in the COP23 Year 2 – FY25/ROP24 Year 1 Target Setting Tool.
+
+The Spectrum tab will allow users to load UNAIDS data with 12 columns 
+of data elements for your OU. A Target Setting Tool-specific .csv file 
+will be produced for your OU. The contents of this file will need to be 
+manually copied and pasted into the Spectrum tab. Because COP timelines 
+are earlier this year, teams can choose to use the finalized July 2023 
+estimates from last year’s process, as long as they do not have any major 
+epidemiological updates (e.g., PHIAs, other surveys). While this is not 
+ideal, our understanding is that the UNAIDS Spectrum model has not had 
+major assumption changes, so as long as input data is also stable, there 
+should not be major changes.  We have worked with UNAIDS to ensure that 
+the finalized & published July 2023 estimates can also produce a workable .csv file.
 
 
 ## Data Flow and Review Process to FY25 Submission

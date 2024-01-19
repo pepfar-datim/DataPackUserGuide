@@ -2,6 +2,17 @@
 
 # SPECTRUM
 
+The process for country teams to obtain a Spectrum/Naomi estimates file for COP23 Midterm Review (FY25) and ROP24 target setting in the Target Setting Tool is the same as in prior years. Countries that have already begun the annual estimates update process with UNAIDS may use their new, draft in-process estimates. Countries that have not yet begun that process or are not confident enough in current in-process estimates may use their finalized estimates that were published by UNAIDS in July 2023. Teams should **not** use Spectrum/Naomi estimates files from last year's COP23 Year 1/ROP23 (FY24) target setting process.
+
+Regardless of a team's choice to use new in-process estimates or last year's published, final estimates, the steps to generate an estimates file to use in this year's Target Setting Tool are the same:
+  1. Log into Naomi
+  2. For countries that use the DMPPT2 for VMMC estimates: Manually upload the DMPPT2 tool on     step 1. A new resource will be added into the ADR in the future, but for now it needs to     be uploaded manually into Naomi.
+  3. Refit the Naomi model
+  4. Download the Naomi results/Spectrum output zip from ADR
+  5. Use the “pepfar_datapack_indicators_2024.csv” file within that ZIP folder to copy         Naomi/Spectrum estimates into the "Spectrum" tab of the Target Setting Tool (detailed        instructions are in this tab of the tool)
+If teams have any questions or problems with obtaining their Spectrum/Naomi estimates, please reach out to your UNAIDS Estimates process contact(s).
+
+
 The Spectrum tab will allow users to load UNAIDS data with 12 columns of data elements for your OU. A Target Setting Tool-specific .csv file will be produced for your OU. The contents of this file will need to be manually copied and pasted into the Spectrum tab. Because COP timelines are earlier this year, teams can choose to use the finalized July 2023 estimates from last year’s process, as long as they do not have any major epidemiological updates (e.g., PHIAs, other surveys). While this is not ideal, our understanding is that the UNAIDS Spectrum model has not had major assumption changes, so as long as input data is also stable, there should not be major changes.  We have worked with UNAIDS to ensure that the finalized & published July 2023 estimates can also produce a workable .csv file.
 
 The contents of this file will be manually loaded (ie copied and pasted) into the Spectrum tab which is setup as below:

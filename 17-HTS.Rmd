@@ -2,7 +2,7 @@
 
 # HTS
 
-As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse has only been approved for Target Setting, and any potential changes with HTS reporting will be conveyed through MER 3.0 Resources. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
+As part of the COP Reform process, feedback gathered with regards to which aspects of the target setting process required high levels fof LOE. The HTS section and targets was identified as one of these burdens, and as a result, significant changes were made to the HTS tab, mainly the collapse of HTS modalities for target setting purposes. Another key change made is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets. Teams should be aware that the modality collapse has only been approved for Target Setting, and any potential changes with HTS reporting will be conveyed through MER 2.7 Resources. Teams are encouraged to put any further details in their workplans for how any particular modalities within the newly collapsed modalities are impacted.
 
 The HTS target setting groupings and which modalities fall under each of these are as follows:
 
@@ -70,9 +70,9 @@ No data will be imported from this section of the Target Setting Tool.
 
 ### Instructions
 
-<!-- # 1.  Since index testing for case finding is a high priority intervention, the index modality is should be completed first on the Cascade tab. The positivity yield should be between 15 and 40% among adults and there are further requirements for the SGAC accepted proportion of positives coming from the index testing modality. Users should reference the COP 2023 Guidance document for the required parameters based on TX coverage. --> 
+1.  Since index testing for case finding is a high priority intervention, the active index modality is should be completed first on the HTS tab. The positivity should be above 10% among adults 15+. Users should reference the COP 2023 Technical Considerations guidance document for additional information.
 
-1.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the Target Setting Tool. Note that to adjust these allocations, you must return to the section or tab of the Target Setting Tool where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
+2.  Review data for what percent of HTS_TST_POS comes from modalities set in other sections or tabs of the Target Setting Tool. Note that to adjust these allocations, you must return to the section or tab of the Target Setting Tool where these are initially set. Hyperlinks in column headers can help you navigate to the exact column where this occurs. DO NOT adjust allocation percentages for these gray columns in this section of the HTS tab as this will NOT affect any final targets and will break linkages between this tab and source data. These modalities to be reviewed, but adjusted elsewhere include:
 
 
     c.  PMTCT_STAT: New Positives (FY25)
@@ -83,7 +83,7 @@ No data will be imported from this section of the Target Setting Tool.
 
     f.  VMMC_CIRC: HIV Positive (FY25)
 
-2.  Review and adjust planned percentage contributions to HTS_TST_POS from all other HTS modalities, which will initially be populated based on trends seen in FY24 targets, but can be adjusted as needed to align with COP22 - FY25 testing strategies. Note that as you adjust these allocation percentages, the number of projected individuals to be identified HIV positive will change in the corresponding modality block to the right. These modalities to be adjusted in this section include:
+3.  Review and adjust planned percentage contributions to HTS_TST_POS from all other HTS modalities, which will initially be populated based on trends seen in FY24 targets, but can be adjusted as needed to align with COP22 - FY25 testing strategies. Note that as you adjust these allocation percentages, the number of projected individuals to be identified HIV positive will change in the corresponding modality block to the right. These modalities to be adjusted in this section include:
 
     a.  Active Index (%)
 
@@ -96,7 +96,7 @@ No data will be imported from this section of the Target Setting Tool.
     e.  Other Facility (%)
 
 
-3.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in under-allocation. Where this check column is less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to at least 100%. Reminer, a key change made as part of COP reform is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets.
+4.  Use the Distribution Check column to confirm that distributions of HTS_TST_POS across all HTS modalities do not result in under-allocation. Where this check column is less than 100%, red highlights will appear across all modalities, indicating the need to adjust percentage allocations. You MUST resolve all cases where distribution does not sum to at least 100%. Reminer, a key change made as part of COP reform is that there is now an allowance for the Distribution Check (column V) of the **HTS_TST - Distribution of Positive Tests** section to be greater than 100% so that teams do not spend as much time trying to balance these targets.
 
 ## HTS: HTS_TST -- Modality Yields
 

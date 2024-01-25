@@ -6,6 +6,8 @@ The following are formula errors that have been flagged by Users and need to be 
 
 -   On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the <15 and 15+ age bands properly. Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a “@”, that caused this to appear in any “IFERROR” formula in the Target Setting Tool. If you see this in any other “IFERROR” formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an “@” symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the “@”, and then drag this formula down through both of these columns to have the aggregation work as intended. 
 
+-   On the PMTCT Tab, in column AT for **HTS_TST PMTCT Post ANC1, Negative (FY25)** $HTS\_TST.PostANC1.Neg.T$ there is a ROUND formula missing. To fix this, n cell AT15, change formula to include ROUND function:=IF(SUM($AO15)=0,"",ROUND($AO15-SUM($AS15),0)). Flash fill formula to the bottom of the column.
+
 
 ## FAQs
 

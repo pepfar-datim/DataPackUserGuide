@@ -15,6 +15,10 @@ The following are formula errors that have been flagged by Users and need to be 
 
 A: DATIM can sometimes cache a lot of data. Clearing your cache, closing your browser, and then logging back into the App should resolve this. 
 
+***Q: On the Cascade tab, in the section for "PEPFAR FY23 Cascade (Observed)" there seems to be a discrepancy where  the TX_PVLS (D) or (N), or in the New Positiive FY23 Result column(s) do not match with DATIM/Genie/Pano, what should I do?***
+
+A: The discrepancy you are seeing is because the TST does not account for Targeted dissagg for TX_PVLS when we pull from DATIM. For New Positives the discrepancy is from PMTCT_HEI_POS (N, DSD, Age/HIVStatus) not being included in the DATIM output. Due to this you may see slight discprepancies, but these results do not impact any of the calculations within the TST and teams should not worry.
+
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY24 TX_CURR + (TX_NEW FY25/2) without taking into account losses between the fiscal years, why is this?***
 
 A: This is an intentional slight overestimate, rather than the alternative which could be underestimate.  Because we want to make sure targeted coverage provides for enough VL testing for all those who could need to be tested, we don't take Interruption In Treatment (IIT) into account, because IIT can also happen after VL test is taken, but before results are returned.

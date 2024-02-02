@@ -6,12 +6,18 @@ The following are formula errors that have been flagged by Users and need to be 
 
 -   On the TX_TB_PREV Tab, the FY23 TX_CURR Targets and FY24 TX_NEW Targets are not aggregating the <15 and 15+ age bands properly. Important Note, if this issue is present in your tool, it may be your version of excel, or in the generation of tools that excel added a “@”, that caused this to appear in any “IFERROR” formula in the Target Setting Tool. If you see this in any other “IFERROR” formula, please feel free to follow the step to resolve. In both of the formulas in columns F and G of the TX_TB_PREV tab there is an “@” symbol halfway through the formula. This needs to be removed in order for the formula to work properly. You will need to delete the “@”, and then drag this formula down through both of these columns to have the aggregation work as intended. 
 
+-   On the PMTCT Tab, in column AT for **HTS_TST PMTCT Post ANC1, Negative (FY25)** $HTS\_TST.PostANC1.Neg.T$ there is a ROUND formula missing. To fix this, n cell AT15, change formula to include ROUND function:=IF(SUM($AO15)=0,"",ROUND($AO15-SUM($AS15),0)). Flash fill formula to the bottom of the column.
+
 
 ## FAQs
 
 ***Q: I am having trouble sending my targets to PAW and other issues with the app that I was not having yesterday, how can I resolve this?***
 
 A: DATIM can sometimes cache a lot of data. Clearing your cache, closing your browser, and then logging back into the App should resolve this. 
+
+***Q: On the Cascade tab, in the section for "PEPFAR FY23 Cascade (Observed)" there seems to be a discrepancy where  the TX_PVLS (D) or (N), or in the New Positiive FY23 Result column(s) do not match with DATIM/Genie/Pano, what should I do?***
+
+A: The discrepancy you are seeing is because the TST does not account for Targeted dissagg for TX_PVLS when we pull from DATIM. For New Positives the discrepancy is from PMTCT_HEI_POS (N, DSD, Age/HIVStatus) not being included in the DATIM output. Due to this you may see slight discprepancies, but these results do not impact any of the calculations within the TST and teams should not worry.
 
 ***Q: The Cascade tab is estimating TX_PVLS_D directly from FY24 TX_CURR + (TX_NEW FY25/2) without taking into account losses between the fiscal years, why is this?***
 

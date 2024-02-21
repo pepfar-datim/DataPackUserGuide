@@ -26,9 +26,9 @@ The following data points will be imported into DATIM from this section:
 
 ### Instructions
 
-The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive a first virologic HIV test to determine their HIV status by either 2 months or 12 months of age. Ideally, 80% of infants should be tested within the first two months, and 90-95% within the first twelve months.
+The PMTCT_EID indicator measures the extent to which HIV-exposed infants receive any virologic HIV test to determine their HIV status by either 2 months or 12 months of age. Ideally, 80% of infants should be tested within the first two months, and 90-95% within the first twelve months.
 
-1.  Review and adjust the assumptions for "Targeted % HIV exposed infants tested by 2 mo (%)" and "Targeted % HIV exposed infants tested by 12 mo (inclusive of tested by 2 mo) (%)". These will be set at a default of 95% and 95%, respectively. Red highlights indicate percentages over 100%; yellow highlights indicate percentages less than these default percentages.
+1.  Review and adjust the assumptions for “Targeted % HIV exposed infants tested by 2 mo (%)” and “Targeted % HIV exposed infants tested by 12 mo (inclusive of tested by 2 mo) (%)”. These will be set at a default of 95% and 95%, respectively. These percentages can be changed to be >100% if needed to account for more than one virologic test per HIV-exposed infant, based on MER 2.7 guidance. Yellow highlights indicate percentages different than the default percentages.
 
 2.  Review the Estimated number of infants born to HIV-positive women. In absence of granular, reliable, widespread data to estimate rates of multiple births, still births, or infant mortality, this statistic is approximated using the total number of HIV-positive women presenting to ANC (column "Total PMTCT: Positives (From ANC1 & Post ANC1)" of the PMTCT tab). For more information about the assumptions underlying this data, see the section of this User Guide about the PMTCT tab.
 
@@ -54,9 +54,9 @@ No data points will be imported into DATIM from this section.
 
 ### Instructions
 
-1.  For historical context, review FY22 results for Estimated Positivity Rates both for infants tested before 2 months old, and those tested between 2 and 12 months old. These data reflect data as reported currently in DATIM.
+1.  For historical context, review FY23 results for Estimated Positivity Rates both for infants tested before 2 months old, and those tested between 2 and 12 months old. These data reflect data as reported currently in DATIM.
 
-2.  Review and adjust assumptions for FY24 projections of Estimated Positivity Rates both for infants tested before 2 months old, and those tested between 2 and 12 months old. These data default to the same as those rates set in step 1, but can be adjusted as needed. Red highlights indicate percentages over 100% or less than 0%; yellow highlights indicate percentages that differ from those set in step 1.
+2.  Review and adjust assumptions for FY24 projections of Estimated Positivity Rates both for infants tested before 2 months old, and those tested between 2 and 12 months old. These data default to the same as those rates set in step 1, but can be adjusted as needed. Red highlights indicate percentages less than 0%; yellow highlights indicate percentages that differ from those set in step 1.
 
 3.  Review Targeted proportion of HIV-infected infants linked to ART. This rate is defaulted to 95%.
 

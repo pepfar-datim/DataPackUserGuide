@@ -10,6 +10,8 @@ The following are formula errors that have been flagged by Users and need to be 
 
 -   On the PMTCT Tab, in column AT for **HTS_TST PMTCT Post ANC1, Negative (FY25)** $HTS\_TST.PostANC1.Neg.T$ there is a ROUND formula missing. To fix this, n cell AT15, change formula to include ROUND function:=IF(SUM($AO15)=0,"",ROUND($AO15-SUM($AS15),0)). Flash fill formula to the bottom of the column.
 
+-   On the OVC tab, since OVC_HIVSTAT now includes 18-20yr old's, the formula in column T of the OVC tab should be excluding 18-20 in the target. The formula should not include the portion that says “$C15=“18-20,”. To fix this, please delete this portion of the formula in Row 15 and flash fill it down trough the column T. The App will flag will change this with a warning, but this will be waived. 
+
 
 ## FAQs
 
@@ -19,7 +21,7 @@ A: DATIM can sometimes cache a lot of data. Clearing your cache, closing your br
 
 ***Q: On the Cascade tab, in the section for "PEPFAR FY23 Cascade (Observed)" there seems to be a discrepancy where  the TX_PVLS (D) or (N), or in the New Positiive FY23 Result column(s) do not match with DATIM/Genie/Pano, what should I do?***
 
-A: The discrepancy you are seeing is because the TST does not account for Targeted dissagg for TX_PVLS when we pull from DATIM. For New Positives the discrepancy is from PMTCT_HEI_POS (N, DSD, Age/HIVStatus) not being included in the DATIM output. Due to this you may see slight discprepancies, but these results do not impact any of the calculations within the TST and teams should not worry.
+A: The discrepancy you are seeing is because the TST does not account for Targeted dissagg for TX_PVLS when we pull from DATIM. For New Positives the discrepancy is from PMTCT_HEI_POS (N, DSD, Age/HIVStatus) not being included in the DATIM output. Due to this you may see slight discrepancies, but these results do not impact any of the calculations within the TST and teams should not worry.
 
 ***Q: Why HTS for PrEP not automatically calculated on the KP Tab?***
 
